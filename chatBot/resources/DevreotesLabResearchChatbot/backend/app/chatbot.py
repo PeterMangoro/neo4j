@@ -1,22 +1,27 @@
 import json
 import os
 import sys
-from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
 
-from .paths import DOTENV_PATH, HGNC_LOOKUP_PATH
+from .paths import HGNC_LOOKUP_PATH, load_project_dotenv
 from .retrieval import (
+    graph_search_author_publication_stats,
     graph_search_by_author,
     graph_search_by_gene,
     graph_search_research_themes,
     vector_search,
 )
-from .router import classify_query, extract_author_from_question, extract_gene_from_question
+from .router import (
+    classify_query,
+    extract_author_from_question,
+    extract_gene_from_question,
+    is_author_stats_query,
+)
 from .agent_tools import run_evidence_agent
 
 
-load_dotenv(DOTENV_PATH)
+load_project_dotenv()
 
 with HGNC_LOOKUP_PATH.open("r", encoding="utf-8") as f:
     hgnc_lookup = json.load(f)
@@ -40,6 +45,7 @@ def _query_type_label(effective: str) -> str:
     """Human-readable route for UI/debug (internal keys stay stable)."""
     return {
         "themes": "Gene mention frequency (corpus)",
+        "author_stats": "Author publication counts (corpus)",
         "gene": "Gene-focused retrieval",
         "author": "Author-filtered retrieval",
         "semantic": "Semantic (vector) retrieval",
@@ -73,6 +79,16 @@ def build_context(results, result_type: str = "semantic", max_chunks: int = MAX_
             context_parts.append(f"[{idx}] Gene {g}: mentioned in {n} paper(s)")
         return "\n".join(context_parts)
 
+    if result_type == "author_stats":
+        context_parts.append(
+            "Authors linked to papers by :AUTHORED (count = distinct papers in this corpus):"
+        )
+        for idx, item in enumerate(results[:15], 1):
+            a = item.get("author") or item.get("author_key") or "Unknown"
+            n = item.get("paper_count", 0)
+            context_parts.append(f"[{idx}] {a}: {n} paper(s)")
+        return "\n".join(context_parts)
+
     for idx, item in enumerate(results[:max_chunks], 1):
         title = item.get("title", "Unknown")
         chunk_id = item.get("chunk_id", "chunk_unknown")
@@ -89,10 +105,26 @@ def build_context(results, result_type: str = "semantic", max_chunks: int = MAX_
 def _build_sources_and_preview(results, result_kind: str):
     """
     result_kind matches the retrieval path (usually `effective_query_type`):
-    themes | gene | author | semantic.
+    themes | author_stats | gene | author | semantic.
     """
     sources = []
     preview = []
+
+    if result_kind == "author_stats":
+        for item in results[:15]:
+            a = item.get("author") or item.get("author_key") or "Unknown"
+            n = item.get("paper_count", 0)
+            sources.append(f"{a} ({n} papers)")
+            preview.append(
+                {
+                    "author": a,
+                    "author_key": item.get("author_key"),
+                    "paper_count": n,
+                    "stat_type": "author_publication_count",
+                    "route": "author_stats",
+                }
+            )
+        return sources, preview
 
     if result_kind == "themes":
         for item in results[:10]:
@@ -144,6 +176,20 @@ def _retrieve_or_abstain(question: str, query_type: str, routed_key: str | None)
             return {
                 "abstained": True,
                 "abstain_reason": "no_theme_data",
+                "results": [],
+            }
+        return {
+            "abstained": False,
+            "abstain_reason": None,
+            "results": results,
+        }
+
+    if query_type == "author_stats":
+        results = graph_search_author_publication_stats()
+        if not results:
+            return {
+                "abstained": True,
+                "abstain_reason": "no_author_stats",
                 "results": [],
             }
         return {
@@ -223,6 +269,9 @@ def _prepare_generation_router(question: str):
     Returns either {abstain: True, result: dict} or {abstain: False, messages, results, effective_query_type, routed_key}.
     """
     query_type = classify_query(question)
+    if query_type == "author" and is_author_stats_query(question):
+        query_type = "author_stats"
+        _log("[Router] Promoted author → author_stats (aggregate wording)")
     _log(f"[Router] Query type: {query_type}")
 
     routed_key = None
@@ -240,6 +289,9 @@ def _prepare_generation_router(question: str):
         author = extract_author_from_question(question) or "Devreotes"
         routed_key = author
         _log(f"[Graph] Author route for '{author}'")
+    elif query_type == "author_stats":
+        routed_key = "author_stats"
+        _log("[Graph] Author publication stats route")
     elif query_type == "themes":
         routed_key = "themes"
         _log("[Graph] Themes route")
@@ -247,7 +299,11 @@ def _prepare_generation_router(question: str):
         routed_key = "semantic"
         _log("[Vector] Semantic route")
 
-    retrieved = _retrieve_or_abstain(question, effective_query_type, routed_key if query_type != "themes" else None)
+    retrieved = _retrieve_or_abstain(
+        question,
+        effective_query_type,
+        routed_key if query_type not in ("themes", "author_stats") else None,
+    )
     results = retrieved["results"]
 
     if retrieved["abstained"]:
@@ -260,6 +316,11 @@ def _prepare_generation_router(question: str):
             )
         elif reason == "no_theme_data":
             answer = "No gene mention statistics were found in the corpus yet."
+        elif reason == "no_author_stats":
+            answer = (
+                "No authors with multiple papers were found in the graph yet "
+                "(or the minimum paper threshold filtered everyone out)."
+            )
         else:
             answer = "No relevant passages were retrieved from the corpus."
         sources, preview = _build_sources_and_preview(results, effective_query_type)
@@ -289,6 +350,16 @@ def _prepare_generation_router(question: str):
             f"Question: {question}\n\n"
             "Answer only using the statistics above. Cite each statistic you rely on as [n]. "
             "Do not invent qualitative research themes that are not supported by these counts."
+        )
+    elif effective_query_type == "author_stats":
+        user_block = (
+            "Numbered author–publication counts derived from the graph (:Author)-[:AUTHORED]->(:Paper):\n"
+            "---\n"
+            f"{context}\n"
+            "---\n\n"
+            f"Question: {question}\n\n"
+            "Answer only using the rows above. Cite each row you use as [n]. "
+            "If the question asks who appears on multiple papers, list authors with paper_count ≥ 2."
         )
     else:
         user_block = (
@@ -324,11 +395,18 @@ def _prepare_generation_agent(question: str):
         return _prepare_generation_router(question)
 
     themes = ev["themes"] if ev["themes"] else None
+    author_stats = ev.get("author_stats") if ev.get("author_stats") else None
     merged = _merge_raw_chunks(ev["raw_chunks"])
     routed_key = "agent"
 
     def abstain_payload(answer: str, reason: str, results: list, qtype: str):
-        kind = "themes" if qtype == "themes" else "semantic"
+        kind = (
+            "themes"
+            if qtype == "themes"
+            else "author_stats"
+            if qtype == "author_stats"
+            else "semantic"
+        )
         sources, preview = _build_sources_and_preview(results, kind)
         return {
             "abstain": True,
@@ -346,7 +424,7 @@ def _prepare_generation_agent(question: str):
             },
         }
 
-    if not merged and not themes:
+    if not merged and not themes and not author_stats:
         return abstain_payload(
             "No relevant passages were retrieved from the corpus.",
             "no_chunks",
@@ -354,7 +432,7 @@ def _prepare_generation_agent(question: str):
             "agent",
         )
 
-    if not merged and themes:
+    if not merged and themes and not author_stats:
         results = themes
         if not results:
             return abstain_payload(
@@ -383,6 +461,56 @@ def _prepare_generation_agent(question: str):
             "tool_calls_log": tool_calls_log,
         }
 
+    if not merged and author_stats and not themes:
+        results = author_stats
+        if not results:
+            return abstain_payload(
+                "No authors with multiple papers were found in the graph yet.",
+                "no_author_stats",
+                [],
+                "author_stats",
+            )
+        context = build_context(results, "author_stats")
+        user_block = (
+            "Numbered author–publication counts derived from the graph (:Author)-[:AUTHORED]->(:Paper):\n"
+            "---\n"
+            f"{context}\n"
+            "---\n\n"
+            f"Question: {question}\n\n"
+            "Answer only using the rows above. Cite each row as [n]."
+        )
+        messages = [SystemMessage(content=SYSTEM_PROMPT), HumanMessage(content=user_block)]
+        return {
+            "abstain": False,
+            "messages": messages,
+            "results": results,
+            "effective_query_type": "author_stats",
+            "routed_key": routed_key,
+            "tool_calls_log": tool_calls_log,
+        }
+
+    if not merged and themes and author_stats:
+        gctx = build_context(themes, "themes")
+        actx = build_context(author_stats, "author_stats")
+        user_block = (
+            "Two graph statistics sections:\n"
+            "---\n"
+            f"{gctx}\n\n"
+            f"{actx}\n"
+            "---\n\n"
+            f"Question: {question}\n\n"
+            "Answer using only the sections above. Cite gene lines and author lines as [n] by their bracket numbers."
+        )
+        messages = [SystemMessage(content=SYSTEM_PROMPT), HumanMessage(content=user_block)]
+        return {
+            "abstain": False,
+            "messages": messages,
+            "results": (themes or []) + (author_stats or []),
+            "effective_query_type": "agent",
+            "routed_key": routed_key,
+            "tool_calls_log": tool_calls_log,
+        }
+
     best_score = max(_result_score(r) for r in merged)
     if best_score < RAG_MIN_SCORE:
         sources, preview = _build_sources_and_preview(merged, "semantic")
@@ -407,17 +535,24 @@ def _prepare_generation_agent(question: str):
 
     results = sorted(merged, key=_result_score, reverse=True)
 
-    if themes:
-        theme_ctx = _themes_context_with_s_labels(themes)
+    if themes or author_stats:
+        extra_sections: list[str] = []
+        if themes:
+            extra_sections.append(
+                "=== Gene mention statistics ===\n" + _themes_context_with_s_labels(themes)
+            )
+        if author_stats:
+            extra_sections.append(
+                "=== Author publication counts ===\n" + build_context(author_stats, "author_stats")
+            )
         chunk_ctx = build_context(results, "semantic")
         user_block = (
-            "You may use two evidence sections below.\n"
-            "- Cite gene statistics as [S1], [S2], ... matching the tags in the first section.\n"
-            "- Cite paper passages as [1], [2], ... matching the numbers in the second section.\n\n"
-            "=== Gene mention statistics ===\n"
-            f"{theme_ctx}\n\n"
-            "=== Numbered passages from papers ===\n"
-            "---\n"
+            "You may use multiple evidence sections below.\n"
+            "- Cite gene statistics as [S1], [S2], ... when present.\n"
+            "- Cite author statistics by their [n] line numbers when present.\n"
+            "- Cite paper passages as [1], [2], ... in the passages section.\n\n"
+            + "\n\n".join(extra_sections)
+            + "\n\n=== Numbered passages from papers ===\n---\n"
             f"{chunk_ctx}\n---\n\n"
             f"Question: {question}\n\n"
             "Answer only from the sections above. Do not use outside knowledge."

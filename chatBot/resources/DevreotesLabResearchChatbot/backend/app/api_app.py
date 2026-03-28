@@ -9,15 +9,14 @@ from __future__ import annotations
 
 import os
 
-from dotenv import load_dotenv
 from fastapi import FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 
-from .paths import DOTENV_PATH
+from .paths import load_project_dotenv
 
-load_dotenv(DOTENV_PATH)
+load_project_dotenv()
 
 
 def _check_api_secret(x_devreotes_key: str | None) -> None:

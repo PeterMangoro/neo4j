@@ -13,15 +13,14 @@ import re
 from datetime import datetime, timezone
 from typing import Any
 
-from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
 from neo4j import GraphDatabase
 
-from .paths import DOTENV_PATH
+from .paths import load_project_dotenv
 
 
-load_dotenv(DOTENV_PATH)
+load_project_dotenv()
 
 # Schema §2 — omit Gene/Protein so we do not duplicate HGNC / ingest gene entities.
 ALLOWED_ENTITY_TYPES = frozenset(

@@ -9,19 +9,19 @@ import os
 import uuid
 from typing import Any
 
-from dotenv import load_dotenv
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
 from langchain_core.tools import tool
 
-from .paths import DOTENV_PATH
+from .paths import load_project_dotenv
 from .retrieval import (
+    graph_search_author_publication_stats,
     graph_search_by_author,
     graph_search_by_gene,
     graph_search_research_themes,
     vector_search,
 )
 
-load_dotenv(DOTENV_PATH)
+load_project_dotenv()
 
 
 def _rag_top_k() -> int:
@@ -45,6 +45,7 @@ def _slim_chunk_rows(rows: list, route: str) -> list[dict[str, Any]]:
                 "score": r.get("score"),
                 "gene": r.get("gene"),
                 "author": r.get("author"),
+                "source_file": r.get("source_file"),
                 "route": route,
             }
         )
@@ -95,18 +96,27 @@ def corpus_gene_frequencies() -> str:
     return json.dumps({"kind": "themes", "route": "themes", "items": rows or []}, ensure_ascii=True)
 
 
+@tool
+def corpus_author_publication_stats() -> str:
+    """Authors with multiple papers in this corpus (:AUTHORED counts). Use for which authors appear on more than one paper, collaborators across publications, or publication counts per author—not 'papers by a specific name'."""
+    rows = graph_search_author_publication_stats()
+    return json.dumps({"kind": "author_stats", "route": "author_stats", "items": rows or []}, ensure_ascii=True)
+
+
 DEVREOTES_RETRIEVAL_TOOLS = [
     semantic_search,
     gene_literature_search,
     author_literature_search,
     corpus_gene_frequencies,
+    corpus_author_publication_stats,
 ]
 
 AGENT_SYSTEM_PROMPT = """You are a retrieval planner for a biomedical literature corpus (Prof. Devreotes lab papers).
 
 Your job is to call one or more tools to gather evidence for the user's question. Rules:
 - Prefer gene_literature_search when the user names a specific human gene symbol (HGNC).
-- Prefer author_literature_search when the question is about who wrote papers or to scope by author.
+- Prefer author_literature_search when the question is about passages from papers by a **specific** author name.
+- Use corpus_author_publication_stats for questions about **which authors** show up on **multiple papers**, collaborators across the corpus, or author–publication counts (not a single named author).
 - Use corpus_gene_frequencies for questions about which genes are most mentioned across the corpus, counts, or prevalence.
 - Use semantic_search for general conceptual questions or when other tools are not a clear fit.
 - You may call multiple tools if the question combines scopes (e.g. gene + author).
@@ -126,6 +136,7 @@ def _parse_tool_payload(raw: str) -> dict[str, Any]:
 def _accumulate_payload(
     chunk_acc: list[dict[str, Any]],
     themes_holder: list[Any],
+    author_stats_holder: list[Any],
     payload: dict[str, Any],
 ) -> None:
     kind = payload.get("kind")
@@ -140,6 +151,11 @@ def _accumulate_payload(
         if isinstance(items, list):
             themes_holder.clear()
             themes_holder.extend(items)
+    elif kind == "author_stats":
+        items = payload.get("items") or []
+        if isinstance(items, list):
+            author_stats_holder.clear()
+            author_stats_holder.extend(items)
 
 
 def run_evidence_agent(llm, question: str) -> dict[str, Any]:
@@ -156,6 +172,7 @@ def run_evidence_agent(llm, question: str) -> dict[str, Any]:
     tool_calls_log: list[dict[str, Any]] = []
     chunk_acc: list[dict[str, Any]] = []
     themes_holder: list[Any] = []
+    author_stats_holder: list[Any] = []
     tool_by_name = {t.name: t for t in DEVREOTES_RETRIEVAL_TOOLS}
     used_tools = False
 
@@ -183,12 +200,13 @@ def run_evidence_agent(llm, question: str) -> dict[str, Any]:
                 except Exception as exc:  # pragma: no cover - defensive
                     out = json.dumps({"kind": "error", "message": str(exc)})
             payload = _parse_tool_payload(out if isinstance(out, str) else str(out))
-            _accumulate_payload(chunk_acc, themes_holder, payload)
+            _accumulate_payload(chunk_acc, themes_holder, author_stats_holder, payload)
             messages.append(ToolMessage(content=out if isinstance(out, str) else str(out), tool_call_id=tid))
 
     return {
         "used_tools": used_tools,
         "raw_chunks": chunk_acc,
         "themes": list(themes_holder) if themes_holder else None,
+        "author_stats": list(author_stats_holder) if author_stats_holder else None,
         "tool_calls_log": tool_calls_log,
     }

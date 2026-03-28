@@ -1,14 +1,13 @@
 import json
 import os
 import re
-from dotenv import load_dotenv
 from neo4j import GraphDatabase
 from sentence_transformers import SentenceTransformer, util as st_util
 
-from .paths import DOTENV_PATH, HGNC_LOOKUP_PATH
+from .paths import HGNC_LOOKUP_PATH, load_project_dotenv
 
 
-load_dotenv(DOTENV_PATH)
+load_project_dotenv()
 os.environ.setdefault("CUDA_VISIBLE_DEVICES", "")
 model = SentenceTransformer("pritamdeka/PubMedBERT-mnli-snli-scinli-scitail-mednli-stsb")
 
@@ -357,6 +356,29 @@ def graph_search_by_author(author_name: str, question: str | None = None, top_k:
     pool = max(_dedupe_target_k(top_k), top_k + max(0, int(os.getenv("RAG_GRAPH_EXPAND_EXTRA", "8"))))
     deduped = _dedupe_by_paper(deduped, top_k=pool, max_per_paper=_max_chunks_per_paper())
     return _maybe_rerank_by_query_embedding(qtext, deduped, top_k)
+
+
+def graph_search_author_publication_stats():
+    """
+    Authors (AUTHORED) with at least N distinct papers — for "who appears on multiple papers" questions.
+    Env: AUTHOR_STATS_MIN_PAPERS (default 2), AUTHOR_STATS_LIMIT (default 40).
+    """
+    min_papers = max(2, int(os.getenv("AUTHOR_STATS_MIN_PAPERS", "2")))
+    limit = max(5, int(os.getenv("AUTHOR_STATS_LIMIT", "40")))
+    with driver.session() as session:
+        results = session.run(
+            """
+            MATCH (a:Author)-[:AUTHORED]->(p:Paper)
+            WITH a, count(DISTINCT p) AS paper_count
+            WHERE paper_count >= $min_papers
+            RETURN coalesce(a.name, a.author_key) AS author, a.author_key AS author_key, paper_count
+            ORDER BY paper_count DESC, author
+            LIMIT $limit
+            """,
+            min_papers=min_papers,
+            limit=limit,
+        ).data()
+    return results
 
 
 def graph_search_research_themes():

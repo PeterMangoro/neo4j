@@ -1,12 +1,11 @@
 import os
-from dotenv import load_dotenv
 from neo4j import GraphDatabase
 
-from .paths import DOTENV_PATH
+from .paths import load_project_dotenv
 
 
 def _get_driver():
-    load_dotenv(DOTENV_PATH)
+    load_project_dotenv()
     uri = os.getenv("NEO4J_URI")
     user = os.getenv("NEO4J_USER")
     password = os.getenv("NEO4J_PASSWORD")

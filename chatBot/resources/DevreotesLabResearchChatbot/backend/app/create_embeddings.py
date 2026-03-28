@@ -1,13 +1,12 @@
 import os
 import sys
-from dotenv import load_dotenv
 from neo4j import GraphDatabase
 from sentence_transformers import SentenceTransformer
 
-from .paths import DOTENV_PATH
+from .paths import load_project_dotenv
 
 
-load_dotenv(DOTENV_PATH)
+load_project_dotenv()
 os.environ.setdefault("CUDA_VISIBLE_DEVICES", "")
 model = SentenceTransformer("pritamdeka/PubMedBERT-mnli-snli-scinli-scitail-mednli-stsb")
 

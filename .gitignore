@@ -11,6 +11,12 @@ assignments/ass1/*.ipynb_checkpoints
 # Ignore Jupyter notebook dump files
 assignments/ass2/*.dump
 
+# Python bytecode
+*.pyc
+**/*.pyc
+__pycache__/
+**/__pycache__/
+
 # Virtual environment
 .venv
 .venv*/

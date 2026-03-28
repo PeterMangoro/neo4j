@@ -53,6 +53,62 @@ flowchart LR
   NEO --> RET
 ```
 
+The diagram above contrasts **offline ingest** with a simplified **online** path. The diagram below is the **full system view**: clients, Nuxt server, optional HTTP API, Python core, Neo4j, and OpenAI.
+
+### Architecture diagram (runtime & services)
+
+```mermaid
+flowchart TB
+  subgraph offline["Offline: build corpus"]
+    PDF["papers/ → extract_pdfs → extracted/"]
+    PIPE["setup_schema → ingest_papers → create_embeddings"]
+    PDF --> PIPE
+  end
+
+  NEO[("Neo4j\n(graph + vector index)")]
+  PIPE --> NEO
+
+  subgraph clients["Clients"]
+    BR["Browser\n(Nuxt UI)"]
+    GR["Gradio\napp.py"]
+  end
+
+  subgraph nuxt["Nuxt server (Nitro)"]
+    API["POST /api/devreotes/chats/:id\n(SSE / AI SDK stream)"]
+    APPDB[("App DB\nmessages, devreotes_trace")]
+    BRG["devreotes_bridge.py\n(NDJSON stdout)"]
+  end
+
+  subgraph fastapi["Optional: DEVREOTES_API_URL"]
+    FAPI["FastAPI\nPOST /chat/stream"]
+  end
+
+  subgraph core["Python backend (backend/app)"]
+    CHAT["chatbot.py\n(router vs agent mode)"]
+    ROUT["router.py"]
+    AGT["agent_tools\nrun_evidence_agent"]
+    RETR["retrieval.py\nvector + Cypher"]
+  end
+
+  LLM["OpenAI API\n(Chat completions)"]
+
+  BR --> API
+  API --> APPDB
+  API --> BRG
+  API -.->|optional| FAPI
+  FAPI --> CHAT
+  BRG --> CHAT
+  GR --> CHAT
+  CHAT --> ROUT
+  CHAT --> AGT
+  ROUT --> RETR
+  AGT --> RETR
+  RETR --> NEO
+  CHAT --> LLM
+```
+
+**How to read it:** **Offline** jobs populate **Neo4j** once (or after corpus changes). At **question time**, either **Gradio** calls `chatbot.py` in-process, or the **Nuxt** route streams an answer via the **bridge** subprocess or, if configured, the **FastAPI** service. **Router** vs **agent** mode is decided inside `chatbot.py` (`DEVREOTES_RAG_MODE`). **Retrieval** always reads the graph/vector index; the **LLM** only sees retrieved text plus the user question.
+
 ---
 
 ## 3. Step-by-step: what runs when (offline vs online)
@@ -86,7 +142,7 @@ flowchart LR
 ### B. Online — “asking the library a question”
 
 1. User submits a question (Gradio `app.py` or Nuxt UI → Python **bridge** → `chatbot.py`).
-2. **Router** (`router.py`) classifies: *themes / author / gene / semantic*.
+2. **Router** (`router.py`) classifies: *themes / author_stats / author / gene / semantic*.
 3. **Retrieval** (`retrieval.py`) runs vector search and/or Cypher filters (e.g., only chunks from papers that *mention* gene X).
 4. **Chatbot** (`chatbot.py`) builds a prompt: system rules + numbered passages + user question; the **LLM** streams or returns an answer with `[1]`, `[2]`-style citations.
 
@@ -104,7 +160,7 @@ Neo4j stores **nodes** (things) and **relationships** (edges). Below is the **me
 | **Chunk** | A slice of text from a paper (searchable unit) | `chunk_id`, `text`, `chunk_index`, **embedding** (vector) |
 | **Gene** | A human gene from HGNC | `hgnc_id`, `official_symbol` |
 | **Author** | A person (as extracted) | `author_key`, `name` |
-| **Entity** | Generic tagged concept (gene/topic/author as entity, etc.) | `entity_key`, `type`, `name` |
+| **Entity** | Tagged concept used for graph traversal and UI | `entity_key`, `type`, `name`. Ingest sets `type` to **`GENE`** or **`AUTHOR`**; Phase 5 adds types like **Topic**, **Method**, **Pathway**, … |
 | **Claim** | A short extracted sentence-like unit (for grounding) | `claim_id`, `text` |
 
 ### Relationships (the “verbs”)
@@ -113,11 +169,49 @@ Neo4j stores **nodes** (things) and **relationships** (edges). Below is the **me
 |---------|----------------|
 | `(:Paper)-[:HAS_CHUNK]->(:Chunk)` | This paper **contains** this paragraph. |
 | `(:Author)-[:AUTHORED]->(:Paper)` | This person **wrote** this paper. |
-| `(:Paper)-[:MENTIONS]->(:Gene)` | This paper **mentions** this gene (corpus-level link). |
-| `(:Chunk)-[:MENTIONS]->(:Entity)` | This paragraph **mentions** this entity (chunk-level). |
-| `(:Paper)-[:HAS_TOPIC]->(:Entity)` | Paper-level **topic** link (e.g., for “Topic” entities). |
-| `(:Entity)-[:RELATED_TO]->(:Entity)` | Optional **semantic link** between entities (Phase 5). |
-| `(:Claim)-[:SUPPORTS]->(:Chunk)` | A short claim **supported by** this chunk. |
+| `(:Paper)-[:MENTIONS]->(:Gene)` | This paper **mentions** this gene (corpus-level link to the canonical **Gene** node). |
+| `(:Chunk)-[:MENTIONS]->(:Entity)` | Chunk-level mention. Ingest: **`GENE`** entities when the symbol appears in chunk text; Phase 5: LLM-extracted entities. |
+| `(:Paper)-[:HAS_TOPIC]->(:Entity)` | Paper-level link to an **Entity**. Ingest: one per paper gene (`type: GENE`) and per author (`type: AUTHOR`); Phase 5: **Topic** entities from the LLM pass. |
+| `(:Entity)-[:RELATED_TO]->(:Gene)` | **Ingest only:** connects a paper-level **`GENE` Entity** to its canonical **`Gene`** (same symbol / HGNC identity). |
+| `(:Entity)-[:RELATED_TO]->(:Entity)` | **Phase 5 only (optional):** semantic link between two LLM-extracted entities; fine-grained kind is stored on the relationship as **`kind`** (e.g. `ASSOCIATED_WITH`, `PART_OF`). |
+| `(:Claim)-[:SUPPORTS]->(:Chunk)` | A **Claim** is **evidence** for this chunk (ingest). |
+| `(:Claim)-[:ABOUT]->(:Entity)` | **Ingest only:** when a claim is written for a chunk that mentions a gene, link the claim to the **`GENE` Entity** for that symbol. |
+
+**Note on `RELATED_TO`:** Neo4j uses one relationship **type** for two different roles: **ingest** bridges `Entity {type: 'GENE'}` → **`Gene`**; **Phase 5** connects **Entity** → **Entity** with properties `kind`, `source_chunk_id`, `confidence`.
+
+### Architecture diagram (Neo4j nodes & relationships)
+
+**Paper** and **Chunk** anchor text; **`Gene`** is the HGNC-backed node for corpus-level gene queries. **`Entity`** is a parallel layer: ingest creates **GENE** / **AUTHOR** entities (and **Chunk**/**Claim** links to **GENE** entities); optional Phase 5 adds other entity types and **Entity↔Entity** `RELATED_TO`. **Chunk** nodes hold an **embedding** property for the **vector index** (not a separate node).
+
+```mermaid
+flowchart TB
+  subgraph authors["Authors"]
+    A[(:Author)]
+  end
+
+  subgraph papers["Publication & text"]
+    P[(:Paper)]
+    C[(:Chunk)]
+    CL[(:Claim)]
+  end
+
+  subgraph biology["Reference & extracted concepts"]
+    G[(:Gene)]
+    E[(:Entity)]
+  end
+
+  A -->|AUTHORED| P
+  P -->|HAS_CHUNK| C
+  P -->|MENTIONS| G
+  P -->|HAS_TOPIC| E
+  C -->|MENTIONS| E
+  CL -->|SUPPORTS| C
+  CL -->|ABOUT ingest| E
+  E -->|RELATED_TO ingest GENE only| G
+  E2[(:Entity)] -.->|RELATED_TO Phase 5| E3[(:Entity)]
+```
+
+**Reading the diagram:** **AUTHORED** / **HAS_CHUNK** structure the corpus. **Paper→Gene** (`MENTIONS`) is the main canonical gene link. **Entity** nodes tie together **HAS_TOPIC** (paper-level genes and authors, plus Phase 5 topics), **Chunk→Entity** (`MENTIONS`, genes in text and LLM entities), **Claim→Entity** (`ABOUT`, gene-tagged claims), and **Entity→Gene** (`RELATED_TO`, only for **`GENE`** entities created at ingest). **SUPPORTS** links each **Claim** to its **Chunk**. Dashed **Entity↔Entity** `RELATED_TO` exists only after **`run_llm_graph_extract.py`** (Phase 5).
 
 **Layman analogy:**  
 - **Paper** = book. **Chunk** = page or paragraph. **Gene/Author** = index entries. **Embedding** = invisible tag that helps “find similar paragraphs.”
@@ -149,13 +243,14 @@ Nothing here is “magic”: each tool solves one layer—**storage**, **text**,
 
 - **Job:** Guess *what kind of question* this is.  
 - **Layman:** The **receptionist** who sends you to “gene desk,” “author desk,” “statistics desk,” or “general reading room.”  
-- **Why it matters:** Asking “which kinases are *most mentioned*?” should not be treated the same as “what does *PTEN* do in chemotaxis?”—different desks, different tools.
+- **Why it matters:** Asking “which kinases are *most mentioned*?” should not be treated the same as “what does *PTEN* do in chemotaxis?”—different desks, different tools.  
+- **Author stats:** Questions like “which authors appear on multiple papers?” go to **`author_stats`** (counts from `(:Author)-[:AUTHORED]->(:Paper)`), not single-author chunk search.
 
 ### Retrieval (`retrieval.py`)
 
-- **Job:** Return ranked **chunks** (and sometimes aggregate **gene counts**).  
+- **Job:** Return ranked **chunks** (and sometimes aggregate **gene** or **author** counts).  
 - **Layman:** The **librarian** who pulls books off the shelf *and* photocopies the right pages.  
-- **Extras:** Per-paper diversity (not ten chunks from one paper), optional rerank, optional **graph expansion** (extra chunks in the same paper that share extracted entities).
+- **Extras:** Per-paper diversity (not ten chunks from one paper), optional rerank, optional **graph expansion** (`RAG_GRAPH_EXPAND`: same-paper chunks that share **LLM-extracted** `Entity` nodes with vector hits—skips `GENE` / `AUTHOR` types).
 
 ### Chatbot (`chatbot.py`)
 
@@ -164,8 +259,8 @@ Nothing here is “magic”: each tool solves one layer—**storage**, **text**,
 
 ### Optional Phase 5 (`llm_chunk_extract.py`)
 
-- **Job:** Add richer **Entity** nodes and relationships from LLM JSON.  
-- **Layman:** Optional **second round of indexing** for topics and links—not required for baseline Q&A.
+- **Job:** Per chunk, call the LLM for JSON **entities** (non-gene types: Topic, Method, Pathway, …) and **relations**; write **`Chunk→Entity`** (`MENTIONS`), **`Paper→Entity`** (`HAS_TOPIC` for **Topic** only), and **`Entity→Entity`** (`RELATED_TO` with **`kind`**).  
+- **Layman:** Optional **second round of indexing** for topics and semantic links between entities—not required for baseline Q&A. **Ingest** already creates **`GENE`** / **`AUTHOR`** entities and **`Entity→Gene`** (`RELATED_TO`); Phase 5 does **not** replace that.
 
 ---
 
@@ -182,7 +277,7 @@ Both ultimately call the same Python **brain** (`backend/app/chatbot.py`) for an
 
 ## 8. Usage checklist (short)
 
-1. Copy `.env.example` → `.env` and set **Neo4j** and **OpenAI** keys.  
+1. Copy `.env.example` → `.env` and set **Neo4j** and **OpenAI** keys. For **Neo4j Aura**, use `neo4j+s://…` in `.env` or keep Aura `NEO4J_*` in **`.env.production`** and set **`DEVREOTES_USE_PRODUCTION_ENV=1`** (or **`DEVREOTES_DOTENV=.env.production`**) so the backend loads them — same for Nuxt if the Python bridge should hit Aura.  
 2. Run scripts in order: **HGNC → extract → schema → ingest → embeddings** → *(optional)* **LLM extract**.  
 3. Start **Gradio** or **Nuxt** as above.
 

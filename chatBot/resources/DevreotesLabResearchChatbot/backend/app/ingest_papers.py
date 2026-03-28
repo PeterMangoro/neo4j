@@ -2,13 +2,12 @@ import json
 import os
 import re
 import spacy
-from dotenv import load_dotenv
 from neo4j import GraphDatabase
 
-from .paths import DOTENV_PATH, EXTRACTED_DIR, HGNC_LOOKUP_PATH, resolve_project_path
+from .paths import EXTRACTED_DIR, HGNC_LOOKUP_PATH, load_project_dotenv, resolve_project_path
 
 
-load_dotenv(DOTENV_PATH)
+load_project_dotenv()
 nlp = spacy.load("en_core_sci_lg")
 
 # Supplement scispaCy gene mentions with HGNC token scan (Phase 4)

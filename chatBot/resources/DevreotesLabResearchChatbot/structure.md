@@ -54,6 +54,7 @@ Script entrypoints:
 
 - `python backend/scripts/run_download_hgnc.py`
 - `python backend/scripts/run_extract_pdfs.py`
+- `python backend/scripts/run_clear_graph.py --yes` — **wipe all nodes/relationships** (uses current `NEO4J_*`; then re-run schema + ingest + embeddings below)
 - `python backend/scripts/run_setup_schema.py`
 - `python backend/scripts/run_ingest_papers.py`
 - `python backend/scripts/run_create_embeddings.py`
@@ -63,24 +64,29 @@ Script entrypoints:
 
 Run from this directory (`Devreotes Lab Research Chatbot/`) with your virtualenv activated and dependencies installed (`requirements.txt`).
 
-1. **Environment:** Copy `.env.example` to `.env` and set `NEO4J_*` and `OPENAI_API_KEY`. See table below.
+**If you see `ModuleNotFoundError: No module named 'dotenv'` (or `spacy`, `sentence_transformers`):** your shell’s `python` is not this project’s venv. Check with `which python` — it should be `.../DevreotesLabResearchChatbot/.venv/bin/python`. Fix: `source .venv/bin/activate` from this folder, or call scripts explicitly as `.venv/bin/python backend/scripts/run_clear_graph.py --yes`. If the venv is correct but packages are missing: `.venv/bin/python -m pip install -r requirements.txt`.
+
+1. **Environment:** Copy `.env.example` to `.env` and set `NEO4J_*` and `OPENAI_API_KEY`. For **Neo4j Aura**, put `neo4j+s://…` and credentials in `.env.production` (gitignored), then set `DEVREOTES_USE_PRODUCTION_ENV=1` in your shell or Nuxt env so Python loads `.env` first and overlays production. Alternatively set `DEVREOTES_DOTENV=.env.production` to use only that file. See table below.
 2. **HGNC (first time / refresh):** `python backend/scripts/run_download_hgnc.py`
 3. **Extract PDFs:** `python backend/scripts/run_extract_pdfs.py` (reads `papers/`, writes `extracted/`)
-4. **Neo4j schema:** `python backend/scripts/run_setup_schema.py` (safe to re-run)
-5. **Ingest:** `python backend/scripts/run_ingest_papers.py`
-6. **Embeddings:** `python backend/scripts/run_create_embeddings.py`
-7. **LLM graph enrichment (Phase 5, optional):** `python backend/scripts/run_llm_graph_extract.py` (after embeddings; uses `OPENAI_API_KEY`; set `GRAPH_EXTRACT_LIMIT` as needed)
-8. **UI:** `python app.py` (Gradio) or `cd nuxt-chat-interface && pnpm dev` (Nuxt; set `DEVREOTES_PYTHON` if not using system `python3`). **Optional HTTP API (Nuxt):** from the Devreotes project root, `uvicorn backend.app.api_app:app --host 127.0.0.1 --port 8765` in a second terminal, then set `DEVREOTES_API_URL=http://127.0.0.1:8765` in the Nuxt environment (and matching `DEVREOTES_API_SECRET` if you configure one).
+4. **(Optional) Wipe graph:** `python backend/scripts/run_clear_graph.py --yes` — deletes **everything** in the DB; use before a clean re-ingest (e.g. after switching to Aura or fixing schema).
+5. **Neo4j schema:** `python backend/scripts/run_setup_schema.py` (safe to re-run)
+6. **Ingest:** `python backend/scripts/run_ingest_papers.py`
+7. **Embeddings:** `python backend/scripts/run_create_embeddings.py`
+8. **LLM graph enrichment (Phase 5, optional):** `python backend/scripts/run_llm_graph_extract.py` (after embeddings; uses `OPENAI_API_KEY`; set `GRAPH_EXTRACT_LIMIT` as needed)
+9. **UI:** `python app.py` (Gradio) or `cd nuxt-chat-interface && pnpm dev` (Nuxt; set `DEVREOTES_PYTHON` if not using system `python3`). **Optional HTTP API (Nuxt):** from the Devreotes project root, `uvicorn backend.app.api_app:app --host 127.0.0.1 --port 8765` in a second terminal, then set `DEVREOTES_API_URL=http://127.0.0.1:8765` in the Nuxt environment (and matching `DEVREOTES_API_SECRET` if you configure one).
 
-Re-run steps 3–6 after changing extraction or ingest logic so the graph stays consistent. After changing LLM extraction code, re-run step 7 or clear `Chunk.llm_extracted_at` in Neo4j to force re-extract.
+Re-run from **step 3 (extract) through step 7 (embeddings)** after changing extraction or ingest logic so the graph stays consistent. For a **full empty DB**, run step 4 (`run_clear_graph.py --yes`) then **5 → 7**. After changing LLM extraction code, re-run step 8 or clear `Chunk.llm_extracted_at` in Neo4j to force re-extract.
 
 ## Environment variables
 
 | Variable | Purpose |
 |----------|---------|
-| `NEO4J_URI` | Bolt URI (e.g. `bolt://127.0.0.1:7687`) |
+| `NEO4J_URI` | Bolt URI — local `bolt://127.0.0.1:7687`; **Aura** `neo4j+s://….databases.neo4j.io` |
 | `NEO4J_USER` | Neo4j username |
 | `NEO4J_PASSWORD` | Neo4j password |
+| `DEVREOTES_USE_PRODUCTION_ENV` | Optional. If `1`/`true`/`yes`/`on`, load `.env.production` after `.env` (overrides keys — e.g. Aura `NEO4J_*`) |
+| `DEVREOTES_DOTENV` | Optional. If set, load **only** that env file (path relative to Devreotes project root if not absolute), e.g. `.env.production` |
 | `OPENAI_API_KEY` | OpenAI API key for `ChatOpenAI` in `backend/app/chatbot.py` |
 | `RAG_TOP_K` | Optional. Chunks to retrieve (default `8`) |
 | `RAG_MIN_SCORE` | Optional. Minimum vector score before abstaining (default `0.35`) |
@@ -98,6 +104,8 @@ Re-run steps 3–6 after changing extraction or ingest logic so the graph stays 
 | `RAG_RERANK_POOL` | Optional. When reranking, dedupe up to this many chunks before cutting to `RAG_TOP_K` (default `32`, max `96`) |
 | `THEMES_MIN_PAPER_COUNT` | Optional. For the `themes` route (gene mention counts), drop genes below this paper count (default `1`) |
 | `THEMES_GENE_LIMIT` | Optional. Max genes returned in the aggregate (default `20`) |
+| `AUTHOR_STATS_MIN_PAPERS` | Optional. `author_stats` route: minimum distinct papers per author (default `2`) |
+| `AUTHOR_STATS_LIMIT` | Optional. Max authors returned in `author_stats` (default `40`) |
 | `INGEST_SUPPLEMENT_TOKEN_GENES` | Optional. `true`/`false` — add a second gene pass: ALLCAPS tokens matched only against HGNC (default `true`) |
 | `OPENAI_EXTRACT_MODEL` | Optional. Model for Phase 5 chunk extraction (default `gpt-4o-mini`) |
 | `GRAPH_EXTRACT_LIMIT` | Optional. Max chunks per `run_llm_graph_extract` batch (default `25`) |
@@ -107,6 +115,6 @@ Re-run steps 3–6 after changing extraction or ingest logic so the graph stays 
 
 ## Secrets
 
-- **Do not commit** `.env`. This repo’s root `.gitignore` ignores `chatBot/resources/Devreotes Lab Research Chatbot/.env`.
-- If an API key or password was ever committed or shared, **rotate** it in the provider and update `.env` locally.
+- **Do not commit** `.env` or `.env.production` (and other `.env.*` except `.env.example`). They are gitignored.
+- If an API key or password was ever committed or shared, **rotate** it in the provider and update local env files.
 - Commit **`.env.example`** only (placeholders, no real secrets).
