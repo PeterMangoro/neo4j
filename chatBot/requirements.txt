@@ -1,0 +1,13 @@
+# GraphRAG chatbot (install: pip install -r chatBot/requirements.txt)
+# Core: graph + notebooks + env
+neo4j>=5.0.0
+jupyter>=1.0.0
+ipykernel>=6.0.0
+python-dotenv>=1.0.0
+# LLM via Ollama OpenAI-compatible API (see notebooks/00_intro_and_setup.ipynb)
+openai>=1.0.0
+requests>=2.28.0
+pandas>=2.0.0
+# PDF → text (pilot/full ingest)
+pypdf>=5.0.0
+pymupdf>=1.23.0

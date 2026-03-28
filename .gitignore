@@ -1,0 +1,32 @@
+# Ignore video script markdown file
+assignments/ass1/DETAILED_VIDEO_SCRIPT.md
+
+# Ignore PNG files (embedded in ipynb)
+assignments/ass1/*.png
+assignments/ass1/*.mp4
+
+# Ignore Jupyter notebook checkpoints
+assignments/ass1/*.ipynb_checkpoints
+
+# Ignore Jupyter notebook dump files
+assignments/ass2/*.dump
+
+# Virtual environment
+.venv
+.venv*/
+**/.venv
+**/.venv*/
+
+# Environment / secrets — any .env or variant; keep examples committed
+.env
+**/.env
+.env.*
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Large external reference data (download locally)
+chatBot/resources/hgnc_complete_set.txt
+
+# Local / generated demo (untracked; avoid Git provider noise)
+chatBot/resources/context-graph-demo

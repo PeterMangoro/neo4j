@@ -1,0 +1,8 @@
+# Supply Chain Risk Digital Twin — Phase 0 (Neo4j + notebook + plots)
+neo4j>=5.0.0
+pandas>=2.0.0
+jupyter>=1.0.0
+ipykernel>=6.0.0
+matplotlib>=3.7.0
+seaborn>=0.13.0
+python-dotenv>=1.0.0

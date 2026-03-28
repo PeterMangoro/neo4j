@@ -1,0 +1,13 @@
+neo4j
+pymupdf
+scispacy
+langchain
+langchain-core
+langchain-community
+langchain-openai
+sentence-transformers
+requests
+python-dotenv
+gradio
+fastapi
+uvicorn[standard]
