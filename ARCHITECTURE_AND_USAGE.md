@@ -217,7 +217,77 @@ Full command list and environment table: see **`structure.md`** in this folder.
 
 ---
 
-## 11. Where to look in the repo
+## 11. Key additions since the basic router + Gradio layout
+
+This section summarizes **agentic RAG**, the **Nuxt API**, **retrieval / decision trace**, **streaming**, and **UI** pieces that extend the original “router → retrieval → chatbot” picture. Full **environment variable** tables and runbook details: **`structure.md`** (under `chatBot/resources/DevreotesLabResearchChatbot/`).
+
+### 11.1 Two RAG modes: router (default) vs agent
+
+- **`DEVREOTES_RAG_MODE=router` (default)** — Same mental model as §6: `router.py` picks a **single** route (`themes` / `gene` / `author` / `semantic`), `retrieval.py` runs that path once, then `chatbot.py` builds one context block and calls the LLM.
+- **`DEVREOTES_RAG_MODE=agent`** — The model can call **multiple retrieval tools** over several steps (`semantic_search`, `gene_literature_search`, author/themes tools in `backend/app/agent_tools.py` via `run_evidence_agent`). Evidence is merged and deduplicated; the final answer is still **corpus-grounded** with citations. Optional cap: **`DEVREOTES_AGENT_MAX_STEPS`** (see `structure.md`).
+
+**Layman:** Router mode is *one trip to the library*. Agent mode is *the librarian may go back to different shelves several times* before writing the answer.
+
+### 11.2 Nuxt ↔ Python: bridge vs HTTP API
+
+The Nuxt app does **not** reimplement retrieval in TypeScript. It gets answers by either:
+
+1. **Subprocess bridge** — `nuxt-chat-interface/server/python/devreotes_bridge.py` runs the same `chatbot.py` streaming entrypoint (`iter_answer_ndjson`), printing **NDJSON** lines to stdout. Configure the interpreter with **`DEVREOTES_PYTHON`** if needed.
+2. **HTTP API (optional)** — Run **`uvicorn backend.app.api_app:app`** (see `structure.md`), set **`DEVREOTES_API_URL`** in Nuxt’s env so Nitro calls **`POST /chat/stream`** instead of spawning Python each time. Shared secret optional: **`DEVREOTES_API_SECRET`** / header **`X-Devreotes-Key`**.
+
+The UI records which path was used in the trace as **`backend`: `bridge` | `http`**.
+
+### 11.3 Streaming protocol (NDJSON + AI SDK UI stream)
+
+- The Python side yields lines like **`{"type":"delta","text":"..."}`** and a final **`{"type":"finish","result":{...}}`** (see `chatbot.py` and `server/utils/devreotesNdjson.ts` in the Nuxt app).
+- The Nuxt route **`POST /api/devreotes/chats/[id]`** turns that into an **AI SDK UI message stream** for the browser; the client **`consumeDevreotesUiSse`** reads SSE and appends text to the assistant message.
+
+### 11.4 Retrieval / “decision” trace (audit payload)
+
+Each finished turn can carry a structured **`devreotes_trace`** (JSON) alongside the assistant text, for transparency and debugging:
+
+| Field (concept) | Role |
+|-----------------|------|
+| **`query_type` / `query_type_label`** | Internal route key vs human-readable label (e.g. “Gene-focused retrieval”, “Agent retrieval (tools)”). |
+| **`routed_key`** | Gene symbol, author string, `themes`, etc., when applicable. |
+| **`results_count`** | How many retrieved rows fed the answer (where applicable). |
+| **`sources`** | Ordered list of source strings (e.g. title + chunk id) aligned with citation numbers **`[1]`**, **`[2]`**, … |
+| **`retrieval_preview`** | Structured snapshot of retrieval rows (scores, routes, ids). |
+| **`abstained` / `abstain_reason`** | When the system refuses to answer (e.g. below **`RAG_MIN_SCORE`**, no chunks). |
+| **`tool_calls_log`** | In **agent** mode, a log of tool names/args for audit. |
+| **`trace_version`** | Schema version for forward compatibility. |
+
+In the chat UI, **`DevreotesTracePanel.vue`** shows a collapsible **“Retrieval trace”** under assistant messages. The same **`sources`** list drives **citation tooltips** in the rendered markdown (`injectCitationMarkdown` wraps `[n]` / list-line citations and maps indices to `sources`).
+
+### 11.5 Citations in the UI
+
+- The backend instructs the model to cite with **`[1]`**, **`[2]`**, … matching numbered passages. Agent prompts may also use **`[S1]`**-style tags when **gene statistics** and **chunk passages** appear in one context.
+- The Nuxt layer injects **styled, hover/focus tooltips** (via `data-tooltip` + CSS) so reference markers are visually distinct and show the corresponding **source title/snippet**, not just bare numbers.
+
+### 11.6 Persistence (Nuxt / Hub)
+
+- Chat messages can be stored in the app database; assistant rows may include **`devreotes_trace`** (or snake_case **`devreotes_trace`**) so traces survive reloads. See server schema/migrations under `nuxt-chat-interface/server/db/`.
+
+### 11.7 Quick index (agent, API, trace, streaming)
+
+Paths below are relative to **`chatBot/resources/DevreotesLabResearchChatbot/`** (the Nuxt app lives in `nuxt-chat-interface/` there).
+
+| Topic | Location |
+|--------|-----------|
+| RAG mode switch + streaming Q&A | `backend/app/chatbot.py` (`_rag_mode`, agent path, `iter_answer_ndjson`) |
+| Agent tools | `backend/app/agent_tools.py`, `run_evidence_agent` |
+| FastAPI stream (optional) | `backend/app/api_app.py` (per `structure.md`) |
+| Nuxt Devreotes route + stream | `nuxt-chat-interface/server/api/devreotes/chats/[id].post.ts`, `server/utils/devreotesNdjson.ts` |
+| Bridge subprocess | `nuxt-chat-interface/server/python/devreotes_bridge.py` |
+| Trace types | `nuxt-chat-interface/app/types/devreotes-trace.ts`, `server/types/devreotes-trace.ts` |
+| Trace UI | `nuxt-chat-interface/app/components/DevreotesTracePanel.vue` |
+| Client stream consumer | `nuxt-chat-interface/app/utils/devreotesSse.ts` |
+| Chat page (trace + citations) | `nuxt-chat-interface/app/pages/chat/[id].vue` |
+| Citation injection | `nuxt-chat-interface/app/utils/injectCitationMarkdown.ts`, `app/assets/css/main.css` (`.devreotes-cite`) |
+
+---
+
+## 12. Where to look in the repo
 
 | Topic | Location |
 |--------|----------|
@@ -230,6 +300,8 @@ Full command list and environment table: see **`structure.md`** in this folder.
 | Nuxt → Python | `nuxt-chat-interface/server/python/devreotes_bridge.py` |
 | Env template | `.env.example` |
 | Run order | `structure.md` |
+
+For **agent mode, HTTP API, trace panel, NDJSON streaming, and citation UI**, see **§11** and especially **§11.7**. When browsing from the **neo4j** repo root, prefix paths with `chatBot/resources/DevreotesLabResearchChatbot/`.
 
 ---
 
