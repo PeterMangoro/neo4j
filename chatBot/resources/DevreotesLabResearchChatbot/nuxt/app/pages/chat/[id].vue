@@ -1,0 +1,384 @@
+<script setup lang="ts">
+import type { DefineComponent } from 'vue'
+import type { UIMessage } from 'ai'
+import { useClipboard } from '@vueuse/core'
+import { getTextFromMessage } from '@nuxt/ui/utils/ai'
+import { consumeDevreotesUiSse } from '../../utils/devreotesSse'
+import ProseStreamPre from '../../components/prose/PreStream.vue'
+import DevreotesTracePanel from '../../components/DevreotesTracePanel.vue'
+import type { DevreotesTrace } from '~/types/devreotes-trace'
+import { injectCitationMarkdown } from '~/utils/injectCitationMarkdown'
+
+/** UIMessage plus optional persisted Devreotes audit row from Hub DB. */
+type ChatMessage = UIMessage & { devreotesTrace?: DevreotesTrace | null }
+
+/** API / DB may expose camelCase or snake_case for the JSON column. */
+function traceFromRow(msg: ChatMessage | Record<string, unknown>): DevreotesTrace | undefined {
+  const m = msg as ChatMessage & { devreotes_trace?: DevreotesTrace }
+  return m.devreotesTrace ?? m.devreotes_trace
+}
+
+/**
+ * Resolve trace for UI: slot `message` may omit extra fields — fall back to `messages` ref by id.
+ */
+function devreotesTraceForMessage(msg: ChatMessage): DevreotesTrace | undefined {
+  const direct = traceFromRow(msg)
+  if (direct) {
+    return direct
+  }
+  const full = messages.value.find(x => x.id === msg.id)
+  return full ? traceFromRow(full) : undefined
+}
+
+function assistantMarkdownWithCitations(text: string, msg: ChatMessage): string {
+  const trace = devreotesTraceForMessage(msg)
+  return injectCitationMarkdown(text, trace?.sources)
+}
+
+/** Bust MDCCached when retrieval `sources` arrive so citation tooltips update after streaming. */
+function devreotesSourcesCacheKey(msg: ChatMessage): string {
+  const s = devreotesTraceForMessage(msg)?.sources
+  return s?.length ? s.join('\u0001') : ''
+}
+
+const components = {
+  pre: ProseStreamPre as unknown as DefineComponent
+}
+
+const route = useRoute()
+const toast = useToast()
+const clipboard = useClipboard()
+
+function getFileName(url: string): string {
+  try {
+    const urlObj = new URL(url)
+    const pathname = urlObj.pathname
+    const filename = pathname.split('/').pop() || 'file'
+    return decodeURIComponent(filename)
+  } catch {
+    return 'file'
+  }
+}
+
+const {
+  dropzoneRef,
+  isDragging,
+  open,
+  files,
+  isUploading,
+  uploadedFiles,
+  removeFile,
+  clearFiles
+} = useFileUploadWithStatus(route.params.id as string)
+
+const { data, refresh: refreshChat } = await useFetch(`/api/chats/${route.params.id}`, {
+  cache: 'force-cache'
+})
+if (!data.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Chat not found' })
+}
+const chatId = data.value.id
+
+const input = ref('')
+const { csrf, headerName } = useCsrf()
+const messages = ref<ChatMessage[]>((data.value.messages || []) as ChatMessage[])
+const chatStatus = ref<'ready' | 'submitted' | 'streaming' | 'error'>('ready')
+const chatError = ref<Error | undefined>(undefined)
+
+const showDevreotesLoading = computed(() => {
+  if (chatStatus.value === 'submitted') {
+    return true
+  }
+  if (chatStatus.value !== 'streaming') {
+    return false
+  }
+  const last = messages.value[messages.value.length - 1]
+  if (!last || last.role !== 'assistant') {
+    return false
+  }
+  const text = getTextFromMessage(last)?.trim() ?? ''
+  return text.length === 0
+})
+
+async function runDevreotesTurn(text: string, options: { skipUserInsert?: boolean } = {}) {
+  chatStatus.value = 'submitted'
+  chatError.value = undefined
+
+  const assistantId = crypto.randomUUID()
+  // One text part so `#content` has something to render (`parts: []` shows nothing).
+  const assistantMessage: ChatMessage = {
+    id: assistantId,
+    role: 'assistant',
+    parts: [{ type: 'text', text: '', state: 'streaming' }]
+  }
+  messages.value.push(assistantMessage)
+  const assistantIndex = messages.value.length - 1
+
+  const patchAssistantText = (next: string, streaming: boolean) => {
+    const cur = messages.value[assistantIndex]
+    if (!cur) {
+      return
+    }
+    messages.value[assistantIndex] = {
+      ...cur,
+      parts: [{ type: 'text', text: next, state: streaming ? 'streaming' : 'done' }]
+    } as ChatMessage
+  }
+
+  try {
+    const res = await fetch(`/api/devreotes/chats/${chatId}`, {
+      method: 'POST',
+      credentials: 'include',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'text/event-stream',
+        [headerName]: csrf
+      },
+      body: JSON.stringify({
+        message: text,
+        ...(options.skipUserInsert ? { skipUserInsert: true } : {})
+      })
+    })
+
+    if (!res.ok) {
+      const errText = await res.text()
+      throw new Error(errText || res.statusText)
+    }
+    if (!res.body) {
+      throw new Error('Empty response body')
+    }
+
+    chatStatus.value = 'streaming'
+
+    let acc = ''
+    await consumeDevreotesUiSse(res.body, (delta) => {
+      acc += delta
+      patchAssistantText(acc, true)
+    })
+    patchAssistantText(acc, false)
+
+    // Fresh GET (bypasses stale useFetch) + one retry — ensures new assistant row with devreotes_trace exists.
+    async function loadServerMessages(): Promise<ChatMessage[] | undefined> {
+      const chat = await $fetch<{ messages: ChatMessage[] }>(`/api/chats/${chatId}`, {
+        credentials: 'include'
+      })
+      return chat.messages
+    }
+    let serverMsgs = await loadServerMessages()
+    if (!serverMsgs?.length || serverMsgs.length < messages.value.length) {
+      await new Promise(r => setTimeout(r, 400))
+      serverMsgs = await loadServerMessages()
+    }
+    await refreshChat()
+
+    const i = messages.value.length - 1
+    const localLast = messages.value[i]
+    if (
+      serverMsgs?.length
+      && serverMsgs.length >= messages.value.length
+      && localLast?.role === 'assistant'
+    ) {
+      const serverLast = serverMsgs[serverMsgs.length - 1]
+      if (serverLast?.role === 'assistant') {
+        const trace = traceFromRow(serverLast)
+        messages.value[i] = {
+          ...localLast,
+          id: serverLast.id,
+          devreotesTrace: trace ?? localLast.devreotesTrace,
+          parts: (localLast.parts || []).map((p) => {
+            if (p.type === 'text') {
+              return { ...p, state: 'done' as const }
+            }
+            return p
+          })
+        }
+      }
+    }
+    refreshNuxtData('chats')
+    chatStatus.value = 'ready'
+  } catch (error: unknown) {
+    if (assistantIndex >= 0 && assistantIndex < messages.value.length) {
+      messages.value.splice(assistantIndex, 1)
+    }
+    chatStatus.value = 'error'
+    const message
+      = error && typeof error === 'object' && 'message' in error
+        ? String((error as Error).message)
+        : 'Failed to get response from backend.'
+    chatError.value = new Error(message)
+    toast.add({
+      description: message,
+      icon: 'i-lucide-alert-circle',
+      color: 'error',
+      duration: 0
+    })
+  }
+}
+
+async function handleSubmit(e: Event) {
+  e.preventDefault()
+  if (input.value.trim() && !isUploading.value) {
+    const text = input.value.trim()
+    const userMessage: ChatMessage = {
+      id: crypto.randomUUID(),
+      role: 'user',
+      parts: [{ type: 'text', text }]
+    }
+    messages.value.push(userMessage)
+    input.value = ''
+    clearFiles()
+    await runDevreotesTurn(text)
+  }
+}
+
+/** Home / suggested-query flow: POST /api/chats only saves the user message; we must run the backend here. */
+onMounted(async () => {
+  if (messages.value.length !== 1 || messages.value[0]?.role !== 'user') {
+    return
+  }
+  const text = getTextFromMessage(messages.value[0])?.trim()
+  if (!text) {
+    return
+  }
+  await runDevreotesTurn(text, { skipUserInsert: true })
+})
+
+const copied = ref(false)
+
+function copy(e: MouseEvent, message: ChatMessage) {
+  clipboard.copy(getTextFromMessage(message))
+
+  copied.value = true
+
+  setTimeout(() => {
+    copied.value = false
+  }, 2000)
+}
+
+</script>
+
+<template>
+  <UDashboardPanel
+    id="chat"
+    class="relative min-h-0"
+    :ui="{ body: 'p-0 sm:p-0 overscroll-none' }"
+  >
+    <template #header>
+      <DashboardNavbar />
+    </template>
+
+    <template #body>
+      <div ref="dropzoneRef" class="flex flex-1">
+        <DragDropOverlay :show="isDragging" />
+
+        <UContainer class="flex-1 flex flex-col gap-4 sm:gap-6">
+          <UChatMessages
+            should-auto-scroll
+            :messages="messages"
+            :status="chatStatus"
+            :assistant="{ actions: [{ label: 'Copy', icon: copied ? 'i-lucide-copy-check' : 'i-lucide-copy', onClick: copy }] }"
+            :spacing-offset="160"
+            class="lg:pt-(--ui-header-height) pb-4 sm:pb-6"
+          >
+            <template #content="{ message }">
+              <template v-for="(part, index) in message.parts" :key="`${message.id}-${part.type}-${index}${'state' in part ? `-${part.state}` : ''}`">
+                <Reasoning
+                  v-if="part.type === 'reasoning'"
+                  :text="part.text"
+                  :is-streaming="part.state !== 'done'"
+                />
+                <!-- Only render markdown for assistant messages to prevent XSS from user input -->
+                <MDCCached
+                  v-else-if="part.type === 'text' && message.role === 'assistant'"
+                  :key="`${message.id}-${index}-${devreotesSourcesCacheKey(message)}`"
+                  :value="assistantMarkdownWithCitations(part.text, message)"
+                  :cache-key="`${message.id}-${index}-${devreotesSourcesCacheKey(message)}`"
+                  :components="components"
+                  :parser-options="{ highlight: false }"
+                  class="prose prose-sm dark:prose-invert max-w-none *:first:mt-0 *:last:mb-0"
+                />
+                <!-- User messages are rendered as plain text (safely escaped by Vue) -->
+                <p v-else-if="part.type === 'text' && message.role === 'user'" class="whitespace-pre-wrap">
+                  {{ part.text }}
+                </p>
+                <ToolWeather
+                  v-else-if="part.type === 'tool-weather'"
+                  :invocation="(part as WeatherUIToolInvocation)"
+                />
+                <ToolChart
+                  v-else-if="part.type === 'tool-chart'"
+                  :invocation="(part as ChartUIToolInvocation)"
+                />
+                <FileAvatar
+                  v-else-if="part.type === 'file'"
+                  :name="getFileName(part.url)"
+                  :type="part.mediaType"
+                  :preview-url="part.url"
+                  class="inline-flex"
+                />
+              </template>
+              <DevreotesTracePanel
+                v-if="message.role === 'assistant' && devreotesTraceForMessage(message)"
+                :trace="devreotesTraceForMessage(message)!"
+              />
+            </template>
+          </UChatMessages>
+
+          <div
+            v-if="showDevreotesLoading"
+            class="flex items-center gap-3 px-1 text-muted -mt-2 sm:-mt-3"
+            aria-live="polite"
+          >
+            <img
+              src="/reading-read.gif"
+              alt=""
+              width="48"
+              height="48"
+              class="h-12 w-12 shrink-0 object-contain rounded-md"
+            >
+            <span class="text-sm text-[var(--ui-text-muted)]">Searching the corpus…</span>
+          </div>
+
+          <UChatPrompt
+            v-model="input"
+            :error="chatError"
+            :disabled="isUploading"
+            variant="subtle"
+            class="sticky bottom-0 [view-transition-name:chat-prompt] rounded-b-none z-10"
+            :ui="{ base: 'px-1.5' }"
+            @submit="handleSubmit"
+          >
+            <template v-if="files.length > 0" #header>
+              <div class="flex flex-wrap gap-2">
+                <FileAvatar
+                  v-for="fileWithStatus in files"
+                  :key="fileWithStatus.id"
+                  :name="fileWithStatus.file.name"
+                  :type="fileWithStatus.file.type"
+                  :preview-url="fileWithStatus.previewUrl"
+                  :status="fileWithStatus.status"
+                  :error="fileWithStatus.error"
+                  removable
+                  @remove="removeFile(fileWithStatus.id)"
+                />
+              </div>
+            </template>
+
+            <template #footer>
+              <div class="flex items-center gap-1">
+                <FileUploadButton :open="open" />
+              </div>
+
+              <UChatPromptSubmit
+                :status="chatStatus"
+                :disabled="isUploading"
+                color="neutral"
+                size="sm"
+              />
+            </template>
+          </UChatPrompt>
+        </UContainer>
+      </div>
+    </template>
+  </UDashboardPanel>
+</template>
