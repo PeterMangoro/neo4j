@@ -4,12 +4,12 @@ import re
 from neo4j import GraphDatabase
 from sentence_transformers import SentenceTransformer, util as st_util
 
-from .paths import HGNC_LOOKUP_PATH, load_project_dotenv
+from .paths import HGNC_LOOKUP_PATH, embedding_model_name, load_project_dotenv
 
 
 load_project_dotenv()
 os.environ.setdefault("CUDA_VISIBLE_DEVICES", "")
-model = SentenceTransformer("pritamdeka/PubMedBERT-mnli-snli-scinli-scitail-mednli-stsb")
+model = SentenceTransformer(embedding_model_name())
 
 
 def _get_driver():

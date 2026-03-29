@@ -51,3 +51,14 @@ def resolve_project_path(value: str | None, default_path: Path) -> Path:
         return default_path
     p = Path(value)
     return p if p.is_absolute() else PROJECT_ROOT / p
+
+
+# Sentence-Transformers Hugging Face id — must match between create_embeddings.py and retrieval.py.
+DEFAULT_EMBEDDING_MODEL = "pritamdeka/PubMedBERT-mnli-snli-scinli-scitail-mednli-stsb"
+
+
+def embedding_model_name() -> str:
+    """Model used to encode chunks (offline) and queries (online). Change only with full re-embed."""
+    raw = os.getenv("EMBEDDING_MODEL", DEFAULT_EMBEDDING_MODEL)
+    s = (raw or "").strip()
+    return s if s else DEFAULT_EMBEDDING_MODEL

@@ -3,16 +3,15 @@ import sys
 from neo4j import GraphDatabase
 from sentence_transformers import SentenceTransformer
 
-from .paths import load_project_dotenv
+from .paths import embedding_model_name, load_project_dotenv
 
 
 load_project_dotenv()
 os.environ.setdefault("CUDA_VISIBLE_DEVICES", "")
-model = SentenceTransformer("pritamdeka/PubMedBERT-mnli-snli-scinli-scitail-mednli-stsb")
+model = SentenceTransformer(embedding_model_name())
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-
 
 def _get_driver():
     uri = os.getenv("NEO4J_URI")
