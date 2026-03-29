@@ -1,4 +1,4 @@
-import { db, schema } from 'hub:db'
+import { db, schema } from '~/server/utils/db'
 import { eq, desc } from 'drizzle-orm'
 
 export default defineEventHandler(async (event) => {
