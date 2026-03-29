@@ -358,6 +358,17 @@ def graph_search_by_author(author_name: str, question: str | None = None, top_k:
     return _maybe_rerank_by_query_embedding(qtext, deduped, top_k)
 
 
+
+
+def themes_limit() -> int:
+    """Single source of truth for themes result cap used by retrieval and prompt context."""
+    raw = os.getenv("THEMES_LIMIT", "").strip()
+    if raw:
+        return max(5, int(raw))
+    # Backward compatibility
+    return max(5, int(os.getenv("THEMES_GENE_LIMIT", "20")))
+
+
 def graph_search_author_publication_stats():
     """
     Authors (AUTHORED) with at least N distinct papers — for "who appears on multiple papers" questions.
@@ -385,9 +396,12 @@ def graph_search_research_themes():
     """
     Aggregate gene mention frequency across papers (graph-derived, not NLP 'themes').
     Optional filter: THEMES_MIN_PAPER_COUNT (default 1) drops very rare symbols.
+
+    Returns (rows, meta) where meta includes truncation detection via LIMIT+1 fetch.
     """
     min_papers = max(1, int(os.getenv("THEMES_MIN_PAPER_COUNT", "1")))
-    limit = max(5, int(os.getenv("THEMES_GENE_LIMIT", "20")))
+    limit = themes_limit()
+    fetch_limit = limit + 1
     with driver.session() as session:
         results = session.run(
             """
@@ -399,6 +413,14 @@ def graph_search_research_themes():
             LIMIT $limit
             """,
             min_papers=min_papers,
-            limit=limit,
+            limit=fetch_limit,
         ).data()
-    return results
+    truncated = len(results) > limit
+    rows = results[:limit]
+    meta = {
+        "themes_limit": limit,
+        "truncated": truncated,
+        "metric": "distinct_papers_per_gene",
+        "sort": "paper_count_desc",
+    }
+    return rows, meta

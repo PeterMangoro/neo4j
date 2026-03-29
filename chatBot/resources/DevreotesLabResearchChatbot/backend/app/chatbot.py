@@ -10,6 +10,7 @@ from .retrieval import (
     graph_search_by_author,
     graph_search_by_gene,
     graph_search_research_themes,
+    themes_limit,
     vector_search,
 )
 from .router import (
@@ -73,7 +74,7 @@ def build_context(results, result_type: str = "semantic", max_chunks: int = MAX_
             "Gene mention frequency across the corpus (papers with a :MENTIONS edge to each gene; "
             "this is a bibliometric summary, not a qualitative thematic analysis):"
         )
-        for idx, item in enumerate(results[:15], 1):
+        for idx, item in enumerate(results[:themes_limit()], 1):
             g = item.get("gene", "Unknown")
             n = item.get("paper_count", 0)
             context_parts.append(f"[{idx}] Gene {g}: mentioned in {n} paper(s)")
@@ -171,7 +172,7 @@ def _build_sources_and_preview(results, result_kind: str):
 
 def _retrieve_or_abstain(question: str, query_type: str, routed_key: str | None):
     if query_type == "themes":
-        results = graph_search_research_themes()
+        results, themes_meta = graph_search_research_themes()
         if not results:
             return {
                 "abstained": True,
@@ -182,6 +183,7 @@ def _retrieve_or_abstain(question: str, query_type: str, routed_key: str | None)
             "abstained": False,
             "abstain_reason": None,
             "results": results,
+            "themes_meta": themes_meta,
         }
 
     if query_type == "author_stats":
@@ -252,15 +254,39 @@ def _merge_raw_chunks(rows: list) -> list:
     return sorted(by_id.values(), key=_result_score, reverse=True)
 
 
-def _themes_context_with_s_labels(results: list, max_n: int = 15) -> str:
+def _themes_context_with_s_labels(results: list, max_n: int | None = None) -> str:
     lines = [
         "Gene mention frequency across the corpus (bibliometric summary):",
     ]
-    for idx, item in enumerate(results[:max_n], 1):
+    cap = max_n if max_n is not None else themes_limit()
+    for idx, item in enumerate(results[:cap], 1):
         g = item.get("gene", "Unknown")
-        n = item.get("paper_count", 0)
-        lines.append(f"[S{idx}] Gene {g}: mentioned in {n} paper(s)")
+        pc = item.get("paper_count", 0)
+        lines.append(f"[S{idx}] Gene {g}: mentioned in {pc} paper(s)")
     return "\n".join(lines)
+
+
+def _themes_disclosure_prompt(meta: dict | None) -> str:
+    """Instructions so the model discloses ranking/limit vs full :Gene node count."""
+    if meta is None:
+        return ""
+    lim = int(meta.get("themes_limit") or themes_limit())
+    truncated = bool(meta.get("truncated"))
+    parts = [
+        f"These statistics are ranked by distinct papers per gene (descending), showing at most {lim} rows.",
+        "They are not an exhaustive list of every :Gene node in the database.",
+    ]
+    if truncated:
+        parts.append(
+            f"At least one additional gene would appear beyond row {lim} (result set was cut at the configured limit). "
+            "Briefly tell the user the list may be incomplete if they asked for completeness."
+        )
+    else:
+        parts.append(
+            "If the user asks for 'all genes' or a complete census, explain that this table is still capped by configuration "
+            "and does not enumerate every gene symbol."
+        )
+    return " ".join(parts)
 
 
 def _prepare_generation_router(question: str):
@@ -305,6 +331,7 @@ def _prepare_generation_router(question: str):
         routed_key if query_type not in ("themes", "author_stats") else None,
     )
     results = retrieved["results"]
+    themes_meta = retrieved.get("themes_meta")
 
     if retrieved["abstained"]:
         reason = retrieved.get("abstain_reason")
@@ -351,6 +378,9 @@ def _prepare_generation_router(question: str):
             "Answer only using the statistics above. Cite each statistic you rely on as [n]. "
             "Do not invent qualitative research themes that are not supported by these counts."
         )
+        dline = _themes_disclosure_prompt(themes_meta)
+        if dline:
+            user_block += "\n\n" + dline
     elif effective_query_type == "author_stats":
         user_block = (
             "Numbered author–publication counts derived from the graph (:Author)-[:AUTHORED]->(:Paper):\n"
@@ -375,19 +405,23 @@ def _prepare_generation_router(question: str):
         SystemMessage(content=SYSTEM_PROMPT),
         HumanMessage(content=user_block),
     ]
-    return {
+    out = {
         "abstain": False,
         "messages": messages,
         "results": results,
         "effective_query_type": effective_query_type,
         "routed_key": routed_key,
     }
+    if themes_meta is not None:
+        out["themes_meta"] = themes_meta
+    return out
 
 
 def _prepare_generation_agent(question: str):
     _log("[Agent] DEVREOTES_RAG_MODE=agent")
     ev = run_evidence_agent(llm, question)
     tool_calls_log = ev["tool_calls_log"]
+    themes_meta = ev.get("themes_meta")
     extras = {"tool_calls_log": tool_calls_log}
 
     if not ev["used_tools"]:
@@ -451,8 +485,11 @@ def _prepare_generation_agent(question: str):
             "Answer only using the statistics above. Cite each statistic you rely on as [n]. "
             "Do not invent qualitative research themes that are not supported by these counts."
         )
+        dline = _themes_disclosure_prompt(themes_meta)
+        if dline:
+            user_block += "\n\n" + dline
         messages = [SystemMessage(content=SYSTEM_PROMPT), HumanMessage(content=user_block)]
-        return {
+        out = {
             "abstain": False,
             "messages": messages,
             "results": results,
@@ -460,6 +497,9 @@ def _prepare_generation_agent(question: str):
             "routed_key": routed_key,
             "tool_calls_log": tool_calls_log,
         }
+        if themes_meta is not None:
+            out["themes_meta"] = themes_meta
+        return out
 
     if not merged and author_stats and not themes:
         results = author_stats
@@ -501,8 +541,11 @@ def _prepare_generation_agent(question: str):
             f"Question: {question}\n\n"
             "Answer using only the sections above. Cite gene lines and author lines as [n] by their bracket numbers."
         )
+        dline = _themes_disclosure_prompt(themes_meta)
+        if dline:
+            user_block += "\n\n" + dline
         messages = [SystemMessage(content=SYSTEM_PROMPT), HumanMessage(content=user_block)]
-        return {
+        out = {
             "abstain": False,
             "messages": messages,
             "results": (themes or []) + (author_stats or []),
@@ -510,6 +553,9 @@ def _prepare_generation_agent(question: str):
             "routed_key": routed_key,
             "tool_calls_log": tool_calls_log,
         }
+        if themes_meta is not None:
+            out["themes_meta"] = themes_meta
+        return out
 
     best_score = max(_result_score(r) for r in merged)
     if best_score < RAG_MIN_SCORE:
@@ -557,6 +603,9 @@ def _prepare_generation_agent(question: str):
             f"Question: {question}\n\n"
             "Answer only from the sections above. Do not use outside knowledge."
         )
+        dline = _themes_disclosure_prompt(themes_meta) if themes else ""
+        if dline:
+            user_block += "\n\n" + dline
         effective_query_type = "agent"
     else:
         context = build_context(results, "semantic")
@@ -569,7 +618,7 @@ def _prepare_generation_agent(question: str):
         effective_query_type = "agent"
 
     messages = [SystemMessage(content=SYSTEM_PROMPT), HumanMessage(content=user_block)]
-    return {
+    out = {
         "abstain": False,
         "messages": messages,
         "results": results,
@@ -577,6 +626,9 @@ def _prepare_generation_agent(question: str):
         "routed_key": routed_key,
         "tool_calls_log": tool_calls_log,
     }
+    if themes_meta is not None:
+        out["themes_meta"] = themes_meta
+    return out
 
 
 def _prepare_generation(question: str):
@@ -637,6 +689,8 @@ def iter_answer_ndjson(question: str):
     }
     if state.get("tool_calls_log") is not None:
         result["tool_calls_log"] = state["tool_calls_log"]
+    if state.get("themes_meta") is not None:
+        result["themes_meta"] = state["themes_meta"]
     yield json.dumps({"type": "finish", "result": result}) + "\n"
 
 
@@ -663,6 +717,8 @@ def answer_question_with_metadata(question: str, chat_history=None) -> dict:
     }
     if state.get("tool_calls_log") is not None:
         out["tool_calls_log"] = state["tool_calls_log"]
+    if state.get("themes_meta") is not None:
+        out["themes_meta"] = state["themes_meta"]
     return out
 
 

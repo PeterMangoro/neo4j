@@ -1,4 +1,11 @@
 /** Client-safe mirror of server DevreotesTrace (audit / retrieval snapshot). */
+export type DevreotesThemesMeta = {
+  themes_limit?: number
+  truncated?: boolean
+  metric?: string
+  sort?: string
+}
+
 export type DevreotesTrace = {
   trace_version: 1
   backend: 'http' | 'bridge'
@@ -11,4 +18,5 @@ export type DevreotesTrace = {
   abstained?: boolean
   abstain_reason?: string | null
   tool_calls_log?: Array<{ name?: string; args?: Record<string, unknown> }>
+  themes_meta?: DevreotesThemesMeta
 }

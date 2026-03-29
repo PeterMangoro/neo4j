@@ -1,4 +1,4 @@
-import type { DevreotesResult } from '../utils/devreotesNdjson'
+import type { DevreotesResult, DevreotesThemesMeta } from '../utils/devreotesNdjson'
 
 /** Persisted audit snapshot (no duplicate answer text). */
 export type DevreotesTrace = {
@@ -13,6 +13,7 @@ export type DevreotesTrace = {
   abstained?: boolean
   abstain_reason?: string | null
   tool_calls_log?: Array<{ name?: string; args?: Record<string, unknown> }>
+  themes_meta?: DevreotesThemesMeta
 }
 
 export function buildDevreotesTrace(
@@ -31,5 +32,6 @@ export function buildDevreotesTrace(
     abstained: result.abstained,
     abstain_reason: result.abstain_reason ?? null,
     tool_calls_log: result.tool_calls_log,
+    themes_meta: result.themes_meta,
   }
 }

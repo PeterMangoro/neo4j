@@ -92,8 +92,11 @@ def author_literature_search(author_name: str, question_context: str = "") -> st
 @tool
 def corpus_gene_frequencies() -> str:
     """Corpus-wide gene mention counts (papers per gene via the graph). Use for questions about most-mentioned genes, prevalence, or bibliometric summaries—not for passage-level quotes."""
-    rows = graph_search_research_themes()
-    return json.dumps({"kind": "themes", "route": "themes", "items": rows or []}, ensure_ascii=True)
+    rows, meta = graph_search_research_themes()
+    return json.dumps(
+        {"kind": "themes", "route": "themes", "items": rows or [], "meta": meta},
+        ensure_ascii=True,
+    )
 
 
 @tool
@@ -137,6 +140,7 @@ def _accumulate_payload(
     chunk_acc: list[dict[str, Any]],
     themes_holder: list[Any],
     author_stats_holder: list[Any],
+    themes_meta_holder: dict[str, Any],
     payload: dict[str, Any],
 ) -> None:
     kind = payload.get("kind")
@@ -151,6 +155,10 @@ def _accumulate_payload(
         if isinstance(items, list):
             themes_holder.clear()
             themes_holder.extend(items)
+        m = payload.get("meta")
+        if isinstance(m, dict):
+            themes_meta_holder.clear()
+            themes_meta_holder.update(m)
     elif kind == "author_stats":
         items = payload.get("items") or []
         if isinstance(items, list):
@@ -173,6 +181,7 @@ def run_evidence_agent(llm, question: str) -> dict[str, Any]:
     chunk_acc: list[dict[str, Any]] = []
     themes_holder: list[Any] = []
     author_stats_holder: list[Any] = []
+    themes_meta_holder: dict[str, Any] = {}
     tool_by_name = {t.name: t for t in DEVREOTES_RETRIEVAL_TOOLS}
     used_tools = False
 
@@ -200,7 +209,7 @@ def run_evidence_agent(llm, question: str) -> dict[str, Any]:
                 except Exception as exc:  # pragma: no cover - defensive
                     out = json.dumps({"kind": "error", "message": str(exc)})
             payload = _parse_tool_payload(out if isinstance(out, str) else str(out))
-            _accumulate_payload(chunk_acc, themes_holder, author_stats_holder, payload)
+            _accumulate_payload(chunk_acc, themes_holder, author_stats_holder, themes_meta_holder, payload)
             messages.append(ToolMessage(content=out if isinstance(out, str) else str(out), tool_call_id=tid))
 
     return {
@@ -208,5 +217,6 @@ def run_evidence_agent(llm, question: str) -> dict[str, Any]:
         "raw_chunks": chunk_acc,
         "themes": list(themes_holder) if themes_holder else None,
         "author_stats": list(author_stats_holder) if author_stats_holder else None,
+        "themes_meta": dict(themes_meta_holder) if themes_meta_holder else None,
         "tool_calls_log": tool_calls_log,
     }

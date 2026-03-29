@@ -5,6 +5,14 @@ export type DevreotesFinishBox = {
   bridgeError?: string
 }
 
+/** Backend metadata for corpus gene-frequency (themes) retrieval — ranked, capped, not full :Gene census. */
+export type DevreotesThemesMeta = {
+  themes_limit?: number
+  truncated?: boolean
+  metric?: string
+  sort?: string
+}
+
 export type DevreotesResult = {
   answer?: string
   query_type?: string
@@ -17,6 +25,7 @@ export type DevreotesResult = {
   abstain_reason?: string | null
   error?: string
   tool_calls_log?: Array<{ name?: string; args?: Record<string, unknown> }>
+  themes_meta?: DevreotesThemesMeta
 }
 
 /**
