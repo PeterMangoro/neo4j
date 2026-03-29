@@ -1,5 +1,6 @@
 -- Neon / Postgres schema for Nuxt chat persistence.
--- Run once in Neon SQL Editor (or psql) before using DATABASE_URL in production.
+-- Run this manually in Neon SQL Editor (or psql).
+-- Keep this OUTSIDE server/db/migrations so NuxtHub sqlite migrations do not execute it.
 
 CREATE TABLE IF NOT EXISTS users (
   id text PRIMARY KEY,
