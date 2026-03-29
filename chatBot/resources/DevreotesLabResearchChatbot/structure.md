@@ -7,7 +7,7 @@ This project now follows a notebook-style backend layout:
 - `backend/app/` → reusable backend modules
 - `backend/scripts/` → runnable entrypoints
 - `app.py` → Gradio UI (imports backend modules)
-- `nuxt-chat-interface/` → Nuxt UI frontend that calls backend through a Python bridge
+- `nuxt/` → Nuxt UI frontend that calls backend through a Python bridge
 
 Pipeline:
 
@@ -74,7 +74,7 @@ Run from this directory (`Devreotes Lab Research Chatbot/`) with your virtualenv
 6. **Ingest:** `python backend/scripts/run_ingest_papers.py`
 7. **Embeddings:** `python backend/scripts/run_create_embeddings.py`
 8. **LLM graph enrichment (Phase 5, optional):** `python backend/scripts/run_llm_graph_extract.py` (after embeddings; uses `OPENAI_API_KEY`; set `GRAPH_EXTRACT_LIMIT` as needed)
-9. **UI:** `python app.py` (Gradio) or `cd nuxt-chat-interface && pnpm dev` (Nuxt; set `DEVREOTES_PYTHON` if not using system `python3`). **Optional HTTP API (Nuxt):** from the Devreotes project root, `uvicorn backend.app.api_app:app --host 127.0.0.1 --port 8765` in a second terminal, then set `DEVREOTES_API_URL=http://127.0.0.1:8765` in the Nuxt environment (and matching `DEVREOTES_API_SECRET` if you configure one).
+9. **UI:** `python app.py` (Gradio) or `cd nuxt && pnpm dev` (Nuxt; set `DEVREOTES_PYTHON` if not using system `python3`). **Optional HTTP API (Nuxt):** from the Devreotes project root, `uvicorn backend.app.api_app:app --host 127.0.0.1 --port 8765` in a second terminal, then set `DEVREOTES_API_URL=http://127.0.0.1:8765` in the Nuxt environment (and matching `DEVREOTES_API_SECRET` if you configure one).
 
 Re-run from **step 3 (extract) through step 7 (embeddings)** after changing extraction or ingest logic so the graph stays consistent. For a **full empty DB**, run step 4 (`run_clear_graph.py --yes`) then **5 → 7**. After changing LLM extraction code, re-run step 8 or clear `Chunk.llm_extracted_at` in Neo4j to force re-extract.
 

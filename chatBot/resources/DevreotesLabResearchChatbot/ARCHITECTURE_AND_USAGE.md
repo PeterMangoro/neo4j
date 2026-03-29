@@ -269,7 +269,7 @@ Nothing here is “magic”: each tool solves one layer—**storage**, **text**,
 | Interface | Command | Audience |
 |-----------|-----------|----------|
 | **Gradio** | `python app.py` | Fast local demo, single-user. |
-| **Nuxt** | `cd nuxt-chat-interface && pnpm dev` | Richer chat UI, **streaming** responses; set `DEVREOTES_PYTHON` to your venv’s `python` if needed. |
+| **Nuxt** | `cd nuxt && pnpm dev` | Richer chat UI, **streaming** responses; set `DEVREOTES_PYTHON` to your venv’s `python` if needed. |
 
 Both ultimately call the same Python **brain** (`backend/app/chatbot.py`) for answers.
 
@@ -327,7 +327,7 @@ This section summarizes **agentic RAG**, the **Nuxt API**, **retrieval / decisio
 
 The Nuxt app does **not** reimplement retrieval in TypeScript. It gets answers by either:
 
-1. **Subprocess bridge** — `nuxt-chat-interface/server/python/devreotes_bridge.py` runs the same `chatbot.py` streaming entrypoint (`iter_answer_ndjson`), printing **NDJSON** lines to stdout. Configure the interpreter with **`DEVREOTES_PYTHON`** if needed.
+1. **Subprocess bridge** — `nuxt/server/python/devreotes_bridge.py` runs the same `chatbot.py` streaming entrypoint (`iter_answer_ndjson`), printing **NDJSON** lines to stdout. Configure the interpreter with **`DEVREOTES_PYTHON`** if needed.
 2. **HTTP API (optional)** — Run **`uvicorn backend.app.api_app:app`** (see `structure.md`), set **`DEVREOTES_API_URL`** in Nuxt’s env so Nitro calls **`POST /chat/stream`** instead of spawning Python each time. Shared secret optional: **`DEVREOTES_API_SECRET`** / header **`X-Devreotes-Key`**.
 
 The UI records which path was used in the trace as **`backend`: `bridge` | `http`**.
@@ -361,7 +361,7 @@ In the chat UI, **`DevreotesTracePanel.vue`** shows a collapsible **“Retrieval
 
 ### 11.6 Persistence (Nuxt / Hub)
 
-- Chat messages can be stored in the app database; assistant rows may include **`devreotes_trace`** (or snake_case **`devreotes_trace`**) so traces survive reloads. See server schema/migrations under `nuxt-chat-interface/server/db/`.
+- Chat messages can be stored in the app database; assistant rows may include **`devreotes_trace`** (or snake_case **`devreotes_trace`**) so traces survive reloads. See server schema/migrations under `nuxt/server/db/`.
 
 ### 11.7 Quick index (agent, API, trace, streaming)
 
@@ -372,13 +372,13 @@ Paths in this table are relative to **this project folder** (`DevreotesLabResear
 | RAG mode switch + streaming Q&A | `backend/app/chatbot.py` (`_rag_mode`, agent path, `iter_answer_ndjson`) |
 | Agent tools | `backend/app/agent_tools.py`, `run_evidence_agent` |
 | FastAPI stream (optional) | `backend/app/api_app.py` (per `structure.md`) |
-| Nuxt Devreotes route + stream | `nuxt-chat-interface/server/api/devreotes/chats/[id].post.ts`, `server/utils/devreotesNdjson.ts` |
-| Bridge subprocess | `nuxt-chat-interface/server/python/devreotes_bridge.py` |
-| Trace types | `nuxt-chat-interface/app/types/devreotes-trace.ts`, `server/types/devreotes-trace.ts` |
-| Trace UI | `nuxt-chat-interface/app/components/DevreotesTracePanel.vue` |
-| Client stream consumer | `nuxt-chat-interface/app/utils/devreotesSse.ts` |
-| Chat page (trace + citations) | `nuxt-chat-interface/app/pages/chat/[id].vue` |
-| Citation injection | `nuxt-chat-interface/app/utils/injectCitationMarkdown.ts`, `app/assets/css/main.css` (`.devreotes-cite`) |
+| Nuxt Devreotes route + stream | `nuxt/server/api/devreotes/chats/[id].post.ts`, `server/utils/devreotesNdjson.ts` |
+| Bridge subprocess | `nuxt/server/python/devreotes_bridge.py` |
+| Trace types | `nuxt/app/types/devreotes-trace.ts`, `server/types/devreotes-trace.ts` |
+| Trace UI | `nuxt/app/components/DevreotesTracePanel.vue` |
+| Client stream consumer | `nuxt/app/utils/devreotesSse.ts` |
+| Chat page (trace + citations) | `nuxt/app/pages/chat/[id].vue` |
+| Citation injection | `nuxt/app/utils/injectCitationMarkdown.ts`, `app/assets/css/main.css` (`.devreotes-cite`) |
 
 ---
 
@@ -392,7 +392,7 @@ Paths in this table are relative to **this project folder** (`DevreotesLabResear
 | Embeddings | `backend/app/create_embeddings.py` |
 | Search & routes | `backend/app/retrieval.py`, `backend/app/router.py` |
 | Q&A + streaming path | `backend/app/chatbot.py` |
-| Nuxt → Python | `nuxt-chat-interface/server/python/devreotes_bridge.py` |
+| Nuxt → Python | `nuxt/server/python/devreotes_bridge.py` |
 | Env template | `.env.example` |
 | Run order | `structure.md` |
 

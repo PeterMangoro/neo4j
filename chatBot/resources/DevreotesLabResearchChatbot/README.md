@@ -9,7 +9,7 @@ GraphRAG-style Q&A over a PDF corpus: papers and chunks live in **Neo4j** (with 
 - **Python** 3.10+ (3.12 works with the pinned stack)
 - **Neo4j** locally (`bolt://127.0.0.1:7687`) or **Neo4j Aura** (`neo4j+s://…`)
 - **OpenAI API key** for the chatbot (and optional Phase 5 extraction)
-- **Node.js + pnpm** if you use the Nuxt UI (`nuxt-chat-interface/`)
+- **Node.js + pnpm** if you use the Nuxt UI (`nuxt/`)
 
 ---
 
@@ -101,7 +101,7 @@ python app.py
 **Nuxt (streaming chat UI)**
 
 ```bash
-cd nuxt-chat-interface
+cd nuxt
 pnpm install
 pnpm dev
 ```

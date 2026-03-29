@@ -123,7 +123,7 @@ flowchart TB
 
 ## Slide 5 — Nuxt demo path (what you show on screen)
 
-1. Start from `nuxt-chat-interface/`: `pnpm dev` (after `pnpm install` and `pnpm db:migrate`).  
+1. Start from `nuxt/`: `pnpm dev` (after `pnpm install` and `pnpm db:migrate`).  
 2. Set **`DEVREOTES_PYTHON`** to your venv’s `python` so the bridge finds `chatbot.py` and dependencies.  
 3. Backend: `NEO4J_*`, `OPENAI_API_KEY` in the Devreotes project `.env` (see `.env.example`).  
 
