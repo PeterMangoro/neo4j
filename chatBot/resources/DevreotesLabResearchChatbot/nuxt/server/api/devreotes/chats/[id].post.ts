@@ -1,5 +1,5 @@
 import { createUIMessageStream, createUIMessageStreamResponse } from 'ai'
-import { db, schema } from '~/server/utils/db'
+import { db, schema } from '../../../utils/db'
 import { and, eq } from 'drizzle-orm'
 import { randomUUID } from 'node:crypto'
 import { spawn } from 'node:child_process'

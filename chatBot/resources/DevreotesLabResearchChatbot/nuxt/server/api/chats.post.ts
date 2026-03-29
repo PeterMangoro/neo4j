@@ -1,5 +1,5 @@
 import type { UIMessage } from 'ai'
-import { db, schema } from '~/server/utils/db'
+import { db, schema } from '../utils/db'
 import { z } from 'zod'
 
 export default defineEventHandler(async (event) => {
