@@ -41,6 +41,27 @@ function devreotesSourcesCacheKey(msg: ChatMessage): string {
   return s?.length ? s.join('\u0001') : ''
 }
 
+function partStateSuffix(part: unknown): string {
+  if (!part || typeof part !== 'object') {
+    return ''
+  }
+  if (!('state' in part)) {
+    return ''
+  }
+  const s = (part as { state?: unknown }).state
+  return typeof s === 'string' && s.length ? `-${s}` : ''
+}
+
+function isPartStreaming(part: unknown): boolean {
+  if (!part || typeof part !== 'object') {
+    return false
+  }
+  if (!('state' in part)) {
+    return false
+  }
+  return (part as { state?: unknown }).state !== 'done'
+}
+
 const components = {
   pre: ProseStreamPre as unknown as DefineComponent
 }
@@ -281,11 +302,11 @@ function copy(e: MouseEvent, message: ChatMessage) {
             class="lg:pt-(--ui-header-height) pb-4 sm:pb-6"
           >
             <template #content="{ message }">
-              <template v-for="(part, index) in message.parts" :key="`${message.id}-${part.type}-${index}${'state' in part ? `-${part.state}` : ''}`">
+              <template v-for="(part, index) in message.parts" :key="`${message.id}-${part.type}-${index}${partStateSuffix(part)}`">
                 <Reasoning
                   v-if="part.type === 'reasoning'"
                   :text="part.text"
-                  :is-streaming="part.state !== 'done'"
+                  :is-streaming="isPartStreaming(part)"
                 />
                 <!-- Only render markdown for assistant messages to prevent XSS from user input -->
                 <MDCCached
