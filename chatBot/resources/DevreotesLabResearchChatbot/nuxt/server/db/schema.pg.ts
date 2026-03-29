@@ -7,7 +7,7 @@ const timestamps = {
 }
 
 export const users = pgTable('users', {
-  id: text('id').primaryKey(),
+  id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
   email: text('email').notNull(),
   name: text('name').notNull(),
   avatar: text('avatar').notNull(),
@@ -24,7 +24,7 @@ export const usersRelations = relations(users, ({ many }) => ({
 }))
 
 export const chats = pgTable('chats', {
-  id: text('id').primaryKey(),
+  id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
   title: text('title'),
   userId: text('user_id').notNull(),
   ...timestamps
@@ -41,7 +41,7 @@ export const chatsRelations = relations(chats, ({ one, many }) => ({
 }))
 
 export const messages = pgTable('messages', {
-  id: text('id').primaryKey(),
+  id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
   chatId: text('chat_id').notNull().references(() => chats.id, { onDelete: 'cascade' }),
   role: text('role').notNull(),
   parts: text('parts'),
