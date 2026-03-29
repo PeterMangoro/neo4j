@@ -1,5 +1,5 @@
 import { relations } from 'drizzle-orm'
-import { index, pgTable, text, timestamp, uniqueIndex } from 'drizzle-orm/pg-core'
+import { index, jsonb, pgTable, text, timestamp, uniqueIndex } from 'drizzle-orm/pg-core'
 import type { DevreotesTrace } from '../types/devreotes-trace'
 
 const timestamps = {
@@ -44,8 +44,9 @@ export const messages = pgTable('messages', {
   id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
   chatId: text('chat_id').notNull().references(() => chats.id, { onDelete: 'cascade' }),
   role: text('role').notNull(),
-  parts: text('parts'),
-  devreotesTrace: text('devreotes_trace').$type<DevreotesTrace | null>(),
+  /** Must be JSON (array of UI parts); plain `text` breaks Nuxt UI which expects `.filter` on parts. */
+  parts: jsonb('parts').$type<unknown[]>(),
+  devreotesTrace: jsonb('devreotes_trace').$type<DevreotesTrace | null>(),
   ...timestamps
 }, table => [
   index('messages_chat_id_idx').on(table.chatId)

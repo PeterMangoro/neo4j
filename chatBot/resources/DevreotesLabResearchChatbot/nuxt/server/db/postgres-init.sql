@@ -28,8 +28,8 @@ CREATE TABLE IF NOT EXISTS messages (
   id text PRIMARY KEY,
   chat_id text NOT NULL REFERENCES chats(id) ON DELETE CASCADE,
   role text NOT NULL,
-  parts text,
-  devreotes_trace text,
+  parts jsonb,
+  devreotes_trace jsonb,
   created_at timestamptz NOT NULL DEFAULT now()
 );
 
