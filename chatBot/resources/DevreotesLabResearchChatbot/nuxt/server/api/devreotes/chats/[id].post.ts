@@ -1,6 +1,6 @@
-import { createUIMessageStream, createUIMessageStreamResponse } from 'ai'
+import { createUIMessageStream, createUIMessageStreamResponse, generateText } from 'ai'
 import { db, schema } from '../../../utils/db'
-import { and, eq } from 'drizzle-orm'
+import { and, asc, eq } from 'drizzle-orm'
 import { randomUUID } from 'node:crypto'
 import { spawn } from 'node:child_process'
 import readline from 'node:readline'
@@ -29,7 +29,12 @@ export default defineEventHandler(async (event) => {
     where: () => and(
       eq(schema.chats.id, id as string),
       eq(schema.chats.userId, session.user?.id || session.id)
-    )
+    ),
+    with: {
+      messages: {
+        orderBy: () => asc(schema.messages.createdAt)
+      }
+    }
   })
   if (!chat) {
     throw createError({ statusCode: 404, statusMessage: 'Chat not found' })
@@ -42,6 +47,52 @@ export default defineEventHandler(async (event) => {
       parts: [{ type: 'text', text: message }]
     })
   }
+
+  // Build conversational history (summary + last N turns) from stored messages.
+  const CONVERSATION_RECENT_TURNS = Number.parseInt(process.env.DEVREOTES_CONVERSATION_RECENT_TURNS || '10', 10) || 10
+
+  const historyMessages = (chat.messages || []).map((m) => {
+    let parts: any = m.parts
+    if (typeof parts === 'string') {
+      try {
+        parts = JSON.parse(parts)
+      } catch {
+        parts = []
+      }
+    }
+    if (!Array.isArray(parts)) {
+      parts = []
+    }
+    const text = parts
+      .filter(p => p && typeof p === 'object' && p.type === 'text' && typeof p.text === 'string')
+      .map(p => p.text as string)
+      .join('\n\n')
+      .trim()
+
+    if (!text) {
+      return null
+    }
+    return {
+      role: m.role,
+      content: text
+    }
+  }).filter(Boolean) as Array<{ role: string, content: string }>
+
+  const recentHistory = historyMessages.slice(-CONVERSATION_RECENT_TURNS)
+
+  const MAX_SUMMARY_CHARS = Number.parseInt(process.env.DEVREOTES_SUMMARY_MAX_CHARS || '1500', 10) || 1500
+  const previousSummary = (chat.summary || '').trim()
+  const deterministicFallbackSummary = (() => {
+    // Deterministic fallback: keep a rolling window of recent conversation text.
+    const summarySource = historyMessages.slice(0, Math.max(0, historyMessages.length - 1))
+    const summaryText = summarySource
+      .map(m => `${m.role.toUpperCase()}: ${m.content}`)
+      .join('\n\n')
+    const combined = (previousSummary ? `${previousSummary}\n\n` : '') + summaryText
+    return combined.slice(-MAX_SUMMARY_CHARS).trim() || null
+  })()
+  // Summary we send *with this request* (computed before assistant answer exists).
+  const summaryForRequest = deterministicFallbackSummary
 
   const stream = createUIMessageStream({
     execute: async ({ writer }) => {
@@ -74,7 +125,11 @@ export default defineEventHandler(async (event) => {
         const res = await fetch(url, {
           method: 'POST',
           headers,
-          body: JSON.stringify({ message })
+          body: JSON.stringify({
+            message,
+            summary: summaryForRequest,
+            messages: recentHistory
+          })
         })
         if (!res.ok) {
           const errText = await res.text().catch(() => '')
@@ -139,6 +194,7 @@ export default defineEventHandler(async (event) => {
             }
           })
 
+          // Legacy bridge path: only the plain question string is sent.
           proc.stdin.write(message)
           proc.stdin.end()
         })
@@ -163,6 +219,44 @@ export default defineEventHandler(async (event) => {
         parts: [{ type: 'text', text: answer }],
         devreotesTrace: buildDevreotesTrace(finishResult, traceBackend)
       })
+
+      // LLM-based rolling summary update (per thread).
+      // Goal: a compact state representation for follow-up resolution, not corpus evidence.
+      let nextSummary: string | null = deterministicFallbackSummary
+      try {
+        const model = process.env.DEVREOTES_SUMMARY_MODEL || 'openai/gpt-4o-mini'
+        const transcript = [...recentHistory, { role: 'assistant', content: answer }]
+          .map(m => `${m.role.toUpperCase()}: ${m.content}`)
+          .join('\n\n')
+
+        const { text } = await generateText({
+          model,
+          system:
+            'You update a short conversation summary for a research-chat thread. ' +
+            'This summary is ONLY for reference resolution in future turns, not for answering from corpus evidence. ' +
+            'Do not add citations, do not invent facts, and do not introduce new scientific claims. ' +
+            'Keep it concise, focusing on: user intent, key entities mentioned (genes/authors/papers), and any constraints (corpus-only).',
+          prompt:
+            `Previous summary (may be empty):\n${previousSummary || '(empty)'}\n\n` +
+            `Recent turns:\n${transcript}\n\n` +
+            `Write an updated summary in plain text (no headings, no markdown), ` +
+            `max ${MAX_SUMMARY_CHARS} characters.`,
+          maxTokens: 400
+        })
+        const cleaned = (text || '').trim()
+        if (cleaned) {
+          nextSummary = cleaned.slice(0, MAX_SUMMARY_CHARS).trim() || nextSummary
+        }
+      } catch {
+        // Keep deterministic fallback.
+      }
+
+      // Persist updated summary for this thread.
+      if (nextSummary !== null) {
+        await db.update(schema.chats)
+          .set({ summary: nextSummary })
+          .where(eq(schema.chats.id, id as string))
+      }
 
       if (!chat.title) {
         await db.update(schema.chats)

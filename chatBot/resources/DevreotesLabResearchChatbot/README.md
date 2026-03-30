@@ -117,6 +117,25 @@ uvicorn backend.app.api_app:app --host 127.0.0.1 --port 8765
 
 Then set `DEVREOTES_API_URL=http://127.0.0.1:8765` in the Nuxt environment.
 
+### Conversational thread memory
+
+The Nuxt Devreotes route now supports **within-thread conversational context** when using the
+FastAPI path (`DEVREOTES_API_URL`):
+
+- Sends `messages` (recent turns, default last **10**) and `summary` with each `/chat/stream` call.
+- Persists a per-chat `chats.summary` value in the app DB.
+- Uses an LLM summary updater after each assistant response (with deterministic fallback).
+
+Useful env knobs:
+
+| Variable | Default | Purpose |
+|----------|---------|---------|
+| `DEVREOTES_CONVERSATION_RECENT_TURNS` | `10` | Number of recent turns sent as context (`messages`) |
+| `DEVREOTES_SUMMARY_MAX_CHARS` | `1500` | Max persisted summary length |
+| `DEVREOTES_SUMMARY_MODEL` | `openai/gpt-4o-mini` | Model used to update thread summary |
+
+> Note: bridge mode (`devreotes_bridge.py` without `DEVREOTES_API_URL`) remains plain-question input and does not yet pass structured history.
+
 ---
 
 ## More detail

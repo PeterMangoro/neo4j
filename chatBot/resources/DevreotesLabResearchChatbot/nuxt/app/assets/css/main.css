@@ -2,7 +2,12 @@
 @import "@nuxt/ui";
 
 @theme static {
-  --font-sans: 'Public Sans', sans-serif;
+  --font-sans: 'DM Sans', 'Public Sans', system-ui, sans-serif;
+  --font-devreotes-display: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+}
+
+@utility font-devreotes-display {
+  font-family: var(--font-devreotes-display);
 }
 
 @layer base {
@@ -82,4 +87,19 @@
 .devreotes-cite:focus-visible {
   outline: 2px solid color-mix(in oklab, var(--ui-primary) 45%, transparent);
   outline-offset: 2px;
+}
+
+@keyframes devreotes-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.devreotes-welcome {
+  animation: devreotes-fade-up 0.5s ease both;
 }

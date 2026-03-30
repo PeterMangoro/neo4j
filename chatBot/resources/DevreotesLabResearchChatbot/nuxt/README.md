@@ -21,6 +21,7 @@ Full-featured AI Chatbot Nuxt application with authentication, chat history, mul
 - 🤖 **Multiple model support** via various AI providers with built-in AI Gateway support
 - 🔐 **Authentication** via [nuxt-auth-utils](https://github.com/atinux/nuxt-auth-utils)
 - 💾 **Chat history persistence** using SQLite database (Turso in production) and [Drizzle ORM](https://orm.drizzle.team)
+- 🧠 **Thread conversational memory** (Devreotes mode): sends recent turns + rolling summary to FastAPI (`/chat/stream`)
 - 🚀 **Easy deploy** to Vercel with zero configuration
 
 ## Quick Start
@@ -107,6 +108,20 @@ Start the development server on `http://localhost:3000`:
 ```bash
 pnpm dev
 ```
+
+### Devreotes conversational properties
+
+When `DEVREOTES_API_URL` is configured for the Devreotes backend integration, the server route
+`/api/devreotes/chats/:id` sends:
+
+- `messages`: last `N` text turns (default `DEVREOTES_CONVERSATION_RECENT_TURNS=10`)
+- `summary`: rolling thread summary (`chats.summary`)
+
+Summary behavior:
+
+- Updated after each assistant response using `DEVREOTES_SUMMARY_MODEL` (default `openai/gpt-4o-mini`)
+- Truncated to `DEVREOTES_SUMMARY_MAX_CHARS` (default `1500`)
+- Falls back to deterministic rolling text summary if summarization fails
 
 ## Production
 

@@ -26,6 +26,8 @@ export const usersRelations = relations(users, ({ many }) => ({
 export const chats = pgTable('chats', {
   id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
   title: text('title'),
+  /** Optional running conversational summary for this chat thread. */
+  summary: text('summary'),
   userId: text('user_id').notNull(),
   ...timestamps
 }, table => [

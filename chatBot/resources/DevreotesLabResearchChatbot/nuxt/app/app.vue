@@ -18,8 +18,9 @@ useHead({
   }
 })
 
-const title = 'Nuxt AI Chatbot template'
-const description = 'A full-featured, hackable Nuxt AI chatbot template made with Nuxt UI.'
+const title = 'Devreotes Lab · Research Intelligence'
+const description
+  = 'Research assistant for Prof. Peter Devreotes\' lab at Johns Hopkins — chemotaxis, signal transduction, cell polarity, and excitable networks. Answers are grounded in the corpus.'
 
 useSeoMeta({
   title,

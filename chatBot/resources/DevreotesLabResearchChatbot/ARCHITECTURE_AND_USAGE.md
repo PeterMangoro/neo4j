@@ -109,6 +109,8 @@ flowchart TB
 
 **How to read it:** **Offline** jobs populate **Neo4j** once (or after corpus changes). At **question time**, either **Gradio** calls `chatbot.py` in-process, or the **Nuxt** route streams an answer via the **bridge** subprocess or, if configured, the **FastAPI** service. **Router** vs **agent** mode is decided inside `chatbot.py` (`DEVREOTES_RAG_MODE`). **Retrieval** always reads the graph/vector index; the **LLM** only sees retrieved text plus the user question.
 
+**Conversational context (thread scope):** On the Nuxt → FastAPI path, the request may include `summary` and recent `messages` (default last 10 turns). Python uses this context to resolve follow-ups (pronouns, references) while keeping evidence grounded in retrieved corpus passages.
+
 ---
 
 ## 3. Step-by-step: what runs when (offline vs online)
@@ -332,6 +334,26 @@ The Nuxt app does **not** reimplement retrieval in TypeScript. It gets answers b
 
 The UI records which path was used in the trace as **`backend`: `bridge` | `http`**.
 
+### 11.2.1 Conversational properties (Nuxt app thread memory)
+
+When **`DEVREOTES_API_URL`** is set, Nuxt sends these additional properties to FastAPI:
+
+- `summary`: rolling per-thread summary from `chats.summary`
+- `messages`: recent turns (`[{ role, content }]`, default last 10)
+
+Nuxt updates the stored summary after each assistant response using an LLM summarizer
+(`DEVREOTES_SUMMARY_MODEL`, default `openai/gpt-4o-mini`) with deterministic fallback.
+
+Key knobs:
+
+| Variable | Default | Meaning |
+|----------|---------|---------|
+| `DEVREOTES_CONVERSATION_RECENT_TURNS` | `10` | Number of recent turns sent in `messages` |
+| `DEVREOTES_SUMMARY_MAX_CHARS` | `1500` | Summary truncation cap |
+| `DEVREOTES_SUMMARY_MODEL` | `openai/gpt-4o-mini` | Summary updater model |
+
+Bridge mode remains plain-question stdin and does not carry structured `summary/messages`.
+
 ### 11.3 Streaming protocol (NDJSON + AI SDK UI stream)
 
 - The Python side yields lines like **`{"type":"delta","text":"..."}`** and a final **`{"type":"finish","result":{...}}`** (see `chatbot.py` and `server/utils/devreotesNdjson.ts` in the Nuxt app).
@@ -369,10 +391,10 @@ Paths in this table are relative to **this project folder** (`DevreotesLabResear
 
 | Topic | Location |
 |--------|-----------|
-| RAG mode switch + streaming Q&A | `backend/app/chatbot.py` (`_rag_mode`, agent path, `iter_answer_ndjson`) |
+| RAG mode switch + streaming Q&A + chat history support | `backend/app/chatbot.py` (`_rag_mode`, history-aware `_prepare_generation*`, `iter_answer_ndjson`) |
 | Agent tools | `backend/app/agent_tools.py`, `run_evidence_agent` |
-| FastAPI stream (optional) | `backend/app/api_app.py` (per `structure.md`) |
-| Nuxt Devreotes route + stream | `nuxt/server/api/devreotes/chats/[id].post.ts`, `server/utils/devreotesNdjson.ts` |
+| FastAPI stream (optional) + history payload (`summary`, `messages`) | `backend/app/api_app.py` (per `structure.md`) |
+| Nuxt Devreotes route + stream + summary persistence | `nuxt/server/api/devreotes/chats/[id].post.ts`, `server/utils/devreotesNdjson.ts` |
 | Bridge subprocess | `nuxt/server/python/devreotes_bridge.py` |
 | Trace types | `nuxt/app/types/devreotes-trace.ts`, `server/types/devreotes-trace.ts` |
 | Trace UI | `nuxt/app/components/DevreotesTracePanel.vue` |

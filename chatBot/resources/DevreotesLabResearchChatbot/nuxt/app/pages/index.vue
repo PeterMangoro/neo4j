@@ -105,12 +105,26 @@ const quickChats = [
         <DragDropOverlay :show="isDragging" />
 
         <UContainer class="flex-1 flex flex-col justify-center gap-4 sm:gap-6 py-8">
-          <h1 class="text-3xl sm:text-4xl text-highlighted font-bold">
-            How can I help you today?
-          </h1>
+          <div class="text-center max-w-[460px] mx-auto devreotes-welcome">
+            <span class="text-5xl block mb-5" aria-hidden="true">🧬</span>
+            <h1
+              class="text-2xl sm:text-[28px] leading-tight text-highlighted font-devreotes-display mb-3"
+            >
+              Ask the Research Corpus
+            </h1>
+            <p class="text-sm text-muted leading-relaxed">
+              This assistant answers questions about Prof. Peter Devreotes&apos; lab research at
+              Johns Hopkins — chemotaxis, signal transduction, cell polarity, and excitable networks.
+              Responses cite only the loaded papers.
+            </p>
+            <p class="text-sm text-muted leading-relaxed mt-4">
+              Type a question below or pick a suggested query.
+            </p>
+          </div>
 
           <UChatPrompt
             v-model="input"
+            placeholder="Ask about Prof. Devreotes' research…"
             :status="loading ? 'streaming' : 'ready'"
             :disabled="isUploading"
             class="[view-transition-name:chat-prompt]"

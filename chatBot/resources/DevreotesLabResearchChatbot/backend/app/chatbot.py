@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+from typing import Any
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
 
@@ -38,8 +39,64 @@ SYSTEM_PROMPT = (
     "You answer questions based ONLY on the provided research papers from the lab corpus. "
     "Do not use outside knowledge. If the answer is not in the provided context, say so clearly. "
     "Be concise and scientifically precise. "
+    "The conversation context may be included to resolve references between turns; treat it only as context, not as evidence. "
     "Every substantive claim must cite one or more numbered passages in square brackets like [1] or [2]."
 )
+
+CONVERSATION_RECENT_TURNS = int(os.getenv("DEVREOTES_CONVERSATION_RECENT_TURNS", "10"))
+
+
+def _extract_chat_history(chat_history: Any):
+    """
+    Supported shapes:
+      - None
+      - { summary: str | None, messages: list[{role, content}] | None }
+      - messages: list[{role, content}]
+    """
+    if chat_history is None:
+        return None, None
+    if isinstance(chat_history, dict):
+        return chat_history.get("summary"), chat_history.get("messages")
+    return None, chat_history
+
+
+def _format_conversation_context(summary: str | None, messages: Any) -> str:
+    parts: list[str] = []
+    if isinstance(summary, str):
+        s = summary.strip()
+        if s:
+            parts.append(f"Conversation summary:\n{s}")
+
+    if messages is not None:
+        try:
+            recent = list(messages)[-CONVERSATION_RECENT_TURNS:]
+        except TypeError:
+            recent = []
+
+        turn_lines: list[str] = []
+        for m in recent:
+            if not isinstance(m, dict):
+                continue
+            role = m.get("role") or "user"
+            content = m.get("content")
+            if not isinstance(content, str):
+                continue
+            content = content.strip()
+            if not content:
+                continue
+            turn_lines.append(f"{str(role).title()}: {content}")
+
+        if turn_lines:
+            parts.append("Recent turns:\n" + "\n".join(turn_lines))
+
+    return "\n\n".join(parts)
+
+
+def _build_retrieval_question(user_question: str, conversation_context: str) -> str:
+    user_question = (user_question or "").strip()
+    if not conversation_context:
+        return user_question
+    return f"{conversation_context}\n\nCurrent user question: {user_question}"
 
 
 def _query_type_label(effective: str) -> str:
@@ -289,13 +346,17 @@ def _themes_disclosure_prompt(meta: dict | None) -> str:
     return " ".join(parts)
 
 
-def _prepare_generation_router(question: str):
+def _prepare_generation_router(question: str, chat_history=None):
     """
     Rule-based routing + retrieval + prompt construction.
     Returns either {abstain: True, result: dict} or {abstain: False, messages, results, effective_query_type, routed_key}.
     """
-    query_type = classify_query(question)
-    if query_type == "author" and is_author_stats_query(question):
+    summary, recent_messages = _extract_chat_history(chat_history)
+    conversation_context = _format_conversation_context(summary, recent_messages)
+    retrieval_question = _build_retrieval_question(question, conversation_context)
+
+    query_type = classify_query(retrieval_question)
+    if query_type == "author" and is_author_stats_query(retrieval_question):
         query_type = "author_stats"
         _log("[Router] Promoted author → author_stats (aggregate wording)")
     _log(f"[Router] Query type: {query_type}")
@@ -303,7 +364,7 @@ def _prepare_generation_router(question: str):
     routed_key = None
     effective_query_type = query_type
     if query_type == "gene":
-        gene = extract_gene_from_question(question, hgnc_lookup)
+        gene = extract_gene_from_question(retrieval_question, hgnc_lookup)
         if gene:
             routed_key = gene
             _log(f"[Graph] Gene route for '{gene}'")
@@ -312,7 +373,7 @@ def _prepare_generation_router(question: str):
             effective_query_type = "semantic"
             _log("[Graph] Gene route fell back to semantic retrieval")
     elif query_type == "author":
-        author = extract_author_from_question(question) or "Devreotes"
+        author = extract_author_from_question(retrieval_question) or "Devreotes"
         routed_key = author
         _log(f"[Graph] Author route for '{author}'")
     elif query_type == "author_stats":
@@ -326,7 +387,7 @@ def _prepare_generation_router(question: str):
         _log("[Vector] Semantic route")
 
     retrieved = _retrieve_or_abstain(
-        question,
+        retrieval_question,
         effective_query_type,
         routed_key if query_type not in ("themes", "author_stats") else None,
     )
@@ -367,6 +428,12 @@ def _prepare_generation_router(question: str):
         }
 
     context = build_context(results, effective_query_type)
+    conversation_prefix = (
+        "Conversation context (for reference resolution only):\n"
+        f"{conversation_context}\n\n"
+        if conversation_context
+        else ""
+    )
 
     if effective_query_type == "themes":
         user_block = (
@@ -374,6 +441,7 @@ def _prepare_generation_router(question: str):
             "---\n"
             f"{context}\n"
             "---\n\n"
+            f"{conversation_prefix}"
             f"Question: {question}\n\n"
             "Answer only using the statistics above. Cite each statistic you rely on as [n]. "
             "Do not invent qualitative research themes that are not supported by these counts."
@@ -387,6 +455,7 @@ def _prepare_generation_router(question: str):
             "---\n"
             f"{context}\n"
             "---\n\n"
+            f"{conversation_prefix}"
             f"Question: {question}\n\n"
             "Answer only using the rows above. Cite each row you use as [n]. "
             "If the question asks who appears on multiple papers, list authors with paper_count ≥ 2."
@@ -397,6 +466,7 @@ def _prepare_generation_router(question: str):
             "---\n"
             f"{context}\n"
             "---\n\n"
+            f"{conversation_prefix}"
             f"Question: {question}\n\n"
             "Answer only from the passages above. Cite supporting passages as [n]."
         )
@@ -417,16 +487,26 @@ def _prepare_generation_router(question: str):
     return out
 
 
-def _prepare_generation_agent(question: str):
+def _prepare_generation_agent(question: str, chat_history=None):
+    summary, recent_messages = _extract_chat_history(chat_history)
+    conversation_context = _format_conversation_context(summary, recent_messages)
+    retrieval_question = _build_retrieval_question(question, conversation_context)
+    conversation_prefix = (
+        "Conversation context (for reference resolution only):\n"
+        f"{conversation_context}\n\n"
+        if conversation_context
+        else ""
+    )
+
     _log("[Agent] DEVREOTES_RAG_MODE=agent")
-    ev = run_evidence_agent(llm, question)
+    ev = run_evidence_agent(llm, retrieval_question)
     tool_calls_log = ev["tool_calls_log"]
     themes_meta = ev.get("themes_meta")
     extras = {"tool_calls_log": tool_calls_log}
 
     if not ev["used_tools"]:
         _log("[Agent] No tool calls; falling back to router")
-        return _prepare_generation_router(question)
+        return _prepare_generation_router(question, chat_history=chat_history)
 
     themes = ev["themes"] if ev["themes"] else None
     author_stats = ev.get("author_stats") if ev.get("author_stats") else None
@@ -476,11 +556,18 @@ def _prepare_generation_agent(question: str):
                 "themes",
             )
         context = build_context(results, "themes")
+        conversation_prefix = (
+            "Conversation context (for reference resolution only):\n"
+            f"{conversation_context}\n\n"
+            if conversation_context
+            else ""
+        )
         user_block = (
             "Numbered gene mention statistics derived from the graph:\n"
             "---\n"
             f"{context}\n"
             "---\n\n"
+            f"{conversation_prefix}"
             f"Question: {question}\n\n"
             "Answer only using the statistics above. Cite each statistic you rely on as [n]. "
             "Do not invent qualitative research themes that are not supported by these counts."
@@ -511,11 +598,18 @@ def _prepare_generation_agent(question: str):
                 "author_stats",
             )
         context = build_context(results, "author_stats")
+        conversation_prefix = (
+            "Conversation context (for reference resolution only):\n"
+            f"{conversation_context}\n\n"
+            if conversation_context
+            else ""
+        )
         user_block = (
             "Numbered author–publication counts derived from the graph (:Author)-[:AUTHORED]->(:Paper):\n"
             "---\n"
             f"{context}\n"
             "---\n\n"
+            f"{conversation_prefix}"
             f"Question: {question}\n\n"
             "Answer only using the rows above. Cite each row as [n]."
         )
@@ -532,12 +626,19 @@ def _prepare_generation_agent(question: str):
     if not merged and themes and author_stats:
         gctx = build_context(themes, "themes")
         actx = build_context(author_stats, "author_stats")
+        conversation_prefix = (
+            "Conversation context (for reference resolution only):\n"
+            f"{conversation_context}\n\n"
+            if conversation_context
+            else ""
+        )
         user_block = (
             "Two graph statistics sections:\n"
             "---\n"
             f"{gctx}\n\n"
             f"{actx}\n"
             "---\n\n"
+            f"{conversation_prefix}"
             f"Question: {question}\n\n"
             "Answer using only the sections above. Cite gene lines and author lines as [n] by their bracket numbers."
         )
@@ -600,6 +701,7 @@ def _prepare_generation_agent(question: str):
             + "\n\n".join(extra_sections)
             + "\n\n=== Numbered passages from papers ===\n---\n"
             f"{chunk_ctx}\n---\n\n"
+            f"{conversation_prefix}"
             f"Question: {question}\n\n"
             "Answer only from the sections above. Do not use outside knowledge."
         )
@@ -612,6 +714,7 @@ def _prepare_generation_agent(question: str):
         user_block = (
             "Numbered passages from Prof. Devreotes' papers:\n---\n"
             f"{context}\n---\n\n"
+            f"{conversation_prefix}"
             f"Question: {question}\n\n"
             "Answer only from the passages above. Cite supporting passages as [n]."
         )
@@ -631,10 +734,10 @@ def _prepare_generation_agent(question: str):
     return out
 
 
-def _prepare_generation(question: str):
+def _prepare_generation(question: str, chat_history=None):
     if _rag_mode() == "agent":
-        return _prepare_generation_agent(question)
-    return _prepare_generation_router(question)
+        return _prepare_generation_agent(question, chat_history=chat_history)
+    return _prepare_generation_router(question, chat_history=chat_history)
 
 
 def _stream_chunk_text(chunk) -> str:
@@ -652,9 +755,9 @@ def _stream_chunk_text(chunk) -> str:
     return ""
 
 
-def iter_answer_ndjson(question: str):
+def iter_answer_ndjson(question: str, chat_history=None):
     """Yield NDJSON lines (stdout only) for the streaming bridge: delta + finish."""
-    state = _prepare_generation(question)
+    state = _prepare_generation(question, chat_history=chat_history)
     if state["abstain"]:
         res = state["result"]
         yield json.dumps({"type": "delta", "text": res["answer"]}) + "\n"
@@ -695,7 +798,7 @@ def iter_answer_ndjson(question: str):
 
 
 def answer_question_with_metadata(question: str, chat_history=None) -> dict:
-    state = _prepare_generation(question)
+    state = _prepare_generation(question, chat_history=chat_history)
     if state["abstain"]:
         return state["result"]
 

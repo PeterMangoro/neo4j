@@ -132,6 +132,7 @@ flowchart TB
 - **Streaming** assistant text  
 - **Citations** `[n]` with tooltips (title / source)  
 - **Retrieval trace** (collapsible): route, counts, `retrieval_preview`, `sources`  
+- **Thread memory (HTTP path):** recent turns + rolling summary for follow-up questions
 
 ---
 
@@ -159,6 +160,21 @@ flowchart TD
 
 - **router (default):** one route, one retrieval pass — predictable for demos.  
 - **agent:** model may call multiple tools (`semantic_search`, `gene_literature_search`, …) before answering.
+
+**Conversation behavior:** within a chat thread, Nuxt sends the last **10** turns (`messages`) plus a rolling `summary` to FastAPI; backend uses it for reference resolution while still citing retrieved corpus evidence.
+
+---
+
+## Slide 6.5 — Conversational properties (thread scope)
+
+| Property | Value / default | Notes |
+|----------|------------------|-------|
+| `messages` | Last `N` turns (`N=10`) | Sent by Nuxt to `POST /chat/stream` (FastAPI path) |
+| `summary` | `chats.summary` (rolling) | Updated after each assistant response |
+| Summary model | `openai/gpt-4o-mini` | Configurable via `DEVREOTES_SUMMARY_MODEL` |
+| Max summary length | `1500` chars | `DEVREOTES_SUMMARY_MAX_CHARS` |
+
+Bridge mode (`devreotes_bridge.py`) remains plain-question stdin and does not send structured history.
 
 ---
 

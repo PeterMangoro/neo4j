@@ -8,6 +8,7 @@ Run from project root:
 from __future__ import annotations
 
 import os
+from typing import Optional
 
 from fastapi import FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -52,8 +53,17 @@ def health(
     return {"ok": True}
 
 
+class ChatTurn(BaseModel):
+    role: str
+    content: str
+
+
 class MessageBody(BaseModel):
     message: str = Field(..., min_length=1)
+    # Optional conversational context for multi-turn support.
+    # These fields are ignored by the backend if not provided.
+    summary: Optional[str] = None
+    messages: Optional[list[ChatTurn]] = None
 
 
 @app.post("/chat/stream")
@@ -64,8 +74,17 @@ def chat_stream(
     _check_api_secret(x_devreotes_key)
     from .chatbot import iter_answer_ndjson
 
+    chat_history = None
+    if body.summary is not None or body.messages is not None:
+        chat_history = {
+            "summary": body.summary,
+            "messages": None
+            if body.messages is None
+            else [{"role": m.role, "content": m.content} for m in body.messages],
+        }
+
     def ndjson_lines():
-        for line in iter_answer_ndjson(body.message.strip()):
+        for line in iter_answer_ndjson(body.message.strip(), chat_history=chat_history):
             if not line.endswith("\n"):
                 yield line + "\n"
             else:
@@ -85,4 +104,13 @@ def chat_sync(
     _check_api_secret(x_devreotes_key)
     from .chatbot import answer_question_with_metadata
 
-    return answer_question_with_metadata(body.message.strip())
+    chat_history = None
+    if body.summary is not None or body.messages is not None:
+        chat_history = {
+            "summary": body.summary,
+            "messages": None
+            if body.messages is None
+            else [{"role": m.role, "content": m.content} for m in body.messages],
+        }
+
+    return answer_question_with_metadata(body.message.strip(), chat_history=chat_history)
