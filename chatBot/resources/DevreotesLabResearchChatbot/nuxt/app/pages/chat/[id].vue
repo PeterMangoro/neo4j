@@ -338,10 +338,10 @@ function copy(e: MouseEvent, message: ChatMessage) {
                   class="inline-flex"
                 />
               </template>
-              <DevreotesTracePanel
+              <!-- <DevreotesTracePanel
                 v-if="message.role === 'assistant' && devreotesTraceForMessage(message)"
                 :trace="devreotesTraceForMessage(message)!"
-              />
+              /> -->
             </template>
           </UChatMessages>
 

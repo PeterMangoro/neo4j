@@ -77,7 +77,7 @@ flowchart TB
 
 ```mermaid
 flowchart TD
-  Q[User question] --> R[router.py\nclassify query type]
+  Q[User question] --> R[router.py \n classify query type]
   R --> T{Route}
   T -->|themes| G1[Gene mention frequencies\nacross corpus]
   T -->|author_stats| G2[Author × paper counts]
@@ -154,7 +154,7 @@ flowchart TB
   CL -->|SUPPORTS| C
   CL -->|ABOUT| E
   E -->|RELATED_TO\ningest: GENE| G
-  E2[(:Entity)] -.->|RELATED_TO\nPhase 5 optional| E3[(:Entity)]
+  E2[(:Entity)] -.->|RELATED_TO| E3[(:Entity)]
 ```
 
 ## Tech stack (elevator list)
