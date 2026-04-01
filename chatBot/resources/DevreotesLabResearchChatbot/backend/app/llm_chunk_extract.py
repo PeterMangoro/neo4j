@@ -1,5 +1,4 @@
 """
-Phase 5 — LLM extraction of non-gene entities and relations into Neo4j (GraphRAG upgrade).
 
 Uses controlled Entity.types from GraphRAG_Schema v1 (excludes Gene/Protein; genes remain HGNC-backed).
 Writes Chunk-[:MENTIONS]->Entity, optional Paper-[:HAS_TOPIC]->Entity for Topic, and Entity-[:RELATED_TO]->Entity.
