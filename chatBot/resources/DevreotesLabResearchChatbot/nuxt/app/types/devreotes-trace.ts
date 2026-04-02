@@ -19,4 +19,5 @@ export type DevreotesTrace = {
   abstain_reason?: string | null
   tool_calls_log?: Array<{ name?: string; args?: Record<string, unknown> }>
   themes_meta?: DevreotesThemesMeta
+  suggested_followups?: string[]
 }

@@ -1,4 +1,12 @@
-function parseSseDataLine(line: string, onDelta: (delta: string) => void): void {
+export type DevreotesFollowupsStreamEvent =
+  | { kind: 'partial', partial: string }
+  | { kind: 'done', partial: string, suggestions: string[] }
+
+function parseSseDataLine(
+  line: string,
+  onDelta: (delta: string) => void,
+  onFollowups?: (ev: DevreotesFollowupsStreamEvent) => void
+): void {
   if (!line.startsWith('data:')) {
     return
   }
@@ -11,12 +19,25 @@ function parseSseDataLine(line: string, onDelta: (delta: string) => void): void 
       type?: string
       delta?: string
       errorText?: string
+      data?: unknown
     }
     if (chunk.type === 'error' && chunk.errorText) {
       throw new Error(chunk.errorText)
     }
     if (chunk.type === 'text-delta' && typeof chunk.delta === 'string') {
       onDelta(chunk.delta)
+    }
+    if (chunk.type === 'data-devreotes-followups' && chunk.data && typeof chunk.data === 'object') {
+      const d = chunk.data as { partial?: string, suggestions?: string[], done?: boolean }
+      if (d.done === true) {
+        onFollowups?.({
+          kind: 'done',
+          partial: typeof d.partial === 'string' ? d.partial : '',
+          suggestions: Array.isArray(d.suggestions) ? d.suggestions : []
+        })
+      } else if (typeof d.partial === 'string') {
+        onFollowups?.({ kind: 'partial', partial: d.partial })
+      }
     }
   } catch (e) {
     if (e instanceof SyntaxError) {
@@ -33,8 +54,10 @@ function parseSseDataLine(line: string, onDelta: (delta: string) => void): void 
  */
 export async function consumeDevreotesUiSse(
   body: ReadableStream<Uint8Array>,
-  onDelta: (delta: string) => void
+  onDelta: (delta: string) => void,
+  options?: { onFollowups?: (ev: DevreotesFollowupsStreamEvent) => void }
 ): Promise<void> {
+  const onFollowups = options?.onFollowups
   const reader = body.getReader()
   const decoder = new TextDecoder()
   let buf = ''
@@ -52,12 +75,12 @@ export async function consumeDevreotesUiSse(
       buf = buf.slice(sep + 2)
 
       for (const line of block.split('\n')) {
-        parseSseDataLine(line, onDelta)
+        parseSseDataLine(line, onDelta, onFollowups)
       }
     }
   }
 
   for (const line of buf.split('\n')) {
-    parseSseDataLine(line, onDelta)
+    parseSseDataLine(line, onDelta, onFollowups)
   }
 }

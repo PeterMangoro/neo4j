@@ -106,6 +106,22 @@ const messages = ref<ChatMessage[]>((data.value.messages || []) as ChatMessage[]
 const chatStatus = ref<'ready' | 'submitted' | 'streaming' | 'error'>('ready')
 const chatError = ref<Error | undefined>(undefined)
 
+/** Streamed follow-ups (SSE data-devreotes-followups) until DB row merges trace. */
+const followupsBusy = ref(false)
+const localFollowups = ref<string[]>([])
+
+const followupChips = computed(() => {
+  const last = messages.value[messages.value.length - 1]
+  if (!last || last.role !== 'assistant') {
+    return []
+  }
+  const fromTrace = devreotesTraceForMessage(last)?.suggested_followups
+  if (fromTrace?.length) {
+    return fromTrace
+  }
+  return localFollowups.value
+})
+
 const showDevreotesLoading = computed(() => {
   if (chatStatus.value === 'submitted') {
     return true
@@ -124,6 +140,8 @@ const showDevreotesLoading = computed(() => {
 async function runDevreotesTurn(text: string, options: { skipUserInsert?: boolean } = {}) {
   chatStatus.value = 'submitted'
   chatError.value = undefined
+  followupsBusy.value = false
+  localFollowups.value = []
 
   const assistantId = crypto.randomUUID()
   // One text part so `#content` has something to render (`parts: []` shows nothing).
@@ -172,11 +190,27 @@ async function runDevreotesTurn(text: string, options: { skipUserInsert?: boolea
     chatStatus.value = 'streaming'
 
     let acc = ''
-    await consumeDevreotesUiSse(res.body, (delta) => {
-      acc += delta
-      patchAssistantText(acc, true)
-    })
+    await consumeDevreotesUiSse(
+      res.body,
+      (delta) => {
+        acc += delta
+        patchAssistantText(acc, true)
+      },
+      {
+        onFollowups: (ev) => {
+          if (ev.kind === 'partial') {
+            followupsBusy.value = true
+          }
+          if (ev.kind === 'done') {
+            followupsBusy.value = false
+            localFollowups.value = ev.suggestions.filter(s => typeof s === 'string' && s.trim().length > 0)
+          }
+        }
+      }
+    )
     patchAssistantText(acc, false)
+    // Allow follow-up chips and new prompts while we reconcile messages with the server.
+    chatStatus.value = 'ready'
 
     // Fresh GET (bypasses stale useFetch) + one retry — ensures new assistant row with devreotes_trace exists.
     async function loadServerMessages(): Promise<ChatMessage[] | undefined> {
@@ -216,7 +250,6 @@ async function runDevreotesTurn(text: string, options: { skipUserInsert?: boolea
       }
     }
     refreshNuxtData('chats')
-    chatStatus.value = 'ready'
   } catch (error: unknown) {
     if (assistantIndex >= 0 && assistantIndex < messages.value.length) {
       messages.value.splice(assistantIndex, 1)
@@ -236,20 +269,31 @@ async function runDevreotesTurn(text: string, options: { skipUserInsert?: boolea
   }
 }
 
+async function submitUserText(text: string) {
+  const trimmed = text.trim()
+  if (!trimmed || isUploading.value || chatStatus.value !== 'ready') {
+    return
+  }
+  const userMessage: ChatMessage = {
+    id: crypto.randomUUID(),
+    role: 'user',
+    parts: [{ type: 'text', text: trimmed }]
+  }
+  messages.value.push(userMessage)
+  input.value = ''
+  clearFiles()
+  await runDevreotesTurn(trimmed)
+}
+
 async function handleSubmit(e: Event) {
   e.preventDefault()
-  if (input.value.trim() && !isUploading.value) {
-    const text = input.value.trim()
-    const userMessage: ChatMessage = {
-      id: crypto.randomUUID(),
-      role: 'user',
-      parts: [{ type: 'text', text }]
-    }
-    messages.value.push(userMessage)
-    input.value = ''
-    clearFiles()
-    await runDevreotesTurn(text)
+  if (input.value.trim()) {
+    await submitUserText(input.value)
   }
+}
+
+function onFollowupChipClick(suggestion: string) {
+  submitUserText(suggestion)
 }
 
 /** Home / suggested-query flow: POST /api/chats only saves the user message; we must run the backend here. */
@@ -344,6 +388,43 @@ function copy(e: MouseEvent, message: ChatMessage) {
               /> -->
             </template>
           </UChatMessages>
+
+          <div
+            v-if="followupChips.length > 0 || followupsBusy"
+            class="flex flex-wrap gap-2 px-1 -mt-1 pb-1 max-w-full"
+          >
+            <span
+              v-if="followupsBusy && followupChips.length === 0"
+              class="text-xs text-muted flex items-center gap-1.5 w-full"
+            >
+              <span class="i-lucide-sparkles size-3.5 shrink-0 animate-pulse" aria-hidden="true" />
+              <img
+                src="/suggestion.gif"
+                alt=""
+                width="32"
+                height="32"
+                class="shrink-0 rounded-sm"
+                aria-hidden="true"
+              />
+              Thinking of a few great follow-ups you can ask next…
+            </span>
+            <span
+              v-else-if="followupChips.length > 0"
+              class="text-xs text-muted flex items-center gap-1.5 w-full"
+            >
+              Want to go deeper? Here are follow-ups :
+            </span>
+            <UButton
+              v-for="(q, qi) in followupChips"
+              :key="`${qi}-${q.slice(0, 32)}`"
+              variant="outline"
+              color="neutral"
+              size="xs"
+              class="text-left font-normal max-w-full whitespace-normal h-auto py-1.5"
+              :label="q"
+              @click="onFollowupChipClick(q)"
+            />
+          </div>
 
           <div
             v-if="showDevreotesLoading"

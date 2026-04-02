@@ -14,11 +14,14 @@ export type DevreotesTrace = {
   abstain_reason?: string | null
   tool_calls_log?: Array<{ name?: string; args?: Record<string, unknown> }>
   themes_meta?: DevreotesThemesMeta
+  /** Dynamic follow-up questions (also streamed over SSE before persist). */
+  suggested_followups?: string[]
 }
 
 export function buildDevreotesTrace(
   result: DevreotesResult,
-  backend: 'http' | 'bridge'
+  backend: 'http' | 'bridge',
+  suggested_followups?: string[]
 ): DevreotesTrace {
   return {
     trace_version: 1,
@@ -33,5 +36,6 @@ export function buildDevreotesTrace(
     abstain_reason: result.abstain_reason ?? null,
     tool_calls_log: result.tool_calls_log,
     themes_meta: result.themes_meta,
+    ...(suggested_followups?.length ? { suggested_followups } : {})
   }
 }

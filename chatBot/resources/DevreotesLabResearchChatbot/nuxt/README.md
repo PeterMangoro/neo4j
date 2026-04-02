@@ -123,6 +123,8 @@ Summary behavior:
 - Truncated to `DEVREOTES_SUMMARY_MAX_CHARS` (default `1500`)
 - Falls back to deterministic rolling text summary if summarization fails
 
+**Dynamic follow-ups:** After each reply, the same route streams **`data-devreotes-followups`** chunks (then persists `suggested_followups` on `devreotes_trace`). Configure with `DEVREOTES_FOLLOWUPS_ENABLED` (default on), `DEVREOTES_FOLLOWUPS_MODEL`, `DEVREOTES_FOLLOWUPS_COUNT`, and `DEVREOTES_FOLLOWUPS_MAX_PREVIEW_CHARS`. See `ARCHITECTURE_AND_USAGE.md` §11.2.2.
+
 ## Production
 
 Build the application for production:

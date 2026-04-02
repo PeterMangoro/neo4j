@@ -354,10 +354,21 @@ Key knobs:
 
 Bridge mode remains plain-question stdin and does not carry structured `summary/messages`.
 
+### 11.2.2 Dynamic follow-up suggestions (streamed over SSE)
+
+After the main answer, **`POST /api/devreotes/chats/[id]`** may emit extra AI SDK chunks of type **`data-devreotes-followups`**: the model streams a JSON array (string fragments), then a final chunk with parsed **`suggested_followups`**. The chat UI shows these as chips; the same strings are persisted on **`devreotes_trace.suggested_followups`**.
+
+| Variable | Default | Meaning |
+|----------|---------|---------|
+| `DEVREOTES_FOLLOWUPS_ENABLED` | `1` | Set `0` / `false` to disable |
+| `DEVREOTES_FOLLOWUPS_MODEL` | `DEVREOTES_SUMMARY_MODEL` or `openai/gpt-4o-mini` | Follow-up generator |
+| `DEVREOTES_FOLLOWUPS_COUNT` | `4` | Number of suggestions (max `8`) |
+| `DEVREOTES_FOLLOWUPS_MAX_PREVIEW_CHARS` | `4000` | Retrieval preview size in the follow-up prompt |
+
 ### 11.3 Streaming protocol (NDJSON + AI SDK UI stream)
 
 - The Python side yields lines like **`{"type":"delta","text":"..."}`** and a final **`{"type":"finish","result":{...}}`** (see `chatbot.py` and `server/utils/devreotesNdjson.ts` in the Nuxt app).
-- The Nuxt route **`POST /api/devreotes/chats/[id]`** turns that into an **AI SDK UI message stream** for the browser; the client **`consumeDevreotesUiSse`** reads SSE and appends text to the assistant message.
+- The Nuxt route **`POST /api/devreotes/chats/[id]`** turns that into an **AI SDK UI message stream** for the browser; the client **`consumeDevreotesUiSse`** reads SSE, appends **`text-delta`** to the assistant message, then handles **`data-devreotes-followups`** for live follow-up chips. The stream ends with a **`finish`** chunk after follow-ups complete.
 
 ### 11.4 Retrieval / “decision” trace (audit payload)
 
@@ -370,6 +381,7 @@ Each finished turn can carry a structured **`devreotes_trace`** (JSON) alongside
 | **`results_count`** | How many retrieved rows fed the answer (where applicable). |
 | **`sources`** | Ordered list of source strings (e.g. title + chunk id) aligned with citation numbers **`[1]`**, **`[2]`**, … |
 | **`retrieval_preview`** | Structured snapshot of retrieval rows (scores, routes, ids). |
+| **`suggested_followups`** | Optional list of suggested next questions (streamed via SSE, then stored). |
 | **`abstained` / `abstain_reason`** | When the system refuses to answer (e.g. below **`RAG_MIN_SCORE`**, no chunks). |
 | **`tool_calls_log`** | In **agent** mode, a log of tool names/args for audit. |
 | **`trace_version`** | Schema version for forward compatibility. |

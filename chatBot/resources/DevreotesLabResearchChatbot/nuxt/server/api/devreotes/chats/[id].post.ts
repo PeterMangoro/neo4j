@@ -1,4 +1,5 @@
 import { createUIMessageStream, createUIMessageStreamResponse, generateText } from 'ai'
+import { streamFollowupsToClient } from '../../../utils/devreotesFollowups'
 import { db, schema } from '../../../utils/db'
 import { and, asc, eq } from 'drizzle-orm'
 import { randomUUID } from 'node:crypto'
@@ -13,6 +14,7 @@ import {
   type DevreotesFinishBox
 } from '../../../utils/devreotesNdjson'
 import { buildDevreotesTrace } from '../../../types/devreotes-trace'
+import { openai } from '@ai-sdk/openai'
 
 export default defineEventHandler(async (event) => {
   const session = await getUserSession(event)
@@ -201,7 +203,6 @@ export default defineEventHandler(async (event) => {
       }
 
       writer.write({ type: 'text-end', id: textId })
-      writer.write({ type: 'finish' })
 
       const finishResult = finishBox.result
       if (!finishResult) {
@@ -213,18 +214,44 @@ export default defineEventHandler(async (event) => {
 
       const answer = (finishResult.answer || '').trim() || 'No response produced by backend.'
       const traceBackend = apiBase ? 'http' : 'bridge'
+
+      const recentUserQuestions = [
+        ...historyMessages.filter(m => m.role === 'user').map(m => m.content.trim()),
+        message.trim()
+      ].filter(Boolean)
+
+      const suggestedFollowups = await streamFollowupsToClient(writer, {
+        userQuestion: message,
+        answer,
+        finishResult,
+        recentUserQuestions
+      })
+
+      writer.write({ type: 'finish' })
+
       await db.insert(schema.messages).values({
         chatId: id as string,
         role: 'assistant',
         parts: [{ type: 'text', text: answer }],
-        devreotesTrace: buildDevreotesTrace(finishResult, traceBackend)
+        devreotesTrace: buildDevreotesTrace(
+          finishResult,
+          traceBackend,
+          suggestedFollowups.length ? suggestedFollowups : undefined
+        )
       })
 
       // LLM-based rolling summary update (per thread).
       // Goal: a compact state representation for follow-up resolution, not corpus evidence.
       let nextSummary: string | null = deterministicFallbackSummary
       try {
-        const model = process.env.DEVREOTES_SUMMARY_MODEL || 'openai/gpt-4o-mini'
+        const modelName = process.env.DEVREOTES_SUMMARY_MODEL || 'openai/gpt-4o-mini'
+        const modelId = (() => {
+          const m = (modelName || '').trim()
+          if (!m) return 'gpt-4o-mini'
+          if (m.includes('/')) return m.split('/').pop() || 'gpt-4o-mini'
+          return m
+        })()
+        const model = openai(modelId)
         const transcript = [...recentHistory, { role: 'assistant', content: answer }]
           .map(m => `${m.role.toUpperCase()}: ${m.content}`)
           .join('\n\n')
