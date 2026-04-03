@@ -144,4 +144,3 @@ Useful env knobs:
 - **Module map, full env table, troubleshooting:** [structure.md](./structure.md)
 - **Original step-by-step GraphRAG build notes:** [GraphRAG_Implementation_Guide.md](./GraphRAG_Implementation_Guide.md)
 
-Do not commit `.env` or `.env.production`; only `.env.example` belongs in git.
