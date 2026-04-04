@@ -1,5 +1,7 @@
 neo4j
 pymupdf
+pytesseract
+Pillow
 scispacy
 langchain
 langchain-core

@@ -1,8 +1,13 @@
 import json
 import re
+from pathlib import Path
+
 import fitz
 
+from .doi_utils import concat_text_for_doi_scan, find_best_doi_in_text
+from .extracted_clean import merge_title_from_lines, normalize_head_lines, skip_leading_chaff
 from .paths import EXTRACTED_DIR, PAPERS_DIR, resolve_project_path
+from .pdf_ocr import extract_document_text_native_then_ocr
 
 
 _JUNK_TITLE_PATTERNS = [
@@ -46,14 +51,38 @@ def _title_from_lines(text: str, fallback: str) -> str:
     return best[:500] if best else _normalize_title(lines[0])[:500] if lines else fallback
 
 
+def _pdf_metadata_title_trusted(title: str) -> bool:
+    """False for scan filenames, bare ids, section headers, etc."""
+    t = _normalize_title(title)
+    if len(t) < 4:
+        return False
+    low = t.lower()
+    if low.startswith(("microsoft word", "untitled", "doc", "document")):
+        return False
+    if any(re.search(pat, low, flags=re.IGNORECASE) for pat in _JUNK_TITLE_PATTERNS):
+        return False
+    if re.search(r"\.(tif|tiff|png|jpe?g)\b", low):
+        return False
+    return True
+
+
 def _title_from_pdf_metadata(doc: fitz.Document) -> str:
     meta = getattr(doc, "metadata", None) or {}
     title = _normalize_title(meta.get("title") or "")
-    if not title:
-        return ""
-    if title.lower().startswith(("microsoft word", "untitled", "doc", "document")):
+    if not _pdf_metadata_title_trusted(title):
         return ""
     return title[:500]
+
+
+def _title_from_body_merged(text: str) -> str:
+    """Multi-line article title from the start of full text (PageGenie, PLOS, etc.)."""
+    lines = normalize_head_lines(text[:50000], max_lines=120)
+    if not lines:
+        return ""
+    start = skip_leading_chaff(lines)
+    merged, _ = merge_title_from_lines(lines, start)
+    m = _normalize_title(merged)
+    return m[:500] if len(m) >= 12 else ""
 
 
 def _pdf_meta_dict(doc: fitz.Document) -> dict:
@@ -71,15 +100,12 @@ def _heuristic_bibliography(text: str) -> dict:
     """
     Best-effort DOI / year / journal from first pages of extracted text (no external APIs).
     """
-    head = (text or "")[:14000]
+    win = concat_text_for_doi_scan(text or "")
     out: dict = {"doi": None, "year": None, "journal": None}
 
-    m = re.search(r"\b(10\.\d{4,}/[^\s\]\)\"']+)", head, re.IGNORECASE)
-    if m:
-        doi = m.group(1).rstrip(".,;)]}")
-        out["doi"] = doi[:256]
+    out["doi"] = find_best_doi_in_text(win)
 
-    for m in re.finditer(r"\b(19[89]\d|20[0-3]\d)\b", head):
+    for m in re.finditer(r"\b(19[89]\d|20[0-4]\d)\b", win):
         y = int(m.group(1))
         if 1980 <= y <= 2035:
             out["year"] = y
@@ -90,7 +116,7 @@ def _heuristic_bibliography(text: str) -> dict:
         r"^([A-Z][A-Za-z\s&\-]{8,80}(?:Journal|Letters|Proceedings|Review))\s*$",
     ]
     for pat in journal_patterns:
-        jm = re.search(pat, head, re.MULTILINE)
+        jm = re.search(pat, win, re.MULTILINE)
         if jm:
             j = _normalize_title(jm.group(1))
             if 10 < len(j) < 200 and not j.lower().startswith("http"):
@@ -98,6 +124,72 @@ def _heuristic_bibliography(text: str) -> dict:
                 break
 
     return out
+
+
+def extract_record_from_pdf_path(pdf_path: Path) -> dict:
+    """Build one paper JSON dict from a PDF path (does not write to disk)."""
+    pdf_path = Path(pdf_path)
+    paper_id = pdf_path.stem
+
+    doc = fitz.open(str(pdf_path))
+    meta_title = _title_from_pdf_metadata(doc)
+    pdf_meta = _pdf_meta_dict(doc)
+    full_text, used_ocr = extract_document_text_native_then_ocr(doc, pdf_path.name)
+    doc.close()
+
+    full_text = full_text.replace("\n\n\n", "\n\n").strip()
+    if meta_title:
+        title = meta_title
+    else:
+        title = _title_from_body_merged(full_text) or _title_from_lines(
+            full_text[:35000], paper_id
+        )
+    bib = _heuristic_bibliography(full_text)
+
+    return {
+        "paper_id": paper_id,
+        "title": title,
+        "filename": pdf_path.name,
+        "text": full_text,
+        "text_via_ocr": used_ocr,
+        "doi": bib.get("doi"),
+        "year": bib.get("year"),
+        "journal": bib.get("journal"),
+        **pdf_meta,
+    }
+
+
+def extract_one_pdf(
+    pdf_path: str | Path,
+    *,
+    output_dir: str | Path | None = None,
+) -> dict:
+    """
+    Extract a single PDF into ``extracted/{paper_id}.json`` (or ``output_dir``).
+
+    ``pdf_path`` may be a full path, or a stem like ``139`` (resolved under ``papers/``).
+    """
+    raw = Path(pdf_path)
+    papers_path = resolve_project_path(None, PAPERS_DIR)
+    if raw.is_file() and raw.suffix.lower() == ".pdf":
+        target = raw.resolve()
+    else:
+        stem = raw.stem if raw.suffix.lower() == ".pdf" else str(raw)
+        candidate = (papers_path / stem).with_suffix(".pdf")
+        if not candidate.is_file():
+            raise FileNotFoundError(f"PDF not found: {pdf_path!r} (tried {candidate})")
+        target = candidate
+
+    output_path = resolve_project_path(output_dir, EXTRACTED_DIR)
+    output_path.mkdir(parents=True, exist_ok=True)
+
+    output = extract_record_from_pdf_path(target)
+    out_file = output_path / f"{output['paper_id']}.json"
+    with out_file.open("w", encoding="utf-8") as f:
+        json.dump(output, f)
+
+    print(f"Extracted: {target.name} -> {out_file} ({len(output['text'])} chars, OCR={output['text_via_ocr']})")
+    return output
 
 
 def extract_text_from_pdfs(papers_dir: str | None = None, output_dir: str | None = None):
@@ -113,41 +205,22 @@ def extract_text_from_pdfs(papers_dir: str | None = None, output_dir: str | None
         if pdf_path.suffix.lower() != ".pdf":
             continue
 
-        paper_id = pdf_path.stem
-
-        doc = fitz.open(str(pdf_path))
-        meta_title = _title_from_pdf_metadata(doc)
-        pdf_meta = _pdf_meta_dict(doc)
-        full_text = ""
-        for page in doc:
-            full_text += page.get_text()
-        doc.close()
-
-        full_text = full_text.replace("\n\n\n", "\n\n").strip()
-        title = meta_title or _title_from_lines(full_text[:20000], paper_id)
-        bib = _heuristic_bibliography(full_text)
-
-        output = {
-            "paper_id": paper_id,
-            "title": title,
-            "filename": pdf_path.name,
-            "text": full_text,
-            "doi": bib.get("doi"),
-            "year": bib.get("year"),
-            "journal": bib.get("journal"),
-            **pdf_meta,
-        }
-
-        out_path = output_path / f"{paper_id}.json"
+        output = extract_record_from_pdf_path(pdf_path)
+        out_path = output_path / f"{output['paper_id']}.json"
         with out_path.open("w", encoding="utf-8") as f:
             json.dump(output, f)
 
         results.append(output)
-        print(f"Extracted: {pdf_path.name} ({len(full_text)} chars)")
+        print(f"Extracted: {pdf_path.name} ({len(output['text'])} chars)")
 
     print(f"Total papers extracted: {len(results)}")
     return results
 
 
 if __name__ == "__main__":
-    extract_text_from_pdfs()
+    import sys
+
+    if len(sys.argv) >= 2:
+        extract_one_pdf(sys.argv[1])
+    else:
+        extract_text_from_pdfs()
