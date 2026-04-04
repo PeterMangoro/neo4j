@@ -4,12 +4,19 @@ import re
 from neo4j import GraphDatabase
 from sentence_transformers import SentenceTransformer, util as st_util
 
-from .paths import HGNC_LOOKUP_PATH, embedding_model_name, load_project_dotenv
+from .paths import (
+    CHUNK_VECTOR_INDEX_NAME,
+    HGNC_LOOKUP_PATH,
+    embedding_model_name,
+    load_project_dotenv,
+    validate_embedding_dimension,
+)
 
 
 load_project_dotenv()
 os.environ.setdefault("CUDA_VISIBLE_DEVICES", "")
 model = SentenceTransformer(embedding_model_name())
+validate_embedding_dimension(model.get_sentence_embedding_dimension())
 
 
 def _get_driver():
@@ -199,8 +206,8 @@ def vector_search(question: str, top_k: int = 5):
     query_embedding = model.encode(question).tolist()
     with driver.session() as session:
         results = session.run(
-            """
-            CALL db.index.vector.queryNodes('chunk_embedding_idx', $top_k, $embedding)
+            f"""
+            CALL db.index.vector.queryNodes('{CHUNK_VECTOR_INDEX_NAME}', $top_k, $embedding)
             YIELD node AS c, score
             MATCH (p:Paper)-[:HAS_CHUNK]->(c)
             RETURN
@@ -231,8 +238,8 @@ def vector_search(question: str, top_k: int = 5):
 def _graph_search_by_gene_strict(hgnc_id: str, official_symbol: str, fetch_k: int, query_embedding: list) -> list:
     with driver.session() as session:
         return session.run(
-            """
-            CALL db.index.vector.queryNodes('chunk_embedding_idx', $top_k, $embedding)
+            f"""
+            CALL db.index.vector.queryNodes('{CHUNK_VECTOR_INDEX_NAME}', $top_k, $embedding)
             YIELD node AS c, score
             MATCH (p:Paper)-[:HAS_CHUNK]->(c)
             MATCH (p:Paper)-[:MENTIONS]->(g:Gene {hgnc_id: $hgnc_id})
@@ -260,8 +267,8 @@ def _graph_search_by_gene_relaxed(hgnc_id: str, fetch_k: int, query_embedding: l
     """Vector-ranked chunks from papers that mention the gene (no substring filter on chunk text)."""
     with driver.session() as session:
         return session.run(
-            """
-            CALL db.index.vector.queryNodes('chunk_embedding_idx', $top_k, $embedding)
+            f"""
+            CALL db.index.vector.queryNodes('{CHUNK_VECTOR_INDEX_NAME}', $top_k, $embedding)
             YIELD node AS c, score
             MATCH (p:Paper)-[:HAS_CHUNK]->(c)
             MATCH (p:Paper)-[:MENTIONS]->(g:Gene {hgnc_id: $hgnc_id})
@@ -323,8 +330,8 @@ def graph_search_by_author(author_name: str, question: str | None = None, top_k:
 
     with driver.session() as session:
         results = session.run(
-            """
-            CALL db.index.vector.queryNodes('chunk_embedding_idx', $top_k, $embedding)
+            f"""
+            CALL db.index.vector.queryNodes('{CHUNK_VECTOR_INDEX_NAME}', $top_k, $embedding)
             YIELD node AS c, score
             MATCH (p:Paper)-[:HAS_CHUNK]->(c)
             MATCH (a:Author)-[:AUTHORED]->(p)
@@ -360,6 +367,40 @@ def graph_search_by_author(author_name: str, question: str | None = None, top_k:
 
 
 
+def graph_corpus_meta() -> dict:
+    """
+    Exact node counts in the Neo4j graph (one round-trip).
+    Used for questions like "how many papers in the corpus" — not passage retrieval.
+    """
+    with driver.session() as session:
+        row = session.run(
+            """
+            MATCH (p:Paper)
+            WITH count(p) AS paper_count
+            MATCH (c:Chunk)
+            WITH paper_count, count(c) AS chunk_count
+            MATCH (g:Gene)
+            WITH paper_count, chunk_count, count(g) AS gene_count
+            MATCH (a:Author)
+            WITH paper_count, chunk_count, gene_count, count(a) AS author_count
+            MATCH (e:Entity)
+            WITH paper_count, chunk_count, gene_count, author_count, count(e) AS entity_count
+            MATCH (cl:Claim)
+            RETURN paper_count, chunk_count, gene_count, author_count, entity_count, count(cl) AS claim_count
+            """
+        ).single()
+    if not row:
+        return {
+            "paper_count": 0,
+            "chunk_count": 0,
+            "gene_count": 0,
+            "author_count": 0,
+            "entity_count": 0,
+            "claim_count": 0,
+        }
+    return dict(row)
+
+
 def themes_limit() -> int:
     """Single source of truth for themes result cap used by retrieval and prompt context."""
     raw = os.getenv("THEMES_LIMIT", "").strip()
@@ -390,6 +431,41 @@ def graph_search_author_publication_stats():
             limit=limit,
         ).data()
     return results
+
+
+def graph_search_author_directory():
+    """
+    All authors with at least min_papers distinct :Paper via :AUTHORED (default min 1).
+    For full bibliography / directory questions. Returns (rows, meta) with truncation flag.
+
+    Env: AUTHOR_DIRECTORY_MIN_PAPERS (default 1), AUTHOR_DIRECTORY_LIMIT (default 200).
+    """
+    min_papers = max(1, int(os.getenv("AUTHOR_DIRECTORY_MIN_PAPERS", "1")))
+    limit = max(10, int(os.getenv("AUTHOR_DIRECTORY_LIMIT", "200")))
+    fetch_limit = limit + 1
+    with driver.session() as session:
+        results = session.run(
+            """
+            MATCH (a:Author)-[:AUTHORED]->(p:Paper)
+            WITH a, count(DISTINCT p) AS paper_count
+            WHERE paper_count >= $min_papers
+            RETURN coalesce(a.name, a.author_key) AS author, a.author_key AS author_key, paper_count
+            ORDER BY paper_count DESC, author
+            LIMIT $limit
+            """,
+            min_papers=min_papers,
+            limit=fetch_limit,
+        ).data()
+    truncated = len(results) > limit
+    rows = results[:limit]
+    meta = {
+        "directory_limit": limit,
+        "truncated": truncated,
+        "min_papers": min_papers,
+        "metric": "distinct_papers_per_author",
+        "sort": "paper_count_desc",
+    }
+    return rows, meta
 
 
 def graph_search_research_themes():

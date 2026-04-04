@@ -1,6 +1,74 @@
 import re
 
 
+def is_author_directory_query(question: str) -> bool:
+    """
+    Full author bibliography: all (or most) authors with per-author paper counts.
+    Distinct from author_stats (typically multi-paper-only) and from 'papers by X'.
+    """
+    q = question.strip().lower()
+    if not re.search(r"\b(authors?|collaborators?|researchers?|co-authors?)\b", q):
+        return False
+    if re.search(r"\b(?:papers?|publications?|work)\s+by\s+\S", q) or re.search(
+        r"\b(?:written|authored)\s+by\s+\S",
+        q,
+    ):
+        return False
+    triggers = (
+        r"\b(all|every|each)\s+(?:the\s+)?authors?\b",
+        r"\bfull\s+list\b",
+        r"\bcomplete\s+list\b",
+        r"\blist\s+of\s+(?:all\s+)?authors?\b",
+        r"\bgive\s+me\s+(?:the\s+)?list\s+of\s+authors?\b",
+        r"\bauthors?\s+(?:in|from)\s+(?:the\s+)?(?:corpus|graph|database)\b",
+        r"\beveryone\s+who\s+(?:authored|wrote)\b",
+        r"\bcatalog(?:ue)?\s+of\s+authors?\b",
+    )
+    if any(re.search(t, q) for t in triggers):
+        return True
+    return False
+
+
+def wants_corpus_inventory_addon(question: str) -> bool:
+    """
+    True when the user also asks for corpus-wide paper totals (distinct :Paper count),
+    so we should attach graph_corpus_meta alongside author tables.
+    """
+    q = question.strip().lower()
+    # Pure inventory questions route to corpus_meta alone (meta is the main payload).
+    # Combined questions can match is_corpus_meta_query *and* author_directory / author_stats;
+    # those still need the corpus block beside the author table.
+    if is_corpus_meta_query(question) and not (
+        is_author_directory_query(question) or _is_author_stats_query(q)
+    ):
+        return False
+    if re.search(r"\bpapers?\s+in\s+(?:the\s+|this\s+)?corpus\b", q):
+        return True
+    if re.search(r"\bpublications?\s+in\s+(?:the\s+|this\s+)?corpus\b", q):
+        return True
+    if "corpus" in q and re.search(r"\b(how many papers|number of papers)\b", q):
+        return True
+    if re.search(
+        r"\b(total|how many)\s+(?:number\s+of\s+)?(?:papers?|publications?)\s+"
+        r"(?:in|does)\s+(?:the\s+|this\s+)?(?:corpus|graph|database)\b",
+        q,
+    ):
+        return True
+    if re.search(r"\bdistinct papers\b", q) and re.search(r"\b(corpus|graph|database)\b", q):
+        return True
+    # Combined phrasing: author list + corpus paper total in one question
+    if re.search(r"\b(and|also|plus)\b", q) and re.search(
+        r"\b(how many|number of|total)\s+(?:papers?|publications?)\b",
+        q,
+    ):
+        if re.search(r"\b(authors?|collaborators?)\b", q) and re.search(
+            r"\b(corpus|graph|database)\b",
+            q,
+        ):
+            return True
+    return False
+
+
 def is_author_stats_query(question: str) -> bool:
     """True if the question asks for corpus-wide author/publication counts (not 'papers by X')."""
     return _is_author_stats_query(question.strip().lower())
@@ -23,6 +91,8 @@ def _is_author_stats_query(q: str) -> bool:
     paper_spans = (
         "multiple paper",
         "several paper",
+        "several publication",
+        "multiple publication",
         "more than one paper",
         "more than 1 paper",
         "two or more paper",
@@ -45,10 +115,61 @@ def _is_author_stats_query(q: str) -> bool:
     return False
 
 
+def is_corpus_meta_query(question: str) -> bool:
+    """True when the user wants exact graph/corpus counts (papers, chunks, nodes), not gene-frequency themes."""
+    q = question.strip().lower()
+    if not q:
+        return False
+    # "Most mentioned" / prevalence → themes, not raw counts
+    if any(
+        h in q
+        for h in (
+            "most mentioned",
+            "most common",
+            "most frequent",
+            "most cited",
+            "top genes",
+            "gene frequency",
+            "bibliometric",
+            "prevalence",
+        )
+    ):
+        return False
+
+    countish = bool(
+        re.search(r"\b(how many|how big|number of|count of|total (?:number of )?)\b", q)
+        or re.search(r"\b(size of|what(?:'s| is) the size)\b", q)
+    )
+    if not countish:
+        return False
+
+    if re.search(r"\b(papers?|publications?|articles?|manuscripts?)\b", q) and re.search(
+        r"\b(corpus|database|graph|collection|indexed|ingested|in the (?:lab )?(?:paper )?set)\b",
+        q,
+    ):
+        return True
+    if re.search(r"\b(how many|number of|count of|total)\s+chunks?\b", q):
+        return True
+    if re.search(
+        r"\b(how many|number of|count of|total)\s+(genes?|authors?|entities?|claims?)\b", q
+    ) and (
+        re.search(r"\b(in (?:this |the )?(?:graph|corpus|database))\b", q)
+        or "we have" in q
+    ):
+        return True
+    if re.search(r"\b(corpus|graph|database)\s+(size|contains|has)\b", q):
+        return True
+    if re.search(r"\bwhat(?:'s| is)\s+in the corpus\b", q):
+        return True
+    if countish and re.search(r"\b(size of|how big is)\s+(?:the |this )?corpus\b", q):
+        return True
+    return False
+
+
 def classify_query(question: str) -> str:
     """
     Classify the user's question.
-    Returns: 'gene', 'author', 'author_stats', 'themes', or 'semantic'
+    Returns: 'gene', 'author', 'author_directory', 'author_stats', 'corpus_meta', 'themes', or 'semantic'
 
     Note: 'themes' maps to graph aggregate **gene mention frequency** across papers,
     not a qualitative topic model. See `graph_search_research_themes` in retrieval.
@@ -60,10 +181,16 @@ def classify_query(question: str) -> str:
     """
     q = question.lower()
 
+    if is_author_directory_query(question):
+        return "author_directory"
+
     # Before "themes": phrases like "across papers" are theme hints but can also describe
     # author-corpora questions ("which authors appear across papers?"). Author-stats wins.
     if _is_author_stats_query(q):
         return "author_stats"
+
+    if is_corpus_meta_query(question):
+        return "corpus_meta"
 
     # Avoid matching "gene" inside unrelated words (e.g. "general", "oxygen").
     gene_vocab = [
@@ -108,7 +235,6 @@ def classify_query(question: str) -> str:
         "what are the main",
         "summary",
         "field",
-        "corpus",
         "across the papers",
         "across papers",
         "gene frequency",

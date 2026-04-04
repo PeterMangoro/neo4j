@@ -7,6 +7,8 @@ from langchain_openai import ChatOpenAI
 
 from .paths import HGNC_LOOKUP_PATH, load_project_dotenv
 from .retrieval import (
+    graph_corpus_meta,
+    graph_search_author_directory,
     graph_search_author_publication_stats,
     graph_search_by_author,
     graph_search_by_gene,
@@ -18,7 +20,9 @@ from .router import (
     classify_query,
     extract_author_from_question,
     extract_gene_from_question,
+    is_author_directory_query,
     is_author_stats_query,
+    wants_corpus_inventory_addon,
 )
 from .agent_tools import run_evidence_agent
 
@@ -40,7 +44,12 @@ SYSTEM_PROMPT = (
     "Do not use outside knowledge. If the answer is not in the provided context, say so clearly. "
     "Be concise and scientifically precise. "
     "The conversation context may be included to resolve references between turns; treat it only as context, not as evidence. "
-    "Every substantive claim must cite one or more numbered passages in square brackets like [1] or [2]."
+    "When the context provides numbered paper passages, cite them as [1], [2], etc. "
+    "When the context is an author list without passage numbers, give names and counts directly—do not invent [A1]-style row tags. "
+    "When separate sections define bracket labels, follow the user message "
+    "(e.g. [C1]–[C6] for corpus-wide graph totals, [S1] for gene statistics). "
+    "For corpus-wide totals (how many papers, chunks, etc.), use only numbers that appear explicitly in the provided context; "
+    "do not infer totals from a sample of passages."
 )
 
 CONVERSATION_RECENT_TURNS = int(os.getenv("DEVREOTES_CONVERSATION_RECENT_TURNS", "10"))
@@ -104,6 +113,8 @@ def _query_type_label(effective: str) -> str:
     return {
         "themes": "Gene mention frequency (corpus)",
         "author_stats": "Author publication counts (corpus)",
+        "corpus_meta": "Corpus inventory (graph counts)",
+        "author_directory": "Full author bibliography (graph)",
         "gene": "Gene-focused retrieval",
         "author": "Author-filtered retrieval",
         "semantic": "Semantic (vector) retrieval",
@@ -119,6 +130,46 @@ def _result_score(row) -> float:
         return float(score)
     except (TypeError, ValueError):
         return 0.0
+
+
+def _author_stats_context_limit() -> int:
+    return max(5, int(os.getenv("AUTHOR_STATS_CONTEXT_LIMIT", "40")))
+
+
+def _author_directory_context_limit() -> int:
+    return max(10, int(os.getenv("AUTHOR_DIRECTORY_CONTEXT_LIMIT", "120")))
+
+
+def _corpus_wide_addon_block(meta: dict) -> str:
+    """Corpus totals with [C1]–[C6] labels (shown above a plain author list)."""
+    m = meta if isinstance(meta, dict) else {}
+    return (
+        "Corpus-wide graph totals (cite as [C1]–[C6] only for these lines; author lines below are named, not tagged):\n"
+        f"[C1] Papers (distinct :Paper nodes): {int(m.get('paper_count') or 0)}\n"
+        f"[C2] Chunks: {int(m.get('chunk_count') or 0)}\n"
+        f"[C3] Gene nodes: {int(m.get('gene_count') or 0)}\n"
+        f"[C4] Author nodes: {int(m.get('author_count') or 0)}\n"
+        f"[C5] Entity nodes: {int(m.get('entity_count') or 0)}\n"
+        f"[C6] Claims: {int(m.get('claim_count') or 0)}"
+    )
+
+
+def _author_directory_disclosure_prompt(meta: dict | None) -> str:
+    if meta is None:
+        return ""
+    lim = int(meta.get("directory_limit") or 200)
+    truncated = bool(meta.get("truncated"))
+    parts = [
+        f"This table lists authors with at least {int(meta.get('min_papers') or 1)} distinct paper(s), "
+        f"up to {lim} rows, sorted by paper count.",
+        "Names may include ingest noise (mis-parsed PDF lines).",
+    ]
+    if truncated:
+        parts.append(
+            f"More authors exist beyond row {lim}; the list is truncated by configuration. "
+            "Say so if the user asked for a complete census."
+        )
+    return " ".join(parts)
 
 
 def build_context(results, result_type: str = "semantic", max_chunks: int = MAX_CONTEXT_CHUNKS) -> str:
@@ -138,14 +189,44 @@ def build_context(results, result_type: str = "semantic", max_chunks: int = MAX_
         return "\n".join(context_parts)
 
     if result_type == "author_stats":
+        cap = _author_stats_context_limit()
         context_parts.append(
-            "Authors linked to papers by :AUTHORED (count = distinct papers in this corpus):"
+            "Authors with multiple papers (:Author)-[:AUTHORED]->(:Paper); "
+            "each line is one author’s distinct-paper count (not total corpus size). "
+            "Refer to authors by name in your answer."
         )
-        for idx, item in enumerate(results[:15], 1):
+        for item in results[:cap]:
             a = item.get("author") or item.get("author_key") or "Unknown"
             n = item.get("paper_count", 0)
-            context_parts.append(f"[{idx}] {a}: {n} paper(s)")
+            context_parts.append(f"• {a}: {n} paper(s)")
         return "\n".join(context_parts)
+
+    if result_type == "author_directory":
+        cap = _author_directory_context_limit()
+        context_parts.append(
+            "All authors in the graph with at least the configured minimum papers per author. "
+            "Each line is that author’s distinct-paper count only. Refer to authors by name in your answer."
+        )
+        for item in results[:cap]:
+            a = item.get("author") or item.get("author_key") or "Unknown"
+            n = item.get("paper_count", 0)
+            context_parts.append(f"• {a}: {n} paper(s)")
+        return "\n".join(context_parts)
+
+    if result_type == "corpus_meta":
+        if not results or not isinstance(results[0], dict):
+            return "No corpus statistics available."
+        m = results[0]
+        lines = [
+            "Exact node counts from the Neo4j graph (full corpus, not a sample of passages):",
+            f"[1] Papers: {int(m.get('paper_count') or 0)}",
+            f"[2] Chunks: {int(m.get('chunk_count') or 0)}",
+            f"[3] Genes (Gene nodes): {int(m.get('gene_count') or 0)}",
+            f"[4] Authors (Author nodes): {int(m.get('author_count') or 0)}",
+            f"[5] Entities (Entity nodes): {int(m.get('entity_count') or 0)}",
+            f"[6] Claims: {int(m.get('claim_count') or 0)}",
+        ]
+        return "\n".join(lines)
 
     for idx, item in enumerate(results[:max_chunks], 1):
         title = item.get("title", "Unknown")
@@ -163,13 +244,47 @@ def build_context(results, result_type: str = "semantic", max_chunks: int = MAX_
 def _build_sources_and_preview(results, result_kind: str):
     """
     result_kind matches the retrieval path (usually `effective_query_type`):
-    themes | author_stats | gene | author | semantic.
+    themes | author_stats | author_directory | corpus_meta | gene | author | semantic.
     """
     sources = []
     preview = []
 
+    if result_kind == "author_directory":
+        cap = _author_directory_context_limit()
+        for item in results[:cap]:
+            a = item.get("author") or item.get("author_key") or "Unknown"
+            n = item.get("paper_count", 0)
+            sources.append(f"{a} ({n} papers)")
+            preview.append(
+                {
+                    "author": a,
+                    "author_key": item.get("author_key"),
+                    "paper_count": n,
+                    "stat_type": "author_directory_row",
+                    "route": "author_directory",
+                }
+            )
+        return sources, preview
+
+    if result_kind == "corpus_meta" and results and isinstance(results[0], dict):
+        m = results[0]
+        summary = (
+            f"Papers={m.get('paper_count', 0)}, Chunks={m.get('chunk_count', 0)}, "
+            f"Genes={m.get('gene_count', 0)}, Authors={m.get('author_count', 0)}"
+        )
+        sources.append(summary)
+        preview.append(
+            {
+                "stat_type": "corpus_graph_counts",
+                "route": "corpus_meta",
+                **{k: m.get(k) for k in ("paper_count", "chunk_count", "gene_count", "author_count", "entity_count", "claim_count")},
+            }
+        )
+        return sources, preview
+
     if result_kind == "author_stats":
-        for item in results[:15]:
+        cap = _author_stats_context_limit()
+        for item in results[:cap]:
             a = item.get("author") or item.get("author_key") or "Unknown"
             n = item.get("paper_count", 0)
             sources.append(f"{a} ({n} papers)")
@@ -251,10 +366,39 @@ def _retrieve_or_abstain(question: str, query_type: str, routed_key: str | None)
                 "abstain_reason": "no_author_stats",
                 "results": [],
             }
-        return {
+        out = {
             "abstained": False,
             "abstain_reason": None,
             "results": results,
+        }
+        if wants_corpus_inventory_addon(question):
+            out["corpus_meta_addon"] = graph_corpus_meta()
+        return out
+
+    if query_type == "author_directory":
+        results, dir_meta = graph_search_author_directory()
+        if not results:
+            return {
+                "abstained": True,
+                "abstain_reason": "no_author_directory",
+                "results": [],
+            }
+        out = {
+            "abstained": False,
+            "abstain_reason": None,
+            "results": results,
+            "author_directory_meta": dir_meta,
+        }
+        if wants_corpus_inventory_addon(question):
+            out["corpus_meta_addon"] = graph_corpus_meta()
+        return out
+
+    if query_type == "corpus_meta":
+        meta = graph_corpus_meta()
+        return {
+            "abstained": False,
+            "abstain_reason": None,
+            "results": [meta],
         }
 
     if query_type == "gene":
@@ -356,7 +500,10 @@ def _prepare_generation_router(question: str, chat_history=None):
     retrieval_question = _build_retrieval_question(question, conversation_context)
 
     query_type = classify_query(retrieval_question)
-    if query_type == "author" and is_author_stats_query(retrieval_question):
+    if query_type == "author" and is_author_directory_query(retrieval_question):
+        query_type = "author_directory"
+        _log("[Router] Promoted author → author_directory (full list wording)")
+    elif query_type == "author" and is_author_stats_query(retrieval_question):
         query_type = "author_stats"
         _log("[Router] Promoted author → author_stats (aggregate wording)")
     _log(f"[Router] Query type: {query_type}")
@@ -379,9 +526,15 @@ def _prepare_generation_router(question: str, chat_history=None):
     elif query_type == "author_stats":
         routed_key = "author_stats"
         _log("[Graph] Author publication stats route")
+    elif query_type == "author_directory":
+        routed_key = "author_directory"
+        _log("[Graph] Author directory route")
     elif query_type == "themes":
         routed_key = "themes"
         _log("[Graph] Themes route")
+    elif query_type == "corpus_meta":
+        routed_key = "corpus_meta"
+        _log("[Graph] Corpus meta (counts) route")
     else:
         routed_key = "semantic"
         _log("[Vector] Semantic route")
@@ -389,10 +542,14 @@ def _prepare_generation_router(question: str, chat_history=None):
     retrieved = _retrieve_or_abstain(
         retrieval_question,
         effective_query_type,
-        routed_key if query_type not in ("themes", "author_stats") else None,
+        routed_key
+        if query_type not in ("themes", "author_stats", "author_directory", "corpus_meta")
+        else None,
     )
     results = retrieved["results"]
     themes_meta = retrieved.get("themes_meta")
+    corpus_meta_addon = retrieved.get("corpus_meta_addon")
+    author_directory_meta = retrieved.get("author_directory_meta")
 
     if retrieved["abstained"]:
         reason = retrieved.get("abstain_reason")
@@ -409,6 +566,8 @@ def _prepare_generation_router(question: str, chat_history=None):
                 "No authors with multiple papers were found in the graph yet "
                 "(or the minimum paper threshold filtered everyone out)."
             )
+        elif reason == "no_author_directory":
+            answer = "No author nodes with :AUTHORED links were found in the graph yet."
         else:
             answer = "No relevant passages were retrieved from the corpus."
         sources, preview = _build_sources_and_preview(results, effective_query_type)
@@ -427,7 +586,10 @@ def _prepare_generation_router(question: str, chat_history=None):
             },
         }
 
-    context = build_context(results, effective_query_type)
+    context_prefix = ""
+    if corpus_meta_addon and effective_query_type in ("author_stats", "author_directory"):
+        context_prefix = _corpus_wide_addon_block(corpus_meta_addon) + "\n\n---\n\n"
+    context = context_prefix + build_context(results, effective_query_type)
     conversation_prefix = (
         "Conversation context (for reference resolution only):\n"
         f"{conversation_context}\n\n"
@@ -450,15 +612,55 @@ def _prepare_generation_router(question: str, chat_history=None):
         if dline:
             user_block += "\n\n" + dline
     elif effective_query_type == "author_stats":
+        corpus_note = ""
+        if corpus_meta_addon:
+            corpus_note = (
+                "The [C1]–[C6] block (if present) is corpus-wide; bulleted author lines are per-author counts only. "
+                "Use [C1] for total distinct papers in the graph when answering that part. "
+            )
         user_block = (
-            "Numbered author–publication counts derived from the graph (:Author)-[:AUTHORED]->(:Paper):\n"
+            "Author–publication statistics from the graph (:Author)-[:AUTHORED]->(:Paper):\n"
             "---\n"
             f"{context}\n"
             "---\n\n"
             f"{conversation_prefix}"
             f"Question: {question}\n\n"
-            "Answer only using the rows above. Cite each row you use as [n]. "
+            f"{corpus_note}"
+            "Answer only using the sections above. Refer to authors by name; do not use [An] citation tags. "
+            "Do not treat the first author line as the total number of papers in the corpus. "
             "If the question asks who appears on multiple papers, list authors with paper_count ≥ 2."
+        )
+    elif effective_query_type == "author_directory":
+        ddir = _author_directory_disclosure_prompt(author_directory_meta)
+        corpus_note = ""
+        if corpus_meta_addon:
+            corpus_note = (
+                "Use [C1] for total distinct :Paper nodes when the user asks how many papers are in the corpus. "
+                "Bulleted author lines are each author’s own paper count, not the corpus total. "
+            )
+        user_block = (
+            "Author directory from the graph (per-author distinct paper counts):\n"
+            "---\n"
+            f"{context}\n"
+            "---\n\n"
+            f"{conversation_prefix}"
+            f"Question: {question}\n\n"
+            f"{corpus_note}"
+            "Answer only using the sections above. Refer to authors by name; do not use [An] citation tags. "
+            "If both corpus totals and the author list appear, use [C1]–[C6] only for corpus-wide figures."
+        )
+        if ddir:
+            user_block += "\n\n" + ddir
+    elif effective_query_type == "corpus_meta":
+        user_block = (
+            "Corpus statistics (exact graph counts for the full indexed corpus):\n"
+            "---\n"
+            f"{context}\n"
+            "---\n\n"
+            f"{conversation_prefix}"
+            f"Question: {question}\n\n"
+            "Answer only using the numbered lines above. Cite each figure you use as [n]. "
+            "If the user asked only for one total (e.g. papers), give that number clearly and you may briefly mention related counts."
         )
     else:
         user_block = (
@@ -484,6 +686,8 @@ def _prepare_generation_router(question: str, chat_history=None):
     }
     if themes_meta is not None:
         out["themes_meta"] = themes_meta
+    if author_directory_meta is not None:
+        out["author_directory_meta"] = author_directory_meta
     return out
 
 
@@ -510,6 +714,9 @@ def _prepare_generation_agent(question: str, chat_history=None):
 
     themes = ev["themes"] if ev["themes"] else None
     author_stats = ev.get("author_stats") if ev.get("author_stats") else None
+    author_directory = ev.get("author_directory") if ev.get("author_directory") else None
+    author_dir_meta = ev.get("author_directory_meta")
+    corpus_meta_list = ev.get("corpus_meta") if ev.get("corpus_meta") else None
     merged = _merge_raw_chunks(ev["raw_chunks"])
     routed_key = "agent"
 
@@ -519,6 +726,10 @@ def _prepare_generation_agent(question: str, chat_history=None):
             if qtype == "themes"
             else "author_stats"
             if qtype == "author_stats"
+            else "author_directory"
+            if qtype == "author_directory"
+            else "corpus_meta"
+            if qtype == "corpus_meta"
             else "semantic"
         )
         sources, preview = _build_sources_and_preview(results, kind)
@@ -538,7 +749,7 @@ def _prepare_generation_agent(question: str, chat_history=None):
             },
         }
 
-    if not merged and not themes and not author_stats:
+    if not merged and not themes and not author_stats and not corpus_meta_list and not author_directory:
         return abstain_payload(
             "No relevant passages were retrieved from the corpus.",
             "no_chunks",
@@ -546,111 +757,92 @@ def _prepare_generation_agent(question: str, chat_history=None):
             "agent",
         )
 
-    if not merged and themes and not author_stats:
-        results = themes
-        if not results:
-            return abstain_payload(
-                "No gene mention statistics were found in the corpus yet.",
-                "no_theme_data",
-                [],
-                "themes",
+    if not merged:
+        cm = corpus_meta_list
+        has_cm = bool(cm)
+        has_th = bool(themes)
+        has_as = bool(author_stats)
+        has_ad = bool(author_directory)
+        corpus_use_c = has_cm and bool(cm and isinstance(cm[0], dict)) and (has_th or has_as or has_ad)
+
+        parts: list[str] = []
+        if has_cm and cm and isinstance(cm[0], dict):
+            corpus_block = (
+                _corpus_wide_addon_block(cm[0]) if corpus_use_c else build_context(cm, "corpus_meta")
             )
-        context = build_context(results, "themes")
-        conversation_prefix = (
-            "Conversation context (for reference resolution only):\n"
-            f"{conversation_context}\n\n"
-            if conversation_context
+            parts.append("=== Corpus graph counts ===\n" + corpus_block)
+        if has_th:
+            parts.append("=== Gene mention statistics ===\n" + _themes_context_with_s_labels(themes))
+        if has_as:
+            parts.append(
+                "=== Author publication counts ===\n" + build_context(author_stats, "author_stats")
+            )
+        if has_ad:
+            parts.append(
+                "=== Full author bibliography ===\n" + build_context(author_directory, "author_directory")
+            )
+
+        cite_bits: list[str] = []
+        if has_cm:
+            cite_bits.append(
+                "corpus-wide totals as [C1]–[C6]" if corpus_use_c else "corpus inventory as [1]–[6]"
+            )
+        if has_th:
+            cite_bits.append("gene statistics as [S1], [S2], …")
+        if has_as or has_ad:
+            cite_bits.append(
+                "authors by name in the author sections (no bracket tags for author lines; per-author counts, not corpus totals)"
+            )
+        cite_line = (
+            "Cite " + "; ".join(cite_bits) + ". Do not treat the first author row as total corpus papers."
+            if cite_bits
             else ""
         )
+
         user_block = (
-            "Numbered gene mention statistics derived from the graph:\n"
-            "---\n"
-            f"{context}\n"
-            "---\n\n"
-            f"{conversation_prefix}"
+            "Graph-derived statistics (answer only from the sections below):\n\n"
+            + "\n\n".join(parts)
+            + f"\n\n{conversation_prefix}"
             f"Question: {question}\n\n"
-            "Answer only using the statistics above. Cite each statistic you rely on as [n]. "
-            "Do not invent qualitative research themes that are not supported by these counts."
+            f"{cite_line} "
+            "If the question has multiple parts, answer each part using the matching section. "
+            "Do not invent counts or themes not shown."
         )
-        dline = _themes_disclosure_prompt(themes_meta)
+        dline = _themes_disclosure_prompt(themes_meta) if has_th else ""
         if dline:
             user_block += "\n\n" + dline
+        ddir = _author_directory_disclosure_prompt(author_dir_meta) if has_ad else ""
+        if ddir:
+            user_block += "\n\n" + ddir
         messages = [SystemMessage(content=SYSTEM_PROMPT), HumanMessage(content=user_block)]
+
+        n_stat_kinds = sum(1 for x in (has_cm, has_th, has_as, has_ad) if x)
+        if n_stat_kinds == 1 and has_cm:
+            eqt = "corpus_meta"
+            res_list = cm
+        elif n_stat_kinds == 1 and has_th:
+            eqt = "themes"
+            res_list = themes
+        elif n_stat_kinds == 1 and has_as:
+            eqt = "author_stats"
+            res_list = author_stats
+        elif n_stat_kinds == 1 and has_ad:
+            eqt = "author_directory"
+            res_list = author_directory
+        else:
+            eqt = "agent"
+            res_list = (
+                (cm or [])
+                + (themes or [])
+                + (author_stats or [])
+                + (author_directory or [])
+            )
+
         out = {
             "abstain": False,
             "messages": messages,
-            "results": results,
-            "effective_query_type": "themes",
-            "routed_key": routed_key,
-            "tool_calls_log": tool_calls_log,
-        }
-        if themes_meta is not None:
-            out["themes_meta"] = themes_meta
-        return out
-
-    if not merged and author_stats and not themes:
-        results = author_stats
-        if not results:
-            return abstain_payload(
-                "No authors with multiple papers were found in the graph yet.",
-                "no_author_stats",
-                [],
-                "author_stats",
-            )
-        context = build_context(results, "author_stats")
-        conversation_prefix = (
-            "Conversation context (for reference resolution only):\n"
-            f"{conversation_context}\n\n"
-            if conversation_context
-            else ""
-        )
-        user_block = (
-            "Numbered author–publication counts derived from the graph (:Author)-[:AUTHORED]->(:Paper):\n"
-            "---\n"
-            f"{context}\n"
-            "---\n\n"
-            f"{conversation_prefix}"
-            f"Question: {question}\n\n"
-            "Answer only using the rows above. Cite each row as [n]."
-        )
-        messages = [SystemMessage(content=SYSTEM_PROMPT), HumanMessage(content=user_block)]
-        return {
-            "abstain": False,
-            "messages": messages,
-            "results": results,
-            "effective_query_type": "author_stats",
-            "routed_key": routed_key,
-            "tool_calls_log": tool_calls_log,
-        }
-
-    if not merged and themes and author_stats:
-        gctx = build_context(themes, "themes")
-        actx = build_context(author_stats, "author_stats")
-        conversation_prefix = (
-            "Conversation context (for reference resolution only):\n"
-            f"{conversation_context}\n\n"
-            if conversation_context
-            else ""
-        )
-        user_block = (
-            "Two graph statistics sections:\n"
-            "---\n"
-            f"{gctx}\n\n"
-            f"{actx}\n"
-            "---\n\n"
-            f"{conversation_prefix}"
-            f"Question: {question}\n\n"
-            "Answer using only the sections above. Cite gene lines and author lines as [n] by their bracket numbers."
-        )
-        dline = _themes_disclosure_prompt(themes_meta)
-        if dline:
-            user_block += "\n\n" + dline
-        messages = [SystemMessage(content=SYSTEM_PROMPT), HumanMessage(content=user_block)]
-        out = {
-            "abstain": False,
-            "messages": messages,
-            "results": (themes or []) + (author_stats or []),
-            "effective_query_type": "agent",
+            "results": res_list,
+            "effective_query_type": eqt,
             "routed_key": routed_key,
             "tool_calls_log": tool_calls_log,
         }
@@ -682,8 +874,12 @@ def _prepare_generation_agent(question: str, chat_history=None):
 
     results = sorted(merged, key=_result_score, reverse=True)
 
-    if themes or author_stats:
+    if themes or author_stats or author_directory or corpus_meta_list:
         extra_sections: list[str] = []
+        if corpus_meta_list and isinstance(corpus_meta_list[0], dict):
+            extra_sections.append(
+                "=== Corpus graph counts ===\n" + _corpus_wide_addon_block(corpus_meta_list[0])
+            )
         if themes:
             extra_sections.append(
                 "=== Gene mention statistics ===\n" + _themes_context_with_s_labels(themes)
@@ -692,12 +888,19 @@ def _prepare_generation_agent(question: str, chat_history=None):
             extra_sections.append(
                 "=== Author publication counts ===\n" + build_context(author_stats, "author_stats")
             )
+        if author_directory:
+            extra_sections.append(
+                "=== Full author bibliography ===\n"
+                + build_context(author_directory, "author_directory")
+            )
         chunk_ctx = build_context(results, "semantic")
         user_block = (
             "You may use multiple evidence sections below.\n"
-            "- Cite gene statistics as [S1], [S2], ... when present.\n"
-            "- Cite author statistics by their [n] line numbers when present.\n"
-            "- Cite paper passages as [1], [2], ... in the passages section.\n\n"
+            "- Cite corpus-wide graph totals as [C1]–[C6] when that section is present.\n"
+            "- Cite gene statistics as [S1], [S2], … when present.\n"
+            "- For author lists, use author names only (no [An] row tags; each line is one author’s paper count).\n"
+            "- Cite paper passages as [1], [2], … only inside the passages section.\n"
+            "- If the question has several parts, address each part with the right section and citations.\n\n"
             + "\n\n".join(extra_sections)
             + "\n\n=== Numbered passages from papers ===\n---\n"
             f"{chunk_ctx}\n---\n\n"
@@ -708,6 +911,9 @@ def _prepare_generation_agent(question: str, chat_history=None):
         dline = _themes_disclosure_prompt(themes_meta) if themes else ""
         if dline:
             user_block += "\n\n" + dline
+        ddir = _author_directory_disclosure_prompt(author_dir_meta) if author_directory else ""
+        if ddir:
+            user_block += "\n\n" + ddir
         effective_query_type = "agent"
     else:
         context = build_context(results, "semantic")

@@ -14,6 +14,8 @@ from langchain_core.tools import tool
 
 from .paths import load_project_dotenv
 from .retrieval import (
+    graph_corpus_meta,
+    graph_search_author_directory,
     graph_search_author_publication_stats,
     graph_search_by_author,
     graph_search_by_gene,
@@ -106,12 +108,34 @@ def corpus_author_publication_stats() -> str:
     return json.dumps({"kind": "author_stats", "route": "author_stats", "items": rows or []}, ensure_ascii=True)
 
 
+@tool
+def corpus_all_authors_directory() -> str:
+    """Full author bibliography: every :Author with :AUTHORED links and their distinct paper counts (min 1 paper), sorted by count. Use for 'list all authors', 'complete author list', or 'every author in the corpus'—not for 'papers by Dr. X'."""
+    rows, meta = graph_search_author_directory()
+    return json.dumps(
+        {"kind": "author_directory", "route": "author_directory", "items": rows or [], "meta": meta},
+        ensure_ascii=True,
+    )
+
+
+@tool
+def corpus_graph_inventory() -> str:
+    """Exact counts of Paper, Chunk, Gene, Author, Entity, and Claim nodes in the Neo4j graph. Use when the user asks how many papers/chunks/genes/authors are in the corpus, database, or graph—not for 'most mentioned' genes (use corpus_gene_frequencies) or passage search."""
+    meta = graph_corpus_meta()
+    return json.dumps(
+        {"kind": "corpus_meta", "route": "corpus_meta", "items": [meta]},
+        ensure_ascii=True,
+    )
+
+
 DEVREOTES_RETRIEVAL_TOOLS = [
     semantic_search,
     gene_literature_search,
     author_literature_search,
     corpus_gene_frequencies,
     corpus_author_publication_stats,
+    corpus_all_authors_directory,
+    corpus_graph_inventory,
 ]
 
 AGENT_SYSTEM_PROMPT = """You are a retrieval planner for a biomedical literature corpus (Prof. Devreotes lab papers).
@@ -120,7 +144,10 @@ Your job is to call one or more tools to gather evidence for the user's question
 - Prefer gene_literature_search when the user names a specific human gene symbol (HGNC).
 - Prefer author_literature_search when the question is about passages from papers by a **specific** author name.
 - Use corpus_author_publication_stats for questions about **which authors** show up on **multiple papers**, collaborators across the corpus, or author–publication counts (not a single named author).
+- Use corpus_all_authors_directory for a **complete list** of authors with paper counts (every author in the graph), or when the user asks for **all** / **every** author.
 - Use corpus_gene_frequencies for questions about which genes are most mentioned across the corpus, counts, or prevalence.
+- Use corpus_graph_inventory for **total** papers, chunks, genes, or authors **in the graph/corpus** (exact inventory counts)—not semantic search over text.
+- For **combined** questions (e.g. full author list **and** how many papers in the corpus), call **corpus_graph_inventory** together with **corpus_all_authors_directory** or **corpus_author_publication_stats** as appropriate.
 - Use semantic_search for general conceptual questions or when other tools are not a clear fit.
 - You may call multiple tools if the question combines scopes (e.g. gene + author).
 - Do not write a final answer to the user; only call tools. After you have enough evidence, stop calling tools (respond with no tool calls)."""
@@ -140,6 +167,9 @@ def _accumulate_payload(
     chunk_acc: list[dict[str, Any]],
     themes_holder: list[Any],
     author_stats_holder: list[Any],
+    author_directory_holder: list[Any],
+    author_directory_meta_holder: dict[str, Any],
+    corpus_meta_holder: list[Any],
     themes_meta_holder: dict[str, Any],
     payload: dict[str, Any],
 ) -> None:
@@ -164,6 +194,20 @@ def _accumulate_payload(
         if isinstance(items, list):
             author_stats_holder.clear()
             author_stats_holder.extend(items)
+    elif kind == "author_directory":
+        items = payload.get("items") or []
+        if isinstance(items, list):
+            author_directory_holder.clear()
+            author_directory_holder.extend(items)
+        m = payload.get("meta")
+        if isinstance(m, dict):
+            author_directory_meta_holder.clear()
+            author_directory_meta_holder.update(m)
+    elif kind == "corpus_meta":
+        items = payload.get("items") or []
+        if isinstance(items, list) and items:
+            corpus_meta_holder.clear()
+            corpus_meta_holder.extend(items)
 
 
 def run_evidence_agent(llm, question: str) -> dict[str, Any]:
@@ -181,6 +225,9 @@ def run_evidence_agent(llm, question: str) -> dict[str, Any]:
     chunk_acc: list[dict[str, Any]] = []
     themes_holder: list[Any] = []
     author_stats_holder: list[Any] = []
+    author_directory_holder: list[Any] = []
+    author_directory_meta_holder: dict[str, Any] = {}
+    corpus_meta_holder: list[Any] = []
     themes_meta_holder: dict[str, Any] = {}
     tool_by_name = {t.name: t for t in DEVREOTES_RETRIEVAL_TOOLS}
     used_tools = False
@@ -209,7 +256,16 @@ def run_evidence_agent(llm, question: str) -> dict[str, Any]:
                 except Exception as exc:  # pragma: no cover - defensive
                     out = json.dumps({"kind": "error", "message": str(exc)})
             payload = _parse_tool_payload(out if isinstance(out, str) else str(out))
-            _accumulate_payload(chunk_acc, themes_holder, author_stats_holder, themes_meta_holder, payload)
+            _accumulate_payload(
+                chunk_acc,
+                themes_holder,
+                author_stats_holder,
+                author_directory_holder,
+                author_directory_meta_holder,
+                corpus_meta_holder,
+                themes_meta_holder,
+                payload,
+            )
             messages.append(ToolMessage(content=out if isinstance(out, str) else str(out), tool_call_id=tid))
 
     return {
@@ -217,6 +273,9 @@ def run_evidence_agent(llm, question: str) -> dict[str, Any]:
         "raw_chunks": chunk_acc,
         "themes": list(themes_holder) if themes_holder else None,
         "author_stats": list(author_stats_holder) if author_stats_holder else None,
+        "author_directory": list(author_directory_holder) if author_directory_holder else None,
+        "author_directory_meta": dict(author_directory_meta_holder) if author_directory_meta_holder else None,
+        "corpus_meta": list(corpus_meta_holder) if corpus_meta_holder else None,
         "themes_meta": dict(themes_meta_holder) if themes_meta_holder else None,
         "tool_calls_log": tool_calls_log,
     }

@@ -3,12 +3,13 @@ import sys
 from neo4j import GraphDatabase
 from sentence_transformers import SentenceTransformer
 
-from .paths import embedding_model_name, load_project_dotenv
+from .paths import embedding_model_name, load_project_dotenv, validate_embedding_dimension
 
 
 load_project_dotenv()
 os.environ.setdefault("CUDA_VISIBLE_DEVICES", "")
 model = SentenceTransformer(embedding_model_name())
+validate_embedding_dimension(model.get_sentence_embedding_dimension())
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")

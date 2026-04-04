@@ -144,7 +144,7 @@ flowchart TB
 ### B. Online — “asking the library a question”
 
 1. User submits a question (Gradio `app.py` or Nuxt UI → Python **bridge** → `chatbot.py`).
-2. **Router** (`router.py`) classifies: *themes / author_stats / author / gene / semantic*.
+2. **Router** (`router.py`) classifies: *themes / author_stats / corpus_meta (exact graph counts) / author / gene / semantic*.
 3. **Retrieval** (`retrieval.py`) runs vector search and/or Cypher filters (e.g., only chunks from papers that *mention* gene X).
 4. **Chatbot** (`chatbot.py`) builds a prompt: system rules + numbered passages + user question; the **LLM** streams or returns an answer with `[1]`, `[2]`-style citations.
 
@@ -425,6 +425,7 @@ Paths in this table are relative to **this project folder** (`DevreotesLabResear
 | Schema / indexes | `backend/app/setup_schema.py` |
 | Embeddings | `backend/app/create_embeddings.py` |
 | Search & routes | `backend/app/retrieval.py`, `backend/app/router.py` |
+| Router regression tests | `backend/tests/test_router_golden.py` — run `PYTHONPATH=. python -m unittest backend.tests.test_router_golden -v` after changing `classify_query` |
 | Q&A + streaming path | `backend/app/chatbot.py` |
 | Nuxt → Python | `nuxt/server/python/devreotes_bridge.py` |
 | Env template | `.env.example` |
