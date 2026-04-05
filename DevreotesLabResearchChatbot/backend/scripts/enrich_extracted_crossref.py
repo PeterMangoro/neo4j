@@ -5,7 +5,7 @@ Updates (on HTTP 200):
   - doi: normalized registry DOI from Crossref when available
   - title, year, journal: from Crossref (overwrites heuristic extraction)
   - authors: list of display strings from Crossref (top-level, for ingest / tooling)
-  - crossref: extra fields (authors as structured dicts, publisher, type, url, …)
+  - crossref: extra fields (authors as structured dicts with optional ``orcid``, publisher, type, url, …)
   - crossref_fetched_at: ISO-8601 UTC timestamp
 
 Backfill top-level authors from existing crossref.authors (no HTTP):

@@ -42,6 +42,7 @@ def load_project_dotenv() -> None:
         if prod.is_file():
             load_dotenv(prod, override=True)
 HGNC_LOOKUP_PATH = PROJECT_ROOT / "hgnc_lookup.json"
+AUTHOR_ALIASES_PATH = PROJECT_ROOT / "author_aliases.json"
 PAPERS_DIR = PROJECT_ROOT / "papers"
 EXTRACTED_DIR = PROJECT_ROOT / "extracted"
 
@@ -61,6 +62,9 @@ DEFAULT_EMBEDDING_VECTOR_DIMENSIONS = 768
 
 # Neo4j native vector index on Chunk.embedding — name must stay in sync with retrieval Cypher.
 CHUNK_VECTOR_INDEX_NAME = "chunk_embedding_idx"
+
+# Neo4j full-text index on Chunk.text — hybrid retrieval with vector search (setup_schema).
+CHUNK_FULLTEXT_INDEX_NAME = "chunk_fulltext_idx"
 
 # Neo4j `vector.similarity_function` (see CREATE VECTOR INDEX OPTIONS).
 _ALLOWED_VECTOR_SIMILARITY = frozenset({"cosine", "euclidean"})

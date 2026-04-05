@@ -5,9 +5,15 @@ Run from DevreotesLabResearchChatbot/:
   PYTHONPATH=. python -m unittest backend.tests.test_router_golden -v
 """
 
+import json
 import unittest
+from pathlib import Path
 
-from backend.app.router import classify_query, wants_corpus_inventory_addon
+from backend.app.paths import PROJECT_ROOT
+from backend.app.router import classify_query, extract_gene_from_question, wants_corpus_inventory_addon
+
+_HGNC_PATH = PROJECT_ROOT / "hgnc_lookup.json"
+_HGNC = json.loads(_HGNC_PATH.read_text(encoding="utf-8")) if _HGNC_PATH.is_file() else {}
 
 
 class RouterGoldenTests(unittest.TestCase):
@@ -109,6 +115,16 @@ class RouterGoldenTests(unittest.TestCase):
         """Do not treat 'how many papers mention X' as total corpus size."""
         q = "How many papers mention PTEN?"
         self.assertNotEqual(classify_query(q), "corpus_meta")
+
+    @unittest.skipUnless(_HGNC, "hgnc_lookup.json not present")
+    def test_extract_gene_skips_auxiliary_do(self):
+        q = "What half-life do surface ACh receptors show in chick and rat myotubes?"
+        self.assertNotEqual(extract_gene_from_question(q, _HGNC), "DO")
+
+    @unittest.skipUnless(_HGNC, "hgnc_lookup.json not present")
+    def test_extract_gene_finds_pten(self):
+        q = "How does PTEN regulate cell polarity?"
+        self.assertEqual(extract_gene_from_question(q, _HGNC), "PTEN")
 
 
 if __name__ == "__main__":

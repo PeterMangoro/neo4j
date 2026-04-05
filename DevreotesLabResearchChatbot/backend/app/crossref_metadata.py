@@ -44,6 +44,31 @@ def _date_year(msg: dict) -> int | None:
     return None
 
 
+_ORCID_ID_RE = re.compile(r"(\d{4}-\d{4}-\d{4}-\d{3}[\dX])", re.IGNORECASE)
+
+
+def normalize_orcid_url_or_id(raw: Any) -> str | None:
+    """
+    Crossref often stores ``"ORCID": "https://orcid.org/0000-0001-2345-6789"``.
+    Returns uppercase canonical id or None.
+    """
+    if raw is None:
+        return None
+    s = str(raw).strip()
+    if not s:
+        return None
+    m = _ORCID_ID_RE.search(s)
+    if not m:
+        return None
+    return m.group(1).upper()
+
+
+def orcid_from_structured_author_row(row: dict[str, Any]) -> str | None:
+    if not row:
+        return None
+    return normalize_orcid_url_or_id(row.get("orcid") or row.get("ORCID"))
+
+
 def _authors(msg: dict) -> list[dict[str, str | None]]:
     raw = msg.get("author") or []
     if not isinstance(raw, list):
@@ -60,15 +85,17 @@ def _authors(msg: dict) -> list[dict[str, str | None]]:
         family = _first_str(a.get("family"), 200)
         name = _first_str(a.get("name"), 300)
         seq = a.get("sequence")
-        out.append(
-            {
-                "given": given,
-                "family": family,
-                "name": name,
-                "sequence": str(seq) if seq else None,
-                "affiliation": aff,
-            }
-        )
+        oid = normalize_orcid_url_or_id(a.get("ORCID") or a.get("orcid"))
+        rec: dict[str, str | None] = {
+            "given": given,
+            "family": family,
+            "name": name,
+            "sequence": str(seq) if seq else None,
+            "affiliation": aff,
+        }
+        if oid:
+            rec["orcid"] = oid
+        out.append(rec)
     return out
 
 

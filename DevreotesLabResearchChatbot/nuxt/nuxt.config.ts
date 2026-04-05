@@ -35,6 +35,12 @@ export default defineNuxtConfig({
     highlight: {
       // noApiRoute: true
       shikiEngine: 'javascript'
+    },
+    remarkPlugins: {
+      'remark-math': {}
+    },
+    rehypePlugins: {
+      'rehype-katex': {}
     }
   },
 

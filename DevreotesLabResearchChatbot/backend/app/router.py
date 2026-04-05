@@ -1,5 +1,7 @@
 import re
 
+from .stopword_tokens import GENE_HGNC_LOOKUP_SKIP_TOKENS
+
 
 def is_author_directory_query(question: str) -> bool:
     """
@@ -275,11 +277,15 @@ def extract_gene_from_question(question: str, hgnc_lookup: dict):
         clean = raw.strip("_,.'\"()[]{}").upper()
         if len(clean) < 2:
             continue
+        if clean in GENE_HGNC_LOOKUP_SKIP_TOKENS:
+            continue
         if clean in hgnc_lookup:
             return clean
     upper_q = question.upper()
     for m in re.finditer(r"\b[A-Z][A-Z0-9]{1,15}\b", upper_q):
         tok = m.group(0)
+        if tok in GENE_HGNC_LOOKUP_SKIP_TOKENS:
+            continue
         if tok in hgnc_lookup:
             return tok
     return None

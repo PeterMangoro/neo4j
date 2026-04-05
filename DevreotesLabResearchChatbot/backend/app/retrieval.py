@@ -1,22 +1,40 @@
 import json
 import os
 import re
+import threading
 from neo4j import GraphDatabase
 from sentence_transformers import SentenceTransformer, util as st_util
 
 from .paths import (
+    CHUNK_FULLTEXT_INDEX_NAME,
     CHUNK_VECTOR_INDEX_NAME,
     HGNC_LOOKUP_PATH,
     embedding_model_name,
     load_project_dotenv,
     validate_embedding_dimension,
 )
+from .fulltext_query import build_fulltext_lucene_query
 
 
 load_project_dotenv()
 os.environ.setdefault("CUDA_VISIBLE_DEVICES", "")
-model = SentenceTransformer(embedding_model_name())
-validate_embedding_dimension(model.get_sentence_embedding_dimension())
+
+_embedding_model: SentenceTransformer | None = None
+_embedding_model_lock = threading.Lock()
+
+
+def _get_embedding_model() -> SentenceTransformer:
+    """Load SentenceTransformer on first use (avoids blocking process import / unrelated routes)."""
+    global _embedding_model
+    if _embedding_model is not None:
+        return _embedding_model
+    with _embedding_model_lock:
+        if _embedding_model is not None:
+            return _embedding_model
+        m = SentenceTransformer(embedding_model_name())
+        validate_embedding_dimension(m.get_sentence_embedding_dimension())
+        _embedding_model = m
+        return _embedding_model
 
 
 def _get_driver():
@@ -67,6 +85,24 @@ def _vector_fetch_k(top_k: int) -> int:
     mult = int(os.getenv("RAG_VECTOR_FETCH_MULTIPLIER", "4"))
     cap = int(os.getenv("RAG_VECTOR_FETCH_CAP", "120"))
     return min(max(top_k * mult, top_k * 2), cap)
+
+
+def _fulltext_enabled() -> bool:
+    return os.getenv("RAG_FULLTEXT", "true").lower() in ("1", "true", "yes", "on")
+
+
+def _merge_chunk_hits_keep_best_score(*lists: list) -> list:
+    by_id: dict[str, dict] = {}
+    for lst in lists:
+        for r in lst:
+            cid = r.get("chunk_id")
+            if not cid:
+                continue
+            sc = float(r.get("score") or 0.0)
+            prev = by_id.get(cid)
+            if prev is None or sc > float(prev.get("score") or 0.0):
+                by_id[cid] = dict(r)
+    return list(by_id.values())
 
 
 def _max_chunks_per_paper() -> int:
@@ -188,9 +224,10 @@ def _maybe_rerank_by_query_embedding(question: str, rows: list, top_k: int) -> l
         return rows[:top_k]
     if len(rows) <= 1:
         return rows[:top_k]
-    q_emb = model.encode(question, convert_to_tensor=True, normalize_embeddings=True)
+    enc = _get_embedding_model()
+    q_emb = enc.encode(question, convert_to_tensor=True, normalize_embeddings=True)
     texts = [f"{r.get('title', '')} {(r.get('text') or '')[:1600]}" for r in rows]
-    c_embs = model.encode(texts, convert_to_tensor=True, normalize_embeddings=True)
+    c_embs = enc.encode(texts, convert_to_tensor=True, normalize_embeddings=True)
     sims = st_util.cos_sim(q_emb, c_embs)[0]
     order = sims.argsort(descending=True).cpu().tolist()
     out = []
@@ -203,7 +240,11 @@ def _maybe_rerank_by_query_embedding(question: str, rows: list, top_k: int) -> l
 
 def vector_search(question: str, top_k: int = 5):
     fetch_k = _vector_fetch_k(top_k)
-    query_embedding = model.encode(question).tolist()
+    query_embedding = _get_embedding_model().encode(question).tolist()
+    ft_limit = min(
+        max(fetch_k, top_k * 2),
+        int(os.getenv("RAG_FULLTEXT_RESULT_CAP", "40")),
+    )
     with driver.session() as session:
         results = session.run(
             f"""
@@ -222,7 +263,41 @@ def vector_search(question: str, top_k: int = 5):
             top_k=fetch_k,
             embedding=query_embedding,
         ).data()
+        ft_rows: list = []
+        if _fulltext_enabled():
+            ft_q = build_fulltext_lucene_query(question)
+            if ft_q:
+                try:
+                    ft_rows = session.run(
+                        f"""
+                        CALL db.index.fulltext.queryNodes('{CHUNK_FULLTEXT_INDEX_NAME}', $ft_q)
+                        YIELD node AS c, score AS fts
+                        MATCH (p:Paper)-[:HAS_CHUNK]->(c)
+                        RETURN
+                          p.title AS title,
+                          p.paper_id AS paper_id,
+                          coalesce(p.source_file, p.filename) AS source_file,
+                          c.chunk_id AS chunk_id,
+                          c.text AS text,
+                          fts
+                        ORDER BY fts DESC
+                        LIMIT $ft_limit
+                        """,
+                        ft_q=ft_q,
+                        ft_limit=ft_limit,
+                    ).data()
+                except Exception:
+                    ft_rows = []
+        for i, row in enumerate(ft_rows):
+            row.pop("fts", None)
+            row["score"] = max(0.36, 0.52 - i * 0.012)
     normalized = _normalize_rows(results, route="semantic")
+    if ft_rows:
+        normalized = _merge_chunk_hits_keep_best_score(
+            normalized,
+            _normalize_rows(ft_rows, route="semantic"),
+        )
+        normalized.sort(key=lambda r: float(r.get("score") or 0.0), reverse=True)
     deduped = _dedupe_by_paper(
         normalized,
         top_k=_dedupe_target_k(top_k),
@@ -298,7 +373,7 @@ def graph_search_by_gene(gene_name: str, question: str | None = None, top_k: int
     hgnc_id = gene_entry["hgnc_id"]
     official_symbol = gene_entry.get("official_symbol") or gene_key
     qtext = question or gene_name
-    query_embedding = model.encode(qtext).tolist()
+    query_embedding = _get_embedding_model().encode(qtext).tolist()
     fetch_k = _vector_fetch_k(top_k)
 
     results = _graph_search_by_gene_strict(hgnc_id, official_symbol, fetch_k, query_embedding)
@@ -325,7 +400,7 @@ def graph_search_by_author(author_name: str, question: str | None = None, top_k:
     """
     normalized_key = _normalize_author_query(author_name)
     qtext = question or author_name
-    query_embedding = model.encode(qtext).tolist()
+    query_embedding = _get_embedding_model().encode(qtext).tolist()
     fetch_k = min(_vector_fetch_k(top_k), 200)
 
     with driver.session() as session:

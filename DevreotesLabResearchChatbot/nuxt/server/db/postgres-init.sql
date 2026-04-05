@@ -18,11 +18,14 @@ CREATE UNIQUE INDEX IF NOT EXISTS users_provider_id_idx ON users(provider, provi
 CREATE TABLE IF NOT EXISTS chats (
   id text PRIMARY KEY,
   title text,
+  summary text,
   user_id text NOT NULL,
   created_at timestamptz NOT NULL DEFAULT now()
 );
 
 CREATE INDEX IF NOT EXISTS chats_user_id_idx ON chats(user_id);
+
+-- If chats existed without summary: ALTER TABLE chats ADD COLUMN IF NOT EXISTS summary text;
 
 CREATE TABLE IF NOT EXISTS messages (
   id text PRIMARY KEY,

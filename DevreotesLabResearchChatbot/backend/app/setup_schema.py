@@ -1,7 +1,7 @@
 import os
 from neo4j import GraphDatabase
 
-from .paths import chunk_embedding_vector_index_cypher, load_project_dotenv
+from .paths import CHUNK_FULLTEXT_INDEX_NAME, chunk_embedding_vector_index_cypher, load_project_dotenv
 
 
 def _get_driver():
@@ -31,6 +31,7 @@ def setup_schema():
         "CREATE INDEX paper_year_idx IF NOT EXISTS FOR (p:Paper) ON (p.year)",
         "CREATE INDEX paper_doi_idx IF NOT EXISTS FOR (p:Paper) ON (p.doi)",
         chunk_embedding_vector_index_cypher(),
+        f"CREATE FULLTEXT INDEX {CHUNK_FULLTEXT_INDEX_NAME} IF NOT EXISTS FOR (c:Chunk) ON EACH [c.text]",
     ]
 
     with driver.session() as session:

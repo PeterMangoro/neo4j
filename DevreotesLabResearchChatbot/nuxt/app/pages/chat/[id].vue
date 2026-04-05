@@ -8,6 +8,7 @@ import ProseStreamPre from '../../components/prose/PreStream.vue'
 import DevreotesTracePanel from '../../components/DevreotesTracePanel.vue'
 import type { DevreotesTrace } from '~/types/devreotes-trace'
 import { injectCitationMarkdown } from '~/utils/injectCitationMarkdown'
+import { normalizeAssistantMathMarkdown } from '~/utils/normalizeAssistantMathMarkdown'
 
 /** UIMessage plus optional persisted Devreotes audit row from Hub DB. */
 type ChatMessage = UIMessage & { devreotesTrace?: DevreotesTrace | null }
@@ -32,7 +33,8 @@ function devreotesTraceForMessage(msg: ChatMessage): DevreotesTrace | undefined 
 
 function assistantMarkdownWithCitations(text: string, msg: ChatMessage): string {
   const trace = devreotesTraceForMessage(msg)
-  return injectCitationMarkdown(text, trace?.sources)
+  const cited = injectCitationMarkdown(text, trace?.sources)
+  return normalizeAssistantMathMarkdown(cited)
 }
 
 /** Bust MDCCached when retrieval `sources` arrive so citation tooltips update after streaming. */

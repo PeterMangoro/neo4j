@@ -42,7 +42,12 @@ SYSTEM_PROMPT = (
     "You are a research assistant for Prof. Peter Devreotes' lab at Johns Hopkins University. "
     "You answer questions based ONLY on the provided research papers from the lab corpus. "
     "Do not use outside knowledge. If the answer is not in the provided context, say so clearly. "
-    "Be concise and scientifically precise. "
+    "When the context supports an answer, explain in depth: define important terms, trace mechanisms "
+    "step by step, and tie each substantive claim to the cited evidence. "
+    "Use clear structure (short sections or bullets) when it helps readability. "
+    "Prefer scientific precision and completeness over brevity; do not pad or speculate beyond the passages. "
+    "For equations, use Markdown math: inline as $expression$ and display as $$expression$$ "
+    "(not \\(...\\) or \\[...\\]). "
     "The conversation context may be included to resolve references between turns; treat it only as context, not as evidence. "
     "When the context provides numbered paper passages, cite them as [1], [2], etc. "
     "When the context is an author list without passage numbers, give names and counts directly—do not invent [A1]-style row tags. "
@@ -162,7 +167,7 @@ def _author_directory_disclosure_prompt(meta: dict | None) -> str:
     parts = [
         f"This table lists authors with at least {int(meta.get('min_papers') or 1)} distinct paper(s), "
         f"up to {lim} rows, sorted by paper count.",
-        "Names may include ingest noise (mis-parsed PDF lines).",
+        "Author names follow extracted JSON / Crossref (same source as _metadata_report.json).",
     ]
     if truncated:
         parts.append(
@@ -606,6 +611,7 @@ def _prepare_generation_router(question: str, chat_history=None):
             f"{conversation_prefix}"
             f"Question: {question}\n\n"
             "Answer only using the statistics above. Cite each statistic you rely on as [n]. "
+            "When the question calls for interpretation, elaborate carefully while staying tied to those counts. "
             "Do not invent qualitative research themes that are not supported by these counts."
         )
         dline = _themes_disclosure_prompt(themes_meta)
@@ -627,6 +633,7 @@ def _prepare_generation_router(question: str, chat_history=None):
             f"Question: {question}\n\n"
             f"{corpus_note}"
             "Answer only using the sections above. Refer to authors by name; do not use [An] citation tags. "
+            "When helpful, give a thorough answer (grouping, trends, or notable counts) without exceeding what the data show. "
             "Do not treat the first author line as the total number of papers in the corpus. "
             "If the question asks who appears on multiple papers, list authors with paper_count ≥ 2."
         )
@@ -647,6 +654,7 @@ def _prepare_generation_router(question: str, chat_history=None):
             f"Question: {question}\n\n"
             f"{corpus_note}"
             "Answer only using the sections above. Refer to authors by name; do not use [An] citation tags. "
+            "When helpful, elaborate on patterns in the directory (e.g. high-count authors) while staying factual. "
             "If both corpus totals and the author list appear, use [C1]–[C6] only for corpus-wide figures."
         )
         if ddir:
@@ -660,7 +668,8 @@ def _prepare_generation_router(question: str, chat_history=None):
             f"{conversation_prefix}"
             f"Question: {question}\n\n"
             "Answer only using the numbered lines above. Cite each figure you use as [n]. "
-            "If the user asked only for one total (e.g. papers), give that number clearly and you may briefly mention related counts."
+            "If the user asked only for one total (e.g. papers), give that number clearly and you may explain related counts in context. "
+            "For broader questions, relate the figures explicitly to what was asked."
         )
     else:
         user_block = (
@@ -670,7 +679,8 @@ def _prepare_generation_router(question: str, chat_history=None):
             "---\n\n"
             f"{conversation_prefix}"
             f"Question: {question}\n\n"
-            "Answer only from the passages above. Cite supporting passages as [n]."
+            "Answer only from the passages above. Cite supporting passages as [n]. "
+            "For multi-part questions, address each part in turn with the relevant citations."
         )
 
     messages = [
@@ -806,7 +816,7 @@ def _prepare_generation_agent(question: str, chat_history=None):
             f"Question: {question}\n\n"
             f"{cite_line} "
             "If the question has multiple parts, answer each part using the matching section. "
-            "Do not invent counts or themes not shown."
+            "Explain thoroughly where the data allow; do not invent counts or themes not shown."
         )
         dline = _themes_disclosure_prompt(themes_meta) if has_th else ""
         if dline:
@@ -906,7 +916,8 @@ def _prepare_generation_agent(question: str, chat_history=None):
             f"{chunk_ctx}\n---\n\n"
             f"{conversation_prefix}"
             f"Question: {question}\n\n"
-            "Answer only from the sections above. Do not use outside knowledge."
+            "Answer only from the sections above. Do not use outside knowledge. "
+            "Give a detailed, well-structured answer when the evidence supports it; cite each section appropriately."
         )
         dline = _themes_disclosure_prompt(themes_meta) if themes else ""
         if dline:
@@ -922,7 +933,8 @@ def _prepare_generation_agent(question: str, chat_history=None):
             f"{context}\n---\n\n"
             f"{conversation_prefix}"
             f"Question: {question}\n\n"
-            "Answer only from the passages above. Cite supporting passages as [n]."
+            "Answer only from the passages above. Cite supporting passages as [n]. "
+            "For multi-part questions, address each part in turn with the relevant citations."
         )
         effective_query_type = "agent"
 
