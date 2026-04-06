@@ -6,7 +6,14 @@ import { getTextFromMessage } from '@nuxt/ui/utils/ai'
 import { consumeDevreotesUiSse } from '../../utils/devreotesSse'
 import ProseStreamPre from '../../components/prose/PreStream.vue'
 import DevreotesTracePanel from '../../components/DevreotesTracePanel.vue'
+import DevreotesProgressStrip from '../../components/DevreotesProgressStrip.vue'
 import type { DevreotesTrace } from '~/types/devreotes-trace'
+import {
+  devreotesProgressIsEmpty,
+  emptyDevreotesStreamProgress,
+  mergeDevreotesProgress,
+  type DevreotesStreamProgress
+} from '~/utils/devreotesProgress'
 import { injectCitationMarkdown } from '~/utils/injectCitationMarkdown'
 import { normalizeAssistantMathMarkdown } from '~/utils/normalizeAssistantMathMarkdown'
 
@@ -108,6 +115,10 @@ const messages = ref<ChatMessage[]>((data.value.messages || []) as ChatMessage[]
 const chatStatus = ref<'ready' | 'submitted' | 'streaming' | 'error'>('ready')
 const chatError = ref<Error | undefined>(undefined)
 
+/** Live retrieval/plan progress for the in-flight assistant message (SSE data-devreotes-progress). */
+const streamProgress = ref<DevreotesStreamProgress>(emptyDevreotesStreamProgress())
+const streamingAssistantMessageId = ref<string | null>(null)
+
 /** Streamed follow-ups (SSE data-devreotes-followups) until DB row merges trace. */
 const followupsBusy = ref(false)
 const localFollowups = ref<string[]>([])
@@ -136,7 +147,13 @@ const showDevreotesLoading = computed(() => {
     return false
   }
   const text = getTextFromMessage(last)?.trim() ?? ''
-  return text.length === 0
+  if (text.length > 0) {
+    return false
+  }
+  if (!devreotesProgressIsEmpty(streamProgress.value)) {
+    return false
+  }
+  return true
 })
 
 async function runDevreotesTurn(text: string, options: { skipUserInsert?: boolean } = {}) {
@@ -144,8 +161,10 @@ async function runDevreotesTurn(text: string, options: { skipUserInsert?: boolea
   chatError.value = undefined
   followupsBusy.value = false
   localFollowups.value = []
+  streamProgress.value = emptyDevreotesStreamProgress()
 
   const assistantId = crypto.randomUUID()
+  streamingAssistantMessageId.value = assistantId
   // One text part so `#content` has something to render (`parts: []` shows nothing).
   const assistantMessage: ChatMessage = {
     id: assistantId,
@@ -196,9 +215,15 @@ async function runDevreotesTurn(text: string, options: { skipUserInsert?: boolea
       res.body,
       (delta) => {
         acc += delta
+        if (acc.length > 0) {
+          streamProgress.value = emptyDevreotesStreamProgress()
+        }
         patchAssistantText(acc, true)
       },
       {
+        onProgress: (ev) => {
+          streamProgress.value = mergeDevreotesProgress(streamProgress.value, ev)
+        },
         onFollowups: (ev) => {
           if (ev.kind === 'partial') {
             followupsBusy.value = true
@@ -211,6 +236,8 @@ async function runDevreotesTurn(text: string, options: { skipUserInsert?: boolea
       }
     )
     patchAssistantText(acc, false)
+    streamingAssistantMessageId.value = null
+    streamProgress.value = emptyDevreotesStreamProgress()
     // Allow follow-up chips and new prompts while we reconcile messages with the server.
     chatStatus.value = 'ready'
 
@@ -253,6 +280,8 @@ async function runDevreotesTurn(text: string, options: { skipUserInsert?: boolea
     }
     refreshNuxtData('chats')
   } catch (error: unknown) {
+    streamingAssistantMessageId.value = null
+    streamProgress.value = emptyDevreotesStreamProgress()
     if (assistantIndex >= 0 && assistantIndex < messages.value.length) {
       messages.value.splice(assistantIndex, 1)
     }
@@ -348,6 +377,12 @@ function copy(e: MouseEvent, message: ChatMessage) {
             class="lg:pt-(--ui-header-height) pb-4 sm:pb-6"
           >
             <template #content="{ message }">
+              <div
+                v-if="message.role === 'assistant' && message.id === streamingAssistantMessageId"
+                class="w-full min-w-0 max-w-full"
+              >
+                <DevreotesProgressStrip :progress="streamProgress" />
+              </div>
               <template v-for="(part, index) in message.parts" :key="`${message.id}-${part.type}-${index}${partStateSuffix(part)}`">
                 <Reasoning
                   v-if="part.type === 'reasoning'"

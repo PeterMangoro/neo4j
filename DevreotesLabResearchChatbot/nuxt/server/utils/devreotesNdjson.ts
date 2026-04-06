@@ -1,4 +1,4 @@
-import type { UIMessageStreamWriter } from 'ai'
+import type { UIMessage, UIMessageStreamWriter } from 'ai'
 
 export type DevreotesFinishBox = {
   result: DevreotesResult | null
@@ -11,6 +11,28 @@ export type DevreotesThemesMeta = {
   truncated?: boolean
   metric?: string
   sort?: string
+}
+
+/** One progress event streamed to the UI (mirrors Python NDJSON types). */
+export type DevreotesProgressNdjson =
+  | { type: 'agent_status', phase?: string, message: string }
+  | { type: 'agent_plan', plan: DevreotesAgentPlanPayload }
+  | { type: 'agent_step', step_id?: string, status?: string, label?: string }
+
+export type DevreotesAgentPlanPayload = {
+  summary?: string
+  steps?: Array<{ id: string, label: string, status: string }>
+  tool_sequence?: string[]
+}
+
+/** Structured plan from explicit agent planner (when enabled). */
+export type DevreotesAgentPlan = {
+  subtasks?: string[]
+  tool_sequence?: string[]
+  missing_parameters?: string[]
+  needs_user_input?: boolean
+  clarification_prompt?: string
+  notes?: string
 }
 
 export type DevreotesResult = {
@@ -26,6 +48,11 @@ export type DevreotesResult = {
   error?: string
   tool_calls_log?: Array<{ name?: string; args?: Record<string, unknown> }>
   themes_meta?: DevreotesThemesMeta
+  /** Planner asked for user input before running retrieval tools. */
+  clarification_required?: boolean
+  agent_plan?: DevreotesAgentPlan
+  /** Model chain-of-thought snippets when DEVREOTES_AGENT_REASONING_LOG=true (sensitive). */
+  reasoning_log?: Array<{ kind?: string, step?: number, text?: string }>
 }
 
 /**
@@ -55,6 +82,24 @@ export function applyDevreotesNdjsonLine(
       writer.write({ type: 'text-delta', id: textId, delta: obj.text })
     } else if (obj.type === 'finish' && obj.result) {
       finishBox.result = obj.result
+    } else if (
+      obj.type === 'agent_status'
+      && typeof (obj as { message?: string }).message === 'string'
+    ) {
+      writer.write({
+        type: 'data-devreotes-progress',
+        data: obj as DevreotesProgressNdjson
+      } as Parameters<UIMessageStreamWriter<UIMessage>['write']>[0])
+    } else if (obj.type === 'agent_plan' && (obj as { plan?: unknown }).plan) {
+      writer.write({
+        type: 'data-devreotes-progress',
+        data: obj as DevreotesProgressNdjson
+      } as Parameters<UIMessageStreamWriter<UIMessage>['write']>[0])
+    } else if (obj.type === 'agent_step') {
+      writer.write({
+        type: 'data-devreotes-progress',
+        data: obj as DevreotesProgressNdjson
+      } as Parameters<UIMessageStreamWriter<UIMessage>['write']>[0])
     }
   } catch {
     /* ignore malformed lines */

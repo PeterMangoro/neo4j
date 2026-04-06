@@ -1,4 +1,4 @@
-import type { DevreotesResult, DevreotesThemesMeta } from '../utils/devreotesNdjson'
+import type { DevreotesAgentPlan, DevreotesResult, DevreotesThemesMeta } from '../utils/devreotesNdjson'
 
 /** Persisted audit snapshot (no duplicate answer text). */
 export type DevreotesTrace = {
@@ -14,6 +14,9 @@ export type DevreotesTrace = {
   abstain_reason?: string | null
   tool_calls_log?: Array<{ name?: string; args?: Record<string, unknown> }>
   themes_meta?: DevreotesThemesMeta
+  clarification_required?: boolean
+  agent_plan?: DevreotesAgentPlan
+  reasoning_log?: Array<{ kind?: string, step?: number, text?: string }>
   /** Dynamic follow-up questions (also streamed over SSE before persist). */
   suggested_followups?: string[]
 }
@@ -36,6 +39,9 @@ export function buildDevreotesTrace(
     abstain_reason: result.abstain_reason ?? null,
     tool_calls_log: result.tool_calls_log,
     themes_meta: result.themes_meta,
+    ...(result.clarification_required ? { clarification_required: true } : {}),
+    ...(result.agent_plan ? { agent_plan: result.agent_plan } : {}),
+    ...(result.reasoning_log?.length ? { reasoning_log: result.reasoning_log } : {}),
     ...(suggested_followups?.length ? { suggested_followups } : {})
   }
 }

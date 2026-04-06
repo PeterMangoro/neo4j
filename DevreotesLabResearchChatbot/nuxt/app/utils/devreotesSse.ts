@@ -1,3 +1,5 @@
+import type { DevreotesProgressNdjson } from './devreotesProgress'
+
 export type DevreotesFollowupsStreamEvent =
   | { kind: 'partial', partial: string }
   | { kind: 'done', partial: string, suggestions: string[] }
@@ -5,7 +7,8 @@ export type DevreotesFollowupsStreamEvent =
 function parseSseDataLine(
   line: string,
   onDelta: (delta: string) => void,
-  onFollowups?: (ev: DevreotesFollowupsStreamEvent) => void
+  onFollowups?: (ev: DevreotesFollowupsStreamEvent) => void,
+  onProgress?: (ev: DevreotesProgressNdjson) => void
 ): void {
   if (!line.startsWith('data:')) {
     return
@@ -26,6 +29,12 @@ function parseSseDataLine(
     }
     if (chunk.type === 'text-delta' && typeof chunk.delta === 'string') {
       onDelta(chunk.delta)
+    }
+    if (chunk.type === 'data-devreotes-progress' && chunk.data && typeof chunk.data === 'object') {
+      const d = chunk.data as { type?: string }
+      if (d.type === 'agent_status' || d.type === 'agent_plan' || d.type === 'agent_step') {
+        onProgress?.(chunk.data as DevreotesProgressNdjson)
+      }
     }
     if (chunk.type === 'data-devreotes-followups' && chunk.data && typeof chunk.data === 'object') {
       const d = chunk.data as { partial?: string, suggestions?: string[], done?: boolean }
@@ -55,9 +64,13 @@ function parseSseDataLine(
 export async function consumeDevreotesUiSse(
   body: ReadableStream<Uint8Array>,
   onDelta: (delta: string) => void,
-  options?: { onFollowups?: (ev: DevreotesFollowupsStreamEvent) => void }
+  options?: {
+    onFollowups?: (ev: DevreotesFollowupsStreamEvent) => void
+    onProgress?: (ev: DevreotesProgressNdjson) => void
+  }
 ): Promise<void> {
   const onFollowups = options?.onFollowups
+  const onProgress = options?.onProgress
   const reader = body.getReader()
   const decoder = new TextDecoder()
   let buf = ''
@@ -75,12 +88,12 @@ export async function consumeDevreotesUiSse(
       buf = buf.slice(sep + 2)
 
       for (const line of block.split('\n')) {
-        parseSseDataLine(line, onDelta, onFollowups)
+        parseSseDataLine(line, onDelta, onFollowups, onProgress)
       }
     }
   }
 
   for (const line of buf.split('\n')) {
-    parseSseDataLine(line, onDelta, onFollowups)
+    parseSseDataLine(line, onDelta, onFollowups, onProgress)
   }
 }

@@ -196,8 +196,12 @@ export default defineEventHandler(async (event) => {
             }
           })
 
-          // Legacy bridge path: only the plain question string is sent.
-          proc.stdin.write(message)
+          const bridgePayload = JSON.stringify({
+            message,
+            summary: summaryForRequest,
+            messages: recentHistory
+          })
+          proc.stdin.write(bridgePayload)
           proc.stdin.end()
         })
       }

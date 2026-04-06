@@ -119,10 +119,9 @@ Then set `DEVREOTES_API_URL=http://127.0.0.1:8765` in the Nuxt environment.
 
 ### Conversational thread memory
 
-The Nuxt Devreotes route now supports **within-thread conversational context** when using the
-FastAPI path (`DEVREOTES_API_URL`):
+The Nuxt Devreotes route supports **within-thread conversational context** on both the **FastAPI** path (`DEVREOTES_API_URL`) and the **bridge** path (JSON stdin to `devreotes_bridge.py`):
 
-- Sends `messages` (recent turns, default last **10**) and `summary` with each `/chat/stream` call.
+- Sends `messages` (recent turns, default last **10**) and `summary` with each request.
 - Persists a per-chat `chats.summary` value in the app DB.
 - Uses an LLM summary updater after each assistant response (with deterministic fallback).
 
@@ -134,7 +133,22 @@ Useful env knobs:
 | `DEVREOTES_SUMMARY_MAX_CHARS` | `1500` | Max persisted summary length |
 | `DEVREOTES_SUMMARY_MODEL` | `openai/gpt-4o-mini` | Model used to update thread summary |
 
-> Note: bridge mode (`devreotes_bridge.py` without `DEVREOTES_API_URL`) remains plain-question input and does not yet pass structured history.
+**Bridge mode and thread context:** When Nuxt runs `devreotes_bridge.py` (no `DEVREOTES_API_URL`), stdin is a **JSON object** with `message`, `summary`, and `messages` (same shape as the FastAPI body), so multi-turn context works on the local Python path too. A legacy **plain-text** line is still accepted as the whole question.
+
+### Agent mode (optional)
+
+With **`DEVREOTES_RAG_MODE=agent`**, retrieval uses multiple tools in a loop before the final answer. Optional features (all in `.env.example`):
+
+| Variable | Purpose |
+|----------|---------|
+| `DEVREOTES_AGENT_EXPLICIT_PLAN` | Structured planner step + streamed plan checklist in the UI |
+| `DEVREOTES_AGENT_ALLOW_CLARIFY` | If the planner asks for user input, return a clarification message instead of running tools (default on) |
+| `DEVREOTES_AGENT_UI_PROGRESS` | Stream status / plan / tool labels during retrieval (default on) |
+| `DEVREOTES_AGENT_REPLAN_ROUNDS` | Extra retrieval batches after a supervisor replan decision (`0`–`4`, default `0`) |
+| `DEVREOTES_AGENT_REASONING_LOG` | Persist model reasoning snippets in API/trace (privacy-sensitive; default off) |
+| `DEVREOTES_AGENT_THINK_STEP` | Extra “think” LLM call before each tool round (default off) |
+
+See **[ARCHITECTURE_AND_USAGE.md §11](./ARCHITECTURE_AND_USAGE.md#11-key-additions-since-the-basic-router--gradio-layout)** for behavior, protocols, and file locations.
 
 ---
 

@@ -84,9 +84,9 @@ flowchart TB
   end
 
   subgraph core["Python backend (backend/app)"]
-    CHAT["chatbot.py\n(router vs agent mode)"]
+    CHAT["chatbot.py\nrouter / agent + planner"]
     ROUT["router.py"]
-    AGT["agent_tools\nrun_evidence_agent"]
+    AGT["agent_tools +\nagent_planner +\nagent_replan"]
     RETR["retrieval.py\nvector + Cypher"]
   end
 
@@ -107,9 +107,9 @@ flowchart TB
   CHAT --> LLM
 ```
 
-**How to read it:** **Offline** jobs populate **Neo4j** once (or after corpus changes). At **question time**, either **Gradio** calls `chatbot.py` in-process, or the **Nuxt** route streams an answer via the **bridge** subprocess or, if configured, the **FastAPI** service. **Router** vs **agent** mode is decided inside `chatbot.py` (`DEVREOTES_RAG_MODE`). **Retrieval** always reads the graph/vector index; the **LLM** only sees retrieved text plus the user question.
+**How to read it:** **Offline** jobs populate **Neo4j** once (or after corpus changes). At **question time**, either **Gradio** calls `chatbot.py` in-process, or the **Nuxt** route streams an answer via the **bridge** subprocess or, if configured, the **FastAPI** service. **Router** vs **agent** mode is decided inside `chatbot.py` (`DEVREOTES_RAG_MODE`). In **agent** mode, optional **explicit planning** (`agent_planner.py`), **replan** between batches (`agent_replan.py`), and **tool loops** live in `agent_tools.py` / `chatbot.py`. **Retrieval** always reads the graph/vector index; the **LLM** only sees retrieved text plus the user question.
 
-**Conversational context (thread scope):** On the Nuxt → FastAPI path, the request may include `summary` and recent `messages` (default last 10 turns). Python uses this context to resolve follow-ups (pronouns, references) while keeping evidence grounded in retrieved corpus passages.
+**Conversational context (thread scope):** Requests may include `summary` and recent `messages` (default last 10 turns)—on **FastAPI** in the JSON body and on the **bridge** path as a **JSON line** on stdin (same keys). Python uses this context to resolve follow-ups while keeping evidence grounded in retrieved corpus passages. A legacy **single-line plain-text** question still works for the bridge.
 
 ---
 
@@ -321,22 +321,33 @@ This section summarizes **agentic RAG**, the **Nuxt API**, **retrieval / decisio
 ### 11.1 Two RAG modes: router (default) vs agent
 
 - **`DEVREOTES_RAG_MODE=router` (default)** — Same mental model as §6: `router.py` picks a **single** route (`themes` / `gene` / `author` / `semantic`), `retrieval.py` runs that path once, then `chatbot.py` builds one context block and calls the LLM.
-- **`DEVREOTES_RAG_MODE=agent`** — The model can call **multiple retrieval tools** over several steps (`semantic_search`, `gene_literature_search`, author/themes tools in `backend/app/agent_tools.py` via `run_evidence_agent`). Evidence is merged and deduplicated; the final answer is still **corpus-grounded** with citations. Optional cap: **`DEVREOTES_AGENT_MAX_STEPS`** (see `structure.md`).
+- **`DEVREOTES_RAG_MODE=agent`** — The model can call **multiple retrieval tools** over several steps (`semantic_search`, `gene_literature_search`, author/themes tools in `backend/app/agent_tools.py`). The main loop is `iter_run_evidence_agent`; **`chatbot.py`** may wrap it in **`iter_run_evidence_agent_outer`** when **`DEVREOTES_AGENT_REPLAN_ROUNDS` > 0`**, merging evidence between batches using **`agent_replan.py`**. Evidence is merged and deduplicated; the final answer stays **corpus-grounded** with citations. Inner step cap: **`DEVREOTES_AGENT_MAX_STEPS`** (see `structure.md`).
 
-**Layman:** Router mode is *one trip to the library*. Agent mode is *the librarian may go back to different shelves several times* before writing the answer.
+**Optional agent layers (all toggled via env; see `.env.example` and `structure.md`):**
+
+| Feature | Behavior |
+|---------|----------|
+| **Explicit plan** (`DEVREOTES_AGENT_EXPLICIT_PLAN`) | Before tools, a structured **planner** (`agent_planner.py`) emits goals/steps. The UI can show a **checklist** when progress streaming is on. |
+| **Clarification** (`DEVREOTES_AGENT_ALLOW_CLARIFY`) | If the planner marks **needs user input**, the backend returns a short clarification message **instead of** running tools (so vague prompts don’t burn retrieval). |
+| **UI progress** (`DEVREOTES_AGENT_UI_PROGRESS`) | NDJSON lines **`agent_status`**, **`agent_plan`**, **`agent_step`** during retrieval; Nuxt maps them to **`data-devreotes-progress`** SSE and **`DevreotesProgressStrip`**. |
+| **Replan rounds** (`DEVREOTES_AGENT_REPLAN_ROUNDS`) | After an inner batch completes, a small **replan** model (`agent_replan.py`) may request another retrieval batch with compacted observations. |
+| **Reasoning log** (`DEVREOTES_AGENT_REASONING_LOG`) | Optional persistence of model **reasoning** snippets in the finish payload / trace (off by default; privacy-sensitive). |
+| **Think step** (`DEVREOTES_AGENT_THINK_STEP`) | Optional extra **think-only** LLM call before each inner tool round (latency cost). |
+
+**Layman:** Router mode is *one trip to the library*. Agent mode is *the librarian may plan, ask you to narrow the question, and revisit different shelves (maybe in multiple waves)* before writing the answer.
 
 ### 11.2 Nuxt ↔ Python: bridge vs HTTP API
 
 The Nuxt app does **not** reimplement retrieval in TypeScript. It gets answers by either:
 
-1. **Subprocess bridge** — `nuxt/server/python/devreotes_bridge.py` runs the same `chatbot.py` streaming entrypoint (`iter_answer_ndjson`), printing **NDJSON** lines to stdout. Configure the interpreter with **`DEVREOTES_PYTHON`** if needed.
+1. **Subprocess bridge** — `nuxt/server/python/devreotes_bridge.py` runs the same `chatbot.py` streaming entrypoint (`iter_answer_ndjson`), printing **NDJSON** lines to stdout. **Stdin** is either a **JSON object** `{ "message", "summary?", "messages?" }` (same contract as FastAPI) or a legacy **single line** of plain question text. Configure the interpreter with **`DEVREOTES_PYTHON`** if needed.
 2. **HTTP API (optional)** — Run **`uvicorn backend.app.api_app:app`** (see `structure.md`), set **`DEVREOTES_API_URL`** in Nuxt’s env so Nitro calls **`POST /chat/stream`** instead of spawning Python each time. Shared secret optional: **`DEVREOTES_API_SECRET`** / header **`X-Devreotes-Key`**.
 
 The UI records which path was used in the trace as **`backend`: `bridge` | `http`**.
 
 ### 11.2.1 Conversational properties (Nuxt app thread memory)
 
-When **`DEVREOTES_API_URL`** is set, Nuxt sends these additional properties to FastAPI:
+Nuxt sends these properties on **both** the HTTP and bridge paths (HTTP: JSON body; bridge: JSON on stdin):
 
 - `summary`: rolling per-thread summary from `chats.summary`
 - `messages`: recent turns (`[{ role, content }]`, default last 10)
@@ -352,8 +363,6 @@ Key knobs:
 | `DEVREOTES_SUMMARY_MAX_CHARS` | `1500` | Summary truncation cap |
 | `DEVREOTES_SUMMARY_MODEL` | `openai/gpt-4o-mini` | Summary updater model |
 
-Bridge mode remains plain-question stdin and does not carry structured `summary/messages`.
-
 ### 11.2.2 Dynamic follow-up suggestions (streamed over SSE)
 
 After the main answer, **`POST /api/devreotes/chats/[id]`** may emit extra AI SDK chunks of type **`data-devreotes-followups`**: the model streams a JSON array (string fragments), then a final chunk with parsed **`suggested_followups`**. The chat UI shows these as chips; the same strings are persisted on **`devreotes_trace.suggested_followups`**.
@@ -368,7 +377,8 @@ After the main answer, **`POST /api/devreotes/chats/[id]`** may emit extra AI SD
 ### 11.3 Streaming protocol (NDJSON + AI SDK UI stream)
 
 - The Python side yields lines like **`{"type":"delta","text":"..."}`** and a final **`{"type":"finish","result":{...}}`** (see `chatbot.py` and `server/utils/devreotesNdjson.ts` in the Nuxt app).
-- The Nuxt route **`POST /api/devreotes/chats/[id]`** turns that into an **AI SDK UI message stream** for the browser; the client **`consumeDevreotesUiSse`** reads SSE, appends **`text-delta`** to the assistant message, then handles **`data-devreotes-followups`** for live follow-up chips. The stream ends with a **`finish`** chunk after follow-ups complete.
+- In **agent** mode with **`DEVREOTES_AGENT_UI_PROGRESS`**, additional NDJSON types (**`agent_status`**, **`agent_plan`**, **`agent_step`**) describe high-level status, plan checklist updates, and per-tool rows. Nuxt forwards these as SSE **`data-devreotes-progress`**; the chat page shows **`DevreotesProgressStrip`** during retrieval.
+- The Nuxt route **`POST /api/devreotes/chats/[id]`** turns NDJSON into an **AI SDK UI message stream** for the browser; the client **`consumeDevreotesUiSse`** reads SSE, appends **`text-delta`** to the assistant message, then handles **`data-devreotes-followups`** for live follow-up chips. The stream ends with a **`finish`** chunk after follow-ups complete.
 
 ### 11.4 Retrieval / “decision” trace (audit payload)
 
@@ -384,9 +394,11 @@ Each finished turn can carry a structured **`devreotes_trace`** (JSON) alongside
 | **`suggested_followups`** | Optional list of suggested next questions (streamed via SSE, then stored). |
 | **`abstained` / `abstain_reason`** | When the system refuses to answer (e.g. below **`RAG_MIN_SCORE`**, no chunks). |
 | **`tool_calls_log`** | In **agent** mode, a log of tool names/args for audit. |
+| **`agent_plan`** / **`plan_progress`** | When explicit planning runs, structured plan and step completion (if present in finish payload). |
+| **`reasoning_log`** | Optional list of reasoning snippets when **`DEVREOTES_AGENT_REASONING_LOG`** is enabled. |
 | **`trace_version`** | Schema version for forward compatibility. |
 
-In the chat UI, **`DevreotesTracePanel.vue`** shows a collapsible **“Retrieval trace”** under assistant messages. The same **`sources`** list drives **citation tooltips** in the rendered markdown (`injectCitationMarkdown` wraps `[n]` / list-line citations and maps indices to `sources`).
+In the chat UI, **`DevreotesTracePanel.vue`** shows a collapsible **“Retrieval trace”** under assistant messages (including plan / reasoning sections when data is present). The same **`sources`** list drives **citation tooltips** in the rendered markdown (`injectCitationMarkdown` wraps `[n]` / list-line citations and maps indices to `sources`).
 
 ### 11.5 Citations in the UI
 
@@ -403,16 +415,21 @@ Paths in this table are relative to **this project folder** (`DevreotesLabResear
 
 | Topic | Location |
 |--------|-----------|
-| RAG mode switch + streaming Q&A + chat history support | `backend/app/chatbot.py` (`_rag_mode`, history-aware `_prepare_generation*`, `iter_answer_ndjson`) |
-| Agent tools | `backend/app/agent_tools.py`, `run_evidence_agent` |
+| RAG mode switch + streaming Q&A + chat history + agent outer loop | `backend/app/chatbot.py` (`_rag_mode`, `iter_run_evidence_agent_outer`, `iter_answer_ndjson`) |
+| Agent tools + inner loop | `backend/app/agent_tools.py` (`iter_run_evidence_agent`, …) |
+| Structured planner + clarification | `backend/app/agent_planner.py` |
+| Replan / merge between batches | `backend/app/agent_replan.py` |
 | FastAPI stream (optional) + history payload (`summary`, `messages`) | `backend/app/api_app.py` (per `structure.md`) |
 | Nuxt Devreotes route + stream + summary persistence | `nuxt/server/api/devreotes/chats/[id].post.ts`, `server/utils/devreotesNdjson.ts` |
-| Bridge subprocess | `nuxt/server/python/devreotes_bridge.py` |
+| Progress NDJSON → SSE helpers | `nuxt/app/utils/devreotesProgress.ts`, `nuxt/app/utils/devreotesSse.ts` (`onProgress`) |
+| Bridge subprocess (JSON stdin) | `nuxt/server/python/devreotes_bridge.py` |
 | Trace types | `nuxt/app/types/devreotes-trace.ts`, `server/types/devreotes-trace.ts` |
 | Trace UI | `nuxt/app/components/DevreotesTracePanel.vue` |
+| In-chat progress strip | `nuxt/app/components/DevreotesProgressStrip.vue` |
 | Client stream consumer | `nuxt/app/utils/devreotesSse.ts` |
-| Chat page (trace + citations) | `nuxt/app/pages/chat/[id].vue` |
+| Chat page (trace + citations + progress) | `nuxt/app/pages/chat/[id].vue` |
 | Citation injection | `nuxt/app/utils/injectCitationMarkdown.ts`, `app/assets/css/main.css` (`.devreotes-cite`) |
+| Planner / replan tests | `backend/tests/test_agent_planner.py`, `backend/tests/test_agent_replan_merge.py` |
 
 ---
 

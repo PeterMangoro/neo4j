@@ -24,7 +24,13 @@ from .router import (
     is_author_stats_query,
     wants_corpus_inventory_addon,
 )
-from .agent_tools import run_evidence_agent
+from .agent_planner import (
+    allow_clarification,
+    explicit_plan_enabled,
+    format_plan_for_agent,
+    run_agent_planner,
+)
+from .agent_tools import iter_run_evidence_agent_outer, run_evidence_agent
 
 
 load_project_dotenv()
@@ -447,6 +453,95 @@ def _rag_mode() -> str:
     return os.getenv("DEVREOTES_RAG_MODE", "router").strip().lower()
 
 
+def _ui_progress_enabled() -> bool:
+    v = os.getenv("DEVREOTES_AGENT_UI_PROGRESS", "true").strip().lower()
+    return v not in ("0", "false", "no", "off")
+
+
+def _progress_ndjson(obj: dict) -> str:
+    return json.dumps(obj, ensure_ascii=True) + "\n"
+
+
+def _agent_plan_ui_payload(agent_plan_dict: dict) -> dict:
+    subtasks = agent_plan_dict.get("subtasks") or []
+    steps: list[dict] = []
+    for i, s in enumerate(subtasks, 1):
+        if isinstance(s, str) and s.strip():
+            steps.append({"id": f"t{i}", "label": s.strip(), "status": "pending"})
+    summary_parts = [x.strip() for x in subtasks[:2] if isinstance(x, str) and str(x).strip()]
+    summary = " · ".join(summary_parts) if summary_parts else (str(agent_plan_dict.get("notes") or "")[:240]).strip()
+    return {
+        "summary": summary or "Retrieval plan",
+        "steps": steps,
+        "tool_sequence": list(agent_plan_dict.get("tool_sequence") or []),
+    }
+
+
+def _agent_gather_planner_context(question: str, chat_history):
+    """Returns {kind: clarify, state} or {kind: go, retrieval_question, conversation_prefix, agent_plan_dict, plan_context}."""
+    summary, recent_messages = _extract_chat_history(chat_history)
+    conversation_context = _format_conversation_context(summary, recent_messages)
+    retrieval_question = _build_retrieval_question(question, conversation_context)
+    conversation_prefix = (
+        "Conversation context (for reference resolution only):\n"
+        f"{conversation_context}\n\n"
+        if conversation_context
+        else ""
+    )
+
+    agent_plan_dict: dict | None = None
+    plan_context: str | None = None
+    plan_model, plan_err = run_agent_planner(llm, retrieval_question)
+    if plan_err:
+        _log(f"[Agent planner] failed: {plan_err}")
+    if plan_model is not None:
+        agent_plan_dict = plan_model.model_dump()
+        if plan_model.needs_user_input and allow_clarification():
+            clarify = (plan_model.clarification_prompt or "").strip() or (
+                "Could you clarify what you would like to know?"
+            )
+            return {
+                "kind": "clarify",
+                "state": {
+                    "clarification_required": True,
+                    "result": {
+                        "answer": clarify,
+                        "query_type": "agent",
+                        "query_type_label": _query_type_label("agent"),
+                        "routed_key": "agent",
+                        "results_count": 0,
+                        "sources": [],
+                        "retrieval_preview": [],
+                        "abstained": False,
+                        "abstain_reason": None,
+                        "clarification_required": True,
+                        "agent_plan": agent_plan_dict,
+                        "tool_calls_log": [],
+                    },
+                },
+            }
+        if plan_model.needs_user_input and not allow_clarification():
+            plan_model = plan_model.model_copy(
+                update={
+                    "needs_user_input": False,
+                    "clarification_prompt": "",
+                    "notes": (
+                        (plan_model.notes or "").strip()
+                        + "\n(Planner asked for user input but clarification is disabled; proceed with best effort.)"
+                    ).strip(),
+                }
+            )
+            agent_plan_dict = plan_model.model_dump()
+        plan_context = format_plan_for_agent(plan_model)
+    return {
+        "kind": "go",
+        "retrieval_question": retrieval_question,
+        "conversation_prefix": conversation_prefix,
+        "agent_plan_dict": agent_plan_dict,
+        "plan_context": plan_context,
+    }
+
+
 def _merge_raw_chunks(rows: list) -> list:
     """Deduplicate by chunk_id keeping the row with the best score."""
     by_id: dict = {}
@@ -701,22 +796,21 @@ def _prepare_generation_router(question: str, chat_history=None):
     return out
 
 
-def _prepare_generation_agent(question: str, chat_history=None):
-    summary, recent_messages = _extract_chat_history(chat_history)
-    conversation_context = _format_conversation_context(summary, recent_messages)
-    retrieval_question = _build_retrieval_question(question, conversation_context)
-    conversation_prefix = (
-        "Conversation context (for reference resolution only):\n"
-        f"{conversation_context}\n\n"
-        if conversation_context
-        else ""
-    )
-
-    _log("[Agent] DEVREOTES_RAG_MODE=agent")
-    ev = run_evidence_agent(llm, retrieval_question)
+def _finalize_agent_state_after_evidence(
+    question: str,
+    chat_history,
+    conversation_prefix: str,
+    agent_plan_dict: dict | None,
+    ev: dict,
+):
     tool_calls_log = ev["tool_calls_log"]
     themes_meta = ev.get("themes_meta")
     extras = {"tool_calls_log": tool_calls_log}
+    if agent_plan_dict is not None:
+        extras["agent_plan"] = agent_plan_dict
+    rl = ev.get("reasoning_log")
+    if rl:
+        extras["reasoning_log"] = rl
 
     if not ev["used_tools"]:
         _log("[Agent] No tool calls; falling back to router")
@@ -858,6 +952,10 @@ def _prepare_generation_agent(question: str, chat_history=None):
         }
         if themes_meta is not None:
             out["themes_meta"] = themes_meta
+        if agent_plan_dict is not None:
+            out["agent_plan"] = agent_plan_dict
+        if ev.get("reasoning_log"):
+            out["reasoning_log"] = ev["reasoning_log"]
         return out
 
     best_score = max(_result_score(r) for r in merged)
@@ -949,13 +1047,123 @@ def _prepare_generation_agent(question: str, chat_history=None):
     }
     if themes_meta is not None:
         out["themes_meta"] = themes_meta
+    if agent_plan_dict is not None:
+        out["agent_plan"] = agent_plan_dict
+    if ev.get("reasoning_log"):
+        out["reasoning_log"] = ev["reasoning_log"]
     return out
 
 
-def _prepare_generation(question: str, chat_history=None):
-    if _rag_mode() == "agent":
-        return _prepare_generation_agent(question, chat_history=chat_history)
+def _prepare_generation_agent(question: str, chat_history=None):
+    _log("[Agent] DEVREOTES_RAG_MODE=agent")
+    head = _agent_gather_planner_context(question, chat_history)
+    if head["kind"] == "clarify":
+        return head["state"]
+    ctx = head
+    ev = run_evidence_agent(llm, ctx["retrieval_question"], plan_context=ctx["plan_context"])
+    return _finalize_agent_state_after_evidence(
+        question, chat_history, ctx["conversation_prefix"], ctx["agent_plan_dict"], ev
+    )
+
+
+def _iter_prepare_generation_router(question: str, chat_history=None):
+    if _ui_progress_enabled():
+        yield _progress_ndjson(
+            {
+                "type": "agent_status",
+                "phase": "retrieving",
+                "message": "Finding relevant passages in the corpus…",
+            }
+        )
     return _prepare_generation_router(question, chat_history=chat_history)
+
+
+def _iter_prepare_generation_agent(question: str, chat_history=None):
+    _log("[Agent] DEVREOTES_RAG_MODE=agent")
+    ui = _ui_progress_enabled()
+    if ui:
+        if explicit_plan_enabled():
+            yield _progress_ndjson(
+                {
+                    "type": "agent_status",
+                    "phase": "planning",
+                    "message": "Planning how to search the corpus…",
+                }
+            )
+        else:
+            yield _progress_ndjson(
+                {
+                    "type": "agent_status",
+                    "phase": "retrieving",
+                    "message": "Gathering evidence from the corpus…",
+                }
+            )
+    head = _agent_gather_planner_context(question, chat_history)
+    if head["kind"] == "clarify":
+        if ui:
+            yield _progress_ndjson(
+                {
+                    "type": "agent_status",
+                    "phase": "clarify",
+                    "message": "Need a bit more detail before searching…",
+                }
+            )
+        return head["state"]
+    ctx = head
+    if ctx["agent_plan_dict"] is not None and ui:
+        yield _progress_ndjson({"type": "agent_plan", "plan": _agent_plan_ui_payload(ctx["agent_plan_dict"])})
+    if ui:
+        yield _progress_ndjson(
+            {
+                "type": "agent_status",
+                "phase": "retrieving",
+                "message": "Searching the paper library and graph…",
+            }
+        )
+    gen = iter_run_evidence_agent_outer(
+        llm,
+        ctx["retrieval_question"],
+        plan_context=ctx["plan_context"],
+        ui_progress=ui,
+    )
+    try:
+        while True:
+            yield next(gen)
+    except StopIteration as exc:
+        ev = exc.value
+    if ui:
+        yield _progress_ndjson(
+            {
+                "type": "agent_status",
+                "phase": "retrieving",
+                "message": "Preparing evidence for the answer…",
+            }
+        )
+    return _finalize_agent_state_after_evidence(
+        question, chat_history, ctx["conversation_prefix"], ctx["agent_plan_dict"], ev
+    )
+
+
+def _iter_prepare_generation(question: str, chat_history=None):
+    sub = (
+        _iter_prepare_generation_agent(question, chat_history)
+        if _rag_mode() == "agent"
+        else _iter_prepare_generation_router(question, chat_history)
+    )
+    try:
+        while True:
+            yield next(sub)
+    except StopIteration as exc:
+        return exc.value
+
+
+def _prepare_generation(question: str, chat_history=None):
+    it = _iter_prepare_generation(question, chat_history)
+    try:
+        while True:
+            next(it)
+    except StopIteration as exc:
+        return exc.value
 
 
 def _stream_chunk_text(chunk) -> str:
@@ -975,9 +1183,28 @@ def _stream_chunk_text(chunk) -> str:
 
 def iter_answer_ndjson(question: str, chat_history=None):
     """Yield NDJSON lines (stdout only) for the streaming bridge: delta + finish."""
-    state = _prepare_generation(question, chat_history=chat_history)
+    prep = _iter_prepare_generation(question, chat_history=chat_history)
+    try:
+        while True:
+            yield next(prep)
+    except StopIteration as exc:
+        state = exc.value
+
+    if state.get("clarification_required"):
+        res = state["result"]
+        if _ui_progress_enabled():
+            yield _progress_ndjson(
+                {"type": "agent_status", "phase": "answering", "message": "Replying…"}
+            )
+        yield json.dumps({"type": "delta", "text": res["answer"]}) + "\n"
+        yield json.dumps({"type": "finish", "result": res}) + "\n"
+        return
     if state["abstain"]:
         res = state["result"]
+        if _ui_progress_enabled():
+            yield _progress_ndjson(
+                {"type": "agent_status", "phase": "answering", "message": "Finishing up…"}
+            )
         yield json.dumps({"type": "delta", "text": res["answer"]}) + "\n"
         yield json.dumps({"type": "finish", "result": res}) + "\n"
         return
@@ -986,6 +1213,15 @@ def iter_answer_ndjson(question: str, chat_history=None):
     results = state["results"]
     effective_query_type = state["effective_query_type"]
     routed_key = state["routed_key"]
+
+    if _ui_progress_enabled():
+        yield _progress_ndjson(
+            {
+                "type": "agent_status",
+                "phase": "answering",
+                "message": "Writing the answer from the evidence…",
+            }
+        )
 
     accumulated: list[str] = []
     for chunk in llm.stream(messages):
@@ -1012,11 +1248,17 @@ def iter_answer_ndjson(question: str, chat_history=None):
         result["tool_calls_log"] = state["tool_calls_log"]
     if state.get("themes_meta") is not None:
         result["themes_meta"] = state["themes_meta"]
+    if state.get("agent_plan") is not None:
+        result["agent_plan"] = state["agent_plan"]
+    if state.get("reasoning_log") is not None:
+        result["reasoning_log"] = state["reasoning_log"]
     yield json.dumps({"type": "finish", "result": result}) + "\n"
 
 
 def answer_question_with_metadata(question: str, chat_history=None) -> dict:
     state = _prepare_generation(question, chat_history=chat_history)
+    if state.get("clarification_required"):
+        return state["result"]
     if state["abstain"]:
         return state["result"]
 
@@ -1040,6 +1282,10 @@ def answer_question_with_metadata(question: str, chat_history=None) -> dict:
         out["tool_calls_log"] = state["tool_calls_log"]
     if state.get("themes_meta") is not None:
         out["themes_meta"] = state["themes_meta"]
+    if state.get("agent_plan") is not None:
+        out["agent_plan"] = state["agent_plan"]
+    if state.get("reasoning_log") is not None:
+        out["reasoning_log"] = state["reasoning_log"]
     return out
 
 

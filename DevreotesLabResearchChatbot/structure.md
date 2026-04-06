@@ -48,6 +48,7 @@ Main backend modules:
 
 - `backend/app/chatbot.py`
   - Query routing + abstain logic + context assembly + LLM response generation
+  - Agent mode: optional explicit planner (`agent_planner.py`), clarification short-circuit, streaming prep via `iter_run_evidence_agent_outer` (replan), NDJSON progress + finish payload
   - Responses include `query_type` (internal key) and `query_type_label` (human-readable route for UI/debug)
 
 Script entrypoints:
@@ -94,7 +95,14 @@ Re-run from **step 3 (extract) through step 7 (embeddings)** after changing extr
 | `MAX_CONTEXT_CHUNKS` | Optional. Max chunks passed to the model |
 | `DEVREOTES_PYTHON` | Optional (Nuxt only). Path to Python for `server/python/devreotes_bridge.py` |
 | `DEVREOTES_RAG_MODE` | Optional. `router` (default) or `agent` — multi-tool retrieval then one grounded answer |
-| `DEVREOTES_AGENT_MAX_STEPS` | Optional. Max tool-calling rounds when `agent` mode (default `6`) |
+| `DEVREOTES_AGENT_MAX_STEPS` | Optional. Max tool-calling **inner** steps per retrieval batch in `agent` mode (default `6`) |
+| `DEVREOTES_AGENT_EXPLICIT_PLAN` | Optional. `true`/`1` — LLM structured plan before tools; enables streamed plan + clarification path |
+| `DEVREOTES_AGENT_ALLOW_CLARIFY` | Optional. Default `true`. If `false`, planner may still set `needs_user_input` but tools run anyway |
+| `DEVREOTES_AGENT_UI_PROGRESS` | Optional. Default `true`. Stream `agent_status` / `agent_plan` / `agent_step` NDJSON for the Nuxt progress strip |
+| `DEVREOTES_AGENT_REPLAN_ROUNDS` | Optional. `0`–`4` (default `0`). Extra retrieval batches after structured replan (`agent_replan.py`) |
+| `DEVREOTES_AGENT_REASONING_LOG` | Optional. Default off. Include `reasoning_log` in finish/trace when model emits text with tools |
+| `DEVREOTES_AGENT_THINK_STEP` | Optional. Default off. Extra think-only LLM call before each inner tool step |
+| `DEVREOTES_STREAM` | Set by Nuxt for bridge streaming (`1`) — not usually set manually |
 | `DEVREOTES_API_URL` | Optional (Nuxt). If set (e.g. `http://127.0.0.1:8765`), Nitro calls FastAPI `POST /chat/stream` instead of spawning `devreotes_bridge.py` (warm process, lower overhead) |
 | `DEVREOTES_API_SECRET` | Optional. If set in FastAPI and Nuxt, requests must send header `X-Devreotes-Key` with this value |
 | `RAG_VECTOR_FETCH_MULTIPLIER` | Optional. Fetch `top_k * multiplier` vector hits before per-paper dedupe (default `4`) |

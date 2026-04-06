@@ -6,6 +6,15 @@ export type DevreotesThemesMeta = {
   sort?: string
 }
 
+export type DevreotesAgentPlan = {
+  subtasks?: string[]
+  tool_sequence?: string[]
+  missing_parameters?: string[]
+  needs_user_input?: boolean
+  clarification_prompt?: string
+  notes?: string
+}
+
 export type DevreotesTrace = {
   trace_version: 1
   backend: 'http' | 'bridge'
@@ -19,5 +28,8 @@ export type DevreotesTrace = {
   abstain_reason?: string | null
   tool_calls_log?: Array<{ name?: string; args?: Record<string, unknown> }>
   themes_meta?: DevreotesThemesMeta
+  clarification_required?: boolean
+  agent_plan?: DevreotesAgentPlan
+  reasoning_log?: Array<{ kind?: string, step?: number, text?: string }>
   suggested_followups?: string[]
 }

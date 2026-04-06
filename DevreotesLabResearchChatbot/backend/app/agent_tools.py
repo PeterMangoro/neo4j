@@ -138,6 +138,17 @@ DEVREOTES_RETRIEVAL_TOOLS = [
     corpus_graph_inventory,
 ]
 
+# User-facing labels for streaming progress (NDJSON / UI).
+TOOL_UI_LABELS: dict[str, str] = {
+    "semantic_search": "Searching papers for relevant passages",
+    "gene_literature_search": "Finding papers that mention this gene",
+    "author_literature_search": "Finding papers by this author",
+    "corpus_gene_frequencies": "Loading gene mention statistics",
+    "corpus_author_publication_stats": "Loading author publication counts",
+    "corpus_all_authors_directory": "Loading the full author list",
+    "corpus_graph_inventory": "Counting papers and nodes in the corpus graph",
+}
+
 AGENT_SYSTEM_PROMPT = """You are a retrieval planner for a biomedical literature corpus (Prof. Devreotes lab papers).
 
 Your job is to call one or more tools to gather evidence for the user's question. Rules:
@@ -151,6 +162,106 @@ Your job is to call one or more tools to gather evidence for the user's question
 - Use semantic_search for general conceptual questions or when other tools are not a clear fit.
 - You may call multiple tools if the question combines scopes (e.g. gene + author).
 - Do not write a final answer to the user; only call tools. After you have enough evidence, stop calling tools (respond with no tool calls)."""
+
+
+def _reasoning_log_enabled() -> bool:
+    return os.getenv("DEVREOTES_AGENT_REASONING_LOG", "").strip().lower() in (
+        "1",
+        "true",
+        "yes",
+        "on",
+    )
+
+
+def _think_step_enabled() -> bool:
+    return os.getenv("DEVREOTES_AGENT_THINK_STEP", "").strip().lower() in (
+        "1",
+        "true",
+        "yes",
+        "on",
+    )
+
+
+def _extract_ai_text(msg: Any) -> str:
+    c = getattr(msg, "content", None)
+    if isinstance(c, str):
+        return c.strip()
+    if isinstance(c, list):
+        parts: list[str] = []
+        for p in c:
+            if isinstance(p, dict) and p.get("type") == "text":
+                parts.append(str(p.get("text", "")))
+            elif isinstance(p, str):
+                parts.append(p)
+        return "".join(parts).strip()
+    return ""
+
+
+def compact_observation_summary(ev: dict[str, Any]) -> str:
+    """Compact text for replan LLM (no full chunk bodies)."""
+    lines: list[str] = []
+    log = ev.get("tool_calls_log") or []
+    names = [str(x.get("name") or "?") for x in log[-16:]]
+    lines.append(f"Tool calls so far ({len(log)}): {', '.join(names) if names else 'none'}")
+    chunks = ev.get("raw_chunks") or []
+    lines.append(f"Chunk rows accumulated: {len(chunks)}")
+    papers = {str(c.get("paper_id") or "") for c in chunks if c.get("paper_id")}
+    papers.discard("")
+    if papers:
+        sample = list(papers)[:10]
+        lines.append(f"Sample paper_ids: {', '.join(sample)}")
+    th = ev.get("themes")
+    if isinstance(th, list) and th:
+        lines.append(f"Gene-frequency rows: {len(th)}")
+    ast = ev.get("author_stats")
+    if isinstance(ast, list) and ast:
+        lines.append(f"Author-stats rows: {len(ast)}")
+    ad = ev.get("author_directory")
+    if isinstance(ad, list) and ad:
+        lines.append(f"Author-directory rows: {len(ad)}")
+    cm = ev.get("corpus_meta")
+    if isinstance(cm, list) and cm:
+        lines.append("Corpus graph inventory: present")
+    return "\n".join(lines)
+
+
+def _merge_evidence_piece(merged: dict[str, Any], piece: dict[str, Any]) -> None:
+    merged["used_tools"] = merged["used_tools"] or bool(piece.get("used_tools"))
+    merged["raw_chunks"].extend(piece.get("raw_chunks") or [])
+    merged["tool_calls_log"].extend(piece.get("tool_calls_log") or [])
+    for x in piece.get("reasoning_log") or []:
+        merged["reasoning_log"].append(x)
+    if piece.get("themes") is not None:
+        merged["themes"] = list(piece["themes"])
+    if piece.get("author_stats") is not None:
+        merged["author_stats"] = list(piece["author_stats"])
+    if piece.get("author_directory") is not None:
+        merged["author_directory"] = list(piece["author_directory"])
+    adm = piece.get("author_directory_meta")
+    if isinstance(adm, dict) and adm:
+        merged["author_directory_meta"] = dict(adm)
+    if piece.get("corpus_meta") is not None:
+        merged["corpus_meta"] = list(piece["corpus_meta"])
+    tm = piece.get("themes_meta")
+    if isinstance(tm, dict) and tm:
+        merged["themes_meta"] = dict(tm)
+
+
+def _final_evidence_from_merged(merged: dict[str, Any]) -> dict[str, Any]:
+    adm = merged.get("author_directory_meta") or {}
+    tmeta = merged.get("themes_meta") or {}
+    return {
+        "used_tools": bool(merged.get("used_tools")),
+        "raw_chunks": list(merged.get("raw_chunks") or []),
+        "themes": merged.get("themes") if merged.get("themes") else None,
+        "author_stats": merged.get("author_stats") if merged.get("author_stats") else None,
+        "author_directory": merged.get("author_directory") if merged.get("author_directory") else None,
+        "author_directory_meta": dict(adm) if adm else None,
+        "corpus_meta": merged.get("corpus_meta") if merged.get("corpus_meta") else None,
+        "themes_meta": dict(tmeta) if tmeta else None,
+        "tool_calls_log": list(merged.get("tool_calls_log") or []),
+        "reasoning_log": list(merged["reasoning_log"]) if merged.get("reasoning_log") else None,
+    }
 
 
 def _parse_tool_payload(raw: str) -> dict[str, Any]:
@@ -210,17 +321,40 @@ def _accumulate_payload(
             corpus_meta_holder.extend(items)
 
 
-def run_evidence_agent(llm, question: str) -> dict[str, Any]:
+def iter_run_evidence_agent(
+    llm,
+    question: str,
+    plan_context: str | None = None,
+    *,
+    ui_progress: bool = False,
+    messages: list | None = None,
+):
     """
-    Run tool-calling loop; return merged raw chunk dicts, optional themes list, and log.
-    If the model issues no tool calls on the first turn, used_tools is False (caller should fallback).
+    Single-batch tool-calling loop (up to DEVREOTES_AGENT_MAX_STEPS).
+    If ``messages`` is provided, continues from that transcript (replan rounds).
+    Yields NDJSON lines when ui_progress is True.
+    Returns evidence dict plus ``messages`` (for outer replan loop).
     """
     max_steps = max(1, int(os.getenv("DEVREOTES_AGENT_MAX_STEPS", "6")))
     bound = llm.bind_tools(DEVREOTES_RETRIEVAL_TOOLS)
-    messages: list = [
-        SystemMessage(content=AGENT_SYSTEM_PROMPT),
-        HumanMessage(content=question.strip()),
-    ]
+    log_reasoning = _reasoning_log_enabled()
+    think_step = _think_step_enabled()
+    reasoning_log: list[dict[str, Any]] = []
+
+    if messages is None:
+        human_content = (question or "").strip()
+        if plan_context and plan_context.strip():
+            human_content = (
+                "Retrieval plan (prioritize unless observations contradict it):\n"
+                f"{plan_context.strip()}\n\n---\n{human_content}"
+            )
+        messages = [
+            SystemMessage(content=AGENT_SYSTEM_PROMPT),
+            HumanMessage(content=human_content),
+        ]
+    else:
+        messages = list(messages)
+
     tool_calls_log: list[dict[str, Any]] = []
     chunk_acc: list[dict[str, Any]] = []
     themes_holder: list[Any] = []
@@ -232,8 +366,39 @@ def run_evidence_agent(llm, question: str) -> dict[str, Any]:
     tool_by_name = {t.name: t for t in DEVREOTES_RETRIEVAL_TOOLS}
     used_tools = False
 
-    for _ in range(max_steps):
+    for step_i in range(max_steps):
+        if ui_progress:
+            yield json.dumps(
+                {
+                    "type": "agent_status",
+                    "phase": "tools",
+                    "message": "Choosing retrieval tools and running searches…",
+                },
+                ensure_ascii=True,
+            ) + "\n"
+        if think_step:
+            think_resp = llm.invoke(
+                list(messages)
+                + [
+                    HumanMessage(
+                        content=(
+                            "Before calling retrieval tools, state in 1–2 sentences what you will "
+                            "try to retrieve and why. Do not call tools in this reply."
+                        )
+                    )
+                ]
+            )
+            ttext = _extract_ai_text(think_resp)
+            if ttext:
+                if log_reasoning:
+                    reasoning_log.append({"kind": "think", "step": step_i, "text": ttext[:4000]})
+                messages.append(AIMessage(content=ttext))
+
         ai_msg: AIMessage = bound.invoke(messages)
+        body = _extract_ai_text(ai_msg)
+        if body and log_reasoning:
+            reasoning_log.append({"kind": "tool_round", "step": step_i, "text": body[:4000]})
+
         calls = getattr(ai_msg, "tool_calls", None) or []
         if not calls:
             messages.append(ai_msg)
@@ -251,10 +416,31 @@ def run_evidence_agent(llm, question: str) -> dict[str, Any]:
             if tool_fn is None:
                 out = json.dumps({"kind": "error", "message": f"unknown_tool:{name}"})
             else:
+                if ui_progress:
+                    label = TOOL_UI_LABELS.get(name or "", name or "retrieval tool")
+                    yield json.dumps(
+                        {
+                            "type": "agent_step",
+                            "step_id": name or "unknown",
+                            "status": "active",
+                            "label": label,
+                        },
+                        ensure_ascii=True,
+                    ) + "\n"
                 try:
                     out = tool_fn.invoke(args)
                 except Exception as exc:  # pragma: no cover - defensive
                     out = json.dumps({"kind": "error", "message": str(exc)})
+                if ui_progress:
+                    yield json.dumps(
+                        {
+                            "type": "agent_step",
+                            "step_id": name or "unknown",
+                            "status": "done",
+                            "label": TOOL_UI_LABELS.get(name or "", name or "tool"),
+                        },
+                        ensure_ascii=True,
+                    ) + "\n"
             payload = _parse_tool_payload(out if isinstance(out, str) else str(out))
             _accumulate_payload(
                 chunk_acc,
@@ -268,7 +454,7 @@ def run_evidence_agent(llm, question: str) -> dict[str, Any]:
             )
             messages.append(ToolMessage(content=out if isinstance(out, str) else str(out), tool_call_id=tid))
 
-    return {
+    piece = {
         "used_tools": used_tools,
         "raw_chunks": chunk_acc,
         "themes": list(themes_holder) if themes_holder else None,
@@ -278,4 +464,99 @@ def run_evidence_agent(llm, question: str) -> dict[str, Any]:
         "corpus_meta": list(corpus_meta_holder) if corpus_meta_holder else None,
         "themes_meta": dict(themes_meta_holder) if themes_meta_holder else None,
         "tool_calls_log": tool_calls_log,
+        "reasoning_log": reasoning_log if reasoning_log else None,
+        "messages": messages,
     }
+    return piece
+
+
+def iter_run_evidence_agent_outer(
+    llm,
+    question: str,
+    plan_context: str | None = None,
+    *,
+    ui_progress: bool = False,
+):
+    """
+    Runs one or more retrieval batches with optional replan (DEVREOTES_AGENT_REPLAN_ROUNDS).
+    Yields the same NDJSON progress lines as the inner iterator.
+    """
+    from .agent_replan import replan_rounds_cap, run_replan_decision
+
+    replan_max = replan_rounds_cap()
+    merged: dict[str, Any] = {
+        "used_tools": False,
+        "raw_chunks": [],
+        "tool_calls_log": [],
+        "reasoning_log": [],
+        "themes": None,
+        "author_stats": None,
+        "author_directory": None,
+        "author_directory_meta": {},
+        "corpus_meta": None,
+        "themes_meta": {},
+    }
+    messages: list | None = None
+
+    for outer in range(replan_max + 1):
+        gen = iter_run_evidence_agent(
+            llm,
+            question,
+            plan_context,
+            ui_progress=ui_progress,
+            messages=messages,
+        )
+        try:
+            while True:
+                yield next(gen)
+        except StopIteration as exc:
+            piece = exc.value
+
+        messages = piece["messages"]
+        _merge_evidence_piece(merged, piece)
+
+        if outer >= replan_max:
+            break
+        if outer == 0 and not piece.get("used_tools"):
+            break
+        obs = compact_observation_summary(merged)
+        try:
+            dec = run_replan_decision(llm, question, obs)
+        except Exception:
+            break
+        if dec.action == "sufficient":
+            break
+        messages = list(messages) + [
+            HumanMessage(
+                content=(
+                    "Retrieval supervisor (replan):\n"
+                    f"{dec.guidance.strip()}\n\n"
+                    f"Compact observations so far:\n{obs}\n\n"
+                    "Call more retrieval tools if needed; otherwise respond with no tool calls."
+                )
+            )
+        ]
+        if ui_progress:
+            yield json.dumps(
+                {
+                    "type": "agent_status",
+                    "phase": "replanning",
+                    "message": "Adjusting retrieval based on what we found so far…",
+                },
+                ensure_ascii=True,
+            ) + "\n"
+
+    return _final_evidence_from_merged(merged)
+
+
+def run_evidence_agent(llm, question: str, plan_context: str | None = None) -> dict[str, Any]:
+    """
+    Run tool-calling loop; return merged raw chunk dicts, optional themes list, and log.
+    If the model issues no tool calls on the first turn, used_tools is False (caller should fallback).
+    """
+    gen = iter_run_evidence_agent_outer(llm, question, plan_context, ui_progress=False)
+    try:
+        while True:
+            next(gen)
+    except StopIteration as exc:
+        return exc.value

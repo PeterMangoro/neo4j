@@ -31,6 +31,30 @@ const toolsJson = computed(() => {
     return ''
   }
 })
+
+const planJson = computed(() => {
+  const p = trace.agent_plan
+  if (!p) {
+    return ''
+  }
+  try {
+    return JSON.stringify(p, null, 2)
+  } catch {
+    return ''
+  }
+})
+
+const reasoningJson = computed(() => {
+  const r = trace.reasoning_log
+  if (!r?.length) {
+    return ''
+  }
+  try {
+    return JSON.stringify(r, null, 2)
+  } catch {
+    return String(r)
+  }
+})
 </script>
 
 <template>
@@ -71,6 +95,33 @@ const toolsJson = computed(() => {
             Results
           </dt>
           <dd>{{ trace.results_count }}</dd>
+        </div>
+        <div v-if="trace.clarification_required" class="grid gap-0.5">
+          <dt class="text-[var(--ui-text-muted)] font-sans uppercase tracking-wide text-[10px]">
+            Clarification
+          </dt>
+          <dd class="font-sans text-default">
+            Planner asked for user input before retrieval (no tools run).
+          </dd>
+        </div>
+        <div v-if="planJson" class="grid gap-0.5">
+          <dt class="text-[var(--ui-text-muted)] font-sans uppercase tracking-wide text-[10px]">
+            Agent plan
+          </dt>
+          <dd>
+            <pre class="max-h-40 overflow-auto rounded bg-muted/50 p-2 text-[11px] leading-snug whitespace-pre-wrap">{{ planJson }}</pre>
+          </dd>
+        </div>
+        <div v-if="reasoningJson" class="grid gap-0.5">
+          <dt class="text-[var(--ui-text-muted)] font-sans uppercase tracking-wide text-[10px]">
+            Reasoning log
+          </dt>
+          <dd class="font-sans text-[10px] text-muted leading-snug mb-1">
+            Optional model notes (enable only if you accept privacy tradeoffs).
+          </dd>
+          <dd>
+            <pre class="max-h-48 overflow-auto rounded bg-muted/50 p-2 text-[11px] leading-snug whitespace-pre-wrap">{{ reasoningJson }}</pre>
+          </dd>
         </div>
         <div v-if="trace.abstained" class="grid gap-0.5">
           <dt class="text-[var(--ui-text-muted)] font-sans uppercase tracking-wide text-[10px]">
