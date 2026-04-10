@@ -38,7 +38,8 @@ load_project_dotenv()
 with HGNC_LOOKUP_PATH.open("r", encoding="utf-8") as f:
     hgnc_lookup = json.load(f)
 
-llm = ChatOpenAI(model="gpt-4o", temperature=0)
+CHAT_MODEL = os.getenv("DEVREOTES_CHAT_MODEL", "gpt-4o").strip() or "gpt-4o"
+llm = ChatOpenAI(model=CHAT_MODEL, temperature=0)
 RAG_TOP_K = int(os.getenv("RAG_TOP_K", "8"))
 RAG_MIN_SCORE = float(os.getenv("RAG_MIN_SCORE", "0.35"))
 MAX_CONTEXT_CHARS_PER_CHUNK = int(os.getenv("MAX_CONTEXT_CHARS_PER_CHUNK", "900"))

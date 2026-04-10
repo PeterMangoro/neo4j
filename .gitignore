@@ -37,5 +37,7 @@ chatBot/resources/hgnc_complete_set.txt
 # Local / generated demo (untracked; avoid Git provider noise)
 chatBot/resources/context-graph-demo
 
+DevreotesLabResearchChatbot/.gradio
+
 # Automotive capstone: CSV exports from .xlsb (regenerate locally)
 finalProject/data_export/
