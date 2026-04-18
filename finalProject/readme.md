@@ -9,6 +9,7 @@ This directory supports a **self-defined capstone**: model a **multi-echelon aut
 | Item | Role |
 |------|------|
 | [Brainstorming_Template.ipynb](Brainstorming_Template.ipynb) | Proposal / brainstorming: topic, impact, data citation, research questions (Neo4j + Cypher + GDS notebook deliverable) |
+| [AutomotiveSupplyChain_TwoWeekPlan.ipynb](AutomotiveSupplyChain_TwoWeekPlan.ipynb) | **2-week capstone pipeline:** extract → manifest → profile placeholders → Week 2 stubs (Neo4j/Cypher lifted from merged notebook as needed) |
 | [AutomotiveSupplyChain_Work.ipynb](AutomotiveSupplyChain_Work.ipynb) | **Main build + analysis** notebook: extract → profile → Neo4j → EDA → deep Cypher → GDS (Phase 1 scaffold onward) |
 | [2020_dataset_OfAutomotiveProductionNetwork.xlsb](2020_dataset_OfAutomotiveProductionNetwork.xlsb) | Primary data: Moetz et al. (2020) multi-echelon supply-chain network (Excel binary; ingest via pandas / export to CSV for `LOAD CSV` as your pipeline defines) |
 | [selfDefinedProject.md](selfDefinedProject.md) | Official **minimum requirements** for the self-defined final (EDA count, deeper questions, Option 1 vs 2, GDS write-up expectations) |
