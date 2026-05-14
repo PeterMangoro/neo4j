@@ -41,3 +41,6 @@ DevreotesLabResearchChatbot/.gradio
 
 # Automotive capstone: CSV exports from .xlsb (regenerate locally)
 finalProject/data_export/
+
+#  media
+*.mp4
