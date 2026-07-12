@@ -1,0 +1,49 @@
+name: ci
+
+on: push
+
+defaults:
+  run:
+    working-directory: DevreotesLabResearchChatbot/nuxt
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Install node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: DevreotesLabResearchChatbot/nuxt/pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Lint
+        run: pnpm run lint
+
+      - name: Typecheck
+        run: pnpm run typecheck
+
+      - name: Unit tests
+        run: pnpm vitest run
+
+      - name: Devreotes prepare-only verify
+        if: ${{ secrets.NEO4J_URI != '' }}
+        env:
+          NEO4J_URI: ${{ secrets.NEO4J_URI }}
+          NEO4J_USER: ${{ secrets.NEO4J_USER }}
+          NEO4J_PASSWORD: ${{ secrets.NEO4J_PASSWORD }}
+          DEVREOTES_BACKEND: typescript
+          DEVREOTES_RAG_MODE: router
+        run: |
+          pnpm devreotes:phase3-verify --prepare-only
+          DEVREOTES_RAG_MODE=agent pnpm devreotes:phase4-verify --prepare-only

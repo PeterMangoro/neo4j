@@ -1,0 +1,440 @@
+[
+  {
+    "id": "3a",
+    "title": "Jazz tracks composed by Miles Davis",
+    "description": "Tracks in the Jazz genre whose composer is Miles Davis.",
+    "cypher": "MATCH (g:Genre {name:'Jazz'})<-[:IN_GENRE]-(t:Track)-[:COMPOSED_BY]->(c:Composer {name:'Miles Davis'})\nRETURN t.name AS track",
+    "columns": [
+      "track"
+    ],
+    "rows": [
+      {
+        "track": "'Round Midnight"
+      },
+      {
+        "track": "Black Satin"
+      },
+      {
+        "track": "Bye Bye Blackbird"
+      },
+      {
+        "track": "Compulsion"
+      },
+      {
+        "track": "E.S.P."
+      },
+      {
+        "track": "Generique"
+      },
+      {
+        "track": "Jean Pierre (Live)"
+      },
+      {
+        "track": "Jeru"
+      },
+      {
+        "track": "Little Church (Live)"
+      },
+      {
+        "track": "Miles Runs The Voodoo Down"
+      },
+      {
+        "track": "My Funny Valentine (Live)"
+      },
+      {
+        "track": "Nefertiti"
+      },
+      {
+        "track": "New Rhumba"
+      },
+      {
+        "track": "Now's The Time"
+      },
+      {
+        "track": "Petits Machins (Little Stuff)"
+      },
+      {
+        "track": "Portia"
+      },
+      {
+        "track": "So What"
+      },
+      {
+        "track": "Someday My Prince Will Come"
+      },
+      {
+        "track": "Summertime"
+      },
+      {
+        "track": "Tempus Fugit"
+      },
+      {
+        "track": "The Pan Piper"
+      },
+      {
+        "track": "Time After Time"
+      },
+      {
+        "track": "Walkin'"
+      }
+    ],
+    "count": 23
+  },
+  {
+    "id": "3b",
+    "title": "Artists with an AAC-audio-file track",
+    "description": "Artists who have at least one track distributed as an 'AAC audio file'.",
+    "cypher": "MATCH (:MediaType {name:'AAC audio file'})<-[:OF_MEDIA_TYPE]-(:Track)<-[:CONTAINS]-(:Album)<-[:RELEASED]-(a:Artist)\nRETURN DISTINCT a.name AS artist",
+    "columns": [
+      "artist"
+    ],
+    "rows": [
+      {
+        "artist": "Aaron Goldberg"
+      },
+      {
+        "artist": "Aisha Duo"
+      },
+      {
+        "artist": "Habib Koité and Bamada"
+      },
+      {
+        "artist": "Karsh Kale"
+      },
+      {
+        "artist": "Luciana Souza/Romero Lubambo"
+      },
+      {
+        "artist": "Nicolaus Esterhazy Sinfonia"
+      },
+      {
+        "artist": "The Posies"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "id": "3c",
+    "title": "Artist(s) who released \"Bongo Fury\"",
+    "description": "Artists linked by RELEASED to the album titled 'Bongo Fury'.",
+    "cypher": "MATCH (a:Artist)-[:RELEASED]->(:Album {title:'Bongo Fury'})\nRETURN a.name AS artist",
+    "columns": [
+      "artist"
+    ],
+    "rows": [
+      {
+        "artist": "Frank Zappa & Captain Beefheart"
+      }
+    ],
+    "count": 1
+  },
+  {
+    "id": "3d",
+    "title": "Tracks on Led Zeppelin's \"Coda\"",
+    "description": "All tracks contained in Led Zeppelin's album 'Coda'.",
+    "cypher": "MATCH (:Artist {name:'Led Zeppelin'})-[:RELEASED]->(:Album {title:'Coda'})-[:CONTAINS]->(t:Track)\nRETURN DISTINCT t.name AS track",
+    "columns": [
+      "track"
+    ],
+    "rows": [
+      {
+        "track": "Bonzo's Montreux"
+      },
+      {
+        "track": "Darlene"
+      },
+      {
+        "track": "I Can't Quit You Baby"
+      },
+      {
+        "track": "Ozone Baby"
+      },
+      {
+        "track": "Poor Tom"
+      },
+      {
+        "track": "Walter's Walk"
+      },
+      {
+        "track": "We're Gonna Groove"
+      },
+      {
+        "track": "Wearing And Tearing"
+      }
+    ],
+    "count": 8
+  },
+  {
+    "id": "3e",
+    "title": "Albums with a track composed by \"Alanis Morissette & Glenn Ballard\"",
+    "description": "Albums that contain at least one track composed by this writing duo.",
+    "cypher": "MATCH (:Composer {name:'Alanis Morissette & Glenn Ballard'})<-[:COMPOSED_BY]-(t:Track)<-[:CONTAINS]-(a:Album)\nRETURN DISTINCT a.title AS album",
+    "columns": [
+      "album"
+    ],
+    "rows": [
+      {
+        "album": "Jagged Little Pill"
+      }
+    ],
+    "count": 1
+  },
+  {
+    "id": "3f",
+    "title": "Albums with a track that has no composer",
+    "description": "Albums containing at least one track that lacks a COMPOSED_BY relationship.",
+    "cypher": "MATCH (a:Album)-[:CONTAINS]->(t:Track)\nWHERE NOT (t)-[:COMPOSED_BY]->()\nRETURN DISTINCT a.title AS albumName",
+    "columns": [
+      "albumName"
+    ],
+    "rows": [
+      {
+        "albumName": "20th Century Masters - The Millennium Collection: The Best of Scorpions"
+      },
+      {
+        "albumName": "A Matter of Life and Death"
+      },
+      {
+        "albumName": "Alcohol Fueled Brewtality Live! [Disc 1]"
+      },
+      {
+        "albumName": "Alcohol Fueled Brewtality Live! [Disc 2]"
+      },
+      {
+        "albumName": "Angel Dust"
+      },
+      {
+        "albumName": "Appetite for Destruction"
+      },
+      {
+        "albumName": "Aquaman"
+      },
+      {
+        "albumName": "Arquivo Os Paralamas Do Sucesso"
+      },
+      {
+        "albumName": "As Canções de Eu Tu Eles"
+      },
+      {
+        "albumName": "Back to Black"
+      },
+      {
+        "albumName": "Balls to the Wall"
+      },
+      {
+        "albumName": "Battlestar Galactica (Classic), Season 1"
+      },
+      {
+        "albumName": "Battlestar Galactica, Season 3"
+      },
+      {
+        "albumName": "Battlestar Galactica: The Story So Far"
+      },
+      {
+        "albumName": "Black Sabbath"
+      },
+      {
+        "albumName": "Body Count"
+      },
+      {
+        "albumName": "Cake: B-Sides and Rarities"
+      },
+      {
+        "albumName": "Carnaval 2001"
+      },
+      {
+        "albumName": "Carried to Dust (Bonus Track Version)"
+      },
+      {
+        "albumName": "Compositores"
+      },
+      {
+        "albumName": "Cássia Eller - Coleção Sem Limite [Disc 2]"
+      },
+      {
+        "albumName": "Cássia Eller - Sem Limite [Disc 1]"
+      },
+      {
+        "albumName": "Da Lama Ao Caos"
+      },
+      {
+        "albumName": "Deixa Entrar"
+      },
+      {
+        "albumName": "Djavan Ao Vivo - Vol. 02"
+      },
+      {
+        "albumName": "Elis Regina-Minha História"
+      },
+      {
+        "albumName": "Frank"
+      },
+      {
+        "albumName": "Great Recordings of the Century - Shubert: Schwanengesang, 4 Lieder"
+      },
+      {
+        "albumName": "Greatest Hits"
+      },
+      {
+        "albumName": "Heart of the Night"
+      },
+      {
+        "albumName": "Heroes, Season 1"
+      },
+      {
+        "albumName": "Instant Karma: The Amnesty International Campaign to Save Darfur"
+      },
+      {
+        "albumName": "Jorge Ben Jor 25 Anos"
+      },
+      {
+        "albumName": "Jota Quest-1995"
+      },
+      {
+        "albumName": "LOST, Season 4"
+      },
+      {
+        "albumName": "Liszt - 12 Études D'Execution Transcendante"
+      },
+      {
+        "albumName": "Live After Death"
+      },
+      {
+        "albumName": "Live At Donington 1992 (Disc 1)"
+      },
+      {
+        "albumName": "Live At Donington 1992 (Disc 2)"
+      },
+      {
+        "albumName": "Living After Midnight"
+      },
+      {
+        "albumName": "Lost, Season 1"
+      },
+      {
+        "albumName": "Lost, Season 2"
+      },
+      {
+        "albumName": "Lost, Season 3"
+      },
+      {
+        "albumName": "Lulu Santos - RCA 100 Anos De Música - Álbum 01"
+      },
+      {
+        "albumName": "Lulu Santos - RCA 100 Anos De Música - Álbum 02"
+      },
+      {
+        "albumName": "Mendelssohn: A Midsummer Night's Dream"
+      },
+      {
+        "albumName": "Meus Momentos"
+      },
+      {
+        "albumName": "Minha Historia"
+      },
+      {
+        "albumName": "Na Pista"
+      },
+      {
+        "albumName": "Olodum"
+      },
+      {
+        "albumName": "Os Cães Ladram Mas A Caravana Não Pára"
+      },
+      {
+        "albumName": "Prokofiev: Romeo & Juliet"
+      },
+      {
+        "albumName": "Pure Cult: The Best Of The Cult (For Rockers, Ravers, Lovers & Sinners) [UK]"
+      },
+      {
+        "albumName": "Quanta Gente Veio Ver (Live)"
+      },
+      {
+        "albumName": "Quanta Gente Veio ver--Bônus De Carnaval"
+      },
+      {
+        "albumName": "Radio Brasil (O Som da Jovem Vanguarda) - Seleccao de Henrique Amaro"
+      },
+      {
+        "albumName": "Raul Seixas"
+      },
+      {
+        "albumName": "Respighi:Pines of Rome"
+      },
+      {
+        "albumName": "Revelations"
+      },
+      {
+        "albumName": "Rock In Rio [CD1]"
+      },
+      {
+        "albumName": "Roda De Funk"
+      },
+      {
+        "albumName": "SCRIABIN: Vers la flamme"
+      },
+      {
+        "albumName": "Santana Live"
+      },
+      {
+        "albumName": "Seek And Shall Find: More Of The Best (1963-1981)"
+      },
+      {
+        "albumName": "Serie Sem Limite (Disc 2)"
+      },
+      {
+        "albumName": "Sozinho Remix Ao Vivo"
+      },
+      {
+        "albumName": "Speak of the Devil"
+      },
+      {
+        "albumName": "Surfing with the Alien (Remastered)"
+      },
+      {
+        "albumName": "Temple of the Dog"
+      },
+      {
+        "albumName": "The Best Of Men At Work"
+      },
+      {
+        "albumName": "The Best of Ed Motta"
+      },
+      {
+        "albumName": "The Office, Season 1"
+      },
+      {
+        "albumName": "The Office, Season 2"
+      },
+      {
+        "albumName": "The Office, Season 3"
+      },
+      {
+        "albumName": "UB40 The Best Of - Volume Two [UK]"
+      },
+      {
+        "albumName": "Up An' Atom"
+      },
+      {
+        "albumName": "Use Your Illusion I"
+      },
+      {
+        "albumName": "Vault: Def Leppard's Greatest Hits"
+      },
+      {
+        "albumName": "Vinicius De Moraes"
+      },
+      {
+        "albumName": "Vinícius De Moraes - Sem Limite"
+      },
+      {
+        "albumName": "Vozes do MPB"
+      },
+      {
+        "albumName": "Warner 25 Anos"
+      }
+    ],
+    "count": 82
+  }
+]

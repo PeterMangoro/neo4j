@@ -44,3 +44,5 @@ finalProject/data_export/
 
 #  media
 *.mp4
+
+.pnpm-store

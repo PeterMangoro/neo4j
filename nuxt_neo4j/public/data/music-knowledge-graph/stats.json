@@ -1,0 +1,68 @@
+{
+  "nodeCounts": [
+    {
+      "label": "Track",
+      "count": 3503
+    },
+    {
+      "label": "Composer",
+      "count": 852
+    },
+    {
+      "label": "Album",
+      "count": 347
+    },
+    {
+      "label": "Artist",
+      "count": 275
+    },
+    {
+      "label": "Genre",
+      "count": 25
+    },
+    {
+      "label": "MediaType",
+      "count": 5
+    }
+  ],
+  "relCounts": [
+    {
+      "type": "CONTAINS",
+      "count": 3503
+    },
+    {
+      "type": "IN_GENRE",
+      "count": 3503
+    },
+    {
+      "type": "OF_MEDIA_TYPE",
+      "count": 3503
+    },
+    {
+      "type": "RELEASED",
+      "count": 347
+    },
+    {
+      "type": "COMPOSED_BY",
+      "count": 2525
+    }
+  ],
+  "highlights": [
+    {
+      "label": "Nodes",
+      "value": "5,007"
+    },
+    {
+      "label": "Relationships",
+      "value": "13,381"
+    },
+    {
+      "label": "Node types",
+      "value": 6
+    },
+    {
+      "label": "Relationship types",
+      "value": 5
+    }
+  ]
+}
