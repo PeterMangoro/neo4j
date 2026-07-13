@@ -380,6 +380,32 @@ type SimDrag
     | { kind: 'pan', pointerId: number, lastX: number, lastY: number }
 let simDrag: SimDrag | null = null
 
+type SimPinch = {
+  startDist: number
+  startK: number
+  startX: number
+  startY: number
+  midX: number
+  midY: number
+}
+let simPinch: SimPinch | null = null
+
+function simTouchDist(a: Touch, b: Touch): number {
+  return Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY)
+}
+
+function simClientToSvgLocal(clientX: number, clientY: number): { x: number, y: number } | null {
+  const svg = simSvgEl.value
+  if (!svg) return null
+  const rect = svg.getBoundingClientRect()
+  const sx = SIM_SVG.w / Math.max(rect.width, 1)
+  const sy = SIM_SVG.h / Math.max(rect.height, 1)
+  return {
+    x: (clientX - rect.left) * sx,
+    y: (clientY - rect.top) * sy
+  }
+}
+
 function rebuildSimilarityLayout() {
   const g = graphSimilarity.value
   if (!g?.nodes.length) {
@@ -514,6 +540,44 @@ function onSimWheel(e: WheelEvent) {
     x: mx - ((mx - x) * nextK) / k,
     y: my - ((my - y) * nextK) / k
   }
+}
+
+function onSimTouchStart(e: TouchEvent) {
+  if (e.touches.length !== 2) return
+  e.preventDefault()
+  simDrag = null
+  const t0 = e.touches[0]!
+  const t1 = e.touches[1]!
+  const mid = simClientToSvgLocal(
+    (t0.clientX + t1.clientX) / 2,
+    (t0.clientY + t1.clientY) / 2
+  )
+  if (!mid) return
+  simPinch = {
+    startDist: Math.max(simTouchDist(t0, t1), 1),
+    startK: simView.value.k,
+    startX: simView.value.x,
+    startY: simView.value.y,
+    midX: mid.x,
+    midY: mid.y
+  }
+}
+
+function onSimTouchMove(e: TouchEvent) {
+  if (!simPinch || e.touches.length !== 2) return
+  e.preventDefault()
+  const dist = Math.max(simTouchDist(e.touches[0]!, e.touches[1]!), 1)
+  const nextK = Math.min(4, Math.max(0.35, simPinch.startK * (dist / simPinch.startDist)))
+  const { midX, midY, startX, startY, startK } = simPinch
+  simView.value = {
+    k: nextK,
+    x: midX - ((midX - startX) * nextK) / startK,
+    y: midY - ((midY - startY) * nextK) / startK
+  }
+}
+
+function onSimTouchEnd(e: TouchEvent) {
+  if (e.touches.length < 2) simPinch = null
 }
 
 function resetSimView() {
@@ -782,7 +846,7 @@ const egoColors = computed(() => ({
           </div>
           <div class="flex items-center gap-3">
             <p class="text-xs text-muted">
-              Scroll to zoom · drag background to pan · drag nodes to rearrange
+              Scroll or pinch to zoom · drag background to pan · drag nodes to rearrange
             </p>
             <UButton
               color="neutral"
@@ -808,6 +872,10 @@ const egoColors = computed(() => ({
             @pointerup="onSimPointerUp"
             @pointercancel="onSimPointerUp"
             @wheel.prevent="onSimWheel"
+            @touchstart="onSimTouchStart"
+            @touchmove="onSimTouchMove"
+            @touchend="onSimTouchEnd"
+            @touchcancel="onSimTouchEnd"
           >
             <defs>
               <marker

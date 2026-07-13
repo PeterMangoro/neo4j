@@ -21,6 +21,11 @@ const navItems = [
   { label: 'Supply Chain', to: '/supply-chain' }
 ]
 
+const mobileNavItems = [
+  { label: 'Home', to: '/' },
+  ...navItems
+]
+
 useSeoMeta({
   title,
   description,
@@ -32,20 +37,31 @@ useSeoMeta({
 
 <template>
   <UApp>
-    <UHeader>
+    <UHeader title="Neo4j Capstone Demos">
       <template #left>
         <NuxtLink
           to="/"
           aria-label="Home"
         >
-          <AppLogo class="w-auto h-6 shrink-0" />
+          <AppLogo class="h-6 w-auto shrink-0" />
         </NuxtLink>
       </template>
 
-      <UNavigationMenu :items="navItems" />
+      <UNavigationMenu
+        :items="navItems"
+        class="hidden lg:flex"
+      />
 
       <template #right>
         <UColorModeButton />
+      </template>
+
+      <template #body>
+        <UNavigationMenu
+          :items="mobileNavItems"
+          orientation="vertical"
+          class="-mx-2.5"
+        />
       </template>
     </UHeader>
 

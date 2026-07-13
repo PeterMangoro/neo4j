@@ -54,6 +54,13 @@ let renderGeneration = 0
 let healAttempts = 0
 let pendingTimer: ReturnType<typeof setTimeout> | null = null
 
+/** Mobile touch: NVL Zoom/Pan only listen to wheel/mouse. */
+type TouchGesture
+  = { mode: 'pinch', startDist: number, startZoom: number, startPan: { x: number, y: number } }
+    | { mode: 'pan', lastX: number, lastY: number, startPan: { x: number, y: number } }
+let touchGesture: TouchGesture | null = null
+let touchListenersAttached = false
+
 const selectedNodeId = ref<string | null>(null)
 
 const selectedNode = computed(() => {
@@ -156,6 +163,7 @@ function destroyInteractions() {
     }
   }
   interactions = []
+  detachTouchGestures()
 }
 
 function destroyNvl() {
@@ -168,6 +176,144 @@ function destroyNvl() {
     }
     nvl = null
   }
+}
+
+function touchDistance(a: Touch, b: Touch): number {
+  return Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY)
+}
+
+function onTouchStart(e: TouchEvent) {
+  if (!nvl || !props.interactive) return
+  if (e.touches.length === 2 && props.zoom) {
+    e.preventDefault()
+    const t0 = e.touches[0]!
+    const t1 = e.touches[1]!
+    touchGesture = {
+      mode: 'pinch',
+      startDist: Math.max(touchDistance(t0, t1), 1),
+      startZoom: typeof nvl.getScale === 'function' ? nvl.getScale() : 1,
+      startPan: nvl.getPan()
+    }
+    return
+  }
+  if (e.touches.length === 1 && props.pan) {
+    const t = e.touches[0]!
+    // If the finger is on a node, skip custom pan so NVL node-drag can take over.
+    try {
+      const hits = nvl.getHits(
+        { clientX: t.clientX, clientY: t.clientY } as MouseEvent,
+        ['node']
+      )
+      if (hits?.nvlTargets?.nodes?.length) {
+        touchGesture = null
+        return
+      }
+    } catch {
+      // fall through to pan
+    }
+    touchGesture = {
+      mode: 'pan',
+      lastX: t.clientX,
+      lastY: t.clientY,
+      startPan: nvl.getPan()
+    }
+  }
+}
+
+function onTouchMove(e: TouchEvent) {
+  if (!nvl || !touchGesture) return
+  if (touchGesture.mode === 'pinch' && e.touches.length === 2 && props.zoom) {
+    e.preventDefault()
+    const dist = Math.max(touchDistance(e.touches[0]!, e.touches[1]!), 1)
+    const ratio = dist / touchGesture.startDist
+    const limits = typeof nvl.getZoomLimits === 'function'
+      ? nvl.getZoomLimits()
+      : { minZoom: 0.05, maxZoom: 10 }
+    const nextZoom = Math.min(
+      limits.maxZoom,
+      Math.max(limits.minZoom, touchGesture.startZoom * ratio)
+    )
+    // Keep the midpoint stable in world space (same idea as NVL wheel zoom).
+    const zoom = touchGesture.startZoom
+    const { x, y } = touchGesture.startPan
+    const el = container.value
+    if (!el) return
+    const rect = el.getBoundingClientRect()
+    const midX = ((e.touches[0]!.clientX + e.touches[1]!.clientX) / 2) - rect.left
+    const midY = ((e.touches[0]!.clientY + e.touches[1]!.clientY) / 2) - rect.top
+    const panX = x + (midX / zoom - midX / nextZoom)
+    const panY = y + (midY / zoom - midY / nextZoom)
+    nvl.setZoomAndPan(nextZoom, panX, panY)
+    return
+  }
+  if (touchGesture.mode === 'pan' && e.touches.length === 1 && props.pan) {
+    e.preventDefault()
+    const t = e.touches[0]!
+    const zoom = typeof nvl.getScale === 'function' ? nvl.getScale() : 1
+    const dx = (t.clientX - touchGesture.lastX) / zoom
+    const dy = (t.clientY - touchGesture.lastY) / zoom
+    touchGesture.lastX = t.clientX
+    touchGesture.lastY = t.clientY
+    const pan = nvl.getPan()
+    nvl.setPan(pan.x + dx, pan.y + dy)
+  }
+}
+
+function onTouchEnd(e: TouchEvent) {
+  if (e.touches.length < 2 && touchGesture?.mode === 'pinch') {
+    touchGesture = null
+  }
+  if (e.touches.length === 0) {
+    touchGesture = null
+  }
+}
+
+function attachTouchGestures() {
+  const el = container.value
+  if (!el || touchListenersAttached || !props.interactive) return
+  if (!props.zoom && !props.pan) return
+  el.addEventListener('touchstart', onTouchStart, { passive: false })
+  el.addEventListener('touchmove', onTouchMove, { passive: false })
+  el.addEventListener('touchend', onTouchEnd)
+  el.addEventListener('touchcancel', onTouchEnd)
+  touchListenersAttached = true
+}
+
+function detachTouchGestures() {
+  const el = container.value
+  touchGesture = null
+  if (!el || !touchListenersAttached) return
+  el.removeEventListener('touchstart', onTouchStart)
+  el.removeEventListener('touchmove', onTouchMove)
+  el.removeEventListener('touchend', onTouchEnd)
+  el.removeEventListener('touchcancel', onTouchEnd)
+  touchListenersAttached = false
+}
+
+function nudgeZoom(factor: number) {
+  if (!nvl || !props.zoom) return
+  const zoom = typeof nvl.getScale === 'function' ? nvl.getScale() : 1
+  const pan = nvl.getPan()
+  const limits = typeof nvl.getZoomLimits === 'function'
+    ? nvl.getZoomLimits()
+    : { minZoom: 0.05, maxZoom: 10 }
+  const next = Math.min(limits.maxZoom, Math.max(limits.minZoom, zoom * factor))
+  const el = container.value
+  if (!el) {
+    nvl.setZoom(next)
+    return
+  }
+  const rect = el.getBoundingClientRect()
+  const midX = rect.width / 2
+  const midY = rect.height / 2
+  const panX = pan.x + (midX / zoom - midX / next)
+  const panY = pan.y + (midY / zoom - midY / next)
+  nvl.setZoomAndPan(next, panX, panY)
+}
+
+function fitGraph() {
+  if (!nvl || !props.nodes.length) return
+  nvl.fit(props.nodes.map(n => n.id))
 }
 
 function clearSelection() {
@@ -318,6 +464,7 @@ async function render() {
     )
 
     await attachInteractions()
+    attachTouchGestures()
     if (gen !== renderGeneration) return
 
     renderError.value = null
@@ -458,11 +605,40 @@ onBeforeUnmount(() => {
         v-if="showHint"
         class="text-xs text-muted"
       >
-        Scroll to zoom · drag background to pan · drag nodes to rearrange · click a node for details
+        Scroll or pinch to zoom · drag background to pan · drag nodes to rearrange · click a node for details
       </p>
     </div>
 
     <div class="relative w-full">
+      <div
+        v-if="interactive && zoom"
+        class="absolute right-3 top-3 z-10 flex flex-col gap-1"
+      >
+        <UButton
+          color="neutral"
+          variant="soft"
+          size="xs"
+          icon="i-lucide-plus"
+          aria-label="Zoom in"
+          @click="nudgeZoom(1.2)"
+        />
+        <UButton
+          color="neutral"
+          variant="soft"
+          size="xs"
+          icon="i-lucide-minus"
+          aria-label="Zoom out"
+          @click="nudgeZoom(1 / 1.2)"
+        />
+        <UButton
+          color="neutral"
+          variant="soft"
+          size="xs"
+          icon="i-lucide-scan"
+          aria-label="Fit graph"
+          @click="fitGraph"
+        />
+      </div>
       <div
         ref="container"
         class="w-full overflow-hidden rounded-lg border border-default bg-elevated/30"
