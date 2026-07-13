@@ -54,10 +54,28 @@ let renderGeneration = 0
 let healAttempts = 0
 let pendingTimer: ReturnType<typeof setTimeout> | null = null
 
-/** Mobile touch: NVL Zoom/Pan only listen to wheel/mouse. */
+/** Mobile touch: NVL Zoom/Pan/Drag only listen to wheel/mouse. */
 type TouchGesture
-  = { mode: 'pinch', startDist: number, startZoom: number, startPan: { x: number, y: number } }
-    | { mode: 'pan', lastX: number, lastY: number, startPan: { x: number, y: number } }
+  = {
+    mode: 'pinch'
+    startDist: number
+    startZoom: number
+    startPan: { x: number, y: number }
+  }
+  | {
+    mode: 'pan'
+    startX: number
+    startY: number
+    startPan: { x: number, y: number }
+  }
+  | {
+    mode: 'dragNode'
+    id: string
+    startX: number
+    startY: number
+    nodeX: number
+    nodeY: number
+  }
 let touchGesture: TouchGesture | null = null
 let touchListenersAttached = false
 
@@ -182,6 +200,43 @@ function touchDistance(a: Touch, b: Touch): number {
   return Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY)
 }
 
+function touchDelta(clientX: number, clientY: number, startX: number, startY: number) {
+  const zoom = typeof nvl?.getScale === 'function' ? nvl.getScale() : 1
+  const dpr = window.devicePixelRatio || 1
+  return {
+    dx: ((clientX - startX) / zoom) * dpr,
+    dy: ((clientY - startY) / zoom) * dpr
+  }
+}
+
+function hitNodeAt(clientX: number, clientY: number): {
+  id: string
+  x: number
+  y: number
+} | null {
+  if (!nvl) return null
+  try {
+    const hits = nvl.getHits(
+      { clientX, clientY } as MouseEvent,
+      ['node'],
+      { hitNodeMarginWidth: 24 }
+    )
+    const nodes = hits?.nvlTargets?.nodes ?? []
+    const hit = nodes.find((n: { insideNode?: boolean }) => n.insideNode) ?? nodes[0]
+    if (!hit?.data?.id) return null
+    const coords = hit.targetCoordinates
+    if (coords && typeof coords.x === 'number' && typeof coords.y === 'number') {
+      return { id: String(hit.data.id), x: coords.x, y: coords.y }
+    }
+    const pos = (nvl.getNodePositions() as { id: string, x: number, y: number }[])
+      .find(p => p.id === hit.data.id)
+    if (!pos) return null
+    return { id: String(hit.data.id), x: pos.x, y: pos.y }
+  } catch {
+    return null
+  }
+}
+
 function onTouchStart(e: TouchEvent) {
   if (!nvl || !props.interactive) return
   if (e.touches.length === 2 && props.zoom) {
@@ -196,25 +251,31 @@ function onTouchStart(e: TouchEvent) {
     }
     return
   }
-  if (e.touches.length === 1 && props.pan) {
-    const t = e.touches[0]!
-    // If the finger is on a node, skip custom pan so NVL node-drag can take over.
-    try {
-      const hits = nvl.getHits(
-        { clientX: t.clientX, clientY: t.clientY } as MouseEvent,
-        ['node']
-      )
-      if (hits?.nvlTargets?.nodes?.length) {
-        touchGesture = null
-        return
+  if (e.touches.length !== 1) return
+  const t = e.touches[0]!
+
+  if (props.dragNodes) {
+    const hit = hitNodeAt(t.clientX, t.clientY)
+    if (hit) {
+      e.preventDefault()
+      touchGesture = {
+        mode: 'dragNode',
+        id: hit.id,
+        startX: t.clientX,
+        startY: t.clientY,
+        nodeX: hit.x,
+        nodeY: hit.y
       }
-    } catch {
-      // fall through to pan
+      return
     }
+  }
+
+  if (props.pan) {
+    e.preventDefault()
     touchGesture = {
       mode: 'pan',
-      lastX: t.clientX,
-      lastY: t.clientY,
+      startX: t.clientX,
+      startY: t.clientY,
       startPan: nvl.getPan()
     }
   }
@@ -222,6 +283,7 @@ function onTouchStart(e: TouchEvent) {
 
 function onTouchMove(e: TouchEvent) {
   if (!nvl || !touchGesture) return
+
   if (touchGesture.mode === 'pinch' && e.touches.length === 2 && props.zoom) {
     e.preventDefault()
     const dist = Math.max(touchDistance(e.touches[0]!, e.touches[1]!), 1)
@@ -233,7 +295,6 @@ function onTouchMove(e: TouchEvent) {
       limits.maxZoom,
       Math.max(limits.minZoom, touchGesture.startZoom * ratio)
     )
-    // Keep the midpoint stable in world space (same idea as NVL wheel zoom).
     const zoom = touchGesture.startZoom
     const { x, y } = touchGesture.startPan
     const el = container.value
@@ -246,20 +307,43 @@ function onTouchMove(e: TouchEvent) {
     nvl.setZoomAndPan(nextZoom, panX, panY)
     return
   }
+
+  if (touchGesture.mode === 'dragNode' && e.touches.length === 1 && props.dragNodes) {
+    e.preventDefault()
+    const t = e.touches[0]!
+    const { dx, dy } = touchDelta(t.clientX, t.clientY, touchGesture.startX, touchGesture.startY)
+    nvl.setNodePositions(
+      [{
+        id: touchGesture.id,
+        x: touchGesture.nodeX + dx,
+        y: touchGesture.nodeY + dy,
+        pinned: true
+      }],
+      true
+    )
+    return
+  }
+
   if (touchGesture.mode === 'pan' && e.touches.length === 1 && props.pan) {
     e.preventDefault()
     const t = e.touches[0]!
-    const zoom = typeof nvl.getScale === 'function' ? nvl.getScale() : 1
-    const dx = (t.clientX - touchGesture.lastX) / zoom
-    const dy = (t.clientY - touchGesture.lastY) / zoom
-    touchGesture.lastX = t.clientX
-    touchGesture.lastY = t.clientY
-    const pan = nvl.getPan()
-    nvl.setPan(pan.x + dx, pan.y + dy)
+    const { dx, dy } = touchDelta(t.clientX, t.clientY, touchGesture.startX, touchGesture.startY)
+    // Match NVL PanInteraction: pan moves opposite to finger so content follows the drag.
+    nvl.setPan(touchGesture.startPan.x - dx, touchGesture.startPan.y - dy)
   }
 }
 
 function onTouchEnd(e: TouchEvent) {
+  if (touchGesture?.mode === 'dragNode' && e.touches.length === 0) {
+    if (nvl && typeof nvl.pinNode === 'function') {
+      try {
+        nvl.pinNode(touchGesture.id)
+      } catch {
+        // ignore
+      }
+    }
+    savePositions()
+  }
   if (e.touches.length < 2 && touchGesture?.mode === 'pinch') {
     touchGesture = null
   }
@@ -271,7 +355,7 @@ function onTouchEnd(e: TouchEvent) {
 function attachTouchGestures() {
   const el = container.value
   if (!el || touchListenersAttached || !props.interactive) return
-  if (!props.zoom && !props.pan) return
+  if (!props.zoom && !props.pan && !props.dragNodes) return
   el.addEventListener('touchstart', onTouchStart, { passive: false })
   el.addEventListener('touchmove', onTouchMove, { passive: false })
   el.addEventListener('touchend', onTouchEnd)
