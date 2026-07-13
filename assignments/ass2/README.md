@@ -48,4 +48,24 @@ I worked on a **FAERS-style healthcare graph** (drugs, cases, reactions, outcome
 - **Neo4j GDS** plugin (for graph algorithm sections)
 - **Python 3** + Jupyter (or VS Code) for `P_Mangoro_C2_assn.ipynb`
 
+## Static demo export
+
+The Nuxt page `/healthcare` reads precomputed JSON from
+`nuxt_neo4j/public/data/healthcare/`. Regenerate after restoring the dump into a
+local Neo4j instance with the **GDS** plugin:
+
+```bash
+cd assignments/ass2
+
+# Normal Neo4j (uses NEO4J_URI / NEO4J_USER / NEO4J_PASSWORD from repo .env)
+python export_ass2.py
+
+# Only if the server was started with authentication disabled:
+# NEO4J_AUTH=none python export_ass2.py
+```
+
+Artifacts: `stats.json`, `queries.json`, `similarity.json`, `communities.json`,
+`community_index.json`, `drug_index.json`, plus curated
+`graph_community_*.json` / `graph_drug_*.json` (the full graph is not shipped).
+
 Repository overview: [root README](../../README.md). Assignment 1 (graph build): [../ass1/README.md](../ass1/README.md).

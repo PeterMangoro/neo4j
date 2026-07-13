@@ -1,0 +1,62 @@
+[
+  {
+    "productId": "Q4H",
+    "groupName": "seat",
+    "slug": "Q4H",
+    "source": "pagerank"
+  },
+  {
+    "productId": "G0K",
+    "groupName": "gear",
+    "slug": "G0K",
+    "source": "pagerank"
+  },
+  {
+    "productId": "Q2J",
+    "groupName": "seat",
+    "slug": "Q2J",
+    "source": "pagerank"
+  },
+  {
+    "productId": "G1C",
+    "groupName": "gear",
+    "slug": "G1C",
+    "source": "pagerank"
+  },
+  {
+    "productId": "componment_seat2",
+    "groupName": "seat_componment",
+    "slug": "componment_seat2",
+    "source": "pagerank"
+  },
+  {
+    "productId": "64002",
+    "groupName": "car",
+    "slug": "64002",
+    "source": "fanout"
+  },
+  {
+    "productId": "64099",
+    "groupName": "car",
+    "slug": "64099",
+    "source": "fanout"
+  },
+  {
+    "productId": "componment_battery1",
+    "groupName": "battery_componment",
+    "slug": "componment_battery1",
+    "source": "risk"
+  },
+  {
+    "productId": "componment_seat1",
+    "groupName": "seat_componment",
+    "slug": "componment_seat1",
+    "source": "risk"
+  },
+  {
+    "productId": "DN4",
+    "groupName": "engine",
+    "slug": "DN4",
+    "source": "pagerank"
+  }
+]

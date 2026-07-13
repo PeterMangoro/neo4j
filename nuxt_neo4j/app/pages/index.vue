@@ -18,8 +18,8 @@ const projects = [
     to: '/movie-recommender',
     icon: 'i-lucide-clapperboard',
     title: 'Movie Recommender',
-    status: 'Coming soon',
-    statusColor: 'neutral' as const,
+    status: 'Live',
+    statusColor: 'success' as const,
     summary: 'Hybrid movie recommendations built with Neo4j Graph Data Science: Jaccard similarity, FastRP embeddings, and Louvain communities.',
     highlights: ['GDS similarity', 'Embedding neighbors', 'Community clusters']
   },
@@ -27,39 +27,30 @@ const projects = [
     to: '/healthcare',
     icon: 'i-lucide-heart-pulse',
     title: 'Healthcare Adverse Events',
-    status: 'Coming soon',
-    statusColor: 'neutral' as const,
+    status: 'Live',
+    statusColor: 'success' as const,
     summary: 'FAERS-style adverse-event reporting graph with Cypher analytics and GDS for drug–reaction patterns and patient safety insights.',
-    highlights: ['FAERS graph', 'Drug–reaction links', 'GDS analytics']
+    highlights: ['11,381 nodes', 'Leiden phenotypes', 'Drug neighborhoods']
   },
   {
     to: '/supply-chain',
     icon: 'i-lucide-network',
     title: 'Supply-Chain Risk',
-    status: 'Coming soon',
-    statusColor: 'neutral' as const,
+    status: 'Live',
+    statusColor: 'success' as const,
     summary: 'Multi-tier automotive production network analysis: PageRank influence, community structure, and BOM exploration for risk spotting.',
-    highlights: ['PageRank', 'Communities', 'BOM explorer']
+    highlights: ['28k products', 'PageRank chokepoints', 'BOM explorer']
   }
 ]
 </script>
 
 <template>
   <div>
-    <UPageHero
-      title="Neo4j Capstone Demos"
-      description="Four graph projects turned into fully static interactive demos. Precomputed JSON, no live database — explore Cypher results, GDS outputs, and graph visualizations in the browser."
-      :links="[{
-        label: 'Open Music Knowledge Graph',
-        to: '/music-knowledge-graph',
-        trailingIcon: 'i-lucide-arrow-right',
-        size: 'xl'
-      }]"
-    />
+   
 
     <UPageSection
       title="Projects"
-      description="Each tile opens a self-contained demo page. Live pages ship frozen query results and graph data; the rest are stubs until their phase ships."
+      description="Interactive static demos of Neo4j graph projects: music knowledge graph, movie recommendations, healthcare adverse events, and supply-chain risk."
     >
       <div class="grid gap-4 sm:grid-cols-2">
         <NuxtLink

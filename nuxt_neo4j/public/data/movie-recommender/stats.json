@@ -1,0 +1,52 @@
+{
+  "nodeCounts": [
+    {
+      "label": "User",
+      "count": 20
+    },
+    {
+      "label": "Movie",
+      "count": 25
+    },
+    {
+      "label": "Genre",
+      "count": 14
+    },
+    {
+      "label": "Director",
+      "count": 21
+    }
+  ],
+  "relCounts": [
+    {
+      "type": "RATED",
+      "count": 101
+    },
+    {
+      "type": "IN_GENRE",
+      "count": 50
+    },
+    {
+      "type": "DIRECTED_BY",
+      "count": 25
+    }
+  ],
+  "highlights": [
+    {
+      "label": "Users",
+      "value": 20
+    },
+    {
+      "label": "Movies",
+      "value": 25
+    },
+    {
+      "label": "Ratings",
+      "value": 101
+    },
+    {
+      "label": "Taste communities",
+      "value": 4
+    }
+  ]
+}

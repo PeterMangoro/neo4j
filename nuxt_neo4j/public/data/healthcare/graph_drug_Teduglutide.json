@@ -1,0 +1,4476 @@
+{
+  "nodes": [
+    {
+      "id": "Case:122309908",
+      "caption": "Case 122309908 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:Teduglutide",
+      "caption": "Teduglutide",
+      "labels": [
+        "Drug"
+      ],
+      "score": 1.0
+    },
+    {
+      "id": "Reaction:Anaemia",
+      "caption": "Anaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Haemoptysis",
+      "caption": "Haemoptysis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Inappropriate schedule of product administration",
+      "caption": "Inappropriate schedule of product administration",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Vascular device infection",
+      "caption": "Vascular device infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Helicobacter infection",
+      "caption": "Helicobacter infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Haemodynamic instability",
+      "caption": "Haemodynamic instability",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Duodenal ulcer haemorrhage",
+      "caption": "Duodenal ulcer haemorrhage",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Life-Threatening",
+      "caption": "Life-Threatening",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Outcome:Other Serious (Important Medical Event)",
+      "caption": "Other Serious (Important Medical Event)",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Outcome:Hospitalization - Initial or Prolonged",
+      "caption": "Hospitalization - Initial or Prolonged",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adult",
+      "caption": "Adult",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Manufacturer:TAKEDA",
+      "caption": "TAKEDA",
+      "labels": [
+        "Manufacturer"
+      ]
+    },
+    {
+      "id": "Case:148714495",
+      "caption": "Case 148714495 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:ROXICODONE",
+      "caption": "ROXICODONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:STIOLTO RESPIMAT",
+      "caption": "STIOLTO RESPIMAT",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ZOFRAN",
+      "caption": "ZOFRAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ZANTAC",
+      "caption": "ZANTAC",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Intestinal perforation",
+      "caption": "Intestinal perforation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Malnutrition",
+      "caption": "Malnutrition",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Death",
+      "caption": "Death",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:156034675",
+      "caption": "Case 156034675 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:CYMBALTA",
+      "caption": "CYMBALTA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Bicitra",
+      "caption": "Bicitra",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ZINCATE",
+      "caption": "ZINCATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PANTOPRAZOLE",
+      "caption": "PANTOPRAZOLE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ALPRAZOLAM",
+      "caption": "ALPRAZOLAM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Acute kidney injury",
+      "caption": "Acute kidney injury",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pneumonia",
+      "caption": "Pneumonia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Sepsis",
+      "caption": "Sepsis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Orthostatic hypotension",
+      "caption": "Orthostatic hypotension",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:158002703",
+      "caption": "Case 158002703 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:CLONAZEPAM",
+      "caption": "CLONAZEPAM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:RISPERDAL",
+      "caption": "RISPERDAL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:GENTAMICIN",
+      "caption": "GENTAMICIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Hydronephrosis",
+      "caption": "Hydronephrosis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Ureterolithiasis",
+      "caption": "Ureterolithiasis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:167076987",
+      "caption": "Case 167076987 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:OXYBUTYNIN",
+      "caption": "OXYBUTYNIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TESTOSTERONE CYPIONATE",
+      "caption": "TESTOSTERONE CYPIONATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PERCOCET",
+      "caption": "PERCOCET",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MACROBID",
+      "caption": "MACROBID",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Dehydration",
+      "caption": "Dehydration",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pancreatic carcinoma",
+      "caption": "Pancreatic carcinoma",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:173229872",
+      "caption": "Case 173229872 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Product dose omission issue",
+      "caption": "Product dose omission issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product availability issue",
+      "caption": "Product availability issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Viral infection",
+      "caption": "Viral infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pruritus",
+      "caption": "Pruritus",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gastrointestinal stoma output increased",
+      "caption": "Gastrointestinal stoma output increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Child",
+      "caption": "Child",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:173521114",
+      "caption": "Case 173521114 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Mycobacterial infection",
+      "caption": "Mycobacterial infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Elderly",
+      "caption": "Elderly",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:175233862",
+      "caption": "Case 175233862 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:Vitamin b 1 6 12",
+      "caption": "Vitamin b 1 6 12",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Amiodarone",
+      "caption": "Amiodarone",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:OXYBUTYNIN CHLORIDE",
+      "caption": "OXYBUTYNIN CHLORIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TEMAZEPAM",
+      "caption": "TEMAZEPAM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TYLENOL",
+      "caption": "TYLENOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BENADRYL",
+      "caption": "BENADRYL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LANOXIN",
+      "caption": "LANOXIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CELEXA",
+      "caption": "CELEXA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PEPCID",
+      "caption": "PEPCID",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ASPIRIN",
+      "caption": "ASPIRIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Pemphigoid",
+      "caption": "Pemphigoid",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Weight decreased",
+      "caption": "Weight decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:175817615",
+      "caption": "Case 175817615 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Constipation",
+      "caption": "Constipation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Crohn's disease",
+      "caption": "Crohn's disease",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:176875835",
+      "caption": "Case 176875835 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Pain",
+      "caption": "Pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Needle issue",
+      "caption": "Needle issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Weight increased",
+      "caption": "Weight increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Anal incontinence",
+      "caption": "Anal incontinence",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:177042436",
+      "caption": "Case 177042436 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Blood creatinine increased",
+      "caption": "Blood creatinine increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Depression",
+      "caption": "Depression",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal distension",
+      "caption": "Abdominal distension",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Accident",
+      "caption": "Accident",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Diarrhoea",
+      "caption": "Diarrhoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:180211789",
+      "caption": "Case 180211789 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:DULOXETINE HCL",
+      "caption": "DULOXETINE HCL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LORAZEPAM",
+      "caption": "LORAZEPAM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:REQUIP",
+      "caption": "REQUIP",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TRAMADOL HCL",
+      "caption": "TRAMADOL HCL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MAGNESIUM CHLORIDE",
+      "caption": "MAGNESIUM CHLORIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:METOPROLOL TARTRATE",
+      "caption": "METOPROLOL TARTRATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LEVOTHYROXINE SODIUM",
+      "caption": "LEVOTHYROXINE SODIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PANTOPRAZOLE SODIUM",
+      "caption": "PANTOPRAZOLE SODIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:GAS X",
+      "caption": "GAS X",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DICYCLOMINE HCL",
+      "caption": "DICYCLOMINE HCL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CHOLESTYRAMINE",
+      "caption": "CHOLESTYRAMINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PROTONIX",
+      "caption": "PROTONIX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ATIVAN",
+      "caption": "ATIVAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:FERROUS SULFATE",
+      "caption": "FERROUS SULFATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MONTELUKAST SODIUM",
+      "caption": "MONTELUKAST SODIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:GABAPENTIN",
+      "caption": "GABAPENTIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN D3",
+      "caption": "VITAMIN D3",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ACETAMINOPHEN",
+      "caption": "ACETAMINOPHEN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CYCLOBENZAPRINE HCL",
+      "caption": "CYCLOBENZAPRINE HCL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MORPHINE SULFATE",
+      "caption": "MORPHINE SULFATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DIPHENHYDRAMINE HCL",
+      "caption": "DIPHENHYDRAMINE HCL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Product quality issue",
+      "caption": "Product quality issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Blood magnesium abnormal",
+      "caption": "Blood magnesium abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Stoma complication",
+      "caption": "Stoma complication",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal pain",
+      "caption": "Abdominal pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Malaise",
+      "caption": "Malaise",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Migraine",
+      "caption": "Migraine",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Injection site erythema",
+      "caption": "Injection site erythema",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Injection site pruritus",
+      "caption": "Injection site pruritus",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Chest pain",
+      "caption": "Chest pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Injection site urticaria",
+      "caption": "Injection site urticaria",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Multiple use of single-use product",
+      "caption": "Multiple use of single-use product",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Small intestinal obstruction",
+      "caption": "Small intestinal obstruction",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:181141097",
+      "caption": "Case 181141097 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:QUESTRAN",
+      "caption": "QUESTRAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:IMODIUM",
+      "caption": "IMODIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MOBIC",
+      "caption": "MOBIC",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:NEURONTIN",
+      "caption": "NEURONTIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:COVID-19",
+      "caption": "COVID-19",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Rectal polyp",
+      "caption": "Rectal polyp",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Syringe issue",
+      "caption": "Syringe issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:184933134",
+      "caption": "Case 184933134 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN E [HERBAL OIL NOS]",
+      "caption": "VITAMIN E [HERBAL OIL NOS]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Gallbladder rupture",
+      "caption": "Gallbladder rupture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Condition aggravated",
+      "caption": "Condition aggravated",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cholecystitis acute",
+      "caption": "Cholecystitis acute",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:185427773",
+      "caption": "Case 185427773 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Thrombosis",
+      "caption": "Thrombosis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Weight fluctuation",
+      "caption": "Weight fluctuation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Incorrect dose administered",
+      "caption": "Incorrect dose administered",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Injection site bruising",
+      "caption": "Injection site bruising",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Therapy interrupted",
+      "caption": "Therapy interrupted",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:185587165",
+      "caption": "Case 185587165 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Weight abnormal",
+      "caption": "Weight abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Infection",
+      "caption": "Infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:185636185",
+      "caption": "Case 185636185 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:TRAZODONE HYDROCHLORIDE",
+      "caption": "TRAZODONE HYDROCHLORIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ELIQUIS",
+      "caption": "ELIQUIS",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:IMODIUM A D",
+      "caption": "IMODIUM A D",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LOVENOX [LEVOFLOXACIN]",
+      "caption": "LOVENOX [LEVOFLOXACIN]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CELEXA [CELECOXIB]",
+      "caption": "CELEXA [CELECOXIB]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Device issue",
+      "caption": "Device issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Device delivery system issue",
+      "caption": "Device delivery system issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Chills",
+      "caption": "Chills",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Renal disorder",
+      "caption": "Renal disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Poor quality device used",
+      "caption": "Poor quality device used",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gastrointestinal disorder",
+      "caption": "Gastrointestinal disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gastrointestinal stoma complication",
+      "caption": "Gastrointestinal stoma complication",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:185665058",
+      "caption": "Case 185665058 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:PROMETHAZINE",
+      "caption": "PROMETHAZINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ZOLPIDEM",
+      "caption": "ZOLPIDEM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TIZANIDINE",
+      "caption": "TIZANIDINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PREGABALIN",
+      "caption": "PREGABALIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:FUROSEMIDE",
+      "caption": "FUROSEMIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Morphine",
+      "caption": "Morphine",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:HYDROXYZINE",
+      "caption": "HYDROXYZINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BUSPIRONE",
+      "caption": "BUSPIRONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DULOXETINE",
+      "caption": "DULOXETINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Nortriptylin",
+      "caption": "Nortriptylin",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Hospitalisation",
+      "caption": "Hospitalisation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Wrong technique in product usage process",
+      "caption": "Wrong technique in product usage process",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cholelithiasis",
+      "caption": "Cholelithiasis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Accidental overdose",
+      "caption": "Accidental overdose",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Unevaluable event",
+      "caption": "Unevaluable event",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product packaging issue",
+      "caption": "Product packaging issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:185827043",
+      "caption": "Case 185827043 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:LANSOPRAZOLE",
+      "caption": "LANSOPRAZOLE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CEFTRIAXONE",
+      "caption": "CEFTRIAXONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Klebsiella bacteraemia",
+      "caption": "Klebsiella bacteraemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Device malfunction",
+      "caption": "Device malfunction",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:185865155",
+      "caption": "Case 185865155 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:NAFCILLIN",
+      "caption": "NAFCILLIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Vancomycin",
+      "caption": "Vancomycin",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Acute respiratory failure",
+      "caption": "Acute respiratory failure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypercapnia",
+      "caption": "Hypercapnia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Osteomyelitis",
+      "caption": "Osteomyelitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypoxia",
+      "caption": "Hypoxia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:185869483",
+      "caption": "Case 185869483 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Product use complaint",
+      "caption": "Product use complaint",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product container issue",
+      "caption": "Product container issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Drug ineffective",
+      "caption": "Drug ineffective",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:186198454",
+      "caption": "Case 186198454 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:QUETIAPINE FUMARATE",
+      "caption": "QUETIAPINE FUMARATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:KLONOPIN",
+      "caption": "KLONOPIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LEVOTHYROXINE",
+      "caption": "LEVOTHYROXINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ATORVASTATIN CALCIUM",
+      "caption": "ATORVASTATIN CALCIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Mental status changes",
+      "caption": "Mental status changes",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Internal haemorrhage",
+      "caption": "Internal haemorrhage",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hyponatraemia",
+      "caption": "Hyponatraemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:186277273",
+      "caption": "Case 186277273 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:CEFEPIME",
+      "caption": "CEFEPIME",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:SYNTHROID",
+      "caption": "SYNTHROID",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PRILOSEC",
+      "caption": "PRILOSEC",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PROZAC",
+      "caption": "PROZAC",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VANCOMYCIN",
+      "caption": "VANCOMYCIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:URSODIOL",
+      "caption": "URSODIOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:IMITREX",
+      "caption": "IMITREX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Rectal abscess",
+      "caption": "Rectal abscess",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:186575522",
+      "caption": "Case 186575522 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Bacteraemia",
+      "caption": "Bacteraemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:187097745",
+      "caption": "Case 187097745 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Staphylococcal infection",
+      "caption": "Staphylococcal infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:187276512",
+      "caption": "Case 187276512 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:187491614",
+      "caption": "Case 187491614 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:189361034",
+      "caption": "Case 189361034 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:189909655",
+      "caption": "Case 189909655 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:190394292",
+      "caption": "Case 190394292 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:190505992",
+      "caption": "Case 190505992 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:190517862",
+      "caption": "Case 190517862 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:190584452",
+      "caption": "Case 190584452 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:190692452",
+      "caption": "Case 190692452 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:190698643",
+      "caption": "Case 190698643 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:190790314",
+      "caption": "Case 190790314 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:191208952",
+      "caption": "Case 191208952 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:192588044",
+      "caption": "Case 192588044 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:194545262",
+      "caption": "Case 194545262 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:194592672",
+      "caption": "Case 194592672 (F)",
+      "labels": [
+        "Case"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "CD:1",
+      "from": "Case:122309908",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:2",
+      "from": "Case:122309908",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:3",
+      "from": "Case:122309908",
+      "to": "Reaction:Anaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:4",
+      "from": "Case:122309908",
+      "to": "Reaction:Haemoptysis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:5",
+      "from": "Case:122309908",
+      "to": "Reaction:Inappropriate schedule of product administration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:6",
+      "from": "Case:122309908",
+      "to": "Reaction:Vascular device infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:7",
+      "from": "Case:122309908",
+      "to": "Reaction:Helicobacter infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:8",
+      "from": "Case:122309908",
+      "to": "Reaction:Haemodynamic instability",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:9",
+      "from": "Case:122309908",
+      "to": "Reaction:Duodenal ulcer haemorrhage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:10",
+      "from": "Case:122309908",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:11",
+      "from": "Case:122309908",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:12",
+      "from": "Case:122309908",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:13",
+      "from": "Case:122309908",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:14",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:122309908",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:15",
+      "from": "Case:148714495",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:16",
+      "from": "Case:148714495",
+      "to": "Drug:ROXICODONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:17",
+      "from": "Case:148714495",
+      "to": "Drug:STIOLTO RESPIMAT",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:18",
+      "from": "Case:148714495",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:19",
+      "from": "Case:148714495",
+      "to": "Drug:ZOFRAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:20",
+      "from": "Case:148714495",
+      "to": "Drug:ZANTAC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:21",
+      "from": "Case:148714495",
+      "to": "Reaction:Intestinal perforation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:22",
+      "from": "Case:148714495",
+      "to": "Reaction:Malnutrition",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:23",
+      "from": "Case:148714495",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:24",
+      "from": "Case:148714495",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:25",
+      "from": "Case:148714495",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:26",
+      "from": "Case:148714495",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:27",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:148714495",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:28",
+      "from": "Case:156034675",
+      "to": "Drug:CYMBALTA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:29",
+      "from": "Case:156034675",
+      "to": "Drug:Bicitra",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:30",
+      "from": "Case:156034675",
+      "to": "Drug:ZINCATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:31",
+      "from": "Case:156034675",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:32",
+      "from": "Case:156034675",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:33",
+      "from": "Case:156034675",
+      "to": "Drug:PANTOPRAZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:34",
+      "from": "Case:156034675",
+      "to": "Drug:ALPRAZOLAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:35",
+      "from": "Case:156034675",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:36",
+      "from": "Case:156034675",
+      "to": "Reaction:Pneumonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:37",
+      "from": "Case:156034675",
+      "to": "Reaction:Sepsis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:38",
+      "from": "Case:156034675",
+      "to": "Reaction:Orthostatic hypotension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:39",
+      "from": "Case:156034675",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:40",
+      "from": "Case:156034675",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:41",
+      "from": "Case:156034675",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:42",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:156034675",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:43",
+      "from": "Case:158002703",
+      "to": "Drug:CLONAZEPAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:44",
+      "from": "Case:158002703",
+      "to": "Drug:RISPERDAL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:45",
+      "from": "Case:158002703",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:46",
+      "from": "Case:158002703",
+      "to": "Drug:GENTAMICIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:47",
+      "from": "Case:158002703",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:48",
+      "from": "Case:158002703",
+      "to": "Reaction:Hydronephrosis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:49",
+      "from": "Case:158002703",
+      "to": "Reaction:Ureterolithiasis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:50",
+      "from": "Case:158002703",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:51",
+      "from": "Case:158002703",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:52",
+      "from": "Case:158002703",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:53",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:158002703",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:54",
+      "from": "Case:167076987",
+      "to": "Drug:OXYBUTYNIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:55",
+      "from": "Case:167076987",
+      "to": "Drug:TESTOSTERONE CYPIONATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:56",
+      "from": "Case:167076987",
+      "to": "Drug:PERCOCET",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:57",
+      "from": "Case:167076987",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:58",
+      "from": "Case:167076987",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:59",
+      "from": "Case:167076987",
+      "to": "Drug:MACROBID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:60",
+      "from": "Case:167076987",
+      "to": "Reaction:Dehydration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:61",
+      "from": "Case:167076987",
+      "to": "Reaction:Pancreatic carcinoma",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:62",
+      "from": "Case:167076987",
+      "to": "Reaction:Malnutrition",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:63",
+      "from": "Case:167076987",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:64",
+      "from": "Case:167076987",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:65",
+      "from": "Case:167076987",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:66",
+      "from": "Case:167076987",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:67",
+      "from": "Case:167076987",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:68",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:167076987",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:69",
+      "from": "Case:173229872",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:70",
+      "from": "Case:173229872",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:71",
+      "from": "Case:173229872",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:72",
+      "from": "Case:173229872",
+      "to": "Reaction:Product availability issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:73",
+      "from": "Case:173229872",
+      "to": "Reaction:Viral infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:74",
+      "from": "Case:173229872",
+      "to": "Reaction:Dehydration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:75",
+      "from": "Case:173229872",
+      "to": "Reaction:Pruritus",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:76",
+      "from": "Case:173229872",
+      "to": "Reaction:Gastrointestinal stoma output increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:77",
+      "from": "Case:173229872",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:78",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:173229872",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:79",
+      "from": "Case:173521114",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:80",
+      "from": "Case:173521114",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:81",
+      "from": "Case:173521114",
+      "to": "Reaction:Mycobacterial infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:82",
+      "from": "Case:173521114",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:83",
+      "from": "Case:173521114",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:84",
+      "from": "Case:173521114",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:85",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:173521114",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:86",
+      "from": "Case:175233862",
+      "to": "Drug:Vitamin b 1 6 12",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:87",
+      "from": "Case:175233862",
+      "to": "Drug:Amiodarone",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:88",
+      "from": "Case:175233862",
+      "to": "Drug:OXYBUTYNIN CHLORIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:89",
+      "from": "Case:175233862",
+      "to": "Drug:TEMAZEPAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:90",
+      "from": "Case:175233862",
+      "to": "Drug:TYLENOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:91",
+      "from": "Case:175233862",
+      "to": "Drug:BENADRYL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:92",
+      "from": "Case:175233862",
+      "to": "Drug:LANOXIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:93",
+      "from": "Case:175233862",
+      "to": "Drug:CELEXA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:94",
+      "from": "Case:175233862",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:95",
+      "from": "Case:175233862",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:96",
+      "from": "Case:175233862",
+      "to": "Drug:PEPCID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:97",
+      "from": "Case:175233862",
+      "to": "Drug:ZOFRAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:98",
+      "from": "Case:175233862",
+      "to": "Drug:ASPIRIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:99",
+      "from": "Case:175233862",
+      "to": "Reaction:Pemphigoid",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:100",
+      "from": "Case:175233862",
+      "to": "Reaction:Weight decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:101",
+      "from": "Case:175233862",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:102",
+      "from": "Case:175233862",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:103",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:175233862",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:104",
+      "from": "Case:175817615",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:105",
+      "from": "Case:175817615",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:106",
+      "from": "Case:175817615",
+      "to": "Reaction:Constipation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:107",
+      "from": "Case:175817615",
+      "to": "Reaction:Crohn's disease",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:108",
+      "from": "Case:175817615",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:109",
+      "from": "Case:175817615",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:110",
+      "from": "Case:175817615",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:111",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:175817615",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:112",
+      "from": "Case:176875835",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:113",
+      "from": "Case:176875835",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:114",
+      "from": "Case:176875835",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:115",
+      "from": "Case:176875835",
+      "to": "Reaction:Needle issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:116",
+      "from": "Case:176875835",
+      "to": "Reaction:Inappropriate schedule of product administration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:117",
+      "from": "Case:176875835",
+      "to": "Reaction:Weight increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:118",
+      "from": "Case:176875835",
+      "to": "Reaction:Anal incontinence",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:119",
+      "from": "Case:176875835",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:120",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:176875835",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:121",
+      "from": "Case:177042436",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:122",
+      "from": "Case:177042436",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:123",
+      "from": "Case:177042436",
+      "to": "Reaction:Blood creatinine increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:124",
+      "from": "Case:177042436",
+      "to": "Reaction:Anal incontinence",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:125",
+      "from": "Case:177042436",
+      "to": "Reaction:Weight decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:126",
+      "from": "Case:177042436",
+      "to": "Reaction:Depression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:127",
+      "from": "Case:177042436",
+      "to": "Reaction:Abdominal distension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:128",
+      "from": "Case:177042436",
+      "to": "Reaction:Accident",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:129",
+      "from": "Case:177042436",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:130",
+      "from": "Case:177042436",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:131",
+      "from": "Case:177042436",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:132",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:177042436",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:133",
+      "from": "Case:180211789",
+      "to": "Drug:DULOXETINE HCL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:134",
+      "from": "Case:180211789",
+      "to": "Drug:LORAZEPAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:135",
+      "from": "Case:180211789",
+      "to": "Drug:REQUIP",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:136",
+      "from": "Case:180211789",
+      "to": "Drug:TRAMADOL HCL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:137",
+      "from": "Case:180211789",
+      "to": "Drug:MAGNESIUM CHLORIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:138",
+      "from": "Case:180211789",
+      "to": "Drug:METOPROLOL TARTRATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:139",
+      "from": "Case:180211789",
+      "to": "Drug:LEVOTHYROXINE SODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:140",
+      "from": "Case:180211789",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:141",
+      "from": "Case:180211789",
+      "to": "Drug:PANTOPRAZOLE SODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:142",
+      "from": "Case:180211789",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:143",
+      "from": "Case:180211789",
+      "to": "Drug:GAS X",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:144",
+      "from": "Case:180211789",
+      "to": "Drug:DICYCLOMINE HCL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:145",
+      "from": "Case:180211789",
+      "to": "Drug:CHOLESTYRAMINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:146",
+      "from": "Case:180211789",
+      "to": "Drug:PROTONIX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:147",
+      "from": "Case:180211789",
+      "to": "Drug:ATIVAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:148",
+      "from": "Case:180211789",
+      "to": "Drug:FERROUS SULFATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:149",
+      "from": "Case:180211789",
+      "to": "Drug:CYMBALTA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:150",
+      "from": "Case:180211789",
+      "to": "Drug:MONTELUKAST SODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:151",
+      "from": "Case:180211789",
+      "to": "Drug:GABAPENTIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:152",
+      "from": "Case:180211789",
+      "to": "Drug:VITAMIN D3",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:153",
+      "from": "Case:180211789",
+      "to": "Drug:ACETAMINOPHEN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:154",
+      "from": "Case:180211789",
+      "to": "Drug:CYCLOBENZAPRINE HCL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:155",
+      "from": "Case:180211789",
+      "to": "Drug:MORPHINE SULFATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:156",
+      "from": "Case:180211789",
+      "to": "Drug:DIPHENHYDRAMINE HCL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:157",
+      "from": "Case:180211789",
+      "to": "Reaction:Product quality issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:158",
+      "from": "Case:180211789",
+      "to": "Reaction:Blood magnesium abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:159",
+      "from": "Case:180211789",
+      "to": "Reaction:Weight decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:160",
+      "from": "Case:180211789",
+      "to": "Reaction:Stoma complication",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:161",
+      "from": "Case:180211789",
+      "to": "Reaction:Abdominal pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:162",
+      "from": "Case:180211789",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:163",
+      "from": "Case:180211789",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:164",
+      "from": "Case:180211789",
+      "to": "Reaction:Needle issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:165",
+      "from": "Case:180211789",
+      "to": "Reaction:Migraine",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:166",
+      "from": "Case:180211789",
+      "to": "Reaction:Injection site erythema",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:167",
+      "from": "Case:180211789",
+      "to": "Reaction:Injection site pruritus",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:168",
+      "from": "Case:180211789",
+      "to": "Reaction:Chest pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:169",
+      "from": "Case:180211789",
+      "to": "Reaction:Injection site urticaria",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:170",
+      "from": "Case:180211789",
+      "to": "Reaction:Multiple use of single-use product",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:171",
+      "from": "Case:180211789",
+      "to": "Reaction:Small intestinal obstruction",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:172",
+      "from": "Case:180211789",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:173",
+      "from": "Case:180211789",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:174",
+      "from": "Case:180211789",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:175",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:180211789",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:176",
+      "from": "Case:181141097",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:177",
+      "from": "Case:181141097",
+      "to": "Drug:QUESTRAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:178",
+      "from": "Case:181141097",
+      "to": "Drug:IMODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:179",
+      "from": "Case:181141097",
+      "to": "Drug:MOBIC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:180",
+      "from": "Case:181141097",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:181",
+      "from": "Case:181141097",
+      "to": "Drug:NEURONTIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:182",
+      "from": "Case:181141097",
+      "to": "Reaction:COVID-19",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:183",
+      "from": "Case:181141097",
+      "to": "Reaction:Rectal polyp",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:184",
+      "from": "Case:181141097",
+      "to": "Reaction:Syringe issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:185",
+      "from": "Case:181141097",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:186",
+      "from": "Case:181141097",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:187",
+      "from": "Case:181141097",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:188",
+      "from": "Case:181141097",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:189",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:181141097",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:190",
+      "from": "Case:184933134",
+      "to": "Drug:VITAMIN E [HERBAL OIL NOS]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:191",
+      "from": "Case:184933134",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:192",
+      "from": "Case:184933134",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:193",
+      "from": "Case:184933134",
+      "to": "Reaction:Gallbladder rupture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:194",
+      "from": "Case:184933134",
+      "to": "Reaction:Condition aggravated",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:195",
+      "from": "Case:184933134",
+      "to": "Reaction:Cholecystitis acute",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:196",
+      "from": "Case:184933134",
+      "to": "Reaction:COVID-19",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:197",
+      "from": "Case:184933134",
+      "to": "Reaction:Crohn's disease",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:198",
+      "from": "Case:184933134",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:199",
+      "from": "Case:184933134",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:200",
+      "from": "Case:184933134",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:201",
+      "from": "Case:184933134",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:202",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:184933134",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:203",
+      "from": "Case:185427773",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:204",
+      "from": "Case:185427773",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:205",
+      "from": "Case:185427773",
+      "to": "Reaction:Thrombosis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:206",
+      "from": "Case:185427773",
+      "to": "Reaction:Weight fluctuation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:207",
+      "from": "Case:185427773",
+      "to": "Reaction:Incorrect dose administered",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:208",
+      "from": "Case:185427773",
+      "to": "Reaction:Injection site bruising",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:209",
+      "from": "Case:185427773",
+      "to": "Reaction:Therapy interrupted",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:210",
+      "from": "Case:185427773",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:211",
+      "from": "Case:185427773",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:212",
+      "from": "Case:185427773",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:213",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:185427773",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:214",
+      "from": "Case:185587165",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:215",
+      "from": "Case:185587165",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:216",
+      "from": "Case:185587165",
+      "to": "Reaction:Vascular device infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:217",
+      "from": "Case:185587165",
+      "to": "Reaction:Inappropriate schedule of product administration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:218",
+      "from": "Case:185587165",
+      "to": "Reaction:Weight abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:219",
+      "from": "Case:185587165",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:220",
+      "from": "Case:185587165",
+      "to": "Reaction:Infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:221",
+      "from": "Case:185587165",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:222",
+      "from": "Case:185587165",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:223",
+      "from": "Case:185587165",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:224",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:185587165",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:225",
+      "from": "Case:185636185",
+      "to": "Drug:TRAZODONE HYDROCHLORIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:226",
+      "from": "Case:185636185",
+      "to": "Drug:ALPRAZOLAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:227",
+      "from": "Case:185636185",
+      "to": "Drug:ELIQUIS",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:228",
+      "from": "Case:185636185",
+      "to": "Drug:PANTOPRAZOLE SODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:229",
+      "from": "Case:185636185",
+      "to": "Drug:LEVOTHYROXINE SODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:230",
+      "from": "Case:185636185",
+      "to": "Drug:IMODIUM A D",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:231",
+      "from": "Case:185636185",
+      "to": "Drug:LOVENOX [LEVOFLOXACIN]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:232",
+      "from": "Case:185636185",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:233",
+      "from": "Case:185636185",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:234",
+      "from": "Case:185636185",
+      "to": "Drug:CELEXA [CELECOXIB]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:235",
+      "from": "Case:185636185",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:236",
+      "from": "Case:185636185",
+      "to": "Reaction:Device delivery system issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:237",
+      "from": "Case:185636185",
+      "to": "Reaction:Chills",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:238",
+      "from": "Case:185636185",
+      "to": "Reaction:Renal disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:239",
+      "from": "Case:185636185",
+      "to": "Reaction:Syringe issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:240",
+      "from": "Case:185636185",
+      "to": "Reaction:Sepsis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:241",
+      "from": "Case:185636185",
+      "to": "Reaction:Poor quality device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:242",
+      "from": "Case:185636185",
+      "to": "Reaction:Gastrointestinal disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:243",
+      "from": "Case:185636185",
+      "to": "Reaction:Dehydration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:244",
+      "from": "Case:185636185",
+      "to": "Reaction:Gastrointestinal stoma complication",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:245",
+      "from": "Case:185636185",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:246",
+      "from": "Case:185636185",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:247",
+      "from": "Case:185636185",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:248",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:185636185",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:249",
+      "from": "Case:185665058",
+      "to": "Drug:PROMETHAZINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:250",
+      "from": "Case:185665058",
+      "to": "Drug:ZOLPIDEM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:251",
+      "from": "Case:185665058",
+      "to": "Drug:TIZANIDINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:252",
+      "from": "Case:185665058",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:253",
+      "from": "Case:185665058",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:254",
+      "from": "Case:185665058",
+      "to": "Drug:PREGABALIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:255",
+      "from": "Case:185665058",
+      "to": "Drug:FUROSEMIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:256",
+      "from": "Case:185665058",
+      "to": "Drug:Morphine",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:257",
+      "from": "Case:185665058",
+      "to": "Drug:HYDROXYZINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:258",
+      "from": "Case:185665058",
+      "to": "Drug:BUSPIRONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:259",
+      "from": "Case:185665058",
+      "to": "Drug:DULOXETINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:260",
+      "from": "Case:185665058",
+      "to": "Drug:Nortriptylin",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:261",
+      "from": "Case:185665058",
+      "to": "Reaction:Hospitalisation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:262",
+      "from": "Case:185665058",
+      "to": "Reaction:Wrong technique in product usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:263",
+      "from": "Case:185665058",
+      "to": "Reaction:Cholelithiasis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:264",
+      "from": "Case:185665058",
+      "to": "Reaction:Accidental overdose",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:265",
+      "from": "Case:185665058",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:266",
+      "from": "Case:185665058",
+      "to": "Reaction:Unevaluable event",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:267",
+      "from": "Case:185665058",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:268",
+      "from": "Case:185665058",
+      "to": "Reaction:Product packaging issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:269",
+      "from": "Case:185665058",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:270",
+      "from": "Case:185665058",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:271",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:185665058",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:272",
+      "from": "Case:185827043",
+      "to": "Drug:LANSOPRAZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:273",
+      "from": "Case:185827043",
+      "to": "Drug:CLONAZEPAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:274",
+      "from": "Case:185827043",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:275",
+      "from": "Case:185827043",
+      "to": "Drug:CEFTRIAXONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:276",
+      "from": "Case:185827043",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:277",
+      "from": "Case:185827043",
+      "to": "Reaction:Klebsiella bacteraemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:278",
+      "from": "Case:185827043",
+      "to": "Reaction:Vascular device infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:279",
+      "from": "Case:185827043",
+      "to": "Reaction:Device malfunction",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:280",
+      "from": "Case:185827043",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:281",
+      "from": "Case:185827043",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:282",
+      "from": "Case:185827043",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:283",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:185827043",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:284",
+      "from": "Case:185865155",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:285",
+      "from": "Case:185865155",
+      "to": "Drug:NAFCILLIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:286",
+      "from": "Case:185865155",
+      "to": "Drug:Vancomycin",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:287",
+      "from": "Case:185865155",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:288",
+      "from": "Case:185865155",
+      "to": "Reaction:Acute respiratory failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:289",
+      "from": "Case:185865155",
+      "to": "Reaction:Hypercapnia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:290",
+      "from": "Case:185865155",
+      "to": "Reaction:Osteomyelitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:291",
+      "from": "Case:185865155",
+      "to": "Reaction:Hypoxia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:292",
+      "from": "Case:185865155",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:293",
+      "from": "Case:185865155",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:294",
+      "from": "Case:185865155",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:295",
+      "from": "Case:185865155",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:296",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:185865155",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:297",
+      "from": "Case:185869483",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:298",
+      "from": "Case:185869483",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:299",
+      "from": "Case:185869483",
+      "to": "Reaction:Product use complaint",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:300",
+      "from": "Case:185869483",
+      "to": "Reaction:Needle issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:301",
+      "from": "Case:185869483",
+      "to": "Reaction:Product container issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:302",
+      "from": "Case:185869483",
+      "to": "Reaction:Syringe issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:303",
+      "from": "Case:185869483",
+      "to": "Reaction:Hospitalisation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:304",
+      "from": "Case:185869483",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:305",
+      "from": "Case:185869483",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:306",
+      "from": "Case:185869483",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:307",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:185869483",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:308",
+      "from": "Case:186198454",
+      "to": "Drug:TRAZODONE HYDROCHLORIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:309",
+      "from": "Case:186198454",
+      "to": "Drug:QUETIAPINE FUMARATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:310",
+      "from": "Case:186198454",
+      "to": "Drug:KLONOPIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:311",
+      "from": "Case:186198454",
+      "to": "Drug:LEVOTHYROXINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:312",
+      "from": "Case:186198454",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:313",
+      "from": "Case:186198454",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:314",
+      "from": "Case:186198454",
+      "to": "Drug:DULOXETINE HCL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:315",
+      "from": "Case:186198454",
+      "to": "Drug:ATORVASTATIN CALCIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:316",
+      "from": "Case:186198454",
+      "to": "Drug:CLONAZEPAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:317",
+      "from": "Case:186198454",
+      "to": "Reaction:Mental status changes",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:318",
+      "from": "Case:186198454",
+      "to": "Reaction:Gastrointestinal stoma output increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:319",
+      "from": "Case:186198454",
+      "to": "Reaction:Dehydration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:320",
+      "from": "Case:186198454",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:321",
+      "from": "Case:186198454",
+      "to": "Reaction:Internal haemorrhage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:322",
+      "from": "Case:186198454",
+      "to": "Reaction:Hyponatraemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:323",
+      "from": "Case:186198454",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:324",
+      "from": "Case:186198454",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:325",
+      "from": "Case:186198454",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:326",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:186198454",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:327",
+      "from": "Case:186277273",
+      "to": "Drug:CEFEPIME",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:328",
+      "from": "Case:186277273",
+      "to": "Drug:SYNTHROID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:329",
+      "from": "Case:186277273",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:330",
+      "from": "Case:186277273",
+      "to": "Drug:PRILOSEC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:331",
+      "from": "Case:186277273",
+      "to": "Drug:PROZAC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:332",
+      "from": "Case:186277273",
+      "to": "Drug:VANCOMYCIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:333",
+      "from": "Case:186277273",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:334",
+      "from": "Case:186277273",
+      "to": "Drug:URSODIOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:335",
+      "from": "Case:186277273",
+      "to": "Drug:ZOFRAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:336",
+      "from": "Case:186277273",
+      "to": "Drug:IMITREX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:337",
+      "from": "Case:186277273",
+      "to": "Drug:PROTONIX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:338",
+      "from": "Case:186277273",
+      "to": "Reaction:Rectal abscess",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:340",
+      "from": "Case:186277273",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:341",
+      "from": "Case:186277273",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:342",
+      "from": "Case:186277273",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:343",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:186277273",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:344",
+      "from": "Case:186575522",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:345",
+      "from": "Case:186575522",
+      "to": "Drug:VANCOMYCIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:346",
+      "from": "Case:186575522",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:348",
+      "from": "Case:186575522",
+      "to": "Reaction:Bacteraemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:349",
+      "from": "Case:186575522",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:350",
+      "from": "Case:186575522",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:351",
+      "from": "Case:186575522",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:352",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:186575522",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:354",
+      "from": "Case:187097745",
+      "to": "Drug:Vancomycin",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:355",
+      "from": "Case:187097745",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:356",
+      "from": "Case:187097745",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:360",
+      "from": "Case:187097745",
+      "to": "Reaction:Staphylococcal infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:364",
+      "from": "Case:187097745",
+      "to": "Reaction:Vascular device infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:365",
+      "from": "Case:187097745",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:366",
+      "from": "Case:187097745",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:367",
+      "from": "Case:187097745",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:368",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:187097745",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:369",
+      "from": "Case:187276512",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:370",
+      "from": "Case:187276512",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:371",
+      "from": "Case:187276512",
+      "to": "Reaction:Weight decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:373",
+      "from": "Case:187276512",
+      "to": "Reaction:Dehydration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:374",
+      "from": "Case:187276512",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:375",
+      "from": "Case:187276512",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:376",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:187276512",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:377",
+      "from": "Case:187491614",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:378",
+      "from": "Case:187491614",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:381",
+      "from": "Case:187491614",
+      "to": "Reaction:Vascular device infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:382",
+      "from": "Case:187491614",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:383",
+      "from": "Case:187491614",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "MC:385",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:187491614",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:386",
+      "from": "Case:189361034",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:387",
+      "from": "Case:189361034",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:388",
+      "from": "Case:189361034",
+      "to": "Reaction:Renal disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:389",
+      "from": "Case:189361034",
+      "to": "Reaction:Abdominal distension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:390",
+      "from": "Case:189361034",
+      "to": "Reaction:Hospitalisation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:391",
+      "from": "Case:189361034",
+      "to": "Reaction:Weight increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:392",
+      "from": "Case:189361034",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:394",
+      "from": "Case:189361034",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:395",
+      "from": "Case:189361034",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:396",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:189361034",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:397",
+      "from": "Case:189909655",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:398",
+      "from": "Case:189909655",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:399",
+      "from": "Case:189909655",
+      "to": "Reaction:Syringe issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:400",
+      "from": "Case:189909655",
+      "to": "Reaction:Abdominal distension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:402",
+      "from": "Case:189909655",
+      "to": "Reaction:Unevaluable event",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:403",
+      "from": "Case:189909655",
+      "to": "Reaction:Hospitalisation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:404",
+      "from": "Case:189909655",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:405",
+      "from": "Case:189909655",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:406",
+      "from": "Case:189909655",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:407",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:189909655",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:408",
+      "from": "Case:190394292",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:409",
+      "from": "Case:190394292",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CO:413",
+      "from": "Case:190394292",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:414",
+      "from": "Case:190394292",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:415",
+      "from": "Case:190394292",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:416",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:190394292",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:417",
+      "from": "Case:190505992",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:420",
+      "from": "Case:190505992",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:421",
+      "from": "Case:190505992",
+      "to": "Drug:VITAMIN D3",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:422",
+      "from": "Case:190505992",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:423",
+      "from": "Case:190505992",
+      "to": "Reaction:Bacteraemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:424",
+      "from": "Case:190505992",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:425",
+      "from": "Case:190505992",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:426",
+      "from": "Case:190505992",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:427",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:190505992",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:428",
+      "from": "Case:190517862",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:429",
+      "from": "Case:190517862",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:430",
+      "from": "Case:190517862",
+      "to": "Reaction:Bacteraemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:435",
+      "from": "Case:190517862",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:436",
+      "from": "Case:190517862",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:437",
+      "from": "Case:190517862",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:438",
+      "from": "Case:190517862",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:439",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:190517862",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:444",
+      "from": "Case:190584452",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:448",
+      "from": "Case:190584452",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CO:458",
+      "from": "Case:190584452",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:459",
+      "from": "Case:190584452",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:460",
+      "from": "Case:190584452",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:461",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:190584452",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:462",
+      "from": "Case:190692452",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:463",
+      "from": "Case:190692452",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CO:465",
+      "from": "Case:190692452",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:466",
+      "from": "Case:190692452",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:467",
+      "from": "Case:190692452",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:468",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:190692452",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:469",
+      "from": "Case:190698643",
+      "to": "Drug:DICYCLOMINE HCL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:470",
+      "from": "Case:190698643",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:471",
+      "from": "Case:190698643",
+      "to": "Drug:CELEXA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:472",
+      "from": "Case:190698643",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:473",
+      "from": "Case:190698643",
+      "to": "Drug:TRAZODONE HYDROCHLORIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:474",
+      "from": "Case:190698643",
+      "to": "Reaction:Constipation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:475",
+      "from": "Case:190698643",
+      "to": "Reaction:Hospitalisation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:480",
+      "from": "Case:190698643",
+      "to": "Reaction:Weight increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:481",
+      "from": "Case:190698643",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:483",
+      "from": "Case:190698643",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:484",
+      "from": "Case:190698643",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:485",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:190698643",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:486",
+      "from": "Case:190790314",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:487",
+      "from": "Case:190790314",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:488",
+      "from": "Case:190790314",
+      "to": "Reaction:Staphylococcal infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:489",
+      "from": "Case:190790314",
+      "to": "Reaction:Needle issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:491",
+      "from": "Case:190790314",
+      "to": "Reaction:Vascular device infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:492",
+      "from": "Case:190790314",
+      "to": "Reaction:Product quality issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:493",
+      "from": "Case:190790314",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:495",
+      "from": "Case:190790314",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:496",
+      "from": "Case:190790314",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:497",
+      "from": "Case:190790314",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:498",
+      "from": "Case:190790314",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:499",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:190790314",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:500",
+      "from": "Case:191208952",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:501",
+      "from": "Case:191208952",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:502",
+      "from": "Case:191208952",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:503",
+      "from": "Case:191208952",
+      "to": "Reaction:Constipation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:505",
+      "from": "Case:191208952",
+      "to": "Reaction:Abdominal pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:506",
+      "from": "Case:191208952",
+      "to": "Reaction:Injection site erythema",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:507",
+      "from": "Case:191208952",
+      "to": "Reaction:Abdominal distension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:509",
+      "from": "Case:191208952",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:510",
+      "from": "Case:191208952",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:511",
+      "from": "Case:191208952",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:512",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:191208952",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:513",
+      "from": "Case:192588044",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:514",
+      "from": "Case:192588044",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:516",
+      "from": "Case:192588044",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:517",
+      "from": "Case:192588044",
+      "to": "Reaction:Infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:519",
+      "from": "Case:192588044",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:520",
+      "from": "Case:192588044",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:521",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:192588044",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:522",
+      "from": "Case:194545262",
+      "to": "Drug:LORAZEPAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:523",
+      "from": "Case:194545262",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:526",
+      "from": "Case:194545262",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CO:532",
+      "from": "Case:194545262",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:533",
+      "from": "Case:194545262",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:534",
+      "from": "Case:194545262",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:535",
+      "from": "Case:194545262",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:536",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:194545262",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:537",
+      "from": "Case:194592672",
+      "to": "Drug:QUESTRAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:539",
+      "from": "Case:194592672",
+      "to": "Drug:SYNTHROID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:542",
+      "from": "Case:194592672",
+      "to": "Drug:Teduglutide",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:544",
+      "from": "Case:194592672",
+      "to": "Drug:LEVOTHYROXINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:545",
+      "from": "Case:194592672",
+      "to": "Drug:VITAMIN D3",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:546",
+      "from": "Case:194592672",
+      "to": "Drug:Teduglutide",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:548",
+      "from": "Case:194592672",
+      "to": "Drug:PANTOPRAZOLE SODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CO:550",
+      "from": "Case:194592672",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:551",
+      "from": "Case:194592672",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:552",
+      "from": "Manufacturer:TAKEDA",
+      "to": "Case:194592672",
+      "type": "REGISTERED"
+    }
+  ],
+  "meta": {
+    "caseCount": 40,
+    "nodeCount": 220,
+    "relCount": 487,
+    "capped": true,
+    "focusDrug": "Teduglutide"
+  }
+}

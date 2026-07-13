@@ -1,0 +1,790 @@
+[
+  {
+    "id": "eda-layers",
+    "title": "Entity layers",
+    "description": "Major node layers in the loaded automotive network.",
+    "cypher": "MATCH (n) … RETURN layer, count(n)",
+    "columns": [
+      "layer",
+      "cnt"
+    ],
+    "rows": [
+      {
+        "layer": "Facility",
+        "cnt": 12
+      },
+      {
+        "layer": "Product",
+        "cnt": 28049
+      },
+      {
+        "layer": "ProductGroup",
+        "cnt": 7
+      },
+      {
+        "layer": "Period",
+        "cnt": 14
+      },
+      {
+        "layer": "DemandFact",
+        "cnt": 28000
+      },
+      {
+        "layer": "Customer",
+        "cnt": 1
+      }
+    ],
+    "count": 6
+  },
+  {
+    "id": "eda-rel-types",
+    "title": "Relationship families",
+    "description": "BOM-heavy graph with a compact facility lane network.",
+    "cypher": "MATCH ()-[r]->() RETURN type(r), count(r) ORDER BY count DESC",
+    "columns": [
+      "relationshipType",
+      "cnt"
+    ],
+    "rows": [
+      {
+        "relationshipType": "REQUIRES",
+        "cnt": 87059
+      },
+      {
+        "relationshipType": "SHIPS_TO",
+        "cnt": 11
+      },
+      {
+        "relationshipType": "BELONGS_TO",
+        "cnt": 28049
+      },
+      {
+        "relationshipType": "PRODUCES",
+        "cnt": 44
+      },
+      {
+        "relationshipType": "HAS_DEMAND",
+        "cnt": 28000
+      }
+    ],
+    "count": 5
+  },
+  {
+    "id": "eda-group-fanout",
+    "title": "BOM width by product group",
+    "description": "Average and max direct REQUIRES children per ProductGroup.",
+    "cypher": "MATCH (pg:ProductGroup)<-[:BELONGS_TO]-(p:Product) …",
+    "columns": [
+      "groupName",
+      "nProducts",
+      "avgRequiresChildren",
+      "maxRequiresChildren"
+    ],
+    "rows": [
+      {
+        "groupName": "car",
+        "nProducts": 28000,
+        "avgRequiresChildren": 3.11,
+        "maxRequiresChildren": 4
+      },
+      {
+        "groupName": "engine",
+        "nProducts": 29,
+        "avgRequiresChildren": 1.0,
+        "maxRequiresChildren": 1
+      },
+      {
+        "groupName": "gear",
+        "nProducts": 8,
+        "avgRequiresChildren": 1.0,
+        "maxRequiresChildren": 1
+      },
+      {
+        "groupName": "seat",
+        "nProducts": 4,
+        "avgRequiresChildren": 2.0,
+        "maxRequiresChildren": 2
+      },
+      {
+        "groupName": "seat_componment",
+        "nProducts": 4,
+        "avgRequiresChildren": 1.0,
+        "maxRequiresChildren": 1
+      },
+      {
+        "groupName": "battery_componment",
+        "nProducts": 3,
+        "avgRequiresChildren": 1.0,
+        "maxRequiresChildren": 1
+      },
+      {
+        "groupName": "battery",
+        "nProducts": 1,
+        "avgRequiresChildren": 4.0,
+        "maxRequiresChildren": 4
+      }
+    ],
+    "count": 7
+  },
+  {
+    "id": "eda-top-products",
+    "title": "Top products by tier-1 fan-out",
+    "description": "Car SKUs with the widest direct BOM (4 components each in this extract).",
+    "cypher": "MATCH (p:Product) … ORDER BY nDirectComponents DESC LIMIT 5",
+    "columns": [
+      "productId",
+      "groupName",
+      "nDirectComponents"
+    ],
+    "rows": [
+      {
+        "productId": "64002",
+        "groupName": "car",
+        "nDirectComponents": 4
+      },
+      {
+        "productId": "64099",
+        "groupName": "car",
+        "nDirectComponents": 4
+      },
+      {
+        "productId": "64184",
+        "groupName": "car",
+        "nDirectComponents": 4
+      },
+      {
+        "productId": "64185",
+        "groupName": "car",
+        "nDirectComponents": 4
+      },
+      {
+        "productId": "64354",
+        "groupName": "car",
+        "nDirectComponents": 4
+      }
+    ],
+    "count": 5
+  },
+  {
+    "id": "eda-car-components",
+    "title": "Finished-car BOM by child group",
+    "description": "Tier-1 component groups required across all car products.",
+    "cypher": "MATCH (car:Product)-[:BELONGS_TO]->(:ProductGroup {groupName:'car'}) …",
+    "columns": [
+      "childGroup",
+      "nRequiresEdges"
+    ],
+    "rows": [
+      {
+        "childGroup": "engine",
+        "nRequiresEdges": 28000
+      },
+      {
+        "childGroup": "gear",
+        "nRequiresEdges": 28000
+      },
+      {
+        "childGroup": "seat",
+        "nRequiresEdges": 28000
+      },
+      {
+        "childGroup": "battery",
+        "nRequiresEdges": 3003
+      }
+    ],
+    "count": 4
+  },
+  {
+    "id": "eda-lanes",
+    "title": "Supplier lanes (SHIPS_TO)",
+    "description": "Directed logistics arcs with lead time and product group.",
+    "cypher": "MATCH (a:Facility)-[s:SHIPS_TO]->(b:Facility) … ORDER BY leadTime DESC",
+    "columns": [
+      "fromNode",
+      "toNode",
+      "arcKey",
+      "productGroup",
+      "leadTime"
+    ],
+    "rows": [
+      {
+        "fromNode": "seat-supplier_trans",
+        "toNode": "seat-supplier_prod",
+        "arcKey": "seat-supplier_trans|seat-supplier_prod",
+        "productGroup": "seat_componment",
+        "leadTime": 23
+      },
+      {
+        "fromNode": "battery-supplier_trans",
+        "toNode": "battery-supplier_prod",
+        "arcKey": "battery-supplier_trans|battery-supplier_prod",
+        "productGroup": "battery_componment",
+        "leadTime": 20
+      },
+      {
+        "fromNode": "gear-supplier_inv",
+        "toNode": "zp7",
+        "arcKey": "gear-supplier_inv|zp7",
+        "productGroup": "gear",
+        "leadTime": 2
+      },
+      {
+        "fromNode": "gear-supplier_prod",
+        "toNode": "gear-supplier_inv",
+        "arcKey": "gear-supplier_prod|gear-supplier_inv",
+        "productGroup": "gear",
+        "leadTime": 2
+      },
+      {
+        "fromNode": "battery-supplier_inv",
+        "toNode": "zp7",
+        "arcKey": "battery-supplier_inv|zp7",
+        "productGroup": "battery",
+        "leadTime": 1
+      },
+      {
+        "fromNode": "battery-supplier_prod",
+        "toNode": "battery-supplier_inv",
+        "arcKey": "battery-supplier_prod|battery-supplier_inv",
+        "productGroup": "battery",
+        "leadTime": 1
+      },
+      {
+        "fromNode": "engine-supplier_inv",
+        "toNode": "zp7",
+        "arcKey": "engine-supplier_inv|zp7",
+        "productGroup": "engine",
+        "leadTime": 1
+      },
+      {
+        "fromNode": "engine-supplier_prod",
+        "toNode": "engine-supplier_inv",
+        "arcKey": "engine-supplier_prod|engine-supplier_inv",
+        "productGroup": "engine",
+        "leadTime": 1
+      },
+      {
+        "fromNode": "seat-supplier_inv",
+        "toNode": "zp7",
+        "arcKey": "seat-supplier_inv|zp7",
+        "productGroup": "seat",
+        "leadTime": 0
+      },
+      {
+        "fromNode": "seat-supplier_prod",
+        "toNode": "seat-supplier_inv",
+        "arcKey": "seat-supplier_prod|seat-supplier_inv",
+        "productGroup": "seat",
+        "leadTime": 0
+      },
+      {
+        "fromNode": "zp7",
+        "toNode": "zp8",
+        "arcKey": "zp7|zp8",
+        "productGroup": "car",
+        "leadTime": 0
+      }
+    ],
+    "count": 11
+  },
+  {
+    "id": "eda-tight-capacity",
+    "title": "Tightest lane capacity (period 61)",
+    "description": "Lanes with the lowest positive capacity at the start of the demand horizon.",
+    "cypher": "MATCH … WHERE c.periodId = 61 … ORDER BY capacity ASC",
+    "columns": [
+      "arcKey",
+      "fromNode",
+      "toNode",
+      "leadTime",
+      "shipsProductGroup",
+      "capacity"
+    ],
+    "rows": [
+      {
+        "arcKey": "battery-supplier_inv|zp7",
+        "fromNode": "battery-supplier_inv",
+        "toNode": "zp7",
+        "leadTime": 1,
+        "shipsProductGroup": "battery",
+        "capacity": 294
+      },
+      {
+        "arcKey": "battery-supplier_prod|battery-supplier_inv",
+        "fromNode": "battery-supplier_prod",
+        "toNode": "battery-supplier_inv",
+        "leadTime": 1,
+        "shipsProductGroup": "battery",
+        "capacity": 294
+      },
+      {
+        "arcKey": "zp7|zp8",
+        "fromNode": "zp7",
+        "toNode": "zp8",
+        "leadTime": 0,
+        "shipsProductGroup": "car",
+        "capacity": 2000
+      },
+      {
+        "arcKey": "gear-supplier_inv|zp7",
+        "fromNode": "gear-supplier_inv",
+        "toNode": "zp7",
+        "leadTime": 2,
+        "shipsProductGroup": "gear",
+        "capacity": 2100
+      },
+      {
+        "arcKey": "seat-supplier_inv|zp7",
+        "fromNode": "seat-supplier_inv",
+        "toNode": "zp7",
+        "leadTime": 0,
+        "shipsProductGroup": "seat",
+        "capacity": 2100
+      },
+      {
+        "arcKey": "engine-supplier_inv|zp7",
+        "fromNode": "engine-supplier_inv",
+        "toNode": "zp7",
+        "leadTime": 1,
+        "shipsProductGroup": "engine",
+        "capacity": 2100
+      },
+      {
+        "arcKey": "gear-supplier_prod|gear-supplier_inv",
+        "fromNode": "gear-supplier_prod",
+        "toNode": "gear-supplier_inv",
+        "leadTime": 2,
+        "shipsProductGroup": "gear",
+        "capacity": 2100
+      },
+      {
+        "arcKey": "engine-supplier_prod|engine-supplier_inv",
+        "fromNode": "engine-supplier_prod",
+        "toNode": "engine-supplier_inv",
+        "leadTime": 1,
+        "shipsProductGroup": "engine",
+        "capacity": 2100
+      },
+      {
+        "arcKey": "seat-supplier_prod|seat-supplier_inv",
+        "fromNode": "seat-supplier_prod",
+        "toNode": "seat-supplier_inv",
+        "leadTime": 0,
+        "shipsProductGroup": "seat",
+        "capacity": 2100
+      }
+    ],
+    "count": 9
+  },
+  {
+    "id": "eda-component-spread",
+    "title": "Components spanning the car portfolio",
+    "description": "Parts used by the largest share of finished car SKUs (blast-radius signal).",
+    "cypher": "MATCH (car)-[:REQUIRES*1..]->(comp) … ORDER BY nCarProductsUsingComponent DESC LIMIT 10",
+    "columns": [
+      "componentId",
+      "componentGroup",
+      "nCarProductsUsingComponent",
+      "pctOfCarPortfolio",
+      "nDependencyPaths"
+    ],
+    "rows": [
+      {
+        "componentId": "Q4H",
+        "componentGroup": "seat",
+        "nCarProductsUsingComponent": 12038,
+        "pctOfCarPortfolio": 42.99,
+        "nDependencyPaths": 12038
+      },
+      {
+        "componentId": "componment_seat2",
+        "componentGroup": "seat_componment",
+        "nCarProductsUsingComponent": 12038,
+        "pctOfCarPortfolio": 42.99,
+        "nDependencyPaths": 12038
+      },
+      {
+        "componentId": "componment_seat1",
+        "componentGroup": "seat_componment",
+        "nCarProductsUsingComponent": 9726,
+        "pctOfCarPortfolio": 34.74,
+        "nDependencyPaths": 9726
+      },
+      {
+        "componentId": "Q2J",
+        "componentGroup": "seat",
+        "nCarProductsUsingComponent": 9726,
+        "pctOfCarPortfolio": 34.74,
+        "nDependencyPaths": 9726
+      },
+      {
+        "componentId": "G0K",
+        "componentGroup": "gear",
+        "nCarProductsUsingComponent": 8592,
+        "pctOfCarPortfolio": 30.69,
+        "nDependencyPaths": 8592
+      },
+      {
+        "componentId": "G1C",
+        "componentGroup": "gear",
+        "nCarProductsUsingComponent": 6664,
+        "pctOfCarPortfolio": 23.8,
+        "nDependencyPaths": 6664
+      },
+      {
+        "componentId": "G1D",
+        "componentGroup": "gear",
+        "nCarProductsUsingComponent": 4210,
+        "pctOfCarPortfolio": 15.04,
+        "nDependencyPaths": 4210
+      },
+      {
+        "componentId": "Q4P",
+        "componentGroup": "seat",
+        "nCarProductsUsingComponent": 3823,
+        "pctOfCarPortfolio": 13.65,
+        "nDependencyPaths": 3823
+      },
+      {
+        "componentId": "componment_seat3",
+        "componentGroup": "seat_componment",
+        "nCarProductsUsingComponent": 3823,
+        "pctOfCarPortfolio": 13.65,
+        "nDependencyPaths": 3823
+      },
+      {
+        "componentId": "DN4",
+        "componentGroup": "engine",
+        "nCarProductsUsingComponent": 3710,
+        "pctOfCarPortfolio": 13.25,
+        "nDependencyPaths": 3710
+      }
+    ],
+    "count": 10
+  },
+  {
+    "id": "analytics-concentration",
+    "title": "Component concentration risk map",
+    "description": "Components ranked by how many upstream products depend on them through the BOM.",
+    "cypher": "MATCH (parent)-[:REQUIRES*1..]->(comp) … ORDER BY upstreamProductsDependingOnIt DESC LIMIT 10",
+    "columns": [
+      "componentId",
+      "componentGroup",
+      "upstreamProductsDependingOnIt",
+      "totalDependencyPaths"
+    ],
+    "rows": [
+      {
+        "componentId": "componment_seat2",
+        "componentGroup": "seat_componment",
+        "upstreamProductsDependingOnIt": 12039,
+        "totalDependencyPaths": 38552
+      },
+      {
+        "componentId": "Q4H",
+        "componentGroup": "seat",
+        "upstreamProductsDependingOnIt": 12038,
+        "totalDependencyPaths": 38550
+      },
+      {
+        "componentId": "componment_seat1",
+        "componentGroup": "seat_componment",
+        "upstreamProductsDependingOnIt": 9727,
+        "totalDependencyPaths": 29747
+      },
+      {
+        "componentId": "Q2J",
+        "componentGroup": "seat",
+        "upstreamProductsDependingOnIt": 9726,
+        "totalDependencyPaths": 29745
+      },
+      {
+        "componentId": "G0K",
+        "componentGroup": "gear",
+        "upstreamProductsDependingOnIt": 8592,
+        "totalDependencyPaths": 25776
+      },
+      {
+        "componentId": "G1C",
+        "componentGroup": "gear",
+        "upstreamProductsDependingOnIt": 6664,
+        "totalDependencyPaths": 19992
+      },
+      {
+        "componentId": "G1D",
+        "componentGroup": "gear",
+        "upstreamProductsDependingOnIt": 4210,
+        "totalDependencyPaths": 12630
+      },
+      {
+        "componentId": "componment_seat3",
+        "componentGroup": "seat_componment",
+        "upstreamProductsDependingOnIt": 3824,
+        "totalDependencyPaths": 11471
+      },
+      {
+        "componentId": "Q4P",
+        "componentGroup": "seat",
+        "upstreamProductsDependingOnIt": 3823,
+        "totalDependencyPaths": 11469
+      },
+      {
+        "componentId": "DN4",
+        "componentGroup": "engine",
+        "upstreamProductsDependingOnIt": 3710,
+        "totalDependencyPaths": 11130
+      }
+    ],
+    "count": 10
+  },
+  {
+    "id": "analytics-fragility",
+    "title": "Arc structural fragility",
+    "description": "Lanes scored by lead time, tight capacity, and destination opening inventory.",
+    "cypher": "MATCH (a)-[s:SHIPS_TO]->(b) … structuralFragilityScore … LIMIT 25",
+    "columns": [
+      "arcKey",
+      "fromNode",
+      "toNode",
+      "shipsProductGroup",
+      "leadTime",
+      "minCapacity",
+      "avgCapacity",
+      "nCapacityPeriods",
+      "destOpeningInventory_t60",
+      "structuralFragilityScore"
+    ],
+    "rows": [
+      {
+        "arcKey": "seat-supplier_trans|seat-supplier_prod",
+        "fromNode": "seat-supplier_trans",
+        "toNode": "seat-supplier_prod",
+        "shipsProductGroup": "seat_componment",
+        "leadTime": 23,
+        "minCapacity": 0,
+        "avgCapacity": 2100.0,
+        "nCapacityPeriods": 14,
+        "destOpeningInventory_t60": 6000,
+        "structuralFragilityScore": 10.7286
+      },
+      {
+        "arcKey": "battery-supplier_trans|battery-supplier_prod",
+        "fromNode": "battery-supplier_trans",
+        "toNode": "battery-supplier_prod",
+        "shipsProductGroup": "battery_componment",
+        "leadTime": 20,
+        "minCapacity": 0,
+        "avgCapacity": 294.0,
+        "nCapacityPeriods": 14,
+        "destOpeningInventory_t60": 1860,
+        "structuralFragilityScore": 9.4199
+      },
+      {
+        "arcKey": "gear-supplier_prod|gear-supplier_inv",
+        "fromNode": "gear-supplier_prod",
+        "toNode": "gear-supplier_inv",
+        "shipsProductGroup": "gear",
+        "leadTime": 2,
+        "minCapacity": 2100,
+        "avgCapacity": 2100.0,
+        "nCapacityPeriods": 14,
+        "destOpeningInventory_t60": 4000,
+        "structuralFragilityScore": 1.0529
+      },
+      {
+        "arcKey": "gear-supplier_inv|zp7",
+        "fromNode": "gear-supplier_inv",
+        "toNode": "zp7",
+        "shipsProductGroup": "gear",
+        "leadTime": 2,
+        "minCapacity": 2100,
+        "avgCapacity": 2100.0,
+        "nCapacityPeriods": 14,
+        "destOpeningInventory_t60": 6052,
+        "structuralFragilityScore": 1.0413
+      },
+      {
+        "arcKey": "battery-supplier_prod|battery-supplier_inv",
+        "fromNode": "battery-supplier_prod",
+        "toNode": "battery-supplier_inv",
+        "shipsProductGroup": "battery",
+        "leadTime": 1,
+        "minCapacity": 294,
+        "avgCapacity": 294.0,
+        "nCapacityPeriods": 14,
+        "destOpeningInventory_t60": 0,
+        "structuralFragilityScore": 0.9205
+      },
+      {
+        "arcKey": "battery-supplier_inv|zp7",
+        "fromNode": "battery-supplier_inv",
+        "toNode": "zp7",
+        "shipsProductGroup": "battery",
+        "leadTime": 1,
+        "minCapacity": 294,
+        "avgCapacity": 294.0,
+        "nCapacityPeriods": 14,
+        "destOpeningInventory_t60": 6052,
+        "structuralFragilityScore": 0.7488
+      },
+      {
+        "arcKey": "engine-supplier_prod|engine-supplier_inv",
+        "fromNode": "engine-supplier_prod",
+        "toNode": "engine-supplier_inv",
+        "shipsProductGroup": "engine",
+        "leadTime": 1,
+        "minCapacity": 2100,
+        "avgCapacity": 2100.0,
+        "nCapacityPeriods": 14,
+        "destOpeningInventory_t60": 6000,
+        "structuralFragilityScore": 0.5915
+      },
+      {
+        "arcKey": "engine-supplier_inv|zp7",
+        "fromNode": "engine-supplier_inv",
+        "toNode": "zp7",
+        "shipsProductGroup": "engine",
+        "leadTime": 1,
+        "minCapacity": 2100,
+        "avgCapacity": 2100.0,
+        "nCapacityPeriods": 14,
+        "destOpeningInventory_t60": 6052,
+        "structuralFragilityScore": 0.5913
+      },
+      {
+        "arcKey": "zp7|zp8",
+        "fromNode": "zp7",
+        "toNode": "zp8",
+        "shipsProductGroup": "car",
+        "leadTime": 0,
+        "minCapacity": 2000,
+        "avgCapacity": 2000.0,
+        "nCapacityPeriods": 14,
+        "destOpeningInventory_t60": 0,
+        "structuralFragilityScore": 0.3167
+      },
+      {
+        "arcKey": "seat-supplier_prod|seat-supplier_inv",
+        "fromNode": "seat-supplier_prod",
+        "toNode": "seat-supplier_inv",
+        "shipsProductGroup": "seat",
+        "leadTime": 0,
+        "minCapacity": 2100,
+        "avgCapacity": 2100.0,
+        "nCapacityPeriods": 14,
+        "destOpeningInventory_t60": 0,
+        "structuralFragilityScore": 0.3129
+      },
+      {
+        "arcKey": "seat-supplier_inv|zp7",
+        "fromNode": "seat-supplier_inv",
+        "toNode": "zp7",
+        "shipsProductGroup": "seat",
+        "leadTime": 0,
+        "minCapacity": 2100,
+        "avgCapacity": 2100.0,
+        "nCapacityPeriods": 14,
+        "destOpeningInventory_t60": 6052,
+        "structuralFragilityScore": 0.1413
+      }
+    ],
+    "count": 11
+  },
+  {
+    "id": "analytics-risk-priority",
+    "title": "Supply risk-adjusted component priority",
+    "description": "Integrates BOM reach, single-source exposure, and lane fragility.",
+    "cypher": "MATCH (parent)-[:REQUIRES*1..]->(comp) … riskAdjustedPriorityScore … LIMIT 10",
+    "columns": [
+      "componentId",
+      "componentGroup",
+      "upstreamProductsDependingOnIt",
+      "supplierCount",
+      "maxSupplierArcFragility",
+      "riskAdjustedPriorityScore"
+    ],
+    "rows": [
+      {
+        "componentId": "componment_seat2",
+        "componentGroup": "seat_componment",
+        "upstreamProductsDependingOnIt": 12039,
+        "supplierCount": 1,
+        "maxSupplierArcFragility": 14.2,
+        "riskAdjustedPriorityScore": 4.6743
+      },
+      {
+        "componentId": "componment_seat1",
+        "componentGroup": "seat_componment",
+        "upstreamProductsDependingOnIt": 9727,
+        "supplierCount": 1,
+        "maxSupplierArcFragility": 14.2,
+        "riskAdjustedPriorityScore": 4.6234
+      },
+      {
+        "componentId": "componment_seat3",
+        "componentGroup": "seat_componment",
+        "upstreamProductsDependingOnIt": 3824,
+        "supplierCount": 1,
+        "maxSupplierArcFragility": 14.2,
+        "riskAdjustedPriorityScore": 4.4004
+      },
+      {
+        "componentId": "componment_seat4",
+        "componentGroup": "seat_componment",
+        "upstreamProductsDependingOnIt": 2414,
+        "supplierCount": 1,
+        "maxSupplierArcFragility": 14.2,
+        "riskAdjustedPriorityScore": 4.2906
+      },
+      {
+        "componentId": "componment_battery1",
+        "componentGroup": "battery_componment",
+        "upstreamProductsDependingOnIt": 3004,
+        "supplierCount": 1,
+        "maxSupplierArcFragility": 12.4,
+        "riskAdjustedPriorityScore": 4.0728
+      },
+      {
+        "componentId": "componment_battery2",
+        "componentGroup": "battery_componment",
+        "upstreamProductsDependingOnIt": 3004,
+        "supplierCount": 1,
+        "maxSupplierArcFragility": 12.4,
+        "riskAdjustedPriorityScore": 4.0728
+      },
+      {
+        "componentId": "componment_battery3",
+        "componentGroup": "battery_componment",
+        "upstreamProductsDependingOnIt": 3004,
+        "supplierCount": 1,
+        "maxSupplierArcFragility": 12.4,
+        "riskAdjustedPriorityScore": 4.0728
+      },
+      {
+        "componentId": "G0K",
+        "componentGroup": "gear",
+        "upstreamProductsDependingOnIt": 8592,
+        "supplierCount": 1,
+        "maxSupplierArcFragility": 1.329,
+        "riskAdjustedPriorityScore": 2.6631
+      },
+      {
+        "componentId": "Q4H",
+        "componentGroup": "seat",
+        "upstreamProductsDependingOnIt": 12038,
+        "supplierCount": 0,
+        "maxSupplierArcFragility": 0.0,
+        "riskAdjustedPriorityScore": 2.6043
+      },
+      {
+        "componentId": "G1C",
+        "componentGroup": "gear",
+        "upstreamProductsDependingOnIt": 6664,
+        "supplierCount": 1,
+        "maxSupplierArcFragility": 1.329,
+        "riskAdjustedPriorityScore": 2.6024
+      }
+    ],
+    "count": 10
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "U001",
+    "name": "Alice Chen",
+    "age": 28,
+    "occupation": "Software Engineer",
+    "community": 0,
+    "ratingsGiven": 6
+  },
+  {
+    "id": "U002",
+    "name": "Bob Martinez",
+    "age": 34,
+    "occupation": "Teacher",
+    "community": 1,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U003",
+    "name": "Carol White",
+    "age": 22,
+    "occupation": "Student",
+    "community": 2,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U004",
+    "name": "David Kim",
+    "age": 45,
+    "occupation": "Doctor",
+    "community": 1,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U005",
+    "name": "Eva Rossi",
+    "age": 31,
+    "occupation": "Designer",
+    "community": 2,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U006",
+    "name": "Frank Osei",
+    "age": 27,
+    "occupation": "Journalist",
+    "community": 3,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U007",
+    "name": "Grace Liu",
+    "age": 38,
+    "occupation": "Manager",
+    "community": 0,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U008",
+    "name": "Henry Park",
+    "age": 52,
+    "occupation": "Accountant",
+    "community": 1,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U009",
+    "name": "Iris Novak",
+    "age": 24,
+    "occupation": "Student",
+    "community": 2,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U010",
+    "name": "James Brown",
+    "age": 41,
+    "occupation": "Lawyer",
+    "community": 3,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U011",
+    "name": "Karen Singh",
+    "age": 29,
+    "occupation": "Engineer",
+    "community": 0,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U012",
+    "name": "Leo Tanaka",
+    "age": 36,
+    "occupation": "Chef",
+    "community": 2,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U013",
+    "name": "Maya Patel",
+    "age": 33,
+    "occupation": "Scientist",
+    "community": 0,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U014",
+    "name": "Noah Williams",
+    "age": 47,
+    "occupation": "Architect",
+    "community": 1,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U015",
+    "name": "Olivia Jones",
+    "age": 26,
+    "occupation": "Writer",
+    "community": 2,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U016",
+    "name": "Paul Garcia",
+    "age": 43,
+    "occupation": "Consultant",
+    "community": 0,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U017",
+    "name": "Quinn Zhang",
+    "age": 30,
+    "occupation": "Analyst",
+    "community": 0,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U018",
+    "name": "Ryan Murphy",
+    "age": 55,
+    "occupation": "Retired",
+    "community": 1,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U019",
+    "name": "Sara Hassan",
+    "age": 25,
+    "occupation": "Nurse",
+    "community": 3,
+    "ratingsGiven": 5
+  },
+  {
+    "id": "U020",
+    "name": "Tom Anderson",
+    "age": 39,
+    "occupation": "Developer",
+    "community": 0,
+    "ratingsGiven": 5
+  }
+]

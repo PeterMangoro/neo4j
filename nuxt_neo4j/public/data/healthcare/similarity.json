@@ -1,0 +1,129 @@
+{
+  "metric": "JACCARD",
+  "cutoff": 0.2,
+  "pairs": [
+    {
+      "case1": "111530912",
+      "case2": "158574932",
+      "similarity": 1.0,
+      "numSharedReactions": 1,
+      "sampleReactions": [
+        "Pneumonia"
+      ],
+      "sharedDrugs": [
+        "REVLIMID"
+      ]
+    },
+    {
+      "case1": "111530912",
+      "case2": "124902822",
+      "similarity": 1.0,
+      "numSharedReactions": 1,
+      "sampleReactions": [
+        "Pneumonia"
+      ],
+      "sharedDrugs": [
+        "REVLIMID"
+      ]
+    },
+    {
+      "case1": "111140142",
+      "case2": "147242912",
+      "similarity": 1.0,
+      "numSharedReactions": 1,
+      "sampleReactions": [
+        "Neutropenia"
+      ],
+      "sharedDrugs": [
+        "REVLIMID"
+      ]
+    },
+    {
+      "case1": "111140142",
+      "case2": "194926201",
+      "similarity": 1.0,
+      "numSharedReactions": 1,
+      "sampleReactions": [
+        "Neutropenia"
+      ],
+      "sharedDrugs": [
+        "REVLIMID"
+      ]
+    },
+    {
+      "case1": "111530912",
+      "case2": "164981372",
+      "similarity": 1.0,
+      "numSharedReactions": 1,
+      "sampleReactions": [
+        "Pneumonia"
+      ],
+      "sharedDrugs": [
+        "REVLIMID"
+      ]
+    },
+    {
+      "case1": "111530912",
+      "case2": "124977452",
+      "similarity": 1.0,
+      "numSharedReactions": 1,
+      "sampleReactions": [
+        "Pneumonia"
+      ],
+      "sharedDrugs": [
+        "REVLIMID"
+      ]
+    },
+    {
+      "case1": "109837324",
+      "case2": "125979602",
+      "similarity": 1.0,
+      "numSharedReactions": 1,
+      "sampleReactions": [
+        "Atrial fibrillation"
+      ],
+      "sharedDrugs": [
+        "REVLIMID",
+        "DEXAMETHASONE"
+      ]
+    },
+    {
+      "case1": "111140142",
+      "case2": "147065782",
+      "similarity": 1.0,
+      "numSharedReactions": 1,
+      "sampleReactions": [
+        "Neutropenia"
+      ],
+      "sharedDrugs": [
+        "REVLIMID"
+      ]
+    },
+    {
+      "case1": "111140142",
+      "case2": "194955072",
+      "similarity": 1.0,
+      "numSharedReactions": 1,
+      "sampleReactions": [
+        "Neutropenia"
+      ],
+      "sharedDrugs": [
+        "REVLIMID"
+      ]
+    },
+    {
+      "case1": "112550422",
+      "case2": "126241282",
+      "similarity": 1.0,
+      "numSharedReactions": 1,
+      "sampleReactions": [
+        "Septic shock"
+      ],
+      "sharedDrugs": [
+        "Carfilzomib",
+        "DEXAMETHASONE",
+        "REVLIMID"
+      ]
+    }
+  ]
+}

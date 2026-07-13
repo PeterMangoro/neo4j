@@ -1,0 +1,2961 @@
+{
+  "nodes": [
+    {
+      "id": "Case:148386046",
+      "caption": "Case 148386046 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:GENOTROPIN",
+      "caption": "GENOTROPIN",
+      "labels": [
+        "Drug"
+      ],
+      "score": 1.0
+    },
+    {
+      "id": "Drug:SERTRALINE",
+      "caption": "SERTRALINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TOPIRAMATE",
+      "caption": "TOPIRAMATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ZOFRAN",
+      "caption": "ZOFRAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Circumstance or information capable of leading to medication error",
+      "caption": "Circumstance or information capable of leading to medication error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Condition aggravated",
+      "caption": "Condition aggravated",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Device breakage",
+      "caption": "Device breakage",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product leakage",
+      "caption": "Product leakage",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Nausea",
+      "caption": "Nausea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Headache",
+      "caption": "Headache",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product dose omission issue",
+      "caption": "Product dose omission issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Vomiting",
+      "caption": "Vomiting",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Other Serious (Important Medical Event)",
+      "caption": "Other Serious (Important Medical Event)",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adolescent",
+      "caption": "Adolescent",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Manufacturer:PFIZER",
+      "caption": "PFIZER",
+      "labels": [
+        "Manufacturer"
+      ]
+    },
+    {
+      "id": "Case:153668615",
+      "caption": "Case 153668615 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:METHYLPHENIDATE HYDROCHLORIDE",
+      "caption": "METHYLPHENIDATE HYDROCHLORIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:QUILLICHEW ER",
+      "caption": "QUILLICHEW ER",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Incorrect dose administered by device",
+      "caption": "Incorrect dose administered by device",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Drug dose omission by device",
+      "caption": "Drug dose omission by device",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Bone density increased",
+      "caption": "Bone density increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Insulin-like growth factor increased",
+      "caption": "Insulin-like growth factor increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Device mechanical issue",
+      "caption": "Device mechanical issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:156868445",
+      "caption": "Case 156868445 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Device issue",
+      "caption": "Device issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Wrong technique in device usage process",
+      "caption": "Wrong technique in device usage process",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Expired device used",
+      "caption": "Expired device used",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:161794327",
+      "caption": "Case 161794327 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:SYEDA",
+      "caption": "SYEDA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Device leakage",
+      "caption": "Device leakage",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Bone density decreased",
+      "caption": "Bone density decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Device use issue",
+      "caption": "Device use issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adult",
+      "caption": "Adult",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:169556443",
+      "caption": "Case 169556443 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Device information output issue",
+      "caption": "Device information output issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pain in extremity",
+      "caption": "Pain in extremity",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Device power source issue",
+      "caption": "Device power source issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gait disturbance",
+      "caption": "Gait disturbance",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Nipple disorder",
+      "caption": "Nipple disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Child",
+      "caption": "Child",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:177997408",
+      "caption": "Case 177997408 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Product storage error",
+      "caption": "Product storage error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Asthenia",
+      "caption": "Asthenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product dose omission in error",
+      "caption": "Product dose omission in error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Poor quality product administered",
+      "caption": "Poor quality product administered",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Loss of personal independence in daily activities",
+      "caption": "Loss of personal independence in daily activities",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hip fracture",
+      "caption": "Hip fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fatigue",
+      "caption": "Fatigue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Elderly",
+      "caption": "Elderly",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:178545486",
+      "caption": "Case 178545486 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Product prescribing error",
+      "caption": "Product prescribing error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:178595883",
+      "caption": "Case 178595883 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:178848116",
+      "caption": "Case 178848116 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:179786923",
+      "caption": "Case 179786923 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Device use error",
+      "caption": "Device use error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:180379264",
+      "caption": "Case 180379264 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Device failure",
+      "caption": "Device failure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:181131775",
+      "caption": "Case 181131775 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Device physical property issue",
+      "caption": "Device physical property issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:181195495",
+      "caption": "Case 181195495 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Product dispensing error",
+      "caption": "Product dispensing error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dizziness",
+      "caption": "Dizziness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Oedema",
+      "caption": "Oedema",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Peripheral swelling",
+      "caption": "Peripheral swelling",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Weight increased",
+      "caption": "Weight increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fear of injection",
+      "caption": "Fear of injection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Psychological trauma",
+      "caption": "Psychological trauma",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Visual impairment",
+      "caption": "Visual impairment",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Incorrect dose administered",
+      "caption": "Incorrect dose administered",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:181643877",
+      "caption": "Case 181643877 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:181698494",
+      "caption": "Case 181698494 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:182032144",
+      "caption": "Case 182032144 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:182275668",
+      "caption": "Case 182275668 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Device difficult to use",
+      "caption": "Device difficult to use",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:182530148",
+      "caption": "Case 182530148 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Product quality issue",
+      "caption": "Product quality issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Poor quality device used",
+      "caption": "Poor quality device used",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:182781218",
+      "caption": "Case 182781218 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:182956423",
+      "caption": "Case 182956423 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:183198113",
+      "caption": "Case 183198113 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:DDAVP",
+      "caption": "DDAVP",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:183493104",
+      "caption": "Case 183493104 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:183770456",
+      "caption": "Case 183770456 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:184050129",
+      "caption": "Case 184050129 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:184158485",
+      "caption": "Case 184158485 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Emotional disorder",
+      "caption": "Emotional disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Crying",
+      "caption": "Crying",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:184454195",
+      "caption": "Case 184454195 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:184743873",
+      "caption": "Case 184743873 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Suicide attempt",
+      "caption": "Suicide attempt",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Injection site mass",
+      "caption": "Injection site mass",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Hospitalization - Initial or Prolonged",
+      "caption": "Hospitalization - Initial or Prolonged",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:185399298",
+      "caption": "Case 185399298 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:DEXTROAMPHETAMINE [DEXAMFETAMINE]",
+      "caption": "DEXTROAMPHETAMINE [DEXAMFETAMINE]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:GUANFACINE",
+      "caption": "GUANFACINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:185760443",
+      "caption": "Case 185760443 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Off label use",
+      "caption": "Off label use",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:186104183",
+      "caption": "Case 186104183 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:186172176",
+      "caption": "Case 186172176 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:188000663",
+      "caption": "Case 188000663 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:189927714",
+      "caption": "Case 189927714 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Product physical issue",
+      "caption": "Product physical issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:190967362",
+      "caption": "Case 190967362 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:191941253",
+      "caption": "Case 191941253 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Injection site pain",
+      "caption": "Injection site pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:191999383",
+      "caption": "Case 191999383 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:193271493",
+      "caption": "Case 193271493 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Device defective",
+      "caption": "Device defective",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:193818312",
+      "caption": "Case 193818312 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Cardiac failure",
+      "caption": "Cardiac failure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Malaise",
+      "caption": "Malaise",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:193943173",
+      "caption": "Case 193943173 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:194059745",
+      "caption": "Case 194059745 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Device malfunction",
+      "caption": "Device malfunction",
+      "labels": [
+        "Reaction"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "CD:1",
+      "from": "Case:148386046",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:2",
+      "from": "Case:148386046",
+      "to": "Drug:SERTRALINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:3",
+      "from": "Case:148386046",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:4",
+      "from": "Case:148386046",
+      "to": "Drug:TOPIRAMATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:5",
+      "from": "Case:148386046",
+      "to": "Drug:ZOFRAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:6",
+      "from": "Case:148386046",
+      "to": "Reaction:Circumstance or information capable of leading to medication error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:7",
+      "from": "Case:148386046",
+      "to": "Reaction:Condition aggravated",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:8",
+      "from": "Case:148386046",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:9",
+      "from": "Case:148386046",
+      "to": "Reaction:Product leakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:10",
+      "from": "Case:148386046",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:11",
+      "from": "Case:148386046",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:12",
+      "from": "Case:148386046",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:13",
+      "from": "Case:148386046",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:14",
+      "from": "Case:148386046",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:15",
+      "from": "Case:148386046",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:16",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:148386046",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:17",
+      "from": "Case:153668615",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:18",
+      "from": "Case:153668615",
+      "to": "Drug:METHYLPHENIDATE HYDROCHLORIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:19",
+      "from": "Case:153668615",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:20",
+      "from": "Case:153668615",
+      "to": "Drug:QUILLICHEW ER",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:21",
+      "from": "Case:153668615",
+      "to": "Reaction:Incorrect dose administered by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:22",
+      "from": "Case:153668615",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:23",
+      "from": "Case:153668615",
+      "to": "Reaction:Bone density increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:24",
+      "from": "Case:153668615",
+      "to": "Reaction:Insulin-like growth factor increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:25",
+      "from": "Case:153668615",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:26",
+      "from": "Case:153668615",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:27",
+      "from": "Case:153668615",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:28",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:153668615",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:29",
+      "from": "Case:156868445",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:30",
+      "from": "Case:156868445",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:31",
+      "from": "Case:156868445",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:32",
+      "from": "Case:156868445",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:33",
+      "from": "Case:156868445",
+      "to": "Reaction:Expired device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:34",
+      "from": "Case:156868445",
+      "to": "Reaction:Insulin-like growth factor increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:35",
+      "from": "Case:156868445",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:36",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:156868445",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:37",
+      "from": "Case:161794327",
+      "to": "Drug:SYEDA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:38",
+      "from": "Case:161794327",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:39",
+      "from": "Case:161794327",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:40",
+      "from": "Case:161794327",
+      "to": "Reaction:Device leakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:41",
+      "from": "Case:161794327",
+      "to": "Reaction:Bone density decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:42",
+      "from": "Case:161794327",
+      "to": "Reaction:Device use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:43",
+      "from": "Case:161794327",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:44",
+      "from": "Case:161794327",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:45",
+      "from": "Case:161794327",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:46",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:161794327",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:47",
+      "from": "Case:169556443",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:48",
+      "from": "Case:169556443",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:49",
+      "from": "Case:169556443",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:50",
+      "from": "Case:169556443",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:51",
+      "from": "Case:169556443",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:52",
+      "from": "Case:169556443",
+      "to": "Reaction:Device information output issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:53",
+      "from": "Case:169556443",
+      "to": "Reaction:Pain in extremity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:54",
+      "from": "Case:169556443",
+      "to": "Reaction:Device power source issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:55",
+      "from": "Case:169556443",
+      "to": "Reaction:Gait disturbance",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:56",
+      "from": "Case:169556443",
+      "to": "Reaction:Device use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:57",
+      "from": "Case:169556443",
+      "to": "Reaction:Nipple disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:58",
+      "from": "Case:169556443",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:59",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:169556443",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:60",
+      "from": "Case:177997408",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:61",
+      "from": "Case:177997408",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:62",
+      "from": "Case:177997408",
+      "to": "Reaction:Bone density decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:63",
+      "from": "Case:177997408",
+      "to": "Reaction:Product storage error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:64",
+      "from": "Case:177997408",
+      "to": "Reaction:Asthenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:65",
+      "from": "Case:177997408",
+      "to": "Reaction:Product dose omission in error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:66",
+      "from": "Case:177997408",
+      "to": "Reaction:Poor quality product administered",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:67",
+      "from": "Case:177997408",
+      "to": "Reaction:Loss of personal independence in daily activities",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:68",
+      "from": "Case:177997408",
+      "to": "Reaction:Hip fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:69",
+      "from": "Case:177997408",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:70",
+      "from": "Case:177997408",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:71",
+      "from": "Case:177997408",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:72",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:177997408",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:73",
+      "from": "Case:178545486",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:74",
+      "from": "Case:178545486",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:75",
+      "from": "Case:178545486",
+      "to": "Reaction:Product prescribing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:76",
+      "from": "Case:178545486",
+      "to": "Reaction:Device leakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:77",
+      "from": "Case:178545486",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:78",
+      "from": "Case:178545486",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:79",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:178545486",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:80",
+      "from": "Case:178595883",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:81",
+      "from": "Case:178595883",
+      "to": "Reaction:Device leakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:82",
+      "from": "Case:178595883",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:83",
+      "from": "Case:178595883",
+      "to": "Reaction:Device information output issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:84",
+      "from": "Case:178595883",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:85",
+      "from": "Case:178595883",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:86",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:178595883",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:87",
+      "from": "Case:178848116",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:88",
+      "from": "Case:178848116",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:89",
+      "from": "Case:178848116",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:90",
+      "from": "Case:178848116",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:91",
+      "from": "Case:178848116",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:92",
+      "from": "Case:178848116",
+      "to": "Reaction:Product prescribing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:93",
+      "from": "Case:178848116",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:94",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:178848116",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:95",
+      "from": "Case:179786923",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:96",
+      "from": "Case:179786923",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:97",
+      "from": "Case:179786923",
+      "to": "Reaction:Device use error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:98",
+      "from": "Case:179786923",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:99",
+      "from": "Case:179786923",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:100",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:179786923",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:101",
+      "from": "Case:180379264",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:102",
+      "from": "Case:180379264",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:103",
+      "from": "Case:180379264",
+      "to": "Reaction:Device failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:104",
+      "from": "Case:180379264",
+      "to": "Reaction:Expired device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:105",
+      "from": "Case:180379264",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:106",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:180379264",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:107",
+      "from": "Case:181131775",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:108",
+      "from": "Case:181131775",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:109",
+      "from": "Case:181131775",
+      "to": "Reaction:Device physical property issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:110",
+      "from": "Case:181131775",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:111",
+      "from": "Case:181131775",
+      "to": "Reaction:Device use error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:112",
+      "from": "Case:181131775",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:113",
+      "from": "Case:181131775",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:114",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:181131775",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:115",
+      "from": "Case:181195495",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:116",
+      "from": "Case:181195495",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:117",
+      "from": "Case:181195495",
+      "to": "Reaction:Product dispensing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:118",
+      "from": "Case:181195495",
+      "to": "Reaction:Dizziness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:119",
+      "from": "Case:181195495",
+      "to": "Reaction:Oedema",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:120",
+      "from": "Case:181195495",
+      "to": "Reaction:Peripheral swelling",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:121",
+      "from": "Case:181195495",
+      "to": "Reaction:Weight increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:122",
+      "from": "Case:181195495",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:123",
+      "from": "Case:181195495",
+      "to": "Reaction:Fear of injection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:124",
+      "from": "Case:181195495",
+      "to": "Reaction:Psychological trauma",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:125",
+      "from": "Case:181195495",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:126",
+      "from": "Case:181195495",
+      "to": "Reaction:Product storage error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:127",
+      "from": "Case:181195495",
+      "to": "Reaction:Visual impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:128",
+      "from": "Case:181195495",
+      "to": "Reaction:Incorrect dose administered",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:129",
+      "from": "Case:181195495",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:130",
+      "from": "Case:181195495",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:131",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:181195495",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:132",
+      "from": "Case:181643877",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:133",
+      "from": "Case:181643877",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:134",
+      "from": "Case:181643877",
+      "to": "Reaction:Insulin-like growth factor increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:135",
+      "from": "Case:181643877",
+      "to": "Reaction:Weight increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:136",
+      "from": "Case:181643877",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:137",
+      "from": "Case:181643877",
+      "to": "Reaction:Product prescribing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:138",
+      "from": "Case:181643877",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:139",
+      "from": "Case:181643877",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:140",
+      "from": "Case:181643877",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:141",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:181643877",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:142",
+      "from": "Case:181698494",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:143",
+      "from": "Case:181698494",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:144",
+      "from": "Case:181698494",
+      "to": "Reaction:Device use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:145",
+      "from": "Case:181698494",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:146",
+      "from": "Case:181698494",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:147",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:181698494",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:148",
+      "from": "Case:182032144",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:149",
+      "from": "Case:182032144",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:150",
+      "from": "Case:182032144",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:151",
+      "from": "Case:182032144",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:152",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:182032144",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:153",
+      "from": "Case:182275668",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:154",
+      "from": "Case:182275668",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:155",
+      "from": "Case:182275668",
+      "to": "Reaction:Device difficult to use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:156",
+      "from": "Case:182275668",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:157",
+      "from": "Case:182275668",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:158",
+      "from": "Case:182275668",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:159",
+      "from": "Case:182275668",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:160",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:182275668",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:161",
+      "from": "Case:182530148",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:162",
+      "from": "Case:182530148",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:163",
+      "from": "Case:182530148",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:164",
+      "from": "Case:182530148",
+      "to": "Reaction:Product quality issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:165",
+      "from": "Case:182530148",
+      "to": "Reaction:Poor quality device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:166",
+      "from": "Case:182530148",
+      "to": "Reaction:Device leakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:167",
+      "from": "Case:182530148",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:168",
+      "from": "Case:182530148",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:169",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:182530148",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:170",
+      "from": "Case:182781218",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:171",
+      "from": "Case:182781218",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:172",
+      "from": "Case:182781218",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:173",
+      "from": "Case:182781218",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:174",
+      "from": "Case:182781218",
+      "to": "Reaction:Device use error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:175",
+      "from": "Case:182781218",
+      "to": "Reaction:Device leakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:176",
+      "from": "Case:182781218",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:177",
+      "from": "Case:182781218",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:178",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:182781218",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:179",
+      "from": "Case:182956423",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:180",
+      "from": "Case:182956423",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:181",
+      "from": "Case:182956423",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:182",
+      "from": "Case:182956423",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:183",
+      "from": "Case:182956423",
+      "to": "Reaction:Poor quality device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:184",
+      "from": "Case:182956423",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:185",
+      "from": "Case:182956423",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:186",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:182956423",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:187",
+      "from": "Case:183198113",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:188",
+      "from": "Case:183198113",
+      "to": "Drug:DDAVP",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:189",
+      "from": "Case:183198113",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:190",
+      "from": "Case:183198113",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:191",
+      "from": "Case:183198113",
+      "to": "Reaction:Device use error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:192",
+      "from": "Case:183198113",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:193",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:183198113",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:194",
+      "from": "Case:183493104",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:195",
+      "from": "Case:183493104",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:196",
+      "from": "Case:183493104",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:197",
+      "from": "Case:183493104",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:198",
+      "from": "Case:183493104",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:199",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:183493104",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:200",
+      "from": "Case:183770456",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:201",
+      "from": "Case:183770456",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:202",
+      "from": "Case:183770456",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:203",
+      "from": "Case:183770456",
+      "to": "Reaction:Poor quality device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:204",
+      "from": "Case:183770456",
+      "to": "Reaction:Device use error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:205",
+      "from": "Case:183770456",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:206",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:183770456",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:207",
+      "from": "Case:184050129",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:208",
+      "from": "Case:184050129",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:209",
+      "from": "Case:184050129",
+      "to": "Reaction:Incorrect dose administered",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:210",
+      "from": "Case:184050129",
+      "to": "Reaction:Device use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:211",
+      "from": "Case:184050129",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:212",
+      "from": "Case:184050129",
+      "to": "Reaction:Incorrect dose administered by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:213",
+      "from": "Case:184050129",
+      "to": "Reaction:Product prescribing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:214",
+      "from": "Case:184050129",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:215",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:184050129",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:216",
+      "from": "Case:184158485",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:217",
+      "from": "Case:184158485",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:218",
+      "from": "Case:184158485",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:219",
+      "from": "Case:184158485",
+      "to": "Reaction:Poor quality device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:220",
+      "from": "Case:184158485",
+      "to": "Reaction:Emotional disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:221",
+      "from": "Case:184158485",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:222",
+      "from": "Case:184158485",
+      "to": "Reaction:Incorrect dose administered by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:223",
+      "from": "Case:184158485",
+      "to": "Reaction:Crying",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:224",
+      "from": "Case:184158485",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:225",
+      "from": "Case:184158485",
+      "to": "Reaction:Product prescribing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:226",
+      "from": "Case:184158485",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:227",
+      "from": "Case:184158485",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:228",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:184158485",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:229",
+      "from": "Case:184454195",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:230",
+      "from": "Case:184454195",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:231",
+      "from": "Case:184454195",
+      "to": "Reaction:Product dispensing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:232",
+      "from": "Case:184454195",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:233",
+      "from": "Case:184454195",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:234",
+      "from": "Case:184454195",
+      "to": "Reaction:Device power source issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:235",
+      "from": "Case:184454195",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:236",
+      "from": "Case:184454195",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:237",
+      "from": "Case:184454195",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:238",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:184454195",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:239",
+      "from": "Case:184743873",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:240",
+      "from": "Case:184743873",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:241",
+      "from": "Case:184743873",
+      "to": "Reaction:Suicide attempt",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:242",
+      "from": "Case:184743873",
+      "to": "Reaction:Device leakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:243",
+      "from": "Case:184743873",
+      "to": "Reaction:Product prescribing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:244",
+      "from": "Case:184743873",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:245",
+      "from": "Case:184743873",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:246",
+      "from": "Case:184743873",
+      "to": "Reaction:Injection site mass",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:247",
+      "from": "Case:184743873",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:248",
+      "from": "Case:184743873",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:249",
+      "from": "Case:184743873",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:250",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:184743873",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:251",
+      "from": "Case:185399298",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:252",
+      "from": "Case:185399298",
+      "to": "Drug:DEXTROAMPHETAMINE [DEXAMFETAMINE]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:253",
+      "from": "Case:185399298",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:254",
+      "from": "Case:185399298",
+      "to": "Drug:GUANFACINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:255",
+      "from": "Case:185399298",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:256",
+      "from": "Case:185399298",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:257",
+      "from": "Case:185399298",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:258",
+      "from": "Case:185399298",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:259",
+      "from": "Case:185399298",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:260",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:185399298",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:261",
+      "from": "Case:185760443",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:262",
+      "from": "Case:185760443",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:263",
+      "from": "Case:185760443",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:264",
+      "from": "Case:185760443",
+      "to": "Reaction:Off label use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:265",
+      "from": "Case:185760443",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:266",
+      "from": "Case:185760443",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:267",
+      "from": "Case:185760443",
+      "to": "Reaction:Device use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:268",
+      "from": "Case:185760443",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:269",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:185760443",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:270",
+      "from": "Case:186104183",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:271",
+      "from": "Case:186104183",
+      "to": "Reaction:Device leakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:272",
+      "from": "Case:186104183",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:273",
+      "from": "Case:186104183",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:274",
+      "from": "Case:186104183",
+      "to": "Reaction:Incorrect dose administered by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:275",
+      "from": "Case:186104183",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:276",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:186104183",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:277",
+      "from": "Case:186172176",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:278",
+      "from": "Case:186172176",
+      "to": "Reaction:Product quality issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:279",
+      "from": "Case:186172176",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:280",
+      "from": "Case:186172176",
+      "to": "Reaction:Device physical property issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:281",
+      "from": "Case:186172176",
+      "to": "Reaction:Device use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:282",
+      "from": "Case:186172176",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:283",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:186172176",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:284",
+      "from": "Case:188000663",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:285",
+      "from": "Case:188000663",
+      "to": "Reaction:Expired device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:286",
+      "from": "Case:188000663",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:287",
+      "from": "Case:188000663",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:288",
+      "from": "Case:188000663",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:289",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:188000663",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:290",
+      "from": "Case:189927714",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:291",
+      "from": "Case:189927714",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:292",
+      "from": "Case:189927714",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:293",
+      "from": "Case:189927714",
+      "to": "Reaction:Device physical property issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:294",
+      "from": "Case:189927714",
+      "to": "Reaction:Product physical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:295",
+      "from": "Case:189927714",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:296",
+      "from": "Case:189927714",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:297",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:189927714",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:298",
+      "from": "Case:190967362",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:299",
+      "from": "Case:190967362",
+      "to": "Reaction:Device information output issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:300",
+      "from": "Case:190967362",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:301",
+      "from": "Case:190967362",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:302",
+      "from": "Case:190967362",
+      "to": "Reaction:Expired device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:303",
+      "from": "Case:190967362",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:304",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:190967362",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:305",
+      "from": "Case:191941253",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:306",
+      "from": "Case:191941253",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:307",
+      "from": "Case:191941253",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:308",
+      "from": "Case:191941253",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:309",
+      "from": "Case:191941253",
+      "to": "Reaction:Injection site pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:310",
+      "from": "Case:191941253",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:311",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:191941253",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:312",
+      "from": "Case:191999383",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:313",
+      "from": "Case:191999383",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:314",
+      "from": "Case:191999383",
+      "to": "Reaction:Device information output issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:315",
+      "from": "Case:191999383",
+      "to": "Reaction:Expired device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:316",
+      "from": "Case:191999383",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:317",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:191999383",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:318",
+      "from": "Case:193271493",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:319",
+      "from": "Case:193271493",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:320",
+      "from": "Case:193271493",
+      "to": "Reaction:Poor quality device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:321",
+      "from": "Case:193271493",
+      "to": "Reaction:Device leakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:322",
+      "from": "Case:193271493",
+      "to": "Reaction:Device difficult to use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:323",
+      "from": "Case:193271493",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:324",
+      "from": "Case:193271493",
+      "to": "Reaction:Device defective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:325",
+      "from": "Case:193271493",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:326",
+      "from": "Case:193271493",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:327",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:193271493",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:328",
+      "from": "Case:193818312",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:329",
+      "from": "Case:193818312",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:330",
+      "from": "Case:193818312",
+      "to": "Reaction:Poor quality device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:331",
+      "from": "Case:193818312",
+      "to": "Reaction:Cardiac failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:332",
+      "from": "Case:193818312",
+      "to": "Reaction:Device use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:333",
+      "from": "Case:193818312",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:334",
+      "from": "Case:193818312",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:335",
+      "from": "Case:193818312",
+      "to": "Reaction:Off label use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:336",
+      "from": "Case:193818312",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:337",
+      "from": "Case:193818312",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:338",
+      "from": "Case:193818312",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:339",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:193818312",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:340",
+      "from": "Case:193943173",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:341",
+      "from": "Case:193943173",
+      "to": "Reaction:Expired device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:342",
+      "from": "Case:193943173",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:343",
+      "from": "Case:193943173",
+      "to": "Reaction:Device information output issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:344",
+      "from": "Case:193943173",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:345",
+      "from": "Case:193943173",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:346",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:193943173",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:347",
+      "from": "Case:194059745",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:348",
+      "from": "Case:194059745",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:349",
+      "from": "Case:194059745",
+      "to": "Reaction:Device leakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:350",
+      "from": "Case:194059745",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:351",
+      "from": "Case:194059745",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:352",
+      "from": "Case:194059745",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:353",
+      "from": "Case:194059745",
+      "to": "Reaction:Device malfunction",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:354",
+      "from": "Case:194059745",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:355",
+      "from": "Case:194059745",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:356",
+      "from": "Case:194059745",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:357",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:194059745",
+      "type": "REGISTERED"
+    }
+  ],
+  "meta": {
+    "caseCount": 40,
+    "nodeCount": 115,
+    "relCount": 357,
+    "capped": false,
+    "focusDrug": "GENOTROPIN"
+  }
+}

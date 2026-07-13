@@ -16,6 +16,7 @@ Copy `.env.example` to `.env` in that project and set `NEO4J_*` and `OPENAI_API_
 **Summary (from [finalProject/readme.md](finalProject/readme.md)):** Self-defined capstone for a **multi-echelon automotive supply-chain knowledge graph** in Neo4j—**Cypher** exploration and **GDS** for dependencies, bottlenecks, and risk-style questions. The **Moetz et al. (2020)** workbook drives the data model; [Brainstorming_Template.ipynb](finalProject/Brainstorming_Template.ipynb) captures the proposal, impact, and research questions. [selfDefinedProject.md](finalProject/selfDefinedProject.md) lists official minimum requirements (EDA count, deeper questions, GDS option).
 
 - Environment and contents: [finalProject/readme.md](finalProject/readme.md)
+- Static demo: Nuxt route `/supply-chain` via `finalProject/export_finalproject.py` → `nuxt_neo4j/public/data/supply-chain/`
 
 ## Assignments (`assignments/`)
 
@@ -30,6 +31,7 @@ Copy `.env.example` to `.env` in that project and set `NEO4J_*` and `OPENAI_API_
 **Summary (from [assignments/ass2/README.md](assignments/ass2/README.md)):** Analyze a **FAERS-style healthcare graph** restored from `**healthcare-analytics-50.dump`**: iterative **Cypher EDA** (schema discovery), deeper analytical questions, then **GDS** (projections, algorithms, interpretation). Jupyter + Python driver + **pandas**; dump may be gitignored—see folder README.
 
 - Full guide: [assignments/ass2/README.md](assignments/ass2/README.md)
+- Static demo: Nuxt route `/healthcare` via `assignments/ass2/export_ass2.py` → `nuxt_neo4j/public/data/healthcare/`
 
 ### Recommender capstone — `recommender/`
 

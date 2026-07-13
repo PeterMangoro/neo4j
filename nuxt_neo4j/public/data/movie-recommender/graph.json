@@ -1,0 +1,1808 @@
+{
+  "nodes": [
+    {
+      "id": "User:U001",
+      "caption": "Alice Chen",
+      "labels": [
+        "User"
+      ],
+      "community": 0,
+      "age": 28,
+      "occupation": "Software Engineer"
+    },
+    {
+      "id": "User:U002",
+      "caption": "Bob Martinez",
+      "labels": [
+        "User"
+      ],
+      "community": 1,
+      "age": 34,
+      "occupation": "Teacher"
+    },
+    {
+      "id": "User:U003",
+      "caption": "Carol White",
+      "labels": [
+        "User"
+      ],
+      "community": 2,
+      "age": 22,
+      "occupation": "Student"
+    },
+    {
+      "id": "User:U004",
+      "caption": "David Kim",
+      "labels": [
+        "User"
+      ],
+      "community": 1,
+      "age": 45,
+      "occupation": "Doctor"
+    },
+    {
+      "id": "User:U005",
+      "caption": "Eva Rossi",
+      "labels": [
+        "User"
+      ],
+      "community": 2,
+      "age": 31,
+      "occupation": "Designer"
+    },
+    {
+      "id": "User:U006",
+      "caption": "Frank Osei",
+      "labels": [
+        "User"
+      ],
+      "community": 3,
+      "age": 27,
+      "occupation": "Journalist"
+    },
+    {
+      "id": "User:U007",
+      "caption": "Grace Liu",
+      "labels": [
+        "User"
+      ],
+      "community": 0,
+      "age": 38,
+      "occupation": "Manager"
+    },
+    {
+      "id": "User:U008",
+      "caption": "Henry Park",
+      "labels": [
+        "User"
+      ],
+      "community": 1,
+      "age": 52,
+      "occupation": "Accountant"
+    },
+    {
+      "id": "User:U009",
+      "caption": "Iris Novak",
+      "labels": [
+        "User"
+      ],
+      "community": 2,
+      "age": 24,
+      "occupation": "Student"
+    },
+    {
+      "id": "User:U010",
+      "caption": "James Brown",
+      "labels": [
+        "User"
+      ],
+      "community": 3,
+      "age": 41,
+      "occupation": "Lawyer"
+    },
+    {
+      "id": "User:U011",
+      "caption": "Karen Singh",
+      "labels": [
+        "User"
+      ],
+      "community": 0,
+      "age": 29,
+      "occupation": "Engineer"
+    },
+    {
+      "id": "User:U012",
+      "caption": "Leo Tanaka",
+      "labels": [
+        "User"
+      ],
+      "community": 2,
+      "age": 36,
+      "occupation": "Chef"
+    },
+    {
+      "id": "User:U013",
+      "caption": "Maya Patel",
+      "labels": [
+        "User"
+      ],
+      "community": 0,
+      "age": 33,
+      "occupation": "Scientist"
+    },
+    {
+      "id": "User:U014",
+      "caption": "Noah Williams",
+      "labels": [
+        "User"
+      ],
+      "community": 1,
+      "age": 47,
+      "occupation": "Architect"
+    },
+    {
+      "id": "User:U015",
+      "caption": "Olivia Jones",
+      "labels": [
+        "User"
+      ],
+      "community": 2,
+      "age": 26,
+      "occupation": "Writer"
+    },
+    {
+      "id": "User:U016",
+      "caption": "Paul Garcia",
+      "labels": [
+        "User"
+      ],
+      "community": 0,
+      "age": 43,
+      "occupation": "Consultant"
+    },
+    {
+      "id": "User:U017",
+      "caption": "Quinn Zhang",
+      "labels": [
+        "User"
+      ],
+      "community": 0,
+      "age": 30,
+      "occupation": "Analyst"
+    },
+    {
+      "id": "User:U018",
+      "caption": "Ryan Murphy",
+      "labels": [
+        "User"
+      ],
+      "community": 1,
+      "age": 55,
+      "occupation": "Retired"
+    },
+    {
+      "id": "User:U019",
+      "caption": "Sara Hassan",
+      "labels": [
+        "User"
+      ],
+      "community": 3,
+      "age": 25,
+      "occupation": "Nurse"
+    },
+    {
+      "id": "User:U020",
+      "caption": "Tom Anderson",
+      "labels": [
+        "User"
+      ],
+      "community": 0,
+      "age": 39,
+      "occupation": "Developer"
+    },
+    {
+      "id": "Movie:M001",
+      "caption": "The Matrix",
+      "labels": [
+        "Movie"
+      ],
+      "year": 1999
+    },
+    {
+      "id": "Movie:M002",
+      "caption": "Inception",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2010
+    },
+    {
+      "id": "Movie:M003",
+      "caption": "The Godfather",
+      "labels": [
+        "Movie"
+      ],
+      "year": 1972
+    },
+    {
+      "id": "Movie:M004",
+      "caption": "Parasite",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2019
+    },
+    {
+      "id": "Movie:M005",
+      "caption": "Interstellar",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2014
+    },
+    {
+      "id": "Movie:M006",
+      "caption": "Pulp Fiction",
+      "labels": [
+        "Movie"
+      ],
+      "year": 1994
+    },
+    {
+      "id": "Movie:M007",
+      "caption": "The Dark Knight",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2008
+    },
+    {
+      "id": "Movie:M008",
+      "caption": "Spirited Away",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2001
+    },
+    {
+      "id": "Movie:M009",
+      "caption": "Whiplash",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2014
+    },
+    {
+      "id": "Movie:M010",
+      "caption": "Get Out",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2017
+    },
+    {
+      "id": "Movie:M011",
+      "caption": "Mad Max: Fury Road",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2015
+    },
+    {
+      "id": "Movie:M012",
+      "caption": "Her",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2013
+    },
+    {
+      "id": "Movie:M013",
+      "caption": "The Social Network",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2010
+    },
+    {
+      "id": "Movie:M014",
+      "caption": "12 Angry Men",
+      "labels": [
+        "Movie"
+      ],
+      "year": 1957
+    },
+    {
+      "id": "Movie:M015",
+      "caption": "Everything Everywhere All at Once",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2022
+    },
+    {
+      "id": "Movie:M016",
+      "caption": "Oldboy",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2003
+    },
+    {
+      "id": "Movie:M017",
+      "caption": "The Grand Budapest Hotel",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2014
+    },
+    {
+      "id": "Movie:M018",
+      "caption": "La La Land",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2016
+    },
+    {
+      "id": "Movie:M019",
+      "caption": "Dune",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2021
+    },
+    {
+      "id": "Movie:M020",
+      "caption": "Roma",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2018
+    },
+    {
+      "id": "Movie:M021",
+      "caption": "Knives Out",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2019
+    },
+    {
+      "id": "Movie:M022",
+      "caption": "Portrait of a Lady on Fire",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2019
+    },
+    {
+      "id": "Movie:M023",
+      "caption": "Moonlight",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2016
+    },
+    {
+      "id": "Movie:M024",
+      "caption": "The Revenant",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2015
+    },
+    {
+      "id": "Movie:M025",
+      "caption": "Blade Runner 2049",
+      "labels": [
+        "Movie"
+      ],
+      "year": 2017
+    },
+    {
+      "id": "Genre:Sci-Fi",
+      "caption": "Sci-Fi",
+      "labels": [
+        "Genre"
+      ]
+    },
+    {
+      "id": "Genre:Action",
+      "caption": "Action",
+      "labels": [
+        "Genre"
+      ]
+    },
+    {
+      "id": "Genre:Thriller",
+      "caption": "Thriller",
+      "labels": [
+        "Genre"
+      ]
+    },
+    {
+      "id": "Genre:Crime",
+      "caption": "Crime",
+      "labels": [
+        "Genre"
+      ]
+    },
+    {
+      "id": "Genre:Drama",
+      "caption": "Drama",
+      "labels": [
+        "Genre"
+      ]
+    },
+    {
+      "id": "Genre:Animation",
+      "caption": "Animation",
+      "labels": [
+        "Genre"
+      ]
+    },
+    {
+      "id": "Genre:Fantasy",
+      "caption": "Fantasy",
+      "labels": [
+        "Genre"
+      ]
+    },
+    {
+      "id": "Genre:Music",
+      "caption": "Music",
+      "labels": [
+        "Genre"
+      ]
+    },
+    {
+      "id": "Genre:Horror",
+      "caption": "Horror",
+      "labels": [
+        "Genre"
+      ]
+    },
+    {
+      "id": "Genre:Romance",
+      "caption": "Romance",
+      "labels": [
+        "Genre"
+      ]
+    },
+    {
+      "id": "Genre:Biography",
+      "caption": "Biography",
+      "labels": [
+        "Genre"
+      ]
+    },
+    {
+      "id": "Genre:Comedy",
+      "caption": "Comedy",
+      "labels": [
+        "Genre"
+      ]
+    },
+    {
+      "id": "Genre:Mystery",
+      "caption": "Mystery",
+      "labels": [
+        "Genre"
+      ]
+    },
+    {
+      "id": "Genre:Adventure",
+      "caption": "Adventure",
+      "labels": [
+        "Genre"
+      ]
+    },
+    {
+      "id": "Director:Wachowski Sisters",
+      "caption": "Wachowski Sisters",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Christopher Nolan",
+      "caption": "Christopher Nolan",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Francis Ford Coppola",
+      "caption": "Francis Ford Coppola",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Bong Joon-ho",
+      "caption": "Bong Joon-ho",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Quentin Tarantino",
+      "caption": "Quentin Tarantino",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Hayao Miyazaki",
+      "caption": "Hayao Miyazaki",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Damien Chazelle",
+      "caption": "Damien Chazelle",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Jordan Peele",
+      "caption": "Jordan Peele",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:George Miller",
+      "caption": "George Miller",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Spike Jonze",
+      "caption": "Spike Jonze",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:David Fincher",
+      "caption": "David Fincher",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Sidney Lumet",
+      "caption": "Sidney Lumet",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Daniels",
+      "caption": "Daniels",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Park Chan-wook",
+      "caption": "Park Chan-wook",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Wes Anderson",
+      "caption": "Wes Anderson",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Denis Villeneuve",
+      "caption": "Denis Villeneuve",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Alfonso Cuarón",
+      "caption": "Alfonso Cuarón",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Rian Johnson",
+      "caption": "Rian Johnson",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Céline Sciamma",
+      "caption": "Céline Sciamma",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Barry Jenkins",
+      "caption": "Barry Jenkins",
+      "labels": [
+        "Director"
+      ]
+    },
+    {
+      "id": "Director:Alejandro G. Iñárritu",
+      "caption": "Alejandro G. Iñárritu",
+      "labels": [
+        "Director"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "RATED:U001:M001",
+      "from": "User:U001",
+      "to": "Movie:M001",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U001:M002",
+      "from": "User:U001",
+      "to": "Movie:M002",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U001:M005",
+      "from": "User:U001",
+      "to": "Movie:M005",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U001:M007",
+      "from": "User:U001",
+      "to": "Movie:M007",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U001:M019",
+      "from": "User:U001",
+      "to": "Movie:M019",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U001:M025",
+      "from": "User:U001",
+      "to": "Movie:M025",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U002:M003",
+      "from": "User:U002",
+      "to": "Movie:M003",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U002:M006",
+      "from": "User:U002",
+      "to": "Movie:M006",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U002:M014",
+      "from": "User:U002",
+      "to": "Movie:M014",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U002:M013",
+      "from": "User:U002",
+      "to": "Movie:M013",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U002:M009",
+      "from": "User:U002",
+      "to": "Movie:M009",
+      "type": "RATED",
+      "rating": 3.0
+    },
+    {
+      "id": "RATED:U003:M008",
+      "from": "User:U003",
+      "to": "Movie:M008",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U003:M015",
+      "from": "User:U003",
+      "to": "Movie:M015",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U003:M017",
+      "from": "User:U003",
+      "to": "Movie:M017",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U003:M022",
+      "from": "User:U003",
+      "to": "Movie:M022",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U003:M023",
+      "from": "User:U003",
+      "to": "Movie:M023",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U004:M003",
+      "from": "User:U004",
+      "to": "Movie:M003",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U004:M014",
+      "from": "User:U004",
+      "to": "Movie:M014",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U004:M006",
+      "from": "User:U004",
+      "to": "Movie:M006",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U004:M009",
+      "from": "User:U004",
+      "to": "Movie:M009",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U004:M013",
+      "from": "User:U004",
+      "to": "Movie:M013",
+      "type": "RATED",
+      "rating": 3.0
+    },
+    {
+      "id": "RATED:U005:M008",
+      "from": "User:U005",
+      "to": "Movie:M008",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U005:M017",
+      "from": "User:U005",
+      "to": "Movie:M017",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U005:M018",
+      "from": "User:U005",
+      "to": "Movie:M018",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U005:M022",
+      "from": "User:U005",
+      "to": "Movie:M022",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U005:M023",
+      "from": "User:U005",
+      "to": "Movie:M023",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U006:M004",
+      "from": "User:U006",
+      "to": "Movie:M004",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U006:M010",
+      "from": "User:U006",
+      "to": "Movie:M010",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U006:M016",
+      "from": "User:U006",
+      "to": "Movie:M016",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U006:M021",
+      "from": "User:U006",
+      "to": "Movie:M021",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U006:M006",
+      "from": "User:U006",
+      "to": "Movie:M006",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U007:M001",
+      "from": "User:U007",
+      "to": "Movie:M001",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U007:M002",
+      "from": "User:U007",
+      "to": "Movie:M002",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U007:M007",
+      "from": "User:U007",
+      "to": "Movie:M007",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U007:M011",
+      "from": "User:U007",
+      "to": "Movie:M011",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U007:M019",
+      "from": "User:U007",
+      "to": "Movie:M019",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U008:M003",
+      "from": "User:U008",
+      "to": "Movie:M003",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U008:M014",
+      "from": "User:U008",
+      "to": "Movie:M014",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U008:M020",
+      "from": "User:U008",
+      "to": "Movie:M020",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U008:M024",
+      "from": "User:U008",
+      "to": "Movie:M024",
+      "type": "RATED",
+      "rating": 3.0
+    },
+    {
+      "id": "RATED:U008:M006",
+      "from": "User:U008",
+      "to": "Movie:M006",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U009:M015",
+      "from": "User:U009",
+      "to": "Movie:M015",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U009:M017",
+      "from": "User:U009",
+      "to": "Movie:M017",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U009:M018",
+      "from": "User:U009",
+      "to": "Movie:M018",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U009:M022",
+      "from": "User:U009",
+      "to": "Movie:M022",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U009:M008",
+      "from": "User:U009",
+      "to": "Movie:M008",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U010:M003",
+      "from": "User:U010",
+      "to": "Movie:M003",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U010:M006",
+      "from": "User:U010",
+      "to": "Movie:M006",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U010:M010",
+      "from": "User:U010",
+      "to": "Movie:M010",
+      "type": "RATED",
+      "rating": 3.0
+    },
+    {
+      "id": "RATED:U010:M016",
+      "from": "User:U010",
+      "to": "Movie:M016",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U010:M021",
+      "from": "User:U010",
+      "to": "Movie:M021",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U011:M001",
+      "from": "User:U011",
+      "to": "Movie:M001",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U011:M002",
+      "from": "User:U011",
+      "to": "Movie:M002",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U011:M005",
+      "from": "User:U011",
+      "to": "Movie:M005",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U011:M012",
+      "from": "User:U011",
+      "to": "Movie:M012",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U011:M025",
+      "from": "User:U011",
+      "to": "Movie:M025",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U012:M004",
+      "from": "User:U012",
+      "to": "Movie:M004",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U012:M009",
+      "from": "User:U012",
+      "to": "Movie:M009",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U012:M018",
+      "from": "User:U012",
+      "to": "Movie:M018",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U012:M020",
+      "from": "User:U012",
+      "to": "Movie:M020",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U012:M017",
+      "from": "User:U012",
+      "to": "Movie:M017",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U013:M002",
+      "from": "User:U013",
+      "to": "Movie:M002",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U013:M005",
+      "from": "User:U013",
+      "to": "Movie:M005",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U013:M012",
+      "from": "User:U013",
+      "to": "Movie:M012",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U013:M019",
+      "from": "User:U013",
+      "to": "Movie:M019",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U013:M025",
+      "from": "User:U013",
+      "to": "Movie:M025",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U014:M003",
+      "from": "User:U014",
+      "to": "Movie:M003",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U014:M014",
+      "from": "User:U014",
+      "to": "Movie:M014",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U014:M020",
+      "from": "User:U014",
+      "to": "Movie:M020",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U014:M024",
+      "from": "User:U014",
+      "to": "Movie:M024",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U014:M006",
+      "from": "User:U014",
+      "to": "Movie:M006",
+      "type": "RATED",
+      "rating": 3.0
+    },
+    {
+      "id": "RATED:U015:M008",
+      "from": "User:U015",
+      "to": "Movie:M008",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U015:M018",
+      "from": "User:U015",
+      "to": "Movie:M018",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U015:M022",
+      "from": "User:U015",
+      "to": "Movie:M022",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U015:M023",
+      "from": "User:U015",
+      "to": "Movie:M023",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U015:M015",
+      "from": "User:U015",
+      "to": "Movie:M015",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U016:M001",
+      "from": "User:U016",
+      "to": "Movie:M001",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U016:M007",
+      "from": "User:U016",
+      "to": "Movie:M007",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U016:M011",
+      "from": "User:U016",
+      "to": "Movie:M011",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U016:M019",
+      "from": "User:U016",
+      "to": "Movie:M019",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U016:M002",
+      "from": "User:U016",
+      "to": "Movie:M002",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U017:M001",
+      "from": "User:U017",
+      "to": "Movie:M001",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U017:M002",
+      "from": "User:U017",
+      "to": "Movie:M002",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U017:M005",
+      "from": "User:U017",
+      "to": "Movie:M005",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U017:M012",
+      "from": "User:U017",
+      "to": "Movie:M012",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U017:M025",
+      "from": "User:U017",
+      "to": "Movie:M025",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U018:M003",
+      "from": "User:U018",
+      "to": "Movie:M003",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U018:M006",
+      "from": "User:U018",
+      "to": "Movie:M006",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U018:M014",
+      "from": "User:U018",
+      "to": "Movie:M014",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U018:M024",
+      "from": "User:U018",
+      "to": "Movie:M024",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U018:M020",
+      "from": "User:U018",
+      "to": "Movie:M020",
+      "type": "RATED",
+      "rating": 3.0
+    },
+    {
+      "id": "RATED:U019:M010",
+      "from": "User:U019",
+      "to": "Movie:M010",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U019:M016",
+      "from": "User:U019",
+      "to": "Movie:M016",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U019:M021",
+      "from": "User:U019",
+      "to": "Movie:M021",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U019:M004",
+      "from": "User:U019",
+      "to": "Movie:M004",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U019:M022",
+      "from": "User:U019",
+      "to": "Movie:M022",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U020:M001",
+      "from": "User:U020",
+      "to": "Movie:M001",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U020:M007",
+      "from": "User:U020",
+      "to": "Movie:M007",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U020:M002",
+      "from": "User:U020",
+      "to": "Movie:M002",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "RATED:U020:M019",
+      "from": "User:U020",
+      "to": "Movie:M019",
+      "type": "RATED",
+      "rating": 5.0
+    },
+    {
+      "id": "RATED:U020:M011",
+      "from": "User:U020",
+      "to": "Movie:M011",
+      "type": "RATED",
+      "rating": 4.0
+    },
+    {
+      "id": "IN_GENRE:M001:Sci-Fi",
+      "from": "Movie:M001",
+      "to": "Genre:Sci-Fi",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M001:Action",
+      "from": "Movie:M001",
+      "to": "Genre:Action",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M002:Sci-Fi",
+      "from": "Movie:M002",
+      "to": "Genre:Sci-Fi",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M002:Thriller",
+      "from": "Movie:M002",
+      "to": "Genre:Thriller",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M003:Crime",
+      "from": "Movie:M003",
+      "to": "Genre:Crime",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M003:Drama",
+      "from": "Movie:M003",
+      "to": "Genre:Drama",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M004:Thriller",
+      "from": "Movie:M004",
+      "to": "Genre:Thriller",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M004:Drama",
+      "from": "Movie:M004",
+      "to": "Genre:Drama",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M005:Sci-Fi",
+      "from": "Movie:M005",
+      "to": "Genre:Sci-Fi",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M005:Drama",
+      "from": "Movie:M005",
+      "to": "Genre:Drama",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M006:Crime",
+      "from": "Movie:M006",
+      "to": "Genre:Crime",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M006:Drama",
+      "from": "Movie:M006",
+      "to": "Genre:Drama",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M007:Action",
+      "from": "Movie:M007",
+      "to": "Genre:Action",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M007:Crime",
+      "from": "Movie:M007",
+      "to": "Genre:Crime",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M008:Animation",
+      "from": "Movie:M008",
+      "to": "Genre:Animation",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M008:Fantasy",
+      "from": "Movie:M008",
+      "to": "Genre:Fantasy",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M009:Drama",
+      "from": "Movie:M009",
+      "to": "Genre:Drama",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M009:Music",
+      "from": "Movie:M009",
+      "to": "Genre:Music",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M010:Horror",
+      "from": "Movie:M010",
+      "to": "Genre:Horror",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M010:Thriller",
+      "from": "Movie:M010",
+      "to": "Genre:Thriller",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M011:Action",
+      "from": "Movie:M011",
+      "to": "Genre:Action",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M011:Sci-Fi",
+      "from": "Movie:M011",
+      "to": "Genre:Sci-Fi",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M012:Sci-Fi",
+      "from": "Movie:M012",
+      "to": "Genre:Sci-Fi",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M012:Romance",
+      "from": "Movie:M012",
+      "to": "Genre:Romance",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M013:Drama",
+      "from": "Movie:M013",
+      "to": "Genre:Drama",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M013:Biography",
+      "from": "Movie:M013",
+      "to": "Genre:Biography",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M014:Drama",
+      "from": "Movie:M014",
+      "to": "Genre:Drama",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M014:Crime",
+      "from": "Movie:M014",
+      "to": "Genre:Crime",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M015:Sci-Fi",
+      "from": "Movie:M015",
+      "to": "Genre:Sci-Fi",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M015:Comedy",
+      "from": "Movie:M015",
+      "to": "Genre:Comedy",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M016:Mystery",
+      "from": "Movie:M016",
+      "to": "Genre:Mystery",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M016:Thriller",
+      "from": "Movie:M016",
+      "to": "Genre:Thriller",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M017:Comedy",
+      "from": "Movie:M017",
+      "to": "Genre:Comedy",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M017:Drama",
+      "from": "Movie:M017",
+      "to": "Genre:Drama",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M018:Drama",
+      "from": "Movie:M018",
+      "to": "Genre:Drama",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M018:Romance",
+      "from": "Movie:M018",
+      "to": "Genre:Romance",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M019:Sci-Fi",
+      "from": "Movie:M019",
+      "to": "Genre:Sci-Fi",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M019:Action",
+      "from": "Movie:M019",
+      "to": "Genre:Action",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M020:Drama",
+      "from": "Movie:M020",
+      "to": "Genre:Drama",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M020:Biography",
+      "from": "Movie:M020",
+      "to": "Genre:Biography",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M021:Mystery",
+      "from": "Movie:M021",
+      "to": "Genre:Mystery",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M021:Comedy",
+      "from": "Movie:M021",
+      "to": "Genre:Comedy",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M022:Drama",
+      "from": "Movie:M022",
+      "to": "Genre:Drama",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M022:Romance",
+      "from": "Movie:M022",
+      "to": "Genre:Romance",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M023:Drama",
+      "from": "Movie:M023",
+      "to": "Genre:Drama",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M023:Biography",
+      "from": "Movie:M023",
+      "to": "Genre:Biography",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M024:Adventure",
+      "from": "Movie:M024",
+      "to": "Genre:Adventure",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M024:Drama",
+      "from": "Movie:M024",
+      "to": "Genre:Drama",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M025:Sci-Fi",
+      "from": "Movie:M025",
+      "to": "Genre:Sci-Fi",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "IN_GENRE:M025:Drama",
+      "from": "Movie:M025",
+      "to": "Genre:Drama",
+      "type": "IN_GENRE"
+    },
+    {
+      "id": "DIRECTED_BY:M001:Wachowski Sisters",
+      "from": "Movie:M001",
+      "to": "Director:Wachowski Sisters",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M002:Christopher Nolan",
+      "from": "Movie:M002",
+      "to": "Director:Christopher Nolan",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M003:Francis Ford Coppola",
+      "from": "Movie:M003",
+      "to": "Director:Francis Ford Coppola",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M004:Bong Joon-ho",
+      "from": "Movie:M004",
+      "to": "Director:Bong Joon-ho",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M005:Christopher Nolan",
+      "from": "Movie:M005",
+      "to": "Director:Christopher Nolan",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M006:Quentin Tarantino",
+      "from": "Movie:M006",
+      "to": "Director:Quentin Tarantino",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M007:Christopher Nolan",
+      "from": "Movie:M007",
+      "to": "Director:Christopher Nolan",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M008:Hayao Miyazaki",
+      "from": "Movie:M008",
+      "to": "Director:Hayao Miyazaki",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M009:Damien Chazelle",
+      "from": "Movie:M009",
+      "to": "Director:Damien Chazelle",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M010:Jordan Peele",
+      "from": "Movie:M010",
+      "to": "Director:Jordan Peele",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M011:George Miller",
+      "from": "Movie:M011",
+      "to": "Director:George Miller",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M012:Spike Jonze",
+      "from": "Movie:M012",
+      "to": "Director:Spike Jonze",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M013:David Fincher",
+      "from": "Movie:M013",
+      "to": "Director:David Fincher",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M014:Sidney Lumet",
+      "from": "Movie:M014",
+      "to": "Director:Sidney Lumet",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M015:Daniels",
+      "from": "Movie:M015",
+      "to": "Director:Daniels",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M016:Park Chan-wook",
+      "from": "Movie:M016",
+      "to": "Director:Park Chan-wook",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M017:Wes Anderson",
+      "from": "Movie:M017",
+      "to": "Director:Wes Anderson",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M018:Damien Chazelle",
+      "from": "Movie:M018",
+      "to": "Director:Damien Chazelle",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M019:Denis Villeneuve",
+      "from": "Movie:M019",
+      "to": "Director:Denis Villeneuve",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M020:Alfonso Cuarón",
+      "from": "Movie:M020",
+      "to": "Director:Alfonso Cuarón",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M021:Rian Johnson",
+      "from": "Movie:M021",
+      "to": "Director:Rian Johnson",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M022:Céline Sciamma",
+      "from": "Movie:M022",
+      "to": "Director:Céline Sciamma",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M023:Barry Jenkins",
+      "from": "Movie:M023",
+      "to": "Director:Barry Jenkins",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M024:Alejandro G. Iñárritu",
+      "from": "Movie:M024",
+      "to": "Director:Alejandro G. Iñárritu",
+      "type": "DIRECTED_BY"
+    },
+    {
+      "id": "DIRECTED_BY:M025:Denis Villeneuve",
+      "from": "Movie:M025",
+      "to": "Director:Denis Villeneuve",
+      "type": "DIRECTED_BY"
+    }
+  ]
+}

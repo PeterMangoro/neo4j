@@ -1,0 +1,817 @@
+{
+  "nodes": [
+    {
+      "id": "Case:183430412",
+      "caption": "Case 183430412 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 0
+    },
+    {
+      "id": "Drug:Sumatriptan Tablets 50mg",
+      "caption": "Sumatriptan Tablets 50mg",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Foreign body in throat",
+      "caption": "Foreign body in throat",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product odour abnormal",
+      "caption": "Product odour abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product coating issue",
+      "caption": "Product coating issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adult",
+      "caption": "Adult",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:192560332",
+      "caption": "Case 192560332 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 0
+    },
+    {
+      "id": "Drug:METFORMIN",
+      "caption": "METFORMIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BYETTA",
+      "caption": "BYETTA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ROSUVASTATIN",
+      "caption": "ROSUVASTATIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Headache",
+      "caption": "Headache",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Intentional product misuse",
+      "caption": "Intentional product misuse",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Blood glucose increased",
+      "caption": "Blood glucose increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Vision blurred",
+      "caption": "Vision blurred",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:193023512",
+      "caption": "Case 193023512 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 0
+    },
+    {
+      "id": "Drug:TIGAN",
+      "caption": "TIGAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Drug ineffective",
+      "caption": "Drug ineffective",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Poor quality product administered",
+      "caption": "Poor quality product administered",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194403642",
+      "caption": "Case 194403642 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 0
+    },
+    {
+      "id": "Drug:Metformin HCl",
+      "caption": "Metformin HCl",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ATENOLOL",
+      "caption": "ATENOLOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal discomfort",
+      "caption": "Abdominal discomfort",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product substitution issue",
+      "caption": "Product substitution issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Elderly",
+      "caption": "Elderly",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:194695462",
+      "caption": "Case 194695462 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 0
+    },
+    {
+      "id": "Drug:PEPCID",
+      "caption": "PEPCID",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LEVETIRACETAM EXTENDED RELEASE TABLET USP, 500 MG",
+      "caption": "LEVETIRACETAM EXTENDED RELEASE TABLET USP, 500 MG",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Seizure",
+      "caption": "Seizure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Adverse drug reaction",
+      "caption": "Adverse drug reaction",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Inappropriate schedule of product administration",
+      "caption": "Inappropriate schedule of product administration",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Other Serious (Important Medical Event)",
+      "caption": "Other Serious (Important Medical Event)",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:194764932",
+      "caption": "Case 194764932 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 0
+    },
+    {
+      "id": "Drug:Cholestyramine (ANDA 211119)",
+      "caption": "Cholestyramine (ANDA 211119)",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal pain upper",
+      "caption": "Abdominal pain upper",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product solubility abnormal",
+      "caption": "Product solubility abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product use complaint",
+      "caption": "Product use complaint",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product physical consistency issue",
+      "caption": "Product physical consistency issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:195041381",
+      "caption": "Case 195041381 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 0
+    },
+    {
+      "id": "Reaction:Choking sensation",
+      "caption": "Choking sensation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cough",
+      "caption": "Cough",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:195195182",
+      "caption": "Case 195195182 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 0
+    },
+    {
+      "id": "Drug:COLESTIPOL HCL",
+      "caption": "COLESTIPOL HCL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BUDESONIDE",
+      "caption": "BUDESONIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Choking",
+      "caption": "Choking",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:195386271",
+      "caption": "Case 195386271 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 0
+    },
+    {
+      "id": "Reaction:Retching",
+      "caption": "Retching",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:195387361",
+      "caption": "Case 195387361 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 0
+    },
+    {
+      "id": "Drug:Valacyclovir Hydrochloride Tablets 1g",
+      "caption": "Valacyclovir Hydrochloride Tablets 1g",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:195633761",
+      "caption": "Case 195633761 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 0
+    },
+    {
+      "id": "Reaction:Mouth swelling",
+      "caption": "Mouth swelling",
+      "labels": [
+        "Reaction"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "CD:1",
+      "from": "Case:183430412",
+      "to": "Drug:Sumatriptan Tablets 50mg",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:2",
+      "from": "Case:183430412",
+      "to": "Reaction:Foreign body in throat",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:3",
+      "from": "Case:183430412",
+      "to": "Reaction:Product odour abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:4",
+      "from": "Case:183430412",
+      "to": "Reaction:Product coating issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:5",
+      "from": "Case:183430412",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:6",
+      "from": "Case:192560332",
+      "to": "Drug:METFORMIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:7",
+      "from": "Case:192560332",
+      "to": "Drug:BYETTA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:8",
+      "from": "Case:192560332",
+      "to": "Drug:ROSUVASTATIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:9",
+      "from": "Case:192560332",
+      "to": "Drug:BYETTA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:10",
+      "from": "Case:192560332",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:11",
+      "from": "Case:192560332",
+      "to": "Reaction:Intentional product misuse",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:12",
+      "from": "Case:192560332",
+      "to": "Reaction:Blood glucose increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:13",
+      "from": "Case:192560332",
+      "to": "Reaction:Vision blurred",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:14",
+      "from": "Case:192560332",
+      "to": "Reaction:Product odour abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:15",
+      "from": "Case:192560332",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:16",
+      "from": "Case:193023512",
+      "to": "Drug:TIGAN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:17",
+      "from": "Case:193023512",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:18",
+      "from": "Case:193023512",
+      "to": "Reaction:Intentional product misuse",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:19",
+      "from": "Case:193023512",
+      "to": "Reaction:Poor quality product administered",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:20",
+      "from": "Case:193023512",
+      "to": "Reaction:Product odour abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:21",
+      "from": "Case:193023512",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:22",
+      "from": "Case:194403642",
+      "to": "Drug:Metformin HCl",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:23",
+      "from": "Case:194403642",
+      "to": "Drug:ATENOLOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:24",
+      "from": "Case:194403642",
+      "to": "Reaction:Abdominal discomfort",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:25",
+      "from": "Case:194403642",
+      "to": "Reaction:Product substitution issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:26",
+      "from": "Case:194403642",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:27",
+      "from": "Case:194403642",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:28",
+      "from": "Case:194695462",
+      "to": "Drug:PEPCID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:29",
+      "from": "Case:194695462",
+      "to": "Drug:LEVETIRACETAM EXTENDED RELEASE TABLET USP, 500 MG",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:30",
+      "from": "Case:194695462",
+      "to": "Drug:LEVETIRACETAM EXTENDED RELEASE TABLET USP, 500 MG",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:31",
+      "from": "Case:194695462",
+      "to": "Reaction:Seizure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:32",
+      "from": "Case:194695462",
+      "to": "Reaction:Adverse drug reaction",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:33",
+      "from": "Case:194695462",
+      "to": "Reaction:Inappropriate schedule of product administration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:34",
+      "from": "Case:194695462",
+      "to": "Reaction:Product substitution issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:35",
+      "from": "Case:194695462",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:36",
+      "from": "Case:194695462",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:37",
+      "from": "Case:194764932",
+      "to": "Drug:Cholestyramine (ANDA 211119)",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:38",
+      "from": "Case:194764932",
+      "to": "Reaction:Abdominal pain upper",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:39",
+      "from": "Case:194764932",
+      "to": "Reaction:Product substitution issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:40",
+      "from": "Case:194764932",
+      "to": "Reaction:Product solubility abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:41",
+      "from": "Case:194764932",
+      "to": "Reaction:Product use complaint",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:42",
+      "from": "Case:194764932",
+      "to": "Reaction:Product physical consistency issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:43",
+      "from": "Case:194764932",
+      "to": "Reaction:Foreign body in throat",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:44",
+      "from": "Case:194764932",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:45",
+      "from": "Case:194764932",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:46",
+      "from": "Case:195041381",
+      "to": "Drug:Cholestyramine (ANDA 211119)",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:47",
+      "from": "Case:195041381",
+      "to": "Reaction:Product solubility abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:48",
+      "from": "Case:195041381",
+      "to": "Reaction:Foreign body in throat",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:49",
+      "from": "Case:195041381",
+      "to": "Reaction:Choking sensation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:50",
+      "from": "Case:195041381",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:51",
+      "from": "Case:195041381",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:52",
+      "from": "Case:195195182",
+      "to": "Drug:COLESTIPOL HCL",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:53",
+      "from": "Case:195195182",
+      "to": "Drug:BUDESONIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:54",
+      "from": "Case:195195182",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:55",
+      "from": "Case:195195182",
+      "to": "Reaction:Product solubility abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:56",
+      "from": "Case:195195182",
+      "to": "Reaction:Choking",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:57",
+      "from": "Case:195195182",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:58",
+      "from": "Case:195195182",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:59",
+      "from": "Case:195386271",
+      "to": "Drug:Cholestyramine (ANDA 211119)",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:60",
+      "from": "Case:195386271",
+      "to": "Reaction:Product solubility abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:61",
+      "from": "Case:195386271",
+      "to": "Reaction:Product use complaint",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:62",
+      "from": "Case:195386271",
+      "to": "Reaction:Product substitution issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:63",
+      "from": "Case:195386271",
+      "to": "Reaction:Retching",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:64",
+      "from": "Case:195386271",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:65",
+      "from": "Case:195387361",
+      "to": "Drug:Valacyclovir Hydrochloride Tablets 1g",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:66",
+      "from": "Case:195387361",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:67",
+      "from": "Case:195387361",
+      "to": "Reaction:Product substitution issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:68",
+      "from": "Case:195387361",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:69",
+      "from": "Case:195633761",
+      "to": "Drug:Cholestyramine (ANDA 211119)",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:70",
+      "from": "Case:195633761",
+      "to": "Reaction:Product solubility abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:71",
+      "from": "Case:195633761",
+      "to": "Reaction:Product use complaint",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:72",
+      "from": "Case:195633761",
+      "to": "Reaction:Foreign body in throat",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:73",
+      "from": "Case:195633761",
+      "to": "Reaction:Mouth swelling",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:74",
+      "from": "Case:195633761",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    }
+  ],
+  "meta": {
+    "caseCount": 11,
+    "nodeCount": 50,
+    "relCount": 74,
+    "capped": false
+  }
+}

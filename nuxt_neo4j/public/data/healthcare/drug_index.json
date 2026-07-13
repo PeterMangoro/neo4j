@@ -1,0 +1,92 @@
+[
+  {
+    "name": "REVLIMID",
+    "slug": "REVLIMID",
+    "severeCases": 218,
+    "source": "severe"
+  },
+  {
+    "name": "NIVOLUMAB",
+    "slug": "NIVOLUMAB",
+    "severeCases": 82,
+    "source": "severe"
+  },
+  {
+    "name": "ATEZOLIZUMAB",
+    "slug": "ATEZOLIZUMAB",
+    "severeCases": 77,
+    "source": "severe"
+  },
+  {
+    "name": "HUMAN NORMAL IMMUNOGLOBULIN; LIQUID",
+    "slug": "HUMAN_NORMAL_IMMUNOGLOBULIN_LIQUID",
+    "severeCases": 66,
+    "source": "severe"
+  },
+  {
+    "name": "POMALYST",
+    "slug": "POMALYST",
+    "severeCases": 65,
+    "source": "severe"
+  },
+  {
+    "name": "DEXAMETHASONE",
+    "slug": "DEXAMETHASONE",
+    "severeCases": 65,
+    "source": "severe"
+  },
+  {
+    "name": "CYCLOPHOSPHAMIDE",
+    "slug": "CYCLOPHOSPHAMIDE",
+    "severeCases": 64,
+    "source": "severe"
+  },
+  {
+    "name": "CUVITRU",
+    "slug": "CUVITRU",
+    "severeCases": 61,
+    "source": "severe"
+  },
+  {
+    "name": "REMODULIN",
+    "slug": "REMODULIN",
+    "severeCases": 57,
+    "source": "severe"
+  },
+  {
+    "name": "Teduglutide",
+    "slug": "Teduglutide",
+    "severeCases": 53,
+    "source": "severe"
+  },
+  {
+    "name": "LYRICA",
+    "slug": "LYRICA",
+    "caseCount": 120,
+    "source": "pfizer"
+  },
+  {
+    "name": "GENOTROPIN",
+    "slug": "GENOTROPIN",
+    "caseCount": 77,
+    "source": "pfizer"
+  },
+  {
+    "name": "IBRANCE",
+    "slug": "IBRANCE",
+    "caseCount": 48,
+    "source": "pfizer"
+  },
+  {
+    "name": "XELJANZ XR",
+    "slug": "XELJANZ_XR",
+    "caseCount": 47,
+    "source": "pfizer"
+  },
+  {
+    "name": "XELJANZ",
+    "slug": "XELJANZ",
+    "caseCount": 32,
+    "source": "pfizer"
+  }
+]

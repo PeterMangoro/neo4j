@@ -1,0 +1,4458 @@
+{
+  "nodes": [
+    {
+      "id": "Case:133685465",
+      "caption": "Case 133685465 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:XELJANZ XR",
+      "caption": "XELJANZ XR",
+      "labels": [
+        "Drug"
+      ],
+      "score": 1.0
+    },
+    {
+      "id": "Reaction:Bronchitis",
+      "caption": "Bronchitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Oral mucosal blistering",
+      "caption": "Oral mucosal blistering",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Drug ineffective",
+      "caption": "Drug ineffective",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Influenza",
+      "caption": "Influenza",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Diabetes mellitus",
+      "caption": "Diabetes mellitus",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Other Serious (Important Medical Event)",
+      "caption": "Other Serious (Important Medical Event)",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adult",
+      "caption": "Adult",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Manufacturer:PFIZER",
+      "caption": "PFIZER",
+      "labels": [
+        "Manufacturer"
+      ]
+    },
+    {
+      "id": "Case:133812074",
+      "caption": "Case 133812074 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:ARAVA",
+      "caption": "ARAVA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:AMLODIPINE",
+      "caption": "AMLODIPINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:SPIRONOLACTONE",
+      "caption": "SPIRONOLACTONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:METOPROLOL",
+      "caption": "METOPROLOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ASPIRIN",
+      "caption": "ASPIRIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TRAZODONE",
+      "caption": "TRAZODONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:OMEPRAZOLE",
+      "caption": "OMEPRAZOLE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:GABAPENTIN",
+      "caption": "GABAPENTIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ESTRADIOL",
+      "caption": "ESTRADIOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Precancerous skin lesion",
+      "caption": "Precancerous skin lesion",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Localised infection",
+      "caption": "Localised infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Elderly",
+      "caption": "Elderly",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:136087405",
+      "caption": "Case 136087405 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:LISINOPRIL",
+      "caption": "LISINOPRIL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:FOLIC ACID",
+      "caption": "FOLIC ACID",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:FENOFIBRATE",
+      "caption": "FENOFIBRATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PREDNISONE",
+      "caption": "PREDNISONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ALLOPURINOL",
+      "caption": "ALLOPURINOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PANTOPRAZOLE",
+      "caption": "PANTOPRAZOLE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:RANITIDINE",
+      "caption": "RANITIDINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:METHOTREXATE",
+      "caption": "METHOTREXATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:RELAFEN",
+      "caption": "RELAFEN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ATORVASTATIN",
+      "caption": "ATORVASTATIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Road traffic accident",
+      "caption": "Road traffic accident",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Diplopia",
+      "caption": "Diplopia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Rib fracture",
+      "caption": "Rib fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pain",
+      "caption": "Pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Spinal fracture",
+      "caption": "Spinal fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypoacusis",
+      "caption": "Hypoacusis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Concussion",
+      "caption": "Concussion",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Hospitalization - Initial or Prolonged",
+      "caption": "Hospitalization - Initial or Prolonged",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:142818274",
+      "caption": "Case 142818274 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Illness",
+      "caption": "Illness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cataract",
+      "caption": "Cataract",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:143277617",
+      "caption": "Case 143277617 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:ALENDRONATE",
+      "caption": "ALENDRONATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LEVOTHYROXINE",
+      "caption": "LEVOTHYROXINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LATANOPROST",
+      "caption": "LATANOPROST",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Tooth infection",
+      "caption": "Tooth infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Body height decreased",
+      "caption": "Body height decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Sinusitis",
+      "caption": "Sinusitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Urinary tract infection",
+      "caption": "Urinary tract infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Rash",
+      "caption": "Rash",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Blood cholesterol increased",
+      "caption": "Blood cholesterol increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:145097607",
+      "caption": "Case 145097607 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN C",
+      "caption": "VITAMIN C",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MYRBETRIQ",
+      "caption": "MYRBETRIQ",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Diarrhoea",
+      "caption": "Diarrhoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dizziness",
+      "caption": "Dizziness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Post procedural discharge",
+      "caption": "Post procedural discharge",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Rhinovirus infection",
+      "caption": "Rhinovirus infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Vomiting",
+      "caption": "Vomiting",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gastroenteritis viral",
+      "caption": "Gastroenteritis viral",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pyrexia",
+      "caption": "Pyrexia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:145302202",
+      "caption": "Case 145302202 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Nasopharyngitis",
+      "caption": "Nasopharyngitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Movement disorder",
+      "caption": "Movement disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:146359628",
+      "caption": "Case 146359628 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:SYNTHROID",
+      "caption": "SYNTHROID",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:NEXIUM",
+      "caption": "NEXIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Pharyngitis",
+      "caption": "Pharyngitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Sensory loss",
+      "caption": "Sensory loss",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Inflammation",
+      "caption": "Inflammation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Arthralgia",
+      "caption": "Arthralgia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Neuropathy peripheral",
+      "caption": "Neuropathy peripheral",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dysphagia",
+      "caption": "Dysphagia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gastric haemorrhage",
+      "caption": "Gastric haemorrhage",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal pain upper",
+      "caption": "Abdominal pain upper",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Diverticulitis",
+      "caption": "Diverticulitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Oesophagitis",
+      "caption": "Oesophagitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gastric disorder",
+      "caption": "Gastric disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:146957752",
+      "caption": "Case 146957752 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:LIPITOR",
+      "caption": "LIPITOR",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Muscle rupture",
+      "caption": "Muscle rupture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:148977408",
+      "caption": "Case 148977408 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:DICYCLOMINE",
+      "caption": "DICYCLOMINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PROZAC",
+      "caption": "PROZAC",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PROPRANOLOL",
+      "caption": "PROPRANOLOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PRILOSEC",
+      "caption": "PRILOSEC",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CYCLOBENZAPRINE",
+      "caption": "CYCLOBENZAPRINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:IMITREX",
+      "caption": "IMITREX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:METHOTREXATE SODIUM",
+      "caption": "METHOTREXATE SODIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CRESTOR",
+      "caption": "CRESTOR",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Fall",
+      "caption": "Fall",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Scar",
+      "caption": "Scar",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Lumbar vertebral fracture",
+      "caption": "Lumbar vertebral fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Perioral dermatitis",
+      "caption": "Perioral dermatitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Infection",
+      "caption": "Infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Haematochezia",
+      "caption": "Haematochezia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fatigue",
+      "caption": "Fatigue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Irritable bowel syndrome",
+      "caption": "Irritable bowel syndrome",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Herpes zoster",
+      "caption": "Herpes zoster",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gastrointestinal haemorrhage",
+      "caption": "Gastrointestinal haemorrhage",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Oropharyngeal pain",
+      "caption": "Oropharyngeal pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Blister",
+      "caption": "Blister",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:149223966",
+      "caption": "Case 149223966 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Tenderness",
+      "caption": "Tenderness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Limb mass",
+      "caption": "Limb mass",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Immune system disorder",
+      "caption": "Immune system disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypersensitivity",
+      "caption": "Hypersensitivity",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Feeling cold",
+      "caption": "Feeling cold",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Upper-airway cough syndrome",
+      "caption": "Upper-airway cough syndrome",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Neck pain",
+      "caption": "Neck pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product prescribing error",
+      "caption": "Product prescribing error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dysphonia",
+      "caption": "Dysphonia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pain in extremity",
+      "caption": "Pain in extremity",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Rhinitis allergic",
+      "caption": "Rhinitis allergic",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Weight increased",
+      "caption": "Weight increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:150227406",
+      "caption": "Case 150227406 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Gait disturbance",
+      "caption": "Gait disturbance",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Erythema",
+      "caption": "Erythema",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pulmonary embolism",
+      "caption": "Pulmonary embolism",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Skin exfoliation",
+      "caption": "Skin exfoliation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Peripheral swelling",
+      "caption": "Peripheral swelling",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Aortic thrombosis",
+      "caption": "Aortic thrombosis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pruritus",
+      "caption": "Pruritus",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:156436893",
+      "caption": "Case 156436893 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:XARELTO",
+      "caption": "XARELTO",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Skin disorder",
+      "caption": "Skin disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Arthropathy",
+      "caption": "Arthropathy",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Ocular hyperaemia",
+      "caption": "Ocular hyperaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Musculoskeletal disorder",
+      "caption": "Musculoskeletal disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dyspnoea",
+      "caption": "Dyspnoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Back disorder",
+      "caption": "Back disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Measles",
+      "caption": "Measles",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Weight abnormal",
+      "caption": "Weight abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Vision blurred",
+      "caption": "Vision blurred",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:158340439",
+      "caption": "Case 158340439 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Immunosuppression",
+      "caption": "Immunosuppression",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cardiac disorder",
+      "caption": "Cardiac disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fungal oesophagitis",
+      "caption": "Fungal oesophagitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:158538165",
+      "caption": "Case 158538165 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Nasal congestion",
+      "caption": "Nasal congestion",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cough",
+      "caption": "Cough",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:162644705",
+      "caption": "Case 162644705 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Intentional product use issue",
+      "caption": "Intentional product use issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:COVID-19",
+      "caption": "COVID-19",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gout",
+      "caption": "Gout",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:163114656",
+      "caption": "Case 163114656 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Limb discomfort",
+      "caption": "Limb discomfort",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Foot fracture",
+      "caption": "Foot fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:163202134",
+      "caption": "Case 163202134 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Respiratory tract infection",
+      "caption": "Respiratory tract infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Candida infection",
+      "caption": "Candida infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:166427009",
+      "caption": "Case 166427009 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN D [COLECALCIFEROL]",
+      "caption": "VITAMIN D [COLECALCIFEROL]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Joint range of motion decreased",
+      "caption": "Joint range of motion decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Headache",
+      "caption": "Headache",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Feeling hot",
+      "caption": "Feeling hot",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Therapeutic product effect incomplete",
+      "caption": "Therapeutic product effect incomplete",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypertension",
+      "caption": "Hypertension",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Musculoskeletal stiffness",
+      "caption": "Musculoskeletal stiffness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product dose omission issue",
+      "caption": "Product dose omission issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pain of skin",
+      "caption": "Pain of skin",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Arthritis",
+      "caption": "Arthritis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:170706264",
+      "caption": "Case 170706264 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Impaired healing",
+      "caption": "Impaired healing",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fibula fracture",
+      "caption": "Fibula fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Tendonitis",
+      "caption": "Tendonitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Postoperative wound infection",
+      "caption": "Postoperative wound infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:171965948",
+      "caption": "Case 171965948 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Circumstance or information capable of leading to medication error",
+      "caption": "Circumstance or information capable of leading to medication error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cardiac failure congestive",
+      "caption": "Cardiac failure congestive",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Head injury",
+      "caption": "Head injury",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Condition aggravated",
+      "caption": "Condition aggravated",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dysstasia",
+      "caption": "Dysstasia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Muscular weakness",
+      "caption": "Muscular weakness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Multiple sclerosis",
+      "caption": "Multiple sclerosis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Walking aid user",
+      "caption": "Walking aid user",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:172139223",
+      "caption": "Case 172139223 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:LEXAPRO",
+      "caption": "LEXAPRO",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN D3",
+      "caption": "VITAMIN D3",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Rheumatoid arthritis",
+      "caption": "Rheumatoid arthritis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gait inability",
+      "caption": "Gait inability",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:172573144",
+      "caption": "Case 172573144 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Mycotic allergy",
+      "caption": "Mycotic allergy",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dry eye",
+      "caption": "Dry eye",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hip fracture",
+      "caption": "Hip fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Throat irritation",
+      "caption": "Throat irritation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Osteoporosis",
+      "caption": "Osteoporosis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Lacrimation increased",
+      "caption": "Lacrimation increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:173186783",
+      "caption": "Case 173186783 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:174405683",
+      "caption": "Case 174405683 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Pneumonia",
+      "caption": "Pneumonia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Back pain",
+      "caption": "Back pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Asthenia",
+      "caption": "Asthenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Chest pain",
+      "caption": "Chest pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Memory impairment",
+      "caption": "Memory impairment",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:175089894",
+      "caption": "Case 175089894 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:176048936",
+      "caption": "Case 176048936 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Intentional product misuse",
+      "caption": "Intentional product misuse",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Malaise",
+      "caption": "Malaise",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:179394362",
+      "caption": "Case 179394362 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Confusional state",
+      "caption": "Confusional state",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:180492207",
+      "caption": "Case 180492207 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Death",
+      "caption": "Death",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Death",
+      "caption": "Death",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:181196073",
+      "caption": "Case 181196073 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:183659774",
+      "caption": "Case 183659774 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:190636664",
+      "caption": "Case 190636664 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:191039663",
+      "caption": "Case 191039663 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:192380172",
+      "caption": "Case 192380172 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:193619975",
+      "caption": "Case 193619975 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Feeling abnormal",
+      "caption": "Feeling abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194537022",
+      "caption": "Case 194537022 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:194838692",
+      "caption": "Case 194838692 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:195113642",
+      "caption": "Case 195113642 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:1339040816",
+      "caption": "Case 1339040816 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:1435140411",
+      "caption": "Case 1435140411 (F)",
+      "labels": [
+        "Case"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "CD:1",
+      "from": "Case:133685465",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:2",
+      "from": "Case:133685465",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:3",
+      "from": "Case:133685465",
+      "to": "Reaction:Bronchitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:4",
+      "from": "Case:133685465",
+      "to": "Reaction:Oral mucosal blistering",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:5",
+      "from": "Case:133685465",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:6",
+      "from": "Case:133685465",
+      "to": "Reaction:Influenza",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:7",
+      "from": "Case:133685465",
+      "to": "Reaction:Diabetes mellitus",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:8",
+      "from": "Case:133685465",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:9",
+      "from": "Case:133685465",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:10",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:133685465",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:11",
+      "from": "Case:133812074",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:12",
+      "from": "Case:133812074",
+      "to": "Drug:ARAVA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:13",
+      "from": "Case:133812074",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:14",
+      "from": "Case:133812074",
+      "to": "Drug:AMLODIPINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:15",
+      "from": "Case:133812074",
+      "to": "Drug:SPIRONOLACTONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:16",
+      "from": "Case:133812074",
+      "to": "Drug:METOPROLOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:17",
+      "from": "Case:133812074",
+      "to": "Drug:ASPIRIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:18",
+      "from": "Case:133812074",
+      "to": "Drug:TRAZODONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:19",
+      "from": "Case:133812074",
+      "to": "Drug:OMEPRAZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:20",
+      "from": "Case:133812074",
+      "to": "Drug:GABAPENTIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:21",
+      "from": "Case:133812074",
+      "to": "Drug:ESTRADIOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:22",
+      "from": "Case:133812074",
+      "to": "Reaction:Precancerous skin lesion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:23",
+      "from": "Case:133812074",
+      "to": "Reaction:Localised infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:24",
+      "from": "Case:133812074",
+      "to": "Reaction:Bronchitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:25",
+      "from": "Case:133812074",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:26",
+      "from": "Case:133812074",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:27",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:133812074",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:28",
+      "from": "Case:136087405",
+      "to": "Drug:LISINOPRIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:29",
+      "from": "Case:136087405",
+      "to": "Drug:FOLIC ACID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:30",
+      "from": "Case:136087405",
+      "to": "Drug:FENOFIBRATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:31",
+      "from": "Case:136087405",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:32",
+      "from": "Case:136087405",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:33",
+      "from": "Case:136087405",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:34",
+      "from": "Case:136087405",
+      "to": "Drug:ALLOPURINOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:35",
+      "from": "Case:136087405",
+      "to": "Drug:PANTOPRAZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:36",
+      "from": "Case:136087405",
+      "to": "Drug:RANITIDINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:37",
+      "from": "Case:136087405",
+      "to": "Drug:METHOTREXATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:38",
+      "from": "Case:136087405",
+      "to": "Drug:RELAFEN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:39",
+      "from": "Case:136087405",
+      "to": "Drug:ATORVASTATIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:40",
+      "from": "Case:136087405",
+      "to": "Reaction:Road traffic accident",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:41",
+      "from": "Case:136087405",
+      "to": "Reaction:Diplopia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:42",
+      "from": "Case:136087405",
+      "to": "Reaction:Rib fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:43",
+      "from": "Case:136087405",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:44",
+      "from": "Case:136087405",
+      "to": "Reaction:Spinal fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:45",
+      "from": "Case:136087405",
+      "to": "Reaction:Hypoacusis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:46",
+      "from": "Case:136087405",
+      "to": "Reaction:Concussion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:47",
+      "from": "Case:136087405",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:48",
+      "from": "Case:136087405",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:49",
+      "from": "Case:136087405",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:50",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:136087405",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:51",
+      "from": "Case:142818274",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:52",
+      "from": "Case:142818274",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:53",
+      "from": "Case:142818274",
+      "to": "Reaction:Cataract",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:54",
+      "from": "Case:142818274",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:55",
+      "from": "Case:142818274",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:56",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:142818274",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:57",
+      "from": "Case:143277617",
+      "to": "Drug:ALENDRONATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:58",
+      "from": "Case:143277617",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:59",
+      "from": "Case:143277617",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:60",
+      "from": "Case:143277617",
+      "to": "Drug:LEVOTHYROXINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:61",
+      "from": "Case:143277617",
+      "to": "Drug:LATANOPROST",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:62",
+      "from": "Case:143277617",
+      "to": "Reaction:Tooth infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:63",
+      "from": "Case:143277617",
+      "to": "Reaction:Body height decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:64",
+      "from": "Case:143277617",
+      "to": "Reaction:Hypoacusis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:65",
+      "from": "Case:143277617",
+      "to": "Reaction:Sinusitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:66",
+      "from": "Case:143277617",
+      "to": "Reaction:Urinary tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:67",
+      "from": "Case:143277617",
+      "to": "Reaction:Rash",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:68",
+      "from": "Case:143277617",
+      "to": "Reaction:Blood cholesterol increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:69",
+      "from": "Case:143277617",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:70",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:143277617",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:71",
+      "from": "Case:145097607",
+      "to": "Drug:VITAMIN C",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:72",
+      "from": "Case:145097607",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:73",
+      "from": "Case:145097607",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:74",
+      "from": "Case:145097607",
+      "to": "Drug:MYRBETRIQ",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:75",
+      "from": "Case:145097607",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:76",
+      "from": "Case:145097607",
+      "to": "Reaction:Influenza",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:77",
+      "from": "Case:145097607",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:78",
+      "from": "Case:145097607",
+      "to": "Reaction:Dizziness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:79",
+      "from": "Case:145097607",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:80",
+      "from": "Case:145097607",
+      "to": "Reaction:Post procedural discharge",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:81",
+      "from": "Case:145097607",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:82",
+      "from": "Case:145097607",
+      "to": "Reaction:Rhinovirus infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:83",
+      "from": "Case:145097607",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:84",
+      "from": "Case:145097607",
+      "to": "Reaction:Gastroenteritis viral",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:85",
+      "from": "Case:145097607",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:86",
+      "from": "Case:145097607",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:87",
+      "from": "Case:145097607",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:88",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:145097607",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:89",
+      "from": "Case:145302202",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:90",
+      "from": "Case:145302202",
+      "to": "Reaction:Nasopharyngitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:91",
+      "from": "Case:145302202",
+      "to": "Reaction:Movement disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:92",
+      "from": "Case:145302202",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:93",
+      "from": "Case:145302202",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:94",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:145302202",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:95",
+      "from": "Case:146359628",
+      "to": "Drug:SYNTHROID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:96",
+      "from": "Case:146359628",
+      "to": "Drug:NEXIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:97",
+      "from": "Case:146359628",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:98",
+      "from": "Case:146359628",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:99",
+      "from": "Case:146359628",
+      "to": "Reaction:Pharyngitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:100",
+      "from": "Case:146359628",
+      "to": "Reaction:Sensory loss",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:101",
+      "from": "Case:146359628",
+      "to": "Reaction:Inflammation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:102",
+      "from": "Case:146359628",
+      "to": "Reaction:Cataract",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:103",
+      "from": "Case:146359628",
+      "to": "Reaction:Arthralgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:104",
+      "from": "Case:146359628",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:105",
+      "from": "Case:146359628",
+      "to": "Reaction:Neuropathy peripheral",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:106",
+      "from": "Case:146359628",
+      "to": "Reaction:Dysphagia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:107",
+      "from": "Case:146359628",
+      "to": "Reaction:Gastric haemorrhage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:108",
+      "from": "Case:146359628",
+      "to": "Reaction:Abdominal pain upper",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:109",
+      "from": "Case:146359628",
+      "to": "Reaction:Diverticulitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:110",
+      "from": "Case:146359628",
+      "to": "Reaction:Oesophagitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:111",
+      "from": "Case:146359628",
+      "to": "Reaction:Nasopharyngitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:112",
+      "from": "Case:146359628",
+      "to": "Reaction:Gastric disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:113",
+      "from": "Case:146359628",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:114",
+      "from": "Case:146359628",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:115",
+      "from": "Case:146359628",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:116",
+      "from": "Case:146359628",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:117",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:146359628",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:118",
+      "from": "Case:146957752",
+      "to": "Drug:LIPITOR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:119",
+      "from": "Case:146957752",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:120",
+      "from": "Case:146957752",
+      "to": "Reaction:Muscle rupture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:121",
+      "from": "Case:146957752",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:122",
+      "from": "Case:146957752",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:123",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:146957752",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:124",
+      "from": "Case:148977408",
+      "to": "Drug:DICYCLOMINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:125",
+      "from": "Case:148977408",
+      "to": "Drug:PROZAC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:126",
+      "from": "Case:148977408",
+      "to": "Drug:PROPRANOLOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:127",
+      "from": "Case:148977408",
+      "to": "Drug:PRILOSEC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:128",
+      "from": "Case:148977408",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:129",
+      "from": "Case:148977408",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:130",
+      "from": "Case:148977408",
+      "to": "Drug:CYCLOBENZAPRINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:131",
+      "from": "Case:148977408",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:132",
+      "from": "Case:148977408",
+      "to": "Drug:IMITREX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:133",
+      "from": "Case:148977408",
+      "to": "Drug:METHOTREXATE SODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:134",
+      "from": "Case:148977408",
+      "to": "Drug:CRESTOR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:135",
+      "from": "Case:148977408",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:136",
+      "from": "Case:148977408",
+      "to": "Reaction:Scar",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:137",
+      "from": "Case:148977408",
+      "to": "Reaction:Lumbar vertebral fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:138",
+      "from": "Case:148977408",
+      "to": "Reaction:Perioral dermatitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:139",
+      "from": "Case:148977408",
+      "to": "Reaction:Infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:140",
+      "from": "Case:148977408",
+      "to": "Reaction:Rash",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:141",
+      "from": "Case:148977408",
+      "to": "Reaction:Haematochezia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:142",
+      "from": "Case:148977408",
+      "to": "Reaction:Influenza",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:143",
+      "from": "Case:148977408",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:144",
+      "from": "Case:148977408",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:145",
+      "from": "Case:148977408",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:146",
+      "from": "Case:148977408",
+      "to": "Reaction:Muscle rupture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:147",
+      "from": "Case:148977408",
+      "to": "Reaction:Irritable bowel syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:148",
+      "from": "Case:148977408",
+      "to": "Reaction:Herpes zoster",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:149",
+      "from": "Case:148977408",
+      "to": "Reaction:Gastrointestinal haemorrhage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:150",
+      "from": "Case:148977408",
+      "to": "Reaction:Oropharyngeal pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:151",
+      "from": "Case:148977408",
+      "to": "Reaction:Blister",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:152",
+      "from": "Case:148977408",
+      "to": "Reaction:Gastric disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:153",
+      "from": "Case:148977408",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:154",
+      "from": "Case:148977408",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:155",
+      "from": "Case:148977408",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:156",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:148977408",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:157",
+      "from": "Case:149223966",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:158",
+      "from": "Case:149223966",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:159",
+      "from": "Case:149223966",
+      "to": "Reaction:Tenderness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:160",
+      "from": "Case:149223966",
+      "to": "Reaction:Limb mass",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:161",
+      "from": "Case:149223966",
+      "to": "Reaction:Arthralgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:162",
+      "from": "Case:149223966",
+      "to": "Reaction:Immune system disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:163",
+      "from": "Case:149223966",
+      "to": "Reaction:Hypersensitivity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:164",
+      "from": "Case:149223966",
+      "to": "Reaction:Feeling cold",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:165",
+      "from": "Case:149223966",
+      "to": "Reaction:Nasopharyngitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:166",
+      "from": "Case:149223966",
+      "to": "Reaction:Upper-airway cough syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:167",
+      "from": "Case:149223966",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:168",
+      "from": "Case:149223966",
+      "to": "Reaction:Neck pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:169",
+      "from": "Case:149223966",
+      "to": "Reaction:Product prescribing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:170",
+      "from": "Case:149223966",
+      "to": "Reaction:Dysphonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:171",
+      "from": "Case:149223966",
+      "to": "Reaction:Pain in extremity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:172",
+      "from": "Case:149223966",
+      "to": "Reaction:Rhinitis allergic",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:173",
+      "from": "Case:149223966",
+      "to": "Reaction:Weight increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:174",
+      "from": "Case:149223966",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:175",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:149223966",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:176",
+      "from": "Case:150227406",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:177",
+      "from": "Case:150227406",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:178",
+      "from": "Case:150227406",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:179",
+      "from": "Case:150227406",
+      "to": "Reaction:Gait disturbance",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:180",
+      "from": "Case:150227406",
+      "to": "Reaction:Erythema",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:181",
+      "from": "Case:150227406",
+      "to": "Reaction:Pulmonary embolism",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:182",
+      "from": "Case:150227406",
+      "to": "Reaction:Skin exfoliation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:183",
+      "from": "Case:150227406",
+      "to": "Reaction:Peripheral swelling",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:184",
+      "from": "Case:150227406",
+      "to": "Reaction:Pain in extremity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:185",
+      "from": "Case:150227406",
+      "to": "Reaction:Aortic thrombosis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:186",
+      "from": "Case:150227406",
+      "to": "Reaction:Pruritus",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:187",
+      "from": "Case:150227406",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:188",
+      "from": "Case:150227406",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:189",
+      "from": "Case:150227406",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:190",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:150227406",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:191",
+      "from": "Case:156436893",
+      "to": "Drug:XARELTO",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:192",
+      "from": "Case:156436893",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:193",
+      "from": "Case:156436893",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:194",
+      "from": "Case:156436893",
+      "to": "Reaction:Skin disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:195",
+      "from": "Case:156436893",
+      "to": "Reaction:Arthropathy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:196",
+      "from": "Case:156436893",
+      "to": "Reaction:Ocular hyperaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:197",
+      "from": "Case:156436893",
+      "to": "Reaction:Rash",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:198",
+      "from": "Case:156436893",
+      "to": "Reaction:Musculoskeletal disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:199",
+      "from": "Case:156436893",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:200",
+      "from": "Case:156436893",
+      "to": "Reaction:Back disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:201",
+      "from": "Case:156436893",
+      "to": "Reaction:Measles",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:202",
+      "from": "Case:156436893",
+      "to": "Reaction:Weight abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:203",
+      "from": "Case:156436893",
+      "to": "Reaction:Vision blurred",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:204",
+      "from": "Case:156436893",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:205",
+      "from": "Case:156436893",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:206",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:156436893",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:207",
+      "from": "Case:158340439",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:208",
+      "from": "Case:158340439",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:209",
+      "from": "Case:158340439",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:210",
+      "from": "Case:158340439",
+      "to": "Reaction:Infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:211",
+      "from": "Case:158340439",
+      "to": "Reaction:Immunosuppression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:212",
+      "from": "Case:158340439",
+      "to": "Reaction:Cardiac disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:213",
+      "from": "Case:158340439",
+      "to": "Reaction:Fungal oesophagitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:214",
+      "from": "Case:158340439",
+      "to": "Reaction:Herpes zoster",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:215",
+      "from": "Case:158340439",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:216",
+      "from": "Case:158340439",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:217",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:158340439",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:218",
+      "from": "Case:158538165",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:219",
+      "from": "Case:158538165",
+      "to": "Reaction:Product prescribing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:220",
+      "from": "Case:158538165",
+      "to": "Reaction:Nasal congestion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:221",
+      "from": "Case:158538165",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:222",
+      "from": "Case:158538165",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:223",
+      "from": "Case:158538165",
+      "to": "Reaction:Influenza",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:224",
+      "from": "Case:158538165",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:225",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:158538165",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:226",
+      "from": "Case:162644705",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:227",
+      "from": "Case:162644705",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:228",
+      "from": "Case:162644705",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:229",
+      "from": "Case:162644705",
+      "to": "Reaction:Intentional product use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:230",
+      "from": "Case:162644705",
+      "to": "Reaction:Peripheral swelling",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:231",
+      "from": "Case:162644705",
+      "to": "Reaction:COVID-19",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:232",
+      "from": "Case:162644705",
+      "to": "Reaction:Gout",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:233",
+      "from": "Case:162644705",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:234",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:162644705",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:235",
+      "from": "Case:163114656",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:236",
+      "from": "Case:163114656",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:237",
+      "from": "Case:163114656",
+      "to": "Drug:LEVOTHYROXINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:238",
+      "from": "Case:163114656",
+      "to": "Drug:METHOTREXATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:239",
+      "from": "Case:163114656",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:240",
+      "from": "Case:163114656",
+      "to": "Reaction:Limb discomfort",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:241",
+      "from": "Case:163114656",
+      "to": "Reaction:Pain in extremity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:242",
+      "from": "Case:163114656",
+      "to": "Reaction:Arthralgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:243",
+      "from": "Case:163114656",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:244",
+      "from": "Case:163114656",
+      "to": "Reaction:Foot fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:245",
+      "from": "Case:163114656",
+      "to": "Reaction:Gait disturbance",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:246",
+      "from": "Case:163114656",
+      "to": "Reaction:Peripheral swelling",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:247",
+      "from": "Case:163114656",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:248",
+      "from": "Case:163114656",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:249",
+      "from": "Case:163114656",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:250",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:163114656",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:251",
+      "from": "Case:163202134",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:252",
+      "from": "Case:163202134",
+      "to": "Reaction:Respiratory tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:253",
+      "from": "Case:163202134",
+      "to": "Reaction:Candida infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:254",
+      "from": "Case:163202134",
+      "to": "Reaction:Urinary tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:255",
+      "from": "Case:163202134",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:256",
+      "from": "Case:163202134",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:257",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:163202134",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:258",
+      "from": "Case:166427009",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:259",
+      "from": "Case:166427009",
+      "to": "Drug:VITAMIN D [COLECALCIFEROL]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:260",
+      "from": "Case:166427009",
+      "to": "Reaction:Joint range of motion decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:261",
+      "from": "Case:166427009",
+      "to": "Reaction:Gait disturbance",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:262",
+      "from": "Case:166427009",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:263",
+      "from": "Case:166427009",
+      "to": "Reaction:Feeling hot",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:264",
+      "from": "Case:166427009",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:265",
+      "from": "Case:166427009",
+      "to": "Reaction:Therapeutic product effect incomplete",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:266",
+      "from": "Case:166427009",
+      "to": "Reaction:Hypertension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:267",
+      "from": "Case:166427009",
+      "to": "Reaction:Musculoskeletal stiffness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:268",
+      "from": "Case:166427009",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:269",
+      "from": "Case:166427009",
+      "to": "Reaction:Pain in extremity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:270",
+      "from": "Case:166427009",
+      "to": "Reaction:Pain of skin",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:271",
+      "from": "Case:166427009",
+      "to": "Reaction:Arthritis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:272",
+      "from": "Case:166427009",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:273",
+      "from": "Case:166427009",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:274",
+      "from": "Case:166427009",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:275",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:166427009",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:276",
+      "from": "Case:170706264",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:277",
+      "from": "Case:170706264",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:278",
+      "from": "Case:170706264",
+      "to": "Reaction:Impaired healing",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:279",
+      "from": "Case:170706264",
+      "to": "Reaction:Fibula fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:280",
+      "from": "Case:170706264",
+      "to": "Reaction:Tendonitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:281",
+      "from": "Case:170706264",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:282",
+      "from": "Case:170706264",
+      "to": "Reaction:Postoperative wound infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:283",
+      "from": "Case:170706264",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:284",
+      "from": "Case:170706264",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:285",
+      "from": "Case:170706264",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:286",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:170706264",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:287",
+      "from": "Case:171965948",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:288",
+      "from": "Case:171965948",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:289",
+      "from": "Case:171965948",
+      "to": "Reaction:Circumstance or information capable of leading to medication error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:290",
+      "from": "Case:171965948",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:291",
+      "from": "Case:171965948",
+      "to": "Reaction:Cardiac failure congestive",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:292",
+      "from": "Case:171965948",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:293",
+      "from": "Case:171965948",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:294",
+      "from": "Case:171965948",
+      "to": "Reaction:Pain in extremity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:295",
+      "from": "Case:171965948",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:296",
+      "from": "Case:171965948",
+      "to": "Reaction:Head injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:297",
+      "from": "Case:171965948",
+      "to": "Reaction:Condition aggravated",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:298",
+      "from": "Case:171965948",
+      "to": "Reaction:Dysstasia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:299",
+      "from": "Case:171965948",
+      "to": "Reaction:Muscular weakness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:300",
+      "from": "Case:171965948",
+      "to": "Reaction:Multiple sclerosis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:301",
+      "from": "Case:171965948",
+      "to": "Reaction:Walking aid user",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:302",
+      "from": "Case:171965948",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:303",
+      "from": "Case:171965948",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:304",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:171965948",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:305",
+      "from": "Case:172139223",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:306",
+      "from": "Case:172139223",
+      "to": "Drug:LEXAPRO",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:307",
+      "from": "Case:172139223",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:308",
+      "from": "Case:172139223",
+      "to": "Drug:SYNTHROID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:309",
+      "from": "Case:172139223",
+      "to": "Drug:VITAMIN D3",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:310",
+      "from": "Case:172139223",
+      "to": "Reaction:Rheumatoid arthritis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:311",
+      "from": "Case:172139223",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:312",
+      "from": "Case:172139223",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:313",
+      "from": "Case:172139223",
+      "to": "Reaction:Gait inability",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:314",
+      "from": "Case:172139223",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:315",
+      "from": "Case:172139223",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:316",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:172139223",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:317",
+      "from": "Case:172573144",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:318",
+      "from": "Case:172573144",
+      "to": "Drug:METHOTREXATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:319",
+      "from": "Case:172573144",
+      "to": "Reaction:Mycotic allergy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:320",
+      "from": "Case:172573144",
+      "to": "Reaction:Infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:321",
+      "from": "Case:172573144",
+      "to": "Reaction:Dry eye",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:322",
+      "from": "Case:172573144",
+      "to": "Reaction:Hip fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:323",
+      "from": "Case:172573144",
+      "to": "Reaction:Throat irritation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:324",
+      "from": "Case:172573144",
+      "to": "Reaction:Osteoporosis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:325",
+      "from": "Case:172573144",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:326",
+      "from": "Case:172573144",
+      "to": "Reaction:Lacrimation increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:327",
+      "from": "Case:172573144",
+      "to": "Reaction:Upper-airway cough syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:328",
+      "from": "Case:172573144",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:329",
+      "from": "Case:172573144",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:330",
+      "from": "Case:172573144",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:331",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:172573144",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:332",
+      "from": "Case:173186783",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:334",
+      "from": "Case:173186783",
+      "to": "Reaction:Musculoskeletal stiffness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:338",
+      "from": "Case:173186783",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:339",
+      "from": "Case:173186783",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:340",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:173186783",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:342",
+      "from": "Case:174405683",
+      "to": "Drug:ATORVASTATIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:345",
+      "from": "Case:174405683",
+      "to": "Drug:FOLIC ACID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:346",
+      "from": "Case:174405683",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:347",
+      "from": "Case:174405683",
+      "to": "Drug:VITAMIN D3",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:350",
+      "from": "Case:174405683",
+      "to": "Reaction:Pneumonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:351",
+      "from": "Case:174405683",
+      "to": "Reaction:Back pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:352",
+      "from": "Case:174405683",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:353",
+      "from": "Case:174405683",
+      "to": "Reaction:Peripheral swelling",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:355",
+      "from": "Case:174405683",
+      "to": "Reaction:Asthenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:356",
+      "from": "Case:174405683",
+      "to": "Reaction:Chest pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:359",
+      "from": "Case:174405683",
+      "to": "Reaction:Influenza",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:360",
+      "from": "Case:174405683",
+      "to": "Reaction:Weight increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:361",
+      "from": "Case:174405683",
+      "to": "Reaction:Memory impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:362",
+      "from": "Case:174405683",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:363",
+      "from": "Case:174405683",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:364",
+      "from": "Case:174405683",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:365",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:174405683",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:366",
+      "from": "Case:175089894",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:367",
+      "from": "Case:175089894",
+      "to": "Reaction:COVID-19",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:368",
+      "from": "Case:175089894",
+      "to": "Reaction:Diverticulitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:370",
+      "from": "Case:175089894",
+      "to": "Reaction:Urinary tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:371",
+      "from": "Case:175089894",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:372",
+      "from": "Case:175089894",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:373",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:175089894",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:378",
+      "from": "Case:176048936",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:381",
+      "from": "Case:176048936",
+      "to": "Drug:FOLIC ACID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:382",
+      "from": "Case:176048936",
+      "to": "Drug:TRAZODONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:388",
+      "from": "Case:176048936",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:390",
+      "from": "Case:176048936",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:393",
+      "from": "Case:176048936",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:394",
+      "from": "Case:176048936",
+      "to": "Reaction:Condition aggravated",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:396",
+      "from": "Case:176048936",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:400",
+      "from": "Case:176048936",
+      "to": "Reaction:Urinary tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:401",
+      "from": "Case:176048936",
+      "to": "Reaction:Intentional product misuse",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:402",
+      "from": "Case:176048936",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:404",
+      "from": "Case:176048936",
+      "to": "Reaction:Sinusitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:405",
+      "from": "Case:176048936",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:406",
+      "from": "Case:176048936",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:407",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:176048936",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:408",
+      "from": "Case:179394362",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:409",
+      "from": "Case:179394362",
+      "to": "Reaction:Gait inability",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:410",
+      "from": "Case:179394362",
+      "to": "Reaction:Back pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:411",
+      "from": "Case:179394362",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:413",
+      "from": "Case:179394362",
+      "to": "Reaction:Confusional state",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:414",
+      "from": "Case:179394362",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:415",
+      "from": "Case:179394362",
+      "to": "Reaction:Memory impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:416",
+      "from": "Case:179394362",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:417",
+      "from": "Case:179394362",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:418",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:179394362",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:419",
+      "from": "Case:180492207",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:420",
+      "from": "Case:180492207",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:421",
+      "from": "Case:180492207",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:422",
+      "from": "Case:180492207",
+      "to": "Reaction:Death",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:423",
+      "from": "Case:180492207",
+      "to": "Reaction:Memory impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:427",
+      "from": "Case:180492207",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:428",
+      "from": "Case:180492207",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:429",
+      "from": "Case:180492207",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:430",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:180492207",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:431",
+      "from": "Case:181196073",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:433",
+      "from": "Case:181196073",
+      "to": "Reaction:Musculoskeletal stiffness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:434",
+      "from": "Case:181196073",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:435",
+      "from": "Case:181196073",
+      "to": "Reaction:Arthralgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:436",
+      "from": "Case:181196073",
+      "to": "Reaction:Memory impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:437",
+      "from": "Case:181196073",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:438",
+      "from": "Case:181196073",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:439",
+      "from": "Case:181196073",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:440",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:181196073",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:441",
+      "from": "Case:183659774",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:442",
+      "from": "Case:183659774",
+      "to": "Drug:METHOTREXATE SODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:443",
+      "from": "Case:183659774",
+      "to": "Reaction:Arthralgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:445",
+      "from": "Case:183659774",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:446",
+      "from": "Case:183659774",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:447",
+      "from": "Case:183659774",
+      "to": "Reaction:Pain in extremity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:448",
+      "from": "Case:183659774",
+      "to": "Reaction:Arthritis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:449",
+      "from": "Case:183659774",
+      "to": "Reaction:Confusional state",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:450",
+      "from": "Case:183659774",
+      "to": "Reaction:Movement disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:451",
+      "from": "Case:183659774",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:452",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:183659774",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:453",
+      "from": "Case:190636664",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:454",
+      "from": "Case:190636664",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:455",
+      "from": "Case:190636664",
+      "to": "Reaction:Herpes zoster",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:456",
+      "from": "Case:190636664",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:457",
+      "from": "Case:190636664",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:458",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:190636664",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:459",
+      "from": "Case:191039663",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CO:462",
+      "from": "Case:191039663",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:463",
+      "from": "Case:191039663",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:464",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:191039663",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:465",
+      "from": "Case:192380172",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:466",
+      "from": "Case:192380172",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:467",
+      "from": "Case:192380172",
+      "to": "Reaction:Bronchitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:468",
+      "from": "Case:192380172",
+      "to": "Reaction:Pneumonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:469",
+      "from": "Case:192380172",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:470",
+      "from": "Case:192380172",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:471",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:192380172",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:475",
+      "from": "Case:193619975",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:479",
+      "from": "Case:193619975",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:480",
+      "from": "Case:193619975",
+      "to": "Reaction:Arthralgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:481",
+      "from": "Case:193619975",
+      "to": "Reaction:Feeling abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:482",
+      "from": "Case:193619975",
+      "to": "Reaction:Rheumatoid arthritis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:483",
+      "from": "Case:193619975",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:484",
+      "from": "Case:193619975",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:485",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:193619975",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:486",
+      "from": "Case:194537022",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:487",
+      "from": "Case:194537022",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:488",
+      "from": "Case:194537022",
+      "to": "Reaction:Haematochezia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:489",
+      "from": "Case:194537022",
+      "to": "Reaction:Asthenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:490",
+      "from": "Case:194537022",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:491",
+      "from": "Case:194537022",
+      "to": "Reaction:Feeling abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:492",
+      "from": "Case:194537022",
+      "to": "Reaction:Skin exfoliation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:495",
+      "from": "Case:194537022",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:498",
+      "from": "Case:194537022",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:499",
+      "from": "Case:194537022",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:500",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:194537022",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:501",
+      "from": "Case:194838692",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:502",
+      "from": "Case:194838692",
+      "to": "Reaction:Intentional product misuse",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:503",
+      "from": "Case:194838692",
+      "to": "Reaction:Death",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:504",
+      "from": "Case:194838692",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:505",
+      "from": "Case:194838692",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:506",
+      "from": "Case:194838692",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:507",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:194838692",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:508",
+      "from": "Case:195113642",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:510",
+      "from": "Case:195113642",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:511",
+      "from": "Case:195113642",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:514",
+      "from": "Case:195113642",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:515",
+      "from": "Case:195113642",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:516",
+      "from": "Case:195113642",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:517",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:195113642",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:518",
+      "from": "Case:1339040816",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:519",
+      "from": "Case:1339040816",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:520",
+      "from": "Case:1339040816",
+      "to": "Reaction:Condition aggravated",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:521",
+      "from": "Case:1339040816",
+      "to": "Reaction:Product prescribing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:522",
+      "from": "Case:1339040816",
+      "to": "Reaction:Foot fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:525",
+      "from": "Case:1339040816",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:527",
+      "from": "Case:1339040816",
+      "to": "Reaction:Chest pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:529",
+      "from": "Case:1339040816",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:530",
+      "from": "Case:1339040816",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:531",
+      "from": "Case:1339040816",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:532",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:1339040816",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:535",
+      "from": "Case:1435140411",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:538",
+      "from": "Case:1435140411",
+      "to": "Drug:XELJANZ XR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:540",
+      "from": "Case:1435140411",
+      "to": "Reaction:Hypertension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:542",
+      "from": "Case:1435140411",
+      "to": "Reaction:Condition aggravated",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:543",
+      "from": "Case:1435140411",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:545",
+      "from": "Case:1435140411",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:546",
+      "from": "Case:1435140411",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:547",
+      "from": "Case:1435140411",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:548",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:1435140411",
+      "type": "REGISTERED"
+    }
+  ],
+  "meta": {
+    "caseCount": 40,
+    "nodeCount": 220,
+    "relCount": 484,
+    "capped": true,
+    "focusDrug": "XELJANZ XR"
+  }
+}

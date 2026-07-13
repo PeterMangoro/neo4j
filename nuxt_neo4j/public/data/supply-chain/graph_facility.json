@@ -1,0 +1,218 @@
+{
+  "nodes": [
+    {
+      "id": "Facility:zp7",
+      "caption": "zp7",
+      "labels": [
+        "Facility",
+        "OEM"
+      ],
+      "score": 6.67498e-05
+    },
+    {
+      "id": "Facility:zp8",
+      "caption": "zp8",
+      "labels": [
+        "Facility",
+        "OEM"
+      ],
+      "score": 6.66997e-05
+    },
+    {
+      "id": "Facility:seat-supplier_inv",
+      "caption": "seat-supplier_inv",
+      "labels": [
+        "Facility",
+        "SupplierSite",
+        "Inventory"
+      ],
+      "score": 2.12643e-05
+    },
+    {
+      "id": "Facility:seat-supplier_prod",
+      "caption": "seat-supplier_prod",
+      "labels": [
+        "Facility",
+        "SupplierSite",
+        "Production"
+      ],
+      "score": 1.24601e-05
+    },
+    {
+      "id": "Facility:seat-supplier_trans",
+      "caption": "seat-supplier_trans",
+      "labels": [
+        "Facility",
+        "SupplierSite"
+      ],
+      "score": 1.0657e-05
+    },
+    {
+      "id": "Facility:battery-supplier_inv",
+      "caption": "battery-supplier_inv",
+      "labels": [
+        "Facility",
+        "SupplierSite",
+        "Inventory"
+      ],
+      "score": 2.16622e-05
+    },
+    {
+      "id": "Facility:battery-supplier_prod",
+      "caption": "battery-supplier_prod",
+      "labels": [
+        "Facility",
+        "SupplierSite",
+        "Production"
+      ],
+      "score": 1.29109e-05
+    },
+    {
+      "id": "Facility:battery-supplier_trans",
+      "caption": "battery-supplier_trans",
+      "labels": [
+        "Facility",
+        "SupplierSite"
+      ],
+      "score": 1.0657e-05
+    },
+    {
+      "id": "Facility:gear-supplier_inv",
+      "caption": "gear-supplier_inv",
+      "labels": [
+        "Facility",
+        "SupplierSite",
+        "Inventory"
+      ],
+      "score": 1.16588e-05
+    },
+    {
+      "id": "Facility:gear-supplier_prod",
+      "caption": "gear-supplier_prod",
+      "labels": [
+        "Facility",
+        "SupplierSite",
+        "Production"
+      ],
+      "score": 1.0657e-05
+    },
+    {
+      "id": "Facility:engine-supplier_inv",
+      "caption": "engine-supplier_inv",
+      "labels": [
+        "Facility",
+        "SupplierSite",
+        "Inventory"
+      ],
+      "score": 1.09575e-05
+    },
+    {
+      "id": "Facility:engine-supplier_prod",
+      "caption": "engine-supplier_prod",
+      "labels": [
+        "Facility",
+        "SupplierSite",
+        "Production"
+      ],
+      "score": 1.0657e-05
+    }
+  ],
+  "relationships": [
+    {
+      "id": "SHIPS:0",
+      "from": "Facility:zp7",
+      "to": "Facility:zp8",
+      "type": "SHIPS_TO",
+      "leadTime": 0,
+      "productGroup": "car"
+    },
+    {
+      "id": "SHIPS:1",
+      "from": "Facility:gear-supplier_inv",
+      "to": "Facility:zp7",
+      "type": "SHIPS_TO",
+      "leadTime": 2,
+      "productGroup": "gear"
+    },
+    {
+      "id": "SHIPS:2",
+      "from": "Facility:engine-supplier_inv",
+      "to": "Facility:zp7",
+      "type": "SHIPS_TO",
+      "leadTime": 1,
+      "productGroup": "engine"
+    },
+    {
+      "id": "SHIPS:3",
+      "from": "Facility:gear-supplier_prod",
+      "to": "Facility:gear-supplier_inv",
+      "type": "SHIPS_TO",
+      "leadTime": 2,
+      "productGroup": "gear"
+    },
+    {
+      "id": "SHIPS:4",
+      "from": "Facility:engine-supplier_prod",
+      "to": "Facility:engine-supplier_inv",
+      "type": "SHIPS_TO",
+      "leadTime": 1,
+      "productGroup": "engine"
+    },
+    {
+      "id": "SHIPS:5",
+      "from": "Facility:battery-supplier_inv",
+      "to": "Facility:zp7",
+      "type": "SHIPS_TO",
+      "leadTime": 1,
+      "productGroup": "battery"
+    },
+    {
+      "id": "SHIPS:6",
+      "from": "Facility:seat-supplier_inv",
+      "to": "Facility:zp7",
+      "type": "SHIPS_TO",
+      "leadTime": 0,
+      "productGroup": "seat"
+    },
+    {
+      "id": "SHIPS:7",
+      "from": "Facility:battery-supplier_prod",
+      "to": "Facility:battery-supplier_inv",
+      "type": "SHIPS_TO",
+      "leadTime": 1,
+      "productGroup": "battery"
+    },
+    {
+      "id": "SHIPS:8",
+      "from": "Facility:seat-supplier_prod",
+      "to": "Facility:seat-supplier_inv",
+      "type": "SHIPS_TO",
+      "leadTime": 0,
+      "productGroup": "seat"
+    },
+    {
+      "id": "SHIPS:9",
+      "from": "Facility:seat-supplier_trans",
+      "to": "Facility:seat-supplier_prod",
+      "type": "SHIPS_TO",
+      "leadTime": 23,
+      "productGroup": "seat_componment"
+    },
+    {
+      "id": "SHIPS:10",
+      "from": "Facility:battery-supplier_trans",
+      "to": "Facility:battery-supplier_prod",
+      "type": "SHIPS_TO",
+      "leadTime": 20,
+      "productGroup": "battery_componment"
+    }
+  ],
+  "meta": {
+    "nodeCount": 12,
+    "relCount": 11,
+    "oemNodes": [
+      "zp7",
+      "zp8"
+    ]
+  }
+}

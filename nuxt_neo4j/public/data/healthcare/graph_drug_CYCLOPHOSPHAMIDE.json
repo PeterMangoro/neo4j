@@ -1,0 +1,5280 @@
+{
+  "nodes": [
+    {
+      "id": "Case:118808975",
+      "caption": "Case 118808975 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:DEXAMETHASONE",
+      "caption": "DEXAMETHASONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BUMETANIDE",
+      "caption": "BUMETANIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ASPIRIN",
+      "caption": "ASPIRIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CIALIS",
+      "caption": "CIALIS",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BACLOFEN",
+      "caption": "BACLOFEN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:REVLIMID",
+      "caption": "REVLIMID",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DOCUSATE SODIUM",
+      "caption": "DOCUSATE SODIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CALCITRIOL",
+      "caption": "CALCITRIOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CYCLOPHOSPHAMIDE",
+      "caption": "CYCLOPHOSPHAMIDE",
+      "labels": [
+        "Drug"
+      ],
+      "score": 1.0
+    },
+    {
+      "id": "Drug:ALLOPURINOL",
+      "caption": "ALLOPURINOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VELCADE",
+      "caption": "VELCADE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Plasma cell leukaemia",
+      "caption": "Plasma cell leukaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Anaemia",
+      "caption": "Anaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Renal failure",
+      "caption": "Renal failure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Arteriovenous fistula occlusion",
+      "caption": "Arteriovenous fistula occlusion",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dyspnoea",
+      "caption": "Dyspnoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Other Serious (Important Medical Event)",
+      "caption": "Other Serious (Important Medical Event)",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Outcome:Hospitalization - Initial or Prolonged",
+      "caption": "Hospitalization - Initial or Prolonged",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Outcome:Death",
+      "caption": "Death",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adult",
+      "caption": "Adult",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Manufacturer:CELGENE",
+      "caption": "CELGENE",
+      "labels": [
+        "Manufacturer"
+      ]
+    },
+    {
+      "id": "Case:119119832",
+      "caption": "Case 119119832 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:Vincristine",
+      "caption": "Vincristine",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ETOPOSIDE",
+      "caption": "ETOPOSIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PREDNISONE",
+      "caption": "PREDNISONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:brentuximab vedotin",
+      "caption": "brentuximab vedotin",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DOXORUBICIN",
+      "caption": "DOXORUBICIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Testicular pain",
+      "caption": "Testicular pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Embolism",
+      "caption": "Embolism",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adolescent",
+      "caption": "Adolescent",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Manufacturer:SEATTLE GENETICS",
+      "caption": "SEATTLE GENETICS",
+      "labels": [
+        "Manufacturer"
+      ]
+    },
+    {
+      "id": "Case:131586014",
+      "caption": "Case 131586014 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:CYTARABINE",
+      "caption": "CYTARABINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MERCAPTOPURINE",
+      "caption": "MERCAPTOPURINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:INCB018424",
+      "caption": "INCB018424",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VINCRISTINE SULFATE",
+      "caption": "VINCRISTINE SULFATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PEGASPARGASE",
+      "caption": "PEGASPARGASE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Febrile neutropenia",
+      "caption": "Febrile neutropenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Manufacturer:PFIZER",
+      "caption": "PFIZER",
+      "labels": [
+        "Manufacturer"
+      ]
+    },
+    {
+      "id": "Case:138355402",
+      "caption": "Case 138355402 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:Carfilzomib",
+      "caption": "Carfilzomib",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:POMALYST",
+      "caption": "POMALYST",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Respiratory failure",
+      "caption": "Respiratory failure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pneumonia",
+      "caption": "Pneumonia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Elderly",
+      "caption": "Elderly",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:154622504",
+      "caption": "Case 154622504 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:Daratumumab",
+      "caption": "Daratumumab",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DEXAMETHASONE ORAL",
+      "caption": "DEXAMETHASONE ORAL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Acute kidney injury",
+      "caption": "Acute kidney injury",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:154743486",
+      "caption": "Case 154743486 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:BORTEZOMIB",
+      "caption": "BORTEZOMIB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Panobinostat",
+      "caption": "Panobinostat",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Nausea",
+      "caption": "Nausea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Vomiting",
+      "caption": "Vomiting",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Diarrhoea",
+      "caption": "Diarrhoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:155188342",
+      "caption": "Case 155188342 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:DEXAMETHASONE IV",
+      "caption": "DEXAMETHASONE IV",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ELOTUZUMAB",
+      "caption": "ELOTUZUMAB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Atrial fibrillation",
+      "caption": "Atrial fibrillation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:155259872",
+      "caption": "Case 155259872 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Tumour lysis syndrome",
+      "caption": "Tumour lysis syndrome",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Encephalopathy",
+      "caption": "Encephalopathy",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Plasma cell myeloma",
+      "caption": "Plasma cell myeloma",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Viral upper respiratory tract infection",
+      "caption": "Viral upper respiratory tract infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:156996913",
+      "caption": "Case 156996913 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:VINCRISTINE",
+      "caption": "VINCRISTINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:THIOGUANINE",
+      "caption": "THIOGUANINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LEUCOVORIN",
+      "caption": "LEUCOVORIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Fatigue",
+      "caption": "Fatigue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Platelet count decreased",
+      "caption": "Platelet count decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Weight decreased",
+      "caption": "Weight decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Thrombocytopenia",
+      "caption": "Thrombocytopenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pancytopenia",
+      "caption": "Pancytopenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Nasal congestion",
+      "caption": "Nasal congestion",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Erythema",
+      "caption": "Erythema",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Venoocclusive liver disease",
+      "caption": "Venoocclusive liver disease",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Parainfluenzae virus infection",
+      "caption": "Parainfluenzae virus infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Feeling abnormal",
+      "caption": "Feeling abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Asthenia",
+      "caption": "Asthenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Influenza A virus test positive",
+      "caption": "Influenza A virus test positive",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Headache",
+      "caption": "Headache",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Neutrophil count decreased",
+      "caption": "Neutrophil count decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pain",
+      "caption": "Pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Chills",
+      "caption": "Chills",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Flushing",
+      "caption": "Flushing",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Haematoma",
+      "caption": "Haematoma",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cough",
+      "caption": "Cough",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Decreased appetite",
+      "caption": "Decreased appetite",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Manufacturer:HIKMA",
+      "caption": "HIKMA",
+      "labels": [
+        "Manufacturer"
+      ]
+    },
+    {
+      "id": "Case:160908989",
+      "caption": "Case 160908989 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:Thioguanine",
+      "caption": "Thioguanine",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:METHOTREXATE SODIUM",
+      "caption": "METHOTREXATE SODIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:164113442",
+      "caption": "Case 164113442 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:MELPHALAN",
+      "caption": "MELPHALAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Ixazomib",
+      "caption": "Ixazomib",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CISPLATIN",
+      "caption": "CISPLATIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:KYPROLIS",
+      "caption": "KYPROLIS",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Doxorubicin",
+      "caption": "Doxorubicin",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Myelodysplastic syndrome",
+      "caption": "Myelodysplastic syndrome",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:164878165",
+      "caption": "Case 164878165 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Sepsis",
+      "caption": "Sepsis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Multiple organ dysfunction syndrome",
+      "caption": "Multiple organ dysfunction syndrome",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Upper respiratory tract infection",
+      "caption": "Upper respiratory tract infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypokalaemia",
+      "caption": "Hypokalaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Enterocolitis infectious",
+      "caption": "Enterocolitis infectious",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hyperglycaemia",
+      "caption": "Hyperglycaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Child",
+      "caption": "Child",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:167542407",
+      "caption": "Case 167542407 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:FLORASTOR [SACCHAROMYCES BOULARDII]",
+      "caption": "FLORASTOR [SACCHAROMYCES BOULARDII]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Pegfilgrastim",
+      "caption": "Pegfilgrastim",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:FAMOTIDINE",
+      "caption": "FAMOTIDINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LOMOTIL",
+      "caption": "LOMOTIL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:HYDROCORTISONE",
+      "caption": "HYDROCORTISONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:SIMETHICONE (DIMETHICONE)",
+      "caption": "SIMETHICONE (DIMETHICONE)",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PROCHLORPERAZINE",
+      "caption": "PROCHLORPERAZINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ONDANSETRON",
+      "caption": "ONDANSETRON",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:RITUXIMAB",
+      "caption": "RITUXIMAB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:HYDROCODONE",
+      "caption": "HYDROCODONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ACETAMINOPHEN",
+      "caption": "ACETAMINOPHEN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:OMEGA 3",
+      "caption": "OMEGA 3",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PSYLLIUM",
+      "caption": "PSYLLIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LOPERAMIDE",
+      "caption": "LOPERAMIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ACYCLOVIR",
+      "caption": "ACYCLOVIR",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CHOLESTYRAMINE",
+      "caption": "CHOLESTYRAMINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Small intestinal perforation",
+      "caption": "Small intestinal perforation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hyponatraemia",
+      "caption": "Hyponatraemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Small intestinal obstruction",
+      "caption": "Small intestinal obstruction",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal infection",
+      "caption": "Abdominal infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Manufacturer:ROCHE",
+      "caption": "ROCHE",
+      "labels": [
+        "Manufacturer"
+      ]
+    },
+    {
+      "id": "Case:168945262",
+      "caption": "Case 168945262 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:Brentuximab Vedotin Recombinant",
+      "caption": "Brentuximab Vedotin Recombinant",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ADRIAMYCIN",
+      "caption": "ADRIAMYCIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Clostridium difficile infection",
+      "caption": "Clostridium difficile infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:169005492",
+      "caption": "Case 169005492 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:NIVOLUMAB",
+      "caption": "NIVOLUMAB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DOXORUBICIN HYDROCHLORIDE",
+      "caption": "DOXORUBICIN HYDROCHLORIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "caption": "BRISTOL MYERS SQUIBB",
+      "labels": [
+        "Manufacturer"
+      ]
+    },
+    {
+      "id": "Case:169616132",
+      "caption": "Case 169616132 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Syncope",
+      "caption": "Syncope",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:172208053",
+      "caption": "Case 172208053 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:ASPARAGINASE",
+      "caption": "ASPARAGINASE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal pain",
+      "caption": "Abdominal pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Constipation",
+      "caption": "Constipation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypoglycaemia",
+      "caption": "Hypoglycaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dehydration",
+      "caption": "Dehydration",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Lethargy",
+      "caption": "Lethargy",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Stomatitis",
+      "caption": "Stomatitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Life-Threatening",
+      "caption": "Life-Threatening",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:172775763",
+      "caption": "Case 172775763 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:METHOTREXAT",
+      "caption": "METHOTREXAT",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:173515092",
+      "caption": "Case 173515092 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:NINLARO",
+      "caption": "NINLARO",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DECADRON",
+      "caption": "DECADRON",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:174694983",
+      "caption": "Case 174694983 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:174775472",
+      "caption": "Case 174775472 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Anaphylactic reaction",
+      "caption": "Anaphylactic reaction",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:175424732",
+      "caption": "Case 175424732 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:METHOTREXATE",
+      "caption": "METHOTREXATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:178581527",
+      "caption": "Case 178581527 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:MOSUNETUZUMAB",
+      "caption": "MOSUNETUZUMAB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ZYLOPRIM",
+      "caption": "ZYLOPRIM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:POLATUZUMAB VEDOTIN",
+      "caption": "POLATUZUMAB VEDOTIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ELIQUIS",
+      "caption": "ELIQUIS",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ZOFRAN",
+      "caption": "ZOFRAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:180447224",
+      "caption": "Case 180447224 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:blinatumomab",
+      "caption": "blinatumomab",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:181642486",
+      "caption": "Case 181642486 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:BACTRIM",
+      "caption": "BACTRIM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LEVOFLOXACIN",
+      "caption": "LEVOFLOXACIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TYLENOL",
+      "caption": "TYLENOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:KEPPRA",
+      "caption": "KEPPRA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Pyrexia",
+      "caption": "Pyrexia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cytokine release syndrome",
+      "caption": "Cytokine release syndrome",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:183805267",
+      "caption": "Case 183805267 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:COVID-19",
+      "caption": "COVID-19",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:184294284",
+      "caption": "Case 184294284 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:FLUDARABINE",
+      "caption": "FLUDARABINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Seizure",
+      "caption": "Seizure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypotension",
+      "caption": "Hypotension",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Manufacturer:GILEAD",
+      "caption": "GILEAD",
+      "labels": [
+        "Manufacturer"
+      ]
+    },
+    {
+      "id": "Case:184493523",
+      "caption": "Case 184493523 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Tachycardia",
+      "caption": "Tachycardia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:186203292",
+      "caption": "Case 186203292 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Neurotoxicity",
+      "caption": "Neurotoxicity",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Rhinorrhoea",
+      "caption": "Rhinorrhoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:White blood cell count decreased",
+      "caption": "White blood cell count decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:186808396",
+      "caption": "Case 186808396 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:LIPITOR",
+      "caption": "LIPITOR",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:HEPARIN",
+      "caption": "HEPARIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MAGNESIUM SULFATE",
+      "caption": "MAGNESIUM SULFATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:IMODIUM",
+      "caption": "IMODIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:EMEND",
+      "caption": "EMEND",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:SODIUM CHLORIDE",
+      "caption": "SODIUM CHLORIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MAXIPIME",
+      "caption": "MAXIPIME",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ROMIPLOSTIM",
+      "caption": "ROMIPLOSTIM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BENADRYL",
+      "caption": "BENADRYL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:HEPARIN SODIUM, PORCINE",
+      "caption": "HEPARIN SODIUM, PORCINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PALONOSETRON",
+      "caption": "PALONOSETRON",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ALTEPLASE",
+      "caption": "ALTEPLASE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:OMNIPAQUE",
+      "caption": "OMNIPAQUE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:FUROSEMIDE",
+      "caption": "FUROSEMIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LACTATED RINGERS SOLUTION",
+      "caption": "LACTATED RINGERS SOLUTION",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:187450058",
+      "caption": "Case 187450058 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:187603552",
+      "caption": "Case 187603552 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Hypoxia",
+      "caption": "Hypoxia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:189159234",
+      "caption": "Case 189159234 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:189181513",
+      "caption": "Case 189181513 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:FLUCONAZOLE",
+      "caption": "FLUCONAZOLE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Enoxaparin",
+      "caption": "Enoxaparin",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:189310016",
+      "caption": "Case 189310016 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:189629853",
+      "caption": "Case 189629853 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:ZOVIRAX",
+      "caption": "ZOVIRAX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:189965362",
+      "caption": "Case 189965362 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Lymphocyte count decreased",
+      "caption": "Lymphocyte count decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Chest pain",
+      "caption": "Chest pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:189978562",
+      "caption": "Case 189978562 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Neutropenia",
+      "caption": "Neutropenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:190997992",
+      "caption": "Case 190997992 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:191677604",
+      "caption": "Case 191677604 (F)",
+      "labels": [
+        "Case"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "CD:1",
+      "from": "Case:118808975",
+      "to": "Drug:DEXAMETHASONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:2",
+      "from": "Case:118808975",
+      "to": "Drug:BUMETANIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:3",
+      "from": "Case:118808975",
+      "to": "Drug:ASPIRIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:4",
+      "from": "Case:118808975",
+      "to": "Drug:CIALIS",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:5",
+      "from": "Case:118808975",
+      "to": "Drug:BACLOFEN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:6",
+      "from": "Case:118808975",
+      "to": "Drug:REVLIMID",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:7",
+      "from": "Case:118808975",
+      "to": "Drug:DOCUSATE SODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:8",
+      "from": "Case:118808975",
+      "to": "Drug:CALCITRIOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:9",
+      "from": "Case:118808975",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:10",
+      "from": "Case:118808975",
+      "to": "Drug:REVLIMID",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:11",
+      "from": "Case:118808975",
+      "to": "Drug:ALLOPURINOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:12",
+      "from": "Case:118808975",
+      "to": "Drug:VELCADE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:13",
+      "from": "Case:118808975",
+      "to": "Reaction:Plasma cell leukaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:14",
+      "from": "Case:118808975",
+      "to": "Reaction:Anaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:15",
+      "from": "Case:118808975",
+      "to": "Reaction:Renal failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:16",
+      "from": "Case:118808975",
+      "to": "Reaction:Arteriovenous fistula occlusion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:17",
+      "from": "Case:118808975",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:18",
+      "from": "Case:118808975",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:19",
+      "from": "Case:118808975",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:20",
+      "from": "Case:118808975",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:21",
+      "from": "Case:118808975",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:22",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:118808975",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:23",
+      "from": "Case:119119832",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:24",
+      "from": "Case:119119832",
+      "to": "Drug:Vincristine",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:25",
+      "from": "Case:119119832",
+      "to": "Drug:ETOPOSIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:26",
+      "from": "Case:119119832",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:27",
+      "from": "Case:119119832",
+      "to": "Drug:brentuximab vedotin",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:28",
+      "from": "Case:119119832",
+      "to": "Drug:DOXORUBICIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:29",
+      "from": "Case:119119832",
+      "to": "Reaction:Testicular pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:30",
+      "from": "Case:119119832",
+      "to": "Reaction:Embolism",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:31",
+      "from": "Case:119119832",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:32",
+      "from": "Case:119119832",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:33",
+      "from": "Manufacturer:SEATTLE GENETICS",
+      "to": "Case:119119832",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:34",
+      "from": "Case:131586014",
+      "to": "Drug:CYTARABINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:35",
+      "from": "Case:131586014",
+      "to": "Drug:MERCAPTOPURINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:36",
+      "from": "Case:131586014",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:37",
+      "from": "Case:131586014",
+      "to": "Drug:INCB018424",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:38",
+      "from": "Case:131586014",
+      "to": "Drug:VINCRISTINE SULFATE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:39",
+      "from": "Case:131586014",
+      "to": "Drug:PEGASPARGASE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:40",
+      "from": "Case:131586014",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:41",
+      "from": "Case:131586014",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:42",
+      "from": "Case:131586014",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:43",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:131586014",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:44",
+      "from": "Case:138355402",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:45",
+      "from": "Case:138355402",
+      "to": "Drug:Carfilzomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:46",
+      "from": "Case:138355402",
+      "to": "Drug:DEXAMETHASONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:47",
+      "from": "Case:138355402",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:48",
+      "from": "Case:138355402",
+      "to": "Reaction:Respiratory failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:49",
+      "from": "Case:138355402",
+      "to": "Reaction:Pneumonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:50",
+      "from": "Case:138355402",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:51",
+      "from": "Case:138355402",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:52",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:138355402",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:53",
+      "from": "Case:154622504",
+      "to": "Drug:Daratumumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:54",
+      "from": "Case:154622504",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:55",
+      "from": "Case:154622504",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:56",
+      "from": "Case:154622504",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:57",
+      "from": "Case:154622504",
+      "to": "Drug:REVLIMID",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:58",
+      "from": "Case:154622504",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:59",
+      "from": "Case:154622504",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:60",
+      "from": "Case:154622504",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:61",
+      "from": "Case:154622504",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:62",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:154622504",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:63",
+      "from": "Case:154743486",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:64",
+      "from": "Case:154743486",
+      "to": "Drug:BORTEZOMIB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:65",
+      "from": "Case:154743486",
+      "to": "Drug:Panobinostat",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:66",
+      "from": "Case:154743486",
+      "to": "Drug:REVLIMID",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:67",
+      "from": "Case:154743486",
+      "to": "Drug:POMALYST",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:68",
+      "from": "Case:154743486",
+      "to": "Drug:VELCADE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:69",
+      "from": "Case:154743486",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:70",
+      "from": "Case:154743486",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:71",
+      "from": "Case:154743486",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:72",
+      "from": "Case:154743486",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:73",
+      "from": "Case:154743486",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:74",
+      "from": "Case:154743486",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:75",
+      "from": "Case:154743486",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:76",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:154743486",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:77",
+      "from": "Case:155188342",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:78",
+      "from": "Case:155188342",
+      "to": "Drug:DEXAMETHASONE IV",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:79",
+      "from": "Case:155188342",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:80",
+      "from": "Case:155188342",
+      "to": "Drug:ELOTUZUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:81",
+      "from": "Case:155188342",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:82",
+      "from": "Case:155188342",
+      "to": "Drug:Carfilzomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:83",
+      "from": "Case:155188342",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:84",
+      "from": "Case:155188342",
+      "to": "Reaction:Atrial fibrillation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:85",
+      "from": "Case:155188342",
+      "to": "Reaction:Respiratory failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:86",
+      "from": "Case:155188342",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:87",
+      "from": "Case:155188342",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:88",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:155188342",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:89",
+      "from": "Case:155259872",
+      "to": "Drug:POMALYST",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:90",
+      "from": "Case:155259872",
+      "to": "Drug:ELOTUZUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:91",
+      "from": "Case:155259872",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:92",
+      "from": "Case:155259872",
+      "to": "Drug:DEXAMETHASONE IV",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:93",
+      "from": "Case:155259872",
+      "to": "Reaction:Atrial fibrillation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:94",
+      "from": "Case:155259872",
+      "to": "Reaction:Tumour lysis syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:95",
+      "from": "Case:155259872",
+      "to": "Reaction:Pneumonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:96",
+      "from": "Case:155259872",
+      "to": "Reaction:Encephalopathy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:97",
+      "from": "Case:155259872",
+      "to": "Reaction:Plasma cell myeloma",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:98",
+      "from": "Case:155259872",
+      "to": "Reaction:Viral upper respiratory tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:99",
+      "from": "Case:155259872",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:100",
+      "from": "Case:155259872",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:101",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:155259872",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:102",
+      "from": "Case:156996913",
+      "to": "Drug:VINCRISTINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:103",
+      "from": "Case:156996913",
+      "to": "Drug:INCB018424",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:104",
+      "from": "Case:156996913",
+      "to": "Drug:THIOGUANINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:105",
+      "from": "Case:156996913",
+      "to": "Drug:LEUCOVORIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:106",
+      "from": "Case:156996913",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:107",
+      "from": "Case:156996913",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:108",
+      "from": "Case:156996913",
+      "to": "Reaction:Platelet count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:109",
+      "from": "Case:156996913",
+      "to": "Reaction:Weight decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:110",
+      "from": "Case:156996913",
+      "to": "Reaction:Thrombocytopenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:111",
+      "from": "Case:156996913",
+      "to": "Reaction:Pancytopenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:112",
+      "from": "Case:156996913",
+      "to": "Reaction:Nasal congestion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:113",
+      "from": "Case:156996913",
+      "to": "Reaction:Erythema",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:114",
+      "from": "Case:156996913",
+      "to": "Reaction:Venoocclusive liver disease",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:115",
+      "from": "Case:156996913",
+      "to": "Reaction:Parainfluenzae virus infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:116",
+      "from": "Case:156996913",
+      "to": "Reaction:Feeling abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:117",
+      "from": "Case:156996913",
+      "to": "Reaction:Asthenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:118",
+      "from": "Case:156996913",
+      "to": "Reaction:Influenza A virus test positive",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:119",
+      "from": "Case:156996913",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:120",
+      "from": "Case:156996913",
+      "to": "Reaction:Neutrophil count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:121",
+      "from": "Case:156996913",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:122",
+      "from": "Case:156996913",
+      "to": "Reaction:Chills",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:123",
+      "from": "Case:156996913",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:124",
+      "from": "Case:156996913",
+      "to": "Reaction:Flushing",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:125",
+      "from": "Case:156996913",
+      "to": "Reaction:Haematoma",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:126",
+      "from": "Case:156996913",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:127",
+      "from": "Case:156996913",
+      "to": "Reaction:Decreased appetite",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:128",
+      "from": "Case:156996913",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:129",
+      "from": "Case:156996913",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:130",
+      "from": "Case:156996913",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:131",
+      "from": "Manufacturer:HIKMA",
+      "to": "Case:156996913",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:132",
+      "from": "Case:160908989",
+      "to": "Drug:Thioguanine",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:133",
+      "from": "Case:160908989",
+      "to": "Drug:INCB018424",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:134",
+      "from": "Case:160908989",
+      "to": "Drug:VINCRISTINE SULFATE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:135",
+      "from": "Case:160908989",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:136",
+      "from": "Case:160908989",
+      "to": "Drug:PEGASPARGASE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:137",
+      "from": "Case:160908989",
+      "to": "Drug:METHOTREXATE SODIUM",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:138",
+      "from": "Case:160908989",
+      "to": "Drug:LEUCOVORIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:139",
+      "from": "Case:160908989",
+      "to": "Drug:VINCRISTINE SULFATE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:140",
+      "from": "Case:160908989",
+      "to": "Drug:MERCAPTOPURINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:141",
+      "from": "Case:160908989",
+      "to": "Drug:CYTARABINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:142",
+      "from": "Case:160908989",
+      "to": "Reaction:Venoocclusive liver disease",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:143",
+      "from": "Case:160908989",
+      "to": "Reaction:Parainfluenzae virus infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:144",
+      "from": "Case:160908989",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:145",
+      "from": "Case:160908989",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:146",
+      "from": "Case:160908989",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:147",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:160908989",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:148",
+      "from": "Case:164113442",
+      "to": "Drug:MELPHALAN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:149",
+      "from": "Case:164113442",
+      "to": "Drug:Ixazomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:150",
+      "from": "Case:164113442",
+      "to": "Drug:Daratumumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:151",
+      "from": "Case:164113442",
+      "to": "Drug:CISPLATIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:152",
+      "from": "Case:164113442",
+      "to": "Drug:ETOPOSIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:153",
+      "from": "Case:164113442",
+      "to": "Drug:BORTEZOMIB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:154",
+      "from": "Case:164113442",
+      "to": "Drug:Panobinostat",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:155",
+      "from": "Case:164113442",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:156",
+      "from": "Case:164113442",
+      "to": "Drug:REVLIMID",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:157",
+      "from": "Case:164113442",
+      "to": "Drug:REVLIMID",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:158",
+      "from": "Case:164113442",
+      "to": "Drug:POMALYST",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:159",
+      "from": "Case:164113442",
+      "to": "Drug:DEXAMETHASONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:160",
+      "from": "Case:164113442",
+      "to": "Drug:KYPROLIS",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:161",
+      "from": "Case:164113442",
+      "to": "Drug:Doxorubicin",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:162",
+      "from": "Case:164113442",
+      "to": "Reaction:Myelodysplastic syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:163",
+      "from": "Case:164113442",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:164",
+      "from": "Case:164113442",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:165",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:164113442",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:166",
+      "from": "Case:164878165",
+      "to": "Drug:ETOPOSIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:167",
+      "from": "Case:164878165",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:168",
+      "from": "Case:164878165",
+      "to": "Drug:DOXORUBICIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:169",
+      "from": "Case:164878165",
+      "to": "Drug:Vincristine",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:170",
+      "from": "Case:164878165",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:171",
+      "from": "Case:164878165",
+      "to": "Drug:brentuximab vedotin",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:172",
+      "from": "Case:164878165",
+      "to": "Reaction:Sepsis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:173",
+      "from": "Case:164878165",
+      "to": "Reaction:Multiple organ dysfunction syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:174",
+      "from": "Case:164878165",
+      "to": "Reaction:Upper respiratory tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:175",
+      "from": "Case:164878165",
+      "to": "Reaction:Respiratory failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:176",
+      "from": "Case:164878165",
+      "to": "Reaction:Hypokalaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:177",
+      "from": "Case:164878165",
+      "to": "Reaction:Enterocolitis infectious",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:178",
+      "from": "Case:164878165",
+      "to": "Reaction:Hyperglycaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:179",
+      "from": "Case:164878165",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:180",
+      "from": "Case:164878165",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:181",
+      "from": "Manufacturer:SEATTLE GENETICS",
+      "to": "Case:164878165",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:182",
+      "from": "Case:167542407",
+      "to": "Drug:FLORASTOR [SACCHAROMYCES BOULARDII]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:183",
+      "from": "Case:167542407",
+      "to": "Drug:Pegfilgrastim",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:184",
+      "from": "Case:167542407",
+      "to": "Drug:FAMOTIDINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:185",
+      "from": "Case:167542407",
+      "to": "Drug:LOMOTIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:186",
+      "from": "Case:167542407",
+      "to": "Drug:HYDROCORTISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:187",
+      "from": "Case:167542407",
+      "to": "Drug:SIMETHICONE (DIMETHICONE)",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:188",
+      "from": "Case:167542407",
+      "to": "Drug:PROCHLORPERAZINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:189",
+      "from": "Case:167542407",
+      "to": "Drug:ONDANSETRON",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:190",
+      "from": "Case:167542407",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:191",
+      "from": "Case:167542407",
+      "to": "Drug:RITUXIMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:192",
+      "from": "Case:167542407",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:193",
+      "from": "Case:167542407",
+      "to": "Drug:Vincristine",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:194",
+      "from": "Case:167542407",
+      "to": "Drug:DOXORUBICIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:195",
+      "from": "Case:167542407",
+      "to": "Drug:HYDROCODONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:196",
+      "from": "Case:167542407",
+      "to": "Drug:ACETAMINOPHEN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:197",
+      "from": "Case:167542407",
+      "to": "Drug:OMEGA 3",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:198",
+      "from": "Case:167542407",
+      "to": "Drug:PSYLLIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:199",
+      "from": "Case:167542407",
+      "to": "Drug:LOPERAMIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:200",
+      "from": "Case:167542407",
+      "to": "Drug:ALLOPURINOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:201",
+      "from": "Case:167542407",
+      "to": "Drug:ACYCLOVIR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:202",
+      "from": "Case:167542407",
+      "to": "Drug:CHOLESTYRAMINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:203",
+      "from": "Case:167542407",
+      "to": "Reaction:Small intestinal perforation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:204",
+      "from": "Case:167542407",
+      "to": "Reaction:Hyponatraemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:205",
+      "from": "Case:167542407",
+      "to": "Reaction:Small intestinal obstruction",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:206",
+      "from": "Case:167542407",
+      "to": "Reaction:Abdominal infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:207",
+      "from": "Case:167542407",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:208",
+      "from": "Case:167542407",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:209",
+      "from": "Manufacturer:ROCHE",
+      "to": "Case:167542407",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:210",
+      "from": "Case:168945262",
+      "to": "Drug:Brentuximab Vedotin Recombinant",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:211",
+      "from": "Case:168945262",
+      "to": "Drug:ETOPOSIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:212",
+      "from": "Case:168945262",
+      "to": "Drug:ADRIAMYCIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:213",
+      "from": "Case:168945262",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:214",
+      "from": "Case:168945262",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:215",
+      "from": "Case:168945262",
+      "to": "Reaction:Clostridium difficile infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:216",
+      "from": "Case:168945262",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:217",
+      "from": "Case:168945262",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:218",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:168945262",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:219",
+      "from": "Case:169005492",
+      "to": "Drug:VINCRISTINE SULFATE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:220",
+      "from": "Case:169005492",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:221",
+      "from": "Case:169005492",
+      "to": "Drug:RITUXIMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:222",
+      "from": "Case:169005492",
+      "to": "Drug:DOXORUBICIN HYDROCHLORIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:223",
+      "from": "Case:169005492",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:224",
+      "from": "Case:169005492",
+      "to": "Drug:ETOPOSIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:225",
+      "from": "Case:169005492",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:226",
+      "from": "Case:169005492",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:227",
+      "from": "Case:169005492",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:228",
+      "from": "Case:169005492",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:229",
+      "from": "Case:169005492",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:230",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:169005492",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:231",
+      "from": "Case:169616132",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:232",
+      "from": "Case:169616132",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:233",
+      "from": "Case:169616132",
+      "to": "Drug:BORTEZOMIB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:234",
+      "from": "Case:169616132",
+      "to": "Drug:DEXAMETHASONE IV",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:235",
+      "from": "Case:169616132",
+      "to": "Drug:REVLIMID",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:236",
+      "from": "Case:169616132",
+      "to": "Drug:Carfilzomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:237",
+      "from": "Case:169616132",
+      "to": "Reaction:Syncope",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:238",
+      "from": "Case:169616132",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:239",
+      "from": "Case:169616132",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:240",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:169616132",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:241",
+      "from": "Case:172208053",
+      "to": "Drug:VINCRISTINE SULFATE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:242",
+      "from": "Case:172208053",
+      "to": "Drug:DEXAMETHASONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:243",
+      "from": "Case:172208053",
+      "to": "Drug:ASPARAGINASE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:244",
+      "from": "Case:172208053",
+      "to": "Drug:Thioguanine",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:245",
+      "from": "Case:172208053",
+      "to": "Drug:METHOTREXATE SODIUM",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:246",
+      "from": "Case:172208053",
+      "to": "Drug:INCB018424",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:247",
+      "from": "Case:172208053",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:248",
+      "from": "Case:172208053",
+      "to": "Drug:VINCRISTINE SULFATE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:249",
+      "from": "Case:172208053",
+      "to": "Drug:CYTARABINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:250",
+      "from": "Case:172208053",
+      "to": "Reaction:Abdominal pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:251",
+      "from": "Case:172208053",
+      "to": "Reaction:Constipation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:252",
+      "from": "Case:172208053",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:253",
+      "from": "Case:172208053",
+      "to": "Reaction:Hypoglycaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:254",
+      "from": "Case:172208053",
+      "to": "Reaction:Dehydration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:255",
+      "from": "Case:172208053",
+      "to": "Reaction:Lethargy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:256",
+      "from": "Case:172208053",
+      "to": "Reaction:Stomatitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:257",
+      "from": "Case:172208053",
+      "to": "Reaction:Decreased appetite",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:258",
+      "from": "Case:172208053",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:259",
+      "from": "Case:172208053",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:260",
+      "from": "Case:172208053",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:261",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:172208053",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:262",
+      "from": "Case:172775763",
+      "to": "Drug:ASPARAGINASE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:263",
+      "from": "Case:172775763",
+      "to": "Drug:INCB018424",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:264",
+      "from": "Case:172775763",
+      "to": "Drug:THIOGUANINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:265",
+      "from": "Case:172775763",
+      "to": "Drug:VINCRISTINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:266",
+      "from": "Case:172775763",
+      "to": "Drug:CYTARABINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:267",
+      "from": "Case:172775763",
+      "to": "Drug:METHOTREXAT",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:268",
+      "from": "Case:172775763",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:269",
+      "from": "Case:172775763",
+      "to": "Drug:DEXAMETHASONE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:270",
+      "from": "Case:172775763",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:271",
+      "from": "Case:172775763",
+      "to": "Reaction:Lethargy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:272",
+      "from": "Case:172775763",
+      "to": "Reaction:Anaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:273",
+      "from": "Case:172775763",
+      "to": "Reaction:Dehydration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:274",
+      "from": "Case:172775763",
+      "to": "Reaction:Decreased appetite",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:275",
+      "from": "Case:172775763",
+      "to": "Reaction:Hypoglycaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:276",
+      "from": "Case:172775763",
+      "to": "Reaction:Abdominal pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:277",
+      "from": "Case:172775763",
+      "to": "Reaction:Stomatitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:278",
+      "from": "Case:172775763",
+      "to": "Reaction:Constipation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:279",
+      "from": "Case:172775763",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:280",
+      "from": "Case:172775763",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:281",
+      "from": "Case:172775763",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:282",
+      "from": "Case:172775763",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:283",
+      "from": "Manufacturer:HIKMA",
+      "to": "Case:172775763",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:284",
+      "from": "Case:173515092",
+      "to": "Drug:NINLARO",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:285",
+      "from": "Case:173515092",
+      "to": "Drug:REVLIMID",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:286",
+      "from": "Case:173515092",
+      "to": "Drug:Carfilzomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:287",
+      "from": "Case:173515092",
+      "to": "Drug:BORTEZOMIB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:288",
+      "from": "Case:173515092",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:289",
+      "from": "Case:173515092",
+      "to": "Drug:DECADRON",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:290",
+      "from": "Case:173515092",
+      "to": "Drug:Daratumumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:291",
+      "from": "Case:173515092",
+      "to": "Drug:POMALYST",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CO:293",
+      "from": "Case:173515092",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:294",
+      "from": "Case:173515092",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:295",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:173515092",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:296",
+      "from": "Case:174694983",
+      "to": "Drug:REVLIMID",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:297",
+      "from": "Case:174694983",
+      "to": "Drug:DECADRON",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:298",
+      "from": "Case:174694983",
+      "to": "Drug:VELCADE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:299",
+      "from": "Case:174694983",
+      "to": "Drug:Daratumumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:300",
+      "from": "Case:174694983",
+      "to": "Drug:Carfilzomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:301",
+      "from": "Case:174694983",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:302",
+      "from": "Case:174694983",
+      "to": "Drug:POMALYST",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:303",
+      "from": "Case:174694983",
+      "to": "Drug:ELOTUZUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:304",
+      "from": "Case:174694983",
+      "to": "Reaction:Sepsis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:305",
+      "from": "Case:174694983",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:306",
+      "from": "Case:174694983",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:307",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:174694983",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:308",
+      "from": "Case:174775472",
+      "to": "Drug:INCB018424",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:309",
+      "from": "Case:174775472",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:310",
+      "from": "Case:174775472",
+      "to": "Drug:PEGASPARGASE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:311",
+      "from": "Case:174775472",
+      "to": "Drug:METHOTREXATE SODIUM",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:312",
+      "from": "Case:174775472",
+      "to": "Drug:VINCRISTINE SULFATE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:313",
+      "from": "Case:174775472",
+      "to": "Drug:CYTARABINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:314",
+      "from": "Case:174775472",
+      "to": "Reaction:Anaphylactic reaction",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:315",
+      "from": "Case:174775472",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:316",
+      "from": "Case:174775472",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:317",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:174775472",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:318",
+      "from": "Case:175424732",
+      "to": "Drug:MERCAPTOPURINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:319",
+      "from": "Case:175424732",
+      "to": "Drug:VINCRISTINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:320",
+      "from": "Case:175424732",
+      "to": "Drug:CYTARABINE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:321",
+      "from": "Case:175424732",
+      "to": "Drug:INCB018424",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:322",
+      "from": "Case:175424732",
+      "to": "Drug:PEGASPARGASE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:323",
+      "from": "Case:175424732",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:324",
+      "from": "Case:175424732",
+      "to": "Drug:METHOTREXATE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:325",
+      "from": "Case:175424732",
+      "to": "Reaction:Anaphylactic reaction",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:326",
+      "from": "Case:175424732",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:327",
+      "from": "Case:175424732",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:328",
+      "from": "Case:175424732",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:329",
+      "from": "Manufacturer:HIKMA",
+      "to": "Case:175424732",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:330",
+      "from": "Case:178581527",
+      "to": "Drug:MOSUNETUZUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:332",
+      "from": "Case:178581527",
+      "to": "Drug:ZYLOPRIM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:333",
+      "from": "Case:178581527",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:334",
+      "from": "Case:178581527",
+      "to": "Drug:DEXAMETHASONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:335",
+      "from": "Case:178581527",
+      "to": "Drug:DOXORUBICIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:337",
+      "from": "Case:178581527",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:338",
+      "from": "Case:178581527",
+      "to": "Drug:POLATUZUMAB VEDOTIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:339",
+      "from": "Case:178581527",
+      "to": "Drug:ELIQUIS",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:340",
+      "from": "Case:178581527",
+      "to": "Drug:ZOFRAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:341",
+      "from": "Case:178581527",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:342",
+      "from": "Case:178581527",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:343",
+      "from": "Case:178581527",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:344",
+      "from": "Case:178581527",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:345",
+      "from": "Manufacturer:ROCHE",
+      "to": "Case:178581527",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:346",
+      "from": "Case:180447224",
+      "to": "Drug:MERCAPTOPURINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:347",
+      "from": "Case:180447224",
+      "to": "Drug:METHOTREXATE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:349",
+      "from": "Case:180447224",
+      "to": "Drug:VINCRISTINE SULFATE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:351",
+      "from": "Case:180447224",
+      "to": "Drug:blinatumomab",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:352",
+      "from": "Case:180447224",
+      "to": "Drug:blinatumomab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:353",
+      "from": "Case:180447224",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:355",
+      "from": "Case:180447224",
+      "to": "Drug:DEXAMETHASONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:356",
+      "from": "Case:180447224",
+      "to": "Drug:DOXORUBICIN HYDROCHLORIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:357",
+      "from": "Case:180447224",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:358",
+      "from": "Case:180447224",
+      "to": "Reaction:Respiratory failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:362",
+      "from": "Case:180447224",
+      "to": "Reaction:Venoocclusive liver disease",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:363",
+      "from": "Case:180447224",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:364",
+      "from": "Case:180447224",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:365",
+      "from": "Case:180447224",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:366",
+      "from": "Case:180447224",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:368",
+      "from": "Case:181642486",
+      "to": "Drug:BACTRIM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:369",
+      "from": "Case:181642486",
+      "to": "Drug:LEVOFLOXACIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:371",
+      "from": "Case:181642486",
+      "to": "Drug:ACETAMINOPHEN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:372",
+      "from": "Case:181642486",
+      "to": "Drug:TYLENOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:374",
+      "from": "Case:181642486",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:375",
+      "from": "Case:181642486",
+      "to": "Drug:ONDANSETRON",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:376",
+      "from": "Case:181642486",
+      "to": "Drug:KEPPRA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:377",
+      "from": "Case:181642486",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:379",
+      "from": "Case:181642486",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:381",
+      "from": "Case:181642486",
+      "to": "Reaction:Cytokine release syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:382",
+      "from": "Case:181642486",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CD:385",
+      "from": "Case:183805267",
+      "to": "Drug:ZYLOPRIM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:386",
+      "from": "Case:183805267",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:388",
+      "from": "Case:183805267",
+      "to": "Drug:ALLOPURINOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:389",
+      "from": "Case:183805267",
+      "to": "Drug:ZOFRAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:390",
+      "from": "Case:183805267",
+      "to": "Drug:ONDANSETRON",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:391",
+      "from": "Case:183805267",
+      "to": "Drug:MOSUNETUZUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:392",
+      "from": "Case:183805267",
+      "to": "Drug:ELIQUIS",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:393",
+      "from": "Case:183805267",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:394",
+      "from": "Case:183805267",
+      "to": "Drug:Pegfilgrastim",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:395",
+      "from": "Case:183805267",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:396",
+      "from": "Case:183805267",
+      "to": "Drug:DOXORUBICIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:397",
+      "from": "Case:183805267",
+      "to": "Drug:POLATUZUMAB VEDOTIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:398",
+      "from": "Case:183805267",
+      "to": "Reaction:COVID-19",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:399",
+      "from": "Case:183805267",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:400",
+      "from": "Case:183805267",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:401",
+      "from": "Case:183805267",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:402",
+      "from": "Case:183805267",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:403",
+      "from": "Manufacturer:ROCHE",
+      "to": "Case:183805267",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:404",
+      "from": "Case:184294284",
+      "to": "Drug:FLUDARABINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:405",
+      "from": "Case:184294284",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:406",
+      "from": "Case:184294284",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:407",
+      "from": "Case:184294284",
+      "to": "Reaction:Cytokine release syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:408",
+      "from": "Case:184294284",
+      "to": "Reaction:Seizure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:409",
+      "from": "Case:184294284",
+      "to": "Reaction:Hypotension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:410",
+      "from": "Case:184294284",
+      "to": "Reaction:Sepsis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:411",
+      "from": "Case:184294284",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:414",
+      "from": "Case:184294284",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:415",
+      "from": "Case:184294284",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:416",
+      "from": "Case:184294284",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:417",
+      "from": "Case:184294284",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:418",
+      "from": "Manufacturer:GILEAD",
+      "to": "Case:184294284",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:419",
+      "from": "Case:184493523",
+      "to": "Drug:FLUDARABINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:420",
+      "from": "Case:184493523",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:422",
+      "from": "Case:184493523",
+      "to": "Drug:DEXAMETHASONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:425",
+      "from": "Case:184493523",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:426",
+      "from": "Case:184493523",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:427",
+      "from": "Case:184493523",
+      "to": "Reaction:Hypotension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:428",
+      "from": "Case:184493523",
+      "to": "Reaction:Tachycardia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:429",
+      "from": "Case:184493523",
+      "to": "Reaction:Cytokine release syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:430",
+      "from": "Case:184493523",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:431",
+      "from": "Case:184493523",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:432",
+      "from": "Case:184493523",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:433",
+      "from": "Manufacturer:GILEAD",
+      "to": "Case:184493523",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:434",
+      "from": "Case:186203292",
+      "to": "Drug:PEGASPARGASE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:435",
+      "from": "Case:186203292",
+      "to": "Drug:MERCAPTOPURINE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:436",
+      "from": "Case:186203292",
+      "to": "Drug:METHOTREXATE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:437",
+      "from": "Case:186203292",
+      "to": "Drug:VINCRISTINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:438",
+      "from": "Case:186203292",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:439",
+      "from": "Case:186203292",
+      "to": "Drug:INCB018424",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:441",
+      "from": "Case:186203292",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:445",
+      "from": "Case:186203292",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:446",
+      "from": "Case:186203292",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:447",
+      "from": "Case:186203292",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:450",
+      "from": "Case:186203292",
+      "to": "Reaction:Seizure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:453",
+      "from": "Case:186203292",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:458",
+      "from": "Case:186203292",
+      "to": "Reaction:Neurotoxicity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:459",
+      "from": "Case:186203292",
+      "to": "Reaction:Rhinorrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:460",
+      "from": "Case:186203292",
+      "to": "Reaction:White blood cell count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:462",
+      "from": "Case:186203292",
+      "to": "Reaction:Upper respiratory tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:465",
+      "from": "Case:186203292",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:466",
+      "from": "Case:186203292",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:467",
+      "from": "Case:186203292",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:468",
+      "from": "Manufacturer:HIKMA",
+      "to": "Case:186203292",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:470",
+      "from": "Case:186808396",
+      "to": "Drug:LIPITOR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:471",
+      "from": "Case:186808396",
+      "to": "Drug:HEPARIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:473",
+      "from": "Case:186808396",
+      "to": "Drug:ZOFRAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:475",
+      "from": "Case:186808396",
+      "to": "Drug:MAGNESIUM SULFATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:476",
+      "from": "Case:186808396",
+      "to": "Drug:ZYLOPRIM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:477",
+      "from": "Case:186808396",
+      "to": "Drug:IMODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:479",
+      "from": "Case:186808396",
+      "to": "Drug:ALLOPURINOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:480",
+      "from": "Case:186808396",
+      "to": "Drug:MOSUNETUZUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:481",
+      "from": "Case:186808396",
+      "to": "Drug:TYLENOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:482",
+      "from": "Case:186808396",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:483",
+      "from": "Case:186808396",
+      "to": "Drug:POLATUZUMAB VEDOTIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:484",
+      "from": "Case:186808396",
+      "to": "Drug:EMEND",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:485",
+      "from": "Case:186808396",
+      "to": "Drug:LOPERAMIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:486",
+      "from": "Case:186808396",
+      "to": "Drug:SODIUM CHLORIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:487",
+      "from": "Case:186808396",
+      "to": "Drug:MAXIPIME",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:489",
+      "from": "Case:186808396",
+      "to": "Drug:LEVOFLOXACIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:491",
+      "from": "Case:186808396",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:492",
+      "from": "Case:186808396",
+      "to": "Drug:ROMIPLOSTIM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:493",
+      "from": "Case:186808396",
+      "to": "Drug:BENADRYL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:494",
+      "from": "Case:186808396",
+      "to": "Drug:HEPARIN SODIUM, PORCINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:497",
+      "from": "Case:186808396",
+      "to": "Drug:Pegfilgrastim",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:499",
+      "from": "Case:186808396",
+      "to": "Drug:PALONOSETRON",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:500",
+      "from": "Case:186808396",
+      "to": "Drug:ALTEPLASE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:501",
+      "from": "Case:186808396",
+      "to": "Drug:OMNIPAQUE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:502",
+      "from": "Case:186808396",
+      "to": "Drug:FUROSEMIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:503",
+      "from": "Case:186808396",
+      "to": "Drug:DOXORUBICIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:504",
+      "from": "Case:186808396",
+      "to": "Drug:LACTATED RINGERS SOLUTION",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:505",
+      "from": "Case:186808396",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:506",
+      "from": "Case:186808396",
+      "to": "Reaction:Neutrophil count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:507",
+      "from": "Case:186808396",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:508",
+      "from": "Case:186808396",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:509",
+      "from": "Manufacturer:ROCHE",
+      "to": "Case:186808396",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:510",
+      "from": "Case:187450058",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:511",
+      "from": "Case:187450058",
+      "to": "Drug:ZOFRAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:512",
+      "from": "Case:187450058",
+      "to": "Drug:LIPITOR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:513",
+      "from": "Case:187450058",
+      "to": "Drug:BENADRYL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:514",
+      "from": "Case:187450058",
+      "to": "Drug:SODIUM CHLORIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:515",
+      "from": "Case:187450058",
+      "to": "Drug:PALONOSETRON",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:516",
+      "from": "Case:187450058",
+      "to": "Drug:DOXORUBICIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:517",
+      "from": "Case:187450058",
+      "to": "Drug:IMODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:518",
+      "from": "Case:187450058",
+      "to": "Drug:LACTATED RINGERS SOLUTION",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:519",
+      "from": "Case:187450058",
+      "to": "Drug:MAGNESIUM SULFATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:520",
+      "from": "Case:187450058",
+      "to": "Drug:HEPARIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:521",
+      "from": "Case:187450058",
+      "to": "Drug:HEPARIN SODIUM, PORCINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:522",
+      "from": "Case:187450058",
+      "to": "Drug:LEVOFLOXACIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:523",
+      "from": "Case:187450058",
+      "to": "Drug:MAXIPIME",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:524",
+      "from": "Case:187450058",
+      "to": "Drug:POLATUZUMAB VEDOTIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:525",
+      "from": "Case:187450058",
+      "to": "Drug:ROMIPLOSTIM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:526",
+      "from": "Case:187450058",
+      "to": "Drug:FUROSEMIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:527",
+      "from": "Case:187450058",
+      "to": "Drug:ALLOPURINOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:528",
+      "from": "Case:187450058",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:530",
+      "from": "Case:187450058",
+      "to": "Drug:LOPERAMIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:531",
+      "from": "Case:187450058",
+      "to": "Drug:MOSUNETUZUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:532",
+      "from": "Case:187450058",
+      "to": "Drug:OMNIPAQUE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:533",
+      "from": "Case:187450058",
+      "to": "Drug:EMEND",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:534",
+      "from": "Case:187450058",
+      "to": "Drug:Pegfilgrastim",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:535",
+      "from": "Case:187450058",
+      "to": "Drug:ALTEPLASE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CO:537",
+      "from": "Case:187450058",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:538",
+      "from": "Case:187450058",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:539",
+      "from": "Manufacturer:ROCHE",
+      "to": "Case:187450058",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:540",
+      "from": "Case:187603552",
+      "to": "Drug:CYTARABINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:541",
+      "from": "Case:187603552",
+      "to": "Drug:INCB018424",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:542",
+      "from": "Case:187603552",
+      "to": "Drug:PEGASPARGASE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:543",
+      "from": "Case:187603552",
+      "to": "Drug:MERCAPTOPURINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:544",
+      "from": "Case:187603552",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:545",
+      "from": "Case:187603552",
+      "to": "Reaction:Hypoxia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:546",
+      "from": "Case:187603552",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:547",
+      "from": "Case:187603552",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:548",
+      "from": "Case:187603552",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:549",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:187603552",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:550",
+      "from": "Case:189159234",
+      "to": "Drug:MERCAPTOPURINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:551",
+      "from": "Case:189159234",
+      "to": "Drug:CYTARABINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:552",
+      "from": "Case:189159234",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:553",
+      "from": "Case:189159234",
+      "to": "Drug:INCB018424",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:554",
+      "from": "Case:189159234",
+      "to": "Drug:PEGASPARGASE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:555",
+      "from": "Case:189159234",
+      "to": "Drug:VINCRISTINE SULFATE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:556",
+      "from": "Case:189159234",
+      "to": "Drug:METHOTREXATE SODIUM",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:557",
+      "from": "Case:189159234",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:558",
+      "from": "Case:189159234",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:559",
+      "from": "Case:189159234",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:560",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:189159234",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:561",
+      "from": "Case:189181513",
+      "to": "Drug:Pegfilgrastim",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:562",
+      "from": "Case:189181513",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:563",
+      "from": "Case:189181513",
+      "to": "Drug:ACYCLOVIR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:565",
+      "from": "Case:189181513",
+      "to": "Drug:LEVOFLOXACIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:566",
+      "from": "Case:189181513",
+      "to": "Drug:FLUCONAZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:569",
+      "from": "Case:189181513",
+      "to": "Drug:Enoxaparin",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:570",
+      "from": "Case:189181513",
+      "to": "Drug:ALLOPURINOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:571",
+      "from": "Case:189181513",
+      "to": "Drug:FLUDARABINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CO:575",
+      "from": "Case:189181513",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:576",
+      "from": "Case:189181513",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:577",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:189181513",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:580",
+      "from": "Case:189310016",
+      "to": "Drug:FLUDARABINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:581",
+      "from": "Case:189310016",
+      "to": "Drug:ACYCLOVIR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:582",
+      "from": "Case:189310016",
+      "to": "Drug:BACTRIM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:584",
+      "from": "Case:189310016",
+      "to": "Drug:BENADRYL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:588",
+      "from": "Case:189310016",
+      "to": "Drug:ALLOPURINOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:593",
+      "from": "Case:189310016",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:594",
+      "from": "Case:189310016",
+      "to": "Drug:TYLENOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:597",
+      "from": "Case:189310016",
+      "to": "Drug:PROCHLORPERAZINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:602",
+      "from": "Case:189310016",
+      "to": "Drug:Enoxaparin",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:604",
+      "from": "Case:189310016",
+      "to": "Reaction:COVID-19",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:605",
+      "from": "Case:189310016",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:606",
+      "from": "Case:189310016",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:607",
+      "from": "Case:189310016",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:608",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:189310016",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:609",
+      "from": "Case:189629853",
+      "to": "Drug:TYLENOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:610",
+      "from": "Case:189629853",
+      "to": "Drug:FLUCONAZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:611",
+      "from": "Case:189629853",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:613",
+      "from": "Case:189629853",
+      "to": "Drug:FLUDARABINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:615",
+      "from": "Case:189629853",
+      "to": "Drug:ALLOPURINOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:616",
+      "from": "Case:189629853",
+      "to": "Drug:KEPPRA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:617",
+      "from": "Case:189629853",
+      "to": "Drug:ASPIRIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:618",
+      "from": "Case:189629853",
+      "to": "Drug:SODIUM CHLORIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:619",
+      "from": "Case:189629853",
+      "to": "Drug:ZOVIRAX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:621",
+      "from": "Case:189629853",
+      "to": "Drug:ACYCLOVIR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:622",
+      "from": "Case:189629853",
+      "to": "Reaction:Neurotoxicity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:623",
+      "from": "Case:189629853",
+      "to": "Reaction:Cytokine release syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:624",
+      "from": "Case:189629853",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:625",
+      "from": "Case:189629853",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:626",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:189629853",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:627",
+      "from": "Case:189965362",
+      "to": "Drug:VINCRISTINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:628",
+      "from": "Case:189965362",
+      "to": "Drug:MERCAPTOPURINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:629",
+      "from": "Case:189965362",
+      "to": "Drug:CYTARABINE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:630",
+      "from": "Case:189965362",
+      "to": "Drug:METHOTREXATE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:631",
+      "from": "Case:189965362",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:632",
+      "from": "Case:189965362",
+      "to": "Drug:CYTARABINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:633",
+      "from": "Case:189965362",
+      "to": "Drug:INCB018424",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:635",
+      "from": "Case:189965362",
+      "to": "Reaction:Rhinorrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:636",
+      "from": "Case:189965362",
+      "to": "Reaction:Chills",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:638",
+      "from": "Case:189965362",
+      "to": "Reaction:Lymphocyte count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:639",
+      "from": "Case:189965362",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:640",
+      "from": "Case:189965362",
+      "to": "Reaction:White blood cell count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:641",
+      "from": "Case:189965362",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:642",
+      "from": "Case:189965362",
+      "to": "Reaction:Neutrophil count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:643",
+      "from": "Case:189965362",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:645",
+      "from": "Case:189965362",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:646",
+      "from": "Case:189965362",
+      "to": "Reaction:Chest pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:647",
+      "from": "Case:189965362",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:648",
+      "from": "Case:189965362",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:649",
+      "from": "Manufacturer:HIKMA",
+      "to": "Case:189965362",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:650",
+      "from": "Case:189978562",
+      "to": "Drug:CYTARABINE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:651",
+      "from": "Case:189978562",
+      "to": "Drug:CYTARABINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:652",
+      "from": "Case:189978562",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:653",
+      "from": "Case:189978562",
+      "to": "Drug:MERCAPTOPURINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:654",
+      "from": "Case:189978562",
+      "to": "Drug:INCB018424",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:655",
+      "from": "Case:189978562",
+      "to": "Drug:PEGASPARGASE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:657",
+      "from": "Case:189978562",
+      "to": "Reaction:Hypoxia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:658",
+      "from": "Case:189978562",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:659",
+      "from": "Case:189978562",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:660",
+      "from": "Case:189978562",
+      "to": "Reaction:Neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:661",
+      "from": "Case:189978562",
+      "to": "Reaction:White blood cell count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:662",
+      "from": "Case:189978562",
+      "to": "Reaction:Platelet count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:664",
+      "from": "Case:189978562",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:666",
+      "from": "Case:189978562",
+      "to": "Reaction:Chest pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:667",
+      "from": "Case:189978562",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:668",
+      "from": "Case:189978562",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:669",
+      "from": "Case:189978562",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:670",
+      "from": "Manufacturer:HIKMA",
+      "to": "Case:189978562",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:671",
+      "from": "Case:190997992",
+      "to": "Drug:METHOTREXATE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:672",
+      "from": "Case:190997992",
+      "to": "Drug:VINCRISTINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:673",
+      "from": "Case:190997992",
+      "to": "Drug:PEGASPARGASE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:674",
+      "from": "Case:190997992",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:675",
+      "from": "Case:190997992",
+      "to": "Drug:CYTARABINE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:677",
+      "from": "Case:190997992",
+      "to": "Drug:MERCAPTOPURINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:678",
+      "from": "Case:190997992",
+      "to": "Reaction:Decreased appetite",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:679",
+      "from": "Case:190997992",
+      "to": "Reaction:Neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:680",
+      "from": "Case:190997992",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:681",
+      "from": "Case:190997992",
+      "to": "Reaction:Neutrophil count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:682",
+      "from": "Case:190997992",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:683",
+      "from": "Case:190997992",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:684",
+      "from": "Case:190997992",
+      "to": "Reaction:Lymphocyte count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:685",
+      "from": "Case:190997992",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:689",
+      "from": "Case:190997992",
+      "to": "Reaction:Chest pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:690",
+      "from": "Case:190997992",
+      "to": "Reaction:White blood cell count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:691",
+      "from": "Case:190997992",
+      "to": "Reaction:Tachycardia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:693",
+      "from": "Case:190997992",
+      "to": "Reaction:Chills",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:694",
+      "from": "Case:190997992",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:695",
+      "from": "Case:190997992",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:696",
+      "from": "Case:190997992",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:697",
+      "from": "Case:190997992",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:698",
+      "from": "Manufacturer:HIKMA",
+      "to": "Case:190997992",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:700",
+      "from": "Case:191677604",
+      "to": "Drug:SODIUM CHLORIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:705",
+      "from": "Case:191677604",
+      "to": "Drug:ZOVIRAX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:714",
+      "from": "Case:191677604",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:718",
+      "from": "Case:191677604",
+      "to": "Drug:FLUDARABINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:720",
+      "from": "Case:191677604",
+      "to": "Reaction:Atrial fibrillation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:721",
+      "from": "Case:191677604",
+      "to": "Reaction:Hypoxia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:723",
+      "from": "Case:191677604",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:724",
+      "from": "Case:191677604",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    }
+  ],
+  "meta": {
+    "caseCount": 40,
+    "nodeCount": 220,
+    "relCount": 621,
+    "capped": true,
+    "focusDrug": "CYCLOPHOSPHAMIDE"
+  }
+}

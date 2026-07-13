@@ -1,0 +1,4248 @@
+{
+  "nodes": [
+    {
+      "id": "Case:149444826",
+      "caption": "Case 149444826 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:IPILIMUMAB",
+      "caption": "IPILIMUMAB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CHROMIUM PICOLINATE",
+      "caption": "CHROMIUM PICOLINATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:HYDROCORTISONE",
+      "caption": "HYDROCORTISONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:FERROUS GLUCONATE",
+      "caption": "FERROUS GLUCONATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:SIMVASTATIN",
+      "caption": "SIMVASTATIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:POTASSIUM GLUCONATE",
+      "caption": "POTASSIUM GLUCONATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ACETAMINOPHEN",
+      "caption": "ACETAMINOPHEN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN C",
+      "caption": "VITAMIN C",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:KRILL OIL",
+      "caption": "KRILL OIL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CARVEDILOL",
+      "caption": "CARVEDILOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:EXCEDRIN [ACETYLSALICYLIC ACID;CAFFEINE;SALICYLAMIDE]",
+      "caption": "EXCEDRIN [ACETYLSALICYLIC ACID;CAFFEINE;SALICYLAMIDE]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:OXYBUTYNIN",
+      "caption": "OXYBUTYNIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:METFORMIN",
+      "caption": "METFORMIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ASPIRIN [ACETYLSALICYLIC ACID]",
+      "caption": "ASPIRIN [ACETYLSALICYLIC ACID]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:NIVOLUMAB",
+      "caption": "NIVOLUMAB",
+      "labels": [
+        "Drug"
+      ],
+      "score": 1.0
+    },
+    {
+      "id": "Reaction:Arthritis",
+      "caption": "Arthritis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Hospitalization - Initial or Prolonged",
+      "caption": "Hospitalization - Initial or Prolonged",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adult",
+      "caption": "Adult",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "caption": "BRISTOL MYERS SQUIBB",
+      "labels": [
+        "Manufacturer"
+      ]
+    },
+    {
+      "id": "Case:152305456",
+      "caption": "Case 152305456 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:LEVOTHYROXINE",
+      "caption": "LEVOTHYROXINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CITALOPRAM",
+      "caption": "CITALOPRAM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BUPROPION",
+      "caption": "BUPROPION",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BUSPIRONE",
+      "caption": "BUSPIRONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LORAZEPAM",
+      "caption": "LORAZEPAM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MUCINEX",
+      "caption": "MUCINEX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Enterocolitis",
+      "caption": "Enterocolitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Other Serious (Important Medical Event)",
+      "caption": "Other Serious (Important Medical Event)",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:162579746",
+      "caption": "Case 162579746 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:ALBUTEROL [SALBUTAMOL]",
+      "caption": "ALBUTEROL [SALBUTAMOL]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:INSPRA",
+      "caption": "INSPRA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ANORO ELLIPTA",
+      "caption": "ANORO ELLIPTA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TYLENOL",
+      "caption": "TYLENOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:NORVASC",
+      "caption": "NORVASC",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:AMARYL",
+      "caption": "AMARYL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PREDNISONE",
+      "caption": "PREDNISONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Sinus node dysfunction",
+      "caption": "Sinus node dysfunction",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Elderly",
+      "caption": "Elderly",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:164148927",
+      "caption": "Case 164148927 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Sepsis",
+      "caption": "Sepsis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Acute kidney injury",
+      "caption": "Acute kidney injury",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Addison's disease",
+      "caption": "Addison's disease",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Liver abscess",
+      "caption": "Liver abscess",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Life-Threatening",
+      "caption": "Life-Threatening",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:169005492",
+      "caption": "Case 169005492 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:VINCRISTINE SULFATE",
+      "caption": "VINCRISTINE SULFATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:RITUXIMAB",
+      "caption": "RITUXIMAB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DOXORUBICIN HYDROCHLORIDE",
+      "caption": "DOXORUBICIN HYDROCHLORIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ETOPOSIDE",
+      "caption": "ETOPOSIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CYCLOPHOSPHAMIDE",
+      "caption": "CYCLOPHOSPHAMIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Febrile neutropenia",
+      "caption": "Febrile neutropenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:169444862",
+      "caption": "Case 169444862 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:IFOSFAMIDE",
+      "caption": "IFOSFAMIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CARBOPLATIN",
+      "caption": "CARBOPLATIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:NEULASTA",
+      "caption": "NEULASTA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Colitis",
+      "caption": "Colitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adolescent",
+      "caption": "Adolescent",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:173595318",
+      "caption": "Case 173595318 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:PRILOSEC",
+      "caption": "PRILOSEC",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:OXALIPLATIN",
+      "caption": "OXALIPLATIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:RISEDRONATE",
+      "caption": "RISEDRONATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:HCTZ",
+      "caption": "HCTZ",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:COZAAR",
+      "caption": "COZAAR",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LIPITOR",
+      "caption": "LIPITOR",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:COMPAZINE",
+      "caption": "COMPAZINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TOPROL XL",
+      "caption": "TOPROL XL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Death",
+      "caption": "Death",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Immune-mediated hepatitis",
+      "caption": "Immune-mediated hepatitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Urinary tract infection enterococcal",
+      "caption": "Urinary tract infection enterococcal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Platelet count decreased",
+      "caption": "Platelet count decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hyperglycaemia",
+      "caption": "Hyperglycaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Liver injury",
+      "caption": "Liver injury",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Death",
+      "caption": "Death",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:177587644",
+      "caption": "Case 177587644 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:RUCAPARIB",
+      "caption": "RUCAPARIB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Urinary tract infection",
+      "caption": "Urinary tract infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:180047004",
+      "caption": "Case 180047004 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:RELATLIMAB",
+      "caption": "RELATLIMAB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Pleural effusion",
+      "caption": "Pleural effusion",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:182095154",
+      "caption": "Case 182095154 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:XGEVA",
+      "caption": "XGEVA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LUPRON",
+      "caption": "LUPRON",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CABOZANTINIB",
+      "caption": "CABOZANTINIB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Cardiac arrest",
+      "caption": "Cardiac arrest",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:184382254",
+      "caption": "Case 184382254 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:VANCOMYCIN",
+      "caption": "VANCOMYCIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ENOXAPARIN SODIUM",
+      "caption": "ENOXAPARIN SODIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VE800",
+      "caption": "VE800",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Ischaemic stroke",
+      "caption": "Ischaemic stroke",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Troponin increased",
+      "caption": "Troponin increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Condition aggravated",
+      "caption": "Condition aggravated",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dysphagia",
+      "caption": "Dysphagia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pneumonia aspiration",
+      "caption": "Pneumonia aspiration",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Malnutrition",
+      "caption": "Malnutrition",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:184421764",
+      "caption": "Case 184421764 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:ATENOLOL",
+      "caption": "ATENOLOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:RUXOLITINIB",
+      "caption": "RUXOLITINIB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Joint dislocation",
+      "caption": "Joint dislocation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hip fracture",
+      "caption": "Hip fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:184540952",
+      "caption": "Case 184540952 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:BRENTUXIMAB VEDOTIN",
+      "caption": "BRENTUXIMAB VEDOTIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Confusional state",
+      "caption": "Confusional state",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Seizure",
+      "caption": "Seizure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:184606695",
+      "caption": "Case 184606695 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Lipase increased",
+      "caption": "Lipase increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pancreatitis",
+      "caption": "Pancreatitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Nausea",
+      "caption": "Nausea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Electrocardiogram QT prolonged",
+      "caption": "Electrocardiogram QT prolonged",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypoglycaemia",
+      "caption": "Hypoglycaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hyponatraemia",
+      "caption": "Hyponatraemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cholecystitis",
+      "caption": "Cholecystitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:185265695",
+      "caption": "Case 185265695 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:PANTOPRAZOLE",
+      "caption": "PANTOPRAZOLE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:HYDRALAZINE",
+      "caption": "HYDRALAZINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PACLITAXEL ALBUMIN",
+      "caption": "PACLITAXEL ALBUMIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:FERROUS SULFATE",
+      "caption": "FERROUS SULFATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN B12",
+      "caption": "VITAMIN B12",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ZINC OXIDE",
+      "caption": "ZINC OXIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:GEMCITABINE HYDROCHLORIDE",
+      "caption": "GEMCITABINE HYDROCHLORIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MAGNESIUM OXIDE",
+      "caption": "MAGNESIUM OXIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:HEPARIN LOCK FLUSH",
+      "caption": "HEPARIN LOCK FLUSH",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:METRONIDAZOLE",
+      "caption": "METRONIDAZOLE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MG PLUS PROTEIN",
+      "caption": "MG PLUS PROTEIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:APX005M",
+      "caption": "APX005M",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LACTATED RINGERS SOLUTION",
+      "caption": "LACTATED RINGERS SOLUTION",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:AMLODIPINE",
+      "caption": "AMLODIPINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PHYTONADIONE",
+      "caption": "PHYTONADIONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:THERAGRAN M [ASCORBIC ACID;CALCIUM CARBONATE;COPPER;CYANOCOBALAMIN;ERG",
+      "caption": "THERAGRAN M [ASCORBIC ACID;CALCIUM CARBONATE;COPPER;CYANOCOBALAMIN;ERG",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:RIVAROXABAN",
+      "caption": "RIVAROXABAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Mesenteric vein thrombosis",
+      "caption": "Mesenteric vein thrombosis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Escherichia urinary tract infection",
+      "caption": "Escherichia urinary tract infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Respiratory failure",
+      "caption": "Respiratory failure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Clostridium difficile colitis",
+      "caption": "Clostridium difficile colitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Delirium",
+      "caption": "Delirium",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:185377524",
+      "caption": "Case 185377524 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:BYSTOLIC",
+      "caption": "BYSTOLIC",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:IMODIUM",
+      "caption": "IMODIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BMS 986321 01",
+      "caption": "BMS 986321 01",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MULTIVITAMIN [ASCORBIC ACID;BIOTIN;FOLIC ACID;NICOTINIC ACID;PANTOTHEN",
+      "caption": "MULTIVITAMIN [ASCORBIC ACID;BIOTIN;FOLIC ACID;NICOTINIC ACID;PANTOTHEN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:OMEGA 3 [DOCOSAHEXAENOIC ACID;EICOSAPENTAENOIC ACID]",
+      "caption": "OMEGA 3 [DOCOSAHEXAENOIC ACID;EICOSAPENTAENOIC ACID]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ATORVASTATIN",
+      "caption": "ATORVASTATIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:FENOFIBRATE",
+      "caption": "FENOFIBRATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:SODIUM CHLORIDE",
+      "caption": "SODIUM CHLORIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:AXITINIB",
+      "caption": "AXITINIB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PROBIOTIC [BIFIDOBACTERIUM BIFIDUM;BIFIDOBACTERIUM LACTIS;BIFIDOBACTER",
+      "caption": "PROBIOTIC [BIFIDOBACTERIUM BIFIDUM;BIFIDOBACTERIUM LACTIS;BIFIDOBACTER",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN D3",
+      "caption": "VITAMIN D3",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ENALAPRIL",
+      "caption": "ENALAPRIL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:185664083",
+      "caption": "Case 185664083 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Encephalopathy",
+      "caption": "Encephalopathy",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:187866262",
+      "caption": "Case 187866262 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Pancytopenia",
+      "caption": "Pancytopenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Disability",
+      "caption": "Disability",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:188245024",
+      "caption": "Case 188245024 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:CISPLATIN",
+      "caption": "CISPLATIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Ventricular tachycardia",
+      "caption": "Ventricular tachycardia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:188837784",
+      "caption": "Case 188837784 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:NORMAL SALINE",
+      "caption": "NORMAL SALINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PRAVACHOL",
+      "caption": "PRAVACHOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:METOPROLOL SUCCINATE",
+      "caption": "METOPROLOL SUCCINATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BMS 986249 01",
+      "caption": "BMS 986249 01",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ZYLOPRIM",
+      "caption": "ZYLOPRIM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:SYNTHROID",
+      "caption": "SYNTHROID",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Troponin I increased",
+      "caption": "Troponin I increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:189618882",
+      "caption": "Case 189618882 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:COPANLISIB",
+      "caption": "COPANLISIB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:COVID-19",
+      "caption": "COVID-19",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:190499602",
+      "caption": "Case 190499602 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:ELIQUIS",
+      "caption": "ELIQUIS",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ZOFRAN",
+      "caption": "ZOFRAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VIT D [COLECALCIFEROL]",
+      "caption": "VIT D [COLECALCIFEROL]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MOTRIN",
+      "caption": "MOTRIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TESTOSTERONE",
+      "caption": "TESTOSTERONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:METAMUCIL THERAPY FOR REGULARITY",
+      "caption": "METAMUCIL THERAPY FOR REGULARITY",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:UROCIT K",
+      "caption": "UROCIT K",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:IBUPROFEN",
+      "caption": "IBUPROFEN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:OXYCODONE",
+      "caption": "OXYCODONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Diarrhoea",
+      "caption": "Diarrhoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:191423853",
+      "caption": "Case 191423853 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:HYDROCHLOROTHIAZIDE",
+      "caption": "HYDROCHLOROTHIAZIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Immune-mediated myocarditis",
+      "caption": "Immune-mediated myocarditis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dyspnoea",
+      "caption": "Dyspnoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:191913102",
+      "caption": "Case 191913102 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:L LYSINE [LYSINE HYDROCHLORIDE]",
+      "caption": "L LYSINE [LYSINE HYDROCHLORIDE]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MULTI VITAMIN [ASCORBIC ACID;COLECALCIFEROL;NICOTINAMIDE;PANTHENOL;PYR",
+      "caption": "MULTI VITAMIN [ASCORBIC ACID;COLECALCIFEROL;NICOTINAMIDE;PANTHENOL;PYR",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:OLMESARTAN MEDOXOMIL",
+      "caption": "OLMESARTAN MEDOXOMIL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LATANOPROST",
+      "caption": "LATANOPROST",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MUPIROCIN",
+      "caption": "MUPIROCIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PROCHLORPERAZINE",
+      "caption": "PROCHLORPERAZINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:SYMBICORT",
+      "caption": "SYMBICORT",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Costochondritis",
+      "caption": "Costochondritis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:192137702",
+      "caption": "Case 192137702 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:TRABECTEDIN",
+      "caption": "TRABECTEDIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Intentional product use issue",
+      "caption": "Intentional product use issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Non-cardiac chest pain",
+      "caption": "Non-cardiac chest pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:192305292",
+      "caption": "Case 192305292 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:192310323",
+      "caption": "Case 192310323 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Hypokalaemia",
+      "caption": "Hypokalaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Malignant neoplasm progression",
+      "caption": "Malignant neoplasm progression",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cerebrovascular accident",
+      "caption": "Cerebrovascular accident",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:192794292",
+      "caption": "Case 192794292 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:192851942",
+      "caption": "Case 192851942 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal pain",
+      "caption": "Abdominal pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:193603224",
+      "caption": "Case 193603224 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Haematuria",
+      "caption": "Haematuria",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Aspartate aminotransferase increased",
+      "caption": "Aspartate aminotransferase increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:193625334",
+      "caption": "Case 193625334 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Anaemia",
+      "caption": "Anaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:193673032",
+      "caption": "Case 193673032 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:193732754",
+      "caption": "Case 193732754 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:193845573",
+      "caption": "Case 193845573 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:PLACEBO",
+      "caption": "PLACEBO",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:193901623",
+      "caption": "Case 193901623 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Adrenal insufficiency",
+      "caption": "Adrenal insufficiency",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:193963312",
+      "caption": "Case 193963312 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:LUCITANIB",
+      "caption": "LUCITANIB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:194070054",
+      "caption": "Case 194070054 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:194134985",
+      "caption": "Case 194134985 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:194135963",
+      "caption": "Case 194135963 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:194325534",
+      "caption": "Case 194325534 (M)",
+      "labels": [
+        "Case"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "CD:1",
+      "from": "Case:149444826",
+      "to": "Drug:IPILIMUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:2",
+      "from": "Case:149444826",
+      "to": "Drug:CHROMIUM PICOLINATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:3",
+      "from": "Case:149444826",
+      "to": "Drug:HYDROCORTISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:4",
+      "from": "Case:149444826",
+      "to": "Drug:FERROUS GLUCONATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:5",
+      "from": "Case:149444826",
+      "to": "Drug:SIMVASTATIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:6",
+      "from": "Case:149444826",
+      "to": "Drug:POTASSIUM GLUCONATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:7",
+      "from": "Case:149444826",
+      "to": "Drug:ACETAMINOPHEN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:8",
+      "from": "Case:149444826",
+      "to": "Drug:VITAMIN C",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:9",
+      "from": "Case:149444826",
+      "to": "Drug:KRILL OIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:10",
+      "from": "Case:149444826",
+      "to": "Drug:CARVEDILOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:11",
+      "from": "Case:149444826",
+      "to": "Drug:EXCEDRIN [ACETYLSALICYLIC ACID;CAFFEINE;SALICYLAMIDE]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:12",
+      "from": "Case:149444826",
+      "to": "Drug:OXYBUTYNIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:13",
+      "from": "Case:149444826",
+      "to": "Drug:METFORMIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:14",
+      "from": "Case:149444826",
+      "to": "Drug:ASPIRIN [ACETYLSALICYLIC ACID]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:15",
+      "from": "Case:149444826",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:16",
+      "from": "Case:149444826",
+      "to": "Reaction:Arthritis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:17",
+      "from": "Case:149444826",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:18",
+      "from": "Case:149444826",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:19",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:149444826",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:20",
+      "from": "Case:152305456",
+      "to": "Drug:LEVOTHYROXINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:21",
+      "from": "Case:152305456",
+      "to": "Drug:CITALOPRAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:22",
+      "from": "Case:152305456",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:23",
+      "from": "Case:152305456",
+      "to": "Drug:BUPROPION",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:24",
+      "from": "Case:152305456",
+      "to": "Drug:IPILIMUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:25",
+      "from": "Case:152305456",
+      "to": "Drug:BUSPIRONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:26",
+      "from": "Case:152305456",
+      "to": "Drug:LORAZEPAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:27",
+      "from": "Case:152305456",
+      "to": "Drug:MUCINEX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:28",
+      "from": "Case:152305456",
+      "to": "Reaction:Enterocolitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:29",
+      "from": "Case:152305456",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:30",
+      "from": "Case:152305456",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:31",
+      "from": "Case:152305456",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:32",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:152305456",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:33",
+      "from": "Case:162579746",
+      "to": "Drug:ALBUTEROL [SALBUTAMOL]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:34",
+      "from": "Case:162579746",
+      "to": "Drug:INSPRA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:35",
+      "from": "Case:162579746",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:36",
+      "from": "Case:162579746",
+      "to": "Drug:ANORO ELLIPTA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:37",
+      "from": "Case:162579746",
+      "to": "Drug:TYLENOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:38",
+      "from": "Case:162579746",
+      "to": "Drug:METFORMIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:39",
+      "from": "Case:162579746",
+      "to": "Drug:NORVASC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:40",
+      "from": "Case:162579746",
+      "to": "Drug:AMARYL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:41",
+      "from": "Case:162579746",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:42",
+      "from": "Case:162579746",
+      "to": "Drug:ASPIRIN [ACETYLSALICYLIC ACID]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:43",
+      "from": "Case:162579746",
+      "to": "Reaction:Sinus node dysfunction",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:44",
+      "from": "Case:162579746",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:45",
+      "from": "Case:162579746",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:46",
+      "from": "Case:162579746",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:47",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:162579746",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:48",
+      "from": "Case:164148927",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:49",
+      "from": "Case:164148927",
+      "to": "Reaction:Sepsis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:50",
+      "from": "Case:164148927",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:51",
+      "from": "Case:164148927",
+      "to": "Reaction:Addison's disease",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:52",
+      "from": "Case:164148927",
+      "to": "Reaction:Liver abscess",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:53",
+      "from": "Case:164148927",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:54",
+      "from": "Case:164148927",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:55",
+      "from": "Case:164148927",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:56",
+      "from": "Case:164148927",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:57",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:164148927",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:58",
+      "from": "Case:169005492",
+      "to": "Drug:VINCRISTINE SULFATE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:59",
+      "from": "Case:169005492",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:60",
+      "from": "Case:169005492",
+      "to": "Drug:RITUXIMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:61",
+      "from": "Case:169005492",
+      "to": "Drug:DOXORUBICIN HYDROCHLORIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:62",
+      "from": "Case:169005492",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:63",
+      "from": "Case:169005492",
+      "to": "Drug:ETOPOSIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:64",
+      "from": "Case:169005492",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:65",
+      "from": "Case:169005492",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:66",
+      "from": "Case:169005492",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:67",
+      "from": "Case:169005492",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:68",
+      "from": "Case:169005492",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:69",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:169005492",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:70",
+      "from": "Case:169444862",
+      "to": "Drug:IFOSFAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:71",
+      "from": "Case:169444862",
+      "to": "Drug:CARBOPLATIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:72",
+      "from": "Case:169444862",
+      "to": "Drug:NEULASTA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:73",
+      "from": "Case:169444862",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:74",
+      "from": "Case:169444862",
+      "to": "Drug:ETOPOSIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:75",
+      "from": "Case:169444862",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:76",
+      "from": "Case:169444862",
+      "to": "Reaction:Colitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:77",
+      "from": "Case:169444862",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:78",
+      "from": "Case:169444862",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:79",
+      "from": "Case:169444862",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:80",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:169444862",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:81",
+      "from": "Case:173595318",
+      "to": "Drug:PRILOSEC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:82",
+      "from": "Case:173595318",
+      "to": "Drug:OXALIPLATIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:83",
+      "from": "Case:173595318",
+      "to": "Drug:NORVASC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:84",
+      "from": "Case:173595318",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:85",
+      "from": "Case:173595318",
+      "to": "Drug:RISEDRONATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:86",
+      "from": "Case:173595318",
+      "to": "Drug:HCTZ",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:87",
+      "from": "Case:173595318",
+      "to": "Drug:TYLENOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:88",
+      "from": "Case:173595318",
+      "to": "Drug:COZAAR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:89",
+      "from": "Case:173595318",
+      "to": "Drug:LIPITOR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:90",
+      "from": "Case:173595318",
+      "to": "Drug:COMPAZINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:91",
+      "from": "Case:173595318",
+      "to": "Drug:TOPROL XL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:92",
+      "from": "Case:173595318",
+      "to": "Reaction:Death",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:93",
+      "from": "Case:173595318",
+      "to": "Reaction:Immune-mediated hepatitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:94",
+      "from": "Case:173595318",
+      "to": "Reaction:Urinary tract infection enterococcal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:95",
+      "from": "Case:173595318",
+      "to": "Reaction:Platelet count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:96",
+      "from": "Case:173595318",
+      "to": "Reaction:Hyperglycaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:97",
+      "from": "Case:173595318",
+      "to": "Reaction:Liver injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:98",
+      "from": "Case:173595318",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:99",
+      "from": "Case:173595318",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:100",
+      "from": "Case:173595318",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:101",
+      "from": "Case:173595318",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:102",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:173595318",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:103",
+      "from": "Case:177587644",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:104",
+      "from": "Case:177587644",
+      "to": "Drug:RUCAPARIB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:105",
+      "from": "Case:177587644",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:106",
+      "from": "Case:177587644",
+      "to": "Reaction:Urinary tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:107",
+      "from": "Case:177587644",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:108",
+      "from": "Case:177587644",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:109",
+      "from": "Case:177587644",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:110",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:177587644",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:111",
+      "from": "Case:180047004",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:112",
+      "from": "Case:180047004",
+      "to": "Drug:RELATLIMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:113",
+      "from": "Case:180047004",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:114",
+      "from": "Case:180047004",
+      "to": "Reaction:Pleural effusion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:115",
+      "from": "Case:180047004",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:116",
+      "from": "Case:180047004",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:117",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:180047004",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:118",
+      "from": "Case:182095154",
+      "to": "Drug:XGEVA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:119",
+      "from": "Case:182095154",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:120",
+      "from": "Case:182095154",
+      "to": "Drug:IPILIMUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:121",
+      "from": "Case:182095154",
+      "to": "Drug:LUPRON",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:122",
+      "from": "Case:182095154",
+      "to": "Drug:CABOZANTINIB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:123",
+      "from": "Case:182095154",
+      "to": "Reaction:Cardiac arrest",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:124",
+      "from": "Case:182095154",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:125",
+      "from": "Case:182095154",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:126",
+      "from": "Case:182095154",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:127",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:182095154",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:128",
+      "from": "Case:184382254",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:129",
+      "from": "Case:184382254",
+      "to": "Drug:VANCOMYCIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:130",
+      "from": "Case:184382254",
+      "to": "Drug:ENOXAPARIN SODIUM",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:131",
+      "from": "Case:184382254",
+      "to": "Drug:VE800",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:132",
+      "from": "Case:184382254",
+      "to": "Reaction:Ischaemic stroke",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:133",
+      "from": "Case:184382254",
+      "to": "Reaction:Troponin increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:134",
+      "from": "Case:184382254",
+      "to": "Reaction:Condition aggravated",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:135",
+      "from": "Case:184382254",
+      "to": "Reaction:Dysphagia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:136",
+      "from": "Case:184382254",
+      "to": "Reaction:Pneumonia aspiration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:137",
+      "from": "Case:184382254",
+      "to": "Reaction:Malnutrition",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:138",
+      "from": "Case:184382254",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:139",
+      "from": "Case:184382254",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:140",
+      "from": "Case:184382254",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:141",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:184382254",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:142",
+      "from": "Case:184421764",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:143",
+      "from": "Case:184421764",
+      "to": "Drug:ATENOLOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:144",
+      "from": "Case:184421764",
+      "to": "Drug:RUXOLITINIB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:145",
+      "from": "Case:184421764",
+      "to": "Reaction:Joint dislocation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:146",
+      "from": "Case:184421764",
+      "to": "Reaction:Hip fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:147",
+      "from": "Case:184421764",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:148",
+      "from": "Case:184421764",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:149",
+      "from": "Case:184421764",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:150",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:184421764",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:151",
+      "from": "Case:184540952",
+      "to": "Drug:BRENTUXIMAB VEDOTIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:152",
+      "from": "Case:184540952",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:153",
+      "from": "Case:184540952",
+      "to": "Reaction:Confusional state",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:154",
+      "from": "Case:184540952",
+      "to": "Reaction:Seizure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:155",
+      "from": "Case:184540952",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:156",
+      "from": "Case:184540952",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:157",
+      "from": "Case:184540952",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:158",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:184540952",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:159",
+      "from": "Case:184606695",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:160",
+      "from": "Case:184606695",
+      "to": "Drug:CABOZANTINIB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:161",
+      "from": "Case:184606695",
+      "to": "Reaction:Lipase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:162",
+      "from": "Case:184606695",
+      "to": "Reaction:Pancreatitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:163",
+      "from": "Case:184606695",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:164",
+      "from": "Case:184606695",
+      "to": "Reaction:Electrocardiogram QT prolonged",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:165",
+      "from": "Case:184606695",
+      "to": "Reaction:Hypoglycaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:166",
+      "from": "Case:184606695",
+      "to": "Reaction:Hyponatraemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:167",
+      "from": "Case:184606695",
+      "to": "Reaction:Cholecystitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:168",
+      "from": "Case:184606695",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:169",
+      "from": "Case:184606695",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:170",
+      "from": "Case:184606695",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:171",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:184606695",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:172",
+      "from": "Case:185265695",
+      "to": "Drug:PANTOPRAZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:173",
+      "from": "Case:185265695",
+      "to": "Drug:HYDRALAZINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:174",
+      "from": "Case:185265695",
+      "to": "Drug:PACLITAXEL ALBUMIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:175",
+      "from": "Case:185265695",
+      "to": "Drug:FERROUS SULFATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:176",
+      "from": "Case:185265695",
+      "to": "Drug:VITAMIN B12",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:177",
+      "from": "Case:185265695",
+      "to": "Drug:ZINC OXIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:178",
+      "from": "Case:185265695",
+      "to": "Drug:GEMCITABINE HYDROCHLORIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:179",
+      "from": "Case:185265695",
+      "to": "Drug:MAGNESIUM OXIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:180",
+      "from": "Case:185265695",
+      "to": "Drug:HEPARIN LOCK FLUSH",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:181",
+      "from": "Case:185265695",
+      "to": "Drug:METRONIDAZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:182",
+      "from": "Case:185265695",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:183",
+      "from": "Case:185265695",
+      "to": "Drug:MG PLUS PROTEIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:184",
+      "from": "Case:185265695",
+      "to": "Drug:APX005M",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:185",
+      "from": "Case:185265695",
+      "to": "Drug:LACTATED RINGERS SOLUTION",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:186",
+      "from": "Case:185265695",
+      "to": "Drug:AMLODIPINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:187",
+      "from": "Case:185265695",
+      "to": "Drug:PHYTONADIONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:188",
+      "from": "Case:185265695",
+      "to": "Drug:THERAGRAN M [ASCORBIC ACID;CALCIUM CARBONATE;COPPER;CYANOCOBALAMIN;ERG",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:189",
+      "from": "Case:185265695",
+      "to": "Drug:RIVAROXABAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:190",
+      "from": "Case:185265695",
+      "to": "Reaction:Mesenteric vein thrombosis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:191",
+      "from": "Case:185265695",
+      "to": "Reaction:Escherichia urinary tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:192",
+      "from": "Case:185265695",
+      "to": "Reaction:Respiratory failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:193",
+      "from": "Case:185265695",
+      "to": "Reaction:Clostridium difficile colitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:194",
+      "from": "Case:185265695",
+      "to": "Reaction:Sepsis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:195",
+      "from": "Case:185265695",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:196",
+      "from": "Case:185265695",
+      "to": "Reaction:Delirium",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:197",
+      "from": "Case:185265695",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:198",
+      "from": "Case:185265695",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:199",
+      "from": "Case:185265695",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:200",
+      "from": "Case:185265695",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:201",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:185265695",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:202",
+      "from": "Case:185377524",
+      "to": "Drug:BYSTOLIC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:203",
+      "from": "Case:185377524",
+      "to": "Drug:IMODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:204",
+      "from": "Case:185377524",
+      "to": "Drug:BMS 986321 01",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:205",
+      "from": "Case:185377524",
+      "to": "Drug:MULTIVITAMIN [ASCORBIC ACID;BIOTIN;FOLIC ACID;NICOTINIC ACID;PANTOTHEN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:206",
+      "from": "Case:185377524",
+      "to": "Drug:TYLENOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:207",
+      "from": "Case:185377524",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:208",
+      "from": "Case:185377524",
+      "to": "Drug:OMEGA 3 [DOCOSAHEXAENOIC ACID;EICOSAPENTAENOIC ACID]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:209",
+      "from": "Case:185377524",
+      "to": "Drug:ATORVASTATIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:210",
+      "from": "Case:185377524",
+      "to": "Drug:FENOFIBRATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:211",
+      "from": "Case:185377524",
+      "to": "Drug:SODIUM CHLORIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:212",
+      "from": "Case:185377524",
+      "to": "Drug:AXITINIB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:213",
+      "from": "Case:185377524",
+      "to": "Drug:ASPIRIN [ACETYLSALICYLIC ACID]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:214",
+      "from": "Case:185377524",
+      "to": "Drug:PROBIOTIC [BIFIDOBACTERIUM BIFIDUM;BIFIDOBACTERIUM LACTIS;BIFIDOBACTER",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:215",
+      "from": "Case:185377524",
+      "to": "Drug:PANTOPRAZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:216",
+      "from": "Case:185377524",
+      "to": "Drug:VITAMIN D3",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:217",
+      "from": "Case:185377524",
+      "to": "Drug:ENALAPRIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:218",
+      "from": "Case:185377524",
+      "to": "Reaction:Urinary tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:219",
+      "from": "Case:185377524",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:220",
+      "from": "Case:185377524",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:221",
+      "from": "Case:185377524",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:222",
+      "from": "Case:185377524",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:223",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:185377524",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:224",
+      "from": "Case:185664083",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:225",
+      "from": "Case:185664083",
+      "to": "Drug:IPILIMUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:226",
+      "from": "Case:185664083",
+      "to": "Reaction:Encephalopathy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:227",
+      "from": "Case:185664083",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:228",
+      "from": "Case:185664083",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:229",
+      "from": "Case:185664083",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:230",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:185664083",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:231",
+      "from": "Case:187866262",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:232",
+      "from": "Case:187866262",
+      "to": "Drug:RUCAPARIB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:233",
+      "from": "Case:187866262",
+      "to": "Reaction:Pancytopenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:234",
+      "from": "Case:187866262",
+      "to": "Outcome:Disability",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:235",
+      "from": "Case:187866262",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:236",
+      "from": "Case:187866262",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:237",
+      "from": "Case:187866262",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:238",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:187866262",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:239",
+      "from": "Case:188245024",
+      "to": "Drug:CISPLATIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:240",
+      "from": "Case:188245024",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:241",
+      "from": "Case:188245024",
+      "to": "Reaction:Ventricular tachycardia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:242",
+      "from": "Case:188245024",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:243",
+      "from": "Case:188245024",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:244",
+      "from": "Case:188245024",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:245",
+      "from": "Case:188245024",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:246",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:188245024",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:247",
+      "from": "Case:188837784",
+      "to": "Drug:NORMAL SALINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:248",
+      "from": "Case:188837784",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:249",
+      "from": "Case:188837784",
+      "to": "Drug:PRAVACHOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:250",
+      "from": "Case:188837784",
+      "to": "Drug:METOPROLOL SUCCINATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:251",
+      "from": "Case:188837784",
+      "to": "Drug:BMS 986249 01",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:252",
+      "from": "Case:188837784",
+      "to": "Drug:ZYLOPRIM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:253",
+      "from": "Case:188837784",
+      "to": "Drug:SYNTHROID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:254",
+      "from": "Case:188837784",
+      "to": "Reaction:Troponin I increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:255",
+      "from": "Case:188837784",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:256",
+      "from": "Case:188837784",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:257",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:188837784",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:258",
+      "from": "Case:189618882",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:259",
+      "from": "Case:189618882",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:260",
+      "from": "Case:189618882",
+      "to": "Drug:COPANLISIB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:261",
+      "from": "Case:189618882",
+      "to": "Reaction:Encephalopathy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:262",
+      "from": "Case:189618882",
+      "to": "Reaction:COVID-19",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:263",
+      "from": "Case:189618882",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:264",
+      "from": "Case:189618882",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:265",
+      "from": "Case:189618882",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:266",
+      "from": "Case:189618882",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:267",
+      "from": "Case:189618882",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:268",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:189618882",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:269",
+      "from": "Case:190499602",
+      "to": "Drug:ELIQUIS",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:270",
+      "from": "Case:190499602",
+      "to": "Drug:ZOFRAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:271",
+      "from": "Case:190499602",
+      "to": "Drug:IMODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:272",
+      "from": "Case:190499602",
+      "to": "Drug:VIT D [COLECALCIFEROL]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:273",
+      "from": "Case:190499602",
+      "to": "Drug:MOTRIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:274",
+      "from": "Case:190499602",
+      "to": "Drug:TESTOSTERONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:275",
+      "from": "Case:190499602",
+      "to": "Drug:PANTOPRAZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:276",
+      "from": "Case:190499602",
+      "to": "Drug:HYDROCORTISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:277",
+      "from": "Case:190499602",
+      "to": "Drug:METAMUCIL THERAPY FOR REGULARITY",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:278",
+      "from": "Case:190499602",
+      "to": "Drug:BMS 986249 01",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:279",
+      "from": "Case:190499602",
+      "to": "Drug:SYNTHROID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:280",
+      "from": "Case:190499602",
+      "to": "Drug:UROCIT K",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:281",
+      "from": "Case:190499602",
+      "to": "Drug:IBUPROFEN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:282",
+      "from": "Case:190499602",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:283",
+      "from": "Case:190499602",
+      "to": "Drug:OXYCODONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:284",
+      "from": "Case:190499602",
+      "to": "Drug:FERROUS SULFATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:285",
+      "from": "Case:190499602",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:286",
+      "from": "Case:190499602",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:287",
+      "from": "Case:190499602",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:288",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:190499602",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:289",
+      "from": "Case:191423853",
+      "to": "Drug:HYDROCHLOROTHIAZIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:290",
+      "from": "Case:191423853",
+      "to": "Drug:ASPIRIN [ACETYLSALICYLIC ACID]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:291",
+      "from": "Case:191423853",
+      "to": "Drug:OXYCODONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:292",
+      "from": "Case:191423853",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:293",
+      "from": "Case:191423853",
+      "to": "Reaction:Immune-mediated myocarditis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:294",
+      "from": "Case:191423853",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:295",
+      "from": "Case:191423853",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:296",
+      "from": "Case:191423853",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:297",
+      "from": "Case:191423853",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:298",
+      "from": "Case:191423853",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:299",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:191423853",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:300",
+      "from": "Case:191913102",
+      "to": "Drug:L LYSINE [LYSINE HYDROCHLORIDE]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:301",
+      "from": "Case:191913102",
+      "to": "Drug:TYLENOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:302",
+      "from": "Case:191913102",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:303",
+      "from": "Case:191913102",
+      "to": "Drug:HYDROCHLOROTHIAZIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:304",
+      "from": "Case:191913102",
+      "to": "Drug:IBUPROFEN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:305",
+      "from": "Case:191913102",
+      "to": "Drug:MULTI VITAMIN [ASCORBIC ACID;COLECALCIFEROL;NICOTINAMIDE;PANTHENOL;PYR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:306",
+      "from": "Case:191913102",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:307",
+      "from": "Case:191913102",
+      "to": "Drug:OLMESARTAN MEDOXOMIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:308",
+      "from": "Case:191913102",
+      "to": "Drug:LATANOPROST",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:309",
+      "from": "Case:191913102",
+      "to": "Drug:ASPIRIN [ACETYLSALICYLIC ACID]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:310",
+      "from": "Case:191913102",
+      "to": "Drug:MUPIROCIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:311",
+      "from": "Case:191913102",
+      "to": "Drug:PROCHLORPERAZINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:312",
+      "from": "Case:191913102",
+      "to": "Drug:SYMBICORT",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:313",
+      "from": "Case:191913102",
+      "to": "Reaction:Costochondritis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:314",
+      "from": "Case:191913102",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:315",
+      "from": "Case:191913102",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:316",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:191913102",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:317",
+      "from": "Case:192137702",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:318",
+      "from": "Case:192137702",
+      "to": "Drug:TRABECTEDIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:319",
+      "from": "Case:192137702",
+      "to": "Drug:IPILIMUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:320",
+      "from": "Case:192137702",
+      "to": "Reaction:Intentional product use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:321",
+      "from": "Case:192137702",
+      "to": "Reaction:Non-cardiac chest pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:322",
+      "from": "Case:192137702",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:323",
+      "from": "Case:192137702",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:324",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:192137702",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:325",
+      "from": "Case:192305292",
+      "to": "Drug:IPILIMUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:326",
+      "from": "Case:192305292",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:327",
+      "from": "Case:192305292",
+      "to": "Reaction:Sepsis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:328",
+      "from": "Case:192305292",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:329",
+      "from": "Case:192305292",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:330",
+      "from": "Case:192305292",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:331",
+      "from": "Case:192305292",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:332",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:192305292",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:333",
+      "from": "Case:192310323",
+      "to": "Drug:IPILIMUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:334",
+      "from": "Case:192310323",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:335",
+      "from": "Case:192310323",
+      "to": "Reaction:Hypokalaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:336",
+      "from": "Case:192310323",
+      "to": "Reaction:Malignant neoplasm progression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:337",
+      "from": "Case:192310323",
+      "to": "Reaction:Cerebrovascular accident",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:338",
+      "from": "Case:192310323",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:339",
+      "from": "Case:192310323",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:340",
+      "from": "Case:192310323",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:341",
+      "from": "Case:192310323",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:342",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:192310323",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:343",
+      "from": "Case:192794292",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:344",
+      "from": "Case:192794292",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:345",
+      "from": "Case:192794292",
+      "to": "Drug:IPILIMUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:346",
+      "from": "Case:192794292",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:347",
+      "from": "Case:192794292",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:348",
+      "from": "Case:192794292",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:349",
+      "from": "Case:192794292",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:350",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:192794292",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:351",
+      "from": "Case:192851942",
+      "to": "Drug:TRABECTEDIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:352",
+      "from": "Case:192851942",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:353",
+      "from": "Case:192851942",
+      "to": "Drug:IPILIMUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:354",
+      "from": "Case:192851942",
+      "to": "Reaction:Abdominal pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:355",
+      "from": "Case:192851942",
+      "to": "Reaction:Intentional product use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:356",
+      "from": "Case:192851942",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:357",
+      "from": "Case:192851942",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:358",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:192851942",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:359",
+      "from": "Case:193603224",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:360",
+      "from": "Case:193603224",
+      "to": "Drug:IPILIMUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:361",
+      "from": "Case:193603224",
+      "to": "Reaction:Haematuria",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:362",
+      "from": "Case:193603224",
+      "to": "Reaction:Aspartate aminotransferase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:365",
+      "from": "Case:193603224",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:366",
+      "from": "Case:193603224",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:367",
+      "from": "Case:193603224",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:368",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:193603224",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:369",
+      "from": "Case:193625334",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:370",
+      "from": "Case:193625334",
+      "to": "Reaction:Anaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:378",
+      "from": "Case:193625334",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:379",
+      "from": "Case:193625334",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:380",
+      "from": "Case:193625334",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:381",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:193625334",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:382",
+      "from": "Case:193673032",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:383",
+      "from": "Case:193673032",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:384",
+      "from": "Case:193673032",
+      "to": "Drug:VINCRISTINE SULFATE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:385",
+      "from": "Case:193673032",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:386",
+      "from": "Case:193673032",
+      "to": "Drug:RITUXIMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:387",
+      "from": "Case:193673032",
+      "to": "Drug:ETOPOSIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:389",
+      "from": "Case:193673032",
+      "to": "Reaction:Platelet count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:390",
+      "from": "Case:193673032",
+      "to": "Reaction:Anaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:391",
+      "from": "Case:193673032",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:392",
+      "from": "Case:193673032",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:393",
+      "from": "Case:193673032",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:394",
+      "from": "Case:193673032",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:395",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:193673032",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:399",
+      "from": "Case:193732754",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:402",
+      "from": "Case:193732754",
+      "to": "Drug:ZOFRAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:406",
+      "from": "Case:193732754",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:411",
+      "from": "Case:193732754",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:412",
+      "from": "Case:193732754",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:413",
+      "from": "Case:193732754",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:414",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:193732754",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:415",
+      "from": "Case:193845573",
+      "to": "Drug:PLACEBO",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:416",
+      "from": "Case:193845573",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:418",
+      "from": "Case:193845573",
+      "to": "Reaction:COVID-19",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:419",
+      "from": "Case:193845573",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:420",
+      "from": "Case:193845573",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:421",
+      "from": "Case:193845573",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:422",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:193845573",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:423",
+      "from": "Case:193901623",
+      "to": "Drug:CABOZANTINIB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:424",
+      "from": "Case:193901623",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:425",
+      "from": "Case:193901623",
+      "to": "Reaction:Clostridium difficile colitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:426",
+      "from": "Case:193901623",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:429",
+      "from": "Case:193901623",
+      "to": "Reaction:Adrenal insufficiency",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:430",
+      "from": "Case:193901623",
+      "to": "Reaction:Sepsis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:432",
+      "from": "Case:193901623",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:433",
+      "from": "Case:193901623",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:434",
+      "from": "Case:193901623",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:435",
+      "from": "Case:193901623",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:436",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:193901623",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:437",
+      "from": "Case:193963312",
+      "to": "Drug:ATORVASTATIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:438",
+      "from": "Case:193963312",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:440",
+      "from": "Case:193963312",
+      "to": "Drug:LUCITANIB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:441",
+      "from": "Case:193963312",
+      "to": "Reaction:Troponin I increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:442",
+      "from": "Case:193963312",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:443",
+      "from": "Case:193963312",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:444",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:193963312",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:445",
+      "from": "Case:194070054",
+      "to": "Drug:IPILIMUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:446",
+      "from": "Case:194070054",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:447",
+      "from": "Case:194070054",
+      "to": "Drug:PLACEBO",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CO:449",
+      "from": "Case:194070054",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:450",
+      "from": "Case:194070054",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:451",
+      "from": "Case:194070054",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:452",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:194070054",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:453",
+      "from": "Case:194134985",
+      "to": "Drug:LUCITANIB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:454",
+      "from": "Case:194134985",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:455",
+      "from": "Case:194134985",
+      "to": "Reaction:Hyperglycaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:456",
+      "from": "Case:194134985",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:457",
+      "from": "Case:194134985",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:458",
+      "from": "Case:194134985",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:459",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:194134985",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:460",
+      "from": "Case:194135963",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CO:462",
+      "from": "Case:194135963",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:463",
+      "from": "Case:194135963",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:464",
+      "from": "Case:194135963",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:465",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:194135963",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:466",
+      "from": "Case:194325534",
+      "to": "Drug:RELATLIMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:467",
+      "from": "Case:194325534",
+      "to": "Drug:NIVOLUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:468",
+      "from": "Case:194325534",
+      "to": "Drug:ASPIRIN [ACETYLSALICYLIC ACID]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:469",
+      "from": "Case:194325534",
+      "to": "Drug:VITAMIN C",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:471",
+      "from": "Case:194325534",
+      "to": "Drug:HYDROCHLOROTHIAZIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:473",
+      "from": "Case:194325534",
+      "to": "Drug:NORVASC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:474",
+      "from": "Case:194325534",
+      "to": "Drug:LIPITOR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:476",
+      "from": "Case:194325534",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:477",
+      "from": "Case:194325534",
+      "to": "Reaction:Adrenal insufficiency",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:478",
+      "from": "Case:194325534",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:479",
+      "from": "Case:194325534",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:480",
+      "from": "Case:194325534",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:481",
+      "from": "Manufacturer:BRISTOL MYERS SQUIBB",
+      "to": "Case:194325534",
+      "type": "REGISTERED"
+    }
+  ],
+  "meta": {
+    "caseCount": 40,
+    "nodeCount": 220,
+    "relCount": 449,
+    "capped": true,
+    "focusDrug": "NIVOLUMAB"
+  }
+}

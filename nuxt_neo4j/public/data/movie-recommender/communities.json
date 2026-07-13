@@ -1,0 +1,298 @@
+{
+  "communityCount": 4,
+  "modularity": 0.612,
+  "communities": [
+    {
+      "id": 0,
+      "size": 7,
+      "avgAge": 34.29,
+      "topGenres": [
+        {
+          "name": "Crime",
+          "avgRating": 5.0,
+          "count": 4
+        },
+        {
+          "name": "Drama",
+          "avgRating": 4.75,
+          "count": 8
+        },
+        {
+          "name": "Action",
+          "avgRating": 4.67,
+          "count": 18
+        },
+        {
+          "name": "Sci-Fi",
+          "avgRating": 4.59,
+          "count": 32
+        },
+        {
+          "name": "Thriller",
+          "avgRating": 4.57,
+          "count": 7
+        }
+      ],
+      "topOccupations": [
+        {
+          "name": "Software Engineer",
+          "count": 1
+        },
+        {
+          "name": "Manager",
+          "count": 1
+        },
+        {
+          "name": "Engineer",
+          "count": 1
+        },
+        {
+          "name": "Scientist",
+          "count": 1
+        },
+        {
+          "name": "Consultant",
+          "count": 1
+        }
+      ],
+      "members": [
+        {
+          "id": "U001",
+          "name": "Alice Chen"
+        },
+        {
+          "id": "U007",
+          "name": "Grace Liu"
+        },
+        {
+          "id": "U011",
+          "name": "Karen Singh"
+        },
+        {
+          "id": "U013",
+          "name": "Maya Patel"
+        },
+        {
+          "id": "U016",
+          "name": "Paul Garcia"
+        },
+        {
+          "id": "U017",
+          "name": "Quinn Zhang"
+        },
+        {
+          "id": "U020",
+          "name": "Tom Anderson"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "size": 5,
+      "avgAge": 46.6,
+      "topGenres": [
+        {
+          "name": "Crime",
+          "avgRating": 4.53,
+          "count": 15
+        },
+        {
+          "name": "Drama",
+          "avgRating": 4.24,
+          "count": 25
+        },
+        {
+          "name": "Adventure",
+          "avgRating": 4.0,
+          "count": 3
+        },
+        {
+          "name": "Music",
+          "avgRating": 4.0,
+          "count": 2
+        },
+        {
+          "name": "Biography",
+          "avgRating": 3.6,
+          "count": 5
+        }
+      ],
+      "topOccupations": [
+        {
+          "name": "Teacher",
+          "count": 1
+        },
+        {
+          "name": "Doctor",
+          "count": 1
+        },
+        {
+          "name": "Accountant",
+          "count": 1
+        },
+        {
+          "name": "Architect",
+          "count": 1
+        },
+        {
+          "name": "Retired",
+          "count": 1
+        }
+      ],
+      "members": [
+        {
+          "id": "U002",
+          "name": "Bob Martinez"
+        },
+        {
+          "id": "U004",
+          "name": "David Kim"
+        },
+        {
+          "id": "U008",
+          "name": "Henry Park"
+        },
+        {
+          "id": "U014",
+          "name": "Noah Williams"
+        },
+        {
+          "id": "U018",
+          "name": "Ryan Murphy"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "size": 5,
+      "avgAge": 27.8,
+      "topGenres": [
+        {
+          "name": "Music",
+          "avgRating": 5.0,
+          "count": 1
+        },
+        {
+          "name": "Biography",
+          "avgRating": 4.75,
+          "count": 4
+        },
+        {
+          "name": "Romance",
+          "avgRating": 4.62,
+          "count": 8
+        },
+        {
+          "name": "Drama",
+          "avgRating": 4.56,
+          "count": 18
+        },
+        {
+          "name": "Animation",
+          "avgRating": 4.5,
+          "count": 4
+        }
+      ],
+      "topOccupations": [
+        {
+          "name": "Student",
+          "count": 2
+        },
+        {
+          "name": "Designer",
+          "count": 1
+        },
+        {
+          "name": "Chef",
+          "count": 1
+        },
+        {
+          "name": "Writer",
+          "count": 1
+        }
+      ],
+      "members": [
+        {
+          "id": "U003",
+          "name": "Carol White"
+        },
+        {
+          "id": "U005",
+          "name": "Eva Rossi"
+        },
+        {
+          "id": "U009",
+          "name": "Iris Novak"
+        },
+        {
+          "id": "U012",
+          "name": "Leo Tanaka"
+        },
+        {
+          "id": "U015",
+          "name": "Olivia Jones"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "size": 3,
+      "avgAge": 31.0,
+      "topGenres": [
+        {
+          "name": "Mystery",
+          "avgRating": 4.67,
+          "count": 6
+        },
+        {
+          "name": "Comedy",
+          "avgRating": 4.67,
+          "count": 3
+        },
+        {
+          "name": "Drama",
+          "avgRating": 4.5,
+          "count": 6
+        },
+        {
+          "name": "Thriller",
+          "avgRating": 4.38,
+          "count": 8
+        },
+        {
+          "name": "Crime",
+          "avgRating": 4.33,
+          "count": 3
+        }
+      ],
+      "topOccupations": [
+        {
+          "name": "Journalist",
+          "count": 1
+        },
+        {
+          "name": "Lawyer",
+          "count": 1
+        },
+        {
+          "name": "Nurse",
+          "count": 1
+        }
+      ],
+      "members": [
+        {
+          "id": "U006",
+          "name": "Frank Osei"
+        },
+        {
+          "id": "U010",
+          "name": "James Brown"
+        },
+        {
+          "id": "U019",
+          "name": "Sara Hassan"
+        }
+      ]
+    }
+  ]
+}

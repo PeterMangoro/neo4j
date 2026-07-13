@@ -1,0 +1,3301 @@
+{
+  "nodes": [
+    {
+      "id": "Case:178214526",
+      "caption": "Case 178214526 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:ZOLGENSMA",
+      "caption": "ZOLGENSMA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PREDNISOLONE",
+      "caption": "PREDNISOLONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Hepatic enzyme increased",
+      "caption": "Hepatic enzyme increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pyrexia",
+      "caption": "Pyrexia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Vomiting",
+      "caption": "Vomiting",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Aspartate aminotransferase increased",
+      "caption": "Aspartate aminotransferase increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Alanine aminotransferase increased",
+      "caption": "Alanine aminotransferase increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Other Serious (Important Medical Event)",
+      "caption": "Other Serious (Important Medical Event)",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Child",
+      "caption": "Child",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:178635783",
+      "caption": "Case 178635783 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:Parathyroid Hormone",
+      "caption": "Parathyroid Hormone",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Therapy interrupted",
+      "caption": "Therapy interrupted",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Exposure during pregnancy",
+      "caption": "Exposure during pregnancy",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product quality issue",
+      "caption": "Product quality issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Vitamin D decreased",
+      "caption": "Vitamin D decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Blood calcium decreased",
+      "caption": "Blood calcium decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adult",
+      "caption": "Adult",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:179145043",
+      "caption": "Case 179145043 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:ORKAMBI",
+      "caption": "ORKAMBI",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:179209814",
+      "caption": "Case 179209814 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:ATEZOLIZUMAB",
+      "caption": "ATEZOLIZUMAB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Injection site discomfort",
+      "caption": "Injection site discomfort",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Hospitalization - Initial or Prolonged",
+      "caption": "Hospitalization - Initial or Prolonged",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:180596442",
+      "caption": "Case 180596442 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:EDEX",
+      "caption": "EDEX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Groin pain",
+      "caption": "Groin pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Painful erection",
+      "caption": "Painful erection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Penile pain",
+      "caption": "Penile pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Therapeutic product effect decreased",
+      "caption": "Therapeutic product effect decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Elderly",
+      "caption": "Elderly",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:180920133",
+      "caption": "Case 180920133 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Reaction:Hypercalcaemia",
+      "caption": "Hypercalcaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Blood calcium increased",
+      "caption": "Blood calcium increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:128288262",
+      "caption": "Case 128288262 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:TERIFLUNOMIDE",
+      "caption": "TERIFLUNOMIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Ear pruritus",
+      "caption": "Ear pruritus",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gait disturbance",
+      "caption": "Gait disturbance",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Peroneal nerve palsy",
+      "caption": "Peroneal nerve palsy",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:181834244",
+      "caption": "Case 181834244 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:PREDNISONE",
+      "caption": "PREDNISONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Hepatitis C virus test positive",
+      "caption": "Hepatitis C virus test positive",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Otitis media acute",
+      "caption": "Otitis media acute",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cough",
+      "caption": "Cough",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Transaminases increased",
+      "caption": "Transaminases increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Teething",
+      "caption": "Teething",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Rhinorrhoea",
+      "caption": "Rhinorrhoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Ear discomfort",
+      "caption": "Ear discomfort",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Bronchiolitis",
+      "caption": "Bronchiolitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypophagia",
+      "caption": "Hypophagia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Atelectasis",
+      "caption": "Atelectasis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Life-Threatening",
+      "caption": "Life-Threatening",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Infant",
+      "caption": "Infant",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:182917473",
+      "caption": "Case 182917473 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:XL184",
+      "caption": "XL184",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Ipilimumab",
+      "caption": "Ipilimumab",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Nivolumab",
+      "caption": "Nivolumab",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:183600383",
+      "caption": "Case 183600383 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Reaction:Thrombocytopenia",
+      "caption": "Thrombocytopenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Oxygen saturation decreased",
+      "caption": "Oxygen saturation decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:183875994",
+      "caption": "Case 183875994 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:CC 5013",
+      "caption": "CC 5013",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:RITUXIMAB",
+      "caption": "RITUXIMAB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:rivaroxaban",
+      "caption": "rivaroxaban",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Bladder neoplasm",
+      "caption": "Bladder neoplasm",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:183974292",
+      "caption": "Case 183974292 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:Loperamide",
+      "caption": "Loperamide",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:GATTEX",
+      "caption": "GATTEX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Diphenoxylate hcl + Atropine sulfate",
+      "caption": "Diphenoxylate hcl + Atropine sulfate",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Nausea",
+      "caption": "Nausea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:184346322",
+      "caption": "Case 184346322 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:DOJOLVI",
+      "caption": "DOJOLVI",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Retching",
+      "caption": "Retching",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Diarrhoea",
+      "caption": "Diarrhoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Decreased appetite",
+      "caption": "Decreased appetite",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:184689513",
+      "caption": "Case 184689513 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:BRAFTOVI",
+      "caption": "BRAFTOVI",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MEKTOVI",
+      "caption": "MEKTOVI",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Influenza like illness",
+      "caption": "Influenza like illness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Rash",
+      "caption": "Rash",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Neoplasm progression",
+      "caption": "Neoplasm progression",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gastric disorder",
+      "caption": "Gastric disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hordeolum",
+      "caption": "Hordeolum",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pelvic fracture",
+      "caption": "Pelvic fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Skin lesion",
+      "caption": "Skin lesion",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fall",
+      "caption": "Fall",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Eye disorder",
+      "caption": "Eye disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:184702292",
+      "caption": "Case 184702292 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:MS CONTIN",
+      "caption": "MS CONTIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Learning disability",
+      "caption": "Learning disability",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Developmental delay",
+      "caption": "Developmental delay",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Aneurysm",
+      "caption": "Aneurysm",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Withdrawal syndrome",
+      "caption": "Withdrawal syndrome",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Seizure",
+      "caption": "Seizure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Congenital anomaly",
+      "caption": "Congenital anomaly",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cardiac disorder",
+      "caption": "Cardiac disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Spina bifida",
+      "caption": "Spina bifida",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Drug dependence",
+      "caption": "Drug dependence",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Death",
+      "caption": "Death",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:184870046",
+      "caption": "Case 184870046 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Reaction:Malaise",
+      "caption": "Malaise",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Femur fracture",
+      "caption": "Femur fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Memory impairment",
+      "caption": "Memory impairment",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:185161654",
+      "caption": "Case 185161654 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Reaction:Restlessness",
+      "caption": "Restlessness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Muscular weakness",
+      "caption": "Muscular weakness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Crying",
+      "caption": "Crying",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dyspnoea",
+      "caption": "Dyspnoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Laboratory test abnormal",
+      "caption": "Laboratory test abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:186127266",
+      "caption": "Case 186127266 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:TIVICAY",
+      "caption": "TIVICAY",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:EMTRICITABINE/RILPIVIRINE/TENOFOVIR ALAFENAMIDE",
+      "caption": "EMTRICITABINE/RILPIVIRINE/TENOFOVIR ALAFENAMIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Aberrant aortic arch",
+      "caption": "Aberrant aortic arch",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Foetal exposure during pregnancy",
+      "caption": "Foetal exposure during pregnancy",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Patent ductus arteriosus",
+      "caption": "Patent ductus arteriosus",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Congenital Anomaly",
+      "caption": "Congenital Anomaly",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:187621575",
+      "caption": "Case 187621575 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Reaction:Respiratory failure",
+      "caption": "Respiratory failure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Brain injury",
+      "caption": "Brain injury",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Illness",
+      "caption": "Illness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cardiac arrest",
+      "caption": "Cardiac arrest",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Respiratory arrest",
+      "caption": "Respiratory arrest",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cyanosis",
+      "caption": "Cyanosis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:187713132",
+      "caption": "Case 187713132 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:Rucaparib",
+      "caption": "Rucaparib",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Pancytopenia",
+      "caption": "Pancytopenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Disability",
+      "caption": "Disability",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:188215064",
+      "caption": "Case 188215064 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:LISINOPRIL",
+      "caption": "LISINOPRIL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Tucatinib",
+      "caption": "Tucatinib",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:AMLODIPINE",
+      "caption": "AMLODIPINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:EDOXABAN",
+      "caption": "EDOXABAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LOPRESOR                           /00376902/",
+      "caption": "LOPRESOR                           /00376902/",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Overdose",
+      "caption": "Overdose",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:188847548",
+      "caption": "Case 188847548 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:CABOMETYX",
+      "caption": "CABOMETYX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Urinary tract infection",
+      "caption": "Urinary tract infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Autoimmune neuropathy",
+      "caption": "Autoimmune neuropathy",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Urosepsis",
+      "caption": "Urosepsis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Myocarditis",
+      "caption": "Myocarditis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Supraventricular tachycardia",
+      "caption": "Supraventricular tachycardia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pneumonia",
+      "caption": "Pneumonia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:188934025",
+      "caption": "Case 188934025 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:TYKERB",
+      "caption": "TYKERB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TRASTUZUMAB",
+      "caption": "TRASTUZUMAB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Product dose omission issue",
+      "caption": "Product dose omission issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Liver injury",
+      "caption": "Liver injury",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Blood alkaline phosphatase increased",
+      "caption": "Blood alkaline phosphatase increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Mass",
+      "caption": "Mass",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Arthritis",
+      "caption": "Arthritis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Rash erythematous",
+      "caption": "Rash erythematous",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:189449516",
+      "caption": "Case 189449516 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:Belimumab",
+      "caption": "Belimumab",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PLAQUENIL",
+      "caption": "PLAQUENIL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CHOLECALCIFEROL",
+      "caption": "CHOLECALCIFEROL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:GAMMAGARD",
+      "caption": "GAMMAGARD",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN B12",
+      "caption": "VITAMIN B12",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PRILOSEC",
+      "caption": "PRILOSEC",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:WELLBUTRIN SR",
+      "caption": "WELLBUTRIN SR",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ARAVA",
+      "caption": "ARAVA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Glioblastoma multiforme",
+      "caption": "Glioblastoma multiforme",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:189831533",
+      "caption": "Case 189831533 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Reaction:Malignant neoplasm progression",
+      "caption": "Malignant neoplasm progression",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Death",
+      "caption": "Death",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Balance disorder",
+      "caption": "Balance disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Off label use",
+      "caption": "Off label use",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Loss of personal independence in daily activities",
+      "caption": "Loss of personal independence in daily activities",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:135402785",
+      "caption": "Case 135402785 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:DABRAFENIB",
+      "caption": "DABRAFENIB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:GSK1120212",
+      "caption": "GSK1120212",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LORATADINE",
+      "caption": "LORATADINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Skin infection",
+      "caption": "Skin infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cellulitis",
+      "caption": "Cellulitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:190130033",
+      "caption": "Case 190130033 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:EMTRICITABINE;TENOFOVIR DISOPROXIL FUMARATE",
+      "caption": "EMTRICITABINE;TENOFOVIR DISOPROXIL FUMARATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ISENTRESS",
+      "caption": "ISENTRESS",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Acoustic stimulation tests abnormal",
+      "caption": "Acoustic stimulation tests abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:136125494",
+      "caption": "Case 136125494 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:EFFEXOR",
+      "caption": "EFFEXOR",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Lipase increased",
+      "caption": "Lipase increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:190854602",
+      "caption": "Case 190854602 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Drug:BLINDED Placebo for Tucatinib",
+      "caption": "BLINDED Placebo for Tucatinib",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BLINDED Tucatinib",
+      "caption": "BLINDED Tucatinib",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ADO TRASTUZUMAB EMTANSINE",
+      "caption": "ADO TRASTUZUMAB EMTANSINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Platelet count decreased",
+      "caption": "Platelet count decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:191132943",
+      "caption": "Case 191132943 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Reaction:Irritability",
+      "caption": "Irritability",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:191532443",
+      "caption": "Case 191532443 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Reaction:Oropharyngeal pain",
+      "caption": "Oropharyngeal pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hepatic enzyme",
+      "caption": "Hepatic enzyme",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Blood test",
+      "caption": "Blood test",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adolescent",
+      "caption": "Adolescent",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:191592983",
+      "caption": "Case 191592983 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Reaction:Superior vena cava syndrome",
+      "caption": "Superior vena cava syndrome",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Central venous catheterisation",
+      "caption": "Central venous catheterisation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:191662162",
+      "caption": "Case 191662162 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Reaction:Hydronephrosis",
+      "caption": "Hydronephrosis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Stent placement",
+      "caption": "Stent placement",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Renal transplant",
+      "caption": "Renal transplant",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:191891042",
+      "caption": "Case 191891042 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Reaction:Abdominal pain upper",
+      "caption": "Abdominal pain upper",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pain",
+      "caption": "Pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:191948042",
+      "caption": "Case 191948042 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 5
+    },
+    {
+      "id": "Reaction:Plagiocephaly",
+      "caption": "Plagiocephaly",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Congenital torticollis",
+      "caption": "Congenital torticollis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Haemangioma of skin",
+      "caption": "Haemangioma of skin",
+      "labels": [
+        "Reaction"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "CD:1",
+      "from": "Case:178214526",
+      "to": "Drug:ZOLGENSMA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:2",
+      "from": "Case:178214526",
+      "to": "Drug:PREDNISOLONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:3",
+      "from": "Case:178214526",
+      "to": "Reaction:Hepatic enzyme increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:4",
+      "from": "Case:178214526",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:5",
+      "from": "Case:178214526",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:6",
+      "from": "Case:178214526",
+      "to": "Reaction:Aspartate aminotransferase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:7",
+      "from": "Case:178214526",
+      "to": "Reaction:Alanine aminotransferase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:8",
+      "from": "Case:178214526",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:9",
+      "from": "Case:178214526",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:10",
+      "from": "Case:178635783",
+      "to": "Drug:Parathyroid Hormone",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:11",
+      "from": "Case:178635783",
+      "to": "Drug:Parathyroid Hormone",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:12",
+      "from": "Case:178635783",
+      "to": "Reaction:Therapy interrupted",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:13",
+      "from": "Case:178635783",
+      "to": "Reaction:Exposure during pregnancy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:14",
+      "from": "Case:178635783",
+      "to": "Reaction:Product quality issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:15",
+      "from": "Case:178635783",
+      "to": "Reaction:Vitamin D decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:16",
+      "from": "Case:178635783",
+      "to": "Reaction:Blood calcium decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:17",
+      "from": "Case:178635783",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:18",
+      "from": "Case:178635783",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:19",
+      "from": "Case:179145043",
+      "to": "Drug:ORKAMBI",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:20",
+      "from": "Case:179145043",
+      "to": "Drug:ORKAMBI",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:21",
+      "from": "Case:179145043",
+      "to": "Reaction:Hepatic enzyme increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:22",
+      "from": "Case:179145043",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:23",
+      "from": "Case:179209814",
+      "to": "Drug:ATEZOLIZUMAB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:24",
+      "from": "Case:179209814",
+      "to": "Reaction:Aspartate aminotransferase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:25",
+      "from": "Case:179209814",
+      "to": "Reaction:Alanine aminotransferase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:26",
+      "from": "Case:179209814",
+      "to": "Reaction:Injection site discomfort",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:27",
+      "from": "Case:179209814",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:28",
+      "from": "Case:179209814",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:29",
+      "from": "Case:179209814",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:30",
+      "from": "Case:180596442",
+      "to": "Drug:EDEX",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:31",
+      "from": "Case:180596442",
+      "to": "Drug:EDEX",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:32",
+      "from": "Case:180596442",
+      "to": "Reaction:Groin pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:33",
+      "from": "Case:180596442",
+      "to": "Reaction:Painful erection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:34",
+      "from": "Case:180596442",
+      "to": "Reaction:Penile pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:35",
+      "from": "Case:180596442",
+      "to": "Reaction:Therapeutic product effect decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:36",
+      "from": "Case:180596442",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:37",
+      "from": "Case:180920133",
+      "to": "Drug:Parathyroid Hormone",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:38",
+      "from": "Case:180920133",
+      "to": "Drug:Parathyroid Hormone",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:39",
+      "from": "Case:180920133",
+      "to": "Reaction:Hypercalcaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:40",
+      "from": "Case:180920133",
+      "to": "Reaction:Blood calcium increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:41",
+      "from": "Case:180920133",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:42",
+      "from": "Case:128288262",
+      "to": "Drug:TERIFLUNOMIDE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:43",
+      "from": "Case:128288262",
+      "to": "Reaction:Ear pruritus",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:44",
+      "from": "Case:128288262",
+      "to": "Reaction:Gait disturbance",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:45",
+      "from": "Case:128288262",
+      "to": "Reaction:Peroneal nerve palsy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:46",
+      "from": "Case:128288262",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:47",
+      "from": "Case:181834244",
+      "to": "Drug:ZOLGENSMA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:48",
+      "from": "Case:181834244",
+      "to": "Drug:PREDNISOLONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:49",
+      "from": "Case:181834244",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:50",
+      "from": "Case:181834244",
+      "to": "Reaction:Hepatitis C virus test positive",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:51",
+      "from": "Case:181834244",
+      "to": "Reaction:Otitis media acute",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:52",
+      "from": "Case:181834244",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:53",
+      "from": "Case:181834244",
+      "to": "Reaction:Transaminases increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:54",
+      "from": "Case:181834244",
+      "to": "Reaction:Teething",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:55",
+      "from": "Case:181834244",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:56",
+      "from": "Case:181834244",
+      "to": "Reaction:Rhinorrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:57",
+      "from": "Case:181834244",
+      "to": "Reaction:Alanine aminotransferase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:58",
+      "from": "Case:181834244",
+      "to": "Reaction:Aspartate aminotransferase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:59",
+      "from": "Case:181834244",
+      "to": "Reaction:Ear discomfort",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:60",
+      "from": "Case:181834244",
+      "to": "Reaction:Bronchiolitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:61",
+      "from": "Case:181834244",
+      "to": "Reaction:Hypophagia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:62",
+      "from": "Case:181834244",
+      "to": "Reaction:Atelectasis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:63",
+      "from": "Case:181834244",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:64",
+      "from": "Case:181834244",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:65",
+      "from": "Case:181834244",
+      "to": "AgeGroup:Infant",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:66",
+      "from": "Case:182917473",
+      "to": "Drug:XL184",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:67",
+      "from": "Case:182917473",
+      "to": "Drug:Ipilimumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:68",
+      "from": "Case:182917473",
+      "to": "Drug:Nivolumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:69",
+      "from": "Case:182917473",
+      "to": "Reaction:Alanine aminotransferase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:70",
+      "from": "Case:182917473",
+      "to": "Reaction:Aspartate aminotransferase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:71",
+      "from": "Case:182917473",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:72",
+      "from": "Case:182917473",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:73",
+      "from": "Case:182917473",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:74",
+      "from": "Case:183600383",
+      "to": "Drug:PREDNISOLONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:75",
+      "from": "Case:183600383",
+      "to": "Reaction:Aspartate aminotransferase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:76",
+      "from": "Case:183600383",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:77",
+      "from": "Case:183600383",
+      "to": "Reaction:Alanine aminotransferase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:78",
+      "from": "Case:183600383",
+      "to": "Reaction:Thrombocytopenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:79",
+      "from": "Case:183600383",
+      "to": "Reaction:Oxygen saturation decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:80",
+      "from": "Case:183600383",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:81",
+      "from": "Case:183600383",
+      "to": "AgeGroup:Infant",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:82",
+      "from": "Case:183875994",
+      "to": "Drug:CC 5013",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:83",
+      "from": "Case:183875994",
+      "to": "Drug:RITUXIMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:84",
+      "from": "Case:183875994",
+      "to": "Drug:rivaroxaban",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:85",
+      "from": "Case:183875994",
+      "to": "Drug:CC 5013",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:86",
+      "from": "Case:183875994",
+      "to": "Reaction:Bladder neoplasm",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:87",
+      "from": "Case:183875994",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:88",
+      "from": "Case:183875994",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:89",
+      "from": "Case:183974292",
+      "to": "Drug:Loperamide",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:90",
+      "from": "Case:183974292",
+      "to": "Drug:GATTEX",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:91",
+      "from": "Case:183974292",
+      "to": "Drug:Diphenoxylate hcl + Atropine sulfate",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:92",
+      "from": "Case:183974292",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:93",
+      "from": "Case:183974292",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:94",
+      "from": "Case:183974292",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:95",
+      "from": "Case:184346322",
+      "to": "Drug:DOJOLVI",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:96",
+      "from": "Case:184346322",
+      "to": "Drug:DOJOLVI",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:97",
+      "from": "Case:184346322",
+      "to": "Reaction:Retching",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:98",
+      "from": "Case:184346322",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:99",
+      "from": "Case:184346322",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:100",
+      "from": "Case:184346322",
+      "to": "Reaction:Decreased appetite",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:101",
+      "from": "Case:184346322",
+      "to": "AgeGroup:Infant",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:102",
+      "from": "Case:184689513",
+      "to": "Drug:BRAFTOVI",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:103",
+      "from": "Case:184689513",
+      "to": "Drug:MEKTOVI",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:104",
+      "from": "Case:184689513",
+      "to": "Drug:MEKTOVI",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:105",
+      "from": "Case:184689513",
+      "to": "Reaction:Influenza like illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:106",
+      "from": "Case:184689513",
+      "to": "Reaction:Rash",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:107",
+      "from": "Case:184689513",
+      "to": "Reaction:Neoplasm progression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:108",
+      "from": "Case:184689513",
+      "to": "Reaction:Gastric disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:109",
+      "from": "Case:184689513",
+      "to": "Reaction:Hordeolum",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:110",
+      "from": "Case:184689513",
+      "to": "Reaction:Pelvic fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:111",
+      "from": "Case:184689513",
+      "to": "Reaction:Skin lesion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:112",
+      "from": "Case:184689513",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:113",
+      "from": "Case:184689513",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:114",
+      "from": "Case:184689513",
+      "to": "Reaction:Eye disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:115",
+      "from": "Case:184689513",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:116",
+      "from": "Case:184689513",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:117",
+      "from": "Case:184702292",
+      "to": "Drug:MS CONTIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:118",
+      "from": "Case:184702292",
+      "to": "Reaction:Learning disability",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:119",
+      "from": "Case:184702292",
+      "to": "Reaction:Developmental delay",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:120",
+      "from": "Case:184702292",
+      "to": "Reaction:Aneurysm",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:121",
+      "from": "Case:184702292",
+      "to": "Reaction:Withdrawal syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:122",
+      "from": "Case:184702292",
+      "to": "Reaction:Seizure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:123",
+      "from": "Case:184702292",
+      "to": "Reaction:Congenital anomaly",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:124",
+      "from": "Case:184702292",
+      "to": "Reaction:Cardiac disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:125",
+      "from": "Case:184702292",
+      "to": "Reaction:Spina bifida",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:126",
+      "from": "Case:184702292",
+      "to": "Reaction:Drug dependence",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:127",
+      "from": "Case:184702292",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:128",
+      "from": "Case:184702292",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:129",
+      "from": "Case:184702292",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:130",
+      "from": "Case:184870046",
+      "to": "Drug:BRAFTOVI",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:131",
+      "from": "Case:184870046",
+      "to": "Drug:BRAFTOVI",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:132",
+      "from": "Case:184870046",
+      "to": "Drug:MEKTOVI",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:133",
+      "from": "Case:184870046",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:134",
+      "from": "Case:184870046",
+      "to": "Reaction:Femur fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:135",
+      "from": "Case:184870046",
+      "to": "Reaction:Memory impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:136",
+      "from": "Case:184870046",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:137",
+      "from": "Case:184870046",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:138",
+      "from": "Case:185161654",
+      "to": "Drug:ZOLGENSMA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:139",
+      "from": "Case:185161654",
+      "to": "Reaction:Restlessness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:140",
+      "from": "Case:185161654",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:141",
+      "from": "Case:185161654",
+      "to": "Reaction:Muscular weakness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:142",
+      "from": "Case:185161654",
+      "to": "Reaction:Crying",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:143",
+      "from": "Case:185161654",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:144",
+      "from": "Case:185161654",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:145",
+      "from": "Case:185161654",
+      "to": "Reaction:Laboratory test abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:146",
+      "from": "Case:185161654",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:147",
+      "from": "Case:185161654",
+      "to": "AgeGroup:Infant",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:148",
+      "from": "Case:186127266",
+      "to": "Drug:TIVICAY",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:149",
+      "from": "Case:186127266",
+      "to": "Drug:EMTRICITABINE/RILPIVIRINE/TENOFOVIR ALAFENAMIDE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:150",
+      "from": "Case:186127266",
+      "to": "Reaction:Aberrant aortic arch",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:151",
+      "from": "Case:186127266",
+      "to": "Reaction:Foetal exposure during pregnancy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:152",
+      "from": "Case:186127266",
+      "to": "Reaction:Patent ductus arteriosus",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:153",
+      "from": "Case:186127266",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:154",
+      "from": "Case:186127266",
+      "to": "Outcome:Congenital Anomaly",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:155",
+      "from": "Case:186127266",
+      "to": "AgeGroup:Infant",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:156",
+      "from": "Case:187621575",
+      "to": "Drug:ZOLGENSMA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:157",
+      "from": "Case:187621575",
+      "to": "Reaction:Respiratory failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:158",
+      "from": "Case:187621575",
+      "to": "Reaction:Brain injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:159",
+      "from": "Case:187621575",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:160",
+      "from": "Case:187621575",
+      "to": "Reaction:Cardiac arrest",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:161",
+      "from": "Case:187621575",
+      "to": "Reaction:Gait disturbance",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:162",
+      "from": "Case:187621575",
+      "to": "Reaction:Respiratory arrest",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:163",
+      "from": "Case:187621575",
+      "to": "Reaction:Alanine aminotransferase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:164",
+      "from": "Case:187621575",
+      "to": "Reaction:Cyanosis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:165",
+      "from": "Case:187621575",
+      "to": "Reaction:Aspartate aminotransferase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:166",
+      "from": "Case:187621575",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:167",
+      "from": "Case:187621575",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:168",
+      "from": "Case:187621575",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:169",
+      "from": "Case:187621575",
+      "to": "AgeGroup:Infant",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:170",
+      "from": "Case:187713132",
+      "to": "Drug:Rucaparib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:171",
+      "from": "Case:187713132",
+      "to": "Drug:Nivolumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:172",
+      "from": "Case:187713132",
+      "to": "Drug:Rucaparib",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:173",
+      "from": "Case:187713132",
+      "to": "Reaction:Pancytopenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:174",
+      "from": "Case:187713132",
+      "to": "Outcome:Disability",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:175",
+      "from": "Case:187713132",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:176",
+      "from": "Case:187713132",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:177",
+      "from": "Case:188215064",
+      "to": "Drug:LISINOPRIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:178",
+      "from": "Case:188215064",
+      "to": "Drug:Tucatinib",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:179",
+      "from": "Case:188215064",
+      "to": "Drug:AMLODIPINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:180",
+      "from": "Case:188215064",
+      "to": "Drug:EDOXABAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:181",
+      "from": "Case:188215064",
+      "to": "Drug:LOPRESOR                           /00376902/",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:182",
+      "from": "Case:188215064",
+      "to": "Reaction:Overdose",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:183",
+      "from": "Case:188215064",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:184",
+      "from": "Case:188215064",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:185",
+      "from": "Case:188847548",
+      "to": "Drug:CABOMETYX",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:186",
+      "from": "Case:188847548",
+      "to": "Drug:Ipilimumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:187",
+      "from": "Case:188847548",
+      "to": "Drug:Nivolumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:188",
+      "from": "Case:188847548",
+      "to": "Reaction:Urinary tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:189",
+      "from": "Case:188847548",
+      "to": "Reaction:Autoimmune neuropathy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:190",
+      "from": "Case:188847548",
+      "to": "Reaction:Urosepsis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:191",
+      "from": "Case:188847548",
+      "to": "Reaction:Myocarditis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:192",
+      "from": "Case:188847548",
+      "to": "Reaction:Supraventricular tachycardia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:193",
+      "from": "Case:188847548",
+      "to": "Reaction:Pneumonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:194",
+      "from": "Case:188847548",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:195",
+      "from": "Case:188847548",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:196",
+      "from": "Case:188847548",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:197",
+      "from": "Case:188934025",
+      "to": "Drug:TYKERB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:198",
+      "from": "Case:188934025",
+      "to": "Drug:TRASTUZUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:199",
+      "from": "Case:188934025",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:200",
+      "from": "Case:188934025",
+      "to": "Reaction:Liver injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:201",
+      "from": "Case:188934025",
+      "to": "Reaction:Blood alkaline phosphatase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:202",
+      "from": "Case:188934025",
+      "to": "Reaction:Mass",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:203",
+      "from": "Case:188934025",
+      "to": "Reaction:Arthritis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:204",
+      "from": "Case:188934025",
+      "to": "Reaction:Rash erythematous",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:205",
+      "from": "Case:188934025",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:206",
+      "from": "Case:188934025",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:207",
+      "from": "Case:189449516",
+      "to": "Drug:Belimumab",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:208",
+      "from": "Case:189449516",
+      "to": "Drug:PLAQUENIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:209",
+      "from": "Case:189449516",
+      "to": "Drug:CHOLECALCIFEROL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:210",
+      "from": "Case:189449516",
+      "to": "Drug:GAMMAGARD",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:211",
+      "from": "Case:189449516",
+      "to": "Drug:VITAMIN B12",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:212",
+      "from": "Case:189449516",
+      "to": "Drug:PRILOSEC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:213",
+      "from": "Case:189449516",
+      "to": "Drug:WELLBUTRIN SR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:214",
+      "from": "Case:189449516",
+      "to": "Drug:ARAVA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:215",
+      "from": "Case:189449516",
+      "to": "Reaction:Glioblastoma multiforme",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:216",
+      "from": "Case:189449516",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:217",
+      "from": "Case:189449516",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:218",
+      "from": "Case:189449516",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:219",
+      "from": "Case:189449516",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:220",
+      "from": "Case:189831533",
+      "to": "Drug:CABOMETYX",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:221",
+      "from": "Case:189831533",
+      "to": "Drug:CABOMETYX",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:222",
+      "from": "Case:189831533",
+      "to": "Reaction:Malignant neoplasm progression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:223",
+      "from": "Case:189831533",
+      "to": "Reaction:Death",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:224",
+      "from": "Case:189831533",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:225",
+      "from": "Case:189831533",
+      "to": "Reaction:Balance disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:226",
+      "from": "Case:189831533",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:227",
+      "from": "Case:189831533",
+      "to": "Reaction:Off label use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:228",
+      "from": "Case:189831533",
+      "to": "Reaction:Loss of personal independence in daily activities",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:229",
+      "from": "Case:189831533",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:230",
+      "from": "Case:189831533",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:231",
+      "from": "Case:189831533",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:232",
+      "from": "Case:135402785",
+      "to": "Drug:DABRAFENIB",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:233",
+      "from": "Case:135402785",
+      "to": "Drug:GSK1120212",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:234",
+      "from": "Case:135402785",
+      "to": "Drug:LORATADINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:235",
+      "from": "Case:135402785",
+      "to": "Reaction:Skin infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:236",
+      "from": "Case:135402785",
+      "to": "Reaction:Cellulitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:237",
+      "from": "Case:135402785",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:238",
+      "from": "Case:135402785",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:239",
+      "from": "Case:190130033",
+      "to": "Drug:EMTRICITABINE;TENOFOVIR DISOPROXIL FUMARATE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:240",
+      "from": "Case:190130033",
+      "to": "Drug:ISENTRESS",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:241",
+      "from": "Case:190130033",
+      "to": "Reaction:Foetal exposure during pregnancy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:242",
+      "from": "Case:190130033",
+      "to": "Reaction:Acoustic stimulation tests abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:243",
+      "from": "Case:190130033",
+      "to": "Outcome:Congenital Anomaly",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:244",
+      "from": "Case:190130033",
+      "to": "AgeGroup:Infant",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:245",
+      "from": "Case:136125494",
+      "to": "Drug:EFFEXOR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:246",
+      "from": "Case:136125494",
+      "to": "Drug:EFFEXOR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:247",
+      "from": "Case:136125494",
+      "to": "Reaction:Lipase increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:248",
+      "from": "Case:136125494",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:249",
+      "from": "Case:136125494",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:250",
+      "from": "Case:190854602",
+      "to": "Drug:BLINDED Placebo for Tucatinib",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:251",
+      "from": "Case:190854602",
+      "to": "Drug:BLINDED Tucatinib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:252",
+      "from": "Case:190854602",
+      "to": "Drug:ADO TRASTUZUMAB EMTANSINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:253",
+      "from": "Case:190854602",
+      "to": "Reaction:Urinary tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:254",
+      "from": "Case:190854602",
+      "to": "Reaction:Platelet count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:255",
+      "from": "Case:190854602",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:256",
+      "from": "Case:190854602",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:257",
+      "from": "Case:190854602",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:258",
+      "from": "Case:190854602",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:259",
+      "from": "Case:191132943",
+      "to": "Drug:ZOLGENSMA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:260",
+      "from": "Case:191132943",
+      "to": "Reaction:Rhinorrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:261",
+      "from": "Case:191132943",
+      "to": "Reaction:Irritability",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:262",
+      "from": "Case:191132943",
+      "to": "Reaction:Hepatic enzyme increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:263",
+      "from": "Case:191132943",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:264",
+      "from": "Case:191132943",
+      "to": "Reaction:Muscular weakness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:265",
+      "from": "Case:191132943",
+      "to": "AgeGroup:Infant",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:266",
+      "from": "Case:191532443",
+      "to": "Drug:DOJOLVI",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:267",
+      "from": "Case:191532443",
+      "to": "Reaction:Oropharyngeal pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:268",
+      "from": "Case:191532443",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:269",
+      "from": "Case:191532443",
+      "to": "Reaction:Hepatic enzyme",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:270",
+      "from": "Case:191532443",
+      "to": "Reaction:Blood test",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:271",
+      "from": "Case:191532443",
+      "to": "Reaction:Hepatic enzyme increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:272",
+      "from": "Case:191532443",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:273",
+      "from": "Case:191532443",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:274",
+      "from": "Case:191592983",
+      "to": "Drug:Parathyroid Hormone",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:275",
+      "from": "Case:191592983",
+      "to": "Drug:Parathyroid Hormone",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:276",
+      "from": "Case:191592983",
+      "to": "Reaction:Superior vena cava syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:277",
+      "from": "Case:191592983",
+      "to": "Reaction:Central venous catheterisation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:278",
+      "from": "Case:191592983",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:279",
+      "from": "Case:191592983",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:280",
+      "from": "Case:191662162",
+      "to": "Drug:Parathyroid Hormone",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:281",
+      "from": "Case:191662162",
+      "to": "Drug:Parathyroid Hormone",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:282",
+      "from": "Case:191662162",
+      "to": "Reaction:Hydronephrosis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:283",
+      "from": "Case:191662162",
+      "to": "Reaction:Stent placement",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:284",
+      "from": "Case:191662162",
+      "to": "Reaction:Renal transplant",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:285",
+      "from": "Case:191662162",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:286",
+      "from": "Case:191662162",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:287",
+      "from": "Case:191662162",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:288",
+      "from": "Case:191891042",
+      "to": "Drug:DOJOLVI",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:289",
+      "from": "Case:191891042",
+      "to": "Drug:DOJOLVI",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:290",
+      "from": "Case:191891042",
+      "to": "Reaction:Abdominal pain upper",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:291",
+      "from": "Case:191891042",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:292",
+      "from": "Case:191891042",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:293",
+      "from": "Case:191891042",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:294",
+      "from": "Case:191948042",
+      "to": "Drug:Belimumab",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:295",
+      "from": "Case:191948042",
+      "to": "Drug:Belimumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:296",
+      "from": "Case:191948042",
+      "to": "Reaction:Plagiocephaly",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:297",
+      "from": "Case:191948042",
+      "to": "Reaction:Foetal exposure during pregnancy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:298",
+      "from": "Case:191948042",
+      "to": "Reaction:Congenital torticollis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:299",
+      "from": "Case:191948042",
+      "to": "Reaction:Haemangioma of skin",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:300",
+      "from": "Case:191948042",
+      "to": "Outcome:Congenital Anomaly",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:301",
+      "from": "Case:191948042",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:302",
+      "from": "Case:191948042",
+      "to": "AgeGroup:Infant",
+      "type": "FALLS_UNDER"
+    }
+  ],
+  "meta": {
+    "caseCount": 35,
+    "nodeCount": 206,
+    "relCount": 302,
+    "capped": false
+  }
+}

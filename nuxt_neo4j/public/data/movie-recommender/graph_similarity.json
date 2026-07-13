@@ -1,0 +1,1566 @@
+{
+  "nodes": [
+    {
+      "id": "User:U001",
+      "caption": "Alice Chen",
+      "labels": [
+        "User"
+      ],
+      "community": 0
+    },
+    {
+      "id": "User:U002",
+      "caption": "Bob Martinez",
+      "labels": [
+        "User"
+      ],
+      "community": 1
+    },
+    {
+      "id": "User:U003",
+      "caption": "Carol White",
+      "labels": [
+        "User"
+      ],
+      "community": 2
+    },
+    {
+      "id": "User:U004",
+      "caption": "David Kim",
+      "labels": [
+        "User"
+      ],
+      "community": 1
+    },
+    {
+      "id": "User:U005",
+      "caption": "Eva Rossi",
+      "labels": [
+        "User"
+      ],
+      "community": 2
+    },
+    {
+      "id": "User:U006",
+      "caption": "Frank Osei",
+      "labels": [
+        "User"
+      ],
+      "community": 3
+    },
+    {
+      "id": "User:U007",
+      "caption": "Grace Liu",
+      "labels": [
+        "User"
+      ],
+      "community": 0
+    },
+    {
+      "id": "User:U008",
+      "caption": "Henry Park",
+      "labels": [
+        "User"
+      ],
+      "community": 1
+    },
+    {
+      "id": "User:U009",
+      "caption": "Iris Novak",
+      "labels": [
+        "User"
+      ],
+      "community": 2
+    },
+    {
+      "id": "User:U010",
+      "caption": "James Brown",
+      "labels": [
+        "User"
+      ],
+      "community": 3
+    },
+    {
+      "id": "User:U011",
+      "caption": "Karen Singh",
+      "labels": [
+        "User"
+      ],
+      "community": 0
+    },
+    {
+      "id": "User:U012",
+      "caption": "Leo Tanaka",
+      "labels": [
+        "User"
+      ],
+      "community": 2
+    },
+    {
+      "id": "User:U013",
+      "caption": "Maya Patel",
+      "labels": [
+        "User"
+      ],
+      "community": 0
+    },
+    {
+      "id": "User:U014",
+      "caption": "Noah Williams",
+      "labels": [
+        "User"
+      ],
+      "community": 1
+    },
+    {
+      "id": "User:U015",
+      "caption": "Olivia Jones",
+      "labels": [
+        "User"
+      ],
+      "community": 2
+    },
+    {
+      "id": "User:U016",
+      "caption": "Paul Garcia",
+      "labels": [
+        "User"
+      ],
+      "community": 0
+    },
+    {
+      "id": "User:U017",
+      "caption": "Quinn Zhang",
+      "labels": [
+        "User"
+      ],
+      "community": 0
+    },
+    {
+      "id": "User:U018",
+      "caption": "Ryan Murphy",
+      "labels": [
+        "User"
+      ],
+      "community": 1
+    },
+    {
+      "id": "User:U019",
+      "caption": "Sara Hassan",
+      "labels": [
+        "User"
+      ],
+      "community": 3
+    },
+    {
+      "id": "User:U020",
+      "caption": "Tom Anderson",
+      "labels": [
+        "User"
+      ],
+      "community": 0
+    }
+  ],
+  "relationships": [
+    {
+      "id": "SIMILAR_TASTE:U001:U007",
+      "from": "User:U001",
+      "to": "User:U007",
+      "type": "SIMILAR_TASTE",
+      "score": 0.571
+    },
+    {
+      "id": "SIMILAR_TASTE:U001:U011",
+      "from": "User:U001",
+      "to": "User:U011",
+      "type": "SIMILAR_TASTE",
+      "score": 0.571
+    },
+    {
+      "id": "SIMILAR_TASTE:U001:U013",
+      "from": "User:U001",
+      "to": "User:U013",
+      "type": "SIMILAR_TASTE",
+      "score": 0.571
+    },
+    {
+      "id": "SIMILAR_TASTE:U001:U016",
+      "from": "User:U001",
+      "to": "User:U016",
+      "type": "SIMILAR_TASTE",
+      "score": 0.571
+    },
+    {
+      "id": "SIMILAR_TASTE:U001:U017",
+      "from": "User:U001",
+      "to": "User:U017",
+      "type": "SIMILAR_TASTE",
+      "score": 0.571
+    },
+    {
+      "id": "SIMILAR_TASTE:U002:U004",
+      "from": "User:U002",
+      "to": "User:U004",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U002:U008",
+      "from": "User:U002",
+      "to": "User:U008",
+      "type": "SIMILAR_TASTE",
+      "score": 0.429
+    },
+    {
+      "id": "SIMILAR_TASTE:U002:U014",
+      "from": "User:U002",
+      "to": "User:U014",
+      "type": "SIMILAR_TASTE",
+      "score": 0.429
+    },
+    {
+      "id": "SIMILAR_TASTE:U002:U018",
+      "from": "User:U002",
+      "to": "User:U018",
+      "type": "SIMILAR_TASTE",
+      "score": 0.429
+    },
+    {
+      "id": "SIMILAR_TASTE:U002:U010",
+      "from": "User:U002",
+      "to": "User:U010",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U003:U005",
+      "from": "User:U003",
+      "to": "User:U005",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U003:U009",
+      "from": "User:U003",
+      "to": "User:U009",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U003:U015",
+      "from": "User:U003",
+      "to": "User:U015",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U003:U012",
+      "from": "User:U003",
+      "to": "User:U012",
+      "type": "SIMILAR_TASTE",
+      "score": 0.111
+    },
+    {
+      "id": "SIMILAR_TASTE:U003:U019",
+      "from": "User:U003",
+      "to": "User:U019",
+      "type": "SIMILAR_TASTE",
+      "score": 0.111
+    },
+    {
+      "id": "SIMILAR_TASTE:U004:U002",
+      "from": "User:U004",
+      "to": "User:U002",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U004:U008",
+      "from": "User:U004",
+      "to": "User:U008",
+      "type": "SIMILAR_TASTE",
+      "score": 0.429
+    },
+    {
+      "id": "SIMILAR_TASTE:U004:U014",
+      "from": "User:U004",
+      "to": "User:U014",
+      "type": "SIMILAR_TASTE",
+      "score": 0.429
+    },
+    {
+      "id": "SIMILAR_TASTE:U004:U018",
+      "from": "User:U004",
+      "to": "User:U018",
+      "type": "SIMILAR_TASTE",
+      "score": 0.429
+    },
+    {
+      "id": "SIMILAR_TASTE:U004:U010",
+      "from": "User:U004",
+      "to": "User:U010",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U005:U003",
+      "from": "User:U005",
+      "to": "User:U003",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U005:U009",
+      "from": "User:U005",
+      "to": "User:U009",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U005:U015",
+      "from": "User:U005",
+      "to": "User:U015",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U005:U012",
+      "from": "User:U005",
+      "to": "User:U012",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U005:U019",
+      "from": "User:U005",
+      "to": "User:U019",
+      "type": "SIMILAR_TASTE",
+      "score": 0.111
+    },
+    {
+      "id": "SIMILAR_TASTE:U006:U010",
+      "from": "User:U006",
+      "to": "User:U010",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U006:U019",
+      "from": "User:U006",
+      "to": "User:U019",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U006:U002",
+      "from": "User:U006",
+      "to": "User:U002",
+      "type": "SIMILAR_TASTE",
+      "score": 0.111
+    },
+    {
+      "id": "SIMILAR_TASTE:U006:U004",
+      "from": "User:U006",
+      "to": "User:U004",
+      "type": "SIMILAR_TASTE",
+      "score": 0.111
+    },
+    {
+      "id": "SIMILAR_TASTE:U006:U008",
+      "from": "User:U006",
+      "to": "User:U008",
+      "type": "SIMILAR_TASTE",
+      "score": 0.111
+    },
+    {
+      "id": "SIMILAR_TASTE:U007:U016",
+      "from": "User:U007",
+      "to": "User:U016",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U007:U020",
+      "from": "User:U007",
+      "to": "User:U020",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U007:U001",
+      "from": "User:U007",
+      "to": "User:U001",
+      "type": "SIMILAR_TASTE",
+      "score": 0.571
+    },
+    {
+      "id": "SIMILAR_TASTE:U007:U011",
+      "from": "User:U007",
+      "to": "User:U011",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U007:U013",
+      "from": "User:U007",
+      "to": "User:U013",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U008:U014",
+      "from": "User:U008",
+      "to": "User:U014",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U008:U018",
+      "from": "User:U008",
+      "to": "User:U018",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U008:U002",
+      "from": "User:U008",
+      "to": "User:U002",
+      "type": "SIMILAR_TASTE",
+      "score": 0.429
+    },
+    {
+      "id": "SIMILAR_TASTE:U008:U004",
+      "from": "User:U008",
+      "to": "User:U004",
+      "type": "SIMILAR_TASTE",
+      "score": 0.429
+    },
+    {
+      "id": "SIMILAR_TASTE:U008:U010",
+      "from": "User:U008",
+      "to": "User:U010",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U009:U003",
+      "from": "User:U009",
+      "to": "User:U003",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U009:U005",
+      "from": "User:U009",
+      "to": "User:U005",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U009:U015",
+      "from": "User:U009",
+      "to": "User:U015",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U009:U012",
+      "from": "User:U009",
+      "to": "User:U012",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U009:U019",
+      "from": "User:U009",
+      "to": "User:U019",
+      "type": "SIMILAR_TASTE",
+      "score": 0.111
+    },
+    {
+      "id": "SIMILAR_TASTE:U010:U006",
+      "from": "User:U010",
+      "to": "User:U006",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U010:U019",
+      "from": "User:U010",
+      "to": "User:U019",
+      "type": "SIMILAR_TASTE",
+      "score": 0.429
+    },
+    {
+      "id": "SIMILAR_TASTE:U010:U002",
+      "from": "User:U010",
+      "to": "User:U002",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U010:U004",
+      "from": "User:U010",
+      "to": "User:U004",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U010:U008",
+      "from": "User:U010",
+      "to": "User:U008",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U011:U017",
+      "from": "User:U011",
+      "to": "User:U017",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U011:U013",
+      "from": "User:U011",
+      "to": "User:U013",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U011:U001",
+      "from": "User:U011",
+      "to": "User:U001",
+      "type": "SIMILAR_TASTE",
+      "score": 0.571
+    },
+    {
+      "id": "SIMILAR_TASTE:U011:U007",
+      "from": "User:U011",
+      "to": "User:U007",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U011:U016",
+      "from": "User:U011",
+      "to": "User:U016",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U012:U005",
+      "from": "User:U012",
+      "to": "User:U005",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U012:U009",
+      "from": "User:U012",
+      "to": "User:U009",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U012:U002",
+      "from": "User:U012",
+      "to": "User:U002",
+      "type": "SIMILAR_TASTE",
+      "score": 0.111
+    },
+    {
+      "id": "SIMILAR_TASTE:U012:U003",
+      "from": "User:U012",
+      "to": "User:U003",
+      "type": "SIMILAR_TASTE",
+      "score": 0.111
+    },
+    {
+      "id": "SIMILAR_TASTE:U012:U004",
+      "from": "User:U012",
+      "to": "User:U004",
+      "type": "SIMILAR_TASTE",
+      "score": 0.111
+    },
+    {
+      "id": "SIMILAR_TASTE:U013:U011",
+      "from": "User:U013",
+      "to": "User:U011",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U013:U017",
+      "from": "User:U013",
+      "to": "User:U017",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U013:U001",
+      "from": "User:U013",
+      "to": "User:U001",
+      "type": "SIMILAR_TASTE",
+      "score": 0.571
+    },
+    {
+      "id": "SIMILAR_TASTE:U013:U007",
+      "from": "User:U013",
+      "to": "User:U007",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U013:U016",
+      "from": "User:U013",
+      "to": "User:U016",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U014:U008",
+      "from": "User:U014",
+      "to": "User:U008",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U014:U018",
+      "from": "User:U014",
+      "to": "User:U018",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U014:U002",
+      "from": "User:U014",
+      "to": "User:U002",
+      "type": "SIMILAR_TASTE",
+      "score": 0.429
+    },
+    {
+      "id": "SIMILAR_TASTE:U014:U004",
+      "from": "User:U014",
+      "to": "User:U004",
+      "type": "SIMILAR_TASTE",
+      "score": 0.429
+    },
+    {
+      "id": "SIMILAR_TASTE:U014:U010",
+      "from": "User:U014",
+      "to": "User:U010",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U015:U003",
+      "from": "User:U015",
+      "to": "User:U003",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U015:U005",
+      "from": "User:U015",
+      "to": "User:U005",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U015:U009",
+      "from": "User:U015",
+      "to": "User:U009",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U015:U012",
+      "from": "User:U015",
+      "to": "User:U012",
+      "type": "SIMILAR_TASTE",
+      "score": 0.111
+    },
+    {
+      "id": "SIMILAR_TASTE:U015:U019",
+      "from": "User:U015",
+      "to": "User:U019",
+      "type": "SIMILAR_TASTE",
+      "score": 0.111
+    },
+    {
+      "id": "SIMILAR_TASTE:U016:U007",
+      "from": "User:U016",
+      "to": "User:U007",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U016:U020",
+      "from": "User:U016",
+      "to": "User:U020",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U016:U001",
+      "from": "User:U016",
+      "to": "User:U001",
+      "type": "SIMILAR_TASTE",
+      "score": 0.571
+    },
+    {
+      "id": "SIMILAR_TASTE:U016:U011",
+      "from": "User:U016",
+      "to": "User:U011",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U016:U013",
+      "from": "User:U016",
+      "to": "User:U013",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U017:U011",
+      "from": "User:U017",
+      "to": "User:U011",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U017:U013",
+      "from": "User:U017",
+      "to": "User:U013",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U017:U001",
+      "from": "User:U017",
+      "to": "User:U001",
+      "type": "SIMILAR_TASTE",
+      "score": 0.571
+    },
+    {
+      "id": "SIMILAR_TASTE:U017:U007",
+      "from": "User:U017",
+      "to": "User:U007",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U017:U016",
+      "from": "User:U017",
+      "to": "User:U016",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U018:U008",
+      "from": "User:U018",
+      "to": "User:U008",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U018:U014",
+      "from": "User:U018",
+      "to": "User:U014",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U018:U002",
+      "from": "User:U018",
+      "to": "User:U002",
+      "type": "SIMILAR_TASTE",
+      "score": 0.429
+    },
+    {
+      "id": "SIMILAR_TASTE:U018:U004",
+      "from": "User:U018",
+      "to": "User:U004",
+      "type": "SIMILAR_TASTE",
+      "score": 0.429
+    },
+    {
+      "id": "SIMILAR_TASTE:U018:U010",
+      "from": "User:U018",
+      "to": "User:U010",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U019:U006",
+      "from": "User:U019",
+      "to": "User:U006",
+      "type": "SIMILAR_TASTE",
+      "score": 0.667
+    },
+    {
+      "id": "SIMILAR_TASTE:U019:U010",
+      "from": "User:U019",
+      "to": "User:U010",
+      "type": "SIMILAR_TASTE",
+      "score": 0.429
+    },
+    {
+      "id": "SIMILAR_TASTE:U019:U003",
+      "from": "User:U019",
+      "to": "User:U003",
+      "type": "SIMILAR_TASTE",
+      "score": 0.111
+    },
+    {
+      "id": "SIMILAR_TASTE:U019:U005",
+      "from": "User:U019",
+      "to": "User:U005",
+      "type": "SIMILAR_TASTE",
+      "score": 0.111
+    },
+    {
+      "id": "SIMILAR_TASTE:U019:U009",
+      "from": "User:U019",
+      "to": "User:U009",
+      "type": "SIMILAR_TASTE",
+      "score": 0.111
+    },
+    {
+      "id": "SIMILAR_TASTE:U020:U007",
+      "from": "User:U020",
+      "to": "User:U007",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U020:U016",
+      "from": "User:U020",
+      "to": "User:U016",
+      "type": "SIMILAR_TASTE",
+      "score": 1.0
+    },
+    {
+      "id": "SIMILAR_TASTE:U020:U001",
+      "from": "User:U020",
+      "to": "User:U001",
+      "type": "SIMILAR_TASTE",
+      "score": 0.571
+    },
+    {
+      "id": "SIMILAR_TASTE:U020:U011",
+      "from": "User:U020",
+      "to": "User:U011",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "SIMILAR_TASTE:U020:U013",
+      "from": "User:U020",
+      "to": "User:U013",
+      "type": "SIMILAR_TASTE",
+      "score": 0.25
+    },
+    {
+      "id": "KNN_SIMILAR:U001:U013",
+      "from": "User:U001",
+      "to": "User:U013",
+      "type": "KNN_SIMILAR",
+      "score": 0.709
+    },
+    {
+      "id": "KNN_SIMILAR:U001:U017",
+      "from": "User:U001",
+      "to": "User:U017",
+      "type": "KNN_SIMILAR",
+      "score": 0.706
+    },
+    {
+      "id": "KNN_SIMILAR:U001:U007",
+      "from": "User:U001",
+      "to": "User:U007",
+      "type": "KNN_SIMILAR",
+      "score": 0.693
+    },
+    {
+      "id": "KNN_SIMILAR:U001:U020",
+      "from": "User:U001",
+      "to": "User:U020",
+      "type": "KNN_SIMILAR",
+      "score": 0.689
+    },
+    {
+      "id": "KNN_SIMILAR:U001:U016",
+      "from": "User:U001",
+      "to": "User:U016",
+      "type": "KNN_SIMILAR",
+      "score": 0.635
+    },
+    {
+      "id": "KNN_SIMILAR:U002:U004",
+      "from": "User:U002",
+      "to": "User:U004",
+      "type": "KNN_SIMILAR",
+      "score": 0.969
+    },
+    {
+      "id": "KNN_SIMILAR:U002:U018",
+      "from": "User:U002",
+      "to": "User:U018",
+      "type": "KNN_SIMILAR",
+      "score": 0.662
+    },
+    {
+      "id": "KNN_SIMILAR:U002:U008",
+      "from": "User:U002",
+      "to": "User:U008",
+      "type": "KNN_SIMILAR",
+      "score": 0.639
+    },
+    {
+      "id": "KNN_SIMILAR:U002:U014",
+      "from": "User:U002",
+      "to": "User:U014",
+      "type": "KNN_SIMILAR",
+      "score": 0.514
+    },
+    {
+      "id": "KNN_SIMILAR:U002:U010",
+      "from": "User:U002",
+      "to": "User:U010",
+      "type": "KNN_SIMILAR",
+      "score": 0.434
+    },
+    {
+      "id": "KNN_SIMILAR:U003:U015",
+      "from": "User:U003",
+      "to": "User:U015",
+      "type": "KNN_SIMILAR",
+      "score": 0.877
+    },
+    {
+      "id": "KNN_SIMILAR:U003:U009",
+      "from": "User:U003",
+      "to": "User:U009",
+      "type": "KNN_SIMILAR",
+      "score": 0.808
+    },
+    {
+      "id": "KNN_SIMILAR:U003:U005",
+      "from": "User:U003",
+      "to": "User:U005",
+      "type": "KNN_SIMILAR",
+      "score": 0.695
+    },
+    {
+      "id": "KNN_SIMILAR:U003:U002",
+      "from": "User:U003",
+      "to": "User:U002",
+      "type": "KNN_SIMILAR",
+      "score": 0.251
+    },
+    {
+      "id": "KNN_SIMILAR:U003:U004",
+      "from": "User:U003",
+      "to": "User:U004",
+      "type": "KNN_SIMILAR",
+      "score": 0.22
+    },
+    {
+      "id": "KNN_SIMILAR:U004:U002",
+      "from": "User:U004",
+      "to": "User:U002",
+      "type": "KNN_SIMILAR",
+      "score": 0.969
+    },
+    {
+      "id": "KNN_SIMILAR:U004:U018",
+      "from": "User:U004",
+      "to": "User:U018",
+      "type": "KNN_SIMILAR",
+      "score": 0.606
+    },
+    {
+      "id": "KNN_SIMILAR:U004:U008",
+      "from": "User:U004",
+      "to": "User:U008",
+      "type": "KNN_SIMILAR",
+      "score": 0.58
+    },
+    {
+      "id": "KNN_SIMILAR:U004:U014",
+      "from": "User:U004",
+      "to": "User:U014",
+      "type": "KNN_SIMILAR",
+      "score": 0.463
+    },
+    {
+      "id": "KNN_SIMILAR:U004:U010",
+      "from": "User:U004",
+      "to": "User:U010",
+      "type": "KNN_SIMILAR",
+      "score": 0.37
+    },
+    {
+      "id": "KNN_SIMILAR:U005:U015",
+      "from": "User:U005",
+      "to": "User:U015",
+      "type": "KNN_SIMILAR",
+      "score": 0.75
+    },
+    {
+      "id": "KNN_SIMILAR:U005:U009",
+      "from": "User:U005",
+      "to": "User:U009",
+      "type": "KNN_SIMILAR",
+      "score": 0.748
+    },
+    {
+      "id": "KNN_SIMILAR:U005:U003",
+      "from": "User:U005",
+      "to": "User:U003",
+      "type": "KNN_SIMILAR",
+      "score": 0.695
+    },
+    {
+      "id": "KNN_SIMILAR:U005:U012",
+      "from": "User:U005",
+      "to": "User:U012",
+      "type": "KNN_SIMILAR",
+      "score": 0.392
+    },
+    {
+      "id": "KNN_SIMILAR:U005:U002",
+      "from": "User:U005",
+      "to": "User:U002",
+      "type": "KNN_SIMILAR",
+      "score": 0.246
+    },
+    {
+      "id": "KNN_SIMILAR:U006:U019",
+      "from": "User:U006",
+      "to": "User:U019",
+      "type": "KNN_SIMILAR",
+      "score": 0.891
+    },
+    {
+      "id": "KNN_SIMILAR:U006:U010",
+      "from": "User:U006",
+      "to": "User:U010",
+      "type": "KNN_SIMILAR",
+      "score": 0.748
+    },
+    {
+      "id": "KNN_SIMILAR:U006:U002",
+      "from": "User:U006",
+      "to": "User:U002",
+      "type": "KNN_SIMILAR",
+      "score": 0.289
+    },
+    {
+      "id": "KNN_SIMILAR:U006:U018",
+      "from": "User:U006",
+      "to": "User:U018",
+      "type": "KNN_SIMILAR",
+      "score": 0.249
+    },
+    {
+      "id": "KNN_SIMILAR:U006:U004",
+      "from": "User:U006",
+      "to": "User:U004",
+      "type": "KNN_SIMILAR",
+      "score": 0.248
+    },
+    {
+      "id": "KNN_SIMILAR:U007:U020",
+      "from": "User:U007",
+      "to": "User:U020",
+      "type": "KNN_SIMILAR",
+      "score": 0.988
+    },
+    {
+      "id": "KNN_SIMILAR:U007:U016",
+      "from": "User:U007",
+      "to": "User:U016",
+      "type": "KNN_SIMILAR",
+      "score": 0.98
+    },
+    {
+      "id": "KNN_SIMILAR:U007:U001",
+      "from": "User:U007",
+      "to": "User:U001",
+      "type": "KNN_SIMILAR",
+      "score": 0.693
+    },
+    {
+      "id": "KNN_SIMILAR:U007:U013",
+      "from": "User:U007",
+      "to": "User:U013",
+      "type": "KNN_SIMILAR",
+      "score": 0.325
+    },
+    {
+      "id": "KNN_SIMILAR:U007:U017",
+      "from": "User:U007",
+      "to": "User:U017",
+      "type": "KNN_SIMILAR",
+      "score": 0.22
+    },
+    {
+      "id": "KNN_SIMILAR:U008:U018",
+      "from": "User:U008",
+      "to": "User:U018",
+      "type": "KNN_SIMILAR",
+      "score": 0.987
+    },
+    {
+      "id": "KNN_SIMILAR:U008:U014",
+      "from": "User:U008",
+      "to": "User:U014",
+      "type": "KNN_SIMILAR",
+      "score": 0.941
+    },
+    {
+      "id": "KNN_SIMILAR:U008:U002",
+      "from": "User:U008",
+      "to": "User:U002",
+      "type": "KNN_SIMILAR",
+      "score": 0.639
+    },
+    {
+      "id": "KNN_SIMILAR:U008:U004",
+      "from": "User:U008",
+      "to": "User:U004",
+      "type": "KNN_SIMILAR",
+      "score": 0.58
+    },
+    {
+      "id": "KNN_SIMILAR:U008:U010",
+      "from": "User:U008",
+      "to": "User:U010",
+      "type": "KNN_SIMILAR",
+      "score": 0.452
+    },
+    {
+      "id": "KNN_SIMILAR:U009:U003",
+      "from": "User:U009",
+      "to": "User:U003",
+      "type": "KNN_SIMILAR",
+      "score": 0.808
+    },
+    {
+      "id": "KNN_SIMILAR:U009:U015",
+      "from": "User:U009",
+      "to": "User:U015",
+      "type": "KNN_SIMILAR",
+      "score": 0.802
+    },
+    {
+      "id": "KNN_SIMILAR:U009:U005",
+      "from": "User:U009",
+      "to": "User:U005",
+      "type": "KNN_SIMILAR",
+      "score": 0.748
+    },
+    {
+      "id": "KNN_SIMILAR:U009:U002",
+      "from": "User:U009",
+      "to": "User:U002",
+      "type": "KNN_SIMILAR",
+      "score": 0.318
+    },
+    {
+      "id": "KNN_SIMILAR:U009:U004",
+      "from": "User:U009",
+      "to": "User:U004",
+      "type": "KNN_SIMILAR",
+      "score": 0.289
+    },
+    {
+      "id": "KNN_SIMILAR:U010:U006",
+      "from": "User:U010",
+      "to": "User:U006",
+      "type": "KNN_SIMILAR",
+      "score": 0.748
+    },
+    {
+      "id": "KNN_SIMILAR:U010:U019",
+      "from": "User:U010",
+      "to": "User:U019",
+      "type": "KNN_SIMILAR",
+      "score": 0.59
+    },
+    {
+      "id": "KNN_SIMILAR:U010:U008",
+      "from": "User:U010",
+      "to": "User:U008",
+      "type": "KNN_SIMILAR",
+      "score": 0.452
+    },
+    {
+      "id": "KNN_SIMILAR:U010:U018",
+      "from": "User:U010",
+      "to": "User:U018",
+      "type": "KNN_SIMILAR",
+      "score": 0.442
+    },
+    {
+      "id": "KNN_SIMILAR:U010:U002",
+      "from": "User:U010",
+      "to": "User:U002",
+      "type": "KNN_SIMILAR",
+      "score": 0.434
+    },
+    {
+      "id": "KNN_SIMILAR:U011:U017",
+      "from": "User:U011",
+      "to": "User:U017",
+      "type": "KNN_SIMILAR",
+      "score": 0.983
+    },
+    {
+      "id": "KNN_SIMILAR:U011:U013",
+      "from": "User:U011",
+      "to": "User:U013",
+      "type": "KNN_SIMILAR",
+      "score": 0.792
+    },
+    {
+      "id": "KNN_SIMILAR:U011:U001",
+      "from": "User:U011",
+      "to": "User:U001",
+      "type": "KNN_SIMILAR",
+      "score": 0.615
+    },
+    {
+      "id": "KNN_SIMILAR:U011:U020",
+      "from": "User:U011",
+      "to": "User:U020",
+      "type": "KNN_SIMILAR",
+      "score": 0.175
+    },
+    {
+      "id": "KNN_SIMILAR:U011:U007",
+      "from": "User:U011",
+      "to": "User:U007",
+      "type": "KNN_SIMILAR",
+      "score": 0.167
+    },
+    {
+      "id": "KNN_SIMILAR:U012:U005",
+      "from": "User:U012",
+      "to": "User:U005",
+      "type": "KNN_SIMILAR",
+      "score": 0.392
+    },
+    {
+      "id": "KNN_SIMILAR:U012:U004",
+      "from": "User:U012",
+      "to": "User:U004",
+      "type": "KNN_SIMILAR",
+      "score": 0.345
+    },
+    {
+      "id": "KNN_SIMILAR:U012:U002",
+      "from": "User:U012",
+      "to": "User:U002",
+      "type": "KNN_SIMILAR",
+      "score": 0.284
+    },
+    {
+      "id": "KNN_SIMILAR:U012:U009",
+      "from": "User:U012",
+      "to": "User:U009",
+      "type": "KNN_SIMILAR",
+      "score": 0.268
+    },
+    {
+      "id": "KNN_SIMILAR:U012:U008",
+      "from": "User:U012",
+      "to": "User:U008",
+      "type": "KNN_SIMILAR",
+      "score": 0.254
+    },
+    {
+      "id": "KNN_SIMILAR:U013:U017",
+      "from": "User:U013",
+      "to": "User:U017",
+      "type": "KNN_SIMILAR",
+      "score": 0.833
+    },
+    {
+      "id": "KNN_SIMILAR:U013:U011",
+      "from": "User:U013",
+      "to": "User:U011",
+      "type": "KNN_SIMILAR",
+      "score": 0.792
+    },
+    {
+      "id": "KNN_SIMILAR:U013:U001",
+      "from": "User:U013",
+      "to": "User:U001",
+      "type": "KNN_SIMILAR",
+      "score": 0.709
+    },
+    {
+      "id": "KNN_SIMILAR:U013:U007",
+      "from": "User:U013",
+      "to": "User:U007",
+      "type": "KNN_SIMILAR",
+      "score": 0.325
+    },
+    {
+      "id": "KNN_SIMILAR:U013:U020",
+      "from": "User:U013",
+      "to": "User:U020",
+      "type": "KNN_SIMILAR",
+      "score": 0.271
+    },
+    {
+      "id": "KNN_SIMILAR:U014:U018",
+      "from": "User:U014",
+      "to": "User:U018",
+      "type": "KNN_SIMILAR",
+      "score": 0.962
+    },
+    {
+      "id": "KNN_SIMILAR:U014:U008",
+      "from": "User:U014",
+      "to": "User:U008",
+      "type": "KNN_SIMILAR",
+      "score": 0.941
+    },
+    {
+      "id": "KNN_SIMILAR:U014:U002",
+      "from": "User:U014",
+      "to": "User:U002",
+      "type": "KNN_SIMILAR",
+      "score": 0.514
+    },
+    {
+      "id": "KNN_SIMILAR:U014:U004",
+      "from": "User:U014",
+      "to": "User:U004",
+      "type": "KNN_SIMILAR",
+      "score": 0.463
+    },
+    {
+      "id": "KNN_SIMILAR:U014:U010",
+      "from": "User:U014",
+      "to": "User:U010",
+      "type": "KNN_SIMILAR",
+      "score": 0.294
+    },
+    {
+      "id": "KNN_SIMILAR:U015:U003",
+      "from": "User:U015",
+      "to": "User:U003",
+      "type": "KNN_SIMILAR",
+      "score": 0.877
+    },
+    {
+      "id": "KNN_SIMILAR:U015:U009",
+      "from": "User:U015",
+      "to": "User:U009",
+      "type": "KNN_SIMILAR",
+      "score": 0.802
+    },
+    {
+      "id": "KNN_SIMILAR:U015:U005",
+      "from": "User:U015",
+      "to": "User:U005",
+      "type": "KNN_SIMILAR",
+      "score": 0.75
+    },
+    {
+      "id": "KNN_SIMILAR:U015:U002",
+      "from": "User:U015",
+      "to": "User:U002",
+      "type": "KNN_SIMILAR",
+      "score": 0.241
+    },
+    {
+      "id": "KNN_SIMILAR:U015:U004",
+      "from": "User:U015",
+      "to": "User:U004",
+      "type": "KNN_SIMILAR",
+      "score": 0.21
+    },
+    {
+      "id": "KNN_SIMILAR:U016:U020",
+      "from": "User:U016",
+      "to": "User:U020",
+      "type": "KNN_SIMILAR",
+      "score": 0.982
+    },
+    {
+      "id": "KNN_SIMILAR:U016:U007",
+      "from": "User:U016",
+      "to": "User:U007",
+      "type": "KNN_SIMILAR",
+      "score": 0.98
+    },
+    {
+      "id": "KNN_SIMILAR:U016:U001",
+      "from": "User:U016",
+      "to": "User:U001",
+      "type": "KNN_SIMILAR",
+      "score": 0.635
+    },
+    {
+      "id": "KNN_SIMILAR:U016:U013",
+      "from": "User:U016",
+      "to": "User:U013",
+      "type": "KNN_SIMILAR",
+      "score": 0.243
+    },
+    {
+      "id": "KNN_SIMILAR:U016:U006",
+      "from": "User:U016",
+      "to": "User:U006",
+      "type": "KNN_SIMILAR",
+      "score": 0.209
+    },
+    {
+      "id": "KNN_SIMILAR:U017:U011",
+      "from": "User:U017",
+      "to": "User:U011",
+      "type": "KNN_SIMILAR",
+      "score": 0.983
+    },
+    {
+      "id": "KNN_SIMILAR:U017:U013",
+      "from": "User:U017",
+      "to": "User:U013",
+      "type": "KNN_SIMILAR",
+      "score": 0.833
+    },
+    {
+      "id": "KNN_SIMILAR:U017:U001",
+      "from": "User:U017",
+      "to": "User:U001",
+      "type": "KNN_SIMILAR",
+      "score": 0.706
+    },
+    {
+      "id": "KNN_SIMILAR:U017:U007",
+      "from": "User:U017",
+      "to": "User:U007",
+      "type": "KNN_SIMILAR",
+      "score": 0.22
+    },
+    {
+      "id": "KNN_SIMILAR:U017:U020",
+      "from": "User:U017",
+      "to": "User:U020",
+      "type": "KNN_SIMILAR",
+      "score": 0.217
+    },
+    {
+      "id": "KNN_SIMILAR:U018:U008",
+      "from": "User:U018",
+      "to": "User:U008",
+      "type": "KNN_SIMILAR",
+      "score": 0.987
+    },
+    {
+      "id": "KNN_SIMILAR:U018:U014",
+      "from": "User:U018",
+      "to": "User:U014",
+      "type": "KNN_SIMILAR",
+      "score": 0.962
+    },
+    {
+      "id": "KNN_SIMILAR:U018:U002",
+      "from": "User:U018",
+      "to": "User:U002",
+      "type": "KNN_SIMILAR",
+      "score": 0.662
+    },
+    {
+      "id": "KNN_SIMILAR:U018:U004",
+      "from": "User:U018",
+      "to": "User:U004",
+      "type": "KNN_SIMILAR",
+      "score": 0.606
+    },
+    {
+      "id": "KNN_SIMILAR:U018:U010",
+      "from": "User:U018",
+      "to": "User:U010",
+      "type": "KNN_SIMILAR",
+      "score": 0.442
+    },
+    {
+      "id": "KNN_SIMILAR:U019:U006",
+      "from": "User:U019",
+      "to": "User:U006",
+      "type": "KNN_SIMILAR",
+      "score": 0.891
+    },
+    {
+      "id": "KNN_SIMILAR:U019:U010",
+      "from": "User:U019",
+      "to": "User:U010",
+      "type": "KNN_SIMILAR",
+      "score": 0.59
+    },
+    {
+      "id": "KNN_SIMILAR:U019:U002",
+      "from": "User:U019",
+      "to": "User:U002",
+      "type": "KNN_SIMILAR",
+      "score": 0.233
+    },
+    {
+      "id": "KNN_SIMILAR:U019:U012",
+      "from": "User:U019",
+      "to": "User:U012",
+      "type": "KNN_SIMILAR",
+      "score": 0.212
+    },
+    {
+      "id": "KNN_SIMILAR:U019:U003",
+      "from": "User:U019",
+      "to": "User:U003",
+      "type": "KNN_SIMILAR",
+      "score": 0.212
+    },
+    {
+      "id": "KNN_SIMILAR:U020:U007",
+      "from": "User:U020",
+      "to": "User:U007",
+      "type": "KNN_SIMILAR",
+      "score": 0.988
+    },
+    {
+      "id": "KNN_SIMILAR:U020:U016",
+      "from": "User:U020",
+      "to": "User:U016",
+      "type": "KNN_SIMILAR",
+      "score": 0.982
+    },
+    {
+      "id": "KNN_SIMILAR:U020:U001",
+      "from": "User:U020",
+      "to": "User:U001",
+      "type": "KNN_SIMILAR",
+      "score": 0.689
+    },
+    {
+      "id": "KNN_SIMILAR:U020:U013",
+      "from": "User:U020",
+      "to": "User:U013",
+      "type": "KNN_SIMILAR",
+      "score": 0.271
+    },
+    {
+      "id": "KNN_SIMILAR:U020:U017",
+      "from": "User:U020",
+      "to": "User:U017",
+      "type": "KNN_SIMILAR",
+      "score": 0.217
+    }
+  ]
+}

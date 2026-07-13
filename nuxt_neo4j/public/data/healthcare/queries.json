@@ -1,0 +1,522 @@
+[
+  {
+    "id": "eda-nodes",
+    "title": "Total nodes",
+    "description": "Overall size of the restored FAERS-style graph.",
+    "cypher": "MATCH (n)\nRETURN count(n) AS total_nodes;",
+    "columns": [
+      "total_nodes"
+    ],
+    "rows": [
+      {
+        "total_nodes": 11381
+      }
+    ],
+    "count": 1
+  },
+  {
+    "id": "eda-labels",
+    "title": "Node labels",
+    "description": "Eight entity types discovered via schema EDA.",
+    "cypher": "CALL db.labels() YIELD label\nRETURN label\nORDER BY label;",
+    "columns": [
+      "label"
+    ],
+    "rows": [
+      {
+        "label": "AgeGroup"
+      },
+      {
+        "label": "Case"
+      },
+      {
+        "label": "Drug"
+      },
+      {
+        "label": "Manufacturer"
+      },
+      {
+        "label": "Outcome"
+      },
+      {
+        "label": "Reaction"
+      },
+      {
+        "label": "ReportSource"
+      },
+      {
+        "label": "Therapy"
+      }
+    ],
+    "count": 8
+  },
+  {
+    "id": "eda-rels",
+    "title": "Total relationships",
+    "description": "Directed edge count across all relationship types.",
+    "cypher": "MATCH ()-[r]->()\nRETURN count(r) AS total_relationships;",
+    "columns": [
+      "total_relationships"
+    ],
+    "rows": [
+      {
+        "total_relationships": 61453
+      }
+    ],
+    "count": 1
+  },
+  {
+    "id": "eda-rel-types",
+    "title": "Relationship types",
+    "description": "Eleven relationship types linking cases, drugs, reactions, and outcomes.",
+    "cypher": "MATCH ()-[r]->()\nRETURN DISTINCT type(r) AS relationship_type\nORDER BY relationship_type;",
+    "columns": [
+      "relationship_type"
+    ],
+    "rows": [
+      {
+        "relationship_type": "FALLS_UNDER"
+      },
+      {
+        "relationship_type": "HAS_REACTION"
+      },
+      {
+        "relationship_type": "IS_CONCOMITANT"
+      },
+      {
+        "relationship_type": "IS_INTERACTING"
+      },
+      {
+        "relationship_type": "IS_PRIMARY_SUSPECT"
+      },
+      {
+        "relationship_type": "IS_SECONDARY_SUSPECT"
+      },
+      {
+        "relationship_type": "PRESCRIBED"
+      },
+      {
+        "relationship_type": "RECEIVED"
+      },
+      {
+        "relationship_type": "REGISTERED"
+      },
+      {
+        "relationship_type": "REPORTED_BY"
+      },
+      {
+        "relationship_type": "RESULTED_IN"
+      }
+    ],
+    "count": 11
+  },
+  {
+    "id": "eda-genders",
+    "title": "Case genders",
+    "description": "Distinct gender values on Case nodes.",
+    "cypher": "MATCH (c:Case)\nWHERE c.gender IS NOT NULL\nRETURN DISTINCT c.gender AS gender\nORDER BY gender;",
+    "columns": [
+      "gender"
+    ],
+    "rows": [
+      {
+        "gender": "F"
+      },
+      {
+        "gender": "M"
+      },
+      {
+        "gender": "U"
+      }
+    ],
+    "count": 3
+  },
+  {
+    "id": "eda-reactions",
+    "title": "Distinct reactions",
+    "description": "Unique adverse-reaction descriptions in the graph.",
+    "cypher": "MATCH (r:Reaction)\nWHERE r.description IS NOT NULL\nRETURN count(DISTINCT r.description) AS distinct_reactions;",
+    "columns": [
+      "distinct_reactions"
+    ],
+    "rows": [
+      {
+        "distinct_reactions": 2701
+      }
+    ],
+    "count": 1
+  },
+  {
+    "id": "eda-outcomes",
+    "title": "Outcome descriptions",
+    "description": "Seriousness categories used on Outcome nodes.",
+    "cypher": "MATCH (o:Outcome)\nWHERE o.outcome IS NOT NULL\nRETURN DISTINCT o.outcome AS outcome_description\nORDER BY outcome_description;",
+    "columns": [
+      "outcome_description"
+    ],
+    "rows": [
+      {
+        "outcome_description": "Congenital Anomaly"
+      },
+      {
+        "outcome_description": "Death"
+      },
+      {
+        "outcome_description": "Disability"
+      },
+      {
+        "outcome_description": "Hospitalization - Initial or Prolonged"
+      },
+      {
+        "outcome_description": "Life-Threatening"
+      },
+      {
+        "outcome_description": "Other Serious (Important Medical Event)"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "id": "analytics-top-reactions",
+    "title": "Top 20 reactions",
+    "description": "Most frequent adverse reactions across all cases.",
+    "cypher": "MATCH (c:Case)-[:HAS_REACTION]->(r:Reaction)\nWHERE r.description IS NOT NULL\nRETURN r.description AS reaction, count(*) AS frequency\nORDER BY frequency DESC\nLIMIT 20;",
+    "columns": [
+      "reaction",
+      "frequency"
+    ],
+    "rows": [
+      {
+        "reaction": "Fatigue",
+        "frequency": 303
+      },
+      {
+        "reaction": "Product dose omission issue",
+        "frequency": 285
+      },
+      {
+        "reaction": "Headache",
+        "frequency": 272
+      },
+      {
+        "reaction": "Nausea",
+        "frequency": 256
+      },
+      {
+        "reaction": "Pain",
+        "frequency": 253
+      },
+      {
+        "reaction": "Dyspnoea",
+        "frequency": 245
+      },
+      {
+        "reaction": "Pneumonia",
+        "frequency": 229
+      },
+      {
+        "reaction": "Diarrhoea",
+        "frequency": 219
+      },
+      {
+        "reaction": "Fall",
+        "frequency": 198
+      },
+      {
+        "reaction": "Off label use",
+        "frequency": 196
+      },
+      {
+        "reaction": "Pyrexia",
+        "frequency": 184
+      },
+      {
+        "reaction": "Dizziness",
+        "frequency": 178
+      },
+      {
+        "reaction": "Sinusitis",
+        "frequency": 166
+      },
+      {
+        "reaction": "Urinary tract infection",
+        "frequency": 158
+      },
+      {
+        "reaction": "Asthenia",
+        "frequency": 150
+      },
+      {
+        "reaction": "Vomiting",
+        "frequency": 146
+      },
+      {
+        "reaction": "Drug ineffective",
+        "frequency": 144
+      },
+      {
+        "reaction": "Malaise",
+        "frequency": 143
+      },
+      {
+        "reaction": "COVID-19",
+        "frequency": 140
+      },
+      {
+        "reaction": "Weight decreased",
+        "frequency": 129
+      }
+    ],
+    "count": 20
+  },
+  {
+    "id": "analytics-severe-drugs",
+    "title": "Top drugs with severe outcomes",
+    "description": "Drugs linked as primary/secondary suspect to cases with Death, Life-Threatening, Disability, or Hospitalization.",
+    "cypher": "MATCH (d:Drug)<-[:IS_PRIMARY_SUSPECT|IS_SECONDARY_SUSPECT]-(c:Case)\nMATCH (c)-[:RESULTED_IN]->(o:Outcome)\nWHERE o.outcome IN $severe\nRETURN d.name AS drug_name, count(DISTINCT c) AS severe_cases\nORDER BY severe_cases DESC\nLIMIT 10;",
+    "columns": [
+      "drug_name",
+      "severe_cases"
+    ],
+    "rows": [
+      {
+        "drug_name": "REVLIMID",
+        "severe_cases": 218
+      },
+      {
+        "drug_name": "NIVOLUMAB",
+        "severe_cases": 82
+      },
+      {
+        "drug_name": "ATEZOLIZUMAB",
+        "severe_cases": 77
+      },
+      {
+        "drug_name": "HUMAN NORMAL IMMUNOGLOBULIN; LIQUID",
+        "severe_cases": 66
+      },
+      {
+        "drug_name": "POMALYST",
+        "severe_cases": 65
+      },
+      {
+        "drug_name": "DEXAMETHASONE",
+        "severe_cases": 65
+      },
+      {
+        "drug_name": "CYCLOPHOSPHAMIDE",
+        "severe_cases": 64
+      },
+      {
+        "drug_name": "CUVITRU",
+        "severe_cases": 61
+      },
+      {
+        "drug_name": "REMODULIN",
+        "severe_cases": 57
+      },
+      {
+        "drug_name": "Teduglutide",
+        "severe_cases": 53
+      }
+    ],
+    "count": 10
+  },
+  {
+    "id": "analytics-manufacturers",
+    "title": "Top manufacturers by drugs with side effects",
+    "description": "Manufacturers ranked by distinct drugs appearing on their registered cases that have reactions.",
+    "cypher": "MATCH (m:Manufacturer)-[:REGISTERED]->(c:Case)-[:HAS_REACTION]->(r:Reaction)\nMATCH (d:Drug)<-[:IS_PRIMARY_SUSPECT|IS_SECONDARY_SUSPECT|IS_CONCOMITANT|IS_INTERACTING]-(c)\nRETURN m.manufacturerName AS manufacturer, count(DISTINCT d) AS drugs_with_side_effects\nORDER BY drugs_with_side_effects DESC\nLIMIT 10;",
+    "columns": [
+      "manufacturer",
+      "drugs_with_side_effects"
+    ],
+    "rows": [
+      {
+        "manufacturer": "PFIZER",
+        "drugs_with_side_effects": 617
+      },
+      {
+        "manufacturer": "ROCHE",
+        "drugs_with_side_effects": 595
+      },
+      {
+        "manufacturer": "CELGENE",
+        "drugs_with_side_effects": 452
+      },
+      {
+        "manufacturer": "NOVARTIS",
+        "drugs_with_side_effects": 386
+      },
+      {
+        "manufacturer": "TAKEDA",
+        "drugs_with_side_effects": 356
+      },
+      {
+        "manufacturer": "ABBVIE",
+        "drugs_with_side_effects": 352
+      },
+      {
+        "manufacturer": "BRISTOL MYERS SQUIBB",
+        "drugs_with_side_effects": 307
+      },
+      {
+        "manufacturer": "JOHNSON AND JOHNSON",
+        "drugs_with_side_effects": 218
+      },
+      {
+        "manufacturer": "GLAXOSMITHKLINE",
+        "drugs_with_side_effects": 200
+      },
+      {
+        "manufacturer": "AMGEN",
+        "drugs_with_side_effects": 191
+      }
+    ],
+    "count": 10
+  },
+  {
+    "id": "analytics-pfizer",
+    "title": "PFIZER top drugs and side effects",
+    "description": "Leading PFIZER drugs by case count with a sample of distinct reaction descriptions.",
+    "cypher": "MATCH (m:Manufacturer {manufacturerName: 'PFIZER'})-[:REGISTERED]->(c:Case)-[:HAS_REACTION]->(r:Reaction)\nMATCH (d:Drug)<-[:IS_PRIMARY_SUSPECT|IS_SECONDARY_SUSPECT|IS_CONCOMITANT|IS_INTERACTING]-(c)\nWHERE r.description IS NOT NULL\nRETURN d.name AS drug_name,\n       collect(DISTINCT r.description)[0..20] AS side_effects,\n       count(DISTINCT c) AS case_count\nORDER BY case_count DESC\nLIMIT 5;",
+    "columns": [
+      "drug_name",
+      "side_effects",
+      "case_count"
+    ],
+    "rows": [
+      {
+        "drug_name": "LYRICA",
+        "side_effects": [
+          "Ageusia",
+          "Pain",
+          "Hypoacusis",
+          "Temporomandibular joint syndrome",
+          "Depressed level of consciousness",
+          "Intentional product use issue",
+          "Gingival disorder",
+          "Malaise",
+          "Anosmia",
+          "Viral infection",
+          "Deafness",
+          "Dry mouth",
+          "Confusional state",
+          "Memory impairment",
+          "Toothache",
+          "Panic attack",
+          "Anxiety",
+          "Hallucination",
+          "Dyspnoea",
+          "Withdrawal syndrome"
+        ],
+        "case_count": 120
+      },
+      {
+        "drug_name": "GENOTROPIN",
+        "side_effects": [
+          "Device breakage",
+          "Drug dose omission by device",
+          "Product prescribing error",
+          "Device use error",
+          "Device issue",
+          "Device physical property issue",
+          "Product physical issue",
+          "Wrong technique in device usage process",
+          "Device mechanical issue",
+          "Device use issue",
+          "Device leakage",
+          "Device power source issue",
+          "Blindness",
+          "Device information output issue",
+          "Incorrect dose administered by device",
+          "Poor quality device used",
+          "Device malfunction",
+          "Incorrect dose administered",
+          "Product dispensing error",
+          "Product dose omission issue"
+        ],
+        "case_count": 77
+      },
+      {
+        "drug_name": "IBRANCE",
+        "side_effects": [
+          "Product dose omission issue",
+          "Product prescribing error",
+          "Neoplasm progression",
+          "Neutropenia",
+          "Anaemia",
+          "Off label use",
+          "Thrombocytopenia",
+          "White blood cell count decreased",
+          "Foot fracture",
+          "Product complaint",
+          "Poor quality product administered",
+          "Diarrhoea",
+          "Blood count abnormal",
+          "Neutrophil count decreased",
+          "Dyspnoea exertional",
+          "Pulmonary embolism",
+          "Illness",
+          "Malaise",
+          "Amnesia",
+          "Cerebrovascular accident"
+        ],
+        "case_count": 48
+      },
+      {
+        "drug_name": "XELJANZ XR",
+        "side_effects": [
+          "Arthralgia",
+          "Feeling abnormal",
+          "Rheumatoid arthritis",
+          "Pain",
+          "Intentional product use issue",
+          "Peripheral swelling",
+          "COVID-19",
+          "Gout",
+          "Rotator cuff syndrome",
+          "Aphonia",
+          "Fall",
+          "Contusion",
+          "Muscle rupture",
+          "Hair growth abnormal",
+          "Musculoskeletal stiffness",
+          "Impaired healing",
+          "Confusional state",
+          "Angle closure glaucoma",
+          "Therapeutic response unexpected",
+          "Illness"
+        ],
+        "case_count": 47
+      },
+      {
+        "drug_name": "XELJANZ",
+        "side_effects": [
+          "Rheumatoid arthritis",
+          "Lymphocyte count decreased",
+          "White blood cell count decreased",
+          "Pain",
+          "Off label use",
+          "Bronchitis",
+          "Hypokinesia",
+          "Autoimmune disorder",
+          "Therapeutic response unexpected",
+          "Malaise",
+          "Spinal fracture",
+          "Illness",
+          "Pain in extremity",
+          "Product dose omission issue",
+          "Arthralgia",
+          "Joint swelling",
+          "Pruritus",
+          "Nasopharyngitis",
+          "Influenza",
+          "Localised infection"
+        ],
+        "case_count": 32
+      }
+    ],
+    "count": 5
+  }
+]

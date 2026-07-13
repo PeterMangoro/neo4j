@@ -1,0 +1,762 @@
+{
+  "nodes": [
+    {
+      "id": "Case:188611305",
+      "caption": "Case 188611305 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 11
+    },
+    {
+      "id": "Drug:ADAKVEO",
+      "caption": "ADAKVEO",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Pain",
+      "caption": "Pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Bone pain",
+      "caption": "Bone pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adolescent",
+      "caption": "Adolescent",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:189774323",
+      "caption": "Case 189774323 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 11
+    },
+    {
+      "id": "Drug:GABAPENTIN",
+      "caption": "GABAPENTIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Sickle cell anaemia with crisis",
+      "caption": "Sickle cell anaemia with crisis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Back pain",
+      "caption": "Back pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pain in extremity",
+      "caption": "Pain in extremity",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Other Serious (Important Medical Event)",
+      "caption": "Other Serious (Important Medical Event)",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adult",
+      "caption": "Adult",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:191927353",
+      "caption": "Case 191927353 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 11
+    },
+    {
+      "id": "Reaction:Chest pain",
+      "caption": "Chest pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Haematocrit abnormal",
+      "caption": "Haematocrit abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Haemoglobin abnormal",
+      "caption": "Haemoglobin abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Musculoskeletal chest pain",
+      "caption": "Musculoskeletal chest pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:192479523",
+      "caption": "Case 192479523 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 11
+    },
+    {
+      "id": "Reaction:Arthralgia",
+      "caption": "Arthralgia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Hospitalization - Initial or Prolonged",
+      "caption": "Hospitalization - Initial or Prolonged",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:194180122",
+      "caption": "Case 194180122 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 11
+    },
+    {
+      "id": "Case:194185172",
+      "caption": "Case 194185172 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 11
+    },
+    {
+      "id": "Drug:OXBRYTA",
+      "caption": "OXBRYTA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Weight increased",
+      "caption": "Weight increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hot flush",
+      "caption": "Hot flush",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194445153",
+      "caption": "Case 194445153 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 11
+    },
+    {
+      "id": "Drug:DIPHENHYDRAMINE",
+      "caption": "DIPHENHYDRAMINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Infusion related reaction",
+      "caption": "Infusion related reaction",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:C-reactive protein increased",
+      "caption": "C-reactive protein increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194500305",
+      "caption": "Case 194500305 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 11
+    },
+    {
+      "id": "Reaction:Crying",
+      "caption": "Crying",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Acute chest syndrome",
+      "caption": "Acute chest syndrome",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal pain",
+      "caption": "Abdominal pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fat embolism syndrome",
+      "caption": "Fat embolism syndrome",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Parvovirus infection",
+      "caption": "Parvovirus infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dyspnoea",
+      "caption": "Dyspnoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Multiple organ dysfunction syndrome",
+      "caption": "Multiple organ dysfunction syndrome",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Screaming",
+      "caption": "Screaming",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Mental status changes",
+      "caption": "Mental status changes",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pyrexia",
+      "caption": "Pyrexia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dysarthria",
+      "caption": "Dysarthria",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:195116643",
+      "caption": "Case 195116643 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 11
+    },
+    {
+      "id": "Reaction:Chronic kidney disease",
+      "caption": "Chronic kidney disease",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Essential hypertension",
+      "caption": "Essential hypertension",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Anaemia",
+      "caption": "Anaemia",
+      "labels": [
+        "Reaction"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "CD:1",
+      "from": "Case:188611305",
+      "to": "Drug:ADAKVEO",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:2",
+      "from": "Case:188611305",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:3",
+      "from": "Case:188611305",
+      "to": "Reaction:Bone pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:4",
+      "from": "Case:188611305",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:5",
+      "from": "Case:189774323",
+      "to": "Drug:GABAPENTIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:6",
+      "from": "Case:189774323",
+      "to": "Drug:ADAKVEO",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:7",
+      "from": "Case:189774323",
+      "to": "Reaction:Sickle cell anaemia with crisis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:8",
+      "from": "Case:189774323",
+      "to": "Reaction:Back pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:9",
+      "from": "Case:189774323",
+      "to": "Reaction:Pain in extremity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:10",
+      "from": "Case:189774323",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:11",
+      "from": "Case:189774323",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:12",
+      "from": "Case:191927353",
+      "to": "Drug:ADAKVEO",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:13",
+      "from": "Case:191927353",
+      "to": "Reaction:Chest pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:14",
+      "from": "Case:191927353",
+      "to": "Reaction:Haematocrit abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:15",
+      "from": "Case:191927353",
+      "to": "Reaction:Haemoglobin abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:16",
+      "from": "Case:191927353",
+      "to": "Reaction:Musculoskeletal chest pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:17",
+      "from": "Case:191927353",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:18",
+      "from": "Case:192479523",
+      "to": "Drug:ADAKVEO",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:19",
+      "from": "Case:192479523",
+      "to": "Drug:ADAKVEO",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:20",
+      "from": "Case:192479523",
+      "to": "Reaction:Arthralgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:21",
+      "from": "Case:192479523",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:22",
+      "from": "Case:192479523",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:23",
+      "from": "Case:194180122",
+      "to": "Drug:ADAKVEO",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:24",
+      "from": "Case:194180122",
+      "to": "Reaction:Bone pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:25",
+      "from": "Case:194180122",
+      "to": "Reaction:Pain in extremity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:26",
+      "from": "Case:194180122",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:27",
+      "from": "Case:194185172",
+      "to": "Drug:OXBRYTA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:28",
+      "from": "Case:194185172",
+      "to": "Drug:OXBRYTA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:29",
+      "from": "Case:194185172",
+      "to": "Reaction:Back pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:30",
+      "from": "Case:194185172",
+      "to": "Reaction:Weight increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:31",
+      "from": "Case:194185172",
+      "to": "Reaction:Sickle cell anaemia with crisis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:32",
+      "from": "Case:194185172",
+      "to": "Reaction:Hot flush",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:33",
+      "from": "Case:194185172",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:34",
+      "from": "Case:194445153",
+      "to": "Drug:DIPHENHYDRAMINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:35",
+      "from": "Case:194445153",
+      "to": "Drug:ADAKVEO",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:36",
+      "from": "Case:194445153",
+      "to": "Reaction:Sickle cell anaemia with crisis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:37",
+      "from": "Case:194445153",
+      "to": "Reaction:Infusion related reaction",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:38",
+      "from": "Case:194445153",
+      "to": "Reaction:Back pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:39",
+      "from": "Case:194445153",
+      "to": "Reaction:C-reactive protein increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:40",
+      "from": "Case:194445153",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:41",
+      "from": "Case:194445153",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:42",
+      "from": "Case:194500305",
+      "to": "Drug:ADAKVEO",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:43",
+      "from": "Case:194500305",
+      "to": "Drug:ADAKVEO",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:44",
+      "from": "Case:194500305",
+      "to": "Reaction:Crying",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:45",
+      "from": "Case:194500305",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:46",
+      "from": "Case:194500305",
+      "to": "Reaction:Chest pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:47",
+      "from": "Case:194500305",
+      "to": "Reaction:Acute chest syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:48",
+      "from": "Case:194500305",
+      "to": "Reaction:Arthralgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:49",
+      "from": "Case:194500305",
+      "to": "Reaction:Abdominal pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:50",
+      "from": "Case:194500305",
+      "to": "Reaction:Infusion related reaction",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:51",
+      "from": "Case:194500305",
+      "to": "Reaction:Fat embolism syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:52",
+      "from": "Case:194500305",
+      "to": "Reaction:Parvovirus infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:53",
+      "from": "Case:194500305",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:54",
+      "from": "Case:194500305",
+      "to": "Reaction:Pain in extremity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:55",
+      "from": "Case:194500305",
+      "to": "Reaction:Multiple organ dysfunction syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:56",
+      "from": "Case:194500305",
+      "to": "Reaction:Screaming",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:57",
+      "from": "Case:194500305",
+      "to": "Reaction:Mental status changes",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:58",
+      "from": "Case:194500305",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:59",
+      "from": "Case:194500305",
+      "to": "Reaction:Back pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:60",
+      "from": "Case:194500305",
+      "to": "Reaction:Dysarthria",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:61",
+      "from": "Case:194500305",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:62",
+      "from": "Case:194500305",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:63",
+      "from": "Case:194500305",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:64",
+      "from": "Case:195116643",
+      "to": "Drug:OXBRYTA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:65",
+      "from": "Case:195116643",
+      "to": "Drug:OXBRYTA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:66",
+      "from": "Case:195116643",
+      "to": "Reaction:Chronic kidney disease",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:67",
+      "from": "Case:195116643",
+      "to": "Reaction:Essential hypertension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:68",
+      "from": "Case:195116643",
+      "to": "Reaction:Anaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:69",
+      "from": "Case:195116643",
+      "to": "Reaction:Sickle cell anaemia with crisis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:70",
+      "from": "Case:195116643",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:71",
+      "from": "Case:195116643",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    }
+  ],
+  "meta": {
+    "caseCount": 9,
+    "nodeCount": 45,
+    "relCount": 71,
+    "capped": false
+  }
+}

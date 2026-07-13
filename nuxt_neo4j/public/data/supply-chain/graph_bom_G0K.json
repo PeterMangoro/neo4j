@@ -1,0 +1,4612 @@
+{
+  "nodes": [
+    {
+      "id": "Product:G0K",
+      "caption": "G0K",
+      "labels": [
+        "Product",
+        "gear"
+      ],
+      "score": 1.0
+    },
+    {
+      "id": "Product:90742",
+      "caption": "90742",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:68664",
+      "caption": "68664",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:83063",
+      "caption": "83063",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:73700",
+      "caption": "73700",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:71903",
+      "caption": "71903",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:68070",
+      "caption": "68070",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:76528",
+      "caption": "76528",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:81159",
+      "caption": "81159",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:76646",
+      "caption": "76646",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:72058",
+      "caption": "72058",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:85359",
+      "caption": "85359",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:66438",
+      "caption": "66438",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:65652",
+      "caption": "65652",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:87967",
+      "caption": "87967",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:79470",
+      "caption": "79470",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:75270",
+      "caption": "75270",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:69386",
+      "caption": "69386",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:71152",
+      "caption": "71152",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:70964",
+      "caption": "70964",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:76486",
+      "caption": "76486",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:82319",
+      "caption": "82319",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:91868",
+      "caption": "91868",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:69125",
+      "caption": "69125",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:66184",
+      "caption": "66184",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:82069",
+      "caption": "82069",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:91255",
+      "caption": "91255",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:89387",
+      "caption": "89387",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:72686",
+      "caption": "72686",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:87548",
+      "caption": "87548",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:68712",
+      "caption": "68712",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:64449",
+      "caption": "64449",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:65449",
+      "caption": "65449",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:80694",
+      "caption": "80694",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:66376",
+      "caption": "66376",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:74243",
+      "caption": "74243",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:85204",
+      "caption": "85204",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:72532",
+      "caption": "72532",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:89334",
+      "caption": "89334",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:84366",
+      "caption": "84366",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:64646",
+      "caption": "64646",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:90439",
+      "caption": "90439",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:69879",
+      "caption": "69879",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:77957",
+      "caption": "77957",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:85309",
+      "caption": "85309",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:75405",
+      "caption": "75405",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:77835",
+      "caption": "77835",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:86995",
+      "caption": "86995",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:74362",
+      "caption": "74362",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:88782",
+      "caption": "88782",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:72759",
+      "caption": "72759",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:68526",
+      "caption": "68526",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:83417",
+      "caption": "83417",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:76918",
+      "caption": "76918",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:87020",
+      "caption": "87020",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:90279",
+      "caption": "90279",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:69149",
+      "caption": "69149",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:73942",
+      "caption": "73942",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:80365",
+      "caption": "80365",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:77893",
+      "caption": "77893",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:73568",
+      "caption": "73568",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:64143",
+      "caption": "64143",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:74829",
+      "caption": "74829",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:89823",
+      "caption": "89823",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:64096",
+      "caption": "64096",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:78514",
+      "caption": "78514",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:79581",
+      "caption": "79581",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:82253",
+      "caption": "82253",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:77818",
+      "caption": "77818",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:79174",
+      "caption": "79174",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:67858",
+      "caption": "67858",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:72533",
+      "caption": "72533",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:83900",
+      "caption": "83900",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:89974",
+      "caption": "89974",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:69707",
+      "caption": "69707",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:75677",
+      "caption": "75677",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:85475",
+      "caption": "85475",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:80081",
+      "caption": "80081",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:88310",
+      "caption": "88310",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:75068",
+      "caption": "75068",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:88658",
+      "caption": "88658",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:75817",
+      "caption": "75817",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:75868",
+      "caption": "75868",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:64632",
+      "caption": "64632",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:66164",
+      "caption": "66164",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:90117",
+      "caption": "90117",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:82575",
+      "caption": "82575",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:74505",
+      "caption": "74505",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:65080",
+      "caption": "65080",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:75365",
+      "caption": "75365",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:75657",
+      "caption": "75657",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:67944",
+      "caption": "67944",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:72704",
+      "caption": "72704",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:71735",
+      "caption": "71735",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:68930",
+      "caption": "68930",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:77565",
+      "caption": "77565",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:79500",
+      "caption": "79500",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:69791",
+      "caption": "69791",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:76837",
+      "caption": "76837",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:89158",
+      "caption": "89158",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:89678",
+      "caption": "89678",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:69335",
+      "caption": "69335",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:69906",
+      "caption": "69906",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:69751",
+      "caption": "69751",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:89006",
+      "caption": "89006",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:77602",
+      "caption": "77602",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:77384",
+      "caption": "77384",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:70390",
+      "caption": "70390",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:75872",
+      "caption": "75872",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:88630",
+      "caption": "88630",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:74089",
+      "caption": "74089",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:64888",
+      "caption": "64888",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:66444",
+      "caption": "66444",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:89035",
+      "caption": "89035",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:79083",
+      "caption": "79083",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:64812",
+      "caption": "64812",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:69035",
+      "caption": "69035",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:73404",
+      "caption": "73404",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:88648",
+      "caption": "88648",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:67308",
+      "caption": "67308",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:75110",
+      "caption": "75110",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:75224",
+      "caption": "75224",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:78351",
+      "caption": "78351",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:89145",
+      "caption": "89145",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:80973",
+      "caption": "80973",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:87857",
+      "caption": "87857",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:83868",
+      "caption": "83868",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:84178",
+      "caption": "84178",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:79536",
+      "caption": "79536",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:84039",
+      "caption": "84039",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:72250",
+      "caption": "72250",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:75428",
+      "caption": "75428",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:87315",
+      "caption": "87315",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:88825",
+      "caption": "88825",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:90779",
+      "caption": "90779",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:83550",
+      "caption": "83550",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:79000",
+      "caption": "79000",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:89698",
+      "caption": "89698",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:67051",
+      "caption": "67051",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:78603",
+      "caption": "78603",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:87607",
+      "caption": "87607",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:86644",
+      "caption": "86644",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:88656",
+      "caption": "88656",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:90530",
+      "caption": "90530",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:90734",
+      "caption": "90734",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:68077",
+      "caption": "68077",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:77437",
+      "caption": "77437",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:78219",
+      "caption": "78219",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:89546",
+      "caption": "89546",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:89242",
+      "caption": "89242",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:79740",
+      "caption": "79740",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:77300",
+      "caption": "77300",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:89478",
+      "caption": "89478",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:64405",
+      "caption": "64405",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:73866",
+      "caption": "73866",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:74320",
+      "caption": "74320",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:78415",
+      "caption": "78415",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:69504",
+      "caption": "69504",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:91627",
+      "caption": "91627",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:85279",
+      "caption": "85279",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:75689",
+      "caption": "75689",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:69337",
+      "caption": "69337",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:83587",
+      "caption": "83587",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:68479",
+      "caption": "68479",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:76304",
+      "caption": "76304",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:88186",
+      "caption": "88186",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:68539",
+      "caption": "68539",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:88078",
+      "caption": "88078",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:89589",
+      "caption": "89589",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:65453",
+      "caption": "65453",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:71643",
+      "caption": "71643",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:64203",
+      "caption": "64203",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:87257",
+      "caption": "87257",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:78745",
+      "caption": "78745",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:87726",
+      "caption": "87726",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:83838",
+      "caption": "83838",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:85943",
+      "caption": "85943",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:68700",
+      "caption": "68700",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:86058",
+      "caption": "86058",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:67535",
+      "caption": "67535",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:69327",
+      "caption": "69327",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:66648",
+      "caption": "66648",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:90900",
+      "caption": "90900",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:73679",
+      "caption": "73679",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:77527",
+      "caption": "77527",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:84314",
+      "caption": "84314",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:83648",
+      "caption": "83648",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:85412",
+      "caption": "85412",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:72349",
+      "caption": "72349",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:75351",
+      "caption": "75351",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:85327",
+      "caption": "85327",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:87975",
+      "caption": "87975",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:87010",
+      "caption": "87010",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:87169",
+      "caption": "87169",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:85819",
+      "caption": "85819",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:77317",
+      "caption": "77317",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:68706",
+      "caption": "68706",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:91531",
+      "caption": "91531",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:82498",
+      "caption": "82498",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:71565",
+      "caption": "71565",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:91474",
+      "caption": "91474",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:73818",
+      "caption": "73818",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:87829",
+      "caption": "87829",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:74427",
+      "caption": "74427",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:79270",
+      "caption": "79270",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:77401",
+      "caption": "77401",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:79200",
+      "caption": "79200",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:71675",
+      "caption": "71675",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:75235",
+      "caption": "75235",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:73668",
+      "caption": "73668",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:68496",
+      "caption": "68496",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:73103",
+      "caption": "73103",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:91561",
+      "caption": "91561",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:64921",
+      "caption": "64921",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:86382",
+      "caption": "86382",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:65895",
+      "caption": "65895",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:78470",
+      "caption": "78470",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Product:79503",
+      "caption": "79503",
+      "labels": [
+        "Product",
+        "car"
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "Facility:gear-supplier_prod",
+      "caption": "gear-supplier_prod",
+      "labels": [
+        "Facility"
+      ],
+      "score": 0.6
+    },
+    {
+      "id": "Facility:engine-supplier_prod",
+      "caption": "engine-supplier_prod",
+      "labels": [
+        "Facility"
+      ],
+      "score": 0.6
+    }
+  ],
+  "relationships": [
+    {
+      "id": "REQUIRES:2",
+      "from": "Product:G0K",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:3",
+      "from": "Product:90742",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:4",
+      "from": "Product:68664",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:5",
+      "from": "Product:83063",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:6",
+      "from": "Product:73700",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:7",
+      "from": "Product:71903",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8",
+      "from": "Product:68070",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9",
+      "from": "Product:76528",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:10",
+      "from": "Product:81159",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:11",
+      "from": "Product:76646",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:12",
+      "from": "Product:72058",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:13",
+      "from": "Product:85359",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:14",
+      "from": "Product:66438",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:15",
+      "from": "Product:65652",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:16",
+      "from": "Product:87967",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:17",
+      "from": "Product:79470",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:18",
+      "from": "Product:75270",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:19",
+      "from": "Product:69386",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:20",
+      "from": "Product:71152",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:21",
+      "from": "Product:70964",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:22",
+      "from": "Product:76486",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:23",
+      "from": "Product:82319",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:24",
+      "from": "Product:91868",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:25",
+      "from": "Product:69125",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:26",
+      "from": "Product:66184",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:27",
+      "from": "Product:82069",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:28",
+      "from": "Product:91255",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:29",
+      "from": "Product:89387",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:30",
+      "from": "Product:72686",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:31",
+      "from": "Product:87548",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:32",
+      "from": "Product:68712",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:33",
+      "from": "Product:64449",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:34",
+      "from": "Product:65449",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:35",
+      "from": "Product:80694",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:36",
+      "from": "Product:66376",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:37",
+      "from": "Product:74243",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:38",
+      "from": "Product:85204",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:39",
+      "from": "Product:72532",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:40",
+      "from": "Product:89334",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:41",
+      "from": "Product:84366",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:42",
+      "from": "Product:64646",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:43",
+      "from": "Product:90439",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:44",
+      "from": "Product:69879",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:45",
+      "from": "Product:77957",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:46",
+      "from": "Product:85309",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:47",
+      "from": "Product:75405",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:48",
+      "from": "Product:77835",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:49",
+      "from": "Product:86995",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:50",
+      "from": "Product:74362",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:51",
+      "from": "Product:88782",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:52",
+      "from": "Product:72759",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:53",
+      "from": "Product:68526",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:54",
+      "from": "Product:83417",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:55",
+      "from": "Product:76918",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:56",
+      "from": "Product:87020",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:57",
+      "from": "Product:90279",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:58",
+      "from": "Product:69149",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:59",
+      "from": "Product:73942",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:60",
+      "from": "Product:80365",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:61",
+      "from": "Product:77893",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:62",
+      "from": "Product:73568",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:63",
+      "from": "Product:64143",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:64",
+      "from": "Product:74829",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:65",
+      "from": "Product:89823",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:66",
+      "from": "Product:64096",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:67",
+      "from": "Product:78514",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:68",
+      "from": "Product:79581",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:69",
+      "from": "Product:82253",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:70",
+      "from": "Product:77818",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:71",
+      "from": "Product:79174",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:72",
+      "from": "Product:67858",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:73",
+      "from": "Product:72533",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:74",
+      "from": "Product:83900",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:75",
+      "from": "Product:89974",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:76",
+      "from": "Product:69707",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:77",
+      "from": "Product:75677",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:78",
+      "from": "Product:85475",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:79",
+      "from": "Product:80081",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:80",
+      "from": "Product:88310",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:81",
+      "from": "Product:75068",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:82",
+      "from": "Product:88658",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:83",
+      "from": "Product:75817",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:84",
+      "from": "Product:75868",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:85",
+      "from": "Product:64632",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:86",
+      "from": "Product:66164",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:87",
+      "from": "Product:90117",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:88",
+      "from": "Product:82575",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:89",
+      "from": "Product:74505",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:90",
+      "from": "Product:65080",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:91",
+      "from": "Product:75365",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:92",
+      "from": "Product:75657",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:93",
+      "from": "Product:67944",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:94",
+      "from": "Product:72704",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:95",
+      "from": "Product:71735",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:96",
+      "from": "Product:68930",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:97",
+      "from": "Product:77565",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:98",
+      "from": "Product:79500",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:99",
+      "from": "Product:69791",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:100",
+      "from": "Product:76837",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:101",
+      "from": "Product:89158",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:102",
+      "from": "Product:89678",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:103",
+      "from": "Product:69335",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:104",
+      "from": "Product:69906",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:105",
+      "from": "Product:69751",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:106",
+      "from": "Product:89006",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:107",
+      "from": "Product:77602",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:108",
+      "from": "Product:77384",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:109",
+      "from": "Product:70390",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:110",
+      "from": "Product:75872",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:111",
+      "from": "Product:88630",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:112",
+      "from": "Product:74089",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:113",
+      "from": "Product:64888",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:114",
+      "from": "Product:66444",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:115",
+      "from": "Product:89035",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:116",
+      "from": "Product:79083",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:117",
+      "from": "Product:64812",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:118",
+      "from": "Product:69035",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:119",
+      "from": "Product:73404",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:120",
+      "from": "Product:88648",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:121",
+      "from": "Product:67308",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:122",
+      "from": "Product:75110",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:123",
+      "from": "Product:75224",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:124",
+      "from": "Product:78351",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:125",
+      "from": "Product:89145",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:126",
+      "from": "Product:80973",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:127",
+      "from": "Product:87857",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:128",
+      "from": "Product:83868",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:129",
+      "from": "Product:84178",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:130",
+      "from": "Product:79536",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:131",
+      "from": "Product:84039",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:132",
+      "from": "Product:72250",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:133",
+      "from": "Product:75428",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:134",
+      "from": "Product:87315",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:135",
+      "from": "Product:88825",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:136",
+      "from": "Product:90779",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:137",
+      "from": "Product:83550",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:138",
+      "from": "Product:79000",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:139",
+      "from": "Product:89698",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:140",
+      "from": "Product:67051",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:141",
+      "from": "Product:78603",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:142",
+      "from": "Product:87607",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:143",
+      "from": "Product:86644",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:144",
+      "from": "Product:88656",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:145",
+      "from": "Product:90530",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:146",
+      "from": "Product:90734",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:147",
+      "from": "Product:68077",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:148",
+      "from": "Product:77437",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:149",
+      "from": "Product:78219",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:150",
+      "from": "Product:89546",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:151",
+      "from": "Product:89242",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:152",
+      "from": "Product:79740",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:153",
+      "from": "Product:77300",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:154",
+      "from": "Product:89478",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:155",
+      "from": "Product:64405",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:156",
+      "from": "Product:73866",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:157",
+      "from": "Product:74320",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:158",
+      "from": "Product:78415",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:159",
+      "from": "Product:69504",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:160",
+      "from": "Product:91627",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:161",
+      "from": "Product:85279",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:162",
+      "from": "Product:75689",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:163",
+      "from": "Product:69337",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:164",
+      "from": "Product:83587",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:165",
+      "from": "Product:68479",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:166",
+      "from": "Product:76304",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:167",
+      "from": "Product:88186",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:168",
+      "from": "Product:68539",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:169",
+      "from": "Product:88078",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:170",
+      "from": "Product:89589",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:171",
+      "from": "Product:65453",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:172",
+      "from": "Product:71643",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:173",
+      "from": "Product:64203",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:174",
+      "from": "Product:87257",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:175",
+      "from": "Product:78745",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:176",
+      "from": "Product:87726",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:177",
+      "from": "Product:83838",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:178",
+      "from": "Product:85943",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:179",
+      "from": "Product:68700",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:180",
+      "from": "Product:86058",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:181",
+      "from": "Product:67535",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:182",
+      "from": "Product:69327",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:183",
+      "from": "Product:66648",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:184",
+      "from": "Product:90900",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:185",
+      "from": "Product:73679",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:186",
+      "from": "Product:77527",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:187",
+      "from": "Product:84314",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:188",
+      "from": "Product:83648",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:189",
+      "from": "Product:85412",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:190",
+      "from": "Product:72349",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:191",
+      "from": "Product:75351",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:192",
+      "from": "Product:85327",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:193",
+      "from": "Product:87975",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:194",
+      "from": "Product:87010",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:195",
+      "from": "Product:87169",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:196",
+      "from": "Product:85819",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:197",
+      "from": "Product:77317",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:198",
+      "from": "Product:68706",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:199",
+      "from": "Product:91531",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:200",
+      "from": "Product:82498",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:201",
+      "from": "Product:71565",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:202",
+      "from": "Product:91474",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:203",
+      "from": "Product:73818",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:204",
+      "from": "Product:87829",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:205",
+      "from": "Product:74427",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:206",
+      "from": "Product:79270",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:207",
+      "from": "Product:77401",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:208",
+      "from": "Product:79200",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:209",
+      "from": "Product:71675",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:210",
+      "from": "Product:75235",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:211",
+      "from": "Product:73668",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:212",
+      "from": "Product:68496",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:213",
+      "from": "Product:73103",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:214",
+      "from": "Product:91561",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:215",
+      "from": "Product:64921",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:216",
+      "from": "Product:86382",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:217",
+      "from": "Product:65895",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:218",
+      "from": "Product:78470",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:219",
+      "from": "Product:79503",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:4184",
+      "from": "Product:G0K",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "PRODUCES:8596",
+      "from": "Facility:gear-supplier_prod",
+      "to": "Product:G0K",
+      "type": "PRODUCES"
+    },
+    {
+      "id": "REQUIRES:8599",
+      "from": "Product:90742",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8603",
+      "from": "Product:68664",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8607",
+      "from": "Product:83063",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8611",
+      "from": "Product:73700",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8615",
+      "from": "Product:71903",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8619",
+      "from": "Product:68070",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8623",
+      "from": "Product:76528",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8627",
+      "from": "Product:81159",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8631",
+      "from": "Product:76646",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8635",
+      "from": "Product:85359",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8639",
+      "from": "Product:87967",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8643",
+      "from": "Product:66438",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8647",
+      "from": "Product:65652",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8651",
+      "from": "Product:72058",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8655",
+      "from": "Product:79470",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8659",
+      "from": "Product:75270",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8663",
+      "from": "Product:69386",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8667",
+      "from": "Product:71152",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8671",
+      "from": "Product:70964",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8675",
+      "from": "Product:76486",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8679",
+      "from": "Product:82319",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8683",
+      "from": "Product:91868",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8687",
+      "from": "Product:69125",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8691",
+      "from": "Product:66184",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8695",
+      "from": "Product:82069",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8699",
+      "from": "Product:91255",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8703",
+      "from": "Product:89387",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8707",
+      "from": "Product:72686",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8711",
+      "from": "Product:87548",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8715",
+      "from": "Product:68712",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8719",
+      "from": "Product:64449",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8723",
+      "from": "Product:65449",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8727",
+      "from": "Product:80694",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8731",
+      "from": "Product:66376",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8735",
+      "from": "Product:74243",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8739",
+      "from": "Product:85204",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8743",
+      "from": "Product:72532",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8747",
+      "from": "Product:89334",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8751",
+      "from": "Product:84366",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8755",
+      "from": "Product:64646",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8759",
+      "from": "Product:90439",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8763",
+      "from": "Product:69879",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8767",
+      "from": "Product:77957",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8771",
+      "from": "Product:85309",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8775",
+      "from": "Product:75405",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8779",
+      "from": "Product:77835",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8783",
+      "from": "Product:86995",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8787",
+      "from": "Product:74362",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8791",
+      "from": "Product:88782",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8795",
+      "from": "Product:72759",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8799",
+      "from": "Product:68526",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8803",
+      "from": "Product:83417",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8807",
+      "from": "Product:76918",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8811",
+      "from": "Product:87020",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8815",
+      "from": "Product:90279",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8819",
+      "from": "Product:69149",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8823",
+      "from": "Product:73942",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8827",
+      "from": "Product:80365",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8831",
+      "from": "Product:77893",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8835",
+      "from": "Product:73568",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8839",
+      "from": "Product:64143",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8843",
+      "from": "Product:74829",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8847",
+      "from": "Product:89823",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8851",
+      "from": "Product:64096",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8855",
+      "from": "Product:78514",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8859",
+      "from": "Product:79581",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8863",
+      "from": "Product:82253",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8867",
+      "from": "Product:77818",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8871",
+      "from": "Product:79174",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8875",
+      "from": "Product:67858",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8879",
+      "from": "Product:72533",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8883",
+      "from": "Product:83900",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8887",
+      "from": "Product:89974",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8891",
+      "from": "Product:69707",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8895",
+      "from": "Product:75677",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8899",
+      "from": "Product:85475",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8903",
+      "from": "Product:80081",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8907",
+      "from": "Product:88310",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8911",
+      "from": "Product:75068",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8915",
+      "from": "Product:88658",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8919",
+      "from": "Product:75817",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8923",
+      "from": "Product:75868",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8927",
+      "from": "Product:64632",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8931",
+      "from": "Product:66164",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8935",
+      "from": "Product:90117",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8939",
+      "from": "Product:82575",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8943",
+      "from": "Product:74505",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8947",
+      "from": "Product:65080",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8951",
+      "from": "Product:75365",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8955",
+      "from": "Product:75657",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8959",
+      "from": "Product:67944",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8963",
+      "from": "Product:72704",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8967",
+      "from": "Product:71735",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8971",
+      "from": "Product:68930",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8975",
+      "from": "Product:77565",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8979",
+      "from": "Product:79500",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8983",
+      "from": "Product:69791",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8987",
+      "from": "Product:76837",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8991",
+      "from": "Product:89158",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8995",
+      "from": "Product:89678",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:8999",
+      "from": "Product:69335",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9003",
+      "from": "Product:69906",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9007",
+      "from": "Product:69751",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9011",
+      "from": "Product:89006",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9015",
+      "from": "Product:77602",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9019",
+      "from": "Product:77384",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9023",
+      "from": "Product:70390",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9027",
+      "from": "Product:75872",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9031",
+      "from": "Product:88630",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9035",
+      "from": "Product:74089",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9039",
+      "from": "Product:64888",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9043",
+      "from": "Product:66444",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9047",
+      "from": "Product:89035",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9051",
+      "from": "Product:79083",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9055",
+      "from": "Product:64812",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9059",
+      "from": "Product:69035",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9063",
+      "from": "Product:73404",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9067",
+      "from": "Product:88648",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9071",
+      "from": "Product:67308",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9075",
+      "from": "Product:75110",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9079",
+      "from": "Product:75224",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9083",
+      "from": "Product:78351",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9087",
+      "from": "Product:89145",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9091",
+      "from": "Product:80973",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9095",
+      "from": "Product:87857",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9099",
+      "from": "Product:83868",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9103",
+      "from": "Product:84178",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9107",
+      "from": "Product:79536",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9111",
+      "from": "Product:84039",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9115",
+      "from": "Product:72250",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9119",
+      "from": "Product:75428",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9123",
+      "from": "Product:87315",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9127",
+      "from": "Product:88825",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9131",
+      "from": "Product:90779",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9135",
+      "from": "Product:83550",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9139",
+      "from": "Product:79000",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9143",
+      "from": "Product:89698",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9147",
+      "from": "Product:67051",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9151",
+      "from": "Product:78603",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9155",
+      "from": "Product:87607",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9159",
+      "from": "Product:86644",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9163",
+      "from": "Product:88656",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9167",
+      "from": "Product:90530",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9171",
+      "from": "Product:90734",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9175",
+      "from": "Product:68077",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9179",
+      "from": "Product:77437",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9183",
+      "from": "Product:78219",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9187",
+      "from": "Product:89546",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9191",
+      "from": "Product:89242",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9195",
+      "from": "Product:79740",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9199",
+      "from": "Product:77300",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9203",
+      "from": "Product:89478",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9207",
+      "from": "Product:64405",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9211",
+      "from": "Product:73866",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9215",
+      "from": "Product:74320",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9219",
+      "from": "Product:78415",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9223",
+      "from": "Product:69504",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9227",
+      "from": "Product:91627",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9231",
+      "from": "Product:85279",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9235",
+      "from": "Product:75689",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9239",
+      "from": "Product:69337",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9243",
+      "from": "Product:83587",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9247",
+      "from": "Product:68479",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9251",
+      "from": "Product:76304",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9255",
+      "from": "Product:88186",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9259",
+      "from": "Product:68539",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9263",
+      "from": "Product:88078",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9267",
+      "from": "Product:89589",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9271",
+      "from": "Product:65453",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9275",
+      "from": "Product:71643",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9279",
+      "from": "Product:64203",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9283",
+      "from": "Product:87257",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9287",
+      "from": "Product:78745",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9291",
+      "from": "Product:87726",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9295",
+      "from": "Product:83838",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9299",
+      "from": "Product:85943",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9303",
+      "from": "Product:68700",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9307",
+      "from": "Product:86058",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9311",
+      "from": "Product:67535",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9315",
+      "from": "Product:69327",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9319",
+      "from": "Product:66648",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9323",
+      "from": "Product:90900",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9327",
+      "from": "Product:73679",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9331",
+      "from": "Product:77527",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9335",
+      "from": "Product:84314",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9339",
+      "from": "Product:83648",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9343",
+      "from": "Product:85412",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9347",
+      "from": "Product:72349",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9351",
+      "from": "Product:75351",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9355",
+      "from": "Product:85327",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9359",
+      "from": "Product:87975",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9363",
+      "from": "Product:87010",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9367",
+      "from": "Product:87169",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9371",
+      "from": "Product:85819",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9375",
+      "from": "Product:77317",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9379",
+      "from": "Product:68706",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9383",
+      "from": "Product:91531",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9387",
+      "from": "Product:82498",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9391",
+      "from": "Product:71565",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9395",
+      "from": "Product:91474",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9399",
+      "from": "Product:73818",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9403",
+      "from": "Product:87829",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9407",
+      "from": "Product:74427",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9411",
+      "from": "Product:79270",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9415",
+      "from": "Product:77401",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9419",
+      "from": "Product:79200",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9423",
+      "from": "Product:71675",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9427",
+      "from": "Product:75235",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9431",
+      "from": "Product:73668",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9435",
+      "from": "Product:68496",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9439",
+      "from": "Product:73103",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9443",
+      "from": "Product:91561",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9447",
+      "from": "Product:64921",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9451",
+      "from": "Product:86382",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9455",
+      "from": "Product:65895",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9459",
+      "from": "Product:78470",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    },
+    {
+      "id": "REQUIRES:9463",
+      "from": "Product:79503",
+      "to": "Product:G0K",
+      "type": "REQUIRES"
+    }
+  ],
+  "meta": {
+    "focusProduct": "G0K",
+    "nodeCount": 220,
+    "relCount": 437,
+    "capped": true
+  }
+}

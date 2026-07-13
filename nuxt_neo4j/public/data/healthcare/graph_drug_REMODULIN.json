@@ -1,0 +1,2782 @@
+{
+  "nodes": [
+    {
+      "id": "Case:137864952",
+      "caption": "Case 137864952 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:REMODULIN",
+      "caption": "REMODULIN",
+      "labels": [
+        "Drug"
+      ],
+      "score": 1.0
+    },
+    {
+      "id": "Drug:ADCIRCA",
+      "caption": "ADCIRCA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LETAIRIS",
+      "caption": "LETAIRIS",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Infusion site infection",
+      "caption": "Infusion site infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Device intolerance",
+      "caption": "Device intolerance",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Infusion site pain",
+      "caption": "Infusion site pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Hospitalization - Initial or Prolonged",
+      "caption": "Hospitalization - Initial or Prolonged",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adolescent",
+      "caption": "Adolescent",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Manufacturer:UNITED THERAPEUTICS",
+      "caption": "UNITED THERAPEUTICS",
+      "labels": [
+        "Manufacturer"
+      ]
+    },
+    {
+      "id": "Case:191242362",
+      "caption": "Case 191242362 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Gastrointestinal disorder",
+      "caption": "Gastrointestinal disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gastric infection",
+      "caption": "Gastric infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Other Serious (Important Medical Event)",
+      "caption": "Other Serious (Important Medical Event)",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adult",
+      "caption": "Adult",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:192276127",
+      "caption": "Case 192276127 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Hypoxia",
+      "caption": "Hypoxia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Malaise",
+      "caption": "Malaise",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dyspnoea",
+      "caption": "Dyspnoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:192675424",
+      "caption": "Case 192675424 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:OPSUMIT",
+      "caption": "OPSUMIT",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Cough",
+      "caption": "Cough",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Peripheral swelling",
+      "caption": "Peripheral swelling",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Oedema peripheral",
+      "caption": "Oedema peripheral",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dry throat",
+      "caption": "Dry throat",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Nasal congestion",
+      "caption": "Nasal congestion",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Laryngitis",
+      "caption": "Laryngitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fatigue",
+      "caption": "Fatigue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Nasopharyngitis",
+      "caption": "Nasopharyngitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Elderly",
+      "caption": "Elderly",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:192987363",
+      "caption": "Case 192987363 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Headache",
+      "caption": "Headache",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fall",
+      "caption": "Fall",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Wrist fracture",
+      "caption": "Wrist fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:193164663",
+      "caption": "Case 193164663 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Pneumonia bacterial",
+      "caption": "Pneumonia bacterial",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Myocardial infarction",
+      "caption": "Myocardial infarction",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cardiogenic shock",
+      "caption": "Cardiogenic shock",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Respiratory failure",
+      "caption": "Respiratory failure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:193219313",
+      "caption": "Case 193219313 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Pulmonary arterial hypertension",
+      "caption": "Pulmonary arterial hypertension",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Infusion site thrombosis",
+      "caption": "Infusion site thrombosis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fluid retention",
+      "caption": "Fluid retention",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:193720555",
+      "caption": "Case 193720555 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Vomiting",
+      "caption": "Vomiting",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal pain",
+      "caption": "Abdominal pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Small intestinal obstruction",
+      "caption": "Small intestinal obstruction",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Nausea",
+      "caption": "Nausea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:193760953",
+      "caption": "Case 193760953 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Nocturnal dyspnoea",
+      "caption": "Nocturnal dyspnoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Diarrhoea",
+      "caption": "Diarrhoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Acute kidney injury",
+      "caption": "Acute kidney injury",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Left ventricular failure",
+      "caption": "Left ventricular failure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Atrial fibrillation",
+      "caption": "Atrial fibrillation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Right ventricular failure",
+      "caption": "Right ventricular failure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Swelling",
+      "caption": "Swelling",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:193761202",
+      "caption": "Case 193761202 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Vascular device infection",
+      "caption": "Vascular device infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:193918552",
+      "caption": "Case 193918552 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Chest pain",
+      "caption": "Chest pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:193966505",
+      "caption": "Case 193966505 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Bacteraemia",
+      "caption": "Bacteraemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pulmonary hypertension",
+      "caption": "Pulmonary hypertension",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Staphylococcal infection",
+      "caption": "Staphylococcal infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194077913",
+      "caption": "Case 194077913 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Anaphylactic reaction",
+      "caption": "Anaphylactic reaction",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Carpal tunnel syndrome",
+      "caption": "Carpal tunnel syndrome",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Osteoarthritis",
+      "caption": "Osteoarthritis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cardio-respiratory arrest",
+      "caption": "Cardio-respiratory arrest",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Life-Threatening",
+      "caption": "Life-Threatening",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:194297883",
+      "caption": "Case 194297883 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Sepsis",
+      "caption": "Sepsis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypotension",
+      "caption": "Hypotension",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal abscess",
+      "caption": "Abdominal abscess",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Amnesia",
+      "caption": "Amnesia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194368132",
+      "caption": "Case 194368132 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Vascular device occlusion",
+      "caption": "Vascular device occlusion",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Urosepsis",
+      "caption": "Urosepsis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194377232",
+      "caption": "Case 194377232 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:COVID-19",
+      "caption": "COVID-19",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194477573",
+      "caption": "Case 194477573 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Death",
+      "caption": "Death",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Death",
+      "caption": "Death",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:194498414",
+      "caption": "Case 194498414 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Suicidal ideation",
+      "caption": "Suicidal ideation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Mental disorder",
+      "caption": "Mental disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194515372",
+      "caption": "Case 194515372 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Pleural effusion",
+      "caption": "Pleural effusion",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194558013",
+      "caption": "Case 194558013 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Haemoptysis",
+      "caption": "Haemoptysis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194564742",
+      "caption": "Case 194564742 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Pneumonia",
+      "caption": "Pneumonia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194575593",
+      "caption": "Case 194575593 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Presyncope",
+      "caption": "Presyncope",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Asthenia",
+      "caption": "Asthenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dizziness",
+      "caption": "Dizziness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194600453",
+      "caption": "Case 194600453 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Pulmonary oedema",
+      "caption": "Pulmonary oedema",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fluid overload",
+      "caption": "Fluid overload",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194617823",
+      "caption": "Case 194617823 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:194645753",
+      "caption": "Case 194645753 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Hypokalaemia",
+      "caption": "Hypokalaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194749742",
+      "caption": "Case 194749742 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:194846541",
+      "caption": "Case 194846541 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:194846871",
+      "caption": "Case 194846871 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Syncope",
+      "caption": "Syncope",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194847183",
+      "caption": "Case 194847183 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Chronic obstructive pulmonary disease",
+      "caption": "Chronic obstructive pulmonary disease",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194852121",
+      "caption": "Case 194852121 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Asthma",
+      "caption": "Asthma",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194875612",
+      "caption": "Case 194875612 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Sensitive skin",
+      "caption": "Sensitive skin",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194891611",
+      "caption": "Case 194891611 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Uterine mass",
+      "caption": "Uterine mass",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194893362",
+      "caption": "Case 194893362 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "AgeGroup:Child",
+      "caption": "Child",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:194895262",
+      "caption": "Case 194895262 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Gastrointestinal haemorrhage",
+      "caption": "Gastrointestinal haemorrhage",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Haematemesis",
+      "caption": "Haematemesis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194944693",
+      "caption": "Case 194944693 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Dehydration",
+      "caption": "Dehydration",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194947081",
+      "caption": "Case 194947081 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:194947714",
+      "caption": "Case 194947714 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Respiratory acidosis",
+      "caption": "Respiratory acidosis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Renal failure",
+      "caption": "Renal failure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:195014461",
+      "caption": "Case 195014461 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Arrhythmia",
+      "caption": "Arrhythmia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:195015062",
+      "caption": "Case 195015062 (F)",
+      "labels": [
+        "Case"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "CD:1",
+      "from": "Case:137864952",
+      "to": "Drug:REMODULIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:2",
+      "from": "Case:137864952",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:3",
+      "from": "Case:137864952",
+      "to": "Drug:ADCIRCA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:4",
+      "from": "Case:137864952",
+      "to": "Drug:LETAIRIS",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:5",
+      "from": "Case:137864952",
+      "to": "Reaction:Infusion site infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:6",
+      "from": "Case:137864952",
+      "to": "Reaction:Device intolerance",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:7",
+      "from": "Case:137864952",
+      "to": "Reaction:Infusion site pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:8",
+      "from": "Case:137864952",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:9",
+      "from": "Case:137864952",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:10",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:137864952",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:11",
+      "from": "Case:191242362",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:12",
+      "from": "Case:191242362",
+      "to": "Reaction:Gastrointestinal disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:13",
+      "from": "Case:191242362",
+      "to": "Reaction:Gastric infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:14",
+      "from": "Case:191242362",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:15",
+      "from": "Case:191242362",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:16",
+      "from": "Case:191242362",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:17",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:191242362",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:18",
+      "from": "Case:192276127",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:19",
+      "from": "Case:192276127",
+      "to": "Reaction:Hypoxia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:20",
+      "from": "Case:192276127",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:21",
+      "from": "Case:192276127",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:22",
+      "from": "Case:192276127",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:23",
+      "from": "Case:192276127",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:24",
+      "from": "Case:192276127",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:25",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:192276127",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:26",
+      "from": "Case:192675424",
+      "to": "Drug:OPSUMIT",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:27",
+      "from": "Case:192675424",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:28",
+      "from": "Case:192675424",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:29",
+      "from": "Case:192675424",
+      "to": "Reaction:Peripheral swelling",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:30",
+      "from": "Case:192675424",
+      "to": "Reaction:Oedema peripheral",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:31",
+      "from": "Case:192675424",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:32",
+      "from": "Case:192675424",
+      "to": "Reaction:Dry throat",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:33",
+      "from": "Case:192675424",
+      "to": "Reaction:Nasal congestion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:34",
+      "from": "Case:192675424",
+      "to": "Reaction:Laryngitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:35",
+      "from": "Case:192675424",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:36",
+      "from": "Case:192675424",
+      "to": "Reaction:Nasopharyngitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:37",
+      "from": "Case:192675424",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:38",
+      "from": "Case:192675424",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:39",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:192675424",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:40",
+      "from": "Case:192987363",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:41",
+      "from": "Case:192987363",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:42",
+      "from": "Case:192987363",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:43",
+      "from": "Case:192987363",
+      "to": "Reaction:Wrist fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:44",
+      "from": "Case:192987363",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:45",
+      "from": "Case:192987363",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:46",
+      "from": "Case:192987363",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:47",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:192987363",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:48",
+      "from": "Case:193164663",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:49",
+      "from": "Case:193164663",
+      "to": "Reaction:Pneumonia bacterial",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:50",
+      "from": "Case:193164663",
+      "to": "Reaction:Myocardial infarction",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:51",
+      "from": "Case:193164663",
+      "to": "Reaction:Cardiogenic shock",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:52",
+      "from": "Case:193164663",
+      "to": "Reaction:Respiratory failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:53",
+      "from": "Case:193164663",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:54",
+      "from": "Case:193164663",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:55",
+      "from": "Case:193164663",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:56",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:193164663",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:57",
+      "from": "Case:193219313",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:58",
+      "from": "Case:193219313",
+      "to": "Reaction:Pulmonary arterial hypertension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:59",
+      "from": "Case:193219313",
+      "to": "Reaction:Infusion site thrombosis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:60",
+      "from": "Case:193219313",
+      "to": "Reaction:Fluid retention",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:61",
+      "from": "Case:193219313",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:62",
+      "from": "Case:193219313",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:63",
+      "from": "Case:193219313",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:64",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:193219313",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:65",
+      "from": "Case:193720555",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:66",
+      "from": "Case:193720555",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:67",
+      "from": "Case:193720555",
+      "to": "Reaction:Abdominal pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:68",
+      "from": "Case:193720555",
+      "to": "Reaction:Small intestinal obstruction",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:69",
+      "from": "Case:193720555",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:70",
+      "from": "Case:193720555",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:71",
+      "from": "Case:193720555",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:72",
+      "from": "Case:193720555",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:73",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:193720555",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:74",
+      "from": "Case:193760953",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:75",
+      "from": "Case:193760953",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:76",
+      "from": "Case:193760953",
+      "to": "Reaction:Nocturnal dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:77",
+      "from": "Case:193760953",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:78",
+      "from": "Case:193760953",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:79",
+      "from": "Case:193760953",
+      "to": "Reaction:Left ventricular failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:80",
+      "from": "Case:193760953",
+      "to": "Reaction:Pulmonary arterial hypertension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:81",
+      "from": "Case:193760953",
+      "to": "Reaction:Atrial fibrillation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:82",
+      "from": "Case:193760953",
+      "to": "Reaction:Infusion site pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:83",
+      "from": "Case:193760953",
+      "to": "Reaction:Right ventricular failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:84",
+      "from": "Case:193760953",
+      "to": "Reaction:Swelling",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:85",
+      "from": "Case:193760953",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:86",
+      "from": "Case:193760953",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:87",
+      "from": "Case:193760953",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:88",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:193760953",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:89",
+      "from": "Case:193761202",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:90",
+      "from": "Case:193761202",
+      "to": "Reaction:Respiratory failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:91",
+      "from": "Case:193761202",
+      "to": "Reaction:Vascular device infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:92",
+      "from": "Case:193761202",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:93",
+      "from": "Case:193761202",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:94",
+      "from": "Case:193761202",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:95",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:193761202",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:96",
+      "from": "Case:193918552",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:97",
+      "from": "Case:193918552",
+      "to": "Reaction:Chest pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:98",
+      "from": "Case:193918552",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:99",
+      "from": "Case:193918552",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:100",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:193918552",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:101",
+      "from": "Case:193966505",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:102",
+      "from": "Case:193966505",
+      "to": "Reaction:Bacteraemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:103",
+      "from": "Case:193966505",
+      "to": "Reaction:Pulmonary hypertension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:104",
+      "from": "Case:193966505",
+      "to": "Reaction:Staphylococcal infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:105",
+      "from": "Case:193966505",
+      "to": "Reaction:Vascular device infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:106",
+      "from": "Case:193966505",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:107",
+      "from": "Case:193966505",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:108",
+      "from": "Case:193966505",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:109",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:193966505",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:110",
+      "from": "Case:194077913",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:111",
+      "from": "Case:194077913",
+      "to": "Reaction:Anaphylactic reaction",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:112",
+      "from": "Case:194077913",
+      "to": "Reaction:Carpal tunnel syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:113",
+      "from": "Case:194077913",
+      "to": "Reaction:Osteoarthritis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:114",
+      "from": "Case:194077913",
+      "to": "Reaction:Cardio-respiratory arrest",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:115",
+      "from": "Case:194077913",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:116",
+      "from": "Case:194077913",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:117",
+      "from": "Case:194077913",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:118",
+      "from": "Case:194077913",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:119",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194077913",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:120",
+      "from": "Case:194297883",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:121",
+      "from": "Case:194297883",
+      "to": "Reaction:Sepsis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:122",
+      "from": "Case:194297883",
+      "to": "Reaction:Hypotension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:123",
+      "from": "Case:194297883",
+      "to": "Reaction:Staphylococcal infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:124",
+      "from": "Case:194297883",
+      "to": "Reaction:Abdominal abscess",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:125",
+      "from": "Case:194297883",
+      "to": "Reaction:Amnesia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:126",
+      "from": "Case:194297883",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:127",
+      "from": "Case:194297883",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:128",
+      "from": "Case:194297883",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:129",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194297883",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:130",
+      "from": "Case:194368132",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:131",
+      "from": "Case:194368132",
+      "to": "Reaction:Vascular device occlusion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:132",
+      "from": "Case:194368132",
+      "to": "Reaction:Urosepsis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:133",
+      "from": "Case:194368132",
+      "to": "Reaction:Vascular device infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:134",
+      "from": "Case:194368132",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:135",
+      "from": "Case:194368132",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:136",
+      "from": "Case:194368132",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:137",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194368132",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:138",
+      "from": "Case:194377232",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:139",
+      "from": "Case:194377232",
+      "to": "Reaction:COVID-19",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:140",
+      "from": "Case:194377232",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:141",
+      "from": "Case:194377232",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:142",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194377232",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:143",
+      "from": "Case:194477573",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:144",
+      "from": "Case:194477573",
+      "to": "Reaction:Death",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:145",
+      "from": "Case:194477573",
+      "to": "Reaction:Right ventricular failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:146",
+      "from": "Case:194477573",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:147",
+      "from": "Case:194477573",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:148",
+      "from": "Case:194477573",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:149",
+      "from": "Case:194477573",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:150",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194477573",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:151",
+      "from": "Case:194498414",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:152",
+      "from": "Case:194498414",
+      "to": "Reaction:Suicidal ideation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:153",
+      "from": "Case:194498414",
+      "to": "Reaction:Mental disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:154",
+      "from": "Case:194498414",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:155",
+      "from": "Case:194498414",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:156",
+      "from": "Case:194498414",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:157",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194498414",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:158",
+      "from": "Case:194515372",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:159",
+      "from": "Case:194515372",
+      "to": "Reaction:Pleural effusion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:160",
+      "from": "Case:194515372",
+      "to": "Reaction:Fluid retention",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:161",
+      "from": "Case:194515372",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:162",
+      "from": "Case:194515372",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:163",
+      "from": "Case:194515372",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:164",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194515372",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:165",
+      "from": "Case:194558013",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:166",
+      "from": "Case:194558013",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:167",
+      "from": "Case:194558013",
+      "to": "Reaction:Pulmonary arterial hypertension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:168",
+      "from": "Case:194558013",
+      "to": "Reaction:Oedema peripheral",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:169",
+      "from": "Case:194558013",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:170",
+      "from": "Case:194558013",
+      "to": "Reaction:Fluid retention",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:171",
+      "from": "Case:194558013",
+      "to": "Reaction:Haemoptysis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:172",
+      "from": "Case:194558013",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:173",
+      "from": "Case:194558013",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:174",
+      "from": "Case:194558013",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:175",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194558013",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:176",
+      "from": "Case:194564742",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:177",
+      "from": "Case:194564742",
+      "to": "Reaction:Pneumonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:178",
+      "from": "Case:194564742",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:179",
+      "from": "Case:194564742",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:180",
+      "from": "Case:194564742",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:181",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194564742",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:182",
+      "from": "Case:194575593",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:183",
+      "from": "Case:194575593",
+      "to": "Reaction:Presyncope",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:184",
+      "from": "Case:194575593",
+      "to": "Reaction:Asthenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:185",
+      "from": "Case:194575593",
+      "to": "Reaction:Dizziness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:186",
+      "from": "Case:194575593",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:187",
+      "from": "Case:194575593",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:188",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194575593",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:189",
+      "from": "Case:194600453",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:190",
+      "from": "Case:194600453",
+      "to": "Reaction:Pulmonary oedema",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:191",
+      "from": "Case:194600453",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:192",
+      "from": "Case:194600453",
+      "to": "Reaction:Fluid overload",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:193",
+      "from": "Case:194600453",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:194",
+      "from": "Case:194600453",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:195",
+      "from": "Case:194600453",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:196",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194600453",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:197",
+      "from": "Case:194617823",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:198",
+      "from": "Case:194617823",
+      "to": "Reaction:Swelling",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:199",
+      "from": "Case:194617823",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:200",
+      "from": "Case:194617823",
+      "to": "Reaction:Fluid overload",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:201",
+      "from": "Case:194617823",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:202",
+      "from": "Case:194617823",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:203",
+      "from": "Case:194617823",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:204",
+      "from": "Case:194617823",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:205",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194617823",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:206",
+      "from": "Case:194645753",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:207",
+      "from": "Case:194645753",
+      "to": "Reaction:Hypokalaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:208",
+      "from": "Case:194645753",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:209",
+      "from": "Case:194645753",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:210",
+      "from": "Case:194645753",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:211",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194645753",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:212",
+      "from": "Case:194749742",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:213",
+      "from": "Case:194749742",
+      "to": "Reaction:Fluid overload",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:214",
+      "from": "Case:194749742",
+      "to": "Reaction:Death",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:215",
+      "from": "Case:194749742",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:216",
+      "from": "Case:194749742",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:217",
+      "from": "Case:194749742",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:218",
+      "from": "Case:194749742",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:219",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194749742",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:220",
+      "from": "Case:194846541",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:221",
+      "from": "Case:194846541",
+      "to": "Reaction:Pulmonary hypertension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:222",
+      "from": "Case:194846541",
+      "to": "Reaction:Fluid overload",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:223",
+      "from": "Case:194846541",
+      "to": "Reaction:Pneumonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:224",
+      "from": "Case:194846541",
+      "to": "Reaction:Hypoxia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:225",
+      "from": "Case:194846541",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:226",
+      "from": "Case:194846541",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:227",
+      "from": "Case:194846541",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:228",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194846541",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:229",
+      "from": "Case:194846871",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:230",
+      "from": "Case:194846871",
+      "to": "Reaction:Syncope",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:231",
+      "from": "Case:194846871",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:232",
+      "from": "Case:194846871",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:233",
+      "from": "Case:194846871",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:234",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194846871",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:235",
+      "from": "Case:194847183",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:236",
+      "from": "Case:194847183",
+      "to": "Reaction:Chronic obstructive pulmonary disease",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:237",
+      "from": "Case:194847183",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:238",
+      "from": "Case:194847183",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:239",
+      "from": "Case:194847183",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:240",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194847183",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:241",
+      "from": "Case:194852121",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:242",
+      "from": "Case:194852121",
+      "to": "Reaction:Asthma",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:243",
+      "from": "Case:194852121",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:244",
+      "from": "Case:194852121",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:245",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194852121",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:246",
+      "from": "Case:194875612",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:247",
+      "from": "Case:194875612",
+      "to": "Reaction:Vascular device infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:248",
+      "from": "Case:194875612",
+      "to": "Reaction:Sensitive skin",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:249",
+      "from": "Case:194875612",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:250",
+      "from": "Case:194875612",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:251",
+      "from": "Case:194875612",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:252",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194875612",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:253",
+      "from": "Case:194891611",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:254",
+      "from": "Case:194891611",
+      "to": "Reaction:Uterine mass",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:255",
+      "from": "Case:194891611",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:256",
+      "from": "Case:194891611",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:257",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194891611",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:258",
+      "from": "Case:194893362",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:259",
+      "from": "Case:194893362",
+      "to": "Reaction:Pulmonary arterial hypertension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:260",
+      "from": "Case:194893362",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:261",
+      "from": "Case:194893362",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:262",
+      "from": "Case:194893362",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:263",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194893362",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:264",
+      "from": "Case:194895262",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:265",
+      "from": "Case:194895262",
+      "to": "Reaction:Haemoptysis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:266",
+      "from": "Case:194895262",
+      "to": "Reaction:Gastrointestinal haemorrhage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:267",
+      "from": "Case:194895262",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:268",
+      "from": "Case:194895262",
+      "to": "Reaction:Haematemesis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:269",
+      "from": "Case:194895262",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:270",
+      "from": "Case:194895262",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:271",
+      "from": "Case:194895262",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:272",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194895262",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:273",
+      "from": "Case:194944693",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:274",
+      "from": "Case:194944693",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:275",
+      "from": "Case:194944693",
+      "to": "Reaction:Dehydration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:276",
+      "from": "Case:194944693",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:277",
+      "from": "Case:194944693",
+      "to": "Reaction:Syncope",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:278",
+      "from": "Case:194944693",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:279",
+      "from": "Case:194944693",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:280",
+      "from": "Case:194944693",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:281",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194944693",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:282",
+      "from": "Case:194947081",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:283",
+      "from": "Case:194947081",
+      "to": "Reaction:Chest pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:284",
+      "from": "Case:194947081",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:285",
+      "from": "Case:194947081",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:286",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194947081",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:287",
+      "from": "Case:194947714",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:288",
+      "from": "Case:194947714",
+      "to": "Drug:ADCIRCA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:289",
+      "from": "Case:194947714",
+      "to": "Reaction:Respiratory acidosis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:290",
+      "from": "Case:194947714",
+      "to": "Reaction:Pulmonary arterial hypertension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:291",
+      "from": "Case:194947714",
+      "to": "Reaction:Fluid overload",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:292",
+      "from": "Case:194947714",
+      "to": "Reaction:Renal failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:293",
+      "from": "Case:194947714",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:294",
+      "from": "Case:194947714",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:295",
+      "from": "Case:194947714",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:296",
+      "from": "Case:194947714",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:297",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:194947714",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:298",
+      "from": "Case:195014461",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:299",
+      "from": "Case:195014461",
+      "to": "Reaction:Arrhythmia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:300",
+      "from": "Case:195014461",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:301",
+      "from": "Case:195014461",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:302",
+      "from": "Case:195014461",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:303",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:195014461",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:304",
+      "from": "Case:195015062",
+      "to": "Drug:REMODULIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:305",
+      "from": "Case:195015062",
+      "to": "Reaction:Fluid overload",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:306",
+      "from": "Case:195015062",
+      "to": "Reaction:Right ventricular failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:307",
+      "from": "Case:195015062",
+      "to": "Reaction:Pulmonary hypertension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:308",
+      "from": "Case:195015062",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:309",
+      "from": "Case:195015062",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:310",
+      "from": "Case:195015062",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:311",
+      "from": "Case:195015062",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:312",
+      "from": "Manufacturer:UNITED THERAPEUTICS",
+      "to": "Case:195015062",
+      "type": "REGISTERED"
+    }
+  ],
+  "meta": {
+    "caseCount": 40,
+    "nodeCount": 128,
+    "relCount": 312,
+    "capped": false,
+    "focusDrug": "REMODULIN"
+  }
+}

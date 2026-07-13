@@ -1,0 +1,3435 @@
+{
+  "nodes": [
+    {
+      "id": "Case:177997408",
+      "caption": "Case 177997408 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Drug:GENOTROPIN",
+      "caption": "GENOTROPIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Bone density decreased",
+      "caption": "Bone density decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product storage error",
+      "caption": "Product storage error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Asthenia",
+      "caption": "Asthenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product dose omission in error",
+      "caption": "Product dose omission in error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Poor quality product administered",
+      "caption": "Poor quality product administered",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Loss of personal independence in daily activities",
+      "caption": "Loss of personal independence in daily activities",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hip fracture",
+      "caption": "Hip fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fatigue",
+      "caption": "Fatigue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Other Serious (Important Medical Event)",
+      "caption": "Other Serious (Important Medical Event)",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Elderly",
+      "caption": "Elderly",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:178405265",
+      "caption": "Case 178405265 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Drug:Ponatinib",
+      "caption": "Ponatinib",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LEVOTHYROXINE SODIUM",
+      "caption": "LEVOTHYROXINE SODIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CARVEDILOL",
+      "caption": "CARVEDILOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Product dose omission issue",
+      "caption": "Product dose omission issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Anxiety",
+      "caption": "Anxiety",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Deafness",
+      "caption": "Deafness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Acute lymphocytic leukaemia recurrent",
+      "caption": "Acute lymphocytic leukaemia recurrent",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Ear discomfort",
+      "caption": "Ear discomfort",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Poor quality sleep",
+      "caption": "Poor quality sleep",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Vertigo",
+      "caption": "Vertigo",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Vomiting",
+      "caption": "Vomiting",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fall",
+      "caption": "Fall",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Rash pruritic",
+      "caption": "Rash pruritic",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Colitis",
+      "caption": "Colitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Malaise",
+      "caption": "Malaise",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Balance disorder",
+      "caption": "Balance disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Memory impairment",
+      "caption": "Memory impairment",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Nausea",
+      "caption": "Nausea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Back pain",
+      "caption": "Back pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Hospitalization - Initial or Prolonged",
+      "caption": "Hospitalization - Initial or Prolonged",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:178545486",
+      "caption": "Case 178545486 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Product prescribing error",
+      "caption": "Product prescribing error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Device leakage",
+      "caption": "Device leakage",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Drug dose omission by device",
+      "caption": "Drug dose omission by device",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adolescent",
+      "caption": "Adolescent",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:178595883",
+      "caption": "Case 178595883 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Wrong technique in device usage process",
+      "caption": "Wrong technique in device usage process",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Device information output issue",
+      "caption": "Device information output issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:178848116",
+      "caption": "Case 178848116 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Device issue",
+      "caption": "Device issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:179246996",
+      "caption": "Case 179246996 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Drug:TOLTERODINE",
+      "caption": "TOLTERODINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:INBRIJA",
+      "caption": "INBRIJA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Incorrect dose administered",
+      "caption": "Incorrect dose administered",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Drug ineffective",
+      "caption": "Drug ineffective",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Device defective",
+      "caption": "Device defective",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Lung disorder",
+      "caption": "Lung disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product residue present",
+      "caption": "Product residue present",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Inappropriate schedule of product administration",
+      "caption": "Inappropriate schedule of product administration",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Device occlusion",
+      "caption": "Device occlusion",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Sputum discoloured",
+      "caption": "Sputum discoloured",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Incorrect dose administered by device",
+      "caption": "Incorrect dose administered by device",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Therapeutic product effect variable",
+      "caption": "Therapeutic product effect variable",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Mucosal discolouration",
+      "caption": "Mucosal discolouration",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Condition aggravated",
+      "caption": "Condition aggravated",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Saliva discolouration",
+      "caption": "Saliva discolouration",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cough",
+      "caption": "Cough",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Device use issue",
+      "caption": "Device use issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product physical issue",
+      "caption": "Product physical issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:179337936",
+      "caption": "Case 179337936 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Infection",
+      "caption": "Infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Confusional state",
+      "caption": "Confusional state",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Death",
+      "caption": "Death",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Weight fluctuation",
+      "caption": "Weight fluctuation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fractured sacrum",
+      "caption": "Fractured sacrum",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Spinal fracture",
+      "caption": "Spinal fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pain",
+      "caption": "Pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Rectal fissure",
+      "caption": "Rectal fissure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Proctalgia",
+      "caption": "Proctalgia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Anorectal discomfort",
+      "caption": "Anorectal discomfort",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Death",
+      "caption": "Death",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:179651102",
+      "caption": "Case 179651102 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Drug:ILARIS",
+      "caption": "ILARIS",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Diarrhoea",
+      "caption": "Diarrhoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal pain upper",
+      "caption": "Abdominal pain upper",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Upper limb fracture",
+      "caption": "Upper limb fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Child",
+      "caption": "Child",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:179786923",
+      "caption": "Case 179786923 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Device use error",
+      "caption": "Device use error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Device breakage",
+      "caption": "Device breakage",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:180125549",
+      "caption": "Case 180125549 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Depression",
+      "caption": "Depression",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product odour abnormal",
+      "caption": "Product odour abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Disturbance in attention",
+      "caption": "Disturbance in attention",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Withdrawal syndrome",
+      "caption": "Withdrawal syndrome",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Judgement impaired",
+      "caption": "Judgement impaired",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypoglycaemia",
+      "caption": "Hypoglycaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product prescribing issue",
+      "caption": "Product prescribing issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Off label use",
+      "caption": "Off label use",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Circumstance or information capable of leading to medication error",
+      "caption": "Circumstance or information capable of leading to medication error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Drug level below therapeutic",
+      "caption": "Drug level below therapeutic",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Tinnitus",
+      "caption": "Tinnitus",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Feeling abnormal",
+      "caption": "Feeling abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dizziness",
+      "caption": "Dizziness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Needle issue",
+      "caption": "Needle issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Poor quality device used",
+      "caption": "Poor quality device used",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Mood swings",
+      "caption": "Mood swings",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypotension",
+      "caption": "Hypotension",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Impaired driving ability",
+      "caption": "Impaired driving ability",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Disability",
+      "caption": "Disability",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adult",
+      "caption": "Adult",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:180225204",
+      "caption": "Case 180225204 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Epistaxis",
+      "caption": "Epistaxis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Rash",
+      "caption": "Rash",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:180379264",
+      "caption": "Case 180379264 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Device failure",
+      "caption": "Device failure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Expired device used",
+      "caption": "Expired device used",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:180420122",
+      "caption": "Case 180420122 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Drug:AIMOVIG",
+      "caption": "AIMOVIG",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Accidental exposure to product",
+      "caption": "Accidental exposure to product",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:181131775",
+      "caption": "Case 181131775 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Device physical property issue",
+      "caption": "Device physical property issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Device mechanical issue",
+      "caption": "Device mechanical issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:181195495",
+      "caption": "Case 181195495 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Product dispensing error",
+      "caption": "Product dispensing error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Oedema",
+      "caption": "Oedema",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Peripheral swelling",
+      "caption": "Peripheral swelling",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Weight increased",
+      "caption": "Weight increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fear of injection",
+      "caption": "Fear of injection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Psychological trauma",
+      "caption": "Psychological trauma",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Visual impairment",
+      "caption": "Visual impairment",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Headache",
+      "caption": "Headache",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:181643877",
+      "caption": "Case 181643877 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Insulin-like growth factor increased",
+      "caption": "Insulin-like growth factor increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:181698494",
+      "caption": "Case 181698494 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Case:182032144",
+      "caption": "Case 182032144 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Case:182275668",
+      "caption": "Case 182275668 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Device difficult to use",
+      "caption": "Device difficult to use",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:182368429",
+      "caption": "Case 182368429 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Nasopharyngitis",
+      "caption": "Nasopharyngitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dysphonia",
+      "caption": "Dysphonia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Respiratory disorder",
+      "caption": "Respiratory disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:182530148",
+      "caption": "Case 182530148 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Product quality issue",
+      "caption": "Product quality issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:182781218",
+      "caption": "Case 182781218 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Case:182934523",
+      "caption": "Case 182934523 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Drug:CARBIDOPA AND LEVODOPA",
+      "caption": "CARBIDOPA AND LEVODOPA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Therapeutic product effect decreased",
+      "caption": "Therapeutic product effect decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:182936933",
+      "caption": "Case 182936933 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Drug:MAGNESIUM",
+      "caption": "MAGNESIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PAXIL",
+      "caption": "PAXIL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Pollakiuria",
+      "caption": "Pollakiuria",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Tooth deposit",
+      "caption": "Tooth deposit",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Device delivery system issue",
+      "caption": "Device delivery system issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hallucination",
+      "caption": "Hallucination",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Throat tightness",
+      "caption": "Throat tightness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Freezing phenomenon",
+      "caption": "Freezing phenomenon",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Throat irritation",
+      "caption": "Throat irritation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dry mouth",
+      "caption": "Dry mouth",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:182956423",
+      "caption": "Case 182956423 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Case:183198113",
+      "caption": "Case 183198113 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Drug:DDAVP",
+      "caption": "DDAVP",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:183386672",
+      "caption": "Case 183386672 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Drug:EXONDYS 51",
+      "caption": "EXONDYS 51",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DIPHENHYDRAMINE",
+      "caption": "DIPHENHYDRAMINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:No adverse event",
+      "caption": "No adverse event",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Intentional dose omission",
+      "caption": "Intentional dose omission",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:183387202",
+      "caption": "Case 183387202 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Drug:LISINOPRIL",
+      "caption": "LISINOPRIL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:183387422",
+      "caption": "Case 183387422 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Underdose",
+      "caption": "Underdose",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:183387442",
+      "caption": "Case 183387442 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Case:183387472",
+      "caption": "Case 183387472 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Poor venous access",
+      "caption": "Poor venous access",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:183387482",
+      "caption": "Case 183387482 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Drug:Deflazacort",
+      "caption": "Deflazacort",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:183387512",
+      "caption": "Case 183387512 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Drug:PROTONIX",
+      "caption": "PROTONIX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:KLONOPIN",
+      "caption": "KLONOPIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Trokendi",
+      "caption": "Trokendi",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LACTULOSE",
+      "caption": "LACTULOSE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:SENNA",
+      "caption": "SENNA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN B6",
+      "caption": "VITAMIN B6",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DIAZEPAM",
+      "caption": "DIAZEPAM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ZARONTIN",
+      "caption": "ZARONTIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:COZAAR",
+      "caption": "COZAAR",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DELTASONE",
+      "caption": "DELTASONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:183387552",
+      "caption": "Case 183387552 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Drug:ZESTRIL",
+      "caption": "ZESTRIL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MIRALAX",
+      "caption": "MIRALAX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PREVACID",
+      "caption": "PREVACID",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Cholecalciferol",
+      "caption": "Cholecalciferol",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ZOFRAN",
+      "caption": "ZOFRAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN D3",
+      "caption": "VITAMIN D3",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TYLENOL",
+      "caption": "TYLENOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MAXIPIME",
+      "caption": "MAXIPIME",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ANDROGEL",
+      "caption": "ANDROGEL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:COREG",
+      "caption": "COREG",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Morphine",
+      "caption": "Morphine",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Incorrect route of product administration",
+      "caption": "Incorrect route of product administration",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Catheter site pain",
+      "caption": "Catheter site pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:183387592",
+      "caption": "Case 183387592 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 19
+    },
+    {
+      "id": "Reaction:Hypersensitivity",
+      "caption": "Hypersensitivity",
+      "labels": [
+        "Reaction"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "CD:1",
+      "from": "Case:177997408",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:2",
+      "from": "Case:177997408",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:3",
+      "from": "Case:177997408",
+      "to": "Reaction:Bone density decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:4",
+      "from": "Case:177997408",
+      "to": "Reaction:Product storage error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:5",
+      "from": "Case:177997408",
+      "to": "Reaction:Asthenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:6",
+      "from": "Case:177997408",
+      "to": "Reaction:Product dose omission in error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:7",
+      "from": "Case:177997408",
+      "to": "Reaction:Poor quality product administered",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:8",
+      "from": "Case:177997408",
+      "to": "Reaction:Loss of personal independence in daily activities",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:9",
+      "from": "Case:177997408",
+      "to": "Reaction:Hip fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:10",
+      "from": "Case:177997408",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:11",
+      "from": "Case:177997408",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:12",
+      "from": "Case:177997408",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:13",
+      "from": "Case:178405265",
+      "to": "Drug:Ponatinib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:14",
+      "from": "Case:178405265",
+      "to": "Drug:LEVOTHYROXINE SODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:15",
+      "from": "Case:178405265",
+      "to": "Drug:CARVEDILOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:16",
+      "from": "Case:178405265",
+      "to": "Drug:Ponatinib",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:17",
+      "from": "Case:178405265",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:18",
+      "from": "Case:178405265",
+      "to": "Reaction:Anxiety",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:19",
+      "from": "Case:178405265",
+      "to": "Reaction:Deafness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:20",
+      "from": "Case:178405265",
+      "to": "Reaction:Acute lymphocytic leukaemia recurrent",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:21",
+      "from": "Case:178405265",
+      "to": "Reaction:Ear discomfort",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:22",
+      "from": "Case:178405265",
+      "to": "Reaction:Poor quality sleep",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:23",
+      "from": "Case:178405265",
+      "to": "Reaction:Vertigo",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:24",
+      "from": "Case:178405265",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:25",
+      "from": "Case:178405265",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:26",
+      "from": "Case:178405265",
+      "to": "Reaction:Rash pruritic",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:27",
+      "from": "Case:178405265",
+      "to": "Reaction:Colitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:28",
+      "from": "Case:178405265",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:29",
+      "from": "Case:178405265",
+      "to": "Reaction:Balance disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:30",
+      "from": "Case:178405265",
+      "to": "Reaction:Memory impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:31",
+      "from": "Case:178405265",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:32",
+      "from": "Case:178405265",
+      "to": "Reaction:Back pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:33",
+      "from": "Case:178405265",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:34",
+      "from": "Case:178405265",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:35",
+      "from": "Case:178405265",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:36",
+      "from": "Case:178545486",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:37",
+      "from": "Case:178545486",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:38",
+      "from": "Case:178545486",
+      "to": "Reaction:Product prescribing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:39",
+      "from": "Case:178545486",
+      "to": "Reaction:Device leakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:40",
+      "from": "Case:178545486",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:41",
+      "from": "Case:178545486",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:42",
+      "from": "Case:178595883",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:43",
+      "from": "Case:178595883",
+      "to": "Reaction:Device leakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:44",
+      "from": "Case:178595883",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:45",
+      "from": "Case:178595883",
+      "to": "Reaction:Device information output issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:46",
+      "from": "Case:178595883",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:47",
+      "from": "Case:178595883",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:48",
+      "from": "Case:178848116",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:49",
+      "from": "Case:178848116",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:50",
+      "from": "Case:178848116",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:51",
+      "from": "Case:178848116",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:52",
+      "from": "Case:178848116",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:53",
+      "from": "Case:178848116",
+      "to": "Reaction:Product prescribing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:54",
+      "from": "Case:178848116",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:55",
+      "from": "Case:179246996",
+      "to": "Drug:TOLTERODINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:56",
+      "from": "Case:179246996",
+      "to": "Drug:INBRIJA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:57",
+      "from": "Case:179246996",
+      "to": "Reaction:Incorrect dose administered",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:58",
+      "from": "Case:179246996",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:59",
+      "from": "Case:179246996",
+      "to": "Reaction:Device defective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:60",
+      "from": "Case:179246996",
+      "to": "Reaction:Lung disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:61",
+      "from": "Case:179246996",
+      "to": "Reaction:Product residue present",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:62",
+      "from": "Case:179246996",
+      "to": "Reaction:Inappropriate schedule of product administration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:63",
+      "from": "Case:179246996",
+      "to": "Reaction:Device occlusion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:64",
+      "from": "Case:179246996",
+      "to": "Reaction:Sputum discoloured",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:65",
+      "from": "Case:179246996",
+      "to": "Reaction:Incorrect dose administered by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:66",
+      "from": "Case:179246996",
+      "to": "Reaction:Therapeutic product effect variable",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:67",
+      "from": "Case:179246996",
+      "to": "Reaction:Mucosal discolouration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:68",
+      "from": "Case:179246996",
+      "to": "Reaction:Condition aggravated",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:69",
+      "from": "Case:179246996",
+      "to": "Reaction:Saliva discolouration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:70",
+      "from": "Case:179246996",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:71",
+      "from": "Case:179246996",
+      "to": "Reaction:Device use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:72",
+      "from": "Case:179246996",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:73",
+      "from": "Case:179246996",
+      "to": "Reaction:Product physical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:74",
+      "from": "Case:179246996",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:75",
+      "from": "Case:179337936",
+      "to": "Drug:Ponatinib",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:76",
+      "from": "Case:179337936",
+      "to": "Drug:Ponatinib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:77",
+      "from": "Case:179337936",
+      "to": "Reaction:Infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:78",
+      "from": "Case:179337936",
+      "to": "Reaction:Confusional state",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:79",
+      "from": "Case:179337936",
+      "to": "Reaction:Death",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:80",
+      "from": "Case:179337936",
+      "to": "Reaction:Weight fluctuation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:81",
+      "from": "Case:179337936",
+      "to": "Reaction:Fractured sacrum",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:82",
+      "from": "Case:179337936",
+      "to": "Reaction:Spinal fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:83",
+      "from": "Case:179337936",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:84",
+      "from": "Case:179337936",
+      "to": "Reaction:Rectal fissure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:85",
+      "from": "Case:179337936",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:86",
+      "from": "Case:179337936",
+      "to": "Reaction:Proctalgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:87",
+      "from": "Case:179337936",
+      "to": "Reaction:Anorectal discomfort",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:88",
+      "from": "Case:179337936",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:89",
+      "from": "Case:179337936",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:90",
+      "from": "Case:179337936",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:91",
+      "from": "Case:179337936",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:92",
+      "from": "Case:179337936",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:93",
+      "from": "Case:179651102",
+      "to": "Drug:ILARIS",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:94",
+      "from": "Case:179651102",
+      "to": "Drug:ILARIS",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:95",
+      "from": "Case:179651102",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:96",
+      "from": "Case:179651102",
+      "to": "Reaction:Abdominal pain upper",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:97",
+      "from": "Case:179651102",
+      "to": "Reaction:Upper limb fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:98",
+      "from": "Case:179651102",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:99",
+      "from": "Case:179651102",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:100",
+      "from": "Case:179786923",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:101",
+      "from": "Case:179786923",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:102",
+      "from": "Case:179786923",
+      "to": "Reaction:Device use error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:103",
+      "from": "Case:179786923",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:104",
+      "from": "Case:179786923",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:105",
+      "from": "Case:180125549",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:106",
+      "from": "Case:180125549",
+      "to": "Reaction:Depression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:107",
+      "from": "Case:180125549",
+      "to": "Reaction:Product odour abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:108",
+      "from": "Case:180125549",
+      "to": "Reaction:Disturbance in attention",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:109",
+      "from": "Case:180125549",
+      "to": "Reaction:Withdrawal syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:110",
+      "from": "Case:180125549",
+      "to": "Reaction:Judgement impaired",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:111",
+      "from": "Case:180125549",
+      "to": "Reaction:Hypoglycaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:112",
+      "from": "Case:180125549",
+      "to": "Reaction:Product prescribing issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:113",
+      "from": "Case:180125549",
+      "to": "Reaction:Off label use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:114",
+      "from": "Case:180125549",
+      "to": "Reaction:Circumstance or information capable of leading to medication error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:115",
+      "from": "Case:180125549",
+      "to": "Reaction:Drug level below therapeutic",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:116",
+      "from": "Case:180125549",
+      "to": "Reaction:Tinnitus",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:117",
+      "from": "Case:180125549",
+      "to": "Reaction:Feeling abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:118",
+      "from": "Case:180125549",
+      "to": "Reaction:Dizziness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:119",
+      "from": "Case:180125549",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:120",
+      "from": "Case:180125549",
+      "to": "Reaction:Needle issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:121",
+      "from": "Case:180125549",
+      "to": "Reaction:Poor quality device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:122",
+      "from": "Case:180125549",
+      "to": "Reaction:Mood swings",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:123",
+      "from": "Case:180125549",
+      "to": "Reaction:Hypotension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:124",
+      "from": "Case:180125549",
+      "to": "Reaction:Impaired driving ability",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:125",
+      "from": "Case:180125549",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:126",
+      "from": "Case:180125549",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:127",
+      "from": "Case:180125549",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:128",
+      "from": "Case:180125549",
+      "to": "Outcome:Disability",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:129",
+      "from": "Case:180125549",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:130",
+      "from": "Case:180225204",
+      "to": "Drug:ILARIS",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:131",
+      "from": "Case:180225204",
+      "to": "Drug:ILARIS",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:132",
+      "from": "Case:180225204",
+      "to": "Reaction:Epistaxis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:133",
+      "from": "Case:180225204",
+      "to": "Reaction:Rash",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:134",
+      "from": "Case:180225204",
+      "to": "Reaction:Back pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:135",
+      "from": "Case:180225204",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:136",
+      "from": "Case:180379264",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:137",
+      "from": "Case:180379264",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:138",
+      "from": "Case:180379264",
+      "to": "Reaction:Device failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:139",
+      "from": "Case:180379264",
+      "to": "Reaction:Expired device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:140",
+      "from": "Case:180379264",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:141",
+      "from": "Case:180420122",
+      "to": "Drug:AIMOVIG",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:142",
+      "from": "Case:180420122",
+      "to": "Reaction:Accidental exposure to product",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:143",
+      "from": "Case:180420122",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:144",
+      "from": "Case:181131775",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:145",
+      "from": "Case:181131775",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:146",
+      "from": "Case:181131775",
+      "to": "Reaction:Device physical property issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:147",
+      "from": "Case:181131775",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:148",
+      "from": "Case:181131775",
+      "to": "Reaction:Device use error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:149",
+      "from": "Case:181131775",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:150",
+      "from": "Case:181131775",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:151",
+      "from": "Case:181195495",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:152",
+      "from": "Case:181195495",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:153",
+      "from": "Case:181195495",
+      "to": "Reaction:Product dispensing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:154",
+      "from": "Case:181195495",
+      "to": "Reaction:Dizziness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:155",
+      "from": "Case:181195495",
+      "to": "Reaction:Oedema",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:156",
+      "from": "Case:181195495",
+      "to": "Reaction:Peripheral swelling",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:157",
+      "from": "Case:181195495",
+      "to": "Reaction:Weight increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:158",
+      "from": "Case:181195495",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:159",
+      "from": "Case:181195495",
+      "to": "Reaction:Fear of injection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:160",
+      "from": "Case:181195495",
+      "to": "Reaction:Psychological trauma",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:161",
+      "from": "Case:181195495",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:162",
+      "from": "Case:181195495",
+      "to": "Reaction:Product storage error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:163",
+      "from": "Case:181195495",
+      "to": "Reaction:Visual impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:164",
+      "from": "Case:181195495",
+      "to": "Reaction:Incorrect dose administered",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:165",
+      "from": "Case:181195495",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:166",
+      "from": "Case:181195495",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:167",
+      "from": "Case:181643877",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:168",
+      "from": "Case:181643877",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:169",
+      "from": "Case:181643877",
+      "to": "Reaction:Insulin-like growth factor increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:170",
+      "from": "Case:181643877",
+      "to": "Reaction:Weight increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:171",
+      "from": "Case:181643877",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:172",
+      "from": "Case:181643877",
+      "to": "Reaction:Product prescribing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:173",
+      "from": "Case:181643877",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:174",
+      "from": "Case:181643877",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:175",
+      "from": "Case:181643877",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:176",
+      "from": "Case:181698494",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:177",
+      "from": "Case:181698494",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:178",
+      "from": "Case:181698494",
+      "to": "Reaction:Device use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:179",
+      "from": "Case:181698494",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:180",
+      "from": "Case:181698494",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:181",
+      "from": "Case:182032144",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:182",
+      "from": "Case:182032144",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:183",
+      "from": "Case:182032144",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:184",
+      "from": "Case:182032144",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:185",
+      "from": "Case:182275668",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:186",
+      "from": "Case:182275668",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:187",
+      "from": "Case:182275668",
+      "to": "Reaction:Device difficult to use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:188",
+      "from": "Case:182275668",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:189",
+      "from": "Case:182275668",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:190",
+      "from": "Case:182275668",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:191",
+      "from": "Case:182275668",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:192",
+      "from": "Case:182368429",
+      "to": "Drug:ILARIS",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:193",
+      "from": "Case:182368429",
+      "to": "Drug:ILARIS",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:194",
+      "from": "Case:182368429",
+      "to": "Reaction:Inappropriate schedule of product administration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:195",
+      "from": "Case:182368429",
+      "to": "Reaction:Nasopharyngitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:196",
+      "from": "Case:182368429",
+      "to": "Reaction:Dysphonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:197",
+      "from": "Case:182368429",
+      "to": "Reaction:Dizziness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:198",
+      "from": "Case:182368429",
+      "to": "Reaction:Respiratory disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:199",
+      "from": "Case:182368429",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:200",
+      "from": "Case:182530148",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:201",
+      "from": "Case:182530148",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:202",
+      "from": "Case:182530148",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:203",
+      "from": "Case:182530148",
+      "to": "Reaction:Product quality issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:204",
+      "from": "Case:182530148",
+      "to": "Reaction:Poor quality device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:205",
+      "from": "Case:182530148",
+      "to": "Reaction:Device leakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:206",
+      "from": "Case:182530148",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:207",
+      "from": "Case:182530148",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:208",
+      "from": "Case:182781218",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:209",
+      "from": "Case:182781218",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:210",
+      "from": "Case:182781218",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:211",
+      "from": "Case:182781218",
+      "to": "Reaction:Device mechanical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:212",
+      "from": "Case:182781218",
+      "to": "Reaction:Device use error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:213",
+      "from": "Case:182781218",
+      "to": "Reaction:Device leakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:214",
+      "from": "Case:182781218",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:215",
+      "from": "Case:182781218",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:216",
+      "from": "Case:182934523",
+      "to": "Drug:CARBIDOPA AND LEVODOPA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:217",
+      "from": "Case:182934523",
+      "to": "Drug:INBRIJA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:218",
+      "from": "Case:182934523",
+      "to": "Reaction:Device occlusion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:219",
+      "from": "Case:182934523",
+      "to": "Reaction:Condition aggravated",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:220",
+      "from": "Case:182934523",
+      "to": "Reaction:Incorrect dose administered by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:221",
+      "from": "Case:182934523",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:222",
+      "from": "Case:182934523",
+      "to": "Reaction:Product residue present",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:223",
+      "from": "Case:182934523",
+      "to": "Reaction:Therapeutic product effect decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:224",
+      "from": "Case:182934523",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:225",
+      "from": "Case:182934523",
+      "to": "Reaction:Device difficult to use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:226",
+      "from": "Case:182934523",
+      "to": "Reaction:Therapeutic product effect variable",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:227",
+      "from": "Case:182934523",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:228",
+      "from": "Case:182934523",
+      "to": "Reaction:Incorrect dose administered",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:229",
+      "from": "Case:182934523",
+      "to": "Reaction:Product physical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:230",
+      "from": "Case:182934523",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:231",
+      "from": "Case:182936933",
+      "to": "Drug:MAGNESIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:232",
+      "from": "Case:182936933",
+      "to": "Drug:PAXIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:233",
+      "from": "Case:182936933",
+      "to": "Drug:INBRIJA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:234",
+      "from": "Case:182936933",
+      "to": "Reaction:Device occlusion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:235",
+      "from": "Case:182936933",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:236",
+      "from": "Case:182936933",
+      "to": "Reaction:Asthenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:237",
+      "from": "Case:182936933",
+      "to": "Reaction:Pollakiuria",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:238",
+      "from": "Case:182936933",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:239",
+      "from": "Case:182936933",
+      "to": "Reaction:Tooth deposit",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:240",
+      "from": "Case:182936933",
+      "to": "Reaction:Device delivery system issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:241",
+      "from": "Case:182936933",
+      "to": "Reaction:Hallucination",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:242",
+      "from": "Case:182936933",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:243",
+      "from": "Case:182936933",
+      "to": "Reaction:Product residue present",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:244",
+      "from": "Case:182936933",
+      "to": "Reaction:Throat tightness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:245",
+      "from": "Case:182936933",
+      "to": "Reaction:Freezing phenomenon",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:246",
+      "from": "Case:182936933",
+      "to": "Reaction:Device difficult to use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:247",
+      "from": "Case:182936933",
+      "to": "Reaction:Throat irritation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:248",
+      "from": "Case:182936933",
+      "to": "Reaction:Dry mouth",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:249",
+      "from": "Case:182936933",
+      "to": "Reaction:Product physical issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:250",
+      "from": "Case:182936933",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:251",
+      "from": "Case:182956423",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:252",
+      "from": "Case:182956423",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:253",
+      "from": "Case:182956423",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:254",
+      "from": "Case:182956423",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:255",
+      "from": "Case:182956423",
+      "to": "Reaction:Poor quality device used",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:256",
+      "from": "Case:182956423",
+      "to": "Reaction:Wrong technique in device usage process",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:257",
+      "from": "Case:182956423",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:258",
+      "from": "Case:183198113",
+      "to": "Drug:GENOTROPIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:259",
+      "from": "Case:183198113",
+      "to": "Drug:DDAVP",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:260",
+      "from": "Case:183198113",
+      "to": "Reaction:Drug dose omission by device",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:261",
+      "from": "Case:183198113",
+      "to": "Reaction:Device breakage",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:262",
+      "from": "Case:183198113",
+      "to": "Reaction:Device use error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:263",
+      "from": "Case:183198113",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:264",
+      "from": "Case:183386672",
+      "to": "Drug:EXONDYS 51",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:265",
+      "from": "Case:183386672",
+      "to": "Drug:DIPHENHYDRAMINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:266",
+      "from": "Case:183386672",
+      "to": "Drug:EXONDYS 51",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:267",
+      "from": "Case:183386672",
+      "to": "Reaction:No adverse event",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:268",
+      "from": "Case:183386672",
+      "to": "Reaction:Intentional dose omission",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:269",
+      "from": "Case:183386672",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:270",
+      "from": "Case:183387202",
+      "to": "Drug:EXONDYS 51",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:271",
+      "from": "Case:183387202",
+      "to": "Drug:LISINOPRIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:272",
+      "from": "Case:183387202",
+      "to": "Reaction:Asthenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:273",
+      "from": "Case:183387202",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:274",
+      "from": "Case:183387202",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:275",
+      "from": "Case:183387202",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:276",
+      "from": "Case:183387422",
+      "to": "Drug:EXONDYS 51",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:277",
+      "from": "Case:183387422",
+      "to": "Reaction:Underdose",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:278",
+      "from": "Case:183387422",
+      "to": "Reaction:No adverse event",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:279",
+      "from": "Case:183387422",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:280",
+      "from": "Case:183387442",
+      "to": "Drug:EXONDYS 51",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:281",
+      "from": "Case:183387442",
+      "to": "Reaction:Underdose",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:282",
+      "from": "Case:183387442",
+      "to": "Reaction:No adverse event",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:283",
+      "from": "Case:183387442",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:284",
+      "from": "Case:183387472",
+      "to": "Drug:EXONDYS 51",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:285",
+      "from": "Case:183387472",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:286",
+      "from": "Case:183387472",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:287",
+      "from": "Case:183387472",
+      "to": "Reaction:Poor venous access",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:288",
+      "from": "Case:183387472",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:289",
+      "from": "Case:183387482",
+      "to": "Drug:EXONDYS 51",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:290",
+      "from": "Case:183387482",
+      "to": "Drug:Deflazacort",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:291",
+      "from": "Case:183387482",
+      "to": "Drug:EXONDYS 51",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:292",
+      "from": "Case:183387482",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:293",
+      "from": "Case:183387482",
+      "to": "Reaction:Poor venous access",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:294",
+      "from": "Case:183387482",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:295",
+      "from": "Case:183387482",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:296",
+      "from": "Case:183387512",
+      "to": "Drug:PROTONIX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:297",
+      "from": "Case:183387512",
+      "to": "Drug:KLONOPIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:298",
+      "from": "Case:183387512",
+      "to": "Drug:Trokendi",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:299",
+      "from": "Case:183387512",
+      "to": "Drug:LACTULOSE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:300",
+      "from": "Case:183387512",
+      "to": "Drug:SENNA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:301",
+      "from": "Case:183387512",
+      "to": "Drug:EXONDYS 51",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:302",
+      "from": "Case:183387512",
+      "to": "Drug:VITAMIN B6",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:303",
+      "from": "Case:183387512",
+      "to": "Drug:DIAZEPAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:304",
+      "from": "Case:183387512",
+      "to": "Drug:ZARONTIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:305",
+      "from": "Case:183387512",
+      "to": "Drug:COZAAR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:306",
+      "from": "Case:183387512",
+      "to": "Drug:EXONDYS 51",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:307",
+      "from": "Case:183387512",
+      "to": "Drug:DELTASONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:308",
+      "from": "Case:183387512",
+      "to": "Reaction:No adverse event",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:309",
+      "from": "Case:183387512",
+      "to": "Reaction:Underdose",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:310",
+      "from": "Case:183387512",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:311",
+      "from": "Case:183387552",
+      "to": "Drug:ZESTRIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:312",
+      "from": "Case:183387552",
+      "to": "Drug:MIRALAX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:313",
+      "from": "Case:183387552",
+      "to": "Drug:PREVACID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:314",
+      "from": "Case:183387552",
+      "to": "Drug:Cholecalciferol",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:315",
+      "from": "Case:183387552",
+      "to": "Drug:EXONDYS 51",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:316",
+      "from": "Case:183387552",
+      "to": "Drug:ZOFRAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:317",
+      "from": "Case:183387552",
+      "to": "Drug:VITAMIN D3",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:318",
+      "from": "Case:183387552",
+      "to": "Drug:TYLENOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:319",
+      "from": "Case:183387552",
+      "to": "Drug:LISINOPRIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:320",
+      "from": "Case:183387552",
+      "to": "Drug:MAXIPIME",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:321",
+      "from": "Case:183387552",
+      "to": "Drug:CARVEDILOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:322",
+      "from": "Case:183387552",
+      "to": "Drug:PROTONIX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:323",
+      "from": "Case:183387552",
+      "to": "Drug:EXONDYS 51",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:324",
+      "from": "Case:183387552",
+      "to": "Drug:ANDROGEL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:325",
+      "from": "Case:183387552",
+      "to": "Drug:COREG",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:326",
+      "from": "Case:183387552",
+      "to": "Drug:Morphine",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:327",
+      "from": "Case:183387552",
+      "to": "Drug:Deflazacort",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:328",
+      "from": "Case:183387552",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:329",
+      "from": "Case:183387552",
+      "to": "Reaction:Device issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:330",
+      "from": "Case:183387552",
+      "to": "Reaction:Incorrect route of product administration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:331",
+      "from": "Case:183387552",
+      "to": "Reaction:Catheter site pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:332",
+      "from": "Case:183387552",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:333",
+      "from": "Case:183387592",
+      "to": "Drug:EXONDYS 51",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:334",
+      "from": "Case:183387592",
+      "to": "Drug:VITAMIN D3",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:335",
+      "from": "Case:183387592",
+      "to": "Reaction:Hypersensitivity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:336",
+      "from": "Case:183387592",
+      "to": "AgeGroup:Child",
+      "type": "FALLS_UNDER"
+    }
+  ],
+  "meta": {
+    "caseCount": 35,
+    "nodeCount": 196,
+    "relCount": 336,
+    "capped": false
+  }
+}

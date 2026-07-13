@@ -1,0 +1,430 @@
+{
+  "communityCount": 20,
+  "intro": "Leiden communities summarize each patient sub-phenotype by case count, top genders, age groups, and adverse reactions. Strong demographic or reaction concentration suggests a clinically interpretable cluster for targeted safety surveillance.",
+  "communities": [
+    {
+      "id": 15,
+      "size": 743,
+      "topGenders": [
+        "M",
+        "F",
+        "U"
+      ],
+      "topAgeGroups": [
+        "Elderly",
+        "Adult",
+        "Adolescent"
+      ],
+      "topReactions": [
+        "Pneumonia",
+        "Diarrhoea",
+        "Death",
+        "Dyspnoea",
+        "Fatigue"
+      ],
+      "commentary": "Largest respiratory/GI cluster — often older adults; surveillance for infection and GI events under immunosuppressive or oncology therapy."
+    },
+    {
+      "id": 20,
+      "size": 544,
+      "topGenders": [
+        "F",
+        "M"
+      ],
+      "topAgeGroups": [
+        "Adult",
+        "Elderly",
+        "Adolescent"
+      ],
+      "topReactions": [
+        "Sinusitis",
+        "Headache",
+        "Fatigue",
+        "COVID-19",
+        "Product dose omission issue"
+      ],
+      "commentary": "Respiratory/infection and adherence cluster (sinusitis, headache, fatigue, dose-omission)."
+    },
+    {
+      "id": 4,
+      "size": 489,
+      "topGenders": [
+        "F",
+        "M",
+        "U"
+      ],
+      "topAgeGroups": [
+        "Adult",
+        "Elderly",
+        "Adolescent"
+      ],
+      "topReactions": [
+        "Sepsis",
+        "Febrile neutropenia",
+        "Pyrexia",
+        "Pneumonia",
+        "Acute kidney injury"
+      ],
+      "commentary": "Severe infection / immunocompromised phenotype (sepsis, febrile neutropenia, cytokine-release–like signals)."
+    },
+    {
+      "id": 14,
+      "size": 415,
+      "topGenders": [
+        "F",
+        "M",
+        "U"
+      ],
+      "topAgeGroups": [
+        "Adult",
+        "Elderly",
+        "Adolescent"
+      ],
+      "topReactions": [
+        "Pain",
+        "Drug ineffective",
+        "Dizziness",
+        "Fall",
+        "Off label use"
+      ],
+      "commentary": "Non-specific AE / polypharmacy-like cluster (pain, falls, dizziness, feeling abnormal)."
+    },
+    {
+      "id": 7,
+      "size": 400,
+      "topGenders": [
+        "F",
+        "M"
+      ],
+      "topAgeGroups": [
+        "Adult",
+        "Elderly",
+        "Adolescent"
+      ],
+      "topReactions": [
+        "Alopecia",
+        "Prostate cancer",
+        "Pain",
+        "Anxiety",
+        "Psychological trauma"
+      ],
+      "commentary": "Oncology sub-phenotype (alopecia, cancer diagnoses, treatment-related trauma)."
+    },
+    {
+      "id": 19,
+      "size": 368,
+      "topGenders": [
+        "F",
+        "M",
+        "U"
+      ],
+      "topAgeGroups": [
+        "Adult",
+        "Elderly",
+        "Adolescent"
+      ],
+      "topReactions": [
+        "Product dose omission issue",
+        "Drug dose omission by device",
+        "Device issue",
+        "Accidental exposure to product",
+        "Wrong technique in product usage process"
+      ],
+      "commentary": "Device / medication-management phenotype (dose omission, device issues, technique errors)."
+    },
+    {
+      "id": 6,
+      "size": 349,
+      "topGenders": [
+        "F",
+        "M",
+        "U"
+      ],
+      "topAgeGroups": [
+        "Elderly",
+        "Adult",
+        "Adolescent"
+      ],
+      "topReactions": [
+        "Chronic kidney disease",
+        "Acute kidney injury",
+        "Renal failure",
+        "Fatigue",
+        "Off label use"
+      ],
+      "commentary": "Renal sub-phenotype (CKD, AKI, renal failure)."
+    },
+    {
+      "id": 10,
+      "size": 237,
+      "topGenders": [
+        "F",
+        "M"
+      ],
+      "topAgeGroups": [
+        "Adult",
+        "Elderly",
+        "Adolescent"
+      ],
+      "topReactions": [
+        "Product quality issue",
+        "No adverse event",
+        "Complication of device insertion",
+        "Complication of device removal",
+        "Device breakage"
+      ],
+      "commentary": "Device safety reporting cluster (product quality, insertion/removal complications)."
+    },
+    {
+      "id": 12,
+      "size": 180,
+      "topGenders": [
+        "F",
+        "M"
+      ],
+      "topAgeGroups": [
+        "Elderly",
+        "Adult",
+        "Child"
+      ],
+      "topReactions": [
+        "Nausea",
+        "Fatigue",
+        "Vomiting",
+        "Diarrhoea",
+        "Platelet count decreased"
+      ],
+      "commentary": "Common GI adverse-event cluster."
+    },
+    {
+      "id": 3,
+      "size": 179,
+      "topGenders": [
+        "F",
+        "M"
+      ],
+      "topAgeGroups": [
+        "Adult",
+        "Elderly",
+        "Adolescent"
+      ],
+      "topReactions": [
+        "Dyspnoea",
+        "Hypotension",
+        "Fluid retention",
+        "Chest pain",
+        "Nausea"
+      ],
+      "commentary": "Cardiorespiratory severity cluster (dyspnoea, hypotension, fluid issues)."
+    },
+    {
+      "id": 5,
+      "size": 85,
+      "topGenders": [
+        "F",
+        "M"
+      ],
+      "topAgeGroups": [
+        "Adult",
+        "Elderly",
+        "Infant"
+      ],
+      "topReactions": [
+        "Alanine aminotransferase increased",
+        "Pyrexia",
+        "Aspartate aminotransferase increased",
+        "Vomiting",
+        "Nausea"
+      ],
+      "commentary": "Hepatotoxicity signal (ALT/AST elevations)."
+    },
+    {
+      "id": 21,
+      "size": 83,
+      "topGenders": [
+        "F",
+        "M"
+      ],
+      "topAgeGroups": [
+        "Adult",
+        "Elderly",
+        "Child"
+      ],
+      "topReactions": [
+        "Product dose omission issue",
+        "Diarrhoea",
+        "Weight decreased",
+        "Hospitalisation",
+        "Dehydration"
+      ],
+      "commentary": "Sub-phenotype of 83 cases dominated by Product dose omission issue, Diarrhoea, Weight decreased."
+    },
+    {
+      "id": 9,
+      "size": 60,
+      "topGenders": [
+        "F",
+        "M"
+      ],
+      "topAgeGroups": [
+        "Adult",
+        "Elderly",
+        "Adolescent"
+      ],
+      "topReactions": [
+        "Rash",
+        "Urticaria",
+        "Pruritus",
+        "Dyspnoea",
+        "Nausea"
+      ],
+      "commentary": "Sub-phenotype of 60 cases dominated by Rash, Urticaria, Pruritus."
+    },
+    {
+      "id": 18,
+      "size": 48,
+      "topGenders": [
+        "M",
+        "F"
+      ],
+      "topAgeGroups": [
+        "Adolescent",
+        "Elderly",
+        "Adult"
+      ],
+      "topReactions": [
+        "Febrile neutropenia",
+        "Pyrexia",
+        "Tachycardia",
+        "Hypoxia",
+        "Vomiting"
+      ],
+      "commentary": "Sub-phenotype of 48 cases dominated by Febrile neutropenia, Pyrexia, Tachycardia."
+    },
+    {
+      "id": 17,
+      "size": 46,
+      "topGenders": [
+        "F",
+        "M"
+      ],
+      "topAgeGroups": [
+        "Adult",
+        "Elderly",
+        "Adolescent"
+      ],
+      "topReactions": [
+        "Hereditary angioedema",
+        "Inappropriate schedule of product administration",
+        "Therapy interrupted",
+        "Inability to afford medication",
+        "Product dose omission issue"
+      ],
+      "commentary": "Rare-disease / hereditary angioedema treatment cluster."
+    },
+    {
+      "id": 16,
+      "size": 27,
+      "topGenders": [
+        "F",
+        "M"
+      ],
+      "topAgeGroups": [
+        "Adult",
+        "Elderly",
+        "Child"
+      ],
+      "topReactions": [
+        "Prescribed underdose",
+        "Fatigue",
+        "Progressive multifocal leukoencephalopathy",
+        "Product dose omission issue",
+        "Intentional product use issue"
+      ],
+      "commentary": "Sub-phenotype of 27 cases dominated by Prescribed underdose, Fatigue, Progressive multifocal leukoencephalopathy."
+    },
+    {
+      "id": 2,
+      "size": 25,
+      "topGenders": [
+        "M",
+        "F",
+        "U"
+      ],
+      "topAgeGroups": [
+        "Adult",
+        "Elderly",
+        "Adolescent"
+      ],
+      "topReactions": [
+        "Haemorrhage",
+        "Suicidal ideation",
+        "Headache",
+        "Mouth haemorrhage",
+        "Product dose omission issue"
+      ],
+      "commentary": "Sub-phenotype of 25 cases dominated by Haemorrhage, Suicidal ideation, Headache."
+    },
+    {
+      "id": 0,
+      "size": 11,
+      "topGenders": [
+        "M",
+        "F"
+      ],
+      "topAgeGroups": [
+        "Adult",
+        "Elderly"
+      ],
+      "topReactions": [
+        "Product substitution issue",
+        "Product solubility abnormal",
+        "Foreign body in throat",
+        "Drug ineffective",
+        "Product odour abnormal"
+      ],
+      "commentary": "Sub-phenotype of 11 cases dominated by Product substitution issue, Product solubility abnormal, Foreign body in throat."
+    },
+    {
+      "id": 13,
+      "size": 9,
+      "topGenders": [
+        "F",
+        "M"
+      ],
+      "topAgeGroups": [
+        "Elderly",
+        "Adult",
+        "Adolescent"
+      ],
+      "topReactions": [
+        "Blindness",
+        "Cholecystitis acute",
+        "Uveitis",
+        "Eye irritation",
+        "Acute kidney injury"
+      ],
+      "commentary": "Vascular / ocular complications cluster."
+    },
+    {
+      "id": 11,
+      "size": 9,
+      "topGenders": [
+        "F",
+        "M"
+      ],
+      "topAgeGroups": [
+        "Adult",
+        "Adolescent"
+      ],
+      "topReactions": [
+        "Sickle cell anaemia with crisis",
+        "Back pain",
+        "Pain in extremity",
+        "Pain",
+        "Bone pain"
+      ],
+      "commentary": "Sub-phenotype of 9 cases dominated by Sickle cell anaemia with crisis, Back pain, Pain in extremity."
+    }
+  ]
+}

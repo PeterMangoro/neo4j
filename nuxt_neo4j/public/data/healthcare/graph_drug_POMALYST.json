@@ -1,0 +1,2692 @@
+{
+  "nodes": [
+    {
+      "id": "Case:124428272",
+      "caption": "Case 124428272 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:DECADRON",
+      "caption": "DECADRON",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:POMALYST",
+      "caption": "POMALYST",
+      "labels": [
+        "Drug"
+      ],
+      "score": 1.0
+    },
+    {
+      "id": "Reaction:Pneumonia bacterial",
+      "caption": "Pneumonia bacterial",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Hospitalization - Initial or Prolonged",
+      "caption": "Hospitalization - Initial or Prolonged",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Elderly",
+      "caption": "Elderly",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Manufacturer:CELGENE",
+      "caption": "CELGENE",
+      "labels": [
+        "Manufacturer"
+      ]
+    },
+    {
+      "id": "Case:129178182",
+      "caption": "Case 129178182 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:Daratumumab",
+      "caption": "Daratumumab",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DEXAMETHASONE",
+      "caption": "DEXAMETHASONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Febrile neutropenia",
+      "caption": "Febrile neutropenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pneumonia",
+      "caption": "Pneumonia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:131351752",
+      "caption": "Case 131351752 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:Carfilzomib",
+      "caption": "Carfilzomib",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Pancytopenia",
+      "caption": "Pancytopenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adult",
+      "caption": "Adult",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:131351774",
+      "caption": "Case 131351774 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Asthenia",
+      "caption": "Asthenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Lethargy",
+      "caption": "Lethargy",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:131549983",
+      "caption": "Case 131549983 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:VELCADE",
+      "caption": "VELCADE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DEXAMETHASONE ORAL",
+      "caption": "DEXAMETHASONE ORAL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:133438214",
+      "caption": "Case 133438214 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:Ixazomib",
+      "caption": "Ixazomib",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Coronavirus infection",
+      "caption": "Coronavirus infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:135045152",
+      "caption": "Case 135045152 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Respiratory syncytial virus infection",
+      "caption": "Respiratory syncytial virus infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:135156782",
+      "caption": "Case 135156782 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:135291232",
+      "caption": "Case 135291232 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Atrial fibrillation",
+      "caption": "Atrial fibrillation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:135918033",
+      "caption": "Case 135918033 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:BORTEZOMIB",
+      "caption": "BORTEZOMIB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Electrolyte imbalance",
+      "caption": "Electrolyte imbalance",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:138355402",
+      "caption": "Case 138355402 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:CYCLOPHOSPHAMIDE",
+      "caption": "CYCLOPHOSPHAMIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Respiratory failure",
+      "caption": "Respiratory failure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:140829652",
+      "caption": "Case 140829652 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Sepsis",
+      "caption": "Sepsis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Listeriosis",
+      "caption": "Listeriosis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Meningitis",
+      "caption": "Meningitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:141076392",
+      "caption": "Case 141076392 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:CYTOXAN",
+      "caption": "CYTOXAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Neutropenia",
+      "caption": "Neutropenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Acute kidney injury",
+      "caption": "Acute kidney injury",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Arthralgia",
+      "caption": "Arthralgia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:143607272",
+      "caption": "Case 143607272 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:DEXAMETHASONE IV",
+      "caption": "DEXAMETHASONE IV",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Muscular weakness",
+      "caption": "Muscular weakness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hyperkalaemia",
+      "caption": "Hyperkalaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:144189612",
+      "caption": "Case 144189612 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:COUMADIN",
+      "caption": "COUMADIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:OCUFLOX",
+      "caption": "OCUFLOX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ATENOLOL",
+      "caption": "ATENOLOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Pneumonia influenzal",
+      "caption": "Pneumonia influenzal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:145146712",
+      "caption": "Case 145146712 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Pulmonary embolism",
+      "caption": "Pulmonary embolism",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:145423942",
+      "caption": "Case 145423942 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Influenza",
+      "caption": "Influenza",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:146092972",
+      "caption": "Case 146092972 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Viral upper respiratory tract infection",
+      "caption": "Viral upper respiratory tract infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:147808382",
+      "caption": "Case 147808382 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Basal cell carcinoma",
+      "caption": "Basal cell carcinoma",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Other Serious (Important Medical Event)",
+      "caption": "Other Serious (Important Medical Event)",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:148089522",
+      "caption": "Case 148089522 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Cellulitis",
+      "caption": "Cellulitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:148172242",
+      "caption": "Case 148172242 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Rhinovirus infection",
+      "caption": "Rhinovirus infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:148545662",
+      "caption": "Case 148545662 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:KYPROLIS",
+      "caption": "KYPROLIS",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:152082914",
+      "caption": "Case 152082914 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Headache",
+      "caption": "Headache",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:152975742",
+      "caption": "Case 152975742 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Urinary tract infection",
+      "caption": "Urinary tract infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:153587842",
+      "caption": "Case 153587842 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Dyspnoea",
+      "caption": "Dyspnoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:154622504",
+      "caption": "Case 154622504 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:REVLIMID",
+      "caption": "REVLIMID",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Outcome:Death",
+      "caption": "Death",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:155188342",
+      "caption": "Case 155188342 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:ELOTUZUMAB",
+      "caption": "ELOTUZUMAB",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:156130702",
+      "caption": "Case 156130702 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:AMLODIPINE",
+      "caption": "AMLODIPINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ACYCLOVIR",
+      "caption": "ACYCLOVIR",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Cholecalciferol",
+      "caption": "Cholecalciferol",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CYANOCOBALAMIN",
+      "caption": "CYANOCOBALAMIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ELIQUIS",
+      "caption": "ELIQUIS",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:KCL",
+      "caption": "KCL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Diarrhoea",
+      "caption": "Diarrhoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:156615652",
+      "caption": "Case 156615652 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Pneumonitis",
+      "caption": "Pneumonitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:157011632",
+      "caption": "Case 157011632 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Clostridium difficile colitis",
+      "caption": "Clostridium difficile colitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:157414712",
+      "caption": "Case 157414712 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Glaucoma",
+      "caption": "Glaucoma",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypertension",
+      "caption": "Hypertension",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Renal failure",
+      "caption": "Renal failure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypothyroidism",
+      "caption": "Hypothyroidism",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:160832662",
+      "caption": "Case 160832662 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Dehydration",
+      "caption": "Dehydration",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:162307492",
+      "caption": "Case 162307492 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Femur fracture",
+      "caption": "Femur fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:162308312",
+      "caption": "Case 162308312 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:162549542",
+      "caption": "Case 162549542 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:Morphine",
+      "caption": "Morphine",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Pantoprazole",
+      "caption": "Pantoprazole",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Enoxaparin",
+      "caption": "Enoxaparin",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DULOXETINE",
+      "caption": "DULOXETINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Oxycodone",
+      "caption": "Oxycodone",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:GABAPENTIN",
+      "caption": "GABAPENTIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DOCUSATE SODIUM",
+      "caption": "DOCUSATE SODIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:Warfarin",
+      "caption": "Warfarin",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BACLOFEN",
+      "caption": "BACLOFEN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Spinal cord compression",
+      "caption": "Spinal cord compression",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:163114882",
+      "caption": "Case 163114882 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:163824912",
+      "caption": "Case 163824912 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Syncope",
+      "caption": "Syncope",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:164121002",
+      "caption": "Case 164121002 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Myocardial infarction",
+      "caption": "Myocardial infarction",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:164601652",
+      "caption": "Case 164601652 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Hyperglycaemia",
+      "caption": "Hyperglycaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:164684152",
+      "caption": "Case 164684152 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Pyrexia",
+      "caption": "Pyrexia",
+      "labels": [
+        "Reaction"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "CD:1",
+      "from": "Case:124428272",
+      "to": "Drug:DECADRON",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:2",
+      "from": "Case:124428272",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:3",
+      "from": "Case:124428272",
+      "to": "Reaction:Pneumonia bacterial",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:4",
+      "from": "Case:124428272",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:5",
+      "from": "Case:124428272",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:6",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:124428272",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:7",
+      "from": "Case:129178182",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:8",
+      "from": "Case:129178182",
+      "to": "Drug:Daratumumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:9",
+      "from": "Case:129178182",
+      "to": "Drug:DEXAMETHASONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:10",
+      "from": "Case:129178182",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:11",
+      "from": "Case:129178182",
+      "to": "Reaction:Pneumonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:12",
+      "from": "Case:129178182",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:13",
+      "from": "Case:129178182",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:14",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:129178182",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:15",
+      "from": "Case:131351752",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:16",
+      "from": "Case:131351752",
+      "to": "Drug:DECADRON",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:17",
+      "from": "Case:131351752",
+      "to": "Drug:Carfilzomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:18",
+      "from": "Case:131351752",
+      "to": "Reaction:Pancytopenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:19",
+      "from": "Case:131351752",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:20",
+      "from": "Case:131351752",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:21",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:131351752",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:22",
+      "from": "Case:131351774",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:23",
+      "from": "Case:131351774",
+      "to": "Drug:POMALYST",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:24",
+      "from": "Case:131351774",
+      "to": "Reaction:Asthenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:25",
+      "from": "Case:131351774",
+      "to": "Reaction:Lethargy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:26",
+      "from": "Case:131351774",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:27",
+      "from": "Case:131351774",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:28",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:131351774",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:29",
+      "from": "Case:131549983",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:30",
+      "from": "Case:131549983",
+      "to": "Drug:VELCADE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:31",
+      "from": "Case:131549983",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:32",
+      "from": "Case:131549983",
+      "to": "Reaction:Pneumonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:33",
+      "from": "Case:131549983",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:34",
+      "from": "Case:131549983",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:35",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:131549983",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:36",
+      "from": "Case:133438214",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:37",
+      "from": "Case:133438214",
+      "to": "Drug:Ixazomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:38",
+      "from": "Case:133438214",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:39",
+      "from": "Case:133438214",
+      "to": "Reaction:Coronavirus infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:40",
+      "from": "Case:133438214",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:41",
+      "from": "Case:133438214",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:42",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:133438214",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:43",
+      "from": "Case:135045152",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:44",
+      "from": "Case:135045152",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:45",
+      "from": "Case:135045152",
+      "to": "Drug:Daratumumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:46",
+      "from": "Case:135045152",
+      "to": "Reaction:Respiratory syncytial virus infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:47",
+      "from": "Case:135045152",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:48",
+      "from": "Case:135045152",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:49",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:135045152",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:50",
+      "from": "Case:135156782",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:51",
+      "from": "Case:135156782",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:52",
+      "from": "Case:135156782",
+      "to": "Drug:Ixazomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:53",
+      "from": "Case:135156782",
+      "to": "Reaction:Pneumonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:54",
+      "from": "Case:135156782",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:55",
+      "from": "Case:135156782",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:56",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:135156782",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:57",
+      "from": "Case:135291232",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:58",
+      "from": "Case:135291232",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:59",
+      "from": "Case:135291232",
+      "to": "Reaction:Atrial fibrillation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:60",
+      "from": "Case:135291232",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:61",
+      "from": "Case:135291232",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:62",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:135291232",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:63",
+      "from": "Case:135918033",
+      "to": "Drug:POMALYST",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:64",
+      "from": "Case:135918033",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:65",
+      "from": "Case:135918033",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:66",
+      "from": "Case:135918033",
+      "to": "Drug:BORTEZOMIB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:67",
+      "from": "Case:135918033",
+      "to": "Reaction:Electrolyte imbalance",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:68",
+      "from": "Case:135918033",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:69",
+      "from": "Case:135918033",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:70",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:135918033",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:71",
+      "from": "Case:138355402",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:72",
+      "from": "Case:138355402",
+      "to": "Drug:Carfilzomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:73",
+      "from": "Case:138355402",
+      "to": "Drug:DEXAMETHASONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:74",
+      "from": "Case:138355402",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:75",
+      "from": "Case:138355402",
+      "to": "Reaction:Respiratory failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:76",
+      "from": "Case:138355402",
+      "to": "Reaction:Pneumonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:77",
+      "from": "Case:138355402",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:78",
+      "from": "Case:138355402",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:79",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:138355402",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:80",
+      "from": "Case:140829652",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:81",
+      "from": "Case:140829652",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:82",
+      "from": "Case:140829652",
+      "to": "Reaction:Sepsis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:83",
+      "from": "Case:140829652",
+      "to": "Reaction:Listeriosis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:84",
+      "from": "Case:140829652",
+      "to": "Reaction:Meningitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:85",
+      "from": "Case:140829652",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:86",
+      "from": "Case:140829652",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:87",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:140829652",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:88",
+      "from": "Case:141076392",
+      "to": "Drug:DECADRON",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:89",
+      "from": "Case:141076392",
+      "to": "Drug:CYTOXAN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:90",
+      "from": "Case:141076392",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:91",
+      "from": "Case:141076392",
+      "to": "Reaction:Neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:92",
+      "from": "Case:141076392",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:93",
+      "from": "Case:141076392",
+      "to": "Reaction:Arthralgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:94",
+      "from": "Case:141076392",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:95",
+      "from": "Case:141076392",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:96",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:141076392",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:97",
+      "from": "Case:143607272",
+      "to": "Drug:DEXAMETHASONE IV",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:98",
+      "from": "Case:143607272",
+      "to": "Drug:Carfilzomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:99",
+      "from": "Case:143607272",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:100",
+      "from": "Case:143607272",
+      "to": "Reaction:Muscular weakness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:101",
+      "from": "Case:143607272",
+      "to": "Reaction:Hyperkalaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:102",
+      "from": "Case:143607272",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:103",
+      "from": "Case:143607272",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:104",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:143607272",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:105",
+      "from": "Case:144189612",
+      "to": "Drug:COUMADIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:106",
+      "from": "Case:144189612",
+      "to": "Drug:OCUFLOX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:107",
+      "from": "Case:144189612",
+      "to": "Drug:DECADRON",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:108",
+      "from": "Case:144189612",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:109",
+      "from": "Case:144189612",
+      "to": "Drug:ATENOLOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:110",
+      "from": "Case:144189612",
+      "to": "Reaction:Pneumonia influenzal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:111",
+      "from": "Case:144189612",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:112",
+      "from": "Case:144189612",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:113",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:144189612",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:114",
+      "from": "Case:145146712",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:115",
+      "from": "Case:145146712",
+      "to": "Drug:Daratumumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:116",
+      "from": "Case:145146712",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:117",
+      "from": "Case:145146712",
+      "to": "Reaction:Pulmonary embolism",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:118",
+      "from": "Case:145146712",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:119",
+      "from": "Case:145146712",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:120",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:145146712",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:121",
+      "from": "Case:145423942",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:122",
+      "from": "Case:145423942",
+      "to": "Reaction:Influenza",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:123",
+      "from": "Case:145423942",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:124",
+      "from": "Case:145423942",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:125",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:145423942",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:126",
+      "from": "Case:146092972",
+      "to": "Drug:Carfilzomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:127",
+      "from": "Case:146092972",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:128",
+      "from": "Case:146092972",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:129",
+      "from": "Case:146092972",
+      "to": "Reaction:Viral upper respiratory tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:130",
+      "from": "Case:146092972",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:131",
+      "from": "Case:146092972",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:132",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:146092972",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:133",
+      "from": "Case:147808382",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:134",
+      "from": "Case:147808382",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:135",
+      "from": "Case:147808382",
+      "to": "Reaction:Basal cell carcinoma",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:136",
+      "from": "Case:147808382",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:137",
+      "from": "Case:147808382",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:138",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:147808382",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:139",
+      "from": "Case:148089522",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:140",
+      "from": "Case:148089522",
+      "to": "Drug:DECADRON",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:141",
+      "from": "Case:148089522",
+      "to": "Drug:Daratumumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:142",
+      "from": "Case:148089522",
+      "to": "Reaction:Cellulitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:143",
+      "from": "Case:148089522",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:144",
+      "from": "Case:148089522",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:145",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:148089522",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:146",
+      "from": "Case:148172242",
+      "to": "Drug:DECADRON",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:147",
+      "from": "Case:148172242",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:148",
+      "from": "Case:148172242",
+      "to": "Drug:Carfilzomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:149",
+      "from": "Case:148172242",
+      "to": "Reaction:Rhinovirus infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:150",
+      "from": "Case:148172242",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:151",
+      "from": "Case:148172242",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:152",
+      "from": "Case:148172242",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:153",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:148172242",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:154",
+      "from": "Case:148545662",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:155",
+      "from": "Case:148545662",
+      "to": "Drug:DEXAMETHASONE IV",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:156",
+      "from": "Case:148545662",
+      "to": "Drug:KYPROLIS",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:157",
+      "from": "Case:148545662",
+      "to": "Reaction:Neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:158",
+      "from": "Case:148545662",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:159",
+      "from": "Case:148545662",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:160",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:148545662",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:161",
+      "from": "Case:152082914",
+      "to": "Drug:Carfilzomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:162",
+      "from": "Case:152082914",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:163",
+      "from": "Case:152082914",
+      "to": "Drug:DECADRON",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:164",
+      "from": "Case:152082914",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:165",
+      "from": "Case:152082914",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:166",
+      "from": "Case:152082914",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:167",
+      "from": "Case:152082914",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:168",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:152082914",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:169",
+      "from": "Case:152975742",
+      "to": "Drug:Daratumumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:170",
+      "from": "Case:152975742",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:171",
+      "from": "Case:152975742",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:172",
+      "from": "Case:152975742",
+      "to": "Reaction:Neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:173",
+      "from": "Case:152975742",
+      "to": "Reaction:Urinary tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:174",
+      "from": "Case:152975742",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:175",
+      "from": "Case:152975742",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:176",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:152975742",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:177",
+      "from": "Case:153587842",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:178",
+      "from": "Case:153587842",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:179",
+      "from": "Case:153587842",
+      "to": "Drug:CYTOXAN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:180",
+      "from": "Case:153587842",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:181",
+      "from": "Case:153587842",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:182",
+      "from": "Case:153587842",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:183",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:153587842",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:184",
+      "from": "Case:154622504",
+      "to": "Drug:Daratumumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:185",
+      "from": "Case:154622504",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:186",
+      "from": "Case:154622504",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:187",
+      "from": "Case:154622504",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:188",
+      "from": "Case:154622504",
+      "to": "Drug:REVLIMID",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:189",
+      "from": "Case:154622504",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:190",
+      "from": "Case:154622504",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:191",
+      "from": "Case:154622504",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:192",
+      "from": "Case:154622504",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:193",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:154622504",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:194",
+      "from": "Case:155188342",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:195",
+      "from": "Case:155188342",
+      "to": "Drug:DEXAMETHASONE IV",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:196",
+      "from": "Case:155188342",
+      "to": "Drug:CYCLOPHOSPHAMIDE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:197",
+      "from": "Case:155188342",
+      "to": "Drug:ELOTUZUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:198",
+      "from": "Case:155188342",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:199",
+      "from": "Case:155188342",
+      "to": "Drug:Carfilzomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:200",
+      "from": "Case:155188342",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:201",
+      "from": "Case:155188342",
+      "to": "Reaction:Atrial fibrillation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:202",
+      "from": "Case:155188342",
+      "to": "Reaction:Respiratory failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:203",
+      "from": "Case:155188342",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:204",
+      "from": "Case:155188342",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:205",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:155188342",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:206",
+      "from": "Case:156130702",
+      "to": "Drug:AMLODIPINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:207",
+      "from": "Case:156130702",
+      "to": "Drug:ATENOLOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:208",
+      "from": "Case:156130702",
+      "to": "Drug:Carfilzomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:209",
+      "from": "Case:156130702",
+      "to": "Drug:DEXAMETHASONE IV",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:210",
+      "from": "Case:156130702",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:211",
+      "from": "Case:156130702",
+      "to": "Drug:ACYCLOVIR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:212",
+      "from": "Case:156130702",
+      "to": "Drug:Cholecalciferol",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:213",
+      "from": "Case:156130702",
+      "to": "Drug:CYANOCOBALAMIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:214",
+      "from": "Case:156130702",
+      "to": "Drug:Daratumumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:215",
+      "from": "Case:156130702",
+      "to": "Drug:ELIQUIS",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:216",
+      "from": "Case:156130702",
+      "to": "Drug:KCL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:217",
+      "from": "Case:156130702",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:218",
+      "from": "Case:156130702",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:219",
+      "from": "Case:156130702",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:220",
+      "from": "Case:156130702",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:221",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:156130702",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:222",
+      "from": "Case:156615652",
+      "to": "Drug:Carfilzomib",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:223",
+      "from": "Case:156615652",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:224",
+      "from": "Case:156615652",
+      "to": "Reaction:Pneumonitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:225",
+      "from": "Case:156615652",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:226",
+      "from": "Case:156615652",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:227",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:156615652",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:228",
+      "from": "Case:157011632",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:229",
+      "from": "Case:157011632",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:230",
+      "from": "Case:157011632",
+      "to": "Drug:Daratumumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:231",
+      "from": "Case:157011632",
+      "to": "Reaction:Clostridium difficile colitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:232",
+      "from": "Case:157011632",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:233",
+      "from": "Case:157011632",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:234",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:157011632",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:235",
+      "from": "Case:157414712",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:236",
+      "from": "Case:157414712",
+      "to": "Reaction:Glaucoma",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:237",
+      "from": "Case:157414712",
+      "to": "Reaction:Hypertension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:238",
+      "from": "Case:157414712",
+      "to": "Reaction:Renal failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:239",
+      "from": "Case:157414712",
+      "to": "Reaction:Hypothyroidism",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:240",
+      "from": "Case:157414712",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:241",
+      "from": "Case:157414712",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:242",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:157414712",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:243",
+      "from": "Case:160832662",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:244",
+      "from": "Case:160832662",
+      "to": "Reaction:Dehydration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:245",
+      "from": "Case:160832662",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:246",
+      "from": "Case:160832662",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:247",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:160832662",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:248",
+      "from": "Case:162307492",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:249",
+      "from": "Case:162307492",
+      "to": "Reaction:Femur fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:250",
+      "from": "Case:162307492",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:251",
+      "from": "Case:162307492",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:252",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:162307492",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:253",
+      "from": "Case:162308312",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:254",
+      "from": "Case:162308312",
+      "to": "Reaction:Respiratory failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:255",
+      "from": "Case:162308312",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:256",
+      "from": "Case:162308312",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:257",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:162308312",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:258",
+      "from": "Case:162549542",
+      "to": "Drug:Morphine",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:259",
+      "from": "Case:162549542",
+      "to": "Drug:Pantoprazole",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:260",
+      "from": "Case:162549542",
+      "to": "Drug:Enoxaparin",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:261",
+      "from": "Case:162549542",
+      "to": "Drug:DULOXETINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:262",
+      "from": "Case:162549542",
+      "to": "Drug:Oxycodone",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:263",
+      "from": "Case:162549542",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:264",
+      "from": "Case:162549542",
+      "to": "Drug:GABAPENTIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:265",
+      "from": "Case:162549542",
+      "to": "Drug:DOCUSATE SODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:266",
+      "from": "Case:162549542",
+      "to": "Drug:Warfarin",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:267",
+      "from": "Case:162549542",
+      "to": "Drug:BACLOFEN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:268",
+      "from": "Case:162549542",
+      "to": "Reaction:Spinal cord compression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:269",
+      "from": "Case:162549542",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:270",
+      "from": "Case:162549542",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:271",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:162549542",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:272",
+      "from": "Case:163114882",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:273",
+      "from": "Case:163114882",
+      "to": "Drug:Daratumumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:274",
+      "from": "Case:163114882",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:275",
+      "from": "Case:163114882",
+      "to": "Reaction:Spinal cord compression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:276",
+      "from": "Case:163114882",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:277",
+      "from": "Case:163114882",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:278",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:163114882",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:279",
+      "from": "Case:163824912",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:280",
+      "from": "Case:163824912",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:281",
+      "from": "Case:163824912",
+      "to": "Reaction:Syncope",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:282",
+      "from": "Case:163824912",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:283",
+      "from": "Case:163824912",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:284",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:163824912",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:285",
+      "from": "Case:164121002",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:286",
+      "from": "Case:164121002",
+      "to": "Reaction:Myocardial infarction",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:287",
+      "from": "Case:164121002",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:288",
+      "from": "Case:164121002",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:289",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:164121002",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:290",
+      "from": "Case:164601652",
+      "to": "Drug:Daratumumab",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:291",
+      "from": "Case:164601652",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:292",
+      "from": "Case:164601652",
+      "to": "Drug:DEXAMETHASONE IV",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:293",
+      "from": "Case:164601652",
+      "to": "Reaction:Hyperglycaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:294",
+      "from": "Case:164601652",
+      "to": "Reaction:Pneumonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:295",
+      "from": "Case:164601652",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:296",
+      "from": "Case:164601652",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:297",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:164601652",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:298",
+      "from": "Case:164684152",
+      "to": "Drug:POMALYST",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:299",
+      "from": "Case:164684152",
+      "to": "Drug:DEXAMETHASONE ORAL",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:300",
+      "from": "Case:164684152",
+      "to": "Drug:ELOTUZUMAB",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:301",
+      "from": "Case:164684152",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:302",
+      "from": "Case:164684152",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:303",
+      "from": "Case:164684152",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:304",
+      "from": "Manufacturer:CELGENE",
+      "to": "Case:164684152",
+      "type": "REGISTERED"
+    }
+  ],
+  "meta": {
+    "caseCount": 40,
+    "nodeCount": 122,
+    "relCount": 304,
+    "capped": false,
+    "focusDrug": "POMALYST"
+  }
+}

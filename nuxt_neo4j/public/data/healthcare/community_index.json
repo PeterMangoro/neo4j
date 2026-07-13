@@ -1,0 +1,242 @@
+[
+  {
+    "id": 15,
+    "size": 743,
+    "label": "Pneumonia, Diarrhoea",
+    "topReactions": [
+      "Pneumonia",
+      "Diarrhoea",
+      "Death",
+      "Dyspnoea",
+      "Fatigue"
+    ]
+  },
+  {
+    "id": 20,
+    "size": 544,
+    "label": "Sinusitis, Headache",
+    "topReactions": [
+      "Sinusitis",
+      "Headache",
+      "Fatigue",
+      "COVID-19",
+      "Product dose omission issue"
+    ]
+  },
+  {
+    "id": 4,
+    "size": 489,
+    "label": "Sepsis, Febrile neutropenia",
+    "topReactions": [
+      "Sepsis",
+      "Febrile neutropenia",
+      "Pyrexia",
+      "Pneumonia",
+      "Acute kidney injury"
+    ]
+  },
+  {
+    "id": 14,
+    "size": 415,
+    "label": "Pain, Drug ineffective",
+    "topReactions": [
+      "Pain",
+      "Drug ineffective",
+      "Dizziness",
+      "Fall",
+      "Off label use"
+    ]
+  },
+  {
+    "id": 7,
+    "size": 400,
+    "label": "Alopecia, Prostate cancer",
+    "topReactions": [
+      "Alopecia",
+      "Prostate cancer",
+      "Pain",
+      "Anxiety",
+      "Psychological trauma"
+    ]
+  },
+  {
+    "id": 19,
+    "size": 368,
+    "label": "Product dose omission issue, Drug dose omission by device",
+    "topReactions": [
+      "Product dose omission issue",
+      "Drug dose omission by device",
+      "Device issue",
+      "Accidental exposure to product",
+      "Wrong technique in product usage process"
+    ]
+  },
+  {
+    "id": 6,
+    "size": 349,
+    "label": "Chronic kidney disease, Acute kidney injury",
+    "topReactions": [
+      "Chronic kidney disease",
+      "Acute kidney injury",
+      "Renal failure",
+      "Fatigue",
+      "Off label use"
+    ]
+  },
+  {
+    "id": 10,
+    "size": 237,
+    "label": "Product quality issue, No adverse event",
+    "topReactions": [
+      "Product quality issue",
+      "No adverse event",
+      "Complication of device insertion",
+      "Complication of device removal",
+      "Device breakage"
+    ]
+  },
+  {
+    "id": 12,
+    "size": 180,
+    "label": "Nausea, Fatigue",
+    "topReactions": [
+      "Nausea",
+      "Fatigue",
+      "Vomiting",
+      "Diarrhoea",
+      "Platelet count decreased"
+    ]
+  },
+  {
+    "id": 3,
+    "size": 179,
+    "label": "Dyspnoea, Hypotension",
+    "topReactions": [
+      "Dyspnoea",
+      "Hypotension",
+      "Fluid retention",
+      "Chest pain",
+      "Nausea"
+    ]
+  },
+  {
+    "id": 5,
+    "size": 85,
+    "label": "Alanine aminotransferase increased, Pyrexia",
+    "topReactions": [
+      "Alanine aminotransferase increased",
+      "Pyrexia",
+      "Aspartate aminotransferase increased",
+      "Vomiting",
+      "Nausea"
+    ]
+  },
+  {
+    "id": 21,
+    "size": 83,
+    "label": "Product dose omission issue, Diarrhoea",
+    "topReactions": [
+      "Product dose omission issue",
+      "Diarrhoea",
+      "Weight decreased",
+      "Hospitalisation",
+      "Dehydration"
+    ]
+  },
+  {
+    "id": 9,
+    "size": 60,
+    "label": "Rash, Urticaria",
+    "topReactions": [
+      "Rash",
+      "Urticaria",
+      "Pruritus",
+      "Dyspnoea",
+      "Nausea"
+    ]
+  },
+  {
+    "id": 18,
+    "size": 48,
+    "label": "Febrile neutropenia, Pyrexia",
+    "topReactions": [
+      "Febrile neutropenia",
+      "Pyrexia",
+      "Tachycardia",
+      "Hypoxia",
+      "Vomiting"
+    ]
+  },
+  {
+    "id": 17,
+    "size": 46,
+    "label": "Hereditary angioedema, Inappropriate schedule of product administration",
+    "topReactions": [
+      "Hereditary angioedema",
+      "Inappropriate schedule of product administration",
+      "Therapy interrupted",
+      "Inability to afford medication",
+      "Product dose omission issue"
+    ]
+  },
+  {
+    "id": 16,
+    "size": 27,
+    "label": "Prescribed underdose, Fatigue",
+    "topReactions": [
+      "Prescribed underdose",
+      "Fatigue",
+      "Progressive multifocal leukoencephalopathy",
+      "Product dose omission issue",
+      "Intentional product use issue"
+    ]
+  },
+  {
+    "id": 2,
+    "size": 25,
+    "label": "Haemorrhage, Suicidal ideation",
+    "topReactions": [
+      "Haemorrhage",
+      "Suicidal ideation",
+      "Headache",
+      "Mouth haemorrhage",
+      "Product dose omission issue"
+    ]
+  },
+  {
+    "id": 0,
+    "size": 11,
+    "label": "Product substitution issue, Product solubility abnormal",
+    "topReactions": [
+      "Product substitution issue",
+      "Product solubility abnormal",
+      "Foreign body in throat",
+      "Drug ineffective",
+      "Product odour abnormal"
+    ]
+  },
+  {
+    "id": 13,
+    "size": 9,
+    "label": "Blindness, Cholecystitis acute",
+    "topReactions": [
+      "Blindness",
+      "Cholecystitis acute",
+      "Uveitis",
+      "Eye irritation",
+      "Acute kidney injury"
+    ]
+  },
+  {
+    "id": 11,
+    "size": 9,
+    "label": "Sickle cell anaemia with crisis, Back pain",
+    "topReactions": [
+      "Sickle cell anaemia with crisis",
+      "Back pain",
+      "Pain in extremity",
+      "Pain",
+      "Bone pain"
+    ]
+  }
+]

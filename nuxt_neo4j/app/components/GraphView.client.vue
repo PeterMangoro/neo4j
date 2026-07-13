@@ -17,16 +17,27 @@ const DEFAULT_PALETTE = [
 ]
 
 const container = ref<HTMLElement | null>(null)
+const root = ref<HTMLElement | null>(null)
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let nvl: any = null
 let resizeObserver: ResizeObserver | null = null
+let visibilityObserver: IntersectionObserver | null = null
 const renderError = ref<string | null>(null)
+const isVisible = ref(false)
+let renderGeneration = 0
+let healAttempts = 0
+let pendingTimer: ReturnType<typeof setTimeout> | null = null
+
+function afterLayout(): Promise<void> {
+  return new Promise((resolve) => {
+    requestAnimationFrame(() => requestAnimationFrame(() => resolve()))
+  })
+}
 
 function labelOf(node: GraphNode): string {
   return node.labels?.[0] ?? 'Node'
 }
 
-// Stable label -> color map, honoring an explicit `colors` prop override.
 const colorMap = computed<Record<string, string>>(() => {
   const labels = [...new Set(props.nodes.map(labelOf))].sort()
   const map: Record<string, string> = {}
@@ -50,33 +61,76 @@ function mapped() {
     color: colorMap.value[labelOf(n)],
     size: nodeSize(n)
   }))
-  const nvlRels = props.relationships.map(r => ({
-    id: r.id,
-    from: r.from,
-    to: r.to,
-    caption: r.type
-  }))
+  // Deduplicate undirected pairs so NVL doesn't choke on A→B + B→A duplicates.
+  const seen = new Set<string>()
+  const nvlRels: { id: string, from: string, to: string, caption: string }[] = []
+  for (const r of props.relationships) {
+    const a = r.from < r.to ? r.from : r.to
+    const b = r.from < r.to ? r.to : r.from
+    const key = `${r.type}:${a}:${b}`
+    if (seen.has(key)) continue
+    seen.add(key)
+    nvlRels.push({
+      id: r.id,
+      from: r.from,
+      to: r.to,
+      caption: r.type
+    })
+  }
   return { nvlNodes, nvlRels }
 }
 
+function canvasLooksEmpty(): boolean {
+  if (!container.value) return true
+  const canvas = container.value.querySelector('canvas')
+  if (!canvas) return true
+  // Zero-size canvas = not actually painted yet
+  return canvas.width < 2 || canvas.height < 2
+}
+
 async function render() {
-  if (!container.value) return
-  await nextTick()
-  try {
-    const { NVL } = await import('@neo4j-nvl/base')
+  if (!container.value || !isVisible.value) return
+
+  const gen = ++renderGeneration
+
+  if (!props.nodes.length) {
     if (nvl) {
       nvl.destroy()
       nvl = null
     }
+    renderError.value = null
+    return
+  }
+
+  await nextTick()
+  await afterLayout()
+  if (gen !== renderGeneration || !container.value) return
+
+  // Need a non-zero box before constructing NVL
+  const rect = container.value.getBoundingClientRect()
+  if (rect.width < 2 || rect.height < 2) {
+    scheduleRetry(gen, 50)
+    return
+  }
+
+  try {
+    const { NVL } = await import('@neo4j-nvl/base')
+    if (gen !== renderGeneration || !container.value) return
+
+    if (nvl) {
+      nvl.destroy()
+      nvl = null
+    }
+
+    // Clear any leftover canvases from a half-initialized instance
+    container.value.replaceChildren()
+
     const { nvlNodes, nvlRels } = mapped()
     nvl = new NVL(
       container.value,
       nvlNodes,
       nvlRels,
       {
-        // Canvas renderer is the reliable choice for bundled apps and is the only
-        // one that draws captions/arrowheads; web workers don't resolve under Vite,
-        // so run layout on the main thread (graphs here are small). No telemetry.
         renderer: 'canvas',
         disableWebGL: true,
         disableWebWorkers: true,
@@ -91,25 +145,89 @@ async function render() {
       }
     )
     renderError.value = null
+
+    // If NVL created a zero-size / missing canvas, retry shortly after layout settles.
+    scheduleRetry(gen, 120)
   } catch (err) {
     renderError.value = err instanceof Error ? err.message : String(err)
     console.error('[GraphView] failed to render NVL graph:', err)
   }
 }
 
-onMounted(() => {
+function scheduleRetry(gen: number, delayMs: number) {
+  if (healAttempts >= 4) return
+  if (pendingTimer) clearTimeout(pendingTimer)
+  pendingTimer = setTimeout(() => {
+    pendingTimer = null
+    if (gen !== renderGeneration) return
+    if (!isVisible.value || !props.nodes.length) return
+    if (canvasLooksEmpty()) {
+      healAttempts++
+      render()
+    }
+  }, delayMs)
+}
+
+function requestRender() {
+  healAttempts = 0
   render()
+}
+
+onMounted(() => {
+  if (root.value && 'IntersectionObserver' in window) {
+    visibilityObserver = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0]
+        const nowVisible = !!entry?.isIntersecting
+        if (nowVisible && !isVisible.value) {
+          isVisible.value = true
+          requestRender()
+        } else if (!nowVisible) {
+          isVisible.value = false
+        }
+      },
+      { root: null, threshold: 0.05, rootMargin: '80px' }
+    )
+    visibilityObserver.observe(root.value)
+  } else {
+    // Fallback when IntersectionObserver is unavailable
+    isVisible.value = true
+    requestRender()
+  }
+
   if (container.value && 'ResizeObserver' in window) {
     resizeObserver = new ResizeObserver(() => {
-      if (nvl && props.nodes.length) nvl.fit(props.nodes.map(n => n.id))
+      if (!isVisible.value || !nvl || !props.nodes.length) return
+      if (canvasLooksEmpty()) {
+        requestRender()
+        return
+      }
+      nvl.fit(props.nodes.map(n => n.id))
     })
     resizeObserver.observe(container.value)
   }
 })
 
-watch(() => [props.nodes, props.relationships], render, { deep: true })
+watch(
+  () => [props.nodes, props.relationships] as const,
+  () => {
+    requestRender()
+  },
+  { deep: true, flush: 'post' }
+)
+
+watch(
+  () => props.colors,
+  () => {
+    requestRender()
+  },
+  { deep: true, flush: 'post' }
+)
 
 onBeforeUnmount(() => {
+  if (pendingTimer) clearTimeout(pendingTimer)
+  visibilityObserver?.disconnect()
+  visibilityObserver = null
   resizeObserver?.disconnect()
   resizeObserver = null
   if (nvl) {
@@ -120,7 +238,10 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="space-y-3">
+  <div
+    ref="root"
+    class="space-y-3"
+  >
     <div
       v-if="legend.length"
       class="flex flex-wrap items-center gap-x-4 gap-y-2"

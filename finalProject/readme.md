@@ -28,7 +28,8 @@ Findings below are **for this published instance**, not a claim about the entire
 | Item | Role |
 |------|------|
 | [P_Mangoro_AutomotiveSupplyChain.ipynb](P_Mangoro_AutomotiveSupplyChain.ipynb) | **Main deliverable:** extract `.xlsx` → CSV → constraints → `LOAD CSV` → EDA → deeper Cypher → GDS (PageRank, Leiden) → validation and conclusions |
-| [requirements.txt](requirements.txt) | Python stack: Neo4j driver, Jupyter, pandas, plotting, `python-dotenv`; optional `pyxlsb` if you use the `.xlsb` variant from Mendeley |
+| [requirements.txt](requirements.txt) | Python stack: Neo4j driver, Jupyter, pandas, plotting, `python-dotenv`, `openpyxl`, `networkx`, `scipy`; optional `pyxlsb` if you use the `.xlsb` variant from Mendeley |
+| [export_finalproject.py](export_finalproject.py) | Offline exporter: reads `2020_dataset_OfAutomotiveProductionNetwork.xlsx` → `../nuxt_neo4j/public/data/supply-chain/` (no Neo4j at export time) |
 | [.env.example](.env.example) | Template for Bolt + optional `NEO4J_DATABASE` (isolate graph) + optional `NEO4J_IMPORT_DIR` for `LOAD CSV` (copy to `.env`) |
 
 
@@ -94,3 +95,13 @@ Run [P_Mangoro_AutomotiveSupplyChain.ipynb](P_Mangoro_AutomotiveSupplyChain.ipyn
 
 
 Repository overview: [../README.md](../README.md).
+
+## Static Nuxt demo
+
+After placing `2020_dataset_OfAutomotiveProductionNetwork.xlsx` in this folder:
+
+```bash
+cd finalProject && .venv/bin/python export_finalproject.py
+```
+
+Writes JSON under `nuxt_neo4j/public/data/supply-chain/`. The Nuxt app serves the live route `/supply-chain` (facility lane map, PageRank tables, Louvain modules, capped BOM explorer). Regenerate when the workbook or export script changes.

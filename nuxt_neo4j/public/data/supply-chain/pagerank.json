@@ -1,0 +1,279 @@
+{
+  "projection": {
+    "name": "automotive-network",
+    "nodeCount": 33084,
+    "relationshipCount": 135167
+  },
+  "topNodes": [
+    {
+      "nodeName": "car",
+      "nodeType": [
+        "ProductGroup"
+      ],
+      "score": 0.0666569229
+    },
+    {
+      "nodeName": "engine",
+      "nodeType": [
+        "ProductGroup"
+      ],
+      "score": 0.0499730382
+    },
+    {
+      "nodeName": "gear",
+      "nodeType": [
+        "ProductGroup"
+      ],
+      "score": 0.0498068593
+    },
+    {
+      "nodeName": "Q4H",
+      "nodeType": [
+        "Product"
+      ],
+      "score": 0.0393248007
+    },
+    {
+      "nodeName": "G0K",
+      "nodeType": [
+        "Product"
+      ],
+      "score": 0.0365448905
+    },
+    {
+      "nodeName": "Q2J",
+      "nodeType": [
+        "Product"
+      ],
+      "score": 0.0327931122
+    },
+    {
+      "nodeName": "G1C",
+      "nodeType": [
+        "Product"
+      ],
+      "score": 0.0283499898
+    },
+    {
+      "nodeName": "seat",
+      "nodeType": [
+        "ProductGroup"
+      ],
+      "score": 0.0267637295
+    },
+    {
+      "nodeName": "componment_seat2",
+      "nodeType": [
+        "Product"
+      ],
+      "score": 0.0193862186
+    },
+    {
+      "nodeName": "seat_componment",
+      "nodeType": [
+        "ProductGroup"
+      ],
+      "score": 0.0193056804
+    },
+    {
+      "nodeName": "G1D",
+      "nodeType": [
+        "Product"
+      ],
+      "score": 0.0178892441
+    },
+    {
+      "nodeName": "componment_seat1",
+      "nodeType": [
+        "Product"
+      ],
+      "score": 0.0161688802
+    },
+    {
+      "nodeName": "DN4",
+      "nodeType": [
+        "Product"
+      ],
+      "score": 0.0157991836
+    },
+    {
+      "nodeName": "DG6",
+      "nodeType": [
+        "Product"
+      ],
+      "score": 0.0157157549
+    },
+    {
+      "nodeName": "G1A",
+      "nodeType": [
+        "Product"
+      ],
+      "score": 0.014487507
+    },
+    {
+      "nodeName": "Q4P",
+      "nodeType": [
+        "Product"
+      ],
+      "score": 0.0130486872
+    },
+    {
+      "nodeName": "DK8",
+      "nodeType": [
+        "Product"
+      ],
+      "score": 0.0120767684
+    },
+    {
+      "nodeName": "G1Z",
+      "nodeType": [
+        "Product"
+      ],
+      "score": 0.0101225058
+    },
+    {
+      "nodeName": "D83",
+      "nodeType": [
+        "Product"
+      ],
+      "score": 0.0101212788
+    },
+    {
+      "nodeName": "DG8",
+      "nodeType": [
+        "Product"
+      ],
+      "score": 0.0090563923
+    }
+  ],
+  "topFacilities": [
+    {
+      "nodeName": "zp7",
+      "roleLabels": [
+        "OEM"
+      ],
+      "nodeType": [
+        "Facility"
+      ],
+      "score": 6.67498e-05
+    },
+    {
+      "nodeName": "zp8",
+      "roleLabels": [
+        "OEM"
+      ],
+      "nodeType": [
+        "Facility"
+      ],
+      "score": 6.66997e-05
+    },
+    {
+      "nodeName": "battery-supplier_inv",
+      "roleLabels": [
+        "SupplierSite",
+        "Inventory"
+      ],
+      "nodeType": [
+        "Facility"
+      ],
+      "score": 2.16622e-05
+    },
+    {
+      "nodeName": "seat-supplier_inv",
+      "roleLabels": [
+        "SupplierSite",
+        "Inventory"
+      ],
+      "nodeType": [
+        "Facility"
+      ],
+      "score": 2.12643e-05
+    },
+    {
+      "nodeName": "battery-supplier_prod",
+      "roleLabels": [
+        "SupplierSite",
+        "Production"
+      ],
+      "nodeType": [
+        "Facility"
+      ],
+      "score": 1.29109e-05
+    },
+    {
+      "nodeName": "seat-supplier_prod",
+      "roleLabels": [
+        "SupplierSite",
+        "Production"
+      ],
+      "nodeType": [
+        "Facility"
+      ],
+      "score": 1.24601e-05
+    },
+    {
+      "nodeName": "gear-supplier_inv",
+      "roleLabels": [
+        "SupplierSite",
+        "Inventory"
+      ],
+      "nodeType": [
+        "Facility"
+      ],
+      "score": 1.16588e-05
+    },
+    {
+      "nodeName": "engine-supplier_inv",
+      "roleLabels": [
+        "SupplierSite",
+        "Inventory"
+      ],
+      "nodeType": [
+        "Facility"
+      ],
+      "score": 1.09575e-05
+    },
+    {
+      "nodeName": "seat-supplier_trans",
+      "roleLabels": [
+        "SupplierSite"
+      ],
+      "nodeType": [
+        "Facility"
+      ],
+      "score": 1.0657e-05
+    },
+    {
+      "nodeName": "battery-supplier_trans",
+      "roleLabels": [
+        "SupplierSite"
+      ],
+      "nodeType": [
+        "Facility"
+      ],
+      "score": 1.0657e-05
+    },
+    {
+      "nodeName": "gear-supplier_prod",
+      "roleLabels": [
+        "SupplierSite",
+        "Production"
+      ],
+      "nodeType": [
+        "Facility"
+      ],
+      "score": 1.0657e-05
+    },
+    {
+      "nodeName": "engine-supplier_prod",
+      "roleLabels": [
+        "SupplierSite",
+        "Production"
+      ],
+      "nodeType": [
+        "Facility"
+      ],
+      "score": 1.0657e-05
+    }
+  ]
+}

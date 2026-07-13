@@ -1,0 +1,3837 @@
+{
+  "U001": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 3,
+          "avgRating": 4.33
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 3,
+          "avgRating": 4.33
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.333
+        },
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.833
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.333
+        },
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.833
+        }
+      ]
+    }
+  },
+  "U002": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 2,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M024",
+          "title": "The Revenant",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 5,
+          "avgRating": 4.6
+        },
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 4,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M008",
+          "title": "Spirited Away",
+          "supporters": 4,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 4,
+          "avgRating": 4.25
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 3,
+          "avgRating": 4.33
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.333
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 2,
+          "avgRating": 5.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M024",
+          "title": "The Revenant",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 5,
+          "avgRating": 4.6,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 10.1
+        },
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 4,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 9.0
+        },
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 4,
+          "avgRating": 4.25,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 8.75
+        },
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.667
+        },
+        {
+          "movieId": "M008",
+          "title": "Spirited Away",
+          "supporters": 4,
+          "avgRating": 4.5,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 8.5
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.333
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 8.167
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 7.667
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 7.667
+        },
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 7.333
+        }
+      ]
+    }
+  },
+  "U003": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 4,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 2,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 2,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 4,
+          "avgRating": 4.5,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 9.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.667
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 2,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.5
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 2,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        }
+      ]
+    }
+  },
+  "U004": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 2,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M024",
+          "title": "The Revenant",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 3,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M008",
+          "title": "Spirited Away",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 3,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 2,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 4.5
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.833
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 2,
+          "avgRating": 5.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M024",
+          "title": "The Revenant",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 8.833
+        },
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 3,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 8.5
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.833
+        },
+        {
+          "movieId": "M008",
+          "title": "Spirited Away",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 7.667
+        },
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 3,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.5
+        },
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 7.333
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 2,
+          "avgRating": 5.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M024",
+          "title": "The Revenant",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        }
+      ]
+    }
+  },
+  "U005": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.833
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 7.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.833
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 7.5
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        }
+      ]
+    }
+  },
+  "U006": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 4,
+          "avgRating": 4.75
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 4,
+          "avgRating": 4.75
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 3,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M007",
+          "title": "The Dark Knight",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M019",
+          "title": "Dune",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M002",
+          "title": "Inception",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M001",
+          "title": "The Matrix",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M024",
+          "title": "The Revenant",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 4,
+          "avgRating": 4.75,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 9.75
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.667
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 4,
+          "avgRating": 4.75,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 9.75
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 3,
+          "avgRating": 5.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 9.0
+        },
+        {
+          "movieId": "M007",
+          "title": "The Dark Knight",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M002",
+          "title": "Inception",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M024",
+          "title": "The Revenant",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M019",
+          "title": "Dune",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        }
+      ]
+    }
+  },
+  "U007": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M025",
+          "title": "Blade Runner 2049",
+          "supporters": 4,
+          "avgRating": 4.75
+        },
+        {
+          "movieId": "M005",
+          "title": "Interstellar",
+          "supporters": 4,
+          "avgRating": 4.75
+        },
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 3,
+          "avgRating": 4.33
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M025",
+          "title": "Blade Runner 2049",
+          "supporters": 4,
+          "avgRating": 4.75
+        },
+        {
+          "movieId": "M005",
+          "title": "Interstellar",
+          "supporters": 4,
+          "avgRating": 4.75
+        },
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 3,
+          "avgRating": 4.33
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M025",
+          "title": "Blade Runner 2049",
+          "supporters": 4,
+          "avgRating": 4.75,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 10.25
+        },
+        {
+          "movieId": "M005",
+          "title": "Interstellar",
+          "supporters": 4,
+          "avgRating": 4.75,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 10.25
+        },
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.833
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M025",
+          "title": "Blade Runner 2049",
+          "supporters": 4,
+          "avgRating": 4.75,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 10.25
+        },
+        {
+          "movieId": "M005",
+          "title": "Interstellar",
+          "supporters": 4,
+          "avgRating": 4.75,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 10.25
+        },
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.833
+        }
+      ]
+    }
+  },
+  "U008": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 2,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 2,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 2,
+          "avgRating": 5.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 2,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.5
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        }
+      ]
+    }
+  },
+  "U009": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 2,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 2,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 2,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 8.167
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 7.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 2,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 8.5
+        },
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 8.167
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 2,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.5
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 2,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        }
+      ]
+    }
+  },
+  "U010": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 5,
+          "avgRating": 4.8
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M024",
+          "title": "The Revenant",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 2,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 5,
+          "avgRating": 4.8
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M024",
+          "title": "The Revenant",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 2,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 5,
+          "avgRating": 4.8,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 10.8
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 5.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.0
+        },
+        {
+          "movieId": "M024",
+          "title": "The Revenant",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 2,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 5,
+          "avgRating": 4.8,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 10.8
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 5.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.0
+        },
+        {
+          "movieId": "M024",
+          "title": "The Revenant",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 2,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        }
+      ]
+    }
+  },
+  "U011": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M019",
+          "title": "Dune",
+          "supporters": 5,
+          "avgRating": 4.6
+        },
+        {
+          "movieId": "M007",
+          "title": "The Dark Knight",
+          "supporters": 4,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 3,
+          "avgRating": 4.33
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M019",
+          "title": "Dune",
+          "supporters": 4,
+          "avgRating": 4.75
+        },
+        {
+          "movieId": "M007",
+          "title": "The Dark Knight",
+          "supporters": 3,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 2,
+          "avgRating": 4.0
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M019",
+          "title": "Dune",
+          "supporters": 5,
+          "avgRating": 4.6,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 1,
+          "finalScore": 11.6
+        },
+        {
+          "movieId": "M007",
+          "title": "The Dark Knight",
+          "supporters": 4,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 10.5
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.333
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M019",
+          "title": "Dune",
+          "supporters": 4,
+          "avgRating": 4.75,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 1,
+          "finalScore": 10.75
+        },
+        {
+          "movieId": "M007",
+          "title": "The Dark Knight",
+          "supporters": 3,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 9.5
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 2,
+          "avgRating": 4.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        }
+      ]
+    }
+  },
+  "U012": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 4,
+          "avgRating": 4.75
+        },
+        {
+          "movieId": "M008",
+          "title": "Spirited Away",
+          "supporters": 4,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 2,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 2,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M008",
+          "title": "Spirited Away",
+          "supporters": 2,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 4,
+          "avgRating": 4.75,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 9.75
+        },
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.667
+        },
+        {
+          "movieId": "M008",
+          "title": "Spirited Away",
+          "supporters": 4,
+          "avgRating": 4.5,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 8.5
+        },
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.833
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 2,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.5
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 2,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M022",
+          "title": "Portrait of a Lady on Fire",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.333
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 8.167
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 8.167
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.833
+        },
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M008",
+          "title": "Spirited Away",
+          "supporters": 2,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        }
+      ]
+    }
+  },
+  "U013": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M001",
+          "title": "The Matrix",
+          "supporters": 6,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M007",
+          "title": "The Dark Knight",
+          "supporters": 4,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 3,
+          "avgRating": 4.33
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M001",
+          "title": "The Matrix",
+          "supporters": 6,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M007",
+          "title": "The Dark Knight",
+          "supporters": 4,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 3,
+          "avgRating": 4.33
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M001",
+          "title": "The Matrix",
+          "supporters": 6,
+          "avgRating": 4.67,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 11.667
+        },
+        {
+          "movieId": "M007",
+          "title": "The Dark Knight",
+          "supporters": 4,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 10.5
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.333
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M001",
+          "title": "The Matrix",
+          "supporters": 6,
+          "avgRating": 4.67,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 11.667
+        },
+        {
+          "movieId": "M007",
+          "title": "The Dark Knight",
+          "supporters": 4,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 10.5
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.333
+        }
+      ]
+    }
+  },
+  "U014": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        }
+      ]
+    }
+  },
+  "U015": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 4,
+          "avgRating": 4.25
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 2,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 2,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 4,
+          "avgRating": 4.25,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 9.25
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 7.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.333
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 2,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.5
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 7.5
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 2,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        }
+      ]
+    }
+  },
+  "U016": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M025",
+          "title": "Blade Runner 2049",
+          "supporters": 4,
+          "avgRating": 4.75
+        },
+        {
+          "movieId": "M005",
+          "title": "Interstellar",
+          "supporters": 4,
+          "avgRating": 4.75
+        },
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 3,
+          "avgRating": 4.33
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M025",
+          "title": "Blade Runner 2049",
+          "supporters": 2,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M005",
+          "title": "Interstellar",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M025",
+          "title": "Blade Runner 2049",
+          "supporters": 4,
+          "avgRating": 4.75,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 10.25
+        },
+        {
+          "movieId": "M005",
+          "title": "Interstellar",
+          "supporters": 4,
+          "avgRating": 4.75,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 10.25
+        },
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.833
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M025",
+          "title": "Blade Runner 2049",
+          "supporters": 2,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 8.5
+        },
+        {
+          "movieId": "M005",
+          "title": "Interstellar",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 8.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        }
+      ]
+    }
+  },
+  "U017": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M019",
+          "title": "Dune",
+          "supporters": 4,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M007",
+          "title": "The Dark Knight",
+          "supporters": 3,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 2,
+          "avgRating": 4.5
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M019",
+          "title": "Dune",
+          "supporters": 4,
+          "avgRating": 4.75
+        },
+        {
+          "movieId": "M007",
+          "title": "The Dark Knight",
+          "supporters": 3,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 2,
+          "avgRating": 4.0
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M019",
+          "title": "Dune",
+          "supporters": 4,
+          "avgRating": 4.5,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 1,
+          "finalScore": 10.5
+        },
+        {
+          "movieId": "M007",
+          "title": "The Dark Knight",
+          "supporters": 3,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 9.5
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 7.5
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M019",
+          "title": "Dune",
+          "supporters": 4,
+          "avgRating": 4.75,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 1,
+          "finalScore": 10.75
+        },
+        {
+          "movieId": "M007",
+          "title": "The Dark Knight",
+          "supporters": 3,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 9.5
+        },
+        {
+          "movieId": "M011",
+          "title": "Mad Max: Fury Road",
+          "supporters": 2,
+          "avgRating": 4.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        }
+      ]
+    }
+  },
+  "U018": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 2,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 2,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M016",
+          "title": "Oldboy",
+          "supporters": 2,
+          "avgRating": 5.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M021",
+          "title": "Knives Out",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M004",
+          "title": "Parasite",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M013",
+          "title": "The Social Network",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        },
+        {
+          "movieId": "M010",
+          "title": "Get Out",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 5.0
+        }
+      ]
+    }
+  },
+  "U019": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M008",
+          "title": "Spirited Away",
+          "supporters": 4,
+          "avgRating": 4.5
+        },
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 3,
+          "avgRating": 4.33
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 2,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 1,
+          "avgRating": 5.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 3,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 2,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 2,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M008",
+          "title": "Spirited Away",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0
+        },
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 1,
+          "avgRating": 4.0
+        },
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 1,
+          "avgRating": 4.0
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.667
+        },
+        {
+          "movieId": "M008",
+          "title": "Spirited Away",
+          "supporters": 4,
+          "avgRating": 4.5,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 8.5
+        },
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 8.333
+        },
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 8.167
+        },
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.833
+        },
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 2,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M006",
+          "title": "Pulp Fiction",
+          "supporters": 3,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.5
+        },
+        {
+          "movieId": "M003",
+          "title": "The Godfather",
+          "supporters": 2,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.5
+        },
+        {
+          "movieId": "M017",
+          "title": "The Grand Budapest Hotel",
+          "supporters": 2,
+          "avgRating": 4.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        },
+        {
+          "movieId": "M014",
+          "title": "12 Angry Men",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M015",
+          "title": "Everything Everywhere All at Once",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M020",
+          "title": "Roma",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M009",
+          "title": "Whiplash",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 6.5
+        },
+        {
+          "movieId": "M008",
+          "title": "Spirited Away",
+          "supporters": 1,
+          "avgRating": 5.0,
+          "genreOverlapCount": 0,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M018",
+          "title": "La La Land",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 2,
+          "directorOverlapCount": 0,
+          "finalScore": 6.0
+        },
+        {
+          "movieId": "M023",
+          "title": "Moonlight",
+          "supporters": 1,
+          "avgRating": 4.0,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 5.5
+        }
+      ]
+    }
+  },
+  "U020": {
+    "collaborative": {
+      "similarTaste": [
+        {
+          "movieId": "M025",
+          "title": "Blade Runner 2049",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M005",
+          "title": "Interstellar",
+          "supporters": 3,
+          "avgRating": 4.67
+        },
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 2,
+          "avgRating": 4.5
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M025",
+          "title": "Blade Runner 2049",
+          "supporters": 4,
+          "avgRating": 4.75
+        },
+        {
+          "movieId": "M005",
+          "title": "Interstellar",
+          "supporters": 4,
+          "avgRating": 4.75
+        },
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 3,
+          "avgRating": 4.33
+        }
+      ]
+    },
+    "hybrid": {
+      "similarTaste": [
+        {
+          "movieId": "M025",
+          "title": "Blade Runner 2049",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 9.167
+        },
+        {
+          "movieId": "M005",
+          "title": "Interstellar",
+          "supporters": 3,
+          "avgRating": 4.67,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 9.167
+        },
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 2,
+          "avgRating": 4.5,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.0
+        }
+      ],
+      "knn": [
+        {
+          "movieId": "M025",
+          "title": "Blade Runner 2049",
+          "supporters": 4,
+          "avgRating": 4.75,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 10.25
+        },
+        {
+          "movieId": "M005",
+          "title": "Interstellar",
+          "supporters": 4,
+          "avgRating": 4.75,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 1,
+          "finalScore": 10.25
+        },
+        {
+          "movieId": "M012",
+          "title": "Her",
+          "supporters": 3,
+          "avgRating": 4.33,
+          "genreOverlapCount": 1,
+          "directorOverlapCount": 0,
+          "finalScore": 7.833
+        }
+      ]
+    }
+  }
+}

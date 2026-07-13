@@ -1,0 +1,112 @@
+{
+  "nodeCounts": [
+    {
+      "label": "Case",
+      "count": 4307
+    },
+    {
+      "label": "Reaction",
+      "count": 2701
+    },
+    {
+      "label": "Drug",
+      "count": 2500
+    },
+    {
+      "label": "Therapy",
+      "count": 1721
+    },
+    {
+      "label": "Manufacturer",
+      "count": 136
+    },
+    {
+      "label": "Outcome",
+      "count": 6
+    },
+    {
+      "label": "AgeGroup",
+      "count": 5
+    },
+    {
+      "label": "ReportSource",
+      "count": 5
+    }
+  ],
+  "relCounts": [
+    {
+      "type": "HAS_REACTION",
+      "count": 21069
+    },
+    {
+      "type": "IS_CONCOMITANT",
+      "count": 8393
+    },
+    {
+      "type": "PRESCRIBED",
+      "count": 5441
+    },
+    {
+      "type": "RESULTED_IN",
+      "count": 4461
+    },
+    {
+      "type": "FALLS_UNDER",
+      "count": 4307
+    },
+    {
+      "type": "REGISTERED",
+      "count": 4307
+    },
+    {
+      "type": "REPORTED_BY",
+      "count": 4307
+    },
+    {
+      "type": "IS_PRIMARY_SUSPECT",
+      "count": 3830
+    },
+    {
+      "type": "IS_SECONDARY_SUSPECT",
+      "count": 3616
+    },
+    {
+      "type": "RECEIVED",
+      "count": 1721
+    },
+    {
+      "type": "IS_INTERACTING",
+      "count": 1
+    }
+  ],
+  "highlights": [
+    {
+      "label": "Nodes",
+      "value": 11381
+    },
+    {
+      "label": "Relationships",
+      "value": 61453
+    },
+    {
+      "label": "Cases",
+      "value": 4307
+    },
+    {
+      "label": "Distinct reactions",
+      "value": 2701
+    },
+    {
+      "label": "Drugs",
+      "value": 2500
+    },
+    {
+      "label": "Top severe drug (REVLIMID)",
+      "value": 218
+    },
+    {
+      "label": "Top manufacturer (PFIZER)",
+      "value": 617
+    }
+  ]
+}

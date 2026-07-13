@@ -1,0 +1,1198 @@
+{
+  "nodes": [
+    {
+      "id": "Case:191513176",
+      "caption": "Case 191513176 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 13
+    },
+    {
+      "id": "Drug:Semaglutide 14 mg",
+      "caption": "Semaglutide 14 mg",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Acute kidney injury",
+      "caption": "Acute kidney injury",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cholelithiasis",
+      "caption": "Cholelithiasis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cholecystitis acute",
+      "caption": "Cholecystitis acute",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Hospitalization - Initial or Prolonged",
+      "caption": "Hospitalization - Initial or Prolonged",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Outcome:Other Serious (Important Medical Event)",
+      "caption": "Other Serious (Important Medical Event)",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Elderly",
+      "caption": "Elderly",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:192027592",
+      "caption": "Case 192027592 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 13
+    },
+    {
+      "id": "Drug:MEKINIST",
+      "caption": "MEKINIST",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TAFINLAR",
+      "caption": "TAFINLAR",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Thyroid cancer recurrent",
+      "caption": "Thyroid cancer recurrent",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Weight decreased",
+      "caption": "Weight decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Decreased appetite",
+      "caption": "Decreased appetite",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Sepsis",
+      "caption": "Sepsis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Thrombocytopenia",
+      "caption": "Thrombocytopenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Death",
+      "caption": "Death",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:192704373",
+      "caption": "Case 192704373 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 13
+    },
+    {
+      "id": "Drug:UPLIZNA",
+      "caption": "UPLIZNA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Blindness",
+      "caption": "Blindness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Neuromyelitis optica spectrum disorder",
+      "caption": "Neuromyelitis optica spectrum disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Eye pain",
+      "caption": "Eye pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:193097986",
+      "caption": "Case 193097986 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 13
+    },
+    {
+      "id": "Drug:VIT D",
+      "caption": "VIT D",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:SERTRALINE",
+      "caption": "SERTRALINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:AMLODIPINE",
+      "caption": "AMLODIPINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Vitreous floaters",
+      "caption": "Vitreous floaters",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Detachment of retinal pigment epithelium",
+      "caption": "Detachment of retinal pigment epithelium",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Chorioretinitis",
+      "caption": "Chorioretinitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Eye inflammation",
+      "caption": "Eye inflammation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Macular oedema",
+      "caption": "Macular oedema",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Visual impairment",
+      "caption": "Visual impairment",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Vitreous opacities",
+      "caption": "Vitreous opacities",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Retinal cyst",
+      "caption": "Retinal cyst",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Vision blurred",
+      "caption": "Vision blurred",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Uveitis",
+      "caption": "Uveitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Intraocular pressure increased",
+      "caption": "Intraocular pressure increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Eye irritation",
+      "caption": "Eye irritation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Disability",
+      "caption": "Disability",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:194219465",
+      "caption": "Case 194219465 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 13
+    },
+    {
+      "id": "Drug:ALBUTEROL SULFATE AND IPRATROPIUM BROMIDE",
+      "caption": "ALBUTEROL SULFATE AND IPRATROPIUM BROMIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LEVOTHYROXINE SODIUM",
+      "caption": "LEVOTHYROXINE SODIUM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:194814511",
+      "caption": "Case 194814511 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 13
+    },
+    {
+      "id": "Drug:AVASTIN",
+      "caption": "AVASTIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TECENTRIQ",
+      "caption": "TECENTRIQ",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Type 1 diabetes mellitus",
+      "caption": "Type 1 diabetes mellitus",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Malaise",
+      "caption": "Malaise",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Diarrhoea",
+      "caption": "Diarrhoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194957431",
+      "caption": "Case 194957431 (F)",
+      "labels": [
+        "Case"
+      ],
+      "community": 13
+    },
+    {
+      "id": "Reaction:Erythema",
+      "caption": "Erythema",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Retinal vein occlusion",
+      "caption": "Retinal vein occlusion",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fatigue",
+      "caption": "Fatigue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Serous retinopathy",
+      "caption": "Serous retinopathy",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Metastatic malignant melanoma",
+      "caption": "Metastatic malignant melanoma",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pyrexia",
+      "caption": "Pyrexia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Malignant neoplasm progression",
+      "caption": "Malignant neoplasm progression",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adult",
+      "caption": "Adult",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:159314076",
+      "caption": "Case 159314076 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 13
+    },
+    {
+      "id": "Drug:LUCENTIS",
+      "caption": "LUCENTIS",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Infection",
+      "caption": "Infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Intentional product use issue",
+      "caption": "Intentional product use issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Suspected transmission of an infectious agent via product",
+      "caption": "Suspected transmission of an infectious agent via product",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Off label use",
+      "caption": "Off label use",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Ocular hyperaemia",
+      "caption": "Ocular hyperaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:174213092",
+      "caption": "Case 174213092 (M)",
+      "labels": [
+        "Case"
+      ],
+      "community": 13
+    },
+    {
+      "id": "Drug:FOLIC ACID",
+      "caption": "FOLIC ACID",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:JADENU",
+      "caption": "JADENU",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Condition aggravated",
+      "caption": "Condition aggravated",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Iron overload",
+      "caption": "Iron overload",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Nasopharyngitis",
+      "caption": "Nasopharyngitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal pain",
+      "caption": "Abdominal pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dermatitis contact",
+      "caption": "Dermatitis contact",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adolescent",
+      "caption": "Adolescent",
+      "labels": [
+        "AgeGroup"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "CD:1",
+      "from": "Case:191513176",
+      "to": "Drug:Semaglutide 14 mg",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:2",
+      "from": "Case:191513176",
+      "to": "Drug:Semaglutide 14 mg",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:3",
+      "from": "Case:191513176",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:4",
+      "from": "Case:191513176",
+      "to": "Reaction:Cholelithiasis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:5",
+      "from": "Case:191513176",
+      "to": "Reaction:Cholecystitis acute",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:6",
+      "from": "Case:191513176",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:7",
+      "from": "Case:191513176",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:8",
+      "from": "Case:191513176",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:9",
+      "from": "Case:192027592",
+      "to": "Drug:MEKINIST",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:10",
+      "from": "Case:192027592",
+      "to": "Drug:TAFINLAR",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:11",
+      "from": "Case:192027592",
+      "to": "Reaction:Thyroid cancer recurrent",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:12",
+      "from": "Case:192027592",
+      "to": "Reaction:Weight decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:13",
+      "from": "Case:192027592",
+      "to": "Reaction:Acute kidney injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:14",
+      "from": "Case:192027592",
+      "to": "Reaction:Decreased appetite",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:15",
+      "from": "Case:192027592",
+      "to": "Reaction:Cholecystitis acute",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:16",
+      "from": "Case:192027592",
+      "to": "Reaction:Sepsis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:17",
+      "from": "Case:192027592",
+      "to": "Reaction:Thrombocytopenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:18",
+      "from": "Case:192027592",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:19",
+      "from": "Case:192027592",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:20",
+      "from": "Case:192027592",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:21",
+      "from": "Case:192027592",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:22",
+      "from": "Case:192704373",
+      "to": "Drug:UPLIZNA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:23",
+      "from": "Case:192704373",
+      "to": "Drug:UPLIZNA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:24",
+      "from": "Case:192704373",
+      "to": "Reaction:Blindness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:25",
+      "from": "Case:192704373",
+      "to": "Reaction:Neuromyelitis optica spectrum disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:26",
+      "from": "Case:192704373",
+      "to": "Reaction:Eye pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:27",
+      "from": "Case:192704373",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:28",
+      "from": "Case:192704373",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:29",
+      "from": "Case:193097986",
+      "to": "Drug:VIT D",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:30",
+      "from": "Case:193097986",
+      "to": "Drug:SERTRALINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:31",
+      "from": "Case:193097986",
+      "to": "Drug:AMLODIPINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:32",
+      "from": "Case:193097986",
+      "to": "Reaction:Vitreous floaters",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:33",
+      "from": "Case:193097986",
+      "to": "Reaction:Detachment of retinal pigment epithelium",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:34",
+      "from": "Case:193097986",
+      "to": "Reaction:Chorioretinitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:35",
+      "from": "Case:193097986",
+      "to": "Reaction:Blindness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:36",
+      "from": "Case:193097986",
+      "to": "Reaction:Eye inflammation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:37",
+      "from": "Case:193097986",
+      "to": "Reaction:Macular oedema",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:38",
+      "from": "Case:193097986",
+      "to": "Reaction:Visual impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:39",
+      "from": "Case:193097986",
+      "to": "Reaction:Vitreous opacities",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:40",
+      "from": "Case:193097986",
+      "to": "Reaction:Retinal cyst",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:41",
+      "from": "Case:193097986",
+      "to": "Reaction:Vision blurred",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:42",
+      "from": "Case:193097986",
+      "to": "Reaction:Uveitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:43",
+      "from": "Case:193097986",
+      "to": "Reaction:Intraocular pressure increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:44",
+      "from": "Case:193097986",
+      "to": "Reaction:Eye irritation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:45",
+      "from": "Case:193097986",
+      "to": "Outcome:Disability",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:46",
+      "from": "Case:193097986",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:47",
+      "from": "Case:193097986",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:48",
+      "from": "Case:194219465",
+      "to": "Drug:SERTRALINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:49",
+      "from": "Case:194219465",
+      "to": "Drug:ALBUTEROL SULFATE AND IPRATROPIUM BROMIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:50",
+      "from": "Case:194219465",
+      "to": "Drug:LEVOTHYROXINE SODIUM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:51",
+      "from": "Case:194219465",
+      "to": "Drug:AMLODIPINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:52",
+      "from": "Case:194219465",
+      "to": "Reaction:Blindness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:53",
+      "from": "Case:194219465",
+      "to": "Reaction:Intraocular pressure increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:54",
+      "from": "Case:194219465",
+      "to": "Reaction:Detachment of retinal pigment epithelium",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:55",
+      "from": "Case:194219465",
+      "to": "Reaction:Retinal cyst",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:56",
+      "from": "Case:194219465",
+      "to": "Reaction:Uveitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:57",
+      "from": "Case:194219465",
+      "to": "Reaction:Eye inflammation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:58",
+      "from": "Case:194219465",
+      "to": "Reaction:Chorioretinitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:59",
+      "from": "Case:194219465",
+      "to": "Reaction:Vision blurred",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:60",
+      "from": "Case:194219465",
+      "to": "Reaction:Eye irritation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:61",
+      "from": "Case:194219465",
+      "to": "Reaction:Vitreous floaters",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:62",
+      "from": "Case:194219465",
+      "to": "Reaction:Vitreous opacities",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:63",
+      "from": "Case:194219465",
+      "to": "Reaction:Visual impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:64",
+      "from": "Case:194219465",
+      "to": "Reaction:Macular oedema",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:65",
+      "from": "Case:194219465",
+      "to": "Outcome:Disability",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:66",
+      "from": "Case:194219465",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:67",
+      "from": "Case:194219465",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:68",
+      "from": "Case:194814511",
+      "to": "Drug:AVASTIN",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:69",
+      "from": "Case:194814511",
+      "to": "Drug:TECENTRIQ",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:70",
+      "from": "Case:194814511",
+      "to": "Drug:AVASTIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:71",
+      "from": "Case:194814511",
+      "to": "Reaction:Type 1 diabetes mellitus",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:72",
+      "from": "Case:194814511",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:73",
+      "from": "Case:194814511",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:74",
+      "from": "Case:194814511",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:75",
+      "from": "Case:194814511",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:76",
+      "from": "Case:194957431",
+      "to": "Drug:TAFINLAR",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:77",
+      "from": "Case:194957431",
+      "to": "Drug:MEKINIST",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:78",
+      "from": "Case:194957431",
+      "to": "Reaction:Erythema",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:79",
+      "from": "Case:194957431",
+      "to": "Reaction:Uveitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:80",
+      "from": "Case:194957431",
+      "to": "Reaction:Retinal vein occlusion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:81",
+      "from": "Case:194957431",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:82",
+      "from": "Case:194957431",
+      "to": "Reaction:Serous retinopathy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:83",
+      "from": "Case:194957431",
+      "to": "Reaction:Metastatic malignant melanoma",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:84",
+      "from": "Case:194957431",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:85",
+      "from": "Case:194957431",
+      "to": "Reaction:Malignant neoplasm progression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:86",
+      "from": "Case:194957431",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:87",
+      "from": "Case:194957431",
+      "to": "Reaction:Eye irritation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:88",
+      "from": "Case:194957431",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:89",
+      "from": "Case:194957431",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:90",
+      "from": "Case:159314076",
+      "to": "Drug:AVASTIN",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:91",
+      "from": "Case:159314076",
+      "to": "Drug:LUCENTIS",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:92",
+      "from": "Case:159314076",
+      "to": "Reaction:Blindness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:93",
+      "from": "Case:159314076",
+      "to": "Reaction:Infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:94",
+      "from": "Case:159314076",
+      "to": "Reaction:Intentional product use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:95",
+      "from": "Case:159314076",
+      "to": "Reaction:Suspected transmission of an infectious agent via product",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:96",
+      "from": "Case:159314076",
+      "to": "Reaction:Off label use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:97",
+      "from": "Case:159314076",
+      "to": "Reaction:Ocular hyperaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:98",
+      "from": "Case:159314076",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:99",
+      "from": "Case:159314076",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "CD:100",
+      "from": "Case:174213092",
+      "to": "Drug:FOLIC ACID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:101",
+      "from": "Case:174213092",
+      "to": "Drug:JADENU",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:102",
+      "from": "Case:174213092",
+      "to": "Drug:JADENU",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:103",
+      "from": "Case:174213092",
+      "to": "Reaction:Condition aggravated",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:104",
+      "from": "Case:174213092",
+      "to": "Reaction:Iron overload",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:105",
+      "from": "Case:174213092",
+      "to": "Reaction:Nasopharyngitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:106",
+      "from": "Case:174213092",
+      "to": "Reaction:Cholelithiasis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:107",
+      "from": "Case:174213092",
+      "to": "Reaction:Cholecystitis acute",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:108",
+      "from": "Case:174213092",
+      "to": "Reaction:Abdominal pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:109",
+      "from": "Case:174213092",
+      "to": "Reaction:Dermatitis contact",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:110",
+      "from": "Case:174213092",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:111",
+      "from": "Case:174213092",
+      "to": "AgeGroup:Adolescent",
+      "type": "FALLS_UNDER"
+    }
+  ],
+  "meta": {
+    "caseCount": 9,
+    "nodeCount": 73,
+    "relCount": 111,
+    "capped": false
+  }
+}

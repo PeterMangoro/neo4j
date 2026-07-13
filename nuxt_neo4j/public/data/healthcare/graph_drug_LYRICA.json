@@ -1,0 +1,4428 @@
+{
+  "nodes": [
+    {
+      "id": "Case:103011729",
+      "caption": "Case 103011729 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:LYRICA",
+      "caption": "LYRICA",
+      "labels": [
+        "Drug"
+      ],
+      "score": 1.0
+    },
+    {
+      "id": "Reaction:Fall",
+      "caption": "Fall",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hip fracture",
+      "caption": "Hip fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pain",
+      "caption": "Pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Other Serious (Important Medical Event)",
+      "caption": "Other Serious (Important Medical Event)",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adult",
+      "caption": "Adult",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Manufacturer:PFIZER",
+      "caption": "PFIZER",
+      "labels": [
+        "Manufacturer"
+      ]
+    },
+    {
+      "id": "Case:104456557",
+      "caption": "Case 104456557 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:CLONIDINE",
+      "caption": "CLONIDINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:RANITIDINE",
+      "caption": "RANITIDINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CARVEDILOL",
+      "caption": "CARVEDILOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:METOPROLOL",
+      "caption": "METOPROLOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BABY ASPIRIN",
+      "caption": "BABY ASPIRIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Restlessness",
+      "caption": "Restlessness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Drug ineffective",
+      "caption": "Drug ineffective",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Memory impairment",
+      "caption": "Memory impairment",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Insomnia",
+      "caption": "Insomnia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:111966937",
+      "caption": "Case 111966937 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:BENAZEPRIL HYDROCHLORIDE",
+      "caption": "BENAZEPRIL HYDROCHLORIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PLAVIX",
+      "caption": "PLAVIX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CETIRIZINE",
+      "caption": "CETIRIZINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CLOPIDOGREL",
+      "caption": "CLOPIDOGREL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CIPRO",
+      "caption": "CIPRO",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:AMLODIPINE BESYLATE",
+      "caption": "AMLODIPINE BESYLATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BENAZEPRIL",
+      "caption": "BENAZEPRIL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:AMLODIPINE",
+      "caption": "AMLODIPINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MYRBETRIQ",
+      "caption": "MYRBETRIQ",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PHENERGAN",
+      "caption": "PHENERGAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN CECHINACEA",
+      "caption": "VITAMIN CECHINACEA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Eye disorder",
+      "caption": "Eye disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Eye swelling",
+      "caption": "Eye swelling",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Herpes ophthalmic",
+      "caption": "Herpes ophthalmic",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Visual impairment",
+      "caption": "Visual impairment",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Elderly",
+      "caption": "Elderly",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:120780724",
+      "caption": "Case 120780724 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Condition aggravated",
+      "caption": "Condition aggravated",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Irritability",
+      "caption": "Irritability",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Neuropathy peripheral",
+      "caption": "Neuropathy peripheral",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Withdrawal syndrome",
+      "caption": "Withdrawal syndrome",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Drug dependence",
+      "caption": "Drug dependence",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:120896799",
+      "caption": "Case 120896799 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Laryngitis",
+      "caption": "Laryngitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Mental impairment",
+      "caption": "Mental impairment",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:122767287",
+      "caption": "Case 122767287 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:PROCARDIA",
+      "caption": "PROCARDIA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Illness",
+      "caption": "Illness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Productive cough",
+      "caption": "Productive cough",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Nasopharyngitis",
+      "caption": "Nasopharyngitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cough",
+      "caption": "Cough",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:125807809",
+      "caption": "Case 125807809 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:ENALAPRIL",
+      "caption": "ENALAPRIL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Feeling abnormal",
+      "caption": "Feeling abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Drug tolerance",
+      "caption": "Drug tolerance",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Arthralgia",
+      "caption": "Arthralgia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypoaesthesia",
+      "caption": "Hypoaesthesia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cerebrovascular accident",
+      "caption": "Cerebrovascular accident",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Musculoskeletal stiffness",
+      "caption": "Musculoskeletal stiffness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:125975964",
+      "caption": "Case 125975964 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal pain upper",
+      "caption": "Abdominal pain upper",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Diarrhoea",
+      "caption": "Diarrhoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hypoacusis",
+      "caption": "Hypoacusis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Eye pain",
+      "caption": "Eye pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Age-related macular degeneration",
+      "caption": "Age-related macular degeneration",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:128663676",
+      "caption": "Case 128663676 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:CELEBREX",
+      "caption": "CELEBREX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Prescribed overdose",
+      "caption": "Prescribed overdose",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Intentional product misuse",
+      "caption": "Intentional product misuse",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Intentional product use issue",
+      "caption": "Intentional product use issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:128863036",
+      "caption": "Case 128863036 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Loss of personal independence in daily activities",
+      "caption": "Loss of personal independence in daily activities",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Peroneal nerve palsy",
+      "caption": "Peroneal nerve palsy",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gout",
+      "caption": "Gout",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:131141884",
+      "caption": "Case 131141884 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:MELOXICAM",
+      "caption": "MELOXICAM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TIZANIDINE",
+      "caption": "TIZANIDINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TRAMADOL",
+      "caption": "TRAMADOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Localised infection",
+      "caption": "Localised infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Hospitalization - Initial or Prolonged",
+      "caption": "Hospitalization - Initial or Prolonged",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:134922869",
+      "caption": "Case 134922869 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Somnolence",
+      "caption": "Somnolence",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Off label use",
+      "caption": "Off label use",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Therapeutic product effect incomplete",
+      "caption": "Therapeutic product effect incomplete",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:135529198",
+      "caption": "Case 135529198 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:TIZANIDINE HYDROCHLORIDE",
+      "caption": "TIZANIDINE HYDROCHLORIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PREDNISONE",
+      "caption": "PREDNISONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PROVIGIL",
+      "caption": "PROVIGIL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ZYRTEC",
+      "caption": "ZYRTEC",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MIRALAX",
+      "caption": "MIRALAX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ATARAX",
+      "caption": "ATARAX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BENADRYL",
+      "caption": "BENADRYL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MEDROL",
+      "caption": "MEDROL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:HYDROMORPHONE",
+      "caption": "HYDROMORPHONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:POLYETHYLENE GLYCOL 3350",
+      "caption": "POLYETHYLENE GLYCOL 3350",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MORPHINE SULFATE",
+      "caption": "MORPHINE SULFATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ISOSORBIDE DINITRATE",
+      "caption": "ISOSORBIDE DINITRATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:AMITRIPTYLINE HCL",
+      "caption": "AMITRIPTYLINE HCL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MOBIC",
+      "caption": "MOBIC",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PERICOLACE",
+      "caption": "PERICOLACE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Paraesthesia",
+      "caption": "Paraesthesia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Drug withdrawal syndrome",
+      "caption": "Drug withdrawal syndrome",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Radicular pain",
+      "caption": "Radicular pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Back pain",
+      "caption": "Back pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Neck pain",
+      "caption": "Neck pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Feeding disorder",
+      "caption": "Feeding disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Muscular weakness",
+      "caption": "Muscular weakness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dizziness",
+      "caption": "Dizziness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:135986595",
+      "caption": "Case 135986595 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:PLAQUENIL",
+      "caption": "PLAQUENIL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:OTEZLA",
+      "caption": "OTEZLA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LIPITOR",
+      "caption": "LIPITOR",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PERCOCET",
+      "caption": "PERCOCET",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:METOPROLOL TARTRATE",
+      "caption": "METOPROLOL TARTRATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Rash",
+      "caption": "Rash",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Feeling jittery",
+      "caption": "Feeling jittery",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Psychomotor hyperactivity",
+      "caption": "Psychomotor hyperactivity",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Sensitivity to weather change",
+      "caption": "Sensitivity to weather change",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Depressed mood",
+      "caption": "Depressed mood",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Abnormal behaviour",
+      "caption": "Abnormal behaviour",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Lower limb fracture",
+      "caption": "Lower limb fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Weight increased",
+      "caption": "Weight increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Nervousness",
+      "caption": "Nervousness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:142306296",
+      "caption": "Case 142306296 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:SYMBICORT",
+      "caption": "SYMBICORT",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CENTRUM SILVER WOMEN 50+",
+      "caption": "CENTRUM SILVER WOMEN 50+",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:DULOXETINE",
+      "caption": "DULOXETINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:FUROSEMIDE",
+      "caption": "FUROSEMIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LOSARTAN",
+      "caption": "LOSARTAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PROAIR RESPICLICK",
+      "caption": "PROAIR RESPICLICK",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CITALOPRAM",
+      "caption": "CITALOPRAM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Suicidal ideation",
+      "caption": "Suicidal ideation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Limb injury",
+      "caption": "Limb injury",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Road traffic accident",
+      "caption": "Road traffic accident",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:145978037",
+      "caption": "Case 145978037 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:MS CONTIN",
+      "caption": "MS CONTIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MORPHINE SULPHATE",
+      "caption": "MORPHINE SULPHATE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Dysphagia",
+      "caption": "Dysphagia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dry mouth",
+      "caption": "Dry mouth",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Upper limb fracture",
+      "caption": "Upper limb fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Sedation",
+      "caption": "Sedation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:151245827",
+      "caption": "Case 151245827 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Gait inability",
+      "caption": "Gait inability",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pain in extremity",
+      "caption": "Pain in extremity",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Death",
+      "caption": "Death",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product dose omission issue",
+      "caption": "Product dose omission issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Death",
+      "caption": "Death",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:151642299",
+      "caption": "Case 151642299 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:TRAZODONE",
+      "caption": "TRAZODONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN D3",
+      "caption": "VITAMIN D3",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:OMEPRAZOLE",
+      "caption": "OMEPRAZOLE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CETIRIZINE HCL",
+      "caption": "CETIRIZINE HCL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ALBUTEROL",
+      "caption": "ALBUTEROL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN B12",
+      "caption": "VITAMIN B12",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Sinusitis",
+      "caption": "Sinusitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Throat irritation",
+      "caption": "Throat irritation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Drug hypersensitivity",
+      "caption": "Drug hypersensitivity",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Viral infection",
+      "caption": "Viral infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Headache",
+      "caption": "Headache",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:153736763",
+      "caption": "Case 153736763 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:ZOFRAN",
+      "caption": "ZOFRAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:CLONAZEPAM",
+      "caption": "CLONAZEPAM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Impaired quality of life",
+      "caption": "Impaired quality of life",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Drug ineffective for unapproved indication",
+      "caption": "Drug ineffective for unapproved indication",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:154391227",
+      "caption": "Case 154391227 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Anxiety",
+      "caption": "Anxiety",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Concussion",
+      "caption": "Concussion",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Contusion",
+      "caption": "Contusion",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Clumsiness",
+      "caption": "Clumsiness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Head injury",
+      "caption": "Head injury",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Head discomfort",
+      "caption": "Head discomfort",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Muscle strain",
+      "caption": "Muscle strain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:156217637",
+      "caption": "Case 156217637 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:BYSTOLIC",
+      "caption": "BYSTOLIC",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ALPHAGAN P",
+      "caption": "ALPHAGAN P",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:TRAVATAN Z",
+      "caption": "TRAVATAN Z",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LEXAPRO",
+      "caption": "LEXAPRO",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:SENOKOT S",
+      "caption": "SENOKOT S",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MAGNESIUM OXIDE",
+      "caption": "MAGNESIUM OXIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:SINGULAIR",
+      "caption": "SINGULAIR",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:XANAX",
+      "caption": "XANAX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Case:158264325",
+      "caption": "Case 158264325 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:PF 06928316; PLACEBO",
+      "caption": "PF 06928316; PLACEBO",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:OXYCODONE",
+      "caption": "OXYCODONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Acute respiratory failure",
+      "caption": "Acute respiratory failure",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:159469338",
+      "caption": "Case 159469338 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:IRON",
+      "caption": "IRON",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:HYDROCODONE",
+      "caption": "HYDROCODONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ASPIRIN",
+      "caption": "ASPIRIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Dry skin",
+      "caption": "Dry skin",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:159525074",
+      "caption": "Case 159525074 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Hand fracture",
+      "caption": "Hand fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cystitis",
+      "caption": "Cystitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Expired product administered",
+      "caption": "Expired product administered",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dementia",
+      "caption": "Dementia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Body height decreased",
+      "caption": "Body height decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:160168858",
+      "caption": "Case 160168858 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Wrong strength",
+      "caption": "Wrong strength",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Amnesia",
+      "caption": "Amnesia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:160572234",
+      "caption": "Case 160572234 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Product dispensing error",
+      "caption": "Product dispensing error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:160573294",
+      "caption": "Case 160573294 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:160629086",
+      "caption": "Case 160629086 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Gait disturbance",
+      "caption": "Gait disturbance",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:161681478",
+      "caption": "Case 161681478 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Muscle spasms",
+      "caption": "Muscle spasms",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:162425638",
+      "caption": "Case 162425638 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:162660766",
+      "caption": "Case 162660766 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:162859972",
+      "caption": "Case 162859972 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:NITROSTAT",
+      "caption": "NITROSTAT",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Dyspnoea",
+      "caption": "Dyspnoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:162879889",
+      "caption": "Case 162879889 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Tremor",
+      "caption": "Tremor",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:162906862",
+      "caption": "Case 162906862 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:162974607",
+      "caption": "Case 162974607 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:163435888",
+      "caption": "Case 163435888 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Peripheral swelling",
+      "caption": "Peripheral swelling",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:163675569",
+      "caption": "Case 163675569 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:164734222",
+      "caption": "Case 164734222 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:165830836",
+      "caption": "Case 165830836 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:166734739",
+      "caption": "Case 166734739 (F)",
+      "labels": [
+        "Case"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "CD:1",
+      "from": "Case:103011729",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:2",
+      "from": "Case:103011729",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:3",
+      "from": "Case:103011729",
+      "to": "Reaction:Hip fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:4",
+      "from": "Case:103011729",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:5",
+      "from": "Case:103011729",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:6",
+      "from": "Case:103011729",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:7",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:103011729",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:8",
+      "from": "Case:104456557",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:9",
+      "from": "Case:104456557",
+      "to": "Drug:CLONIDINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:10",
+      "from": "Case:104456557",
+      "to": "Drug:RANITIDINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:11",
+      "from": "Case:104456557",
+      "to": "Drug:CARVEDILOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:12",
+      "from": "Case:104456557",
+      "to": "Drug:METOPROLOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:13",
+      "from": "Case:104456557",
+      "to": "Drug:BABY ASPIRIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:14",
+      "from": "Case:104456557",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:15",
+      "from": "Case:104456557",
+      "to": "Reaction:Restlessness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:16",
+      "from": "Case:104456557",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:17",
+      "from": "Case:104456557",
+      "to": "Reaction:Memory impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:18",
+      "from": "Case:104456557",
+      "to": "Reaction:Insomnia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:19",
+      "from": "Case:104456557",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:20",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:104456557",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:21",
+      "from": "Case:111966937",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:22",
+      "from": "Case:111966937",
+      "to": "Drug:BENAZEPRIL HYDROCHLORIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:23",
+      "from": "Case:111966937",
+      "to": "Drug:PLAVIX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:24",
+      "from": "Case:111966937",
+      "to": "Drug:CETIRIZINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:25",
+      "from": "Case:111966937",
+      "to": "Drug:CLOPIDOGREL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:26",
+      "from": "Case:111966937",
+      "to": "Drug:CIPRO",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:27",
+      "from": "Case:111966937",
+      "to": "Drug:AMLODIPINE BESYLATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:28",
+      "from": "Case:111966937",
+      "to": "Drug:BENAZEPRIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:29",
+      "from": "Case:111966937",
+      "to": "Drug:AMLODIPINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:30",
+      "from": "Case:111966937",
+      "to": "Drug:MYRBETRIQ",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:31",
+      "from": "Case:111966937",
+      "to": "Drug:PHENERGAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:32",
+      "from": "Case:111966937",
+      "to": "Drug:VITAMIN CECHINACEA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:33",
+      "from": "Case:111966937",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:34",
+      "from": "Case:111966937",
+      "to": "Reaction:Eye disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:35",
+      "from": "Case:111966937",
+      "to": "Reaction:Eye swelling",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:36",
+      "from": "Case:111966937",
+      "to": "Reaction:Herpes ophthalmic",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:37",
+      "from": "Case:111966937",
+      "to": "Reaction:Visual impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:38",
+      "from": "Case:111966937",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:39",
+      "from": "Case:111966937",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:40",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:111966937",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:41",
+      "from": "Case:120780724",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:42",
+      "from": "Case:120780724",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:43",
+      "from": "Case:120780724",
+      "to": "Reaction:Condition aggravated",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:44",
+      "from": "Case:120780724",
+      "to": "Reaction:Irritability",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:45",
+      "from": "Case:120780724",
+      "to": "Reaction:Insomnia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:46",
+      "from": "Case:120780724",
+      "to": "Reaction:Neuropathy peripheral",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:47",
+      "from": "Case:120780724",
+      "to": "Reaction:Withdrawal syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:48",
+      "from": "Case:120780724",
+      "to": "Reaction:Drug dependence",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:49",
+      "from": "Case:120780724",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:50",
+      "from": "Case:120780724",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:51",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:120780724",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:52",
+      "from": "Case:120896799",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:53",
+      "from": "Case:120896799",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:54",
+      "from": "Case:120896799",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:55",
+      "from": "Case:120896799",
+      "to": "Reaction:Laryngitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:56",
+      "from": "Case:120896799",
+      "to": "Reaction:Mental impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:57",
+      "from": "Case:120896799",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:58",
+      "from": "Case:120896799",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:59",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:120896799",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:60",
+      "from": "Case:122767287",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:61",
+      "from": "Case:122767287",
+      "to": "Drug:PROCARDIA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:62",
+      "from": "Case:122767287",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:63",
+      "from": "Case:122767287",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:64",
+      "from": "Case:122767287",
+      "to": "Reaction:Productive cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:65",
+      "from": "Case:122767287",
+      "to": "Reaction:Nasopharyngitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:66",
+      "from": "Case:122767287",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:67",
+      "from": "Case:122767287",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:68",
+      "from": "Case:122767287",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:69",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:122767287",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:70",
+      "from": "Case:125807809",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:71",
+      "from": "Case:125807809",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:72",
+      "from": "Case:125807809",
+      "to": "Drug:ENALAPRIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:73",
+      "from": "Case:125807809",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:74",
+      "from": "Case:125807809",
+      "to": "Reaction:Feeling abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:75",
+      "from": "Case:125807809",
+      "to": "Reaction:Drug tolerance",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:76",
+      "from": "Case:125807809",
+      "to": "Reaction:Arthralgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:77",
+      "from": "Case:125807809",
+      "to": "Reaction:Hypoaesthesia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:78",
+      "from": "Case:125807809",
+      "to": "Reaction:Hip fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:79",
+      "from": "Case:125807809",
+      "to": "Reaction:Cerebrovascular accident",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:80",
+      "from": "Case:125807809",
+      "to": "Reaction:Musculoskeletal stiffness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:81",
+      "from": "Case:125807809",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:82",
+      "from": "Case:125807809",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:83",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:125807809",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:84",
+      "from": "Case:125975964",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:85",
+      "from": "Case:125975964",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:86",
+      "from": "Case:125975964",
+      "to": "Reaction:Eye disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:87",
+      "from": "Case:125975964",
+      "to": "Reaction:Abdominal pain upper",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:88",
+      "from": "Case:125975964",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:89",
+      "from": "Case:125975964",
+      "to": "Reaction:Hypoacusis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:90",
+      "from": "Case:125975964",
+      "to": "Reaction:Eye pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:91",
+      "from": "Case:125975964",
+      "to": "Reaction:Age-related macular degeneration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:92",
+      "from": "Case:125975964",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:93",
+      "from": "Case:125975964",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:94",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:125975964",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:95",
+      "from": "Case:128663676",
+      "to": "Drug:CELEBREX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:96",
+      "from": "Case:128663676",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:97",
+      "from": "Case:128663676",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:98",
+      "from": "Case:128663676",
+      "to": "Reaction:Withdrawal syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:99",
+      "from": "Case:128663676",
+      "to": "Reaction:Neuropathy peripheral",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:100",
+      "from": "Case:128663676",
+      "to": "Reaction:Condition aggravated",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:101",
+      "from": "Case:128663676",
+      "to": "Reaction:Prescribed overdose",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:102",
+      "from": "Case:128663676",
+      "to": "Reaction:Intentional product misuse",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:103",
+      "from": "Case:128663676",
+      "to": "Reaction:Intentional product use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:104",
+      "from": "Case:128663676",
+      "to": "Reaction:Insomnia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:105",
+      "from": "Case:128663676",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:106",
+      "from": "Case:128663676",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:107",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:128663676",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:108",
+      "from": "Case:128863036",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:109",
+      "from": "Case:128863036",
+      "to": "Reaction:Loss of personal independence in daily activities",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:110",
+      "from": "Case:128863036",
+      "to": "Reaction:Peroneal nerve palsy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:111",
+      "from": "Case:128863036",
+      "to": "Reaction:Gout",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:112",
+      "from": "Case:128863036",
+      "to": "Reaction:Drug dependence",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:113",
+      "from": "Case:128863036",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:114",
+      "from": "Case:128863036",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:115",
+      "from": "Case:128863036",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:116",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:128863036",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:117",
+      "from": "Case:131141884",
+      "to": "Drug:MELOXICAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:118",
+      "from": "Case:131141884",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:119",
+      "from": "Case:131141884",
+      "to": "Drug:TIZANIDINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:120",
+      "from": "Case:131141884",
+      "to": "Drug:TRAMADOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:121",
+      "from": "Case:131141884",
+      "to": "Reaction:Localised infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:122",
+      "from": "Case:131141884",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:123",
+      "from": "Case:131141884",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:124",
+      "from": "Case:131141884",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:125",
+      "from": "Case:131141884",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:126",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:131141884",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:127",
+      "from": "Case:134922869",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:128",
+      "from": "Case:134922869",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:129",
+      "from": "Case:134922869",
+      "to": "Reaction:Insomnia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:130",
+      "from": "Case:134922869",
+      "to": "Reaction:Somnolence",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:131",
+      "from": "Case:134922869",
+      "to": "Reaction:Off label use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:132",
+      "from": "Case:134922869",
+      "to": "Reaction:Intentional product use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:133",
+      "from": "Case:134922869",
+      "to": "Reaction:Therapeutic product effect incomplete",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:134",
+      "from": "Case:134922869",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:135",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:134922869",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:136",
+      "from": "Case:135529198",
+      "to": "Drug:TIZANIDINE HYDROCHLORIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:137",
+      "from": "Case:135529198",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:138",
+      "from": "Case:135529198",
+      "to": "Drug:PROVIGIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:139",
+      "from": "Case:135529198",
+      "to": "Drug:ZYRTEC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:140",
+      "from": "Case:135529198",
+      "to": "Drug:MIRALAX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:141",
+      "from": "Case:135529198",
+      "to": "Drug:ATARAX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:142",
+      "from": "Case:135529198",
+      "to": "Drug:BENADRYL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:143",
+      "from": "Case:135529198",
+      "to": "Drug:MEDROL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:144",
+      "from": "Case:135529198",
+      "to": "Drug:HYDROMORPHONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:145",
+      "from": "Case:135529198",
+      "to": "Drug:POLYETHYLENE GLYCOL 3350",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:146",
+      "from": "Case:135529198",
+      "to": "Drug:MORPHINE SULFATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:147",
+      "from": "Case:135529198",
+      "to": "Drug:RANITIDINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:148",
+      "from": "Case:135529198",
+      "to": "Drug:ISOSORBIDE DINITRATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:149",
+      "from": "Case:135529198",
+      "to": "Drug:AMITRIPTYLINE HCL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:150",
+      "from": "Case:135529198",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:151",
+      "from": "Case:135529198",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:152",
+      "from": "Case:135529198",
+      "to": "Drug:MOBIC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:153",
+      "from": "Case:135529198",
+      "to": "Drug:PERICOLACE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:154",
+      "from": "Case:135529198",
+      "to": "Drug:PHENERGAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:155",
+      "from": "Case:135529198",
+      "to": "Reaction:Paraesthesia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:156",
+      "from": "Case:135529198",
+      "to": "Reaction:Drug withdrawal syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:157",
+      "from": "Case:135529198",
+      "to": "Reaction:Radicular pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:158",
+      "from": "Case:135529198",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:159",
+      "from": "Case:135529198",
+      "to": "Reaction:Back pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:160",
+      "from": "Case:135529198",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:161",
+      "from": "Case:135529198",
+      "to": "Reaction:Neck pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:162",
+      "from": "Case:135529198",
+      "to": "Reaction:Feeding disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:163",
+      "from": "Case:135529198",
+      "to": "Reaction:Hypoaesthesia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:164",
+      "from": "Case:135529198",
+      "to": "Reaction:Muscular weakness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:165",
+      "from": "Case:135529198",
+      "to": "Reaction:Dizziness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:166",
+      "from": "Case:135529198",
+      "to": "Reaction:Intentional product use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:167",
+      "from": "Case:135529198",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:168",
+      "from": "Case:135529198",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:169",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:135529198",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:170",
+      "from": "Case:135986595",
+      "to": "Drug:PLAQUENIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:171",
+      "from": "Case:135986595",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:172",
+      "from": "Case:135986595",
+      "to": "Drug:OTEZLA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:173",
+      "from": "Case:135986595",
+      "to": "Drug:LIPITOR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:174",
+      "from": "Case:135986595",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:175",
+      "from": "Case:135986595",
+      "to": "Drug:PERCOCET",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:176",
+      "from": "Case:135986595",
+      "to": "Drug:METOPROLOL TARTRATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:177",
+      "from": "Case:135986595",
+      "to": "Reaction:Intentional product misuse",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:178",
+      "from": "Case:135986595",
+      "to": "Reaction:Rash",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:179",
+      "from": "Case:135986595",
+      "to": "Reaction:Drug dependence",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:180",
+      "from": "Case:135986595",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:181",
+      "from": "Case:135986595",
+      "to": "Reaction:Feeling abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:182",
+      "from": "Case:135986595",
+      "to": "Reaction:Feeling jittery",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:183",
+      "from": "Case:135986595",
+      "to": "Reaction:Psychomotor hyperactivity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:184",
+      "from": "Case:135986595",
+      "to": "Reaction:Sensitivity to weather change",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:185",
+      "from": "Case:135986595",
+      "to": "Reaction:Memory impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:186",
+      "from": "Case:135986595",
+      "to": "Reaction:Depressed mood",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:187",
+      "from": "Case:135986595",
+      "to": "Reaction:Abnormal behaviour",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:188",
+      "from": "Case:135986595",
+      "to": "Reaction:Lower limb fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:189",
+      "from": "Case:135986595",
+      "to": "Reaction:Weight increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:190",
+      "from": "Case:135986595",
+      "to": "Reaction:Nervousness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:191",
+      "from": "Case:135986595",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:192",
+      "from": "Case:135986595",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:193",
+      "from": "Case:135986595",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:194",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:135986595",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:195",
+      "from": "Case:142306296",
+      "to": "Drug:SYMBICORT",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:196",
+      "from": "Case:142306296",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:197",
+      "from": "Case:142306296",
+      "to": "Drug:CENTRUM SILVER WOMEN 50+",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:198",
+      "from": "Case:142306296",
+      "to": "Drug:DULOXETINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:199",
+      "from": "Case:142306296",
+      "to": "Drug:MYRBETRIQ",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:200",
+      "from": "Case:142306296",
+      "to": "Drug:FUROSEMIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:201",
+      "from": "Case:142306296",
+      "to": "Drug:LOSARTAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:202",
+      "from": "Case:142306296",
+      "to": "Drug:PROAIR RESPICLICK",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:203",
+      "from": "Case:142306296",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:204",
+      "from": "Case:142306296",
+      "to": "Drug:CITALOPRAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:205",
+      "from": "Case:142306296",
+      "to": "Reaction:Suicidal ideation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:206",
+      "from": "Case:142306296",
+      "to": "Reaction:Limb injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:207",
+      "from": "Case:142306296",
+      "to": "Reaction:Road traffic accident",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:208",
+      "from": "Case:142306296",
+      "to": "Reaction:Intentional product misuse",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:209",
+      "from": "Case:142306296",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:210",
+      "from": "Case:142306296",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:211",
+      "from": "Case:142306296",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:212",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:142306296",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:213",
+      "from": "Case:145978037",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:214",
+      "from": "Case:145978037",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:215",
+      "from": "Case:145978037",
+      "to": "Drug:MS CONTIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:216",
+      "from": "Case:145978037",
+      "to": "Drug:MORPHINE SULPHATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:217",
+      "from": "Case:145978037",
+      "to": "Reaction:Dysphagia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:218",
+      "from": "Case:145978037",
+      "to": "Reaction:Intentional product misuse",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:219",
+      "from": "Case:145978037",
+      "to": "Reaction:Dry mouth",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:220",
+      "from": "Case:145978037",
+      "to": "Reaction:Upper limb fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:221",
+      "from": "Case:145978037",
+      "to": "Reaction:Sedation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:222",
+      "from": "Case:145978037",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:223",
+      "from": "Case:145978037",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:224",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:145978037",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:225",
+      "from": "Case:151245827",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:226",
+      "from": "Case:151245827",
+      "to": "Reaction:Gait inability",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:227",
+      "from": "Case:151245827",
+      "to": "Reaction:Pain in extremity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:228",
+      "from": "Case:151245827",
+      "to": "Reaction:Death",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:229",
+      "from": "Case:151245827",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:230",
+      "from": "Case:151245827",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:231",
+      "from": "Case:151245827",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:232",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:151245827",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:233",
+      "from": "Case:151642299",
+      "to": "Drug:TRAMADOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:234",
+      "from": "Case:151642299",
+      "to": "Drug:TRAZODONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:235",
+      "from": "Case:151642299",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:236",
+      "from": "Case:151642299",
+      "to": "Drug:VITAMIN D3",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:237",
+      "from": "Case:151642299",
+      "to": "Drug:OMEPRAZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:238",
+      "from": "Case:151642299",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:239",
+      "from": "Case:151642299",
+      "to": "Drug:CETIRIZINE HCL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:240",
+      "from": "Case:151642299",
+      "to": "Drug:ALBUTEROL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:241",
+      "from": "Case:151642299",
+      "to": "Drug:VITAMIN B12",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:242",
+      "from": "Case:151642299",
+      "to": "Drug:MIRALAX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:243",
+      "from": "Case:151642299",
+      "to": "Reaction:Sinusitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:244",
+      "from": "Case:151642299",
+      "to": "Reaction:Productive cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:245",
+      "from": "Case:151642299",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:246",
+      "from": "Case:151642299",
+      "to": "Reaction:Laryngitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:247",
+      "from": "Case:151642299",
+      "to": "Reaction:Throat irritation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:248",
+      "from": "Case:151642299",
+      "to": "Reaction:Withdrawal syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:249",
+      "from": "Case:151642299",
+      "to": "Reaction:Drug hypersensitivity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:250",
+      "from": "Case:151642299",
+      "to": "Reaction:Viral infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:251",
+      "from": "Case:151642299",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:252",
+      "from": "Case:151642299",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:253",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:151642299",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:254",
+      "from": "Case:153736763",
+      "to": "Drug:ZOFRAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:255",
+      "from": "Case:153736763",
+      "to": "Drug:CLONAZEPAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:256",
+      "from": "Case:153736763",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:257",
+      "from": "Case:153736763",
+      "to": "Reaction:Off label use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:258",
+      "from": "Case:153736763",
+      "to": "Reaction:Impaired quality of life",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:259",
+      "from": "Case:153736763",
+      "to": "Reaction:Somnolence",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:260",
+      "from": "Case:153736763",
+      "to": "Reaction:Drug ineffective for unapproved indication",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:261",
+      "from": "Case:153736763",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:262",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:153736763",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:263",
+      "from": "Case:154391227",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:264",
+      "from": "Case:154391227",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:265",
+      "from": "Case:154391227",
+      "to": "Reaction:Anxiety",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:266",
+      "from": "Case:154391227",
+      "to": "Reaction:Concussion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:267",
+      "from": "Case:154391227",
+      "to": "Reaction:Contusion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:268",
+      "from": "Case:154391227",
+      "to": "Reaction:Clumsiness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:269",
+      "from": "Case:154391227",
+      "to": "Reaction:Head injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:270",
+      "from": "Case:154391227",
+      "to": "Reaction:Road traffic accident",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:271",
+      "from": "Case:154391227",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:272",
+      "from": "Case:154391227",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:273",
+      "from": "Case:154391227",
+      "to": "Reaction:Head discomfort",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:274",
+      "from": "Case:154391227",
+      "to": "Reaction:Muscle strain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:275",
+      "from": "Case:154391227",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:276",
+      "from": "Case:154391227",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:277",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:154391227",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:278",
+      "from": "Case:156217637",
+      "to": "Drug:BYSTOLIC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:279",
+      "from": "Case:156217637",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:280",
+      "from": "Case:156217637",
+      "to": "Drug:ALPHAGAN P",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:281",
+      "from": "Case:156217637",
+      "to": "Drug:TRAVATAN Z",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:282",
+      "from": "Case:156217637",
+      "to": "Drug:LEXAPRO",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:283",
+      "from": "Case:156217637",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:284",
+      "from": "Case:156217637",
+      "to": "Drug:SENOKOT S",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:285",
+      "from": "Case:156217637",
+      "to": "Drug:MAGNESIUM OXIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:286",
+      "from": "Case:156217637",
+      "to": "Drug:SINGULAIR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:287",
+      "from": "Case:156217637",
+      "to": "Drug:XANAX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:288",
+      "from": "Case:156217637",
+      "to": "Reaction:Withdrawal syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:289",
+      "from": "Case:156217637",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:290",
+      "from": "Case:156217637",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:291",
+      "from": "Case:156217637",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:292",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:156217637",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:293",
+      "from": "Case:158264325",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:294",
+      "from": "Case:158264325",
+      "to": "Drug:PF 06928316; PLACEBO",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:295",
+      "from": "Case:158264325",
+      "to": "Drug:OXYCODONE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:296",
+      "from": "Case:158264325",
+      "to": "Reaction:Acute respiratory failure",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:297",
+      "from": "Case:158264325",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:298",
+      "from": "Case:158264325",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:299",
+      "from": "Case:158264325",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:300",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:158264325",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:301",
+      "from": "Case:159469338",
+      "to": "Drug:IRON",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:302",
+      "from": "Case:159469338",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:303",
+      "from": "Case:159469338",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:304",
+      "from": "Case:159469338",
+      "to": "Drug:HYDROCODONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:305",
+      "from": "Case:159469338",
+      "to": "Drug:ASPIRIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:306",
+      "from": "Case:159469338",
+      "to": "Reaction:Dry skin",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:307",
+      "from": "Case:159469338",
+      "to": "Reaction:Feeling abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:308",
+      "from": "Case:159469338",
+      "to": "Reaction:Prescribed overdose",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:309",
+      "from": "Case:159469338",
+      "to": "Reaction:Rash",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:310",
+      "from": "Case:159469338",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:311",
+      "from": "Case:159469338",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:312",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:159469338",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:313",
+      "from": "Case:159525074",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:314",
+      "from": "Case:159525074",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:315",
+      "from": "Case:159525074",
+      "to": "Reaction:Hand fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:316",
+      "from": "Case:159525074",
+      "to": "Reaction:Cystitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:317",
+      "from": "Case:159525074",
+      "to": "Reaction:Expired product administered",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:318",
+      "from": "Case:159525074",
+      "to": "Reaction:Intentional product use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:319",
+      "from": "Case:159525074",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:320",
+      "from": "Case:159525074",
+      "to": "Reaction:Memory impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:321",
+      "from": "Case:159525074",
+      "to": "Reaction:Dementia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:322",
+      "from": "Case:159525074",
+      "to": "Reaction:Body height decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:323",
+      "from": "Case:159525074",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:324",
+      "from": "Case:159525074",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:325",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:159525074",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:326",
+      "from": "Case:160168858",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:327",
+      "from": "Case:160168858",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:328",
+      "from": "Case:160168858",
+      "to": "Reaction:Arthralgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:329",
+      "from": "Case:160168858",
+      "to": "Reaction:Wrong strength",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:332",
+      "from": "Case:160168858",
+      "to": "Reaction:Amnesia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:334",
+      "from": "Case:160168858",
+      "to": "Reaction:Withdrawal syndrome",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:335",
+      "from": "Case:160168858",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:336",
+      "from": "Case:160168858",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:337",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:160168858",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:339",
+      "from": "Case:160572234",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:340",
+      "from": "Case:160572234",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:341",
+      "from": "Case:160572234",
+      "to": "Reaction:Product dispensing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:342",
+      "from": "Case:160572234",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:343",
+      "from": "Case:160572234",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:344",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:160572234",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:345",
+      "from": "Case:160573294",
+      "to": "Drug:ASPIRIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:346",
+      "from": "Case:160573294",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:347",
+      "from": "Case:160573294",
+      "to": "Drug:CELEBREX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:348",
+      "from": "Case:160573294",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:351",
+      "from": "Case:160573294",
+      "to": "Reaction:Contusion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:352",
+      "from": "Case:160573294",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:355",
+      "from": "Case:160573294",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:356",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:160573294",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:357",
+      "from": "Case:160629086",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:358",
+      "from": "Case:160629086",
+      "to": "Reaction:Neuropathy peripheral",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:359",
+      "from": "Case:160629086",
+      "to": "Reaction:Gait disturbance",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:360",
+      "from": "Case:160629086",
+      "to": "Reaction:Condition aggravated",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:361",
+      "from": "Case:160629086",
+      "to": "Reaction:Back pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:362",
+      "from": "Case:160629086",
+      "to": "Reaction:Irritability",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:363",
+      "from": "Case:160629086",
+      "to": "Reaction:Product dispensing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:364",
+      "from": "Case:160629086",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:365",
+      "from": "Case:160629086",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:366",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:160629086",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:367",
+      "from": "Case:161681478",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:368",
+      "from": "Case:161681478",
+      "to": "Reaction:Memory impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:369",
+      "from": "Case:161681478",
+      "to": "Reaction:Cerebrovascular accident",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:370",
+      "from": "Case:161681478",
+      "to": "Reaction:Gait disturbance",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:371",
+      "from": "Case:161681478",
+      "to": "Reaction:Muscle spasms",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:372",
+      "from": "Case:161681478",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:373",
+      "from": "Case:161681478",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:374",
+      "from": "Case:161681478",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:375",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:161681478",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:376",
+      "from": "Case:162425638",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:377",
+      "from": "Case:162425638",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:378",
+      "from": "Case:162425638",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:381",
+      "from": "Case:162425638",
+      "to": "Reaction:Prescribed overdose",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:382",
+      "from": "Case:162425638",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:384",
+      "from": "Case:162425638",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:385",
+      "from": "Case:162425638",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:386",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:162425638",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:387",
+      "from": "Case:162660766",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:388",
+      "from": "Case:162660766",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:389",
+      "from": "Case:162660766",
+      "to": "Reaction:Memory impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:390",
+      "from": "Case:162660766",
+      "to": "Reaction:Insomnia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:394",
+      "from": "Case:162660766",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:395",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:162660766",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:396",
+      "from": "Case:162859972",
+      "to": "Drug:FUROSEMIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:398",
+      "from": "Case:162859972",
+      "to": "Drug:IRON",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:400",
+      "from": "Case:162859972",
+      "to": "Drug:METOPROLOL TARTRATE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:402",
+      "from": "Case:162859972",
+      "to": "Drug:CLOPIDOGREL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:403",
+      "from": "Case:162859972",
+      "to": "Drug:NITROSTAT",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:404",
+      "from": "Case:162859972",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:405",
+      "from": "Case:162859972",
+      "to": "Drug:MAGNESIUM OXIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:406",
+      "from": "Case:162859972",
+      "to": "Drug:VITAMIN D3",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:410",
+      "from": "Case:162859972",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:415",
+      "from": "Case:162859972",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:416",
+      "from": "Case:162859972",
+      "to": "Reaction:Muscle spasms",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:419",
+      "from": "Case:162859972",
+      "to": "Reaction:Intentional product misuse",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:420",
+      "from": "Case:162859972",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:421",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:162859972",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:424",
+      "from": "Case:162879889",
+      "to": "Drug:LIPITOR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:426",
+      "from": "Case:162879889",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:427",
+      "from": "Case:162879889",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:430",
+      "from": "Case:162879889",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:431",
+      "from": "Case:162879889",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:432",
+      "from": "Case:162879889",
+      "to": "Reaction:Tremor",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:433",
+      "from": "Case:162879889",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:434",
+      "from": "Case:162879889",
+      "to": "Reaction:Upper limb fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:435",
+      "from": "Case:162879889",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:436",
+      "from": "Case:162879889",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:437",
+      "from": "Case:162879889",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:438",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:162879889",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:439",
+      "from": "Case:162906862",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:440",
+      "from": "Case:162906862",
+      "to": "Reaction:Intentional product misuse",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:441",
+      "from": "Case:162906862",
+      "to": "Reaction:Upper limb fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:442",
+      "from": "Case:162906862",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:443",
+      "from": "Case:162906862",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:444",
+      "from": "Case:162906862",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:445",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:162906862",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:446",
+      "from": "Case:162974607",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:447",
+      "from": "Case:162974607",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:448",
+      "from": "Case:162974607",
+      "to": "Reaction:Abdominal pain upper",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:451",
+      "from": "Case:162974607",
+      "to": "Reaction:Arthralgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:452",
+      "from": "Case:162974607",
+      "to": "Reaction:Intentional product misuse",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:453",
+      "from": "Case:162974607",
+      "to": "Reaction:Depressed mood",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:454",
+      "from": "Case:162974607",
+      "to": "Reaction:Pain in extremity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:456",
+      "from": "Case:162974607",
+      "to": "Reaction:Amnesia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:457",
+      "from": "Case:162974607",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:458",
+      "from": "Case:162974607",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:459",
+      "from": "Case:162974607",
+      "to": "Reaction:Gait disturbance",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:460",
+      "from": "Case:162974607",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:461",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:162974607",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:463",
+      "from": "Case:163435888",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:464",
+      "from": "Case:163435888",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:465",
+      "from": "Case:163435888",
+      "to": "Reaction:Drug ineffective",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:466",
+      "from": "Case:163435888",
+      "to": "Reaction:Tremor",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:467",
+      "from": "Case:163435888",
+      "to": "Reaction:Sensitivity to weather change",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:469",
+      "from": "Case:163435888",
+      "to": "Reaction:Peripheral swelling",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:470",
+      "from": "Case:163435888",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:471",
+      "from": "Case:163435888",
+      "to": "Reaction:Head injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:472",
+      "from": "Case:163435888",
+      "to": "Reaction:Hip fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:473",
+      "from": "Case:163435888",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:474",
+      "from": "Case:163435888",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:475",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:163435888",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:476",
+      "from": "Case:163675569",
+      "to": "Drug:TRAZODONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:478",
+      "from": "Case:163675569",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:480",
+      "from": "Case:163675569",
+      "to": "Drug:NITROSTAT",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:485",
+      "from": "Case:163675569",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:486",
+      "from": "Case:163675569",
+      "to": "Drug:CELEBREX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:489",
+      "from": "Case:163675569",
+      "to": "Drug:SINGULAIR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:491",
+      "from": "Case:163675569",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:492",
+      "from": "Case:163675569",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:493",
+      "from": "Case:163675569",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:494",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:163675569",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:495",
+      "from": "Case:164734222",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:496",
+      "from": "Case:164734222",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:497",
+      "from": "Case:164734222",
+      "to": "Reaction:Off label use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:498",
+      "from": "Case:164734222",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:500",
+      "from": "Case:164734222",
+      "to": "Reaction:Viral infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:503",
+      "from": "Case:164734222",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:504",
+      "from": "Case:164734222",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:505",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:164734222",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:514",
+      "from": "Case:165830836",
+      "to": "Drug:MOBIC",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:515",
+      "from": "Case:165830836",
+      "to": "Drug:PREDNISONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:516",
+      "from": "Case:165830836",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:517",
+      "from": "Case:165830836",
+      "to": "Drug:LYRICA",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:521",
+      "from": "Case:165830836",
+      "to": "Reaction:Tremor",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:523",
+      "from": "Case:165830836",
+      "to": "Reaction:Nervousness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:524",
+      "from": "Case:165830836",
+      "to": "Reaction:Drug dependence",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:525",
+      "from": "Case:165830836",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:526",
+      "from": "Case:165830836",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:527",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:165830836",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:530",
+      "from": "Case:166734739",
+      "to": "Drug:LYRICA",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:531",
+      "from": "Case:166734739",
+      "to": "Drug:BABY ASPIRIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:536",
+      "from": "Case:166734739",
+      "to": "Reaction:Feeling abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:539",
+      "from": "Case:166734739",
+      "to": "Reaction:Laryngitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:540",
+      "from": "Case:166734739",
+      "to": "Reaction:Abnormal behaviour",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:541",
+      "from": "Case:166734739",
+      "to": "Reaction:Peripheral swelling",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:542",
+      "from": "Case:166734739",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:543",
+      "from": "Case:166734739",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:547",
+      "from": "Case:166734739",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:548",
+      "from": "Case:166734739",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:549",
+      "from": "Case:166734739",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:550",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:166734739",
+      "type": "REGISTERED"
+    }
+  ],
+  "meta": {
+    "caseCount": 40,
+    "nodeCount": 220,
+    "relCount": 479,
+    "capped": true,
+    "focusDrug": "LYRICA"
+  }
+}

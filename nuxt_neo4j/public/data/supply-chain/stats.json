@@ -1,0 +1,76 @@
+{
+  "nodeCounts": [
+    {
+      "label": "Facility",
+      "count": 12
+    },
+    {
+      "label": "Product",
+      "count": 28049
+    },
+    {
+      "label": "ProductGroup",
+      "count": 7
+    },
+    {
+      "label": "Period",
+      "count": 14
+    },
+    {
+      "label": "DemandFact",
+      "count": 28000
+    },
+    {
+      "label": "Customer",
+      "count": 1
+    }
+  ],
+  "relCounts": [
+    {
+      "type": "REQUIRES",
+      "count": 87059
+    },
+    {
+      "type": "SHIPS_TO",
+      "count": 11
+    },
+    {
+      "type": "BELONGS_TO",
+      "count": 28049
+    },
+    {
+      "type": "PRODUCES",
+      "count": 44
+    },
+    {
+      "type": "HAS_DEMAND",
+      "count": 28000
+    }
+  ],
+  "highlights": [
+    {
+      "label": "Products",
+      "value": 28049
+    },
+    {
+      "label": "BOM edges (REQUIRES)",
+      "value": 87059
+    },
+    {
+      "label": "Facilities",
+      "value": 12
+    },
+    {
+      "label": "Supplier lanes (SHIPS_TO)",
+      "value": 11
+    },
+    {
+      "label": "Demand lines",
+      "value": 28000
+    },
+    {
+      "label": "Top OEM chokepoint",
+      "value": "zp8 / zp7"
+    }
+  ]
+}

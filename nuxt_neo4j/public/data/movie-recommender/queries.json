@@ -1,0 +1,756 @@
+[
+  {
+    "id": "eda-size",
+    "title": "Graph size",
+    "description": "Node and relationship counts after enrichment.",
+    "cypher": "MATCH (n) RETURN labels(n)[0] AS label, count(*) AS count\nORDER BY count DESC\nUNION ALL\nMATCH ()-[r]->() RETURN type(r) AS label, count(*) AS count",
+    "columns": [
+      "label",
+      "count"
+    ],
+    "rows": [
+      {
+        "label": "User",
+        "count": 20
+      },
+      {
+        "label": "Movie",
+        "count": 25
+      },
+      {
+        "label": "Genre",
+        "count": 14
+      },
+      {
+        "label": "Director",
+        "count": 21
+      },
+      {
+        "label": "RATED",
+        "count": 101
+      },
+      {
+        "label": "IN_GENRE",
+        "count": 50
+      },
+      {
+        "label": "DIRECTED_BY",
+        "count": 25
+      }
+    ],
+    "count": 7
+  },
+  {
+    "id": "eda-top-users",
+    "title": "Top 5 most active users",
+    "description": "Users with the most ratings.",
+    "cypher": "MATCH (u:User)-[r:RATED]->(:Movie)\nRETURN u.userId AS userId, u.name AS name, count(r) AS ratingsGiven, round(avg(r.rating),2) AS avgRating\nORDER BY ratingsGiven DESC LIMIT 5",
+    "columns": [
+      "userId",
+      "name",
+      "ratingsGiven",
+      "avgRating"
+    ],
+    "rows": [
+      {
+        "userId": "U001",
+        "name": "Alice Chen",
+        "ratingsGiven": 6,
+        "avgRating": 4.67
+      },
+      {
+        "userId": "U013",
+        "name": "Maya Patel",
+        "ratingsGiven": 5,
+        "avgRating": 4.8
+      },
+      {
+        "userId": "U017",
+        "name": "Quinn Zhang",
+        "ratingsGiven": 5,
+        "avgRating": 4.8
+      },
+      {
+        "userId": "U003",
+        "name": "Carol White",
+        "ratingsGiven": 5,
+        "avgRating": 4.6
+      },
+      {
+        "userId": "U005",
+        "name": "Eva Rossi",
+        "ratingsGiven": 5,
+        "avgRating": 4.6
+      }
+    ],
+    "count": 5
+  },
+  {
+    "id": "eda-top-movies",
+    "title": "Top 10 movies by number of ratings",
+    "description": "Most-rated movies with average user rating vs catalog avgRating.",
+    "cypher": "MATCH (m:Movie)<-[r:RATED]-(:User)\nRETURN m.movieId AS movieId, m.title AS title, count(r) AS numRatings, round(avg(r.rating),2) AS avgUserRating, m.avgRating AS avgRating\nORDER BY numRatings DESC LIMIT 10",
+    "columns": [
+      "movieId",
+      "title",
+      "numRatings",
+      "avgUserRating",
+      "avgRating"
+    ],
+    "rows": [
+      {
+        "movieId": "M002",
+        "title": "Inception",
+        "numRatings": 7,
+        "avgUserRating": 4.57,
+        "avgRating": 8.8
+      },
+      {
+        "movieId": "M006",
+        "title": "Pulp Fiction",
+        "numRatings": 7,
+        "avgUserRating": 4.14,
+        "avgRating": 8.9
+      },
+      {
+        "movieId": "M003",
+        "title": "The Godfather",
+        "numRatings": 6,
+        "avgUserRating": 4.67,
+        "avgRating": 9.2
+      },
+      {
+        "movieId": "M001",
+        "title": "The Matrix",
+        "numRatings": 6,
+        "avgUserRating": 4.67,
+        "avgRating": 8.7
+      },
+      {
+        "movieId": "M014",
+        "title": "12 Angry Men",
+        "numRatings": 5,
+        "avgUserRating": 4.8,
+        "avgRating": 9.0
+      },
+      {
+        "movieId": "M019",
+        "title": "Dune",
+        "numRatings": 5,
+        "avgUserRating": 4.6,
+        "avgRating": 8.0
+      },
+      {
+        "movieId": "M022",
+        "title": "Portrait of a Lady on Fire",
+        "numRatings": 5,
+        "avgUserRating": 4.6,
+        "avgRating": 8.1
+      },
+      {
+        "movieId": "M007",
+        "title": "The Dark Knight",
+        "numRatings": 4,
+        "avgUserRating": 5.0,
+        "avgRating": 9.0
+      },
+      {
+        "movieId": "M025",
+        "title": "Blade Runner 2049",
+        "numRatings": 4,
+        "avgUserRating": 4.75,
+        "avgRating": 8.0
+      },
+      {
+        "movieId": "M005",
+        "title": "Interstellar",
+        "numRatings": 4,
+        "avgUserRating": 4.75,
+        "avgRating": 8.6
+      }
+    ],
+    "count": 10
+  },
+  {
+    "id": "eda-rating-dist",
+    "title": "Rating distribution",
+    "description": "How many ratings fall in each 1–5 bucket.",
+    "cypher": "MATCH ()-[r:RATED]->() RETURN r.rating AS rating, count(*) AS count ORDER BY rating",
+    "columns": [
+      "rating",
+      "count"
+    ],
+    "rows": [
+      {
+        "rating": 3,
+        "count": 6
+      },
+      {
+        "rating": 4,
+        "count": 41
+      },
+      {
+        "rating": 5,
+        "count": 54
+      }
+    ],
+    "count": 3
+  },
+  {
+    "id": "eda-genres",
+    "title": "Genre statistics",
+    "description": "Movies, ratings, and average rating per genre.",
+    "cypher": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre)\nOPTIONAL MATCH (m)<-[r:RATED]-()\nRETURN g.name AS genre, count(DISTINCT m) AS movieCount, count(r) AS totalRatings, round(avg(r.rating),2) AS avgRating\nORDER BY movieCount DESC",
+    "columns": [
+      "genre",
+      "movieCount",
+      "totalRatings",
+      "avgRating"
+    ],
+    "rows": [
+      {
+        "genre": "Drama",
+        "movieCount": 14,
+        "totalRatings": 57,
+        "avgRating": 4.44
+      },
+      {
+        "genre": "Sci-Fi",
+        "movieCount": 8,
+        "totalRatings": 35,
+        "avgRating": 4.57
+      },
+      {
+        "genre": "Action",
+        "movieCount": 4,
+        "totalRatings": 18,
+        "avgRating": 4.67
+      },
+      {
+        "genre": "Crime",
+        "movieCount": 4,
+        "totalRatings": 22,
+        "avgRating": 4.59
+      },
+      {
+        "genre": "Thriller",
+        "movieCount": 4,
+        "totalRatings": 16,
+        "avgRating": 4.44
+      },
+      {
+        "genre": "Biography",
+        "movieCount": 3,
+        "totalRatings": 9,
+        "avgRating": 4.11
+      },
+      {
+        "genre": "Comedy",
+        "movieCount": 3,
+        "totalRatings": 10,
+        "avgRating": 4.4
+      },
+      {
+        "genre": "Romance",
+        "movieCount": 3,
+        "totalRatings": 12,
+        "avgRating": 4.5
+      },
+      {
+        "genre": "Mystery",
+        "movieCount": 2,
+        "totalRatings": 6,
+        "avgRating": 4.67
+      },
+      {
+        "genre": "Adventure",
+        "movieCount": 1,
+        "totalRatings": 3,
+        "avgRating": 4.0
+      },
+      {
+        "genre": "Animation",
+        "movieCount": 1,
+        "totalRatings": 4,
+        "avgRating": 4.5
+      },
+      {
+        "genre": "Fantasy",
+        "movieCount": 1,
+        "totalRatings": 4,
+        "avgRating": 4.5
+      },
+      {
+        "genre": "Horror",
+        "movieCount": 1,
+        "totalRatings": 3,
+        "avgRating": 3.67
+      },
+      {
+        "genre": "Music",
+        "movieCount": 1,
+        "totalRatings": 3,
+        "avgRating": 4.33
+      }
+    ],
+    "count": 14
+  },
+  {
+    "id": "eda-directors",
+    "title": "Director statistics",
+    "description": "Movies and average user rating per director.",
+    "cypher": "MATCH (m:Movie)-[:DIRECTED_BY]->(d:Director)\nOPTIONAL MATCH (m)<-[r:RATED]-()\nRETURN d.name AS director, count(DISTINCT m) AS movieCount, round(avg(r.rating),2) AS avgUserRating\nORDER BY movieCount DESC",
+    "columns": [
+      "director",
+      "movieCount",
+      "avgUserRating"
+    ],
+    "rows": [
+      {
+        "director": "Christopher Nolan",
+        "movieCount": 3,
+        "avgUserRating": 4.77
+      },
+      {
+        "director": "Damien Chazelle",
+        "movieCount": 2,
+        "avgUserRating": 4.42
+      },
+      {
+        "director": "Denis Villeneuve",
+        "movieCount": 2,
+        "avgUserRating": 4.67
+      },
+      {
+        "director": "Alejandro G. Iñárritu",
+        "movieCount": 1,
+        "avgUserRating": 4.0
+      },
+      {
+        "director": "Alfonso Cuarón",
+        "movieCount": 1,
+        "avgUserRating": 4.0
+      },
+      {
+        "director": "Barry Jenkins",
+        "movieCount": 1,
+        "avgUserRating": 4.67
+      },
+      {
+        "director": "Bong Joon-ho",
+        "movieCount": 1,
+        "avgUserRating": 4.67
+      },
+      {
+        "director": "Céline Sciamma",
+        "movieCount": 1,
+        "avgUserRating": 4.6
+      },
+      {
+        "director": "Daniels",
+        "movieCount": 1,
+        "avgUserRating": 4.33
+      },
+      {
+        "director": "David Fincher",
+        "movieCount": 1,
+        "avgUserRating": 3.5
+      },
+      {
+        "director": "Francis Ford Coppola",
+        "movieCount": 1,
+        "avgUserRating": 4.67
+      },
+      {
+        "director": "George Miller",
+        "movieCount": 1,
+        "avgUserRating": 4.33
+      },
+      {
+        "director": "Hayao Miyazaki",
+        "movieCount": 1,
+        "avgUserRating": 4.5
+      },
+      {
+        "director": "Jordan Peele",
+        "movieCount": 1,
+        "avgUserRating": 3.67
+      },
+      {
+        "director": "Park Chan-wook",
+        "movieCount": 1,
+        "avgUserRating": 4.67
+      },
+      {
+        "director": "Quentin Tarantino",
+        "movieCount": 1,
+        "avgUserRating": 4.14
+      },
+      {
+        "director": "Rian Johnson",
+        "movieCount": 1,
+        "avgUserRating": 4.67
+      },
+      {
+        "director": "Sidney Lumet",
+        "movieCount": 1,
+        "avgUserRating": 4.8
+      },
+      {
+        "director": "Spike Jonze",
+        "movieCount": 1,
+        "avgUserRating": 4.33
+      },
+      {
+        "director": "Wachowski Sisters",
+        "movieCount": 1,
+        "avgUserRating": 4.67
+      },
+      {
+        "director": "Wes Anderson",
+        "movieCount": 1,
+        "avgUserRating": 4.25
+      }
+    ],
+    "count": 21
+  },
+  {
+    "id": "eda-polarizing",
+    "title": "Most polarizing movies",
+    "description": "Highest rating standard deviation among movies with ≥3 ratings.",
+    "cypher": "MATCH (m:Movie)<-[r:RATED]-(:User)\nWITH m, count(r) AS numRatings, avg(r.rating) AS avgUserRating, stDev(r.rating) AS stDev\nWHERE numRatings >= 3\nRETURN m.movieId AS movieId, m.title AS title, numRatings, round(avgUserRating,2) AS avgUserRating, round(stDev,2) AS stDev\nORDER BY stDev DESC LIMIT 10",
+    "columns": [
+      "movieId",
+      "title",
+      "numRatings",
+      "avgUserRating",
+      "stDev"
+    ],
+    "rows": [
+      {
+        "movieId": "M009",
+        "title": "Whiplash",
+        "numRatings": 3,
+        "avgUserRating": 4.33,
+        "stDev": 1.15
+      },
+      {
+        "movieId": "M024",
+        "title": "The Revenant",
+        "numRatings": 3,
+        "avgUserRating": 4.0,
+        "stDev": 1.0
+      },
+      {
+        "movieId": "M020",
+        "title": "Roma",
+        "numRatings": 4,
+        "avgUserRating": 4.0,
+        "stDev": 0.82
+      },
+      {
+        "movieId": "M006",
+        "title": "Pulp Fiction",
+        "numRatings": 7,
+        "avgUserRating": 4.14,
+        "stDev": 0.69
+      },
+      {
+        "movieId": "M018",
+        "title": "La La Land",
+        "numRatings": 4,
+        "avgUserRating": 4.5,
+        "stDev": 0.58
+      },
+      {
+        "movieId": "M008",
+        "title": "Spirited Away",
+        "numRatings": 4,
+        "avgUserRating": 4.5,
+        "stDev": 0.58
+      },
+      {
+        "movieId": "M015",
+        "title": "Everything Everywhere All at Once",
+        "numRatings": 3,
+        "avgUserRating": 4.33,
+        "stDev": 0.58
+      },
+      {
+        "movieId": "M010",
+        "title": "Get Out",
+        "numRatings": 3,
+        "avgUserRating": 3.67,
+        "stDev": 0.58
+      },
+      {
+        "movieId": "M012",
+        "title": "Her",
+        "numRatings": 3,
+        "avgUserRating": 4.33,
+        "stDev": 0.58
+      },
+      {
+        "movieId": "M021",
+        "title": "Knives Out",
+        "numRatings": 3,
+        "avgUserRating": 4.67,
+        "stDev": 0.58
+      }
+    ],
+    "count": 10
+  },
+  {
+    "id": "eda-overlap",
+    "title": "High-overlap user pairs",
+    "description": "Users who co-rated the most movies, with average absolute rating difference.",
+    "cypher": "MATCH (u1:User)-[:RATED]->(m:Movie)<-[:RATED]-(u2:User)\nWHERE u1.userId < u2.userId\nWITH u1, u2, count(m) AS coRated, avg(abs((u1)-[:RATED]->(m)).rating - ((u2)-[:RATED]->(m)).rating) AS avgAbsDiff\nRETURN u1.userId AS user1, u2.userId AS user2, coRated, round(avgAbsDiff,2) AS avgAbsDiff\nORDER BY coRated DESC LIMIT 10",
+    "columns": [
+      "user1",
+      "user1Name",
+      "user2",
+      "user2Name",
+      "coRated",
+      "avgAbsDiff"
+    ],
+    "rows": [
+      {
+        "user1": "U007",
+        "user1Name": "Grace Liu",
+        "user2": "U020",
+        "user2Name": "Tom Anderson",
+        "coRated": 5,
+        "avgAbsDiff": 0.4
+      },
+      {
+        "user1": "U007",
+        "user1Name": "Grace Liu",
+        "user2": "U016",
+        "user2Name": "Paul Garcia",
+        "coRated": 5,
+        "avgAbsDiff": 0.6
+      },
+      {
+        "user1": "U008",
+        "user1Name": "Henry Park",
+        "user2": "U018",
+        "user2Name": "Ryan Murphy",
+        "coRated": 5,
+        "avgAbsDiff": 0.6
+      },
+      {
+        "user1": "U011",
+        "user1Name": "Karen Singh",
+        "user2": "U017",
+        "user2Name": "Quinn Zhang",
+        "coRated": 5,
+        "avgAbsDiff": 0.6
+      },
+      {
+        "user1": "U016",
+        "user1Name": "Paul Garcia",
+        "user2": "U020",
+        "user2Name": "Tom Anderson",
+        "coRated": 5,
+        "avgAbsDiff": 0.6
+      },
+      {
+        "user1": "U002",
+        "user1Name": "Bob Martinez",
+        "user2": "U004",
+        "user2Name": "David Kim",
+        "coRated": 5,
+        "avgAbsDiff": 0.8
+      },
+      {
+        "user1": "U014",
+        "user1Name": "Noah Williams",
+        "user2": "U018",
+        "user2Name": "Ryan Murphy",
+        "coRated": 5,
+        "avgAbsDiff": 1.0
+      },
+      {
+        "user1": "U008",
+        "user1Name": "Henry Park",
+        "user2": "U014",
+        "user2Name": "Noah Williams",
+        "coRated": 5,
+        "avgAbsDiff": 1.2
+      },
+      {
+        "user1": "U013",
+        "user1Name": "Maya Patel",
+        "user2": "U017",
+        "user2Name": "Quinn Zhang",
+        "coRated": 4,
+        "avgAbsDiff": 0.0
+      },
+      {
+        "user1": "U001",
+        "user1Name": "Alice Chen",
+        "user2": "U017",
+        "user2Name": "Quinn Zhang",
+        "coRated": 4,
+        "avgAbsDiff": 0.25
+      }
+    ],
+    "count": 10
+  },
+  {
+    "id": "eda-genre-prefs",
+    "title": "Per-user genre preference",
+    "description": "Each user's highest-average genre among genres they rated.",
+    "cypher": "MATCH (u:User)-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre)\nWITH u, g, avg(r.rating) AS avgRating, count(*) AS ratingsInGenre\nORDER BY avgRating DESC\nWITH u, collect({genre:g.name, avgRating:avgRating, ratingsInGenre:ratingsInGenre})[0] AS top\nRETURN u.userId AS userId, u.name AS name, top.genre AS topGenre, round(top.avgRating,2) AS avgRating, top.ratingsInGenre AS ratingsInGenre",
+    "columns": [
+      "userId",
+      "name",
+      "topGenre",
+      "avgRating",
+      "ratingsInGenre"
+    ],
+    "rows": [
+      {
+        "userId": "U001",
+        "name": "Alice Chen",
+        "topGenre": "Thriller",
+        "avgRating": 5.0,
+        "ratingsInGenre": 1
+      },
+      {
+        "userId": "U002",
+        "name": "Bob Martinez",
+        "topGenre": "Crime",
+        "avgRating": 4.67,
+        "ratingsInGenre": 3
+      },
+      {
+        "userId": "U003",
+        "name": "Carol White",
+        "topGenre": "Animation",
+        "avgRating": 5.0,
+        "ratingsInGenre": 1
+      },
+      {
+        "userId": "U004",
+        "name": "David Kim",
+        "topGenre": "Music",
+        "avgRating": 5.0,
+        "ratingsInGenre": 1
+      },
+      {
+        "userId": "U005",
+        "name": "Eva Rossi",
+        "topGenre": "Comedy",
+        "avgRating": 5.0,
+        "ratingsInGenre": 1
+      },
+      {
+        "userId": "U006",
+        "name": "Frank Osei",
+        "topGenre": "Thriller",
+        "avgRating": 4.67,
+        "ratingsInGenre": 3
+      },
+      {
+        "userId": "U007",
+        "name": "Grace Liu",
+        "topGenre": "Thriller",
+        "avgRating": 5.0,
+        "ratingsInGenre": 1
+      },
+      {
+        "userId": "U008",
+        "name": "Henry Park",
+        "topGenre": "Crime",
+        "avgRating": 4.67,
+        "ratingsInGenre": 3
+      },
+      {
+        "userId": "U009",
+        "name": "Iris Novak",
+        "topGenre": "Romance",
+        "avgRating": 5.0,
+        "ratingsInGenre": 2
+      },
+      {
+        "userId": "U010",
+        "name": "James Brown",
+        "topGenre": "Mystery",
+        "avgRating": 5.0,
+        "ratingsInGenre": 2
+      },
+      {
+        "userId": "U011",
+        "name": "Karen Singh",
+        "topGenre": "Action",
+        "avgRating": 5.0,
+        "ratingsInGenre": 1
+      },
+      {
+        "userId": "U012",
+        "name": "Leo Tanaka",
+        "topGenre": "Music",
+        "avgRating": 5.0,
+        "ratingsInGenre": 1
+      },
+      {
+        "userId": "U013",
+        "name": "Maya Patel",
+        "topGenre": "Drama",
+        "avgRating": 5.0,
+        "ratingsInGenre": 2
+      },
+      {
+        "userId": "U014",
+        "name": "Noah Williams",
+        "topGenre": "Adventure",
+        "avgRating": 5.0,
+        "ratingsInGenre": 1
+      },
+      {
+        "userId": "U015",
+        "name": "Olivia Jones",
+        "topGenre": "Animation",
+        "avgRating": 5.0,
+        "ratingsInGenre": 1
+      },
+      {
+        "userId": "U016",
+        "name": "Paul Garcia",
+        "topGenre": "Crime",
+        "avgRating": 5.0,
+        "ratingsInGenre": 1
+      },
+      {
+        "userId": "U017",
+        "name": "Quinn Zhang",
+        "topGenre": "Drama",
+        "avgRating": 5.0,
+        "ratingsInGenre": 2
+      },
+      {
+        "userId": "U018",
+        "name": "Ryan Murphy",
+        "topGenre": "Crime",
+        "avgRating": 5.0,
+        "ratingsInGenre": 3
+      },
+      {
+        "userId": "U019",
+        "name": "Sara Hassan",
+        "topGenre": "Comedy",
+        "avgRating": 5.0,
+        "ratingsInGenre": 1
+      },
+      {
+        "userId": "U020",
+        "name": "Tom Anderson",
+        "topGenre": "Crime",
+        "avgRating": 5.0,
+        "ratingsInGenre": 1
+      }
+    ],
+    "count": 20
+  }
+]

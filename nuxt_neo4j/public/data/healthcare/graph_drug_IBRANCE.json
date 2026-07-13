@@ -1,0 +1,4416 @@
+{
+  "nodes": [
+    {
+      "id": "Case:124230756",
+      "caption": "Case 124230756 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:IBRANCE",
+      "caption": "IBRANCE",
+      "labels": [
+        "Drug"
+      ],
+      "score": 1.0
+    },
+    {
+      "id": "Drug:CRANBERRY",
+      "caption": "CRANBERRY",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:SIMVASTATIN",
+      "caption": "SIMVASTATIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Headache",
+      "caption": "Headache",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dizziness",
+      "caption": "Dizziness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Balance disorder",
+      "caption": "Balance disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Hospitalization - Initial or Prolonged",
+      "caption": "Hospitalization - Initial or Prolonged",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "AgeGroup:Elderly",
+      "caption": "Elderly",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Manufacturer:PFIZER",
+      "caption": "PFIZER",
+      "labels": [
+        "Manufacturer"
+      ]
+    },
+    {
+      "id": "Case:131168794",
+      "caption": "Case 131168794 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Diarrhoea",
+      "caption": "Diarrhoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Arthralgia",
+      "caption": "Arthralgia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Neoplasm progression",
+      "caption": "Neoplasm progression",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Off label use",
+      "caption": "Off label use",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Nasopharyngitis",
+      "caption": "Nasopharyngitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "AgeGroup:Adult",
+      "caption": "Adult",
+      "labels": [
+        "AgeGroup"
+      ]
+    },
+    {
+      "id": "Case:138596044",
+      "caption": "Case 138596044 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Asthenia",
+      "caption": "Asthenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal pain",
+      "caption": "Abdominal pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Life-Threatening",
+      "caption": "Life-Threatening",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:142485967",
+      "caption": "Case 142485967 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:GABAPENTIN",
+      "caption": "GABAPENTIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN B6",
+      "caption": "VITAMIN B6",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:METHADONE",
+      "caption": "METHADONE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:GLIMEPIRIDE",
+      "caption": "GLIMEPIRIDE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LETROZOLE",
+      "caption": "LETROZOLE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Weight decreased",
+      "caption": "Weight decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Ankle fracture",
+      "caption": "Ankle fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pyrexia",
+      "caption": "Pyrexia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Ligament sprain",
+      "caption": "Ligament sprain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product dose omission issue",
+      "caption": "Product dose omission issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Eating disorder",
+      "caption": "Eating disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Incorrect product administration duration",
+      "caption": "Incorrect product administration duration",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Accident",
+      "caption": "Accident",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Arthritis",
+      "caption": "Arthritis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Other Serious (Important Medical Event)",
+      "caption": "Other Serious (Important Medical Event)",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:146133255",
+      "caption": "Case 146133255 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Hepatic cirrhosis",
+      "caption": "Hepatic cirrhosis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Carbohydrate antigen 15-3 increased",
+      "caption": "Carbohydrate antigen 15-3 increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal distension",
+      "caption": "Abdominal distension",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:151122173",
+      "caption": "Case 151122173 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Product prescribing error",
+      "caption": "Product prescribing error",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:160790345",
+      "caption": "Case 160790345 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:White blood cell count decreased",
+      "caption": "White blood cell count decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:167405917",
+      "caption": "Case 167405917 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Swelling",
+      "caption": "Swelling",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Lymphoedema",
+      "caption": "Lymphoedema",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Blood glucose increased",
+      "caption": "Blood glucose increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:170314423",
+      "caption": "Case 170314423 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Fatigue",
+      "caption": "Fatigue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:170646534",
+      "caption": "Case 170646534 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Sleep disorder",
+      "caption": "Sleep disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Malaise",
+      "caption": "Malaise",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:172087724",
+      "caption": "Case 172087724 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Red blood cell count decreased",
+      "caption": "Red blood cell count decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Viral infection",
+      "caption": "Viral infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal discomfort",
+      "caption": "Abdominal discomfort",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Alopecia",
+      "caption": "Alopecia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Vomiting",
+      "caption": "Vomiting",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Sensation of foreign body",
+      "caption": "Sensation of foreign body",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Abdominal pain upper",
+      "caption": "Abdominal pain upper",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Illness",
+      "caption": "Illness",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Nausea",
+      "caption": "Nausea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:172139112",
+      "caption": "Case 172139112 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Cystitis",
+      "caption": "Cystitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:172573844",
+      "caption": "Case 172573844 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:DICYCLOMINE",
+      "caption": "DICYCLOMINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:OSTEO BI FLEX [CHONDROITIN SULFATE;GLUCOSAMINE HYDROCHLORIDE]",
+      "caption": "OSTEO BI FLEX [CHONDROITIN SULFATE;GLUCOSAMINE HYDROCHLORIDE]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ARIMIDEX",
+      "caption": "ARIMIDEX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LEXAPRO",
+      "caption": "LEXAPRO",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:SYNTHROID",
+      "caption": "SYNTHROID",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ASPIRIN [ACETYLSALICYLIC ACID]",
+      "caption": "ASPIRIN [ACETYLSALICYLIC ACID]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN B",
+      "caption": "VITAMIN B",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:BIOTIN",
+      "caption": "BIOTIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN C",
+      "caption": "VITAMIN C",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:EQUATE ALLERGY RELIEF (DIPHENHYDRAMINE HYDROCHLORIDE)",
+      "caption": "EQUATE ALLERGY RELIEF (DIPHENHYDRAMINE HYDROCHLORIDE)",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Amino acid level decreased",
+      "caption": "Amino acid level decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Renal disorder",
+      "caption": "Renal disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Blood albumin decreased",
+      "caption": "Blood albumin decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:173726454",
+      "caption": "Case 173726454 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:TYLENOL",
+      "caption": "TYLENOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN E",
+      "caption": "VITAMIN E",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN D3",
+      "caption": "VITAMIN D3",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Feeling abnormal",
+      "caption": "Feeling abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Bronchitis",
+      "caption": "Bronchitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Neutrophil count decreased",
+      "caption": "Neutrophil count decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Blood count abnormal",
+      "caption": "Blood count abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:173773788",
+      "caption": "Case 173773788 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:FASLODEX",
+      "caption": "FASLODEX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Neutropenia",
+      "caption": "Neutropenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Anaemia",
+      "caption": "Anaemia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Thrombocytopenia",
+      "caption": "Thrombocytopenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:178237594",
+      "caption": "Case 178237594 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:CARBAMAZEPINE",
+      "caption": "CARBAMAZEPINE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Peripheral swelling",
+      "caption": "Peripheral swelling",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Blood chloride decreased",
+      "caption": "Blood chloride decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Blood sodium decreased",
+      "caption": "Blood sodium decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Thrombosis",
+      "caption": "Thrombosis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:179998657",
+      "caption": "Case 179998657 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Chest pain",
+      "caption": "Chest pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Immune system disorder",
+      "caption": "Immune system disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Death",
+      "caption": "Death",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Outcome:Death",
+      "caption": "Death",
+      "labels": [
+        "Outcome"
+      ]
+    },
+    {
+      "id": "Case:180251383",
+      "caption": "Case 180251383 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Product formulation issue",
+      "caption": "Product formulation issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Choking",
+      "caption": "Choking",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Foreign body in throat",
+      "caption": "Foreign body in throat",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:181651466",
+      "caption": "Case 181651466 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Drug hypersensitivity",
+      "caption": "Drug hypersensitivity",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cough",
+      "caption": "Cough",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dysphagia",
+      "caption": "Dysphagia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Foreign body in respiratory tract",
+      "caption": "Foreign body in respiratory tract",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Myocardial infarction",
+      "caption": "Myocardial infarction",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:183144653",
+      "caption": "Case 183144653 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Condition aggravated",
+      "caption": "Condition aggravated",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product taste abnormal",
+      "caption": "Product taste abnormal",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:183181416",
+      "caption": "Case 183181416 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:183992425",
+      "caption": "Case 183992425 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:184363604",
+      "caption": "Case 184363604 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:LISINOPRIL",
+      "caption": "LISINOPRIL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:METOPROLOL",
+      "caption": "METOPROLOL",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Dyspnoea exertional",
+      "caption": "Dyspnoea exertional",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pulmonary embolism",
+      "caption": "Pulmonary embolism",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:184371212",
+      "caption": "Case 184371212 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Foot fracture",
+      "caption": "Foot fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product complaint",
+      "caption": "Product complaint",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Poor quality product administered",
+      "caption": "Poor quality product administered",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:185956394",
+      "caption": "Case 185956394 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Oxygen saturation decreased",
+      "caption": "Oxygen saturation decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Anxiety",
+      "caption": "Anxiety",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Heart rate increased",
+      "caption": "Heart rate increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Blood cholesterol increased",
+      "caption": "Blood cholesterol increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Back pain",
+      "caption": "Back pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Hot flush",
+      "caption": "Hot flush",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:187319722",
+      "caption": "Case 187319722 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Insomnia",
+      "caption": "Insomnia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Weight increased",
+      "caption": "Weight increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gastrooesophageal reflux disease",
+      "caption": "Gastrooesophageal reflux disease",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:188461593",
+      "caption": "Case 188461593 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Hunger",
+      "caption": "Hunger",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Decreased appetite",
+      "caption": "Decreased appetite",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Rhinorrhoea",
+      "caption": "Rhinorrhoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:188471313",
+      "caption": "Case 188471313 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Irritability",
+      "caption": "Irritability",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Dyspnoea",
+      "caption": "Dyspnoea",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Chronic obstructive pulmonary disease",
+      "caption": "Chronic obstructive pulmonary disease",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Mucosal disorder",
+      "caption": "Mucosal disorder",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Epistaxis",
+      "caption": "Epistaxis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Haemoglobin increased",
+      "caption": "Haemoglobin increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:188607313",
+      "caption": "Case 188607313 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:ALPRAZOLAM",
+      "caption": "ALPRAZOLAM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Amnesia",
+      "caption": "Amnesia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cerebrovascular accident",
+      "caption": "Cerebrovascular accident",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:191698602",
+      "caption": "Case 191698602 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN D [VITAMIN D NOS]",
+      "caption": "VITAMIN D [VITAMIN D NOS]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:GARLIC [ALLIUM SATIVUM]",
+      "caption": "GARLIC [ALLIUM SATIVUM]",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Energy increased",
+      "caption": "Energy increased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Increased appetite",
+      "caption": "Increased appetite",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gastroenteritis viral",
+      "caption": "Gastroenteritis viral",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Platelet count decreased",
+      "caption": "Platelet count decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Muscle strain",
+      "caption": "Muscle strain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Constipation",
+      "caption": "Constipation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Flatulence",
+      "caption": "Flatulence",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:191854894",
+      "caption": "Case 191854894 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:ADVIL 12 HOUR",
+      "caption": "ADVIL 12 HOUR",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Bone pain",
+      "caption": "Bone pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Myalgia",
+      "caption": "Myalgia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Tooth fracture",
+      "caption": "Tooth fracture",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Depression",
+      "caption": "Depression",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Mobility decreased",
+      "caption": "Mobility decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Gait disturbance",
+      "caption": "Gait disturbance",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:191957268",
+      "caption": "Case 191957268 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:XGEVA",
+      "caption": "XGEVA",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:FULVESTRANT",
+      "caption": "FULVESTRANT",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Neuropathy peripheral",
+      "caption": "Neuropathy peripheral",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Vision blurred",
+      "caption": "Vision blurred",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194436362",
+      "caption": "Case 194436362 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Myelosuppression",
+      "caption": "Myelosuppression",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194506342",
+      "caption": "Case 194506342 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN D 400",
+      "caption": "VITAMIN D 400",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:ZOLADEX",
+      "caption": "ZOLADEX",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:VITAMIN B12",
+      "caption": "VITAMIN B12",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Pulmonary oedema",
+      "caption": "Pulmonary oedema",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:194887742",
+      "caption": "Case 194887742 (M)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:DECADRON",
+      "caption": "DECADRON",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Pulmonary mucormycosis",
+      "caption": "Pulmonary mucormycosis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pneumonia",
+      "caption": "Pneumonia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:195019153",
+      "caption": "Case 195019153 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Febrile neutropenia",
+      "caption": "Febrile neutropenia",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:COVID-19",
+      "caption": "COVID-19",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:195071232",
+      "caption": "Case 195071232 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Oesophagitis",
+      "caption": "Oesophagitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:195618091",
+      "caption": "Case 195618091 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Case:1239109926",
+      "caption": "Case 1239109926 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Reaction:Lymphadenopathy",
+      "caption": "Lymphadenopathy",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Stomatitis",
+      "caption": "Stomatitis",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Ear discomfort",
+      "caption": "Ear discomfort",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Chills",
+      "caption": "Chills",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Oropharyngeal pain",
+      "caption": "Oropharyngeal pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Stress",
+      "caption": "Stress",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Palpitations",
+      "caption": "Palpitations",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Upper respiratory tract infection",
+      "caption": "Upper respiratory tract infection",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Body height decreased",
+      "caption": "Body height decreased",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Joint injury",
+      "caption": "Joint injury",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Product use issue",
+      "caption": "Product use issue",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Intentional dose omission",
+      "caption": "Intentional dose omission",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Pain",
+      "caption": "Pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Fall",
+      "caption": "Fall",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Case:1256570432",
+      "caption": "Case 1256570432 (F)",
+      "labels": [
+        "Case"
+      ]
+    },
+    {
+      "id": "Drug:ATIVAN",
+      "caption": "ATIVAN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:MIDRIN",
+      "caption": "MIDRIN",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:PANTOPRAZOLE",
+      "caption": "PANTOPRAZOLE",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Drug:LORAZEPAM",
+      "caption": "LORAZEPAM",
+      "labels": [
+        "Drug"
+      ]
+    },
+    {
+      "id": "Reaction:Gastrointestinal pain",
+      "caption": "Gastrointestinal pain",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Cluster headache",
+      "caption": "Cluster headache",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Eructation",
+      "caption": "Eructation",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Acne",
+      "caption": "Acne",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Skin abrasion",
+      "caption": "Skin abrasion",
+      "labels": [
+        "Reaction"
+      ]
+    },
+    {
+      "id": "Reaction:Memory impairment",
+      "caption": "Memory impairment",
+      "labels": [
+        "Reaction"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "CD:1",
+      "from": "Case:124230756",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:2",
+      "from": "Case:124230756",
+      "to": "Drug:CRANBERRY",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:3",
+      "from": "Case:124230756",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:4",
+      "from": "Case:124230756",
+      "to": "Drug:SIMVASTATIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:5",
+      "from": "Case:124230756",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:6",
+      "from": "Case:124230756",
+      "to": "Reaction:Dizziness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:7",
+      "from": "Case:124230756",
+      "to": "Reaction:Balance disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:8",
+      "from": "Case:124230756",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:9",
+      "from": "Case:124230756",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:10",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:124230756",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:11",
+      "from": "Case:131168794",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:12",
+      "from": "Case:131168794",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:13",
+      "from": "Case:131168794",
+      "to": "Reaction:Arthralgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:14",
+      "from": "Case:131168794",
+      "to": "Reaction:Neoplasm progression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:15",
+      "from": "Case:131168794",
+      "to": "Reaction:Off label use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:16",
+      "from": "Case:131168794",
+      "to": "Reaction:Nasopharyngitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:17",
+      "from": "Case:131168794",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:18",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:131168794",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:19",
+      "from": "Case:138596044",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:20",
+      "from": "Case:138596044",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:21",
+      "from": "Case:138596044",
+      "to": "Reaction:Dizziness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:22",
+      "from": "Case:138596044",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:23",
+      "from": "Case:138596044",
+      "to": "Reaction:Asthenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:24",
+      "from": "Case:138596044",
+      "to": "Reaction:Abdominal pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:25",
+      "from": "Case:138596044",
+      "to": "Outcome:Life-Threatening",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:26",
+      "from": "Case:138596044",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:27",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:138596044",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:28",
+      "from": "Case:142485967",
+      "to": "Drug:GABAPENTIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:29",
+      "from": "Case:142485967",
+      "to": "Drug:VITAMIN B6",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:30",
+      "from": "Case:142485967",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:31",
+      "from": "Case:142485967",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:32",
+      "from": "Case:142485967",
+      "to": "Drug:METHADONE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:33",
+      "from": "Case:142485967",
+      "to": "Drug:GLIMEPIRIDE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:34",
+      "from": "Case:142485967",
+      "to": "Drug:LETROZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:35",
+      "from": "Case:142485967",
+      "to": "Reaction:Weight decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:36",
+      "from": "Case:142485967",
+      "to": "Reaction:Ankle fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:37",
+      "from": "Case:142485967",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:38",
+      "from": "Case:142485967",
+      "to": "Reaction:Ligament sprain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:39",
+      "from": "Case:142485967",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:40",
+      "from": "Case:142485967",
+      "to": "Reaction:Eating disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:41",
+      "from": "Case:142485967",
+      "to": "Reaction:Incorrect product administration duration",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:42",
+      "from": "Case:142485967",
+      "to": "Reaction:Accident",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:43",
+      "from": "Case:142485967",
+      "to": "Reaction:Arthritis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:44",
+      "from": "Case:142485967",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:45",
+      "from": "Case:142485967",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:46",
+      "from": "Case:142485967",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:47",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:142485967",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:48",
+      "from": "Case:146133255",
+      "to": "Drug:LETROZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:49",
+      "from": "Case:146133255",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:50",
+      "from": "Case:146133255",
+      "to": "Reaction:Hepatic cirrhosis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:51",
+      "from": "Case:146133255",
+      "to": "Reaction:Carbohydrate antigen 15-3 increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:52",
+      "from": "Case:146133255",
+      "to": "Reaction:Neoplasm progression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:53",
+      "from": "Case:146133255",
+      "to": "Reaction:Abdominal distension",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:54",
+      "from": "Case:146133255",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:55",
+      "from": "Case:146133255",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:56",
+      "from": "Case:146133255",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:57",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:146133255",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:58",
+      "from": "Case:151122173",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:59",
+      "from": "Case:151122173",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:60",
+      "from": "Case:151122173",
+      "to": "Reaction:Product prescribing error",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:61",
+      "from": "Case:151122173",
+      "to": "Reaction:Neoplasm progression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:62",
+      "from": "Case:151122173",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:63",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:151122173",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:64",
+      "from": "Case:160790345",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:65",
+      "from": "Case:160790345",
+      "to": "Reaction:White blood cell count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:66",
+      "from": "Case:160790345",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:67",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:160790345",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:68",
+      "from": "Case:167405917",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:69",
+      "from": "Case:167405917",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:70",
+      "from": "Case:167405917",
+      "to": "Reaction:Neoplasm progression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:71",
+      "from": "Case:167405917",
+      "to": "Reaction:Weight decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:72",
+      "from": "Case:167405917",
+      "to": "Reaction:Swelling",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:73",
+      "from": "Case:167405917",
+      "to": "Reaction:Lymphoedema",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:74",
+      "from": "Case:167405917",
+      "to": "Reaction:Blood glucose increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:75",
+      "from": "Case:167405917",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:76",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:167405917",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:77",
+      "from": "Case:170314423",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:78",
+      "from": "Case:170314423",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:79",
+      "from": "Case:170314423",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:80",
+      "from": "Case:170314423",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:81",
+      "from": "Case:170314423",
+      "to": "Reaction:Dizziness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:82",
+      "from": "Case:170314423",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:83",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:170314423",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:84",
+      "from": "Case:170646534",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:85",
+      "from": "Case:170646534",
+      "to": "Reaction:Sleep disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:86",
+      "from": "Case:170646534",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:87",
+      "from": "Case:170646534",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:88",
+      "from": "Case:170646534",
+      "to": "Reaction:Neoplasm progression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:89",
+      "from": "Case:170646534",
+      "to": "Reaction:Arthralgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:90",
+      "from": "Case:170646534",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:91",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:170646534",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:92",
+      "from": "Case:172087724",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:93",
+      "from": "Case:172087724",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:94",
+      "from": "Case:172087724",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:95",
+      "from": "Case:172087724",
+      "to": "Reaction:Red blood cell count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:96",
+      "from": "Case:172087724",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:97",
+      "from": "Case:172087724",
+      "to": "Reaction:Viral infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:98",
+      "from": "Case:172087724",
+      "to": "Reaction:Abdominal discomfort",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:99",
+      "from": "Case:172087724",
+      "to": "Reaction:White blood cell count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:100",
+      "from": "Case:172087724",
+      "to": "Reaction:Alopecia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:101",
+      "from": "Case:172087724",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:102",
+      "from": "Case:172087724",
+      "to": "Reaction:Sensation of foreign body",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:103",
+      "from": "Case:172087724",
+      "to": "Reaction:Abdominal pain upper",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:104",
+      "from": "Case:172087724",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:105",
+      "from": "Case:172087724",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:106",
+      "from": "Case:172087724",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:107",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:172087724",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:108",
+      "from": "Case:172139112",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:109",
+      "from": "Case:172139112",
+      "to": "Reaction:Product dose omission issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:110",
+      "from": "Case:172139112",
+      "to": "Reaction:Cystitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:111",
+      "from": "Case:172139112",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:112",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:172139112",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:113",
+      "from": "Case:172573844",
+      "to": "Drug:DICYCLOMINE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:114",
+      "from": "Case:172573844",
+      "to": "Drug:OSTEO BI FLEX [CHONDROITIN SULFATE;GLUCOSAMINE HYDROCHLORIDE]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:115",
+      "from": "Case:172573844",
+      "to": "Drug:ARIMIDEX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:116",
+      "from": "Case:172573844",
+      "to": "Drug:LEXAPRO",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:117",
+      "from": "Case:172573844",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:118",
+      "from": "Case:172573844",
+      "to": "Drug:SYNTHROID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:119",
+      "from": "Case:172573844",
+      "to": "Drug:ASPIRIN [ACETYLSALICYLIC ACID]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:120",
+      "from": "Case:172573844",
+      "to": "Drug:VITAMIN B",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:121",
+      "from": "Case:172573844",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:122",
+      "from": "Case:172573844",
+      "to": "Drug:BIOTIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:123",
+      "from": "Case:172573844",
+      "to": "Drug:VITAMIN C",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:124",
+      "from": "Case:172573844",
+      "to": "Drug:EQUATE ALLERGY RELIEF (DIPHENHYDRAMINE HYDROCHLORIDE)",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:125",
+      "from": "Case:172573844",
+      "to": "Reaction:Amino acid level decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:126",
+      "from": "Case:172573844",
+      "to": "Reaction:Neoplasm progression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:127",
+      "from": "Case:172573844",
+      "to": "Reaction:Renal disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:128",
+      "from": "Case:172573844",
+      "to": "Reaction:Blood albumin decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:129",
+      "from": "Case:172573844",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:130",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:172573844",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:131",
+      "from": "Case:173726454",
+      "to": "Drug:VITAMIN C",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:132",
+      "from": "Case:173726454",
+      "to": "Drug:TYLENOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:133",
+      "from": "Case:173726454",
+      "to": "Drug:VITAMIN E",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:134",
+      "from": "Case:173726454",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:135",
+      "from": "Case:173726454",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:136",
+      "from": "Case:173726454",
+      "to": "Drug:VITAMIN D3",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:137",
+      "from": "Case:173726454",
+      "to": "Reaction:Feeling abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:138",
+      "from": "Case:173726454",
+      "to": "Reaction:Neoplasm progression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:139",
+      "from": "Case:173726454",
+      "to": "Reaction:Bronchitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:140",
+      "from": "Case:173726454",
+      "to": "Reaction:Neutrophil count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:141",
+      "from": "Case:173726454",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:142",
+      "from": "Case:173726454",
+      "to": "Reaction:Blood count abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:143",
+      "from": "Case:173726454",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:144",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:173726454",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:145",
+      "from": "Case:173773788",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:146",
+      "from": "Case:173773788",
+      "to": "Drug:FASLODEX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:147",
+      "from": "Case:173773788",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:148",
+      "from": "Case:173773788",
+      "to": "Reaction:Neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:149",
+      "from": "Case:173773788",
+      "to": "Reaction:Anaemia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:150",
+      "from": "Case:173773788",
+      "to": "Reaction:Off label use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:151",
+      "from": "Case:173773788",
+      "to": "Reaction:Thrombocytopenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:152",
+      "from": "Case:173773788",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:153",
+      "from": "Case:173773788",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:154",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:173773788",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:155",
+      "from": "Case:178237594",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:156",
+      "from": "Case:178237594",
+      "to": "Drug:LETROZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:157",
+      "from": "Case:178237594",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:158",
+      "from": "Case:178237594",
+      "to": "Drug:CARBAMAZEPINE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:159",
+      "from": "Case:178237594",
+      "to": "Reaction:Neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:160",
+      "from": "Case:178237594",
+      "to": "Reaction:Peripheral swelling",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:161",
+      "from": "Case:178237594",
+      "to": "Reaction:Blood chloride decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:162",
+      "from": "Case:178237594",
+      "to": "Reaction:Off label use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:163",
+      "from": "Case:178237594",
+      "to": "Reaction:Blood sodium decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:164",
+      "from": "Case:178237594",
+      "to": "Reaction:Thrombosis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:165",
+      "from": "Case:178237594",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:166",
+      "from": "Case:178237594",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:167",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:178237594",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:168",
+      "from": "Case:179998657",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:169",
+      "from": "Case:179998657",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:170",
+      "from": "Case:179998657",
+      "to": "Reaction:Chest pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:171",
+      "from": "Case:179998657",
+      "to": "Reaction:Neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:172",
+      "from": "Case:179998657",
+      "to": "Reaction:Immune system disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:173",
+      "from": "Case:179998657",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:174",
+      "from": "Case:179998657",
+      "to": "Reaction:Death",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:175",
+      "from": "Case:179998657",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:176",
+      "from": "Case:179998657",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:177",
+      "from": "Case:179998657",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:178",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:179998657",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:179",
+      "from": "Case:180251383",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:180",
+      "from": "Case:180251383",
+      "to": "Drug:LETROZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:181",
+      "from": "Case:180251383",
+      "to": "Reaction:Alopecia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:182",
+      "from": "Case:180251383",
+      "to": "Reaction:Product formulation issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:183",
+      "from": "Case:180251383",
+      "to": "Reaction:Choking",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:184",
+      "from": "Case:180251383",
+      "to": "Reaction:Foreign body in throat",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:185",
+      "from": "Case:180251383",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:186",
+      "from": "Case:180251383",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:187",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:180251383",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:188",
+      "from": "Case:181651466",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:189",
+      "from": "Case:181651466",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:190",
+      "from": "Case:181651466",
+      "to": "Reaction:Drug hypersensitivity",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:191",
+      "from": "Case:181651466",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:192",
+      "from": "Case:181651466",
+      "to": "Reaction:Dysphagia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:193",
+      "from": "Case:181651466",
+      "to": "Reaction:Foreign body in respiratory tract",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:194",
+      "from": "Case:181651466",
+      "to": "Reaction:Myocardial infarction",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:195",
+      "from": "Case:181651466",
+      "to": "Reaction:Neoplasm progression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:196",
+      "from": "Case:181651466",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:197",
+      "from": "Case:181651466",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:198",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:181651466",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:199",
+      "from": "Case:183144653",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:200",
+      "from": "Case:183144653",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:201",
+      "from": "Case:183144653",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:202",
+      "from": "Case:183144653",
+      "to": "Reaction:Alopecia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:203",
+      "from": "Case:183144653",
+      "to": "Reaction:Condition aggravated",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:204",
+      "from": "Case:183144653",
+      "to": "Reaction:Abdominal pain upper",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:205",
+      "from": "Case:183144653",
+      "to": "Reaction:White blood cell count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:206",
+      "from": "Case:183144653",
+      "to": "Reaction:Product taste abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:207",
+      "from": "Case:183144653",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:208",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:183144653",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:209",
+      "from": "Case:183181416",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:210",
+      "from": "Case:183181416",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:211",
+      "from": "Case:183181416",
+      "to": "Reaction:Neutrophil count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:212",
+      "from": "Case:183181416",
+      "to": "Reaction:White blood cell count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:213",
+      "from": "Case:183181416",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:214",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:183181416",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:215",
+      "from": "Case:183992425",
+      "to": "Drug:LETROZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:216",
+      "from": "Case:183992425",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:217",
+      "from": "Case:183992425",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:218",
+      "from": "Case:183992425",
+      "to": "Reaction:White blood cell count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:219",
+      "from": "Case:183992425",
+      "to": "Reaction:Arthritis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:220",
+      "from": "Case:183992425",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:221",
+      "from": "Case:183992425",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:222",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:183992425",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:223",
+      "from": "Case:184363604",
+      "to": "Drug:LISINOPRIL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:224",
+      "from": "Case:184363604",
+      "to": "Drug:SYNTHROID",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:225",
+      "from": "Case:184363604",
+      "to": "Drug:ASPIRIN [ACETYLSALICYLIC ACID]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:226",
+      "from": "Case:184363604",
+      "to": "Drug:METOPROLOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:227",
+      "from": "Case:184363604",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:228",
+      "from": "Case:184363604",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:229",
+      "from": "Case:184363604",
+      "to": "Drug:VITAMIN D3",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:230",
+      "from": "Case:184363604",
+      "to": "Reaction:Dyspnoea exertional",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:231",
+      "from": "Case:184363604",
+      "to": "Reaction:Pulmonary embolism",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:232",
+      "from": "Case:184363604",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:233",
+      "from": "Case:184363604",
+      "to": "Reaction:Off label use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:234",
+      "from": "Case:184363604",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:235",
+      "from": "Case:184363604",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:236",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:184363604",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:237",
+      "from": "Case:184371212",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:238",
+      "from": "Case:184371212",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:239",
+      "from": "Case:184371212",
+      "to": "Reaction:Neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:240",
+      "from": "Case:184371212",
+      "to": "Reaction:Foot fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:241",
+      "from": "Case:184371212",
+      "to": "Reaction:Product complaint",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:242",
+      "from": "Case:184371212",
+      "to": "Reaction:Poor quality product administered",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:243",
+      "from": "Case:184371212",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:244",
+      "from": "Case:184371212",
+      "to": "Reaction:Blood count abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:245",
+      "from": "Case:184371212",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:246",
+      "from": "Case:184371212",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:247",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:184371212",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:248",
+      "from": "Case:185956394",
+      "to": "Drug:LETROZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:249",
+      "from": "Case:185956394",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:250",
+      "from": "Case:185956394",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:251",
+      "from": "Case:185956394",
+      "to": "Reaction:Neoplasm progression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:252",
+      "from": "Case:185956394",
+      "to": "Reaction:Oxygen saturation decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:253",
+      "from": "Case:185956394",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:254",
+      "from": "Case:185956394",
+      "to": "Reaction:Anxiety",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:255",
+      "from": "Case:185956394",
+      "to": "Reaction:Heart rate increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:256",
+      "from": "Case:185956394",
+      "to": "Reaction:Blood cholesterol increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:257",
+      "from": "Case:185956394",
+      "to": "Reaction:Back pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:258",
+      "from": "Case:185956394",
+      "to": "Reaction:Hot flush",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:259",
+      "from": "Case:185956394",
+      "to": "Reaction:Neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:260",
+      "from": "Case:185956394",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:261",
+      "from": "Case:185956394",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:262",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:185956394",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:263",
+      "from": "Case:187319722",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:264",
+      "from": "Case:187319722",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:265",
+      "from": "Case:187319722",
+      "to": "Reaction:Illness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:266",
+      "from": "Case:187319722",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:267",
+      "from": "Case:187319722",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:268",
+      "from": "Case:187319722",
+      "to": "Reaction:Insomnia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:269",
+      "from": "Case:187319722",
+      "to": "Reaction:Weight increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:270",
+      "from": "Case:187319722",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:271",
+      "from": "Case:187319722",
+      "to": "Reaction:Gastrooesophageal reflux disease",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:272",
+      "from": "Case:187319722",
+      "to": "Reaction:Arthritis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:273",
+      "from": "Case:187319722",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:274",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:187319722",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:275",
+      "from": "Case:188461593",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:276",
+      "from": "Case:188461593",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:277",
+      "from": "Case:188461593",
+      "to": "Reaction:Hunger",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:278",
+      "from": "Case:188461593",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:279",
+      "from": "Case:188461593",
+      "to": "Reaction:Decreased appetite",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:280",
+      "from": "Case:188461593",
+      "to": "Reaction:Feeling abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:281",
+      "from": "Case:188461593",
+      "to": "Reaction:Alopecia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:282",
+      "from": "Case:188461593",
+      "to": "Reaction:Abdominal pain upper",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:283",
+      "from": "Case:188461593",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:284",
+      "from": "Case:188461593",
+      "to": "Reaction:Rhinorrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:285",
+      "from": "Case:188461593",
+      "to": "Reaction:Insomnia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:286",
+      "from": "Case:188461593",
+      "to": "Reaction:Dizziness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:287",
+      "from": "Case:188461593",
+      "to": "Reaction:Headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:288",
+      "from": "Case:188461593",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:289",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:188461593",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:290",
+      "from": "Case:188471313",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:291",
+      "from": "Case:188471313",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:292",
+      "from": "Case:188471313",
+      "to": "Reaction:Off label use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:293",
+      "from": "Case:188471313",
+      "to": "Reaction:Feeling abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:294",
+      "from": "Case:188471313",
+      "to": "Reaction:Irritability",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:295",
+      "from": "Case:188471313",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:296",
+      "from": "Case:188471313",
+      "to": "Reaction:White blood cell count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:297",
+      "from": "Case:188471313",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:298",
+      "from": "Case:188471313",
+      "to": "Reaction:Chronic obstructive pulmonary disease",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:299",
+      "from": "Case:188471313",
+      "to": "Reaction:Mucosal disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:300",
+      "from": "Case:188471313",
+      "to": "Reaction:Epistaxis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:301",
+      "from": "Case:188471313",
+      "to": "Reaction:Dizziness",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:302",
+      "from": "Case:188471313",
+      "to": "Reaction:Haemoglobin increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:303",
+      "from": "Case:188471313",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:304",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:188471313",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:305",
+      "from": "Case:188607313",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:306",
+      "from": "Case:188607313",
+      "to": "Drug:ALPRAZOLAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:307",
+      "from": "Case:188607313",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:308",
+      "from": "Case:188607313",
+      "to": "Reaction:Amnesia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:309",
+      "from": "Case:188607313",
+      "to": "Reaction:Cerebrovascular accident",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:310",
+      "from": "Case:188607313",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:311",
+      "from": "Case:188607313",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:312",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:188607313",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:313",
+      "from": "Case:191698602",
+      "to": "Drug:VITAMIN C",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:314",
+      "from": "Case:191698602",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:315",
+      "from": "Case:191698602",
+      "to": "Drug:VITAMIN D [VITAMIN D NOS]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:316",
+      "from": "Case:191698602",
+      "to": "Drug:GARLIC [ALLIUM SATIVUM]",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:317",
+      "from": "Case:191698602",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:318",
+      "from": "Case:191698602",
+      "to": "Drug:LETROZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:319",
+      "from": "Case:191698602",
+      "to": "Reaction:Energy increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:320",
+      "from": "Case:191698602",
+      "to": "Reaction:Increased appetite",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:321",
+      "from": "Case:191698602",
+      "to": "Reaction:Gastroenteritis viral",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:322",
+      "from": "Case:191698602",
+      "to": "Reaction:Platelet count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:323",
+      "from": "Case:191698602",
+      "to": "Reaction:Muscle strain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:324",
+      "from": "Case:191698602",
+      "to": "Reaction:Constipation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:325",
+      "from": "Case:191698602",
+      "to": "Reaction:Flatulence",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:326",
+      "from": "Case:191698602",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:327",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:191698602",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:328",
+      "from": "Case:191854894",
+      "to": "Drug:FASLODEX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:329",
+      "from": "Case:191854894",
+      "to": "Drug:TYLENOL",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:330",
+      "from": "Case:191854894",
+      "to": "Drug:ADVIL 12 HOUR",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:331",
+      "from": "Case:191854894",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:332",
+      "from": "Case:191854894",
+      "to": "Drug:BIOTIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:333",
+      "from": "Case:191854894",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:334",
+      "from": "Case:191854894",
+      "to": "Reaction:Bone pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:335",
+      "from": "Case:191854894",
+      "to": "Reaction:Myalgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:336",
+      "from": "Case:191854894",
+      "to": "Reaction:Alopecia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:337",
+      "from": "Case:191854894",
+      "to": "Reaction:Tooth fracture",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:338",
+      "from": "Case:191854894",
+      "to": "Reaction:Depression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:339",
+      "from": "Case:191854894",
+      "to": "Reaction:Mobility decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:340",
+      "from": "Case:191854894",
+      "to": "Reaction:Gait disturbance",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CA:341",
+      "from": "Case:191854894",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:342",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:191854894",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:343",
+      "from": "Case:191957268",
+      "to": "Drug:XGEVA",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:344",
+      "from": "Case:191957268",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:345",
+      "from": "Case:191957268",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:346",
+      "from": "Case:191957268",
+      "to": "Drug:FULVESTRANT",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:347",
+      "from": "Case:191957268",
+      "to": "Reaction:Neuropathy peripheral",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:348",
+      "from": "Case:191957268",
+      "to": "Reaction:Vision blurred",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:349",
+      "from": "Case:191957268",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:350",
+      "from": "Case:191957268",
+      "to": "Reaction:Alopecia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:351",
+      "from": "Case:191957268",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:352",
+      "from": "Case:191957268",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:353",
+      "from": "Case:191957268",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:354",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:191957268",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:355",
+      "from": "Case:194436362",
+      "to": "Drug:FASLODEX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:356",
+      "from": "Case:194436362",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:357",
+      "from": "Case:194436362",
+      "to": "Reaction:Myelosuppression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:358",
+      "from": "Case:194436362",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:359",
+      "from": "Case:194436362",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:360",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:194436362",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:361",
+      "from": "Case:194506342",
+      "to": "Drug:VITAMIN D 400",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:362",
+      "from": "Case:194506342",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:363",
+      "from": "Case:194506342",
+      "to": "Drug:ZOLADEX",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:364",
+      "from": "Case:194506342",
+      "to": "Drug:VITAMIN B12",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:365",
+      "from": "Case:194506342",
+      "to": "Reaction:Dyspnoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:366",
+      "from": "Case:194506342",
+      "to": "Reaction:Death",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:367",
+      "from": "Case:194506342",
+      "to": "Reaction:Pulmonary oedema",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:368",
+      "from": "Case:194506342",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:369",
+      "from": "Case:194506342",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:370",
+      "from": "Case:194506342",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:371",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:194506342",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:372",
+      "from": "Case:194887742",
+      "to": "Drug:DECADRON",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:373",
+      "from": "Case:194887742",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:374",
+      "from": "Case:194887742",
+      "to": "Reaction:Pulmonary mucormycosis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:375",
+      "from": "Case:194887742",
+      "to": "Reaction:Pneumonia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:376",
+      "from": "Case:194887742",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:377",
+      "from": "Case:194887742",
+      "to": "Outcome:Death",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:378",
+      "from": "Case:194887742",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:379",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:194887742",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:380",
+      "from": "Case:195019153",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:381",
+      "from": "Case:195019153",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:382",
+      "from": "Case:195019153",
+      "to": "Reaction:Febrile neutropenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:383",
+      "from": "Case:195019153",
+      "to": "Reaction:Neoplasm progression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:384",
+      "from": "Case:195019153",
+      "to": "Reaction:COVID-19",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:385",
+      "from": "Case:195019153",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:386",
+      "from": "Case:195019153",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:387",
+      "from": "Case:195019153",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:388",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:195019153",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:389",
+      "from": "Case:195071232",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:390",
+      "from": "Case:195071232",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CR:391",
+      "from": "Case:195071232",
+      "to": "Reaction:Oesophagitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:392",
+      "from": "Case:195071232",
+      "to": "Reaction:Blood count abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:393",
+      "from": "Case:195071232",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:394",
+      "from": "Case:195071232",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:395",
+      "from": "Case:195071232",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:396",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:195071232",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:397",
+      "from": "Case:195618091",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:398",
+      "from": "Case:195618091",
+      "to": "Reaction:White blood cell count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:399",
+      "from": "Case:195618091",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:400",
+      "from": "Case:195618091",
+      "to": "AgeGroup:Adult",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:401",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:195618091",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:402",
+      "from": "Case:1239109926",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:403",
+      "from": "Case:1239109926",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CR:404",
+      "from": "Case:1239109926",
+      "to": "Reaction:Feeling abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:405",
+      "from": "Case:1239109926",
+      "to": "Reaction:Lymphadenopathy",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:406",
+      "from": "Case:1239109926",
+      "to": "Reaction:Hot flush",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:407",
+      "from": "Case:1239109926",
+      "to": "Reaction:Stomatitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:408",
+      "from": "Case:1239109926",
+      "to": "Reaction:Immune system disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:409",
+      "from": "Case:1239109926",
+      "to": "Reaction:Ear discomfort",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:410",
+      "from": "Case:1239109926",
+      "to": "Reaction:Vomiting",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:411",
+      "from": "Case:1239109926",
+      "to": "Reaction:Back pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:412",
+      "from": "Case:1239109926",
+      "to": "Reaction:Chills",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:413",
+      "from": "Case:1239109926",
+      "to": "Reaction:Heart rate increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:414",
+      "from": "Case:1239109926",
+      "to": "Reaction:Oropharyngeal pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:415",
+      "from": "Case:1239109926",
+      "to": "Reaction:Stress",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:416",
+      "from": "Case:1239109926",
+      "to": "Reaction:Pyrexia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:417",
+      "from": "Case:1239109926",
+      "to": "Reaction:Palpitations",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:418",
+      "from": "Case:1239109926",
+      "to": "Reaction:Off label use",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:419",
+      "from": "Case:1239109926",
+      "to": "Reaction:Nausea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:420",
+      "from": "Case:1239109926",
+      "to": "Reaction:Upper respiratory tract infection",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:421",
+      "from": "Case:1239109926",
+      "to": "Reaction:Neuropathy peripheral",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:422",
+      "from": "Case:1239109926",
+      "to": "Reaction:Body height decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:423",
+      "from": "Case:1239109926",
+      "to": "Reaction:Alopecia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:424",
+      "from": "Case:1239109926",
+      "to": "Reaction:Cough",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:425",
+      "from": "Case:1239109926",
+      "to": "Reaction:Nasopharyngitis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:426",
+      "from": "Case:1239109926",
+      "to": "Reaction:White blood cell count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:427",
+      "from": "Case:1239109926",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:428",
+      "from": "Case:1239109926",
+      "to": "Reaction:Joint injury",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:429",
+      "from": "Case:1239109926",
+      "to": "Reaction:Asthenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:430",
+      "from": "Case:1239109926",
+      "to": "Reaction:Product use issue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:431",
+      "from": "Case:1239109926",
+      "to": "Reaction:Weight increased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:432",
+      "from": "Case:1239109926",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:433",
+      "from": "Case:1239109926",
+      "to": "Reaction:Intentional dose omission",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:434",
+      "from": "Case:1239109926",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:435",
+      "from": "Case:1239109926",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:436",
+      "from": "Case:1239109926",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:437",
+      "from": "Case:1239109926",
+      "to": "Outcome:Hospitalization - Initial or Prolonged",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CO:438",
+      "from": "Case:1239109926",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:439",
+      "from": "Case:1239109926",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:440",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:1239109926",
+      "type": "REGISTERED"
+    },
+    {
+      "id": "CD:441",
+      "from": "Case:1256570432",
+      "to": "Drug:IBRANCE",
+      "type": "IS_PRIMARY_SUSPECT"
+    },
+    {
+      "id": "CD:442",
+      "from": "Case:1256570432",
+      "to": "Drug:IBRANCE",
+      "type": "IS_SECONDARY_SUSPECT"
+    },
+    {
+      "id": "CD:443",
+      "from": "Case:1256570432",
+      "to": "Drug:ATIVAN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:444",
+      "from": "Case:1256570432",
+      "to": "Drug:MIDRIN",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:445",
+      "from": "Case:1256570432",
+      "to": "Drug:ALPRAZOLAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:446",
+      "from": "Case:1256570432",
+      "to": "Drug:PANTOPRAZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:447",
+      "from": "Case:1256570432",
+      "to": "Drug:LETROZOLE",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CD:448",
+      "from": "Case:1256570432",
+      "to": "Drug:LORAZEPAM",
+      "type": "IS_CONCOMITANT"
+    },
+    {
+      "id": "CR:449",
+      "from": "Case:1256570432",
+      "to": "Reaction:Gastrointestinal pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:450",
+      "from": "Case:1256570432",
+      "to": "Reaction:Cluster headache",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:451",
+      "from": "Case:1256570432",
+      "to": "Reaction:Eructation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:452",
+      "from": "Case:1256570432",
+      "to": "Reaction:Chest pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:453",
+      "from": "Case:1256570432",
+      "to": "Reaction:Amnesia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:454",
+      "from": "Case:1256570432",
+      "to": "Reaction:Acne",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:455",
+      "from": "Case:1256570432",
+      "to": "Reaction:Neoplasm progression",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:456",
+      "from": "Case:1256570432",
+      "to": "Reaction:Skin abrasion",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:457",
+      "from": "Case:1256570432",
+      "to": "Reaction:Memory impairment",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:458",
+      "from": "Case:1256570432",
+      "to": "Reaction:Back pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:459",
+      "from": "Case:1256570432",
+      "to": "Reaction:Immune system disorder",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:460",
+      "from": "Case:1256570432",
+      "to": "Reaction:Anxiety",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:463",
+      "from": "Case:1256570432",
+      "to": "Reaction:Arthralgia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:464",
+      "from": "Case:1256570432",
+      "to": "Reaction:Malaise",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:466",
+      "from": "Case:1256570432",
+      "to": "Reaction:Fall",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:470",
+      "from": "Case:1256570432",
+      "to": "Reaction:Abdominal pain upper",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:472",
+      "from": "Case:1256570432",
+      "to": "Reaction:Diarrhoea",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:473",
+      "from": "Case:1256570432",
+      "to": "Reaction:Asthenia",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:474",
+      "from": "Case:1256570432",
+      "to": "Reaction:Constipation",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:478",
+      "from": "Case:1256570432",
+      "to": "Reaction:Feeling abnormal",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:484",
+      "from": "Case:1256570432",
+      "to": "Reaction:Stress",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:488",
+      "from": "Case:1256570432",
+      "to": "Reaction:Fatigue",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:490",
+      "from": "Case:1256570432",
+      "to": "Reaction:Abdominal discomfort",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:491",
+      "from": "Case:1256570432",
+      "to": "Reaction:Epistaxis",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:492",
+      "from": "Case:1256570432",
+      "to": "Reaction:Pain",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CR:495",
+      "from": "Case:1256570432",
+      "to": "Reaction:White blood cell count decreased",
+      "type": "HAS_REACTION"
+    },
+    {
+      "id": "CO:496",
+      "from": "Case:1256570432",
+      "to": "Outcome:Other Serious (Important Medical Event)",
+      "type": "RESULTED_IN"
+    },
+    {
+      "id": "CA:497",
+      "from": "Case:1256570432",
+      "to": "AgeGroup:Elderly",
+      "type": "FALLS_UNDER"
+    },
+    {
+      "id": "MC:498",
+      "from": "Manufacturer:PFIZER",
+      "to": "Case:1256570432",
+      "type": "REGISTERED"
+    }
+  ],
+  "meta": {
+    "caseCount": 40,
+    "nodeCount": 220,
+    "relCount": 477,
+    "capped": true,
+    "focusDrug": "IBRANCE"
+  }
+}

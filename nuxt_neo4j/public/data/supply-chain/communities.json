@@ -1,0 +1,179 @@
+{
+  "communityCount": 7,
+  "intro": "Louvain communities on the undirected Product–REQUIRES graph (weighted by BOM quantity) surface large, car-dominant dependency modules — module-level risk zones instead of one undifferentiated BOM.",
+  "communities": [
+    {
+      "id": 3,
+      "size": 7013,
+      "composition": [
+        {
+          "group": "car",
+          "count": 7004
+        },
+        {
+          "group": "engine",
+          "count": 6
+        },
+        {
+          "group": "seat",
+          "count": 1
+        },
+        {
+          "group": "gear",
+          "count": 1
+        },
+        {
+          "group": "seat_componment",
+          "count": 1
+        }
+      ],
+      "commentary": "Largest car-dominant BOM module (100% car SKUs)."
+    },
+    {
+      "id": 1,
+      "size": 5204,
+      "composition": [
+        {
+          "group": "car",
+          "count": 5195
+        },
+        {
+          "group": "engine",
+          "count": 6
+        },
+        {
+          "group": "seat_componment",
+          "count": 1
+        },
+        {
+          "group": "gear",
+          "count": 1
+        },
+        {
+          "group": "seat",
+          "count": 1
+        }
+      ],
+      "commentary": "Largest car-dominant BOM module (100% car SKUs)."
+    },
+    {
+      "id": 6,
+      "size": 3888,
+      "composition": [
+        {
+          "group": "car",
+          "count": 3883
+        },
+        {
+          "group": "engine",
+          "count": 3
+        },
+        {
+          "group": "gear",
+          "count": 2
+        }
+      ],
+      "commentary": "Largest car-dominant BOM module (100% car SKUs)."
+    },
+    {
+      "id": 2,
+      "size": 3439,
+      "composition": [
+        {
+          "group": "car",
+          "count": 3430
+        },
+        {
+          "group": "engine",
+          "count": 6
+        },
+        {
+          "group": "seat",
+          "count": 1
+        },
+        {
+          "group": "seat_componment",
+          "count": 1
+        },
+        {
+          "group": "gear",
+          "count": 1
+        }
+      ],
+      "commentary": "Largest car-dominant BOM module (100% car SKUs)."
+    },
+    {
+      "id": 5,
+      "size": 3009,
+      "composition": [
+        {
+          "group": "car",
+          "count": 3003
+        },
+        {
+          "group": "battery_componment",
+          "count": 3
+        },
+        {
+          "group": "engine",
+          "count": 1
+        },
+        {
+          "group": "battery",
+          "count": 1
+        },
+        {
+          "group": "gear",
+          "count": 1
+        }
+      ],
+      "commentary": "Largest car-dominant BOM module (100% car SKUs)."
+    },
+    {
+      "id": 0,
+      "size": 2978,
+      "composition": [
+        {
+          "group": "car",
+          "count": 2972
+        },
+        {
+          "group": "engine",
+          "count": 5
+        },
+        {
+          "group": "gear",
+          "count": 1
+        }
+      ],
+      "commentary": "Largest car-dominant BOM module (100% car SKUs)."
+    },
+    {
+      "id": 4,
+      "size": 2518,
+      "composition": [
+        {
+          "group": "car",
+          "count": 2513
+        },
+        {
+          "group": "engine",
+          "count": 2
+        },
+        {
+          "group": "gear",
+          "count": 1
+        },
+        {
+          "group": "seat",
+          "count": 1
+        },
+        {
+          "group": "seat_componment",
+          "count": 1
+        }
+      ],
+      "commentary": "Largest car-dominant BOM module (100% car SKUs)."
+    }
+  ]
+}
