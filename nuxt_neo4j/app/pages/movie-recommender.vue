@@ -355,22 +355,46 @@ function collectEdges(rels: GraphRel[]): LayoutEdge[] {
   return out
 }
 
-const similaritySvg = computed(() => {
+const similarityLegend = computed(() =>
+  Object.entries(communityColorMap.value).map(([label, color]) => ({ label, color }))
+)
+
+type SimNodePos = {
+  id: string
+  caption: string
+  community: number
+  color: string
+  x: number
+  y: number
+}
+type SimEdgeLink = { id: string, from: string, to: string }
+
+/** Mutable positions so users can rearrange after the spring layout seeds them. */
+const simNodes = ref<SimNodePos[]>([])
+const simEdgeLinks = ref<SimEdgeLink[]>([])
+const simSvgEl = ref<SVGSVGElement | null>(null)
+const simView = ref({ x: 0, y: 0, k: 1 })
+
+type SimDrag
+  = { kind: 'node', id: string, pointerId: number }
+    | { kind: 'pan', pointerId: number, lastX: number, lastY: number }
+let simDrag: SimDrag | null = null
+
+function rebuildSimilarityLayout() {
   const g = graphSimilarity.value
   if (!g?.nodes.length) {
-    return {
-      nodes: [] as { id: string, caption: string, community: number, color: string, x: number, y: number }[],
-      edges: [] as { id: string, x1: number, y1: number, x2: number, y2: number }[]
-    }
+    simNodes.value = []
+    simEdgeLinks.value = []
+    simView.value = { x: 0, y: 0, k: 1 }
+    return
   }
 
   const activeRels = g.relationships.filter(r => r.type === simEdgeType.value)
   const activeEdges = collectEdges(activeRels)
-
   const seed = simEdgeType.value === 'SIMILAR_TASTE' ? 42 : 137
   const pos = layoutBySimilarity(g.nodes, activeEdges, seed)
 
-  const nodes = g.nodes.map((n) => {
+  simNodes.value = g.nodes.map((n) => {
     const community = typeof n.community === 'number'
       ? n.community
       : Number(n.labels?.[0]?.slice(1) || 0)
@@ -384,20 +408,118 @@ const similaritySvg = computed(() => {
       y: p.y
     }
   })
+  simEdgeLinks.value = activeEdges.map(e => ({
+    id: e.id,
+    from: e.from,
+    to: e.to
+  }))
+  simView.value = { x: 0, y: 0, k: 1 }
+}
 
-  const edges = activeEdges.flatMap((e) => {
-    const p1 = pos.get(e.from)
-    const p2 = pos.get(e.to)
+watch(
+  [graphSimilarity, simEdgeType],
+  () => {
+    rebuildSimilarityLayout()
+  },
+  { immediate: true, deep: true }
+)
+
+const simRenderedEdges = computed(() => {
+  const byId = new Map(simNodes.value.map(n => [n.id, n]))
+  return simEdgeLinks.value.flatMap((e) => {
+    const p1 = byId.get(e.from)
+    const p2 = byId.get(e.to)
     if (!p1 || !p2) return []
     return [{ id: e.id, ...trimEdge(p1.x, p1.y, p2.x, p2.y, SIM_SVG.nodeR) }]
   })
-
-  return { nodes, edges }
 })
 
-const similarityLegend = computed(() =>
-  Object.entries(communityColorMap.value).map(([label, color]) => ({ label, color }))
-)
+function simClientToWorld(clientX: number, clientY: number): { x: number, y: number } | null {
+  const svg = simSvgEl.value
+  if (!svg) return null
+  const pt = svg.createSVGPoint()
+  pt.x = clientX
+  pt.y = clientY
+  const ctm = svg.getScreenCTM()
+  if (!ctm) return null
+  const local = pt.matrixTransform(ctm.inverse())
+  const { x, y, k } = simView.value
+  return {
+    x: (local.x - x) / k,
+    y: (local.y - y) / k
+  }
+}
+
+function onSimNodePointerDown(e: PointerEvent, id: string) {
+  e.stopPropagation()
+  e.preventDefault()
+  ;(e.currentTarget as Element | null)?.setPointerCapture?.(e.pointerId)
+  simDrag = { kind: 'node', id, pointerId: e.pointerId }
+}
+
+function onSimSvgPointerDown(e: PointerEvent) {
+  if (e.button !== 0) return
+  e.preventDefault()
+  simSvgEl.value?.setPointerCapture?.(e.pointerId)
+  simDrag = { kind: 'pan', pointerId: e.pointerId, lastX: e.clientX, lastY: e.clientY }
+}
+
+function onSimPointerMove(e: PointerEvent) {
+  const drag = simDrag
+  if (!drag || drag.pointerId !== e.pointerId) return
+  if (drag.kind === 'node') {
+    const world = simClientToWorld(e.clientX, e.clientY)
+    if (!world) return
+    const target = simNodes.value.find(n => n.id === drag.id)
+    if (!target) return
+    target.x = world.x
+    target.y = world.y
+    return
+  }
+  const dx = e.clientX - drag.lastX
+  const dy = e.clientY - drag.lastY
+  drag.lastX = e.clientX
+  drag.lastY = e.clientY
+  // Convert screen px to SVG user units (viewBox width / element width).
+  const svg = simSvgEl.value
+  if (!svg) return
+  const rect = svg.getBoundingClientRect()
+  const sx = SIM_SVG.w / Math.max(rect.width, 1)
+  const sy = SIM_SVG.h / Math.max(rect.height, 1)
+  simView.value = {
+    ...simView.value,
+    x: simView.value.x + dx * sx,
+    y: simView.value.y + dy * sy
+  }
+}
+
+function onSimPointerUp(e: PointerEvent) {
+  if (simDrag?.pointerId === e.pointerId) simDrag = null
+}
+
+function onSimWheel(e: WheelEvent) {
+  const svg = simSvgEl.value
+  if (!svg) return
+  const rect = svg.getBoundingClientRect()
+  const sx = SIM_SVG.w / Math.max(rect.width, 1)
+  const sy = SIM_SVG.h / Math.max(rect.height, 1)
+  const mx = (e.clientX - rect.left) * sx
+  const my = (e.clientY - rect.top) * sy
+  const { x, y, k } = simView.value
+  const factor = e.deltaY < 0 ? 1.08 : 1 / 1.08
+  const nextK = Math.min(4, Math.max(0.35, k * factor))
+  // Zoom toward cursor.
+  simView.value = {
+    k: nextK,
+    x: mx - ((mx - x) * nextK) / k,
+    y: my - ((my - y) * nextK) / k
+  }
+}
+
+function resetSimView() {
+  simView.value = { x: 0, y: 0, k: 1 }
+  rebuildSimilarityLayout()
+}
 
 const PAGE_SIZE = 10
 const comparisonPage = ref(1)
@@ -641,29 +763,51 @@ const egoColors = computed(() => ({
       </div>
 
       <div
-        v-if="similaritySvg.nodes.length"
+        v-if="simNodes.length"
         class="space-y-3"
       >
-        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-          <span
-            v-for="entry in similarityLegend"
-            :key="entry.label"
-            class="inline-flex items-center gap-1.5 text-sm text-muted"
-          >
+        <div class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
             <span
-              class="size-3 rounded-full"
-              :style="{ backgroundColor: entry.color }"
-            />
-            {{ entry.label }}
-          </span>
+              v-for="entry in similarityLegend"
+              :key="entry.label"
+              class="inline-flex items-center gap-1.5 text-sm text-muted"
+            >
+              <span
+                class="size-3 rounded-full"
+                :style="{ backgroundColor: entry.color }"
+              />
+              {{ entry.label }}
+            </span>
+          </div>
+          <div class="flex items-center gap-3">
+            <p class="text-xs text-muted">
+              Scroll to zoom · drag background to pan · drag nodes to rearrange
+            </p>
+            <UButton
+              color="neutral"
+              variant="ghost"
+              size="xs"
+              @click="resetSimView"
+            >
+              Reset layout
+            </UButton>
+          </div>
         </div>
 
         <div class="rounded-lg border border-default bg-elevated/30 p-4">
           <svg
+            ref="simSvgEl"
             :viewBox="`0 0 ${SIM_SVG.w} ${SIM_SVG.h}`"
-            class="h-auto w-full text-muted"
+            class="h-auto w-full cursor-grab touch-none text-muted active:cursor-grabbing"
+            style="overscroll-behavior: contain;"
             role="img"
             :aria-label="`User similarity graph (${simEdgeType}), nodes colored by Louvain community.`"
+            @pointerdown="onSimSvgPointerDown"
+            @pointermove="onSimPointerMove"
+            @pointerup="onSimPointerUp"
+            @pointercancel="onSimPointerUp"
+            @wheel.prevent="onSimWheel"
           >
             <defs>
               <marker
@@ -682,42 +826,47 @@ const egoColors = computed(() => ({
               </marker>
             </defs>
 
-            <g
-              stroke="currentColor"
-              stroke-width="1.5"
-              stroke-linecap="round"
-            >
-              <line
-                v-for="e in similaritySvg.edges"
-                :key="e.id"
-                :x1="e.x1"
-                :y1="e.y1"
-                :x2="e.x2"
-                :y2="e.y2"
-                opacity="0.7"
-                marker-end="url(#sim-arrow)"
-              />
-            </g>
-
-            <g>
+            <g :transform="`translate(${simView.x} ${simView.y}) scale(${simView.k})`">
               <g
-                v-for="n in similaritySvg.nodes"
-                :key="n.id"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
               >
-                <circle
-                  :cx="n.x"
-                  :cy="n.y"
-                  :r="SIM_SVG.nodeR"
-                  :fill="n.color"
+                <line
+                  v-for="e in simRenderedEdges"
+                  :key="e.id"
+                  :x1="e.x1"
+                  :y1="e.y1"
+                  :x2="e.x2"
+                  :y2="e.y2"
+                  opacity="0.7"
+                  marker-end="url(#sim-arrow)"
                 />
-                <text
-                  :x="n.x"
-                  :y="n.y + SIM_SVG.nodeR + 12"
-                  text-anchor="middle"
-                  font-size="10"
-                  font-weight="600"
-                  fill="currentColor"
-                >{{ n.caption.split(' ')[0] }}</text>
+              </g>
+
+              <g>
+                <g
+                  v-for="n in simNodes"
+                  :key="n.id"
+                  class="cursor-grab active:cursor-grabbing"
+                  @pointerdown="onSimNodePointerDown($event, n.id)"
+                >
+                  <circle
+                    :cx="n.x"
+                    :cy="n.y"
+                    :r="SIM_SVG.nodeR"
+                    :fill="n.color"
+                  />
+                  <text
+                    :x="n.x"
+                    :y="n.y + SIM_SVG.nodeR + 12"
+                    text-anchor="middle"
+                    font-size="10"
+                    font-weight="600"
+                    fill="currentColor"
+                    class="pointer-events-none"
+                  >{{ n.caption.split(' ')[0] }}</text>
+                </g>
               </g>
             </g>
           </svg>

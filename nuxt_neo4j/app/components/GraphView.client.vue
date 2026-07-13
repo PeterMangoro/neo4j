@@ -1,15 +1,40 @@
 <script setup lang="ts">
 import type { GraphNode, GraphRel } from '~/types/contract'
 
+type PositionSnapshot = { id: string, x: number, y: number }
+
+/** Session-scoped layout cache so remounts keep user rearrangements. */
+const positionCache = new Map<string, PositionSnapshot[]>()
+
 const props = withDefaults(defineProps<{
   nodes: GraphNode[]
   relationships: GraphRel[]
   colors?: Record<string, string>
   height?: string
+  /** Master switch — false keeps the previous static (non-interactive) behavior. */
+  interactive?: boolean
+  zoom?: boolean
+  pan?: boolean
+  dragNodes?: boolean
+  select?: boolean
+  persistPositions?: boolean
+  /** Explicit cache key; defaults to a fingerprint of node/rel ids. */
+  persistKey?: string
 }>(), {
   colors: undefined,
-  height: '600px'
+  height: '600px',
+  interactive: true,
+  zoom: true,
+  pan: true,
+  dragNodes: true,
+  select: true,
+  persistPositions: true,
+  persistKey: undefined
 })
+
+const emit = defineEmits<{
+  select: [node: GraphNode | null]
+}>()
 
 const DEFAULT_PALETTE = [
   '#00C16A', '#3B82F6', '#F59E0B', '#EF4444', '#8B5CF6',
@@ -20,6 +45,7 @@ const container = ref<HTMLElement | null>(null)
 const root = ref<HTMLElement | null>(null)
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let nvl: any = null
+let interactions: { destroy: () => void }[] = []
 let resizeObserver: ResizeObserver | null = null
 let visibilityObserver: IntersectionObserver | null = null
 const renderError = ref<string | null>(null)
@@ -27,6 +53,17 @@ const isVisible = ref(false)
 let renderGeneration = 0
 let healAttempts = 0
 let pendingTimer: ReturnType<typeof setTimeout> | null = null
+
+const selectedNodeId = ref<string | null>(null)
+
+const selectedNode = computed(() => {
+  if (!selectedNodeId.value) return null
+  return props.nodes.find(n => n.id === selectedNodeId.value) ?? null
+})
+
+const showHint = computed(() =>
+  props.interactive && (props.zoom || props.pan || props.dragNodes || props.select)
+)
 
 function afterLayout(): Promise<void> {
   return new Promise((resolve) => {
@@ -54,13 +91,36 @@ function nodeSize(node: GraphNode): number {
   return 22
 }
 
-function mapped() {
-  const nvlNodes = props.nodes.map(n => ({
-    id: n.id,
-    caption: n.caption ?? n.id,
-    color: colorMap.value[labelOf(n)],
-    size: nodeSize(n)
-  }))
+function graphFingerprint(): string {
+  if (props.persistKey) return props.persistKey
+  const nodeIds = props.nodes.map(n => n.id).sort().join('|')
+  const relIds = props.relationships.map(r => r.id).sort().join('|')
+  return `${nodeIds}::${relIds}`
+}
+
+function mapped(saved: PositionSnapshot[] | null) {
+  const posById = saved ? new Map(saved.map(p => [p.id, p])) : null
+  const nvlNodes = props.nodes.map((n) => {
+    const base: {
+      id: string
+      caption: string
+      color: string | undefined
+      size: number
+      x?: number
+      y?: number
+    } = {
+      id: n.id,
+      caption: n.caption ?? n.id,
+      color: colorMap.value[labelOf(n)],
+      size: nodeSize(n)
+    }
+    const pos = posById?.get(n.id)
+    if (pos) {
+      base.x = pos.x
+      base.y = pos.y
+    }
+    return base
+  })
   // Deduplicate undirected pairs so NVL doesn't choke on A→B + B→A duplicates.
   const seen = new Set<string>()
   const nvlRels: { id: string, from: string, to: string, caption: string }[] = []
@@ -84,8 +144,116 @@ function canvasLooksEmpty(): boolean {
   if (!container.value) return true
   const canvas = container.value.querySelector('canvas')
   if (!canvas) return true
-  // Zero-size canvas = not actually painted yet
   return canvas.width < 2 || canvas.height < 2
+}
+
+function destroyInteractions() {
+  for (const h of interactions) {
+    try {
+      h.destroy()
+    } catch {
+      // ignore teardown errors from already-destroyed handlers
+    }
+  }
+  interactions = []
+}
+
+function destroyNvl() {
+  destroyInteractions()
+  if (nvl) {
+    try {
+      nvl.destroy()
+    } catch {
+      // ignore
+    }
+    nvl = null
+  }
+}
+
+function clearSelection() {
+  selectedNodeId.value = null
+  emit('select', null)
+  if (nvl && typeof nvl.updateElementsInGraph === 'function') {
+    // Clear selected flags if NVL still has the graph.
+    try {
+      const ids = props.nodes.map(n => ({ id: n.id, selected: false }))
+      nvl.updateElementsInGraph(ids, [])
+    } catch {
+      // ignore
+    }
+  }
+}
+
+function selectNode(nodeId: string | null) {
+  if (!props.select) return
+  selectedNodeId.value = nodeId
+  const graphNode = nodeId ? props.nodes.find(n => n.id === nodeId) ?? null : null
+  emit('select', graphNode)
+}
+
+function savePositions() {
+  if (!props.persistPositions || !nvl) return
+  try {
+    const positions = nvl.getNodePositions() as PositionSnapshot[]
+    if (!positions?.length) return
+    positionCache.set(
+      graphFingerprint(),
+      positions.map(p => ({ id: p.id, x: p.x, y: p.y }))
+    )
+  } catch (err) {
+    console.warn('[GraphView] failed to snapshot positions:', err)
+  }
+}
+
+async function attachInteractions() {
+  if (!nvl || !props.interactive) return
+
+  const {
+    ZoomInteraction,
+    PanInteraction,
+    DragNodeInteraction,
+    ClickInteraction,
+    HoverInteraction
+  } = await import('@neo4j-nvl/interaction-handlers')
+
+  if (props.zoom) {
+    interactions.push(new ZoomInteraction(nvl))
+  }
+  if (props.pan) {
+    interactions.push(new PanInteraction(nvl))
+  }
+  if (props.dragNodes) {
+    const drag = new DragNodeInteraction(nvl)
+    drag.updateCallback('onDragEnd', (...args: unknown[]) => {
+      const nodes = (args[0] ?? []) as { id: string }[]
+      savePositions()
+      // Pin dragged nodes so force layout doesn't spring them back.
+      if (nvl && typeof nvl.pinNode === 'function') {
+        for (const node of nodes) {
+          try {
+            nvl.pinNode(node.id)
+          } catch {
+            // ignore
+          }
+        }
+      }
+    })
+    interactions.push(drag)
+  }
+  if (props.select) {
+    const click = new ClickInteraction(nvl, { selectOnClick: true })
+    click.updateCallback('onNodeClick', (...args: unknown[]) => {
+      const node = args[0] as { id: string }
+      selectNode(node.id)
+    })
+    click.updateCallback('onCanvasClick', () => {
+      clearSelection()
+    })
+    interactions.push(click)
+
+    const hover = new HoverInteraction(nvl, { drawShadowOnHover: true })
+    interactions.push(hover)
+  }
 }
 
 async function render() {
@@ -94,11 +262,9 @@ async function render() {
   const gen = ++renderGeneration
 
   if (!props.nodes.length) {
-    if (nvl) {
-      nvl.destroy()
-      nvl = null
-    }
+    destroyNvl()
     renderError.value = null
+    selectedNodeId.value = null
     return
   }
 
@@ -106,7 +272,6 @@ async function render() {
   await afterLayout()
   if (gen !== renderGeneration || !container.value) return
 
-  // Need a non-zero box before constructing NVL
   const rect = container.value.getBoundingClientRect()
   if (rect.width < 2 || rect.height < 2) {
     scheduleRetry(gen, 50)
@@ -117,15 +282,15 @@ async function render() {
     const { NVL } = await import('@neo4j-nvl/base')
     if (gen !== renderGeneration || !container.value) return
 
-    if (nvl) {
-      nvl.destroy()
-      nvl = null
-    }
-
-    // Clear any leftover canvases from a half-initialized instance
+    destroyNvl()
     container.value.replaceChildren()
 
-    const { nvlNodes, nvlRels } = mapped()
+    const saved = props.persistPositions
+      ? (positionCache.get(graphFingerprint()) ?? null)
+      : null
+    const hasSaved = !!saved?.length
+    const { nvlNodes, nvlRels } = mapped(saved)
+
     nvl = new NVL(
       container.value,
       nvlNodes,
@@ -136,17 +301,26 @@ async function render() {
         disableWebWorkers: true,
         disableTelemetry: true,
         initialZoom: 0.75,
-        layout: 'forceDirected'
+        layout: hasSaved ? 'free' : 'forceDirected'
       },
       {
         onLayoutDone: () => {
-          if (nvl && nvlNodes.length) nvl.fit(nvlNodes.map(n => n.id))
+          if (!nvl || !nvlNodes.length) return
+          if (hasSaved) {
+            nvl.setNodePositions(
+              saved!.map(p => ({ id: p.id, x: p.x, y: p.y })),
+              false
+            )
+          }
+          nvl.fit(nvlNodes.map(n => n.id as string))
         }
       }
     )
-    renderError.value = null
 
-    // If NVL created a zero-size / missing canvas, retry shortly after layout settles.
+    await attachInteractions()
+    if (gen !== renderGeneration) return
+
+    renderError.value = null
     scheduleRetry(gen, 120)
   } catch (err) {
     renderError.value = err instanceof Error ? err.message : String(err)
@@ -173,7 +347,15 @@ function requestRender() {
   render()
 }
 
+function onKeydown(e: KeyboardEvent) {
+  if (e.key === 'Escape' && selectedNodeId.value) {
+    clearSelection()
+  }
+}
+
 onMounted(() => {
+  window.addEventListener('keydown', onKeydown)
+
   if (root.value && 'IntersectionObserver' in window) {
     visibilityObserver = new IntersectionObserver(
       (entries) => {
@@ -190,7 +372,6 @@ onMounted(() => {
     )
     visibilityObserver.observe(root.value)
   } else {
-    // Fallback when IntersectionObserver is unavailable
     isVisible.value = true
     requestRender()
   }
@@ -211,6 +392,7 @@ onMounted(() => {
 watch(
   () => [props.nodes, props.relationships] as const,
   () => {
+    selectedNodeId.value = null
     requestRender()
   },
   { deep: true, flush: 'post' }
@@ -224,16 +406,29 @@ watch(
   { deep: true, flush: 'post' }
 )
 
+watch(
+  () => [
+    props.interactive,
+    props.zoom,
+    props.pan,
+    props.dragNodes,
+    props.select,
+    props.persistPositions,
+    props.persistKey
+  ] as const,
+  () => {
+    requestRender()
+  }
+)
+
 onBeforeUnmount(() => {
+  window.removeEventListener('keydown', onKeydown)
   if (pendingTimer) clearTimeout(pendingTimer)
   visibilityObserver?.disconnect()
   visibilityObserver = null
   resizeObserver?.disconnect()
   resizeObserver = null
-  if (nvl) {
-    nvl.destroy()
-    nvl = null
-  }
+  destroyNvl()
 })
 </script>
 
@@ -243,27 +438,35 @@ onBeforeUnmount(() => {
     class="space-y-3"
   >
     <div
-      v-if="legend.length"
-      class="flex flex-wrap items-center gap-x-4 gap-y-2"
+      v-if="legend.length || showHint"
+      class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2"
     >
-      <span
-        v-for="entry in legend"
-        :key="entry.label"
-        class="inline-flex items-center gap-1.5 text-sm text-muted"
-      >
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
         <span
-          class="size-3 rounded-full"
-          :style="{ backgroundColor: entry.color }"
-        />
-        {{ entry.label }}
-      </span>
+          v-for="entry in legend"
+          :key="entry.label"
+          class="inline-flex items-center gap-1.5 text-sm text-muted"
+        >
+          <span
+            class="size-3 rounded-full"
+            :style="{ backgroundColor: entry.color }"
+          />
+          {{ entry.label }}
+        </span>
+      </div>
+      <p
+        v-if="showHint"
+        class="text-xs text-muted"
+      >
+        Scroll to zoom · drag background to pan · drag nodes to rearrange · click a node for details
+      </p>
     </div>
 
     <div class="relative w-full">
       <div
         ref="container"
-        class="w-full rounded-lg border border-default bg-elevated/30 overflow-hidden"
-        :style="{ height }"
+        class="w-full overflow-hidden rounded-lg border border-default bg-elevated/30"
+        :style="{ height, touchAction: 'none', overscrollBehavior: 'contain' }"
       />
       <div
         v-if="renderError"
@@ -277,6 +480,37 @@ onBeforeUnmount(() => {
       >
         No graph data to display.
       </div>
+    </div>
+
+    <div
+      v-if="selectedNode"
+      class="flex flex-wrap items-start justify-between gap-3 rounded-lg border border-default bg-elevated/40 px-4 py-3 text-sm"
+    >
+      <div class="min-w-0 space-y-1">
+        <p class="font-semibold text-highlighted">
+          {{ selectedNode.caption ?? selectedNode.id }}
+        </p>
+        <p
+          v-if="selectedNode.labels?.length"
+          class="text-xs text-muted"
+        >
+          {{ selectedNode.labels.join(' · ') }}
+        </p>
+        <p
+          v-if="typeof selectedNode.score === 'number'"
+          class="font-mono text-xs text-muted"
+        >
+          score {{ selectedNode.score.toFixed(6) }}
+        </p>
+      </div>
+      <UButton
+        color="neutral"
+        variant="ghost"
+        size="xs"
+        @click="clearSelection"
+      >
+        Clear
+      </UButton>
     </div>
   </div>
 </template>

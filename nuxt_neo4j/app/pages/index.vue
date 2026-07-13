@@ -46,8 +46,6 @@ const projects = [
 
 <template>
   <div>
-   
-
     <UPageSection
       title="Projects"
       description="Interactive static demos of Neo4j graph projects: music knowledge graph, movie recommendations, healthcare adverse events, and supply-chain risk."

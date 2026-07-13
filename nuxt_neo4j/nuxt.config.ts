@@ -39,7 +39,7 @@ export default defineNuxtConfig({
   // noExternal, where Vite skips CJS->ESM interop and the import fails.
   vite: {
     optimizeDeps: {
-      include: ['@neo4j-nvl/base', 'cytoscape', 'cytoscape-cose-bilkent']
+      include: ['@neo4j-nvl/base', '@neo4j-nvl/interaction-handlers', 'cytoscape', 'cytoscape-cose-bilkent']
     }
   },
 
