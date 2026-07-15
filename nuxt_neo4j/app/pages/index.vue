@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Neo4j Capstone Demos',
-  description: 'Interactive static demos of Neo4j graph projects: music knowledge graph, movie recommendations, healthcare adverse events, and supply-chain risk.'
+  description: 'Interactive demos of Neo4j graph projects: music knowledge graph, movie recommendations, healthcare adverse events, and supply-chain risk.'
 })
 
 const projects = [
@@ -48,7 +48,7 @@ const projects = [
   <div>
     <UPageSection
       title="Projects"
-      description="Interactive static demos of Neo4j graph projects: music knowledge graph, movie recommendations, healthcare adverse events, and supply-chain risk."
+      description="Interactive demos of Neo4j graph projects: music knowledge graph, movie recommendations, healthcare adverse events, and supply-chain risk."
     >
       <div class="grid gap-4 sm:grid-cols-2">
         <NuxtLink
